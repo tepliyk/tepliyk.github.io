@@ -3,14 +3,390 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AstroHub · Небо ближче</title>
-<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222;background:#fff}a{color:#4a4adf}</style>
+<title>Небо ближче · челендж одного балкона</title>
+<meta name="description" content="Астрофото з міського балкона в Україні: смарт-телескоп DWARF Mini, туманності й галактики, і челендж зняти все, що звідси видно.">
+<meta property="og:title" content="Небо ближче · челендж одного балкона">
+<meta property="og:description" content="Туманності й галактики з міського балкона. Що вже знято і що ще попереду.">
+<link rel="icon" type="image/jpeg" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#050914;--card:rgba(15,20,40,.62);--border:rgba(148,163,184,.14);--border-h:rgba(148,163,184,.28);
+  --text:#e5e9f5;--muted:#94a3b8;--dim:#64748b;--accent:#6d5cff;--accent-h:#7f70ff;--ok:#34d399;--warn:#f59e0b;--info:#38bdf8;
+  --r:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--text);font:15px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:
+   radial-gradient(1px 1px at 12% 18%,#fff8 50%,transparent 51%),radial-gradient(1px 1px at 72% 12%,#fff6 50%,transparent 51%),
+   radial-gradient(1.5px 1.5px at 40% 66%,#fff7 50%,transparent 51%),radial-gradient(1px 1px at 88% 48%,#fff5 50%,transparent 51%),
+   radial-gradient(1px 1px at 22% 82%,#fff5 50%,transparent 51%),radial-gradient(1.5px 1.5px at 58% 34%,#fff6 50%,transparent 51%),
+   radial-gradient(1px 1px at 92% 86%,#fff4 50%,transparent 51%),radial-gradient(1px 1px at 6% 52%,#fff5 50%,transparent 51%);
+  background-size:420px 420px}
+body::after{content:"";position:fixed;inset:-20% -10% auto;height:70vh;z-index:-1;pointer-events:none;
+  background:radial-gradient(closest-side,rgba(109,92,255,.22),transparent),radial-gradient(closest-side at 80% 30%,rgba(56,189,248,.08),transparent)}
+a{color:inherit}
+h1,h2,h3{font-family:Manrope,Inter,sans-serif;letter-spacing:-.02em;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+
+header{position:sticky;top:0;z-index:20;background:rgba(5,9,20,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.bar{display:flex;align-items:center;gap:18px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand img{width:34px;height:34px;border-radius:50%;border:1px solid var(--border-h)}
+.brand b{font:800 17px Manrope,sans-serif}
+.brand span{color:var(--dim);font-size:13px}
+nav{display:flex;gap:4px;margin-left:auto}
+nav a{color:var(--muted);text-decoration:none;font-size:13.5px;font-weight:600;padding:7px 12px;border-radius:999px}
+nav a:hover{color:#fff;background:rgba(148,163,184,.1)}
+.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:11px;font:600 13.5px Inter,sans-serif;text-decoration:none;white-space:nowrap;border:1px solid var(--border-h);background:rgba(30,41,59,.55);color:#e2e8f0;transition:.15s}
+.btn:hover{background:rgba(51,65,85,.7);border-color:rgba(148,163,184,.4)}
+.btn-primary{background:var(--accent);border-color:transparent;color:#fff;box-shadow:0 0 0 1px rgba(109,92,255,.35),0 8px 24px -8px rgba(109,92,255,.75)}
+.btn-primary:hover{background:var(--accent-h)}
+.btn svg{width:17px;height:17px;flex:none}
+
+.hero{padding:64px 0 28px;display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:#c7c1ff;background:rgba(109,92,255,.14);border:1px solid rgba(109,92,255,.35);padding:5px 12px;border-radius:999px}
+.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 10px var(--ok)}
+.hero h1{font-size:clamp(34px,5.2vw,58px);line-height:1.05;margin:18px 0 16px;font-weight:800}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#a99fff,#6d5cff 60%,#38bdf8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{color:#cbd5e1;font-size:17px;max-width:560px;margin:0 0 24px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.ring-card{padding:26px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.ring-card h3{font-size:15px;color:var(--muted);font-weight:700}
+.ring{position:relative;width:220px;height:220px}
+.ring svg{transform:rotate(-90deg)}
+.ring .center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ring .big{font:800 54px/1 Manrope,sans-serif}
+.ring .of{color:var(--muted);font-size:13px;margin-top:6px}
+.legend{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;font-size:12.5px;color:var(--muted)}
+.legend span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:6px;background:var(--c)}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:8px 0 56px}
+.stat{padding:18px 20px}
+.stat small{color:var(--muted);font-size:12.5px;font-weight:600}
+.stat b{display:block;font:800 30px/1.2 Manrope,sans-serif;margin-top:4px}
+.stat span{color:var(--dim);font-size:12.5px}
+
+section{margin:0 0 64px;scroll-margin-top:80px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.sec-head h2{font-size:28px;font-weight:800}
+.sec-head p{color:var(--muted);margin:6px 0 0;max-width:640px}
+.filters{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{cursor:pointer;border:1px solid var(--border);background:rgba(15,20,40,.5);color:var(--muted);font:600 13px Inter,sans-serif;padding:7px 13px;border-radius:999px}
+.chip:hover{color:#fff;border-color:var(--border-h)}
+.chip[aria-pressed=true]{background:rgba(109,92,255,.18);border-color:rgba(109,92,255,.55);color:#fff}
+.chip .n{color:var(--dim);margin-left:4px;font-weight:500}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.t{overflow:hidden;display:flex;flex-direction:column;transition:.18s}
+.t.has-photo{cursor:zoom-in}
+.t:hover{border-color:var(--border-h);transform:translateY(-2px)}
+.t .pic{position:relative;aspect-ratio:4/3;background:#070b18;overflow:hidden}
+.t .pic img{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}
+.t.has-photo:hover .pic img{transform:scale(1.04)}
+.t .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  background:radial-gradient(circle at 50% 45%,rgba(109,92,255,.18),transparent 60%),repeating-radial-gradient(circle at 50% 45%,transparent 0 22px,rgba(148,163,184,.05) 23px 24px)}
+.t .ph b{font:800 26px Manrope,sans-serif;color:#cbd5e1}
+.t .ph span{font-size:12px;color:var(--dim)}
+.t.todo .ph b{color:#475569}
+.badge{position:absolute;top:10px;left:10px;font:600 11.5px Inter,sans-serif;padding:4px 10px;border-radius:999px;background:rgba(5,9,20,.75);border:1px solid var(--border-h);backdrop-filter:blur(6px)}
+.badge.done{color:#a7f3d0;border-color:rgba(52,211,153,.45)}
+.badge.progress{color:#fde68a;border-color:rgba(245,158,11,.45)}
+.badge.todo{color:var(--muted)}
+.t .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.t h3{font-size:16px;font-weight:700;line-height:1.3}
+.t h3 small{display:block;color:var(--muted);font:500 12.5px Inter,sans-serif;margin-top:2px}
+.bar-p{height:6px;border-radius:99px;background:rgba(148,163,184,.14);overflow:hidden;margin-top:auto}
+.bar-p i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--accent),#a99fff)}
+.t.done .bar-p i{background:linear-gradient(90deg,#10b981,var(--ok))}
+.t .meta{display:flex;justify-content:space-between;gap:8px;font-size:12.5px;color:var(--muted)}
+.t .meta b{color:#e2e8f0;font-weight:600}
+.empty{color:var(--dim);grid-column:1/-1;text-align:center;padding:30px}
+
+.solar{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;padding:30px}
+.about h2{font-size:28px;margin-bottom:14px}
+.about p{color:#cbd5e1;margin:0 0 14px}
+.about .sign{color:var(--muted)}
+.facts{display:grid;gap:10px;align-content:start}
+.fact{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:14px;background:rgba(5,9,20,.45);border:1px solid var(--border)}
+.fact .ic{width:34px;height:34px;flex:none;border-radius:10px;display:grid;place-items:center;background:rgba(109,92,255,.16);color:#b7aeff}
+.fact .ic svg{width:18px;height:18px}
+.fact b{display:block;font-size:14px}
+.fact span{color:var(--muted);font-size:13px}
+
+.links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.link{display:flex;gap:14px;align-items:center;padding:18px 20px;text-decoration:none;transition:.15s}
+.link:hover{border-color:rgba(109,92,255,.55);transform:translateY(-2px)}
+.link .ic{width:44px;height:44px;flex:none;border-radius:12px;display:grid;place-items:center;color:#fff}
+.link .ic svg{width:22px;height:22px}
+.link b{display:block;font:700 16px Manrope,sans-serif}
+.link span{color:var(--muted);font-size:13px}
+
+footer{border-top:1px solid var(--border);padding:28px 0 40px;color:var(--dim);font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center}
+footer a{color:var(--muted)}
+
+dialog{border:0;padding:0;background:transparent;max-width:min(1400px,96vw);max-height:94vh;color:var(--text);overflow:visible}
+dialog::backdrop{background:rgba(2,4,10,.9);backdrop-filter:blur(4px)}
+.lb{display:flex;flex-direction:column;gap:12px;align-items:center}
+.lb img{max-width:96vw;max-height:80vh;border-radius:12px;box-shadow:0 30px 80px -20px #000}
+.lb .cap{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;justify-content:center;font-size:14px;color:var(--muted);text-align:center}
+.lb .cap b{font:700 17px Manrope,sans-serif;color:#fff}
+.x{position:fixed;top:14px;right:16px;width:42px;height:42px;border-radius:50%;border:1px solid var(--border-h);background:rgba(15,20,40,.85);color:#fff;font-size:20px;cursor:pointer}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;padding-top:40px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .about{grid-template-columns:1fr;padding:22px}
+  .links{grid-template-columns:1fr}
+  .filters{align-items:flex-start}
+  nav{display:none}
+  .bar .btn-primary{margin-left:auto}
+}
+@media (max-width:480px){
+  .wrap{padding:0 16px}
+  .bar .btn-primary span{display:none}
+  .stat b{font-size:24px}
+  .ring{width:190px;height:190px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
 </head>
 <body>
-<h1>AstroHub</h1>
-<p>AstroHub is a personal tool of the amateur astrophotography project «Небо ближче» (Dnipro, Ukraine). It manages the owner's own telescope sessions and publishes short vertical videos (3D fly-throughs of the owner's astrophotos) to the owner's own YouTube channel and Telegram account.</p>
-<p>AstroHub — особистий інструмент аматорського астрофотопроєкту «Небо ближче» (Дніпро). Він веде власні сесії зйомки й публікує короткі вертикальні ролики (3D-прольоти власних астрофото) у власний YouTube-канал і Telegram автора.</p>
-<p>Telegram: <a href="https://t.me/nebo_blyzhche">t.me/nebo_blyzhche</a></p>
-<p><a href="privacy.html">Privacy policy / Політика конфіденційності</a></p>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.9 4.3 18.6 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L6 13.5l-4.9-1.5c-1.1-.3-1.1-1.1.2-1.6l19.2-7.4c.9-.3 1.7.2 1.4 1.3z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="2.6" fill="currentColor"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor"/><path d="m10 9 5 3-5 3z" fill="#050914"/></symbol>
+  <symbol id="i-scope" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m4 15 13-7 2 4-13 7zM10 15l-3 6M12 14l3 7M17 8l2-1 2 4-2 1"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+  <symbol id="i-house" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 11 12 4l9 7M5 10v10h14V10M3 15h18"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top"><img src="logo.jpg" alt=""><b>Небо ближче</b><span>астрофото з балкона</span></a>
+    <nav>
+      <a href="#challenge">Челендж</a>
+      <a href="#solar">Сонячна система</a>
+      <a href="#about">Про мене</a>
+    </nav>
+    <a class="btn btn-primary" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg><span>Telegram-канал</span></a>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <div class="hero">
+    <div>
+      <span class="eyebrow"><i></i><span id="updated">Оновлюється після кожної ночі</span></span>
+      <h1>Усе небо, яке видно<br><em>з одного балкона</em></h1>
+      <p class="lead">Привіт, я Костя. Знімаю туманності й галактики маленьким смарт-телескопом з міського балкона в Україні. Тут мій челендж: зняти все, що звідси взагалі можна побачити.</p>
+      <div class="cta">
+        <a class="btn btn-primary" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg>Читати в Telegram</a>
+        <a class="btn" data-link="astrobin" href="https://app.astrobin.com/u/nebo_blyzhche" target="_blank" rel="noopener"><svg><use href="#i-star"/></svg>Повні кадри на AstroBin</a>
+        <a class="btn" href="#challenge">Що вже знято</a>
+      </div>
+    </div>
+    <div class="card ring-card">
+      <h3>Челендж</h3>
+      <div class="ring">
+        <svg viewBox="0 0 220 220" width="100%" height="100%">
+          <circle cx="110" cy="110" r="94" fill="none" stroke="rgba(148,163,184,.14)" stroke-width="16"/>
+          <circle id="ring-progress" cx="110" cy="110" r="94" fill="none" stroke="#f59e0b" stroke-width="16" stroke-linecap="round" stroke-dasharray="0 999"/>
+          <circle id="ring-done" cx="110" cy="110" r="94" fill="none" stroke="#34d399" stroke-width="16" stroke-linecap="round" stroke-dasharray="0 999"/>
+        </svg>
+        <div class="center"><div class="big" id="ring-big">0</div><div class="of" id="ring-of">з … об'єктів</div></div>
+      </div>
+      <div class="legend">
+        <span style="--c:#34d399" id="lg-done">Знято</span>
+        <span style="--c:#f59e0b" id="lg-progress">Збираю світло</span>
+        <span style="--c:rgba(148,163,184,.35)" id="lg-todo">Чекають</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="card stat"><small>Ночей біля телескопа</small><b id="st-nights">…</b><span id="st-since"></span></div>
+    <div class="card stat"><small>Годин світла глибокого неба</small><b id="st-hours">…</b><span>сумарна витримка всіх кадрів</span></div>
+    <div class="card stat"><small>Об'єктів знято</small><b id="st-done">…</b><span id="st-left"></span></div>
+    <div class="card stat"><small>Опублікованих фото</small><b id="st-photos">…</b><span>у каналі й на AstroBin</span></div>
+  </div>
+
+  <section id="challenge">
+    <div class="sec-head">
+      <div>
+        <h2>Челендж: що знято, а що попереду</h2>
+        <p>Для кожного об'єкта я поставив собі мету: скільки годин світла треба зібрати, щоб кадр вийшов чистим під міським небом. Смужка показує, скільки вже є.</p>
+      </div>
+      <div class="filters">
+        <div class="chips" id="f-status" role="group" aria-label="Стан"></div>
+        <div class="chips" id="f-type" role="group" aria-label="Тип"></div>
+      </div>
+    </div>
+    <div class="grid" id="grid"><div class="empty">Завантажую…</div></div>
+  </section>
+
+  <section id="solar">
+    <div class="sec-head"><div><h2>Сонячна система</h2><p>Місяць, Сонце й планети знімаються інакше: тисячі коротких кадрів, з яких лишаються найчіткіші. Тут без відсотків, просто найкращі спроби.</p></div></div>
+    <div class="solar" id="solar-grid"></div>
+  </section>
+
+  <section id="about">
+    <div class="card about">
+      <div>
+        <h2>Про мене і цей балкон</h2>
+        <p>Я Костя, вдень пишу код, а ночами збираю світло туманностей і галактик. Телескоп у мене з серпня 2026 року: маленький смарт-телескоп DWARF Mini, який сам наводиться, сам веде об'єкт і складає кадри.</p>
+        <p>Умови в мене, чесно кажучи, так собі. Козирок балкона ховає половину неба, тож мені дістається лише його східна частина. До опівночі все засвічують вуличні ліхтарі, та й після них міське небо лишається світлим. Тому кожен кадр тут це години світла, зібрані за кілька ночей, а потім довга обробка.</p>
+        <p>Часто телескоп працює сам за планом, поки я сплю, а вранці я дивлюся, що вийшло. Цю сторінку теж ніхто не оновлює руками: вона сама підтягує свіжі цифри з моєї домашньої системи.</p>
+        <p>Як знімаю, що вийшло і що ні, розповідаю в Telegram-каналі «Небо ближче». Заходьте, там можна й запитати.</p>
+        <p class="sign">Чистого неба!</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="ic"><svg><use href="#i-scope"/></svg></div><div><b>DWARF Mini</b><span>смарт-телескоп, фільтр на водень і кисень для туманностей</span></div></div>
+        <div class="fact"><div class="ic"><svg><use href="#i-house"/></svg></div><div><b>Міський балкон</b><span>видно лише східну половину неба, світле небо міста</span></div></div>
+        <div class="fact"><div class="ic"><svg><use href="#i-clock"/></svg></div><div><b>Найкраще після опівночі</b><span>до 00:00 світять вуличні ліхтарі, рятує лише бленда</span></div></div>
+        <div class="fact"><div class="ic"><svg><use href="#i-moon"/></svg></div><div><b>Сезони</b><span>частина об'єктів просто ще не зійшла на моєму шматочку неба</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="links">
+    <div class="sec-head"><div><h2>Де ще мене знайти</h2></div></div>
+    <div class="links">
+      <a class="card link" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener"><div class="ic" style="background:#229ED9"><svg><use href="#i-tg"/></svg></div><div><b>Telegram «Небо ближче»</b><span>головне місце: нові кадри й історії ночей</span></div></a>
+      <a class="card link" data-link="astrobin" href="https://app.astrobin.com/u/nebo_blyzhche" target="_blank" rel="noopener"><div class="ic" style="background:#6d5cff"><svg><use href="#i-star"/></svg></div><div><b>AstroBin</b><span>кадри в повному розмірі з технічними деталями</span></div></a>
+      <a class="card link" data-link="youtube" href="https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw" target="_blank" rel="noopener"><div class="ic" style="background:#e11d48"><svg><use href="#i-play"/></svg></div><div><b>YouTube Shorts</b><span>3D-прольоти крізь мої знімки</span></div></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Костя, «Небо ближче». Усі знімки власні.</span>
+    <span id="foot-upd"></span>
+    <a href="privacy.html">Privacy policy</a>
+  </div>
+</footer>
+
+<dialog id="lb" aria-label="Перегляд кадру">
+  <button class="x" id="lb-x" aria-label="Закрити">✕</button>
+  <div class="lb"><img id="lb-img" alt=""><div class="cap" id="lb-cap"></div></div>
+</dialog>
+
+<script>
+(() => {
+  const TYPE = {nebula: 'Туманність', galaxy: 'Галактика', cluster: 'Скупчення'};
+  const TYPE_PL = {nebula: 'Туманності', galaxy: 'Галактики', cluster: 'Скупчення'};
+  const STATUS = {done: 'Знято', progress: 'Збираю світло', todo: 'Чекає свого часу'};
+  const STATUS_F = {all: 'Усі', done: 'Знято', progress: 'У процесі', todo: 'Попереду'};
+  const MONTHS = ['січня','лютого','березня','квітня','травня','червня','липня','серпня','вересня','жовтня','листопада','грудня'];
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const dur = sec => { const h = Math.floor(sec / 3600), m = Math.round(sec % 3600 / 60); return h ? `${h} год${m ? ' ' + m + ' хв' : ''}` : `${m} хв`; };
+  const durMin = min => min >= 60 ? `${Math.floor(min / 60)} год${min % 60 ? ' ' + min % 60 + ' хв' : ''}` : `${min} хв`;
+  const date = iso => { if (!iso) return ''; const d = new Date(iso); return `${d.getDate()} ${MONTHS[d.getMonth()]}`; };
+  const plural = (n, one, few, many) => { const a = n % 10, b = n % 100; return a === 1 && b !== 11 ? one : a >= 2 && a <= 4 && (b < 12 || b > 14) ? few : many; };
+  const title = r => r.designation ? `${r.designation} · ${r.name}` : r.name;
+
+  let data, fStatus = 'all', fType = 'all';
+
+  function card(r, solar) {
+    const p = r.photo;
+    const pic = p
+      ? `<img src="${esc(p.thumb)}" alt="${esc(title(r))}" loading="lazy" width="640" height="480">`
+      : `<div class="ph"><b>${esc(r.designation || r.name)}</b><span>${r.status === 'todo' ? 'ще не знімав' : 'кадр в обробці'}</span></div>`;
+    const badge = solar ? '' : `<span class="badge ${r.status}">${STATUS[r.status]}${r.status === 'progress' ? ' · ' + r.percent + '%' : ''}</span>`;
+    const sub = solar
+      ? (r.nights ? `${r.nights} ${plural(r.nights, 'ніч', 'ночі', 'ночей')} спостережень` : '')
+      : [TYPE[r.type], r.constellation].filter(Boolean).join(' · ');
+    const name = r.designation ? `${esc(r.name)}<small>${esc(r.designation)} · ${esc(sub)}</small>` : `${esc(r.name)}<small>${esc(sub)}</small>`;
+    const progress = solar ? '' : `
+      <div class="bar-p" title="${r.percent}%"><i style="width:${Math.max(r.percent, r.status === 'todo' ? 0 : 3)}%"></i></div>
+      <div class="meta"><span><b>${r.integration_sec ? dur(r.integration_sec) : '0'}</b> з ${durMin(r.target_min)}</span><span>${r.nights ? r.nights + ' ' + plural(r.nights, 'ніч', 'ночі', 'ночей') : 'попереду'}</span></div>`;
+    return `<article class="card t ${solar ? 'done' : r.status}${p ? ' has-photo' : ''}" data-id="${r.id}" ${p ? 'tabindex="0" role="button" aria-label="Відкрити кадр ' + esc(title(r)) + '"' : ''}>
+      <div class="pic">${pic}${badge}</div>
+      <div class="body"><h3>${name}</h3>${progress}</div>
+    </article>`;
+  }
+
+  function chips(el, opts, cur, onPick) {
+    el.innerHTML = opts.map(([k, label, n]) => `<button class="chip" data-k="${k}" aria-pressed="${k === cur}">${label}${n != null ? `<span class="n">${n}</span>` : ''}</button>`).join('');
+    el.onclick = e => { const b = e.target.closest('.chip'); if (b) onPick(b.dataset.k); };
+  }
+
+  function renderGrid() {
+    const rows = data.challenge.filter(r => (fStatus === 'all' || r.status === fStatus) && (fType === 'all' || r.type === fType));
+    $('#grid').innerHTML = rows.length ? rows.map(r => card(r)).join('') : '<div class="empty">Тут поки порожньо.</div>';
+    const cnt = k => data.challenge.filter(r => (k === 'all' || r.status === k) && (fType === 'all' || r.type === fType)).length;
+    chips($('#f-status'), Object.entries(STATUS_F).map(([k, l]) => [k, l, cnt(k)]), fStatus, k => { fStatus = k; renderGrid(); });
+    const types = ['all', ...Object.keys(TYPE).filter(t => data.challenge.some(r => r.type === t))];
+    chips($('#f-type'), types.map(t => [t, t === 'all' ? 'Усі типи' : TYPE_PL[t]]), fType, k => { fType = k; renderGrid(); });
+  }
+
+  function ring(t) {
+    const C = 2 * Math.PI * 94, done = t.done / t.objects, prog = (t.done + t.progress) / t.objects;
+    $('#ring-done').setAttribute('stroke-dasharray', `${C * done} ${C}`);
+    $('#ring-progress').setAttribute('stroke-dasharray', `${C * prog} ${C}`);
+    $('#ring-big').textContent = t.done;
+    $('#ring-of').textContent = `з ${t.objects} об'єктів знято`;
+    $('#lg-done').textContent = `Знято ${t.done}`;
+    $('#lg-progress').textContent = `У процесі ${t.progress}`;
+    $('#lg-todo').textContent = `Чекають ${t.todo}`;
+  }
+
+  function open(r) {
+    const p = r.photo; if (!p) return;
+    $('#lb-img').src = p.img; $('#lb-img').alt = title(r);
+    const bits = [`<b>${esc(title(r))}</b>`];
+    if (r.integration_sec) bits.push(`${dur(r.integration_sec)} світла за ${r.nights} ${plural(r.nights, 'ніч', 'ночі', 'ночей')}`);
+    if (p.date) bits.push(`кадр від ${date(p.date)}`);
+    if (p.astrobin) bits.push(`<a class="btn" href="${esc(p.astrobin)}" target="_blank" rel="noopener">Повний розмір на AstroBin</a>`);
+    $('#lb-cap').innerHTML = bits.join('<span>·</span>');
+    $('#lb').showModal();
+  }
+
+  function bindOpen(container, list) {
+    const go = e => {
+      const a = e.target.closest('.t.has-photo'); if (!a) return;
+      if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return;
+      e.preventDefault(); open(list.find(r => String(r.id) === a.dataset.id));
+    };
+    container.addEventListener('click', go); container.addEventListener('keydown', go);
+  }
+
+  const lb = $('#lb');
+  $('#lb-x').onclick = () => lb.close();
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+
+  fetch('data.json', {cache: 'no-cache'}).then(r => r.json()).then(d => {
+    data = d;
+    const t = d.totals;
+    for (const [k, url] of Object.entries(d.links || {})) document.querySelectorAll(`[data-link="${k}"]`).forEach(a => a.href = url);
+    ring(t);
+    $('#st-nights').textContent = t.nights;
+    $('#st-since').textContent = t.first_night ? `з ${date(t.first_night)} ${new Date(t.first_night).getFullYear()}` : '';
+    $('#st-hours').textContent = String(t.deep_hours).replace('.', ',');
+    $('#st-done').textContent = `${t.done} з ${t.objects}`;
+    $('#st-left').textContent = `ще ${t.progress + t.todo} попереду`;
+    $('#st-photos').textContent = t.photos;
+    const upd = new Date(d.generated_at);
+    const updTxt = `Оновлено ${date(d.generated_at)} о ${String(upd.getHours()).padStart(2, '0')}:${String(upd.getMinutes()).padStart(2, '0')}`;
+    $('#updated').textContent = updTxt;
+    $('#foot-upd').textContent = updTxt + ' автоматично';
+    renderGrid();
+    bindOpen($('#grid'), d.challenge);
+    $('#solar-grid').innerHTML = d.solar.map(r => card(r, true)).join('');
+    bindOpen($('#solar-grid'), d.solar);
+  }).catch(() => { $('#grid').innerHTML = '<div class="empty">Не вдалося завантажити дані. Спробуйте оновити сторінку.</div>'; });
+})();
+</script>
 </body>
 </html>
