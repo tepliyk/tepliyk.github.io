@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-03T23:10:32+03:00",
+    "generated_at": "2026-10-04T12:10:19+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -7,32 +7,15 @@
     },
     "totals": {
         "objects": 37,
-        "done": 18,
+        "done": 17,
         "progress": 9,
-        "todo": 10,
-        "nights": 38,
-        "deep_hours": 98.8,
+        "todo": 11,
+        "nights": 39,
+        "deep_hours": 94.1,
         "first_night": "2026-08-12",
         "photos": 48
     },
     "challenge": [
-        {
-            "id": 28,
-            "slug": "ngc-2244",
-            "designation": "NGC 2244",
-            "name": "Туманність Розетка",
-            "type": "nebula",
-            "constellation": "Єдиноріг",
-            "nights": 2,
-            "integration_sec": 16620,
-            "first": "2026-09-25",
-            "last": "2026-10-03",
-            "photo": null,
-            "difficulty": "normal",
-            "target_min": 240,
-            "percent": 100,
-            "status": "done"
-        },
         {
             "id": 47,
             "slug": "ngc-2174",
@@ -95,13 +78,13 @@
             "first": "2026-09-05",
             "last": "2026-10-01",
             "photo": {
-                "title": "Туманність Серце (IC 1805) зі скупченням Melotte 15 у центрі",
+                "title": "IC 1805 Серце, 6 ночей, 4 год 57 хв, v16",
                 "img": "img/ic-1805.jpg",
                 "thumb": "img/ic-1805_t.jpg",
                 "w": 1800,
                 "h": 999,
-                "date": "2026-09-09",
-                "astrobin": null
+                "date": "2026-10-02",
+                "astrobin": "https://app.astrobin.com/i/hxz4hk"
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -719,6 +702,23 @@
             "status": "todo"
         },
         {
+            "id": 28,
+            "slug": "ngc-2244",
+            "designation": "NGC 2244",
+            "name": "Туманність Розетка",
+            "type": "nebula",
+            "constellation": "Єдиноріг",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "photo": null,
+            "difficulty": "normal",
+            "target_min": 240,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
             "id": 35,
             "slug": "m78",
             "designation": "M78",
@@ -846,10 +846,10 @@
             "name": "Місяць",
             "type": "moon",
             "constellation": null,
-            "nights": 13,
-            "integration_sec": 58,
+            "nights": 14,
+            "integration_sec": 67,
             "first": "2026-08-23",
-            "last": "2026-09-29",
+            "last": "2026-10-04",
             "photo": {
                 "title": "Ви обрали Місяць — 01_misyats_pidpysy_1600",
                 "img": "img/misiac.jpg",
