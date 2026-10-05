@@ -111,6 +111,22 @@ section{margin:0 0 64px;scroll-margin-top:80px}
 
 .solar{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
 
+.mz-head{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:14px;color:var(--muted);font-size:13.5px}
+.mz-head b{color:#fff;font:800 22px Manrope,sans-serif}
+.mz-bar{flex:1 1 220px;height:8px;border-radius:99px;background:rgba(148,163,184,.14);overflow:hidden;display:flex}
+.mz-bar i{display:block;height:100%}
+.mz-bar .c{background:var(--ok)}.mz-bar .p{background:#f59e0b}
+.mz-lg{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
+.mz-lg span::before{content:'';display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;background:var(--c)}
+.mz{display:grid;grid-template-columns:repeat(auto-fill,minmax(54px,1fr));gap:6px}
+.q{position:relative;aspect-ratio:1;border-radius:10px;border:1px solid var(--border);background:rgba(15,20,40,.5);display:grid;place-items:center;font:700 12.5px Manrope,sans-serif;color:var(--muted);overflow:hidden}
+.q small{position:absolute;right:5px;top:3px;font:600 10px Inter,sans-serif;color:#fbbf24}
+.q i{position:absolute;left:0;bottom:0;height:3px;background:#f59e0b;border-radius:0 2px 0 0}
+.q.captured{background:rgba(52,211,153,.16);border-color:rgba(52,211,153,.5);color:#a7f3d0}
+.q.progress{border-color:rgba(245,158,11,.45);color:#fde68a}
+.q.unreachable{opacity:.28}
+.q.has-photo{cursor:zoom-in;transition:.15s}.q.has-photo:hover{transform:translateY(-2px);border-color:#34d399}
+
 .about{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;padding:30px}
 .about h2{font-size:28px;margin-bottom:14px}
 .about p{color:#cbd5e1;margin:0 0 14px}
@@ -152,6 +168,8 @@ dialog::backdrop{background:rgba(2,4,10,.9);backdrop-filter:blur(4px)}
   .bar .btn-primary{margin-left:auto}
 }
 @media (max-width:480px){
+  .mz{grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:5px}
+  .q{border-radius:8px;font-size:11px}
   .wrap{padding:0 16px}
   .bar .btn-primary span{display:none}
   .stat b{font-size:24px}
@@ -176,6 +194,7 @@ dialog::backdrop{background:rgba(2,4,10,.9);backdrop-filter:blur(4px)}
     <a class="brand" href="#top"><img src="logo.jpg" alt=""><b>Небо ближче</b><span>астрофото з балкона</span></a>
     <nav>
       <a href="#challenge">Челендж</a>
+      <a href="#messier">Мессьє</a>
       <a href="#solar">Сонячна система</a>
       <a href="#about">Про мене</a>
     </nav>
@@ -232,6 +251,20 @@ dialog::backdrop{background:rgba(2,4,10,.9);backdrop-filter:blur(4px)}
       </div>
     </div>
     <div class="grid" id="grid"><div class="empty">Завантажую…</div></div>
+  </section>
+
+  <section id="messier">
+    <div class="sec-head">
+      <div>
+        <h2>Мессьє з балкона</h2>
+        <p>Каталог Мессьє: 110 найвідоміших туманностей, галактик і скупчень. З мого балкона видно лише східну половину неба, тож частина об'єктів недосяжна в принципі. Решту я збираю по одному, і ось як іде.</p>
+      </div>
+    </div>
+    <div class="card" style="padding:18px 20px">
+      <div class="mz-head"><b id="mz-big">…</b><span id="mz-of">з … досяжних знято</span><div class="mz-bar"><i class="c" id="mz-c"></i><i class="p" id="mz-p"></i></div><span id="mz-left"></span></div>
+      <div class="mz" id="mz"></div>
+      <div class="mz-lg" style="margin-top:12px"><span style="--c:#34d399">Знято</span><span style="--c:#f59e0b">Збираю світло</span><span style="--c:rgba(148,163,184,.35)">Попереду</span><span style="--c:rgba(148,163,184,.12)">Недосяжні з балкона</span></div>
+    </div>
   </section>
 
   <section id="solar">
@@ -342,6 +375,27 @@ dialog::backdrop{background:rgba(2,4,10,.9);backdrop-filter:blur(4px)}
     $('#lg-todo').textContent = `Чекають ${t.todo}`;
   }
 
+  const MZ = {captured: 'Знято', progress: 'Збираю світло', todo: 'Попереду', unreachable: 'Недосяжний з балкона'};
+  function messier(mz, challenge) {
+    const t = mz.totals, bySlug = Object.fromEntries(challenge.filter(r => r.photo).map(r => [r.slug, r]));
+    $('#mz-big').textContent = t.captured;
+    $('#mz-of').textContent = `з ${t.reachable} досяжних знято`;
+    $('#mz-c').style.width = (t.captured / t.reachable * 100) + '%';
+    $('#mz-p').style.width = (t.progress / t.reachable * 100) + '%';
+    $('#mz-left').textContent = t.progress ? `ще ${t.progress} у процесі, ${t.todo} попереду` : `${t.todo} попереду`;
+    $('#mz').innerHTML = mz.objects.map(o => {
+      const r = o.slug && bySlug[o.slug];
+      const tip = [`M ${o.m}${o.name ? ' · ' + o.name : ''}`, MZ[o.status] + (o.status === 'progress' ? ` ${o.percent}%` : ''), o.status === 'todo' && o.season_from ? 'вікно з ' + date(o.season_from) : '', o.uncertain ? 'на краю видимості' : ''].filter(Boolean).join(' · ');
+      return `<div class="q ${o.status}${r ? ' has-photo' : ''}" title="${esc(tip)}" data-slug="${esc(o.slug || '')}" ${r ? 'tabindex="0" role="button"' : ''}>${o.m}${o.uncertain ? '<small>?</small>' : ''}${o.status === 'progress' ? `<i style="width:${Math.max(o.percent, 4)}%"></i>` : ''}</div>`;
+    }).join('');
+    const go = e => {
+      const q = e.target.closest('.q.has-photo'); if (!q) return;
+      if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return;
+      e.preventDefault(); open(bySlug[q.dataset.slug]);
+    };
+    $('#mz').addEventListener('click', go); $('#mz').addEventListener('keydown', go);
+  }
+
   function open(r) {
     const p = r.photo; if (!p) return;
     $('#lb-img').src = p.img; $('#lb-img').alt = title(r);
@@ -385,6 +439,7 @@ dialog::backdrop{background:rgba(2,4,10,.9);backdrop-filter:blur(4px)}
     bindOpen($('#grid'), d.challenge);
     $('#solar-grid').innerHTML = d.solar.map(r => card(r, true)).join('');
     bindOpen($('#solar-grid'), d.solar);
+    if (d.messier) messier(d.messier, d.challenge);
   }).catch(() => { $('#grid').innerHTML = '<div class="empty">Не вдалося завантажити дані. Спробуйте оновити сторінку.</div>'; });
 })();
 </script>

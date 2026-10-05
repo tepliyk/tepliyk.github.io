@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-04T12:10:19+03:00",
+    "generated_at": "2026-10-05T12:10:20+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -8,10 +8,10 @@
     "totals": {
         "objects": 37,
         "done": 17,
-        "progress": 9,
-        "todo": 11,
-        "nights": 39,
-        "deep_hours": 94.1,
+        "progress": 10,
+        "todo": 10,
+        "nights": 40,
+        "deep_hours": 98.6,
         "first_night": "2026-08-12",
         "photos": 48
     },
@@ -517,6 +517,48 @@
             "status": "progress"
         },
         {
+            "id": 28,
+            "slug": "ngc-2244",
+            "designation": "NGC 2244",
+            "name": "Туманність Розетка",
+            "type": "nebula",
+            "constellation": "Єдиноріг",
+            "nights": 1,
+            "integration_sec": 9900,
+            "first": "2026-10-05",
+            "last": "2026-10-05",
+            "photo": {
+                "title": "Розетка: кадр із тінню кабелю, 05.10 02:24",
+                "img": "img/ngc-2244.jpg",
+                "thumb": "img/ngc-2244_t.jpg",
+                "w": 960,
+                "h": 540,
+                "date": "2026-10-05",
+                "astrobin": null
+            },
+            "difficulty": "normal",
+            "target_min": 240,
+            "percent": 68,
+            "status": "progress"
+        },
+        {
+            "id": 49,
+            "slug": "ic-410",
+            "designation": "IC 410",
+            "name": "Туманність Пуголовки",
+            "type": "nebula",
+            "constellation": "Візничий",
+            "nights": 2,
+            "integration_sec": 9120,
+            "first": "2026-10-03",
+            "last": "2026-10-05",
+            "photo": null,
+            "difficulty": "normal",
+            "target_min": 240,
+            "percent": 63,
+            "status": "progress"
+        },
+        {
             "id": 8,
             "slug": "m34",
             "designation": "M34",
@@ -617,23 +659,6 @@
             "status": "progress"
         },
         {
-            "id": 49,
-            "slug": "ic-410",
-            "designation": "IC 410",
-            "name": "Туманність Пуголовки",
-            "type": "nebula",
-            "constellation": "Візничий",
-            "nights": 1,
-            "integration_sec": 3060,
-            "first": "2026-10-03",
-            "last": "2026-10-03",
-            "photo": null,
-            "difficulty": "normal",
-            "target_min": 240,
-            "percent": 21,
-            "status": "progress"
-        },
-        {
             "id": 48,
             "slug": "ngc-281",
             "designation": "NGC 281",
@@ -691,23 +716,6 @@
             "name": "Туманність Гантель",
             "type": "nebula",
             "constellation": "Лисичка",
-            "nights": 0,
-            "integration_sec": 0,
-            "first": null,
-            "last": null,
-            "photo": null,
-            "difficulty": "normal",
-            "target_min": 240,
-            "percent": 0,
-            "status": "todo"
-        },
-        {
-            "id": 28,
-            "slug": "ngc-2244",
-            "designation": "NGC 2244",
-            "name": "Туманність Розетка",
-            "type": "nebula",
-            "constellation": "Єдиноріг",
             "nights": 0,
             "integration_sec": 0,
             "first": null,
@@ -846,10 +854,10 @@
             "name": "Місяць",
             "type": "moon",
             "constellation": null,
-            "nights": 14,
+            "nights": 15,
             "integration_sec": 67,
             "first": "2026-08-23",
-            "last": "2026-10-04",
+            "last": "2026-10-05",
             "photo": {
                 "title": "Ви обрали Місяць — 01_misyats_pidpysy_1600",
                 "img": "img/misiac.jpg",
@@ -867,10 +875,10 @@
             "name": "Сатурн",
             "type": "planet",
             "constellation": null,
-            "nights": 3,
-            "integration_sec": 547,
+            "nights": 4,
+            "integration_sec": 705,
             "first": "2026-08-21",
-            "last": "2026-08-29",
+            "last": "2026-10-04",
             "photo": {
                 "title": "Сатурн. Маємо що маємо — 01_saturn_29_08_748_kadriv",
                 "img": "img/saturn.jpg",
@@ -914,6 +922,1139 @@
             "first": "2026-09-19",
             "last": "2026-09-19",
             "photo": null
+        },
+        {
+            "id": 50,
+            "slug": "mars",
+            "designation": null,
+            "name": "Марс",
+            "type": "planet",
+            "constellation": null,
+            "nights": 1,
+            "integration_sec": 6,
+            "first": "2026-10-05",
+            "last": "2026-10-05",
+            "photo": {
+                "title": "Марс на денному небі, 05.10.2026 06:58",
+                "img": "img/mars.jpg",
+                "thumb": "img/mars_t.jpg",
+                "w": 480,
+                "h": 480,
+                "date": "2026-10-05",
+                "astrobin": null
+            }
         }
-    ]
+    ],
+    "messier": {
+        "totals": {
+            "captured": 15,
+            "progress": 0,
+            "todo": 85,
+            "unreachable": 10,
+            "reachable": 100,
+            "left_hours": 148.8
+        },
+        "objects": [
+            {
+                "m": 1,
+                "name": "Crab Nebula",
+                "type": "nebula",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m1"
+            },
+            {
+                "m": 2,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 3,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-29",
+                "slug": null
+            },
+            {
+                "m": 4,
+                "name": null,
+                "type": "cluster",
+                "status": "unreachable",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": null,
+                "slug": null
+            },
+            {
+                "m": 5,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-12-10",
+                "slug": null
+            },
+            {
+                "m": 6,
+                "name": "Butterfly Cluster",
+                "type": "cluster",
+                "status": "unreachable",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": null,
+                "slug": null
+            },
+            {
+                "m": 7,
+                "name": "Ptolemy's Cluster",
+                "type": "cluster",
+                "status": "unreachable",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": null,
+                "slug": null
+            },
+            {
+                "m": 8,
+                "name": "Lagoon Nebula",
+                "type": "nebula",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-04-27",
+                "slug": null
+            },
+            {
+                "m": 9,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-02-20",
+                "slug": null
+            },
+            {
+                "m": 10,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-01-10",
+                "slug": null
+            },
+            {
+                "m": 11,
+                "name": "Amas de l'Ecu de Sobieski",
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-02-23",
+                "slug": null
+            },
+            {
+                "m": 12,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-01-04",
+                "slug": null
+            },
+            {
+                "m": 13,
+                "name": "Hercules Globular Cluster",
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-11-25",
+                "slug": "m13"
+            },
+            {
+                "m": 14,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-01-19",
+                "slug": null
+            },
+            {
+                "m": 15,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 16,
+                "name": "Eagle Nebula",
+                "type": "nebula",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-03-01",
+                "slug": null
+            },
+            {
+                "m": 17,
+                "name": "Checkmark Nebula",
+                "type": "nebula",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-03-12",
+                "slug": null
+            },
+            {
+                "m": 18,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-03-15",
+                "slug": null
+            },
+            {
+                "m": 19,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-04-22",
+                "slug": null
+            },
+            {
+                "m": 20,
+                "name": "Trifid Nebula",
+                "type": "nebula",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-04-11",
+                "slug": null
+            },
+            {
+                "m": 21,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-04-10",
+                "slug": null
+            },
+            {
+                "m": 22,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-05-13",
+                "slug": null
+            },
+            {
+                "m": 23,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-03-12",
+                "slug": null
+            },
+            {
+                "m": 24,
+                "name": "Small Sgr Star Cloud",
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-03-20",
+                "slug": null
+            },
+            {
+                "m": 25,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-04-04",
+                "slug": null
+            },
+            {
+                "m": 26,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-03-01",
+                "slug": null
+            },
+            {
+                "m": 27,
+                "name": "Dumbbell Nebula",
+                "type": "nebula",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-01-26",
+                "slug": "m27"
+            },
+            {
+                "m": 28,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-05-16",
+                "slug": null
+            },
+            {
+                "m": 29,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-01-09",
+                "slug": null
+            },
+            {
+                "m": 30,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 31,
+                "name": "Andromeda Galaxy",
+                "type": "galaxy",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m31"
+            },
+            {
+                "m": 32,
+                "name": null,
+                "type": "galaxy",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m31"
+            },
+            {
+                "m": 33,
+                "name": "Triangulum Galaxy",
+                "type": "galaxy",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m33"
+            },
+            {
+                "m": 34,
+                "name": null,
+                "type": "cluster",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m34"
+            },
+            {
+                "m": 35,
+                "name": null,
+                "type": "cluster",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m35"
+            },
+            {
+                "m": 36,
+                "name": null,
+                "type": "cluster",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m36"
+            },
+            {
+                "m": 37,
+                "name": null,
+                "type": "cluster",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m37"
+            },
+            {
+                "m": 38,
+                "name": null,
+                "type": "cluster",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m38"
+            },
+            {
+                "m": 39,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-01-06",
+                "slug": null
+            },
+            {
+                "m": 40,
+                "name": null,
+                "type": "other",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 41,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 42,
+                "name": "Great Orion Nebula",
+                "type": "nebula",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m42"
+            },
+            {
+                "m": 43,
+                "name": "Mairan's Nebula",
+                "type": "nebula",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m42"
+            },
+            {
+                "m": 44,
+                "name": "Beehive",
+                "type": "cluster",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m44"
+            },
+            {
+                "m": 45,
+                "name": "Pleiades",
+                "type": "cluster",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m45"
+            },
+            {
+                "m": 46,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 47,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 48,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 49,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-11-02",
+                "slug": null
+            },
+            {
+                "m": 50,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 51,
+                "name": "Whirlpool Galaxy",
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m51"
+            },
+            {
+                "m": 52,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 53,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-11-01",
+                "slug": null
+            },
+            {
+                "m": 54,
+                "name": null,
+                "type": "cluster",
+                "status": "unreachable",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": null,
+                "slug": null
+            },
+            {
+                "m": 55,
+                "name": null,
+                "type": "cluster",
+                "status": "unreachable",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": null,
+                "slug": null
+            },
+            {
+                "m": 56,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-01-04",
+                "slug": null
+            },
+            {
+                "m": 57,
+                "name": "Ring Nebula",
+                "type": "nebula",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-12-26",
+                "slug": null
+            },
+            {
+                "m": 58,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-11-01",
+                "slug": null
+            },
+            {
+                "m": 59,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-11-01",
+                "slug": null
+            },
+            {
+                "m": 60,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-11-01",
+                "slug": null
+            },
+            {
+                "m": 61,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-11-04",
+                "slug": null
+            },
+            {
+                "m": 62,
+                "name": null,
+                "type": "cluster",
+                "status": "unreachable",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": null,
+                "slug": null
+            },
+            {
+                "m": 63,
+                "name": "Sunflower Galaxy",
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-10",
+                "slug": "m63"
+            },
+            {
+                "m": 64,
+                "name": "Black Eye Galaxy",
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-27",
+                "slug": null
+            },
+            {
+                "m": 65,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-16",
+                "slug": "m65"
+            },
+            {
+                "m": 66,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-16",
+                "slug": "m65"
+            },
+            {
+                "m": 67,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 68,
+                "name": null,
+                "type": "cluster",
+                "status": "unreachable",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": null,
+                "slug": null
+            },
+            {
+                "m": 69,
+                "name": null,
+                "type": "cluster",
+                "status": "unreachable",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": null,
+                "slug": null
+            },
+            {
+                "m": 70,
+                "name": null,
+                "type": "cluster",
+                "status": "unreachable",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": null,
+                "slug": null
+            },
+            {
+                "m": 71,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-02-01",
+                "slug": null
+            },
+            {
+                "m": 72,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 73,
+                "name": null,
+                "type": "other",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 74,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 75,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 76,
+                "name": "Barbell Nebula",
+                "type": "nebula",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 77,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 78,
+                "name": null,
+                "type": "nebula",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m78"
+            },
+            {
+                "m": 79,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 80,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-02-15",
+                "slug": null
+            },
+            {
+                "m": 81,
+                "name": "Bode's Galaxy",
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": true,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 82,
+                "name": "Cigar Galaxy",
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": true,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 83,
+                "name": "Southern Pinwheel Galaxy",
+                "type": "galaxy",
+                "status": "unreachable",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": null,
+                "slug": null
+            },
+            {
+                "m": 84,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-29",
+                "slug": null
+            },
+            {
+                "m": 85,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-24",
+                "slug": null
+            },
+            {
+                "m": 86,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-29",
+                "slug": null
+            },
+            {
+                "m": 87,
+                "name": "Virgo Galaxy",
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-30",
+                "slug": null
+            },
+            {
+                "m": 88,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-29",
+                "slug": null
+            },
+            {
+                "m": 89,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-31",
+                "slug": null
+            },
+            {
+                "m": 90,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-31",
+                "slug": null
+            },
+            {
+                "m": 91,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-29",
+                "slug": null
+            },
+            {
+                "m": 92,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-11-22",
+                "slug": null
+            },
+            {
+                "m": 93,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-21",
+                "slug": null
+            },
+            {
+                "m": 94,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-06",
+                "slug": null
+            },
+            {
+                "m": 95,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-10",
+                "slug": null
+            },
+            {
+                "m": 96,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-11",
+                "slug": null
+            },
+            {
+                "m": 97,
+                "name": "Owl Nebula",
+                "type": "nebula",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 98,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-24",
+                "slug": null
+            },
+            {
+                "m": 99,
+                "name": "Coma Pinwheel",
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-26",
+                "slug": null
+            },
+            {
+                "m": 100,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-26",
+                "slug": null
+            },
+            {
+                "m": 101,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m101"
+            },
+            {
+                "m": 102,
+                "name": "Spindle",
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-14",
+                "slug": null
+            },
+            {
+                "m": 103,
+                "name": null,
+                "type": "cluster",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m103"
+            },
+            {
+                "m": 104,
+                "name": "Sombrero Galaxy",
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-11-24",
+                "slug": null
+            },
+            {
+                "m": 105,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-10",
+                "slug": null
+            },
+            {
+                "m": 106,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m106"
+            },
+            {
+                "m": 107,
+                "name": null,
+                "type": "cluster",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2027-01-18",
+                "slug": null
+            },
+            {
+                "m": 108,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 109,
+                "name": null,
+                "type": "galaxy",
+                "status": "todo",
+                "percent": 0,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": null
+            },
+            {
+                "m": 110,
+                "name": null,
+                "type": "galaxy",
+                "status": "captured",
+                "percent": 100,
+                "uncertain": false,
+                "season_from": "2026-10-05",
+                "slug": "m31"
+            }
+        ]
+    }
 }
