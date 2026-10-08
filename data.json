@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-07T12:10:20+03:00",
+    "generated_at": "2026-10-08T12:10:22+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -7,15 +7,57 @@
     },
     "totals": {
         "objects": 37,
-        "done": 19,
+        "done": 20,
         "progress": 8,
-        "todo": 10,
-        "nights": 42,
-        "deep_hours": 114.4,
+        "todo": 9,
+        "nights": 43,
+        "deep_hours": 119.7,
         "first_night": "2026-08-12",
         "photos": 48
     },
     "challenge": [
+        {
+            "id": 28,
+            "slug": "ngc-2244",
+            "designation": "NGC 2244",
+            "name": "Туманність Розетка",
+            "type": "nebula",
+            "constellation": "Єдиноріг",
+            "nights": 6,
+            "integration_sec": 56100,
+            "first": "2026-09-25",
+            "last": "2026-10-08",
+            "photo": {
+                "title": "Розетка: кадр із тінню кабелю, 05.10 02:24",
+                "img": "img/ngc-2244.jpg",
+                "thumb": "img/ngc-2244_t.jpg",
+                "w": 960,
+                "h": 540,
+                "date": "2026-10-05",
+                "astrobin": null
+            },
+            "difficulty": "normal",
+            "target_min": 240,
+            "percent": 100,
+            "status": "done"
+        },
+        {
+            "id": 48,
+            "slug": "ngc-281",
+            "designation": "NGC 281",
+            "name": "Туманність Пакмен",
+            "type": "nebula",
+            "constellation": "Кассіопея",
+            "nights": 4,
+            "integration_sec": 18030,
+            "first": "2026-10-01",
+            "last": "2026-10-07",
+            "photo": null,
+            "difficulty": "normal",
+            "target_min": 240,
+            "percent": 100,
+            "status": "done"
+        },
         {
             "id": 49,
             "slug": "ic-410",
@@ -28,31 +70,6 @@
             "first": "2026-10-03",
             "last": "2026-10-07",
             "photo": null,
-            "difficulty": "normal",
-            "target_min": 240,
-            "percent": 100,
-            "status": "done"
-        },
-        {
-            "id": 28,
-            "slug": "ngc-2244",
-            "designation": "NGC 2244",
-            "name": "Туманність Розетка",
-            "type": "nebula",
-            "constellation": "Єдиноріг",
-            "nights": 5,
-            "integration_sec": 46560,
-            "first": "2026-09-25",
-            "last": "2026-10-07",
-            "photo": {
-                "title": "Розетка: кадр із тінню кабелю, 05.10 02:24",
-                "img": "img/ngc-2244.jpg",
-                "thumb": "img/ngc-2244_t.jpg",
-                "w": 960,
-                "h": 540,
-                "date": "2026-10-05",
-                "astrobin": null
-            },
             "difficulty": "normal",
             "target_min": 240,
             "percent": 100,
@@ -484,6 +501,31 @@
             "status": "done"
         },
         {
+            "id": 10,
+            "slug": "m33",
+            "designation": "M33",
+            "name": "Галактика Трикутника",
+            "type": "galaxy",
+            "constellation": "Трикутник",
+            "nights": 6,
+            "integration_sec": 28185,
+            "first": "2026-08-26",
+            "last": "2026-10-08",
+            "photo": {
+                "title": "Галактика Трикутника: 4 ночі, 4 год 59 хв (v3)",
+                "img": "img/m33.jpg",
+                "thumb": "img/m33_t.jpg",
+                "w": 1800,
+                "h": 961,
+                "date": "2026-09-20",
+                "astrobin": null
+            },
+            "difficulty": "hard",
+            "target_min": 480,
+            "percent": 97,
+            "status": "progress"
+        },
+        {
             "id": 24,
             "slug": "m37",
             "designation": "M37",
@@ -506,48 +548,6 @@
             "difficulty": "easy",
             "target_min": 60,
             "percent": 96,
-            "status": "progress"
-        },
-        {
-            "id": 10,
-            "slug": "m33",
-            "designation": "M33",
-            "name": "Галактика Трикутника",
-            "type": "galaxy",
-            "constellation": "Трикутник",
-            "nights": 5,
-            "integration_sec": 25665,
-            "first": "2026-08-26",
-            "last": "2026-10-02",
-            "photo": {
-                "title": "Галактика Трикутника: 4 ночі, 4 год 59 хв (v3)",
-                "img": "img/m33.jpg",
-                "thumb": "img/m33_t.jpg",
-                "w": 1800,
-                "h": 961,
-                "date": "2026-09-20",
-                "astrobin": null
-            },
-            "difficulty": "hard",
-            "target_min": 480,
-            "percent": 89,
-            "status": "progress"
-        },
-        {
-            "id": 48,
-            "slug": "ngc-281",
-            "designation": "NGC 281",
-            "name": "Туманність Пакмен",
-            "type": "nebula",
-            "constellation": "Кассіопея",
-            "nights": 3,
-            "integration_sec": 12030,
-            "first": "2026-10-01",
-            "last": "2026-10-06",
-            "photo": null,
-            "difficulty": "normal",
-            "target_min": 240,
-            "percent": 83,
             "status": "progress"
         },
         {
@@ -676,6 +676,23 @@
             "status": "progress"
         },
         {
+            "id": 35,
+            "slug": "m78",
+            "designation": "M78",
+            "name": "Відбивна туманність M78",
+            "type": "nebula",
+            "constellation": "Оріон",
+            "nights": 1,
+            "integration_sec": 1020,
+            "first": "2026-10-08",
+            "last": "2026-10-08",
+            "photo": null,
+            "difficulty": "very_hard",
+            "target_min": 480,
+            "percent": 3,
+            "status": "progress"
+        },
+        {
             "id": 27,
             "slug": "ngc-752",
             "designation": "NGC 752",
@@ -723,23 +740,6 @@
             "photo": null,
             "difficulty": "normal",
             "target_min": 240,
-            "percent": 0,
-            "status": "todo"
-        },
-        {
-            "id": 35,
-            "slug": "m78",
-            "designation": "M78",
-            "name": "Відбивна туманність M78",
-            "type": "nebula",
-            "constellation": "Оріон",
-            "nights": 0,
-            "integration_sec": 0,
-            "first": null,
-            "last": null,
-            "photo": null,
-            "difficulty": "very_hard",
-            "target_min": 480,
             "percent": 0,
             "status": "todo"
         },
@@ -896,17 +896,17 @@
             "name": "Сонце",
             "type": "sun",
             "constellation": null,
-            "nights": 8,
-            "integration_sec": 0,
+            "nights": 9,
+            "integration_sec": 1,
             "first": "2026-08-20",
-            "last": "2026-10-02",
+            "last": "2026-10-07",
             "photo": {
-                "title": "Сонце у білому світлі",
+                "title": "Сонце 08.10.2026: стек 400 кадрів крізь хмари",
                 "img": "img/sonce.jpg",
                 "thumb": "img/sonce_t.jpg",
-                "w": 1800,
-                "h": 1013,
-                "date": "2026-08-20",
+                "w": 1080,
+                "h": 1230,
+                "date": "2026-10-08",
                 "astrobin": null
             }
         },
@@ -948,11 +948,11 @@
     "messier": {
         "totals": {
             "captured": 15,
-            "progress": 0,
-            "todo": 85,
+            "progress": 1,
+            "todo": 84,
             "unreachable": 10,
             "reachable": 100,
-            "left_hours": 148.8
+            "left_hours": 148.5
         },
         "objects": [
             {
@@ -962,7 +962,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m1"
             },
             {
@@ -972,7 +972,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1102,7 +1102,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1252,7 +1252,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1262,7 +1262,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m31"
             },
             {
@@ -1272,7 +1272,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m31"
             },
             {
@@ -1282,7 +1282,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m33"
             },
             {
@@ -1292,7 +1292,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m34"
             },
             {
@@ -1302,7 +1302,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m35"
             },
             {
@@ -1312,7 +1312,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m36"
             },
             {
@@ -1322,7 +1322,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m37"
             },
             {
@@ -1332,7 +1332,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m38"
             },
             {
@@ -1352,7 +1352,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1362,7 +1362,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1372,7 +1372,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m42"
             },
             {
@@ -1382,7 +1382,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m42"
             },
             {
@@ -1392,7 +1392,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m44"
             },
             {
@@ -1402,7 +1402,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m45"
             },
             {
@@ -1412,7 +1412,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1422,7 +1422,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1432,7 +1432,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1452,7 +1452,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1462,7 +1462,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m51"
             },
             {
@@ -1472,7 +1472,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1622,7 +1622,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1672,7 +1672,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1682,7 +1682,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1692,7 +1692,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1702,7 +1702,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1712,7 +1712,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1722,17 +1722,17 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
                 "m": 78,
                 "name": null,
                 "type": "nebula",
-                "status": "todo",
-                "percent": 0,
+                "status": "progress",
+                "percent": 9,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m78"
             },
             {
@@ -1742,7 +1742,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1762,7 +1762,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1772,7 +1772,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1892,7 +1892,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1922,7 +1922,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -1962,7 +1962,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m101"
             },
             {
@@ -1982,7 +1982,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m103"
             },
             {
@@ -2012,7 +2012,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m106"
             },
             {
@@ -2032,7 +2032,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -2042,7 +2042,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": null
             },
             {
@@ -2052,7 +2052,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-07",
+                "season_from": "2026-10-08",
                 "slug": "m31"
             }
         ]
