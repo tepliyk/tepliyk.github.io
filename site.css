@@ -29,6 +29,7 @@ body::after{content:"";position:fixed;inset:-20% -10% auto;height:70vh;z-index:-
   background:radial-gradient(closest-side,rgba(109,92,255,var(--glow)),transparent),radial-gradient(closest-side at 80% 30%,rgba(56,189,248,.08),transparent)}
 /* Живий фон: найкращий кадр повільно «пролітає» (Кен Бернс) під зорями й картками */
 .bg{position:fixed;inset:0;z-index:-3;overflow:hidden;pointer-events:none;background:var(--ink)}
+picture{display:contents}
 .bg img{position:absolute;inset:-8%;width:116%;height:116%;object-fit:cover;opacity:0;transition:opacity 2.5s ease;
   animation:fly 90s ease-in-out infinite alternate;will-change:transform;filter:saturate(1.1)}
 .bg img.on{opacity:var(--bg-photo)}
