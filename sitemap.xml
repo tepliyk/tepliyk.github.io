@@ -4,16 +4,581 @@
     <loc>https://tepliyk.github.io/</loc>
     <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/"/>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://tepliyk.github.io/en/</loc>
     <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/"/>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/m44/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m44/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m44/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m44/"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/m44/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m44/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m44/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m44/"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/ngc-2244/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ngc-2244/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ngc-2244/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ngc-2244/"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/ngc-2244/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ngc-2244/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ngc-2244/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ngc-2244/"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/ic-1805/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ic-1805/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ic-1805/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ic-1805/"/>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/ic-1805/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ic-1805/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ic-1805/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ic-1805/"/>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/ic-410/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ic-410/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ic-410/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ic-410/"/>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/ic-410/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ic-410/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ic-410/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ic-410/"/>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/ngc-281/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ngc-281/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ngc-281/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ngc-281/"/>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/ngc-281/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ngc-281/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ngc-281/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ngc-281/"/>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/ngc-2174/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ngc-2174/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ngc-2174/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ngc-2174/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/ngc-2174/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ngc-2174/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ngc-2174/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ngc-2174/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/ngc-2264/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ngc-2264/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ngc-2264/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ngc-2264/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/ngc-2264/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ngc-2264/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ngc-2264/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ngc-2264/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/m36/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m36/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m36/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m36/"/>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/m36/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m36/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m36/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m36/"/>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/m38/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m38/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m38/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m38/"/>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/m38/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m38/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m38/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m38/"/>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/ic-443/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ic-443/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ic-443/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ic-443/"/>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/ic-443/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ic-443/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ic-443/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ic-443/"/>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/ic-405/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ic-405/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ic-405/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ic-405/"/>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/ic-405/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ic-405/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ic-405/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ic-405/"/>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/ngc-1499/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ngc-1499/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ngc-1499/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ngc-1499/"/>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/ngc-1499/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ngc-1499/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ngc-1499/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ngc-1499/"/>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/m42/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m42/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m42/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m42/"/>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/m42/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m42/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m42/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m42/"/>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/ic-1848/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ic-1848/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ic-1848/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ic-1848/"/>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/ic-1848/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ic-1848/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ic-1848/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ic-1848/"/>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/ngc-869/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ngc-869/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ngc-869/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ngc-869/"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/ngc-869/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ngc-869/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ngc-869/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ngc-869/"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/m103/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m103/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m103/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m103/"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/m103/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m103/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m103/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m103/"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/m35/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m35/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m35/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m35/"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/m35/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m35/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m35/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m35/"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/m1/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m1/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m1/"/>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/m1/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m1/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m1/"/>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/m31/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m31/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m31/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m31/"/>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/m31/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m31/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m31/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m31/"/>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/m45/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m45/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m45/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m45/"/>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/m45/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m45/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m45/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m45/"/>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/m33/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m33/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m33/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m33/"/>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/m33/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m33/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m33/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m33/"/>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/m37/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m37/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m37/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m37/"/>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/m37/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m37/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m37/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m37/"/>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/ic-434/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ic-434/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ic-434/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ic-434/"/>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/ic-434/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ic-434/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ic-434/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ic-434/"/>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/m34/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m34/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m34/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m34/"/>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/m34/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m34/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m34/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m34/"/>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/c-44/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/c-44/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/c-44/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/c-44/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/c-44/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/c-44/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/c-44/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/c-44/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/c-30/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/c-30/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/c-30/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/c-30/"/>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/c-30/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/c-30/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/c-30/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/c-30/"/>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/ngc-2403/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ngc-2403/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ngc-2403/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ngc-2403/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/ngc-2403/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/ngc-2403/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/ngc-2403/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/ngc-2403/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/misiac/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/misiac/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/misiac/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/misiac/"/>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/misiac/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/misiac/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/misiac/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/misiac/"/>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/saturn/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/saturn/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/saturn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/saturn/"/>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/saturn/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/saturn/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/saturn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/saturn/"/>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/sonce/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/sonce/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/sonce/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/sonce/"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/sonce/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/sonce/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/sonce/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/sonce/"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/mars/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/mars/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/mars/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/mars/"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/mars/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/mars/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/mars/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/mars/"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tepliyk.github.io/privacy.html</loc>
     <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
   </url>
 </urlset>

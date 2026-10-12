@@ -4,15 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#070B16">
-<title>Небо ближче · челендж одного балкона</title>
-<meta name="description" content="Астрофото з міського балкона в Україні: смарт-телескоп DWARF Mini, туманності й галактики, і челендж зняти все, що звідси видно.">
-<meta property="og:title" content="Небо ближче · челендж одного балкона">
-<meta property="og:description" content="Туманності й галактики з міського балкона. Що вже знято і що ще попереду.">
-<link rel="icon" type="image/jpeg" href="logo.jpg">
+<title>Небо ближче · астрофото з балкона: челендж зняти все небо</title>
+<meta name="description" content="Астрофото з міського балкона в Україні: туманності, галактики й скупчення, зняті смарт-телескопом DWARF Mini. Челендж зняти все, що звідси видно, і каталог Мессьє.">
 <link rel="canonical" href="https://tepliyk.github.io/">
 <link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/">
 <link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/">
 <link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Небо ближче">
+<meta property="og:title" content="Небо ближче · астрофото з балкона: челендж зняти все небо">
+<meta property="og:description" content="Туманності й галактики з міського балкона. Що вже знято і що ще попереду.">
+<meta property="og:url" content="https://tepliyk.github.io/">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:image" content="https://tepliyk.github.io/img/ngc-2244.jpg">
+<meta property="og:image:width" content="960">
+<meta property="og:image:height" content="540">
+<meta property="og:image:alt" content="Туманність Розетка · NGC 2244">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/jpeg" href="logo.jpg">
 <!-- inline:site.css (AstroHub site:build синхронізує з site.css; редагуй site.css) --><style>
 /* «Небо ближче» · дизайн «нічний балкон». Єдине джерело стилів: AstroHub site:build вбудовує цей файл у index.html та en/index.html. */
 /* Фолбеки з метриками Onest/Unbounded: поки шрифти не завантажились, текст займає те саме місце (без CLS). */
@@ -125,8 +134,8 @@ section{padding:24px 0 64px;scroll-margin-top:calc(var(--head-h) + 12px)}
 .now-row{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,1fr);gap:16px;overflow-x:auto;scrollbar-width:none;min-height:90px;padding:2px 2px 6px}
 .now-row::-webkit-scrollbar{display:none}
 .now{display:flex;align-items:center;gap:14px;padding:12px;border-radius:20px;background:var(--surface);border:1px solid var(--border);text-align:left;color:var(--text);transition:transform .25s,border-color .25s}
-button.now{cursor:zoom-in}
-button.now:hover{transform:translateY(-3px);border-color:var(--accent-border)}
+a.now{cursor:zoom-in;text-decoration:none}
+a.now:hover{transform:translateY(-3px);border-color:var(--accent-border)}
 .now img,.now .noimg{width:64px;height:64px;border-radius:14px;object-fit:cover;flex:none;background:var(--surface-2);display:block}
 .now .info{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
 .now .top{display:flex;justify-content:space-between;gap:8px}
@@ -147,11 +156,11 @@ button.now:hover{transform:translateY(-3px);border-color:var(--accent-border)}
 .chip[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent-border);color:var(--accent-text)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
 .t{display:flex;flex-direction:column;border-radius:var(--r);overflow:hidden;background:var(--surface);border:1px solid var(--border);text-align:left;padding:0;color:var(--text);transition:transform .25s,border-color .25s}
-button.t{cursor:zoom-in}
-button.t:hover{transform:translateY(-3px);border-color:var(--accent-border)}
+a.t{cursor:zoom-in;text-decoration:none}
+a.t:hover{transform:translateY(-3px);border-color:var(--accent-border)}
 .t .pic{position:relative;display:block;aspect-ratio:4/3;background:var(--surface-2);overflow:hidden}
 .t .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
-button.t:hover .pic img{transform:scale(1.04)}
+a.t:hover .pic img{transform:scale(1.04)}
 .t .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--dim);text-align:center;padding:8px}
 .t .ph svg{width:30px;height:30px}
 .t .ph b{font:600 18px var(--f-display);color:var(--soft)}
@@ -182,8 +191,8 @@ button.t:hover .pic img{transform:scale(1.04)}
 .q.progress{background:var(--accent);color:var(--on-accent)}
 .q.todo{background:var(--todo);color:var(--muted)}
 .q.unreachable{background:transparent;border:1px dashed var(--border-3);color:var(--dim)}
-button.q{cursor:zoom-in;transition:transform .15s}
-button.q:hover{transform:translateY(-2px)}
+a.q{cursor:zoom-in;text-decoration:none;transition:transform .15s}
+a.q:hover{transform:translateY(-2px)}
 .q small{position:absolute;right:4px;top:3px;font-size:9px;font-weight:700}
 .legend{display:flex;flex-wrap:wrap;gap:10px 20px;font-size:14px;color:var(--soft)}
 .legend span{display:flex;align-items:center;gap:8px}
@@ -193,8 +202,8 @@ button.q:hover{transform:translateY(-2px)}
 /* Сонячна система */
 .solar{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px}
 .s{display:flex;flex-direction:column;align-items:center;gap:12px;padding:22px 16px;border-radius:var(--r);background:var(--surface);border:1px solid var(--border);text-align:center;color:var(--text);transition:transform .25s,border-color .25s}
-button.s{cursor:zoom-in}
-button.s:hover{transform:translateY(-3px);border-color:var(--accent-border)}
+a.s{cursor:zoom-in;text-decoration:none}
+a.s:hover{transform:translateY(-3px);border-color:var(--accent-border)}
 .orb{width:112px;height:112px;border-radius:50%;overflow:hidden;background:#000;display:grid;place-items:center;flex:none}
 .orb img{width:100%;height:100%;object-fit:cover;display:block}
 .orb.none{background:var(--surface-2);color:var(--dim);font-size:13px;padding:10px}
@@ -235,6 +244,24 @@ button.s:hover{transform:translateY(-3px);border-color:var(--accent-border)}
 .link .tx small{font-size:14px;color:var(--muted)}
 .link .ls{display:none}
 .link .go{width:18px;height:18px;color:var(--dim);flex:none}
+
+/* Сторінка об'єкта */
+.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:14px;color:var(--muted);padding:24px 0 6px}
+.crumbs a{color:var(--muted);text-decoration:none}.crumbs a:hover{color:var(--text)}
+.obj-head{display:flex;flex-direction:column;gap:8px;padding:6px 0 20px}
+.obj-head h1{font-size:clamp(26px,4vw,46px);font-weight:700;line-height:1.12}
+.obj-head p{margin:0;color:var(--muted);font-size:16px}
+.obj-fig{margin:0 0 24px}
+.obj-fig picture{display:block}
+.obj-fig img{display:block;width:100%;height:auto;border-radius:24px;border:1px solid var(--border);background:#000}
+.obj-fig figcaption{margin-top:10px;font-size:14px;color:var(--muted)}
+.obj-facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin:0 0 24px}
+.obj-facts div{padding:14px 16px;border-radius:18px;background:var(--surface);border:1px solid var(--border);line-height:1.3}
+.obj-facts dt{font-size:13.5px;color:var(--muted)}
+.obj-facts dd{margin:4px 0 0;font:600 17px var(--f-display)}
+.obj-text{max-width:760px;color:var(--soft);font-size:17px;margin:0 0 24px}
+.obj-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:48px}
+.row-head a{font-size:14px;color:var(--accent-text);text-decoration:none;font-weight:600}
 
 footer{border-top:1px solid var(--border)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;padding-top:24px;padding-bottom:28px;font-size:14px;color:var(--dim)}
@@ -283,9 +310,9 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
   .topbar{gap:8px;min-height:60px}
   .brand img{width:36px;height:36px}
   .brand b{font-size:15px}
-  .stat{padding:12px}
+  .stat{padding:12px 10px}
   .stat b{font-size:19px}
-  .stat span{font-size:12.5px}
+  .stat span{font-size:12px;hyphens:auto}
   section{padding-bottom:40px}
   .row-head h2{font-size:20px}
   .now-row{grid-auto-columns:250px;margin:0 -16px;padding:2px 16px 6px}
@@ -326,6 +353,11 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
   .link .ic{width:44px;height:44px}
   .link .tx small,.link .go,.link .lf{display:none}
   .link .ls{display:inline}
+  .obj-facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .obj-facts div{padding:12px}
+  .obj-facts dd{font-size:15px}
+  .obj-fig img{border-radius:16px}
+  .obj-cta .btn{flex:1 1 auto}
   .link .tx b{font-size:13px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important;animation:none!important}}
@@ -339,6 +371,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
 </script>
 <noscript><link rel="stylesheet" href="fonts/fonts.css"></noscript>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://tepliyk.github.io/#site","url":"https://tepliyk.github.io/","name":"Небо ближче","alternateName":"Nebo Blyzhche","inLanguage":["uk","en"],"publisher":{"@id":"https://tepliyk.github.io/#me"}},{"@type":"Person","@id":"https://tepliyk.github.io/#me","name":"Костя","url":"https://tepliyk.github.io/","sameAs":["https://t.me/nebo_blyzhche","https://app.astrobin.com/u/nebo_blyzhche","https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw","https://www.instagram.com/nebo_blyzhche/","https://www.tiktok.com/@nebo_blyzhche","https://www.facebook.com/nebo.blyzhche"]},{"@type":"ImageGallery","name":"Челендж «Небо ближче»: астрофото з балкона","url":"https://tepliyk.github.io/","inLanguage":"uk","description":"Астрофото з міського балкона в Україні: туманності, галактики й скупчення, зняті смарт-телескопом DWARF Mini. Челендж зняти все, що звідси видно, і каталог Мессьє.","author":{"@id":"https://tepliyk.github.io/#me"},"hasPart":[{"@type":"ImageObject","name":"Вулик (Ясла) · M44","contentUrl":"https://tepliyk.github.io/img/m44.jpg","thumbnailUrl":"https://tepliyk.github.io/img/m44_t.jpg","url":"https://tepliyk.github.io/m44/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Туманність Розетка · NGC 2244","contentUrl":"https://tepliyk.github.io/img/ngc-2244.jpg","thumbnailUrl":"https://tepliyk.github.io/img/ngc-2244_t.jpg","url":"https://tepliyk.github.io/ngc-2244/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Туманність Серце · IC 1805","contentUrl":"https://tepliyk.github.io/img/ic-1805.jpg","thumbnailUrl":"https://tepliyk.github.io/img/ic-1805_t.jpg","url":"https://tepliyk.github.io/ic-1805/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Туманність Пуголовки · IC 410","contentUrl":"https://tepliyk.github.io/img/ic-410.jpg","thumbnailUrl":"https://tepliyk.github.io/img/ic-410_t.jpg","url":"https://tepliyk.github.io/ic-410/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Туманність Пакмен · NGC 281","contentUrl":"https://tepliyk.github.io/img/ngc-281.jpg","thumbnailUrl":"https://tepliyk.github.io/img/ngc-281_t.jpg","url":"https://tepliyk.github.io/ngc-281/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Туманність Мавпяча Голова · NGC 2174","contentUrl":"https://tepliyk.github.io/img/ngc-2174.jpg","thumbnailUrl":"https://tepliyk.github.io/img/ngc-2174_t.jpg","url":"https://tepliyk.github.io/ngc-2174/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Туманність Ялинка (Конус) · NGC 2264","contentUrl":"https://tepliyk.github.io/img/ngc-2264.jpg","thumbnailUrl":"https://tepliyk.github.io/img/ngc-2264_t.jpg","url":"https://tepliyk.github.io/ngc-2264/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Розсіяне скупчення M36 · M36","contentUrl":"https://tepliyk.github.io/img/m36.jpg","thumbnailUrl":"https://tepliyk.github.io/img/m36_t.jpg","url":"https://tepliyk.github.io/m36/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Розсіяне скупчення M38 · M38","contentUrl":"https://tepliyk.github.io/img/m38.jpg","thumbnailUrl":"https://tepliyk.github.io/img/m38_t.jpg","url":"https://tepliyk.github.io/m38/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Туманність Медуза · IC 443","contentUrl":"https://tepliyk.github.io/img/ic-443.jpg","thumbnailUrl":"https://tepliyk.github.io/img/ic-443_t.jpg","url":"https://tepliyk.github.io/ic-443/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Туманність Палаюча зоря · IC 405","contentUrl":"https://tepliyk.github.io/img/ic-405.jpg","thumbnailUrl":"https://tepliyk.github.io/img/ic-405_t.jpg","url":"https://tepliyk.github.io/ic-405/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Туманність Каліфорнія · NGC 1499","contentUrl":"https://tepliyk.github.io/img/ngc-1499.jpg","thumbnailUrl":"https://tepliyk.github.io/img/ngc-1499_t.jpg","url":"https://tepliyk.github.io/ngc-1499/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Туманність Оріона · M42","contentUrl":"https://tepliyk.github.io/img/m42.jpg","thumbnailUrl":"https://tepliyk.github.io/img/m42_t.jpg","url":"https://tepliyk.github.io/m42/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Туманність Душа · IC 1848","contentUrl":"https://tepliyk.github.io/img/ic-1848.jpg","thumbnailUrl":"https://tepliyk.github.io/img/ic-1848_t.jpg","url":"https://tepliyk.github.io/ic-1848/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Подвійне скупчення Персея (h Persei) · NGC 869","contentUrl":"https://tepliyk.github.io/img/ngc-869.jpg","thumbnailUrl":"https://tepliyk.github.io/img/ngc-869_t.jpg","url":"https://tepliyk.github.io/ngc-869/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Розсіяне скупчення M103 · M103","contentUrl":"https://tepliyk.github.io/img/m103.jpg","thumbnailUrl":"https://tepliyk.github.io/img/m103_t.jpg","url":"https://tepliyk.github.io/m103/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Розсіяне скупчення M35 · M35","contentUrl":"https://tepliyk.github.io/img/m35.jpg","thumbnailUrl":"https://tepliyk.github.io/img/m35_t.jpg","url":"https://tepliyk.github.io/m35/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Крабоподібна туманність · M1","contentUrl":"https://tepliyk.github.io/img/m1.jpg","thumbnailUrl":"https://tepliyk.github.io/img/m1_t.jpg","url":"https://tepliyk.github.io/m1/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Галактика Андромеди · M31","contentUrl":"https://tepliyk.github.io/img/m31.jpg","thumbnailUrl":"https://tepliyk.github.io/img/m31_t.jpg","url":"https://tepliyk.github.io/m31/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Плеяди · M45","contentUrl":"https://tepliyk.github.io/img/m45.jpg","thumbnailUrl":"https://tepliyk.github.io/img/m45_t.jpg","url":"https://tepliyk.github.io/m45/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Галактика Трикутника · M33","contentUrl":"https://tepliyk.github.io/img/m33.jpg","thumbnailUrl":"https://tepliyk.github.io/img/m33_t.jpg","url":"https://tepliyk.github.io/m33/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Розсіяне скупчення M37 · M37","contentUrl":"https://tepliyk.github.io/img/m37.jpg","thumbnailUrl":"https://tepliyk.github.io/img/m37_t.jpg","url":"https://tepliyk.github.io/m37/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Кінська Голова · IC 434","contentUrl":"https://tepliyk.github.io/img/ic-434.jpg","thumbnailUrl":"https://tepliyk.github.io/img/ic-434_t.jpg","url":"https://tepliyk.github.io/ic-434/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Розсіяне скупчення M34 · M34","contentUrl":"https://tepliyk.github.io/img/m34.jpg","thumbnailUrl":"https://tepliyk.github.io/img/m34_t.jpg","url":"https://tepliyk.github.io/m34/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Галактика NGC 7479 (Caldwell 44) · C 44","contentUrl":"https://tepliyk.github.io/img/c-44.jpg","thumbnailUrl":"https://tepliyk.github.io/img/c-44_t.jpg","url":"https://tepliyk.github.io/c-44/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30","contentUrl":"https://tepliyk.github.io/img/c-30.jpg","thumbnailUrl":"https://tepliyk.github.io/img/c-30_t.jpg","url":"https://tepliyk.github.io/c-30/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Галактика в Жирафі · NGC 2403","contentUrl":"https://tepliyk.github.io/img/ngc-2403.jpg","thumbnailUrl":"https://tepliyk.github.io/img/ngc-2403_t.jpg","url":"https://tepliyk.github.io/ngc-2403/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Місяць","contentUrl":"https://tepliyk.github.io/img/misiac.jpg","thumbnailUrl":"https://tepliyk.github.io/img/misiac_t.jpg","url":"https://tepliyk.github.io/misiac/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Сатурн","contentUrl":"https://tepliyk.github.io/img/saturn.jpg","thumbnailUrl":"https://tepliyk.github.io/img/saturn_t.jpg","url":"https://tepliyk.github.io/saturn/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Сонце","contentUrl":"https://tepliyk.github.io/img/sonce.jpg","thumbnailUrl":"https://tepliyk.github.io/img/sonce_t.jpg","url":"https://tepliyk.github.io/sonce/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."},{"@type":"ImageObject","name":"Марс","contentUrl":"https://tepliyk.github.io/img/mars.jpg","thumbnailUrl":"https://tepliyk.github.io/img/mars_t.jpg","url":"https://tepliyk.github.io/mars/","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Костя","copyrightNotice":"© Костя, «Небо ближче». Усі знімки власні."}]}]}</script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -354,6 +387,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
   <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M14 8.5V6.8c0-.8.5-1.3 1.4-1.3H17V2.3c-.5-.1-1.6-.2-2.8-.2-2.8 0-4.6 1.7-4.6 4.7v1.7H6.8V12h2.8v10h4.4V12h2.9l.4-3.5H14z"/></symbol>
   <symbol id="i-out" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
   <symbol id="i-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M6 13l6 6 6-6"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M11 6l-6 6 6 6"/></symbol>
 </svg>
 
 <header>
@@ -376,28 +410,28 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
 <main class="wrap" id="top">
   <div class="hero">
     <div class="intro">
-      <span class="eyebrow"><i></i><span id="updated">Оновлюється після кожної ночі</span></span>
+      <span class="eyebrow"><i></i><span id="updated">Оновлено 12 жовтня о 23:19</span></span>
       <h1><span class="l">Усе небо,</span> <span class="l">яке видно</span> <span class="l"><em>з одного балкона</em></span></h1>
       <p class="lead">Привіт, я Костя. Знімаю туманності й галактики маленьким смарт-телескопом з міського балкона в Україні. Мета проста: зняти все, що звідси взагалі можна побачити.</p>
     </div>
     <div class="media">
-      <button class="photo" id="hero-photo" type="button" aria-label="Відкрити кадр сезону">
+      <button class="photo" id="hero-photo" type="button" aria-label="Відкрити кадр: Туманність Розетка · NGC 2244">
         <canvas id="hero-img" aria-hidden="true"></canvas>
-        <span class="cap"><span><small>Кадр сезону</small><b id="hero-title">…</b><span id="hero-sub">найбільше зібраного світла</span></span><svg aria-hidden="true"><use href="#i-out"/></svg></span>
+        <span class="cap"><span><small>Кадр сезону</small><b id="hero-title">Туманність Розетка · NGC 2244</b><span id="hero-sub">23 год 58 хв світла за 9 ночей</span></span><svg aria-hidden="true"><use href="#i-out"/></svg></span>
       </button>
       <div class="ring-mini" aria-live="polite">
         <svg viewBox="0 0 64 64" aria-hidden="true">
           <circle cx="32" cy="32" r="26" fill="none" stroke="var(--track)" stroke-width="8"/>
-          <circle id="ring-progress" cx="32" cy="32" r="26" fill="none" stroke="var(--accent)" stroke-width="8" stroke-linecap="round" stroke-dasharray="0 999"/>
-          <circle id="ring-done" cx="32" cy="32" r="26" fill="none" stroke="var(--done)" stroke-width="8" stroke-linecap="round" stroke-dasharray="0 999"/>
+          <circle id="ring-progress" cx="32" cy="32" r="26" fill="none" stroke="var(--accent)" stroke-width="8" stroke-linecap="round" stroke-dasharray="120.37 163.36"/>
+          <circle id="ring-done" cx="32" cy="32" r="26" fill="none" stroke="var(--done)" stroke-width="8" stroke-linecap="round" stroke-dasharray="85.98 163.36"/>
         </svg>
-        <div class="rt"><b><span id="ring-big">…</span> <small id="ring-of"></small></b><span>об'єктів челенджу знято</span></div>
+        <div class="rt"><b><span id="ring-big">20</span> <small id="ring-of">з 38</small></b><span>об'єктів челенджу знято</span></div>
       </div>
     </div>
     <div class="stats">
-      <div class="stat"><b id="st-nights">…</b><span>ночей біля телескопа</span></div>
-      <div class="stat"><b id="st-hours">…</b><span>світла глибокого неба</span></div>
-      <div class="stat"><b id="st-photos">…</b><span>опублікованих фото</span></div>
+      <div class="stat"><b id="st-nights">48</b><span>ночей біля телескопа</span></div>
+      <div class="stat"><b id="st-hours">135 год</b><span>світла глибокого неба</span></div>
+      <div class="stat"><b id="st-photos">48</b><span>опублікованих фото</span></div>
     </div>
     <div class="cta">
       <a class="btn btn-p btn-lg" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tg"/></svg>Читати в Telegram</a>
@@ -407,7 +441,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
 
   <section id="now" aria-labelledby="now-h">
     <div class="row-head"><h2 id="now-h">Зараз збираю світло</h2><span>смужка: зібрані години від мети</span></div>
-    <div class="now-row" id="now-row"></div>
+    <div class="now-row" id="now-row"><a class="now" href="m33/" data-k="m33"><picture><source type="image/webp" srcset="img/m33_t.webp"><img src="img/m33_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="info"><span class="top"><b>Галактика Трикутника</b><em>97%</em></span><span class="meter"><i style="width:97%"></i></span><span class="hint">ще 10 хв до мети</span></span></a><a class="now" href="m37/" data-k="m37"><picture><source type="image/webp" srcset="img/m37_t.webp"><img src="img/m37_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="info"><span class="top"><b>Розсіяне скупчення M37</b><em>96%</em></span><span class="meter"><i style="width:96%"></i></span><span class="hint">ще 2 хв до мети</span></span></a><a class="now" href="ic-434/" data-k="ic-434"><picture><source type="image/webp" srcset="img/ic-434_t.webp"><img src="img/ic-434_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="info"><span class="top"><b>Кінська Голова</b><em>75%</em></span><span class="meter"><i style="width:75%"></i></span><span class="hint">ще 1 год 58 хв до мети</span></span></a><a class="now" href="m34/" data-k="m34"><picture><source type="image/webp" srcset="img/m34_t.webp"><img src="img/m34_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="info"><span class="top"><b>Розсіяне скупчення M34</b><em>61%</em></span><span class="meter"><i style="width:61%"></i></span><span class="hint">ще 23 хв до мети</span></span></a><a class="now" href="c-44/" data-k="c-44"><picture><source type="image/webp" srcset="img/c-44_t.webp"><img src="img/c-44_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="info"><span class="top"><b>Галактика NGC 7479 (Caldwell 44)</b><em>45%</em></span><span class="meter"><i style="width:45%"></i></span><span class="hint">ще 4 год 22 хв до мети</span></span></a><a class="now" href="c-30/" data-k="c-30"><picture><source type="image/webp" srcset="img/c-30_t.webp"><img src="img/c-30_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="info"><span class="top"><b>Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv</b><em>39%</em></span><span class="meter"><i style="width:39%"></i></span><span class="hint">ще 4 год 52 хв до мети</span></span></a><a class="now" href="ngc-2403/" data-k="ngc-2403"><picture><source type="image/webp" srcset="img/ngc-2403_t.webp"><img src="img/ngc-2403_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="info"><span class="top"><b>Галактика в Жирафі</b><em>36%</em></span><span class="meter"><i style="width:36%"></i></span><span class="hint">ще 5 год 6 хв до мети</span></span></a><div class="now"><span class="noimg"></span><span class="info"><span class="top"><b>Відбивна туманність M78</b><em>9%</em></span><span class="meter"><i style="width:9%"></i></span><span class="hint">ще 7 год 14 хв до мети</span></span></div></div>
   </section>
 
   <section id="challenge" aria-labelledby="gal-h">
@@ -416,11 +450,11 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
       <p>Для кожного об'єкта є мета: скільки годин світла треба, щоб кадр вийшов чистим під міським небом. Натисніть на кадр, щоб відкрити його великим.</p>
     </div>
     <div class="filters">
-      <div class="seg" id="f-status" role="group" aria-label="Стан"></div>
-      <div class="chips" id="f-type" role="group" aria-label="Тип"></div>
+      <div class="seg" id="f-status" role="group" aria-label="Стан"><button type="button" data-f="all" aria-pressed="true">Усі<span class="n">38</span></button><button type="button" data-f="done" aria-pressed="false">Знято<span class="n">20</span></button><button type="button" data-f="progress" aria-pressed="false">Збираю<span class="n">8</span></button><button type="button" data-f="todo" aria-pressed="false">Попереду<span class="n">10</span></button></div>
+      <div class="chips" id="f-type" role="group" aria-label="Тип"><button class="chip" type="button" data-f="all" aria-pressed="true">Усі типи</button><button class="chip" type="button" data-f="nebula" aria-pressed="false">Туманності</button><button class="chip" type="button" data-f="galaxy" aria-pressed="false">Галактики</button><button class="chip" type="button" data-f="cluster" aria-pressed="false">Скупчення</button></div>
     </div>
-    <div class="grid" id="grid"><div class="empty">Завантажую…</div></div>
-    <div class="more" id="more" hidden><button class="btn btn-lg" type="button" id="more-btn"></button></div>
+    <div class="grid" id="grid"><a class="t done" href="m44/" data-k="m44"><span class="pic"><picture><source type="image/webp" srcset="img/m44_t.webp"><img src="img/m44_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Вулик (Ясла)</b><span>M44 · Скупчення · Рак</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>1 год 32 хв</b> з 1 год</span><span>3 ночі</span></span></span></a><a class="t done" href="ngc-2244/" data-k="ngc-2244"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-2244_t.webp"><img src="img/ngc-2244_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Розетка</b><span>NGC 2244 · Туманність · Єдиноріг</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>23 год 58 хв</b> з 4 год</span><span>9 ночей</span></span></span></a><a class="t done" href="ic-1805/" data-k="ic-1805"><span class="pic"><picture><source type="image/webp" srcset="img/ic-1805_t.webp"><img src="img/ic-1805_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Серце</b><span>IC 1805 · Туманність · Кассіопея</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>12 год 40 хв</b> з 4 год</span><span>9 ночей</span></span></span></a><a class="t done" href="ic-410/" data-k="ic-410"><span class="pic"><picture><source type="image/webp" srcset="img/ic-410_t.webp"><img src="img/ic-410_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Пуголовки</b><span>IC 410 · Туманність · Візничий</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 57 хв</b> з 4 год</span><span>5 ночей</span></span></span></a><a class="t done" href="ngc-281/" data-k="ngc-281"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-281_t.webp"><img src="img/ngc-281_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Пакмен</b><span>NGC 281 · Туманність · Кассіопея</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 1 хв</b> з 4 год</span><span>4 ночі</span></span></span></a><a class="t done" href="ngc-2174/" data-k="ngc-2174"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-2174_t.webp"><img src="img/ngc-2174_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Мавпяча Голова</b><span>NGC 2174 · Туманність · Оріон</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>4 год 50 хв</b> з 4 год</span><span>2 ночі</span></span></span></a><a class="t done" href="ngc-2264/" data-k="ngc-2264"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-2264_t.webp"><img src="img/ngc-2264_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Ялинка (Конус)</b><span>NGC 2264 · Туманність · Єдиноріг</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 21 хв</b> з 4 год</span><span>4 ночі</span></span></span></a><a class="t done" href="m36/" data-k="m36"><span class="pic"><picture><source type="image/webp" srcset="img/m36_t.webp"><img src="img/m36_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Розсіяне скупчення M36</b><span>M36 · Скупчення · Візничий</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>1 год 38 хв</b> з 1 год</span><span>1 ніч</span></span></span></a><a class="t done" href="m38/" data-k="m38"><span class="pic"><picture><source type="image/webp" srcset="img/m38_t.webp"><img src="img/m38_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Розсіяне скупчення M38</b><span>M38 · Скупчення · Візничий</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>1 год 11 хв</b> з 1 год</span><span>1 ніч</span></span></span></a><a class="t done" href="ic-443/" data-k="ic-443"><span class="pic"><picture><source type="image/webp" srcset="img/ic-443_t.webp"><img src="img/ic-443_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Медуза</b><span>IC 443 · Туманність · Близнята</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>7 год 17 хв</b> з 6 год</span><span>6 ночей</span></span></span></a><a class="t done" href="ic-405/" data-k="ic-405"><span class="pic"><picture><source type="image/webp" srcset="img/ic-405_t.webp"><img src="img/ic-405_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Палаюча зоря</b><span>IC 405 · Туманність · Візничий</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 19 хв</b> з 4 год</span><span>3 ночі</span></span></span></a><a class="t done" href="ngc-1499/" data-k="ngc-1499"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-1499_t.webp"><img src="img/ngc-1499_t.jpg" alt="" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Каліфорнія</b><span>NGC 1499 · Туманність · Персей</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 1 хв</b> з 4 год</span><span>3 ночі</span></span></span></a></div>
+    <div class="more" id="more"><button class="btn btn-lg" type="button" id="more-btn">Показати всі 38</button></div>
   </section>
 
   <section id="messier" aria-labelledby="mz-h">
@@ -430,9 +464,9 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
           <h2 id="mz-h">Мессьє з балкона</h2>
           <p>110 найвідоміших туманностей, галактик і скупчень. З балкона видно лише східну половину неба, тож частина об'єктів недосяжна в принципі. Решту збираю по одному.</p>
         </div>
-        <div class="mz-score"><b id="mz-big">…</b><span><span id="mz-of"></span><br><span id="mz-left"></span></span></div>
+        <div class="mz-score"><b id="mz-big">15</b><span><span id="mz-of">з 100 досяжних знято</span><br><span id="mz-left">≈ 148 год до фінішу</span></span></div>
       </div>
-      <div class="mz" id="mz"></div>
+      <div class="mz" id="mz"><a class="q captured" href="m1/" data-k="m1" title="M1 · Crab Nebula · знято" aria-label="M1 · Crab Nebula · знято">1</a><span class="q todo" title="M2 · попереду · вікно з 12 жовтня">2</span><span class="q todo" title="M3 · попереду · вікно з 29 жовтня">3</span><span class="q unreachable" title="M4 · недосяжний з балкона">4</span><span class="q todo" title="M5 · попереду · вікно з 10 грудня">5</span><span class="q unreachable" title="M6 · Butterfly Cluster · недосяжний з балкона">6</span><span class="q unreachable" title="M7 · Ptolemy&#39;s Cluster · недосяжний з балкона">7</span><span class="q todo" title="M8 · Lagoon Nebula · попереду · вікно з 27 квітня">8</span><span class="q todo" title="M9 · попереду · вікно з 20 лютого">9</span><span class="q todo" title="M10 · попереду · вікно з 10 січня">10</span><span class="q todo" title="M11 · Amas de l&#39;Ecu de Sobieski · попереду · вікно з 23 лютого">11</span><span class="q todo" title="M12 · попереду · вікно з 4 січня">12</span><span class="q todo" title="M13 · Hercules Globular Cluster · попереду · вікно з 25 листопада">13</span><span class="q todo" title="M14 · попереду · вікно з 19 січня">14</span><span class="q todo" title="M15 · попереду · вікно з 12 жовтня">15</span><span class="q todo" title="M16 · Eagle Nebula · попереду · вікно з 1 березня">16</span><span class="q todo" title="M17 · Checkmark Nebula · попереду · вікно з 12 березня">17</span><span class="q todo" title="M18 · попереду · вікно з 15 березня">18</span><span class="q todo" title="M19 · попереду · вікно з 22 квітня">19</span><span class="q todo" title="M20 · Trifid Nebula · попереду · вікно з 11 квітня">20</span><span class="q todo" title="M21 · попереду · вікно з 10 квітня">21</span><span class="q todo" title="M22 · попереду · вікно з 13 травня">22</span><span class="q todo" title="M23 · попереду · вікно з 12 березня">23</span><span class="q todo" title="M24 · Small Sgr Star Cloud · попереду · вікно з 20 березня">24</span><span class="q todo" title="M25 · попереду · вікно з 4 квітня">25</span><span class="q todo" title="M26 · попереду · вікно з 1 березня">26</span><span class="q todo" title="M27 · Dumbbell Nebula · попереду · вікно з 26 січня">27</span><span class="q todo" title="M28 · попереду · вікно з 16 травня">28</span><span class="q todo" title="M29 · попереду · вікно з 9 січня">29</span><span class="q todo" title="M30 · попереду · вікно з 12 жовтня">30</span><a class="q captured" href="m31/" data-k="m31" title="M31 · Andromeda Galaxy · знято" aria-label="M31 · Andromeda Galaxy · знято">31</a><a class="q captured" href="m31/" data-k="m31" title="M32 · знято" aria-label="M32 · знято">32</a><a class="q captured" href="m33/" data-k="m33" title="M33 · Triangulum Galaxy · знято" aria-label="M33 · Triangulum Galaxy · знято">33</a><a class="q captured" href="m34/" data-k="m34" title="M34 · знято" aria-label="M34 · знято">34</a><a class="q captured" href="m35/" data-k="m35" title="M35 · знято" aria-label="M35 · знято">35</a><a class="q captured" href="m36/" data-k="m36" title="M36 · знято" aria-label="M36 · знято">36</a><a class="q captured" href="m37/" data-k="m37" title="M37 · знято" aria-label="M37 · знято">37</a><a class="q captured" href="m38/" data-k="m38" title="M38 · знято" aria-label="M38 · знято">38</a><span class="q todo" title="M39 · попереду · вікно з 6 січня">39</span><span class="q todo" title="M40 · попереду · вікно з 12 жовтня">40</span><span class="q todo" title="M41 · попереду · вікно з 12 жовтня">41</span><a class="q captured" href="m42/" data-k="m42" title="M42 · Great Orion Nebula · знято" aria-label="M42 · Great Orion Nebula · знято">42</a><a class="q captured" href="m42/" data-k="m42" title="M43 · Mairan&#39;s Nebula · знято" aria-label="M43 · Mairan&#39;s Nebula · знято">43</a><a class="q captured" href="m44/" data-k="m44" title="M44 · Beehive · знято" aria-label="M44 · Beehive · знято">44</a><a class="q captured" href="m45/" data-k="m45" title="M45 · Pleiades · знято" aria-label="M45 · Pleiades · знято">45</a><span class="q todo" title="M46 · попереду · вікно з 12 жовтня">46</span><span class="q todo" title="M47 · попереду · вікно з 12 жовтня">47</span><span class="q todo" title="M48 · попереду · вікно з 12 жовтня">48</span><span class="q todo" title="M49 · попереду · вікно з 2 листопада">49</span><span class="q todo" title="M50 · попереду · вікно з 12 жовтня">50</span><span class="q todo" title="M51 · Whirlpool Galaxy · попереду · вікно з 12 жовтня">51</span><span class="q todo" title="M52 · попереду · вікно з 12 жовтня">52</span><span class="q todo" title="M53 · попереду · вікно з 1 листопада">53</span><span class="q unreachable" title="M54 · недосяжний з балкона">54</span><span class="q unreachable" title="M55 · недосяжний з балкона">55</span><span class="q todo" title="M56 · попереду · вікно з 4 січня">56</span><span class="q todo" title="M57 · Ring Nebula · попереду · вікно з 26 грудня">57</span><span class="q todo" title="M58 · попереду · вікно з 1 листопада">58</span><span class="q todo" title="M59 · попереду · вікно з 1 листопада">59</span><span class="q todo" title="M60 · попереду · вікно з 1 листопада">60</span><span class="q todo" title="M61 · попереду · вікно з 4 листопада">61</span><span class="q unreachable" title="M62 · недосяжний з балкона">62</span><span class="q todo" title="M63 · Sunflower Galaxy · попереду · вікно з 12 жовтня">63</span><span class="q todo" title="M64 · Black Eye Galaxy · попереду · вікно з 27 жовтня">64</span><span class="q todo" title="M65 · попереду · вікно з 16 жовтня">65</span><span class="q todo" title="M66 · попереду · вікно з 16 жовтня">66</span><span class="q todo" title="M67 · попереду · вікно з 12 жовтня">67</span><span class="q unreachable" title="M68 · недосяжний з балкона">68</span><span class="q unreachable" title="M69 · недосяжний з балкона">69</span><span class="q unreachable" title="M70 · недосяжний з балкона">70</span><span class="q todo" title="M71 · попереду · вікно з 1 лютого">71</span><span class="q todo" title="M72 · попереду · вікно з 12 жовтня">72</span><span class="q todo" title="M73 · попереду · вікно з 12 жовтня">73</span><span class="q todo" title="M74 · попереду · вікно з 12 жовтня">74</span><span class="q todo" title="M75 · попереду · вікно з 12 жовтня">75</span><span class="q todo" title="M76 · Barbell Nebula · попереду · вікно з 12 жовтня">76</span><span class="q todo" title="M77 · попереду · вікно з 12 жовтня">77</span><span class="q progress" title="M78 · збираю світло 26%">78</span><span class="q todo" title="M79 · попереду · вікно з 12 жовтня">79</span><span class="q todo" title="M80 · попереду · вікно з 15 лютого">80</span><span class="q todo" title="M81 · Bode&#39;s Galaxy · попереду · вікно з 12 жовтня · на краю видимості">81<small>?</small></span><span class="q todo" title="M82 · Cigar Galaxy · попереду · вікно з 12 жовтня · на краю видимості">82<small>?</small></span><span class="q unreachable" title="M83 · Southern Pinwheel Galaxy · недосяжний з балкона">83</span><span class="q todo" title="M84 · попереду · вікно з 29 жовтня">84</span><span class="q todo" title="M85 · попереду · вікно з 24 жовтня">85</span><span class="q todo" title="M86 · попереду · вікно з 29 жовтня">86</span><span class="q todo" title="M87 · Virgo Galaxy · попереду · вікно з 30 жовтня">87</span><span class="q todo" title="M88 · попереду · вікно з 29 жовтня">88</span><span class="q todo" title="M89 · попереду · вікно з 31 жовтня">89</span><span class="q todo" title="M90 · попереду · вікно з 31 жовтня">90</span><span class="q todo" title="M91 · попереду · вікно з 29 жовтня">91</span><span class="q todo" title="M92 · попереду · вікно з 22 листопада">92</span><span class="q todo" title="M93 · попереду · вікно з 21 жовтня">93</span><span class="q todo" title="M94 · попереду · вікно з 12 жовтня">94</span><span class="q todo" title="M95 · попереду · вікно з 12 жовтня">95</span><span class="q todo" title="M96 · попереду · вікно з 12 жовтня">96</span><span class="q todo" title="M97 · Owl Nebula · попереду · вікно з 12 жовтня">97</span><span class="q todo" title="M98 · попереду · вікно з 24 жовтня">98</span><span class="q todo" title="M99 · Coma Pinwheel · попереду · вікно з 26 жовтня">99</span><span class="q todo" title="M100 · попереду · вікно з 26 жовтня">100</span><span class="q todo" title="M101 · попереду · вікно з 12 жовтня">101</span><span class="q todo" title="M102 · Spindle · попереду · вікно з 14 жовтня">102</span><a class="q captured" href="m103/" data-k="m103" title="M103 · знято" aria-label="M103 · знято">103</a><span class="q todo" title="M104 · Sombrero Galaxy · попереду · вікно з 24 листопада">104</span><span class="q todo" title="M105 · попереду · вікно з 12 жовтня">105</span><span class="q todo" title="M106 · попереду · вікно з 12 жовтня">106</span><span class="q todo" title="M107 · попереду · вікно з 18 січня">107</span><span class="q todo" title="M108 · попереду · вікно з 12 жовтня">108</span><span class="q todo" title="M109 · попереду · вікно з 12 жовтня">109</span><a class="q captured" href="m31/" data-k="m31" title="M110 · знято" aria-label="M110 · знято">110</a></div>
       <div class="legend"><span><i class="lc"></i>Знято</span><span><i class="lp"></i>Збираю світло</span><span><i class="lt"></i>Попереду</span><span><i class="lu"></i>Недосяжні з балкона</span></div>
     </div>
   </section>
@@ -442,7 +476,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
       <h2 id="sol-h">Сонячна система</h2>
       <p>Місяць, Сонце й планети знімаються інакше: тисячі коротких кадрів, з яких лишаються найчіткіші. Тут без відсотків, просто найкращі спроби.</p>
     </div>
-    <div class="solar" id="solar-grid"></div>
+    <div class="solar" id="solar-grid"><a class="s" href="misiac/" data-k="misiac"><span class="orb"><picture><source type="image/webp" srcset="img/misiac_t.webp"><img src="img/misiac_t.jpg" alt="" loading="lazy" width="640" height="480"></picture></span><span class="nm"><b>Місяць</b><span>16 ночей спостережень</span></span></a><a class="s" href="saturn/" data-k="saturn"><span class="orb"><picture><source type="image/webp" srcset="img/saturn_t.webp"><img src="img/saturn_t.jpg" alt="" loading="lazy" width="640" height="480"></picture></span><span class="nm"><b>Сатурн</b><span>4 ночі спостережень</span></span></a><a class="s" href="sonce/" data-k="sonce"><span class="orb"><picture><source type="image/webp" srcset="img/sonce_t.webp"><img src="img/sonce_t.jpg" alt="" loading="lazy" width="640" height="480"></picture></span><span class="nm"><b>Сонце</b><span>11 ночей спостережень</span></span></a><div class="s"><span class="orb none">кадр в обробці</span><span class="nm"><b>Юпітер</b><span>1 ніч спостережень</span></span></div><a class="s" href="mars/" data-k="mars"><span class="orb"><picture><source type="image/webp" srcset="img/mars_t.webp"><img src="img/mars_t.jpg" alt="" loading="lazy" width="640" height="480"></picture></span><span class="nm"><b>Марс</b><span>1 ніч спостережень</span></span></a></div>
   </section>
 
   <section id="how" aria-labelledby="how-h">
@@ -489,7 +523,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
 <footer>
   <div class="wrap">
     <span>© Костя, «Небо ближче». Усі знімки власні.</span>
-    <span id="foot-upd"></span>
+    <span id="foot-upd">Оновлено 12 жовтня о 23:19 автоматично</span>
     <a href="privacy.html">Privacy policy</a>
   </div>
 </footer>
@@ -529,7 +563,6 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
     noFrame: st => st === 'todo' ? 'ще попереду' : 'кадр в обробці',
     showAll: n => `Показати всі ${n}`,
     empty: 'Тут поки порожньо.',
-    fail: 'Не вдалося завантажити дані. Спробуйте оновити сторінку.',
     of: n => `з ${n}`,
     mzOf: n => `з ${n} досяжних знято`,
     mzLeft: h => `≈ ${String(h).replace('.', ',')} год до фінішу`,
@@ -538,6 +571,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
     solarSub: n => n ? `${L.nights(n)} спостережень` : '',
     frameFrom: d => `кадр від ${d}`,
     astrobin: 'Повний розмір на AstroBin',
+    objPage: "Сторінка об'єкта",
     openFrame: t => `Відкрити кадр: ${t}`,
     updated: (d, hm) => `Оновлено ${d} о ${hm}`,
     footUpd: (d, hm) => `Оновлено ${d} о ${hm} автоматично`,
@@ -573,8 +607,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
   // Кадр сезону: знятий об'єкт з найбільшою витримкою. Вантажиться після першого кадру й плавно проявляється.
   // Малюється в <canvas> (cover, з урахуванням DPR): декоративне велике фото не стає LCP і не відсуває метрику на секунди.
   function hero(d) {
-    const pool = d.challenge.filter(r => r.photo && r.status === 'done');
-    const best = (pool.length ? pool : d.challenge.filter(r => r.photo)).sort((a, b) => (b.integration_sec || 0) - (a.integration_sec || 0))[0];
+    const best = bestOf(d);
     const btn = $('#hero-photo');
     if (!best) { btn.disabled = true; return; }
     $('#hero-title').textContent = L.title(best);
@@ -603,65 +636,61 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
       im.src = webp || jpg;
     });
   }
+  const bestOf = d => {
+    const pool = d.challenge.filter(r => r.photo && r.status === 'done');
+    return (pool.length ? pool : d.challenge.filter(r => r.photo)).sort((a, b) => (b.integration_sec || 0) - (a.integration_sec || 0))[0];
+  };
 
   function ring(t) {
     const C = 2 * Math.PI * 26, done = t.done / t.objects, prog = (t.done + t.progress) / t.objects;
-    $('#ring-done').setAttribute('stroke-dasharray', `${C * done} ${C}`);
-    $('#ring-progress').setAttribute('stroke-dasharray', `${C * prog} ${C}`);
+    $('#ring-done').setAttribute('stroke-dasharray', `${(C * done).toFixed(2)} ${C.toFixed(2)}`);
+    $('#ring-progress').setAttribute('stroke-dasharray', `${(C * prog).toFixed(2)} ${C.toFixed(2)}`);
     $('#ring-big').textContent = t.done;
     $('#ring-of').textContent = L.of(t.objects);
   }
 
-  // Зараз збираю світло: об'єкти в процесі, найближчі до мети першими.
+  // Картки, «зараз», Сонячна система: ті самі рядки, що й у build.py (сторінка приходить уже заповненою, JS малює те саме).
+  const nowCard = r => {
+    const left = Math.max(0, (r.target_min || 0) * 60 - (r.integration_sec || 0)), p = r.photo, k = r.slug || r.id;
+    const inner = `${p ? pic(p, true, '', true) : '<span class="noimg"></span>'}<span class="info"><span class="top"><b>${esc(L.name(r))}</b><em>${r.percent}%</em></span><span class="meter"><i style="width:${Math.max(r.percent, 3)}%"></i></span><span class="hint">${esc(L.left(left))}</span></span>`;
+    return p ? `<a class="now" href="${esc(k)}/" data-k="${esc(k)}">${inner}</a>` : `<div class="now">${inner}</div>`;
+  };
   function now(d) {
     const rows = d.challenge.filter(r => r.status === 'progress').sort((a, b) => b.percent - a.percent).slice(0, 8);
-    if (!rows.length) { $('#now').hidden = true; return; }
-    $('#now-row').innerHTML = rows.map(r => {
-      const left = Math.max(0, (r.target_min || 0) * 60 - (r.integration_sec || 0));
-      const tag = r.photo ? 'button' : 'div';
-      const thumb = r.photo ? pic(r.photo, true, '', true) : '<span class="noimg"></span>';
-      return `<${tag} class="now"${r.photo ? ` type="button" data-k="${esc(r.slug || r.id)}"` : ''}>${thumb}<span class="info"><span class="top"><b>${esc(L.name(r))}</b><em>${r.percent}%</em></span><span class="meter"><i style="width:${Math.max(r.percent, 3)}%"></i></span><span class="hint">${esc(L.left(left))}</span></span></${tag}>`;
-    }).join('');
+    $('#now').hidden = !rows.length;
+    $('#now-row').innerHTML = rows.map(nowCard).join('');
   }
 
   function card(r) {
-    const p = r.photo, st = r.status;
-    const media = p ? pic(p, true, '', true)
-      : `<span class="ph">${STAR}<b>${esc(r.designation || L.name(r))}</b><span>${esc(L.noFrame(st))}</span></span>`;
+    const p = r.photo, st = r.status, k = r.slug || r.id;
+    const media = p ? pic(p, true, '', true) : `<span class="ph">${STAR}<b>${esc(r.designation || L.name(r))}</b><span>${esc(L.noFrame(st))}</span></span>`;
     const badge = `<span class="badge ${st}">${esc(L.STATUS[st])}${st === 'progress' ? ' · ' + r.percent + '%' : ''}</span>`;
     const nm = L.name(r);
     const sub = [nm !== r.designation ? r.designation : '', L.TYPE[r.type], L.con(r)].filter(Boolean).join(' · ');
-    const tag = p ? 'button' : 'div';
-    return `<${tag} class="t ${st}"${p ? ` type="button" data-k="${esc(r.slug || r.id)}"` : ''}>
-      <span class="pic">${media}${badge}</span>
-      <span class="body"><span class="name"><b>${esc(nm)}</b><span>${esc(sub)}</span></span>
-      <span class="meter${st === 'done' ? ' done' : ''}"><i style="width:${Math.max(r.percent, st === 'todo' ? 0 : 3)}%"></i></span>
-      <span class="meta"><span><b>${r.integration_sec ? L.dur(r.integration_sec) : '0'}</b> ${esc(L.ofGoal(L.durMin(r.target_min)))}</span><span>${esc(r.nights ? L.nights(r.nights) : L.ahead)}</span></span></span>
-    </${tag}>`;
+    const inner = `<span class="pic">${media}${badge}</span><span class="body"><span class="name"><b>${esc(nm)}</b><span>${esc(sub)}</span></span><span class="meter${st === 'done' ? ' done' : ''}"><i style="width:${Math.max(r.percent, st === 'todo' ? 0 : 3)}%"></i></span><span class="meta"><span><b>${r.integration_sec ? L.dur(r.integration_sec) : '0'}</b> ${esc(L.ofGoal(L.durMin(r.target_min)))}</span><span>${esc(r.nights ? L.nights(r.nights) : L.ahead)}</span></span></span>`;
+    return p ? `<a class="t ${st}" href="${esc(k)}/" data-k="${esc(k)}">${inner}</a>` : `<div class="t ${st}">${inner}</div>`;
   }
 
   function renderGrid() {
     const rows = data.challenge.filter(r => (fStatus === 'all' || r.status === fStatus) && (fType === 'all' || r.type === fType));
     $('#grid').innerHTML = rows.length ? rows.slice(0, limit).map(card).join('') : `<div class="empty">${esc(L.empty)}</div>`;
-    const more = $('#more');
-    more.hidden = rows.length <= limit;
+    $('#more').hidden = rows.length <= limit;
     $('#more-btn').textContent = L.showAll(rows.length);
     const cnt = k => data.challenge.filter(r => (k === 'all' || r.status === k) && (fType === 'all' || r.type === fType)).length;
-    $('#f-status').innerHTML = Object.entries(L.STATUS_F).map(([k, l]) => `<button type="button" data-k="${k}" aria-pressed="${k === fStatus}">${esc(l)}<span class="n">${cnt(k)}</span></button>`).join('');
+    $('#f-status').innerHTML = Object.entries(L.STATUS_F).map(([k, l]) => `<button type="button" data-f="${k}" aria-pressed="${k === fStatus}">${esc(l)}<span class="n">${cnt(k)}</span></button>`).join('');
     const types = ['all', ...Object.keys(L.TYPE).filter(t => data.challenge.some(r => r.type === t))];
-    $('#f-type').innerHTML = types.map(t => `<button class="chip" type="button" data-k="${t}" aria-pressed="${t === fType}">${esc(t === 'all' ? L.allTypes : L.TYPE_PL[t])}</button>`).join('');
+    $('#f-type').innerHTML = types.map(t => `<button class="chip" type="button" data-f="${t}" aria-pressed="${t === fType}">${esc(t === 'all' ? L.allTypes : L.TYPE_PL[t])}</button>`).join('');
   }
-  $('#f-status').onclick = e => { const b = e.target.closest('button'); if (b) { fStatus = b.dataset.k; limit = PAGE; renderGrid(); } };
-  $('#f-type').onclick = e => { const b = e.target.closest('button'); if (b) { fType = b.dataset.k; limit = PAGE; renderGrid(); } };
-  $('#more-btn').onclick = () => { limit = Infinity; renderGrid(); };
+  $('#f-status').onclick = e => { const b = e.target.closest('button'); if (b && data) { fStatus = b.dataset.f; limit = PAGE; renderGrid(); } };
+  $('#f-type').onclick = e => { const b = e.target.closest('button'); if (b && data) { fType = b.dataset.f; limit = PAGE; renderGrid(); } };
+  $('#more-btn').onclick = () => { if (data) { limit = Infinity; renderGrid(); } };
 
-  function solar(d) {
-    $('#solar-grid').innerHTML = d.solar.map(r => {
-      const p = r.photo, tag = p ? 'button' : 'div';
-      const orb = p ? `<span class="orb">${pic(p, true, '', true)}</span>` : `<span class="orb none">${esc(L.noFrame('progress'))}</span>`;
-      return `<${tag} class="s"${p ? ` type="button" data-k="${esc(r.slug || r.id)}"` : ''}>${orb}<span class="nm"><b>${esc(L.name(r))}</b><span>${esc(L.solarSub(r.nights))}</span></span></${tag}>`;
-    }).join('');
-  }
+  const solarCard = r => {
+    const p = r.photo, k = r.slug || r.id;
+    const inner = `${p ? `<span class="orb">${pic(p, true, '', true)}</span>` : `<span class="orb none">${esc(L.noFrame('progress'))}</span>`}<span class="nm"><b>${esc(L.name(r))}</b><span>${esc(L.solarSub(r.nights))}</span></span>`;
+    return p ? `<a class="s" href="${esc(k)}/" data-k="${esc(k)}">${inner}</a>` : `<div class="s">${inner}</div>`;
+  };
+  const solar = d => { $('#solar-grid').innerHTML = d.solar.map(solarCard).join(''); };
 
   function messier(mz) {
     const t = mz.totals;
@@ -671,8 +700,8 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
     $('#mz').innerHTML = mz.objects.map(o => {
       const r = o.slug && byId[o.slug] && byId[o.slug].photo ? byId[o.slug] : null;
       const tip = [`M${o.m}${o.name ? ' · ' + o.name : ''}`, L.MZ[o.status] + (o.status === 'progress' ? ` ${o.percent}%` : ''), o.status === 'todo' && o.season_from ? L.season(date(o.season_from)) : '', o.uncertain ? L.edge : ''].filter(Boolean).join(' · ');
-      const tag = r ? 'button' : 'span';
-      return `<${tag} class="q ${o.status}" title="${esc(tip)}"${r ? ` type="button" data-k="${esc(o.slug)}" aria-label="${esc(tip)}"` : ''}>${o.m}${o.uncertain ? '<small>?</small>' : ''}</${tag}>`;
+      return r ? `<a class="q ${o.status}" href="${esc(o.slug)}/" data-k="${esc(o.slug)}" title="${esc(tip)}" aria-label="${esc(tip)}">${o.m}${o.uncertain ? '<small>?</small>' : ''}</a>`
+               : `<span class="q ${o.status}" title="${esc(tip)}">${o.m}${o.uncertain ? '<small>?</small>' : ''}</span>`;
     }).join('');
   }
 
@@ -682,21 +711,24 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
     const bits = [`<b>${esc(L.title(r))}</b>`];
     if (r.integration_sec) bits.push(`<span>${esc(L.light(r))}</span>`);
     if (p.date) bits.push(`<span>${esc(L.frameFrom(date(p.date)))}</span>`);
+    bits.push(`<a class="btn" href="${esc(r.slug || r.id)}/">${esc(L.objPage)}</a>`);
     if (p.astrobin) bits.push(`<a class="btn" href="${esc(p.astrobin)}" target="_blank" rel="noopener">${esc(L.astrobin)}</a>`);
     $('#lb-cap').innerHTML = bits.join('');
     $('#lb').showModal();
   }
-  // Один обробник на всю сторінку: картки, «зараз», Сонячна система, Мессьє.
+  // Один обробник на всю сторінку: звичайний клік по картці відкриває лайтбокс, Ctrl/середня кнопка відкривають сторінку об'єкта.
   document.addEventListener('click', e => {
-    const b = e.target.closest('button[data-k]');
-    if (b && !b.closest('#f-status,#f-type')) open(byId[b.dataset.k]);
+    const a = e.target.closest('[data-k]');
+    if (!a || !data || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const r = byId[a.dataset.k];
+    if (r && r.photo) { e.preventDefault(); open(r); }
   });
 
   const lb = $('#lb');
   $('#lb-x').onclick = () => lb.close();
   lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
 
-  // Дані після першого кадру: hero малюється без очікування data.json.
+  // Дані після першого кадру: сторінка вже заповнена при збиранні, JS лише оновлює (свіжі цифри, фільтри, лайтбокс).
   const loadData = () => fetch(L.base + 'data.json', {cache: 'no-cache'}).then(r => r.json()).then(d => {
     data = d;
     const t = d.totals;
@@ -715,7 +747,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
     renderGrid();
     solar(d);
     if (d.messier) messier(d.messier);
-  }).catch(() => { $('#grid').innerHTML = `<div class="empty">${esc(L.fail)}</div>`; });
+  }).catch(() => {});
   // У фоновій вкладці rAF не викликається, тому запасний таймер.
   let dataStarted = false;
   const startData = () => { if (!dataStarted) { dataStarted = true; loadData(); } };
