@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-13T16:28:57+03:00",
+    "generated_at": "2026-10-13T16:33:10+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -82,7 +82,7 @@
             "first": "2026-09-05",
             "last": "2026-10-10",
             "photo": {
-                "title": "IC 1805 Серце, 9 ночей, 9 год 51 хв, фінал 11.10",
+                "title": "IC 1805 Серце, кольори за газами, 9 год 51 хв, v11 (фінал)",
                 "img": "img/ic-1805.jpg",
                 "thumb": "img/ic-1805_t.jpg",
                 "webp": "img/ic-1805.webp",
@@ -90,7 +90,7 @@
                 "w": 1800,
                 "h": 999,
                 "date": "2026-10-10",
-                "astrobin": "https://app.astrobin.com/i/hxz4hk"
+                "astrobin": "https://app.astrobin.com/i/flxi5z"
             },
             "difficulty": "normal",
             "target_min": 240,
