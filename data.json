@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-13T16:26:05+03:00",
+    "generated_at": "2026-10-13T16:28:57+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -28,7 +28,7 @@
             "first": "2026-09-25",
             "last": "2026-10-13",
             "photo": {
-                "title": "NGC 2244 Розетка, мозаїка 1×2, 10 ночей (v5c, повернуто 180°)",
+                "title": "NGC 2244 Розетка, двоколірна обробка дуобанд-даних — v2, 10 ночей",
                 "img": "img/ngc-2244.jpg",
                 "thumb": "img/ngc-2244_t.jpg",
                 "webp": "img/ngc-2244.webp",
@@ -36,7 +36,7 @@
                 "w": 1688,
                 "h": 1800,
                 "date": "2026-10-13",
-                "astrobin": "https://app.astrobin.com/i/g7gzbb"
+                "astrobin": "https://app.astrobin.com/i/u0bd2k"
             },
             "difficulty": "normal",
             "target_min": 240,
