@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-13T12:10:19+03:00",
+    "generated_at": "2026-10-13T16:24:53+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -28,15 +28,15 @@
             "first": "2026-09-25",
             "last": "2026-10-13",
             "photo": {
-                "title": "Розетка: кадр із тінню кабелю, 05.10 02:24",
+                "title": "NGC 2244 Розетка, мозаїка 1×2, 10 ночей (v5c, повернуто 180°)",
                 "img": "img/ngc-2244.jpg",
                 "thumb": "img/ngc-2244_t.jpg",
                 "webp": "img/ngc-2244.webp",
                 "thumb_webp": "img/ngc-2244_t.webp",
-                "w": 960,
-                "h": 540,
-                "date": "2026-10-05",
-                "astrobin": null
+                "w": 1688,
+                "h": 1800,
+                "date": "2026-10-13",
+                "astrobin": "https://app.astrobin.com/i/g7gzbb"
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -109,7 +109,7 @@
             "first": "2026-10-03",
             "last": "2026-10-09",
             "photo": {
-                "title": "IC 410 Пуголовки, 5 ночей, 5 год 19 хв, v4",
+                "title": "Туманність Пуголовки (IC 410) у кольорах за газами — v7, 5 год 19 хв",
                 "img": "img/ic-410.jpg",
                 "thumb": "img/ic-410_t.jpg",
                 "webp": "img/ic-410.webp",
@@ -117,7 +117,7 @@
                 "w": 1800,
                 "h": 977,
                 "date": "2026-10-09",
-                "astrobin": null
+                "astrobin": "https://app.astrobin.com/i/huxodq"
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -136,7 +136,7 @@
             "first": "2026-10-01",
             "last": "2026-10-07",
             "photo": {
-                "title": "NGC 281 Пакмен, 4 ночі, 4 год 01 хв, v2 кроп",
+                "title": "Туманність Пакмен (NGC 281) у кольорах за газами — v4, кроп, 4 год 01 хв",
                 "img": "img/ngc-281.jpg",
                 "thumb": "img/ngc-281_t.jpg",
                 "webp": "img/ngc-281.webp",
@@ -144,7 +144,7 @@
                 "w": 1180,
                 "h": 830,
                 "date": "2026-10-07",
-                "astrobin": null
+                "astrobin": "https://app.astrobin.com/i/j8r6f5"
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -325,14 +325,14 @@
             "first": "2026-08-23",
             "last": "2026-09-21",
             "photo": {
-                "title": "Туманність Каліфорнія: фільтр проти міського світла — 01_ngc1499_kaliforniya_1280",
+                "title": "NGC 1499 Каліфорнія, 3 ночі, 5 год 12 хв (v6b)",
                 "img": "img/ngc-1499.jpg",
                 "thumb": "img/ngc-1499_t.jpg",
                 "webp": "img/ngc-1499.webp",
                 "thumb_webp": "img/ngc-1499_t.webp",
-                "w": 1280,
-                "h": 792,
-                "date": "2026-08-24",
+                "w": 1800,
+                "h": 987,
+                "date": "2026-09-21",
                 "astrobin": null
             },
             "difficulty": "normal",
@@ -541,14 +541,14 @@
             "first": "2026-08-21",
             "last": "2026-08-24",
             "photo": {
-                "title": "Стожари з телескопа: телефон проти телескопа — 02_m45_teleskop_1280",
+                "title": "M45 Плеяди — дві ночі, 615 кадрів, 3 год 51 хв",
                 "img": "img/m45.jpg",
                 "thumb": "img/m45_t.jpg",
                 "webp": "img/m45.webp",
                 "thumb_webp": "img/m45_t.webp",
-                "w": 1280,
-                "h": 697,
-                "date": "2026-08-25",
+                "w": 1800,
+                "h": 999,
+                "date": "2026-08-24",
                 "astrobin": null
             },
             "difficulty": "easy",
@@ -622,13 +622,13 @@
             "first": "2026-09-11",
             "last": "2026-09-21",
             "photo": {
-                "title": "B33 «Кінська Голова» на тлі IC 434, фінал v2, кроп 3:2 зі знаком",
+                "title": "B33 «Кінська Голова» на тлі IC 434, фінал v2, 6 ночей, 6 год 10 хв, повне поле зі знаком",
                 "img": "img/ic-434.jpg",
                 "thumb": "img/ic-434_t.jpg",
                 "webp": "img/ic-434.webp",
                 "thumb_webp": "img/ic-434_t.webp",
-                "w": 1260,
-                "h": 840,
+                "w": 1800,
+                "h": 999,
                 "date": "2026-09-21",
                 "astrobin": null
             },
