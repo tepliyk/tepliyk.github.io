@@ -273,7 +273,9 @@ a.s:hover{transform:translateY(-3px);border-color:var(--accent-border)}
 .obj-flyby video{display:block;width:100%;height:auto;aspect-ratio:540/816;object-fit:cover;border-radius:18px;background:#000}
 .obj-flyby h2{font-size:24px;margin:0 0 10px}
 .obj-flyby p{max-width:520px;color:var(--soft);margin:0 0 18px}
-@media (max-width:600px){.obj-flyby{grid-template-columns:1fr}.obj-flyby video{max-width:300px;margin:0 auto}.obj-flyby h2{font-size:20px}.obj-flyby .btn{width:100%}}
+.obj-flyby .flyby-f{display:block;width:100%;aspect-ratio:9/16;border:0;border-radius:18px;background:#000}
+.fly-btns{display:flex;flex-wrap:wrap;gap:12px}
+@media (max-width:600px){.obj-flyby{grid-template-columns:1fr}.obj-flyby video,.obj-flyby .flyby-f{max-width:300px;margin:0 auto}.obj-flyby h2{font-size:20px}.obj-flyby .btn{width:100%}}
 .row-head a{font-size:14px;color:var(--accent-text);text-decoration:none;font-weight:600}
 
 footer{border-top:1px solid var(--border)}
@@ -384,7 +386,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
 </script>
 <noscript><link rel="stylesheet" href="../../fonts/fonts.css"></noscript>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://tepliyk.github.io/en/sonce/#image","name":"Sun","description":"Sun: 11 nights of observations from a city balcony in Ukraine with a DWARF Mini smart telescope. The best frames are picked from thousands of short exposures.","contentUrl":"https://tepliyk.github.io/img/sonce.jpg","thumbnailUrl":"https://tepliyk.github.io/img/sonce_t.jpg","width":1080,"height":1230,"url":"https://tepliyk.github.io/en/sonce/","inLanguage":"en","datePublished":"2026-10-08","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Kostia","copyrightNotice":"© Kostia, «Nebo Blyzhche». All images are my own.","isPartOf":{"@id":"https://tepliyk.github.io/#site"}},{"@type":"Person","@id":"https://tepliyk.github.io/#me","name":"Kostia","url":"https://tepliyk.github.io/","sameAs":["https://t.me/nebo_blyzhche","https://app.astrobin.com/u/nebo_blyzhche","https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw","https://www.instagram.com/nebo_blyzhche/","https://www.tiktok.com/@nebo_blyzhche","https://www.facebook.com/nebo.blyzhche"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Nebo Blyzhche","item":"https://tepliyk.github.io/en/"},{"@type":"ListItem","position":2,"name":"Solar system","item":"https://tepliyk.github.io/en/#solar"},{"@type":"ListItem","position":3,"name":"Sun","item":"https://tepliyk.github.io/en/sonce/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://tepliyk.github.io/en/sonce/#image","name":"Sun","description":"Sun: 11 nights of observations from a city balcony in Ukraine with a DWARF Mini smart telescope. The best frames are picked from thousands of short exposures.","contentUrl":"https://tepliyk.github.io/img/sonce.jpg","thumbnailUrl":"https://tepliyk.github.io/img/sonce_t.jpg","width":1080,"height":1230,"url":"https://tepliyk.github.io/en/sonce/","inLanguage":"en","datePublished":"2026-10-08","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Kostia","copyrightNotice":"© Kostia, «Nebo Blyzhche». All images are my own.","isPartOf":{"@id":"https://tepliyk.github.io/#site"}},{"@type":"Person","@id":"https://tepliyk.github.io/#me","name":"Kostia","url":"https://tepliyk.github.io/","sameAs":["https://t.me/nebo_blyzhche","https://app.astrobin.com/u/nebo_blyzhche","https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw/shorts","https://www.instagram.com/nebo_blyzhche/","https://www.tiktok.com/@nebo_blyzhche","https://www.facebook.com/nebo.blyzhche","https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Nebo Blyzhche","item":"https://tepliyk.github.io/en/"},{"@type":"ListItem","position":2,"name":"Solar system","item":"https://tepliyk.github.io/en/#solar"},{"@type":"ListItem","position":3,"name":"Sun","item":"https://tepliyk.github.io/en/sonce/"}]}]}</script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -442,8 +444,11 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
     <video class="flyby-v" muted loop playsinline preload="none" poster="../../vid/sonce.jpg" width="540" height="816" aria-label="3D flight loop through the image of Sun"><source src="../../vid/sonce.mp4" type="video/mp4"></video>
     <div>
       <h2 id="flyby-h">3D flight through the image</h2>
-      <p>A short loop of a 3D flight through this image. The full clip with sound is on TikTok.</p>
-      <a class="btn btn-lg" href="https://www.tiktok.com/@nebo_blyzhche/video/7695250129514810644" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tt"/></svg>Watch the flight on TikTok</a>
+      <p>A short loop of a 3D flight through this image. You can watch the full clip with sound right here.</p>
+      <div class="fly-btns">
+      <button class="btn btn-p btn-lg flyby-play" type="button" data-src="https://www.tiktok.com/player/v1/7695250129514810644?autoplay=1&amp;rel=0&amp;description=0&amp;music_info=0" data-title="3D flight through the image of Sun"><svg aria-hidden="true"><use href="#i-fly"/></svg>Watch in full with sound</button>
+      <a class="btn btn-lg" href="https://www.tiktok.com/@nebo_blyzhche/video/7695250129514810644" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tt"/></svg>Open on TikTok</a>
+      </div>
     </div>
   </section>
   <div class="obj-cta">
@@ -459,7 +464,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
 <footer>
   <div class="wrap">
     <span>© Kostia, «Nebo Blyzhche». All images are my own.</span>
-    <span id="foot-upd">Updated 14 October at 12:51 automatically</span>
+    <span id="foot-upd">Updated 14 October at 12:55 automatically</span>
     <a href="../../privacy.html">Privacy policy</a>
   </div>
 </footer>
@@ -472,11 +477,21 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
   document.getElementById('theme').onclick = () => setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light');
   // 3D-проліт: грає лише у видимій зоні; без автоплею при reduced-motion або режимі економії трафіку.
   const v = document.querySelector('.flyby-v');
+  let io = null;
   if (v) {
     const calm = matchMedia('(prefers-reduced-motion: reduce)').matches || (navigator.connection && navigator.connection.saveData);
     if (calm || !('IntersectionObserver' in window)) v.controls = true;
-    else new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? v.play().catch(() => { v.controls = true; }) : v.pause()), { threshold: .35 }).observe(v);
+    else (io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? v.play().catch(() => { v.controls = true; }) : v.pause()), { threshold: .35 })).observe(v);
   }
+  // Повне відео (TikTok / YouTube) замість петлі, лише після кліку
+  const pb = document.querySelector('.flyby-play');
+  if (pb && v) pb.onclick = () => {
+    const f = document.createElement('iframe');
+    f.className = 'flyby-f'; f.src = pb.dataset.src; f.title = pb.dataset.title;
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.allowFullscreen = true; f.referrerPolicy = 'strict-origin-when-cross-origin';
+    if (io) io.disconnect();
+    v.pause(); v.replaceWith(f); pb.remove(); f.focus();
+  };
 })();
 </script>
 </body>
