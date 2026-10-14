@@ -647,7 +647,9 @@ body>footer{contain-intrinsic-size:auto 160px}
     btn.setAttribute('aria-label', L.openFrame(L.title(best)));
     btn.onclick = () => open(best);
     const cv = $('#hero-img'), jpg = img(best.photo.img), webp = img(best.photo.webp), thumb = img(best.photo.thumb_webp || best.photo.thumb);
-    afterPaint(() => {
+    // Без afterPaint: дані вже приходять після першого кадру, а чекати на load означало б чекати всі мініатюри галереї
+    // (кадр сезону з'являвся на ~2,4 с замість ~1,2 с). Мініатюра героя preload-иться в <head>, тож малюється одразу.
+    requestAnimationFrame(() => {
       // Спершу мініатюра (вона вже в кеші від галереї), потім повний кадр. Перед drawImage картинка декодується
       // поза головним потоком (decode()), інакше декодування 1800 px ставало довгою задачею на сотні мс.
       let cur = null, full = false, ro = null;
@@ -675,7 +677,9 @@ body>footer{contain-intrinsic-size:auto 160px}
         im.src = src;
       };
       if (thumb) load(thumb, false);
-      load(webp || jpg, true, () => { if (webp) load(jpg, true); });
+      // Повний кадр (сотні КБ) лише після load, щоб не відбирати канал у мініатюр і шрифтів на повільній мережі.
+      const fullFrame = () => load(webp || jpg, true, () => { if (webp) load(jpg, true); });
+      if (document.readyState === 'complete') fullFrame(); else addEventListener('load', () => setTimeout(fullFrame, 0), {once: true});
     });
   }
   const bestOf = d => {
