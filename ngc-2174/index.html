@@ -261,6 +261,11 @@ a.s:hover{transform:translateY(-3px);border-color:var(--accent-border)}
 .obj-facts dd{margin:4px 0 0;font:600 17px var(--f-display)}
 .obj-text{max-width:760px;color:var(--soft);font-size:17px;margin:0 0 24px}
 .obj-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:48px}
+.obj-flyby{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:clamp(18px,3vw,36px);align-items:center;margin:0 0 28px;padding:clamp(14px,2vw,20px);border-radius:28px;background:var(--surface);border:1px solid var(--border)}
+.obj-flyby video{display:block;width:100%;height:auto;aspect-ratio:540/816;object-fit:cover;border-radius:18px;background:#000}
+.obj-flyby h2{font-size:24px;margin:0 0 10px}
+.obj-flyby p{max-width:520px;color:var(--soft);margin:0 0 18px}
+@media (max-width:600px){.obj-flyby{grid-template-columns:1fr}.obj-flyby video{max-width:300px;margin:0 auto}.obj-flyby h2{font-size:20px}.obj-flyby .btn{width:100%}}
 .row-head a{font-size:14px;color:var(--accent-text);text-decoration:none;font-weight:600}
 
 footer{border-top:1px solid var(--border)}
@@ -427,6 +432,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
     <div><dt>Телескоп</dt><dd>DWARF Mini, міський балкон</dd></div>
   </dl>
   <p class="obj-text">Туманність Мавпяча Голова (NGC 2174): туманність, сузір&#39;я Оріон. Зібрано 4 год 50 хв світла за 2 ночі з міського балкона в Україні смарт-телескопом DWARF Mini.</p>
+
   <div class="obj-cta">
       <a class="btn btn-p btn-lg" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tg"/></svg>Більше в Telegram</a>
       <a class="btn btn-lg" href="../"><svg aria-hidden="true"><use href="#i-back"/></svg>На головну</a>
@@ -440,7 +446,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
 <footer>
   <div class="wrap">
     <span>© Костя, «Небо ближче». Усі знімки власні.</span>
-    <span id="foot-upd">Оновлено 14 жовтня о 12:10 автоматично</span>
+    <span id="foot-upd">Оновлено 14 жовтня о 12:31 автоматично</span>
     <a href="../privacy.html">Privacy policy</a>
   </div>
 </footer>
@@ -451,6 +457,13 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
 (() => {
   const setTheme = t => { if (t === 'light') document.documentElement.dataset.theme = 'light'; else delete document.documentElement.dataset.theme; try { localStorage.setItem('theme', t); } catch (e) {} };
   document.getElementById('theme').onclick = () => setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light');
+  // 3D-проліт: грає лише у видимій зоні; без автоплею при reduced-motion або режимі економії трафіку.
+  const v = document.querySelector('.flyby-v');
+  if (v) {
+    const calm = matchMedia('(prefers-reduced-motion: reduce)').matches || (navigator.connection && navigator.connection.saveData);
+    if (calm || !('IntersectionObserver' in window)) v.controls = true;
+    else new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? v.play().catch(() => { v.controls = true; }) : v.pause()), { threshold: .35 }).observe(v);
+  }
 })();
 </script>
 </body>

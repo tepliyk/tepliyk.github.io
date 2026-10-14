@@ -261,6 +261,11 @@ a.s:hover{transform:translateY(-3px);border-color:var(--accent-border)}
 .obj-facts dd{margin:4px 0 0;font:600 17px var(--f-display)}
 .obj-text{max-width:760px;color:var(--soft);font-size:17px;margin:0 0 24px}
 .obj-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:48px}
+.obj-flyby{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:clamp(18px,3vw,36px);align-items:center;margin:0 0 28px;padding:clamp(14px,2vw,20px);border-radius:28px;background:var(--surface);border:1px solid var(--border)}
+.obj-flyby video{display:block;width:100%;height:auto;aspect-ratio:540/816;object-fit:cover;border-radius:18px;background:#000}
+.obj-flyby h2{font-size:24px;margin:0 0 10px}
+.obj-flyby p{max-width:520px;color:var(--soft);margin:0 0 18px}
+@media (max-width:600px){.obj-flyby{grid-template-columns:1fr}.obj-flyby video{max-width:300px;margin:0 auto}.obj-flyby h2{font-size:20px}.obj-flyby .btn{width:100%}}
 .row-head a{font-size:14px;color:var(--accent-text);text-decoration:none;font-weight:600}
 
 footer{border-top:1px solid var(--border)}
@@ -427,6 +432,14 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
     <div><dt>Telescope</dt><dd>DWARF Mini, city balcony</dd></div>
   </dl>
   <p class="obj-text">Open cluster M37 (M37), a cluster in Auriga. 58 min of light gathered over 1 night from a city balcony in Ukraine with a DWARF Mini smart telescope, 96% of the goal of 1 h.</p>
+  <section class="obj-flyby" id="flyby" aria-labelledby="flyby-h">
+    <video class="flyby-v" muted loop playsinline preload="none" poster="../../vid/m37.jpg" width="540" height="816" aria-label="3D flight loop through the image of Open cluster M37"><source src="../../vid/m37.mp4" type="video/mp4"></video>
+    <div>
+      <h2 id="flyby-h">3D flight through the image</h2>
+      <p>A short loop of a 3D flight through this image. Full flights come out daily on YouTube Shorts, Instagram and TikTok.</p>
+      <a class="btn btn-lg" href="https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-play"/></svg>Flights on YouTube</a>
+    </div>
+  </section>
   <div class="obj-cta">
       <a class="btn btn-p btn-lg" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tg"/></svg>More on Telegram</a>
       <a class="btn btn-lg" href="https://app.astrobin.com/i/0nwh9k" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-star"/></svg>Full size on AstroBin</a>
@@ -441,7 +454,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
 <footer>
   <div class="wrap">
     <span>© Kostia, «Nebo Blyzhche». All images are my own.</span>
-    <span id="foot-upd">Updated 14 October at 12:10 automatically</span>
+    <span id="foot-upd">Updated 14 October at 12:31 automatically</span>
     <a href="../../privacy.html">Privacy policy</a>
   </div>
 </footer>
@@ -452,6 +465,13 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
 (() => {
   const setTheme = t => { if (t === 'light') document.documentElement.dataset.theme = 'light'; else delete document.documentElement.dataset.theme; try { localStorage.setItem('theme', t); } catch (e) {} };
   document.getElementById('theme').onclick = () => setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light');
+  // 3D-проліт: грає лише у видимій зоні; без автоплею при reduced-motion або режимі економії трафіку.
+  const v = document.querySelector('.flyby-v');
+  if (v) {
+    const calm = matchMedia('(prefers-reduced-motion: reduce)').matches || (navigator.connection && navigator.connection.saveData);
+    if (calm || !('IntersectionObserver' in window)) v.controls = true;
+    else new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? v.play().catch(() => { v.controls = true; }) : v.pause()), { threshold: .35 }).observe(v);
+  }
 })();
 </script>
 </body>

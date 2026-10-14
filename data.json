@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-14T12:10:20+03:00",
+    "generated_at": "2026-10-14T12:31:23+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -38,6 +38,13 @@
                 "date": "2026-10-13",
                 "astrobin": "https://app.astrobin.com/i/u0bd2k"
             },
+            "flyby": {
+                "loop": "vid/ngc-2244.mp4",
+                "poster": "vid/ngc-2244.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
+            },
             "difficulty": "normal",
             "target_min": 240,
             "percent": 100,
@@ -64,6 +71,13 @@
                 "h": 1013,
                 "date": "2026-10-12",
                 "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/m44.mp4",
+                "poster": "vid/m44.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -92,6 +106,13 @@
                 "date": "2026-10-10",
                 "astrobin": "https://app.astrobin.com/i/flxi5z"
             },
+            "flyby": {
+                "loop": "vid/ic-1805.mp4",
+                "poster": "vid/ic-1805.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
+            },
             "difficulty": "normal",
             "target_min": 240,
             "percent": 100,
@@ -119,6 +140,13 @@
                 "date": "2026-10-09",
                 "astrobin": null
             },
+            "flyby": {
+                "loop": "vid/ic-410.mp4",
+                "poster": "vid/ic-410.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
+            },
             "difficulty": "normal",
             "target_min": 240,
             "percent": 100,
@@ -145,6 +173,13 @@
                 "h": 830,
                 "date": "2026-10-07",
                 "astrobin": "https://app.astrobin.com/i/j8r6f5"
+            },
+            "flyby": {
+                "loop": "vid/ngc-281.mp4",
+                "poster": "vid/ngc-281.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -200,6 +235,13 @@
                 "date": "2026-10-02",
                 "astrobin": null
             },
+            "flyby": {
+                "loop": "vid/ngc-2264.mp4",
+                "poster": "vid/ngc-2264.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
+            },
             "difficulty": "normal",
             "target_min": 240,
             "percent": 100,
@@ -226,6 +268,13 @@
                 "h": 800,
                 "date": "2026-09-30",
                 "astrobin": "https://app.astrobin.com/i/1ow4nc"
+            },
+            "flyby": {
+                "loop": "vid/m36.mp4",
+                "poster": "vid/m36.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -254,6 +303,13 @@
                 "date": "2026-09-29",
                 "astrobin": "https://app.astrobin.com/i/cre17o"
             },
+            "flyby": {
+                "loop": "vid/m38.mp4",
+                "poster": "vid/m38.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
+            },
             "difficulty": "easy",
             "target_min": 60,
             "percent": 100,
@@ -280,6 +336,13 @@
                 "h": 999,
                 "date": "2026-09-26",
                 "astrobin": "https://app.astrobin.com/i/jivp2v"
+            },
+            "flyby": {
+                "loop": "vid/ic-443.mp4",
+                "poster": "vid/ic-443.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": "https://www.youtube.com/shorts/l7_X-4debOg"
             },
             "difficulty": "hard",
             "target_min": 360,
@@ -308,6 +371,13 @@
                 "date": "2026-09-25",
                 "astrobin": null
             },
+            "flyby": {
+                "loop": "vid/ic-405.mp4",
+                "poster": "vid/ic-405.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
+            },
             "difficulty": "normal",
             "target_min": 240,
             "percent": 100,
@@ -334,6 +404,13 @@
                 "h": 987,
                 "date": "2026-09-21",
                 "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/ngc-1499.mp4",
+                "poster": "vid/ngc-1499.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -362,6 +439,13 @@
                 "date": "2026-09-19",
                 "astrobin": null
             },
+            "flyby": {
+                "loop": "vid/m42.mp4",
+                "poster": "vid/m42.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": "https://www.youtube.com/shorts/Kguk_0_xfuQ"
+            },
             "difficulty": "easy",
             "target_min": 90,
             "percent": 100,
@@ -388,6 +472,13 @@
                 "h": 999,
                 "date": "2026-09-12",
                 "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/ic-1848.mp4",
+                "poster": "vid/ic-1848.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -416,6 +507,13 @@
                 "date": "2026-09-03",
                 "astrobin": null
             },
+            "flyby": {
+                "loop": "vid/ngc-869.mp4",
+                "poster": "vid/ngc-869.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
+            },
             "difficulty": "easy",
             "target_min": 60,
             "percent": 100,
@@ -442,6 +540,13 @@
                 "h": 970,
                 "date": "2026-09-03",
                 "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/m103.mp4",
+                "poster": "vid/m103.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": "https://www.youtube.com/shorts/hW5OLMNN33Y"
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -470,6 +575,13 @@
                 "date": "2026-09-03",
                 "astrobin": null
             },
+            "flyby": {
+                "loop": "vid/m35.mp4",
+                "poster": "vid/m35.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
+            },
             "difficulty": "easy",
             "target_min": 60,
             "percent": 100,
@@ -496,6 +608,13 @@
                 "h": 1400,
                 "date": "2026-09-06",
                 "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/m1.mp4",
+                "poster": "vid/m1.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
             },
             "difficulty": "hard",
             "target_min": 360,
@@ -524,6 +643,13 @@
                 "date": "2026-08-28",
                 "astrobin": null
             },
+            "flyby": {
+                "loop": "vid/m31.mp4",
+                "poster": "vid/m31.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
+            },
             "difficulty": "easy",
             "target_min": 120,
             "percent": 100,
@@ -550,6 +676,13 @@
                 "h": 999,
                 "date": "2026-08-24",
                 "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/m45.mp4",
+                "poster": "vid/m45.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -578,6 +711,13 @@
                 "date": "2026-09-20",
                 "astrobin": null
             },
+            "flyby": {
+                "loop": "vid/m33.mp4",
+                "poster": "vid/m33.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
+            },
             "difficulty": "hard",
             "target_min": 480,
             "percent": 97,
@@ -604,6 +744,13 @@
                 "h": 999,
                 "date": "2026-09-29",
                 "astrobin": "https://app.astrobin.com/i/0nwh9k"
+            },
+            "flyby": {
+                "loop": "vid/m37.mp4",
+                "poster": "vid/m37.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -632,6 +779,13 @@
                 "date": "2026-09-21",
                 "astrobin": null
             },
+            "flyby": {
+                "loop": "vid/ic-434.mp4",
+                "poster": "vid/ic-434.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": "https://www.youtube.com/shorts/LxUZ-nqueCU"
+            },
             "difficulty": "very_hard",
             "target_min": 480,
             "percent": 75,
@@ -658,6 +812,13 @@
                 "h": 900,
                 "date": "2026-08-24",
                 "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/m34.mp4",
+                "poster": "vid/m34.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -739,6 +900,13 @@
                 "h": 995,
                 "date": "2026-09-08",
                 "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/ngc-2403.mp4",
+                "poster": "vid/ngc-2403.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
             },
             "difficulty": "hard",
             "target_min": 480,
@@ -955,6 +1123,13 @@
                 "h": 1000,
                 "date": "2026-08-30",
                 "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/misiac.mp4",
+                "poster": "vid/misiac.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
             }
         },
         {
@@ -1001,6 +1176,13 @@
                 "h": 1230,
                 "date": "2026-10-08",
                 "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/sonce.mp4",
+                "poster": "vid/sonce.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null
             }
         },
         {

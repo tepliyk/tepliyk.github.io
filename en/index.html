@@ -261,6 +261,11 @@ a.s:hover{transform:translateY(-3px);border-color:var(--accent-border)}
 .obj-facts dd{margin:4px 0 0;font:600 17px var(--f-display)}
 .obj-text{max-width:760px;color:var(--soft);font-size:17px;margin:0 0 24px}
 .obj-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:48px}
+.obj-flyby{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:clamp(18px,3vw,36px);align-items:center;margin:0 0 28px;padding:clamp(14px,2vw,20px);border-radius:28px;background:var(--surface);border:1px solid var(--border)}
+.obj-flyby video{display:block;width:100%;height:auto;aspect-ratio:540/816;object-fit:cover;border-radius:18px;background:#000}
+.obj-flyby h2{font-size:24px;margin:0 0 10px}
+.obj-flyby p{max-width:520px;color:var(--soft);margin:0 0 18px}
+@media (max-width:600px){.obj-flyby{grid-template-columns:1fr}.obj-flyby video{max-width:300px;margin:0 auto}.obj-flyby h2{font-size:20px}.obj-flyby .btn{width:100%}}
 .row-head a{font-size:14px;color:var(--accent-text);text-decoration:none;font-weight:600}
 
 footer{border-top:1px solid var(--border)}
@@ -410,7 +415,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
 <main class="wrap" id="top">
   <div class="hero">
     <div class="intro">
-      <span class="eyebrow"><i></i><span id="updated">Updated 14 October at 12:10</span></span>
+      <span class="eyebrow"><i></i><span id="updated">Updated 14 October at 12:31</span></span>
       <h1><span class="l">All the sky</span> <span class="l">you can see <em>from</em></span> <span class="l"><em>a single balcony</em></span></h1>
       <p class="lead">Hi, I'm Kostia. I photograph nebulae and galaxies with a tiny smart telescope from a city balcony in Ukraine. The goal is simple: capture everything that can be seen from here at all.</p>
     </div>
@@ -523,7 +528,7 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
 <footer>
   <div class="wrap">
     <span>© Kostia, «Nebo Blyzhche». All images are my own.</span>
-    <span id="foot-upd">Updated 14 October at 12:10 automatically</span>
+    <span id="foot-upd">Updated 14 October at 12:31 automatically</span>
     <a href="../privacy.html">Privacy policy</a>
   </div>
 </footer>
