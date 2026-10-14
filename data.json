@@ -1,9 +1,10 @@
 {
-    "generated_at": "2026-10-14T12:43:01+03:00",
+    "generated_at": "2026-10-14T12:51:03+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
-        "youtube": "https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw"
+        "youtube": "https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw",
+        "tiktok": "https://www.tiktok.com/@nebo_blyzhche"
     },
     "totals": {
         "objects": 38,
@@ -43,7 +44,8 @@
                 "poster": "vid/ngc-2244.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -77,7 +79,8 @@
                 "poster": "vid/m44.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -111,7 +114,8 @@
                 "poster": "vid/ic-1805.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -145,7 +149,8 @@
                 "poster": "vid/ic-410.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -179,7 +184,8 @@
                 "poster": "vid/ngc-281.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -240,7 +246,8 @@
                 "poster": "vid/ngc-2264.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -274,7 +281,8 @@
                 "poster": "vid/m36.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -308,7 +316,8 @@
                 "poster": "vid/m38.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -342,7 +351,8 @@
                 "poster": "vid/ic-443.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": "https://www.youtube.com/shorts/l7_X-4debOg"
+                "youtube": "https://www.youtube.com/shorts/l7_X-4debOg",
+                "tiktok": null
             },
             "difficulty": "hard",
             "target_min": 360,
@@ -376,7 +386,8 @@
                 "poster": "vid/ic-405.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -410,7 +421,8 @@
                 "poster": "vid/ngc-1499.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -444,7 +456,8 @@
                 "poster": "vid/m42.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": "https://www.youtube.com/shorts/Kguk_0_xfuQ"
+                "youtube": "https://www.youtube.com/shorts/Kguk_0_xfuQ",
+                "tiktok": null
             },
             "difficulty": "easy",
             "target_min": 90,
@@ -478,7 +491,8 @@
                 "poster": "vid/ic-1848.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -512,7 +526,8 @@
                 "poster": "vid/ngc-869.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -546,7 +561,8 @@
                 "poster": "vid/m103.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": "https://www.youtube.com/shorts/hW5OLMNN33Y"
+                "youtube": "https://www.youtube.com/shorts/hW5OLMNN33Y",
+                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7695729548712873268"
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -580,7 +596,8 @@
                 "poster": "vid/m35.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -614,7 +631,8 @@
                 "poster": "vid/m1.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7695269668235283732"
             },
             "difficulty": "hard",
             "target_min": 360,
@@ -648,7 +666,8 @@
                 "poster": "vid/m31.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "easy",
             "target_min": 120,
@@ -682,7 +701,8 @@
                 "poster": "vid/m45.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -716,7 +736,8 @@
                 "poster": "vid/m33.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "hard",
             "target_min": 480,
@@ -750,7 +771,8 @@
                 "poster": "vid/m37.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -784,7 +806,8 @@
                 "poster": "vid/ic-434.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": "https://www.youtube.com/shorts/LxUZ-nqueCU"
+                "youtube": "https://www.youtube.com/shorts/LxUZ-nqueCU",
+                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7696233865782021377"
             },
             "difficulty": "very_hard",
             "target_min": 480,
@@ -818,7 +841,8 @@
                 "poster": "vid/m34.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -906,7 +930,8 @@
                 "poster": "vid/ngc-2403.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "hard",
             "target_min": 480,
@@ -1129,7 +1154,8 @@
                 "poster": "vid/misiac.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": null
             }
         },
         {
@@ -1182,7 +1208,8 @@
                 "poster": "vid/sonce.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null
+                "youtube": null,
+                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7695250129514810644"
             }
         },
         {
