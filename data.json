@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-15T20:02:21+03:00",
+    "generated_at": "2026-10-15T20:37:10+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -12,7 +12,7 @@
         "progress": 8,
         "todo": 10,
         "nights": 48,
-        "deep_hours": 138.1,
+        "deep_hours": 138.6,
         "first_night": "2026-08-12",
         "photos": 48
     },
@@ -35,7 +35,7 @@
                 "story_en": "The biggest series of the challenge. The Rosette does not fit into the frame, so it was shot as a two-panel mosaic, with the telescope alternating panels in twenty-minute blocks. Ten nights, more than fifteen hundred 60-second dual-band frames, about thirteen hours per panel. The object never climbs above 46 degrees and sets behind the roof earlier every night, so the series was closed by the Moon, not by choice. The seam between panels and frame selection on cloudy nights are the job of the final processing.",
                 "distance_ly": 5200,
                 "angular_size": "≈ 1,3°",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 10,
@@ -110,7 +110,7 @@
                 "story_en": "The Beehive is big and bright, so it was a spring break from nebulae: short exposures of 5 to 30 seconds without a filter, three nights. The difficulty is not the object but the season: in spring it sits in the west, where the balcony does not face, and it has to be caught in the evening right after dusk.",
                 "distance_ly": 600,
                 "angular_size": "≈ 95′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 3,
@@ -180,7 +180,7 @@
                 "story_en": "The Heart was shot over nine dual-band sessions, first at 180 seconds, then at 60: long frames collect more but are rejected more often. The nebula rises above the roof for only a few hours, and the edge of the overhang ate part of one night's frames. A dew shield against street lights helped in the evening hours. The central cluster and the pillars around it came out crisp; the object is closed in the challenge.",
                 "distance_ly": 7500,
                 "angular_size": "≈ 2,5°",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 9,
@@ -255,7 +255,7 @@
                 "story_en": "The first session was a test of whether nebulae can be shot under a 55 percent Moon only a dozen degrees from the target. Dual-band held up: the background got brighter, but the Tadpoles came through. Four more nights at 60 seconds followed, and all five were combined into one stack in the cloud. The tails of both tadpoles are visible; the object is closed in the challenge.",
                 "distance_ly": 12000,
                 "angular_size": "≈ 40′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 5,
@@ -324,7 +324,7 @@
                 "story_en": "The series started with a mistake: the first night was shot without a filter instead of dual-band because the switch was in the wrong position, and that stack served only as a framing reference. Then four dual-band nights at 60 seconds, combined into one stack in the cloud. Pacman is an evening target that hides behind the roof around eleven, so every session is short and the light accumulates gradually.",
                 "distance_ly": 9500,
                 "angular_size": "≈ 35′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 4,
@@ -394,7 +394,7 @@
                 "story_en": "The first session ran under a 79 percent Moon and through clouds: of 169 frames the device stacked only 101, and the ones it rejected really do not belong in the stack. Two more dual-band nights at 60 seconds followed. The head is recognisable, the pillars on the cavity edge are visible, but the four-hour goal is still far off and the nebula waits for clear nights.",
                 "distance_ly": 6400,
                 "angular_size": "≈ 40′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 3,
@@ -453,7 +453,7 @@
                 "story_en": "Four dual-band nights at 60 seconds, one of which was lost entirely: thin clouds through the whole series, and every frame had a third as many stars as on clear nights. Such frames do not go into the stack: they add more noise than signal. The other three nights gave a clean Cone and Fox Fur, and the goal for this nebula is not closed yet.",
                 "distance_ly": 2600,
                 "angular_size": "≈ 40′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 4,
@@ -522,7 +522,7 @@
                 "story_en": "One night of thirty-second frames without a filter, with slightly higher gain than usual for clusters. The blue stars on the dark background came out clean, and the goal was closed in one session. Together with M37 and M38 it forms the Auriga trio, convenient to shoot one after another in a single evening.",
                 "distance_ly": 4100,
                 "angular_size": "≈ 12′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 1,
@@ -554,7 +554,7 @@
                 "w": 1200,
                 "h": 800,
                 "date": "2026-09-30",
-                "astrobin": "https://app.astrobin.com/i/1ow4nc"
+                "astrobin": null
             },
             "flyby": {
                 "loop": "vid/m36.mp4",
@@ -587,7 +587,7 @@
                 "story_en": "One night of thirty-second frames without a filter. The cross-shaped pattern of bright stars is visible at once, while the neighbouring NGC 1907 in a city sky is barely a knot of faint stars in the corner of the field. The goal for bright clusters was closed in one session.",
                 "distance_ly": 4200,
                 "angular_size": "≈ 21′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 1,
@@ -652,7 +652,7 @@
                 "story_en": "Seven dual-band sessions with exposures of 180, 90 and 60 seconds: the Jellyfish was the testing ground for choosing exposure under a city sky, since 30- and 60-second frames are almost never rejected while three-minute ones often are. The filaments and the curled edge facing the dense cloud came out crisp; the object is closed in the challenge.",
                 "distance_ly": 5000,
                 "angular_size": "≈ 50′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 7,
@@ -724,7 +724,7 @@
                 "story_en": "This is the object where re-stacking paid off for the first time: three nights with different exposures, 180 and 60 seconds, stacked separately by the telescope, then all frames stacked together again in the cloud for more than five hours of light and a noticeably cleaner background. The flames around the star came out; the blue reflection part stayed weak in the city sky. The target is closed in the challenge.",
                 "distance_ly": 1500,
                 "angular_size": "37′ × 19′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 3,
@@ -792,7 +792,7 @@
                 "story_en": "California became a test of long exposures: 90, 120 and 180 seconds in one night to see where the device starts losing frames to tracking and light pollution. The nebula turned out to be rewarding: hydrogen in dual-band shows up even with the Moon out. The three-night frame gathered enough light to show the whole band, and the object is closed in the challenge.",
                 "distance_ly": 1000,
                 "angular_size": "2,5° × 0,5°",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 3,
@@ -862,7 +862,7 @@
                 "story_en": "Orion is so bright that the main problem is not gathering light but not clipping the core. So the series used two exposures: 60 seconds for the outer wings and 15 seconds to keep the Trapezium. Three nights gave more than two hours of light, and stacking all frames together in the cloud cut the background noise by about one and a half times. In winter, when Orion climbs higher, the long series can be extended.",
                 "distance_ly": 1300,
                 "angular_size": "85′ × 60′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 3,
@@ -930,7 +930,7 @@
                 "story_en": "The Soul was shot alongside the Heart, four dual-band nights at 180 seconds. Long frames earned their keep here: the nebula is fainter than its neighbour, and every minute counts. The cavities and the pillars along the edges came out, but the target is still gathering light: a few hours remain to the goal, waiting for clear autumn nights.",
                 "distance_ly": 7500,
                 "angular_size": "≈ 2,5° × 1,5°",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 4,
@@ -997,7 +997,7 @@
                 "story_en": "Both clusters fit into the DWARF Mini field at once, so this was a quick and rewarding object: three nights of thirty-second frames without a filter. The goal for bright clusters is modest and was reached in one go. The red supergiants among the blue stars showed up right away, with no colour boost.",
                 "distance_ly": 7500,
                 "angular_size": "2 × 30′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 3,
@@ -1065,7 +1065,7 @@
                 "story_en": "Three short sessions of thirty-second frames without a filter. The cluster is small and takes up only the centre of the DWARF Mini field, so steady air matters more here than long exposure. The triangle with the double star at its apex and the orange giant came out right away; the object is closed.",
                 "distance_ly": 10000,
                 "angular_size": "≈ 6′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 3,
@@ -1133,7 +1133,7 @@
                 "story_en": "Two nights of thirty-second frames without a filter. The main interest in the frame is not M35 itself but the tiny NGC 2158 beside it: in a city sky it barely stands out from the background, and it alone was worth giving the cluster a second night. Both are visible in one field; the goal for bright clusters is reached.",
                 "distance_ly": 2800,
                 "angular_size": "≈ 28′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 2,
@@ -1199,7 +1199,7 @@
                 "story_en": "The Crab is small and sits at the limit of DWARF Mini detail: in the frame it is only a handful of pixels across. Three dual-band nights at 60 seconds showed the shape and the filamentary structure, but not the fine threads. It is an object where the device honestly shows its limit, and the frame stands as a record that the Crab is reachable from a balcony.",
                 "distance_ly": 6500,
                 "angular_size": "7′ × 5′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 3,
@@ -1266,7 +1266,7 @@
                 "story_en": "This was the first object of the challenge and the first mosaic: the telescope stitched two fields into one by itself. I tuned exposures night by night, from 15 to 45 seconds, because the city sky quickly washes out a broadband frame. The core and the dust lanes came out confidently, while the outer arms are a struggle from a balcony: they need a darkness the city does not have. The frame is closed as a first stage; I plan to return to Andromeda with a longer series.",
                 "distance_ly": 2500000,
                 "angular_size": "3° × 1°",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 5,
@@ -1331,13 +1331,13 @@
             "first": "2026-08-21",
             "last": "2026-08-24",
             "text": {
-                "description_uk": "Плеяди, або Стожари, наймолодше і найяскравіше розсіяне скупчення на нашому небі: кілька сотень зір віком близько ста мільйонів років, які ще не розлетілись від місця народження. Сім найяскравіших видно без оптики, у телескоп їх уже сотні. Блакитний серпанок навколо зір це не залишки хмари, з якої вони народились, а випадкова міжзоряна хмара пилу, крізь яку скупчення зараз пролітає і яка розсіює світло гарячих зір.",
-                "description_en": "The Pleiades, the youngest and brightest open cluster in our sky: a few hundred stars about a hundred million years old that have not yet drifted away from their birthplace. Seven of the brightest are visible without optics; a telescope shows hundreds. The blue haze around the stars is not the remnant of the cloud they were born from but a chance interstellar dust cloud the cluster is passing through, which scatters the light of the hot stars.",
+                "description_uk": "Плеяди, або Стожари, найяскравіше й одне з найближчих розсіяних скупчень на нашому небі: кілька сотень зір віком близько ста мільйонів років, які ще не розлетілись від місця народження. Сім найяскравіших видно без оптики, у телескоп їх уже сотні. Блакитний серпанок навколо зір це не залишки хмари, з якої вони народились, а випадкова міжзоряна хмара пилу, крізь яку скупчення зараз пролітає і яка розсіює світло гарячих зір.",
+                "description_en": "The Pleiades, the brightest and one of the nearest open clusters in our sky: a few hundred stars about a hundred million years old that have not yet drifted away from their birthplace. Seven of the brightest are visible without optics; a telescope shows hundreds. The blue haze around the stars is not the remnant of the cloud they were born from but a chance interstellar dust cloud the cluster is passing through, which scatters the light of the hot stars.",
                 "story_uk": "Зорі тут яскраві, тому зйомка йшла драбиною витримок: секундні кадри тримають зорі без пересвіту, довші збирають серпанок навколо них. Блакитні відбивні туманності на міському небі без фільтра ледь помітні, і саме вони вирішили, скільки ночей дати Плеядам. У фінальному стеку їх видно навколо найяскравіших зір, далі в хід ідуть лише темніші ночі пізньої осені.",
                 "story_en": "The stars here are bright, so shooting went down a ladder of exposures: one-second frames keep the stars from clipping, longer ones collect the haze around them. The blue reflection nebulae are barely there in a city sky without a filter, and they decided how many nights the Pleiades would get. The final stack shows them around the brightest stars; from here only the darker nights of late autumn can add more.",
                 "distance_ly": 444,
                 "angular_size": "≈ 2°",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 3,
@@ -1405,7 +1405,7 @@
                 "story_en": "Triangulum showed what low surface brightness means in a city: seven sessions over five nights, more than seven hours of light, and the arms still barely rise above the background. After midnight, when the street lights switch off, the sky gets more than twice as dark, and those are the frames that carry the result. The series is closed: a few more nights would add little, so this frame is final for the season.",
                 "distance_ly": 2700000,
                 "angular_size": "70′ × 40′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 7,
@@ -1478,7 +1478,7 @@
                 "story_en": "One night of thirty-second frames without a filter. Of the three Auriga clusters this is the densest, and here the device shows its resolution limit: the fine stars in the centre start to merge. The orange giant in the middle stands out clearly. The goal is reached; a return is only worth it on a night of very steady air.",
                 "distance_ly": 4500,
                 "angular_size": "≈ 24′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 1,
@@ -1543,7 +1543,7 @@
                 "story_en": "The Horsehead turned out to be the most demanding on exposure: at 180 seconds the device rejected every second frame, at 90 a third, and only at 60 seconds did the loss drop to an acceptable level. That ladder later became the standard for all nebulae. Bright Alnitak nearby throws a halo on long frames. Six nights gave the silhouette of the head and the Flame, but the goal is still gathering light.",
                 "distance_ly": 1400,
                 "angular_size": "60′ × 10′, голова 8′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 6,
@@ -1615,7 +1615,7 @@
                 "story_en": "One night of thirty-second frames without a filter, and the cluster is closed: bright stars in a city sky do not need hours. The only difficulty was not clipping the brightest stars while keeping the faint ones, hence the short exposure and many frames. It is a typical 'quick' challenge object between long nebula series.",
                 "distance_ly": 1500,
                 "angular_size": "≈ 35′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 1,
@@ -1680,7 +1680,7 @@
                 "story_en": "A small distant galaxy that the DWARF Mini renders as a few dozen pixels with a hint of a bar. Three evening sessions without a filter at 15 and 30 seconds, with a dew shield against the street lights, which until midnight leave a visible gradient on one side of the frame. The result is honest: the shape is recognisable, the arm details are not. This is the device's limit for galaxies a hundred million light-years away.",
                 "distance_ly": 105000000,
                 "angular_size": "4′ × 3′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 3,
@@ -1730,10 +1730,10 @@
             "name": "Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv",
             "type": "galaxy",
             "constellation": "Пегас",
-            "nights": 5,
-            "integration_sec": 11265,
+            "nights": 7,
+            "integration_sec": 12945,
             "first": "2026-09-12",
-            "last": "2026-10-01",
+            "last": "2026-10-11",
             "text": {
                 "description_uk": "NGC 7331 у Пегасі, велика спіральна галактика, схожа на Чумацький Шлях розміром і формою, нахилена до нас так, що видно і диск, і пилові смуги. За нею в тому самому полі кілька значно дальших галактик, які лише здаються її супутниками. У 2026 році в NGC 7331 спалахнула наднова SN 2026aaiv, і ця сторінка зберігає кадри з нею: зорю, яка на кілька тижнів світила як мільярди звичайних.",
                 "description_en": "NGC 7331 in Pegasus, a large spiral galaxy similar to the Milky Way in size and shape, tilted so that both the disk and the dust lanes are visible. Behind it in the same field lie several much more distant galaxies that only appear to be its companions. In 2026 supernova SN 2026aaiv flared up in NGC 7331, and this page keeps the frames with it: a star that for a few weeks shone like billions of ordinary ones.",
@@ -1741,11 +1741,11 @@
                 "story_en": "This galaxy entered the series because of the supernova: five nights without a filter at 15 and 30 seconds, to record SN 2026aaiv before it faded. From a balcony the galaxy itself is small and unassuming, but the supernova on its edge stands out confidently, and frames from different nights show its brightness changing. It is the only object in the challenge shot for the event rather than for the galaxy.",
                 "distance_ly": 40000000,
                 "angular_size": "10′ × 4′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
-                "sessions": 5,
-                "frames": 821,
+                "sessions": 7,
+                "frames": 881,
                 "exposures": [
                     15,
                     30
@@ -1758,14 +1758,16 @@
                 ],
                 "nights_by_month": {
                     "2026-09": 4,
-                    "2026-10": 1
+                    "2026-10": 3
                 },
                 "night_dates": [
                     "2026-09-12",
                     "2026-09-17",
                     "2026-09-19",
                     "2026-09-24",
-                    "2026-10-01"
+                    "2026-10-01",
+                    "2026-10-10",
+                    "2026-10-11"
                 ],
                 "longest_night_sec": 3240,
                 "longest_night": "2026-09-19"
@@ -1783,7 +1785,7 @@
             },
             "difficulty": "hard",
             "target_min": 480,
-            "percent": 39,
+            "percent": 44,
             "status": "progress"
         },
         {
@@ -1804,7 +1806,7 @@
                 "story_en": "Two nights of thirty-second frames without a filter on a galaxy that the DWARF Mini shows as a small oval patch with a hint of arms. It sits high in the north, so the roof does not interfere, but broadband and city light pollution limit the detail. The goal is still gathering light: the galaxy needs darker nights and a longer series.",
                 "distance_ly": 8000000,
                 "angular_size": "22′ × 12′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 2,
@@ -1870,7 +1872,7 @@
                 "story_en": null,
                 "distance_ly": 1600,
                 "angular_size": "8′ × 6′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 2,
@@ -1918,7 +1920,7 @@
                 "story_en": null,
                 "distance_ly": 2700,
                 "angular_size": "≈ 30′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": null,
             "photo": null,
@@ -1945,7 +1947,7 @@
                 "story_en": null,
                 "distance_ly": 1300,
                 "angular_size": "≈ 75′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": null,
             "photo": null,
@@ -1972,7 +1974,7 @@
                 "story_en": null,
                 "distance_ly": 22000,
                 "angular_size": "≈ 20′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": null,
             "photo": null,
@@ -1999,7 +2001,7 @@
                 "story_en": null,
                 "distance_ly": 1300,
                 "angular_size": "8′ × 6′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": null,
             "photo": null,
@@ -2026,7 +2028,7 @@
                 "story_en": null,
                 "distance_ly": 22000000,
                 "angular_size": "19′ × 7′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": null,
             "photo": null,
@@ -2053,7 +2055,7 @@
                 "story_en": null,
                 "distance_ly": 30000000,
                 "angular_size": "13′ × 7′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": null,
             "photo": null,
@@ -2080,7 +2082,7 @@
                 "story_en": null,
                 "distance_ly": 23000000,
                 "angular_size": "11′ × 7′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": null,
             "photo": null,
@@ -2107,7 +2109,7 @@
                 "story_en": null,
                 "distance_ly": 29000000,
                 "angular_size": "12′ × 8′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": null,
             "photo": null,
@@ -2134,7 +2136,7 @@
                 "story_en": null,
                 "distance_ly": 35000000,
                 "angular_size": "10′ × 3′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": null,
             "photo": null,
@@ -2161,7 +2163,7 @@
                 "story_en": null,
                 "distance_ly": 21000000,
                 "angular_size": "29′ × 27′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": null,
             "photo": null,
@@ -2190,7 +2192,7 @@
                 "story_en": "The Moon is shot differently from nebulae: exposures of thousandths of a second, hundreds of frames, and only the sharpest, caught in a moment of steady air, go into the stack. So the main enemy here is not light pollution but the city's heat: the air above the roofs trembles and the disk 'swims'. The best frames come before dawn, when the roofs have cooled. A separate experiment is the mineral Moon, where boosted colour shows differences in the composition of the maria.",
                 "distance_ly": null,
                 "angular_size": "≈ 31′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 35,
@@ -2279,7 +2281,7 @@
                 "story_en": "The planet was a test of the DWARF Mini limits: fifteen sessions with exposures from thousandths of a second up to a second, looking for the point where the disk is not yet clipped but the rings are already visible. A frame from such a device will not show the Cassini Division, but the shape and tilt of the rings come out confidently. What mattered most was altitude above the roofs: the lower the planet, the more the air smears the rings.",
                 "distance_ly": null,
                 "angular_size": "≈ 17″ (диск)",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 15,
@@ -2342,7 +2344,7 @@
                 "story_en": "Solar sessions happen in daytime, so neither light pollution nor the Moon gets in the way; what does is the daytime shimmer of air above heated roofs. I shoot through an ND filter in short bursts, and the morning hours give the best frames. Spots and spot groups are tracked day by day: over a few days you can see them rotate with the Sun and change shape.",
                 "distance_ly": null,
                 "angular_size": "≈ 32′",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 15,
@@ -2420,7 +2422,7 @@
                 "story_en": null,
                 "distance_ly": null,
                 "angular_size": "35–50″",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 3,
@@ -2464,7 +2466,7 @@
                 "story_en": "Only one session so far, at thirty-three milliseconds per frame, long before opposition, so the disk is tiny. It is more a record that Mars is reachable from the balcony than a portrait of the planet: the device cannot resolve details on a disk this small. The real series waits for the weeks around opposition, when the disk will be several times larger.",
                 "distance_ly": null,
                 "angular_size": "4–25″",
-                "en_auto": true
+                "en_auto": false
             },
             "shooting": {
                 "sessions": 1,
@@ -7120,10 +7122,10 @@
             "date": "2026-10-10",
             "sessions": [
                 {
-                    "slug": null,
-                    "designation": "NGC 7331",
-                    "name": "NGC 7331",
-                    "type": null,
+                    "slug": "c-30",
+                    "designation": "C 30",
+                    "name": "Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv",
+                    "type": "galaxy",
                     "solar": false,
                     "day": false,
                     "start": "19:45",
@@ -7155,8 +7157,8 @@
                 },
                 {
                     "slug": null,
-                    "designation": "NGC 891",
-                    "name": "NGC 891",
+                    "designation": "C 23",
+                    "name": "C 23",
                     "type": null,
                     "solar": false,
                     "day": false,
@@ -7239,10 +7241,10 @@
                     "photo": false
                 },
                 {
-                    "slug": null,
-                    "designation": "NGC 7331",
-                    "name": "NGC 7331",
-                    "type": null,
+                    "slug": "c-30",
+                    "designation": "C 30",
+                    "name": "Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv",
+                    "type": "galaxy",
                     "solar": false,
                     "day": false,
                     "start": "19:28",

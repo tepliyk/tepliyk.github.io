@@ -2,7 +2,7 @@
 
 > Astrophotography from a city balcony in Ukraine: nebulae, galaxies and clusters shot with a DWARF Mini smart telescope. A challenge to capture everything visible from here, and the Messier catalogue.
 
-Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Mini smart telescope from a city balcony in Ukraine (only the eastern half of the sky is visible, light-polluted city sky). The site is rebuilt automatically after each night of shooting. Challenge: 20 of 38 objects captured, 48 nights, 138.1 h of deep-sky light. Messier: 15 of 100 reachable captured. Last update: 2026-10-15. All images are the author's own; the Telegram channel is in Ukrainian.
+Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Mini smart telescope from a city balcony in Ukraine (only the eastern half of the sky is visible, light-polluted city sky). The site is rebuilt automatically after each night of shooting. Challenge: 20 of 38 objects captured, 48 nights, 138.6 h of deep-sky light. Messier: 15 of 100 reachable captured. Last update: 2026-10-15. All images are the author's own; the Telegram channel is in Ukrainian.
 
 ## Main pages
 
@@ -48,7 +48,7 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 - [Horsehead Nebula · IC 434](https://tepliyk.github.io/en/ic-434/): Nebula, Orion, 6 h 2 min of light over 6 nights, 75% of goal
 - [Open cluster M34](https://tepliyk.github.io/en/m34/): Cluster, Perseus, 37 min of light over 1 night, 61% of goal
 - [Galaxy NGC 7479 (Caldwell 44) · C 44](https://tepliyk.github.io/en/c-44/): Galaxy, Pegasus, 3 h 38 min of light over 3 nights, 45% of goal
-- [Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30](https://tepliyk.github.io/en/c-30/): Galaxy, Pegasus, 3 h 8 min of light over 5 nights, 39% of goal
+- [Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30](https://tepliyk.github.io/en/c-30/): Galaxy, Pegasus, 3 h 36 min of light over 7 nights, 44% of goal
 - [Galaxy NGC 2403 in Camelopardalis](https://tepliyk.github.io/en/ngc-2403/): Galaxy, Camelopardalis, 2 h 54 min of light over 2 nights, 36% of goal
 - Reflection nebula M78: Nebula, Orion, 47 min of light over 2 nights, 9% of goal
 
