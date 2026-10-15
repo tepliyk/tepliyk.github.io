@@ -291,6 +291,18 @@ a.s:hover{transform:translateY(-3px);border-color:var(--accent-border)}
 .obj-facts div{padding:14px 16px;border-radius:18px;background:var(--surface);border:1px solid var(--border);line-height:1.3}
 .obj-facts dt{font-size:13.5px;color:var(--muted)}
 .obj-facts dd{margin:4px 0 0;font:600 17px var(--f-display)}
+/* Широкий екран: кадр і цифри поруч, щоб головне було видно без прокрутки */
+@media (min-width:1001px){
+  .obj-top{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:20px;align-items:start;margin:0 0 28px}
+  .obj-top .obj-fig{margin:0}
+  .obj-top .obj-fig a{display:flex;justify-content:center;border-radius:24px;background:#000}
+  .obj-top .obj-fig img{width:auto;max-width:100%;max-height:calc(100svh - var(--head-h) - 190px);min-height:320px;object-fit:contain}
+  .obj-top .obj-facts{grid-template-columns:1fr;gap:8px;margin:0;position:sticky;top:calc(var(--head-h) + 16px)}
+  .obj-top .obj-facts div{padding:11px 14px}
+  .obj-top .obj-facts dt{font-size:13px}
+  .obj-top .obj-facts dd{font-size:16px;margin-top:2px}
+  .obj-head{padding-bottom:16px}
+}
 .obj-text{max-width:760px;color:var(--soft);font-size:17px;margin:0 0 24px;line-height:1.55}
 .obj-text h2{font-size:clamp(19px,2.4vw,24px);font-weight:700;line-height:1.2;margin:22px 0 8px;color:var(--text)}
 .obj-text h2:first-child{margin-top:0}
@@ -538,10 +550,10 @@ body>footer{contain-intrinsic-size:auto 160px}
   </div>
 </header>
 
-<main class="wrap" id="top" data-gen="2026-10-15T21:53:12+03:00">
+<main class="wrap" id="top" data-gen="2026-10-15T21:59:20+03:00">
   <div class="hero">
     <div class="intro">
-      <span class="eyebrow"><i></i><span id="updated">Updated 15 October at 21:53</span></span>
+      <span class="eyebrow"><i></i><span id="updated">Updated 15 October at 21:59</span></span>
       <h1><span class="l">All the sky</span> <span class="l">you can see <em>from</em></span> <span class="l"><em>a single balcony</em></span></h1>
       <p class="lead">Hi, I'm Kostia. I photograph nebulae and galaxies with a tiny smart telescope from a city balcony in Ukraine. The goal is simple: capture everything that can be seen from here at all.</p>
     </div>
@@ -660,7 +672,7 @@ body>footer{contain-intrinsic-size:auto 160px}
 <footer>
   <div class="wrap">
     <span>© Kostia, «Nebo Blyzhche». All images are my own.</span>
-    <span id="foot-upd">Updated 15 October at 21:53 automatically</span>
+    <span id="foot-upd">Updated 15 October at 21:59 automatically</span>
     <a href="log/">Night log</a>
     <a href="../privacy.html">Privacy policy</a>
   </div>

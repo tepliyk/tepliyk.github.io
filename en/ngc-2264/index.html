@@ -290,6 +290,18 @@ a.s:hover{transform:translateY(-3px);border-color:var(--accent-border)}
 .obj-facts div{padding:14px 16px;border-radius:18px;background:var(--surface);border:1px solid var(--border);line-height:1.3}
 .obj-facts dt{font-size:13.5px;color:var(--muted)}
 .obj-facts dd{margin:4px 0 0;font:600 17px var(--f-display)}
+/* Широкий екран: кадр і цифри поруч, щоб головне було видно без прокрутки */
+@media (min-width:1001px){
+  .obj-top{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:20px;align-items:start;margin:0 0 28px}
+  .obj-top .obj-fig{margin:0}
+  .obj-top .obj-fig a{display:flex;justify-content:center;border-radius:24px;background:#000}
+  .obj-top .obj-fig img{width:auto;max-width:100%;max-height:calc(100svh - var(--head-h) - 190px);min-height:320px;object-fit:contain}
+  .obj-top .obj-facts{grid-template-columns:1fr;gap:8px;margin:0;position:sticky;top:calc(var(--head-h) + 16px)}
+  .obj-top .obj-facts div{padding:11px 14px}
+  .obj-top .obj-facts dt{font-size:13px}
+  .obj-top .obj-facts dd{font-size:16px;margin-top:2px}
+  .obj-head{padding-bottom:16px}
+}
 .obj-text{max-width:760px;color:var(--soft);font-size:17px;margin:0 0 24px;line-height:1.55}
 .obj-text h2{font-size:clamp(19px,2.4vw,24px);font-weight:700;line-height:1.2;margin:22px 0 8px;color:var(--text)}
 .obj-text h2:first-child{margin-top:0}
@@ -543,8 +555,9 @@ body>footer{contain-intrinsic-size:auto 160px}
     <h1>Christmas Tree (Cone) Nebula</h1>
     <p>NGC 2264 · Nebula · Monoceros</p>
   </div>
+  <div class="obj-top">
   <figure class="obj-fig">
-    <a href="../../img/ngc-2264.webp" title="Open full size"><picture><source type="image/webp" srcset="../../img/ngc-2264_t.webp 640w, ../../img/ngc-2264.webp 900w" sizes="(max-width: 600px) 88vw, 1152px"><img src="../../img/ngc-2264.jpg" srcset="../../img/ngc-2264_t.jpg 640w, ../../img/ngc-2264.jpg 900w" sizes="(max-width: 600px) 88vw, 1152px" alt="Christmas Tree (Cone) Nebula · NGC 2264, astrophotography from a city balcony with a DWARF Mini smart telescope" width="900" height="900" fetchpriority="high"></picture></a>
+    <a href="../../img/ngc-2264.webp" title="Open full size"><picture><source type="image/webp" srcset="../../img/ngc-2264_t.webp 640w, ../../img/ngc-2264.webp 900w" sizes="(max-width: 600px) 88vw, 1152px"><img src="../../img/ngc-2264.jpg" srcset="../../img/ngc-2264_t.jpg 640w, ../../img/ngc-2264.jpg 900w" sizes="(max-width: 600px) 88vw, (max-width: 1000px) 92vw, 880px" alt="Christmas Tree (Cone) Nebula · NGC 2264, astrophotography from a city balcony with a DWARF Mini smart telescope" width="900" height="900" fetchpriority="high"></picture></a>
     <figcaption>NGC 2264 Конус і Ялинка: кроп 900, чотири ночі, 3 год 47 хв</figcaption>
   </figure>
   <dl class="obj-facts">
@@ -556,6 +569,7 @@ body>footer{contain-intrinsic-size:auto 160px}
     <div><dt>Image from</dt><dd>2 October 2026</dd></div>
     <div><dt>Telescope</dt><dd>DWARF Mini, city balcony</dd></div>
   </dl>
+  </div>
   <div class="obj-text">
   <h2>About the object</h2>
   <p>The NGC 2264 region in Monoceros, where the Christmas Tree Cluster, the Cone Nebula and the Fox Fur Nebula share one field. The bright stars of the cluster form a triangle that resembles a Christmas tree, topped by a dark pillar of dust, the Cone, about seven light-years long. The whole region is young, a few million years, and stars are still being born here.</p>
@@ -589,7 +603,7 @@ body>footer{contain-intrinsic-size:auto 160px}
 <footer>
   <div class="wrap">
     <span>© Kostia, «Nebo Blyzhche». All images are my own.</span>
-    <span id="foot-upd">Updated 15 October at 21:53 automatically</span>
+    <span id="foot-upd">Updated 15 October at 21:59 automatically</span>
     <a href="../log/">Night log</a>
     <a href="../../privacy.html">Privacy policy</a>
   </div>
