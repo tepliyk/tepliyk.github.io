@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-15T12:10:33+03:00",
+    "generated_at": "2026-10-15T15:29:30+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -29,12 +29,12 @@
             "first": "2026-09-25",
             "last": "2026-10-13",
             "photo": {
-                "title": "NGC 2244 Розетка, двоколірна обробка дуобанд-даних — v2, 10 ночей",
+                "title": "NGC 2244 Розетка, власний стек Siril, кольори за газами (k2c, єдине вікно)",
                 "img": "img/ngc-2244.jpg",
                 "thumb": "img/ngc-2244_t.jpg",
                 "webp": "img/ngc-2244.webp",
                 "thumb_webp": "img/ngc-2244_t.webp",
-                "w": 1688,
+                "w": 1622,
                 "h": 1800,
                 "date": "2026-10-13",
                 "astrobin": "https://app.astrobin.com/i/u0bd2k"
