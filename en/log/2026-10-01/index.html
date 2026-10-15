@@ -64,10 +64,33 @@ header{position:sticky;top:0;z-index:30;background:var(--head);backdrop-filter:b
 .brand span{display:flex;flex-direction:column;line-height:1.15}
 .brand b{font:600 16px var(--f-display)}
 .brand small{font-size:12.5px;color:var(--muted)}
-.sections{display:flex;gap:4px;margin-left:auto}
-.sections a{padding:10px 14px;border-radius:999px;color:var(--soft);text-decoration:none;font-size:15px;font-weight:500;white-space:nowrap}
-.sections a:hover{background:var(--hover-2);color:var(--text)}
+.sections{display:flex;align-items:center;gap:2px;margin-left:auto}
+.sections a,.dd-btn{display:inline-flex;align-items:center;gap:4px;padding:10px 14px;border-radius:999px;color:var(--soft);text-decoration:none;font:500 15px var(--f-body);white-space:nowrap;border:0;background:transparent;cursor:pointer}
+.sections a:hover,.dd-btn:hover{background:var(--hover-2);color:var(--text)}
+.sections a[aria-current],.dd-btn.is-cur{color:var(--accent-text);background:var(--accent-soft)}
+.dd-btn svg{width:16px;height:16px;transition:transform .2s}
+.dd{position:relative}
+.dd-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;min-width:220px;padding:6px;border-radius:16px;background:var(--surface);border:1px solid var(--border-2);box-shadow:0 20px 40px -12px var(--shadow);z-index:40}
+.dd-menu::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px}
+.dd-menu a{display:flex;border-radius:10px;padding:10px 12px}
+.dd:hover .dd-menu,.dd:focus-within .dd-menu,.dd.open .dd-menu{display:block}
+.dd:hover .dd-btn svg,.dd.open .dd-btn svg{transform:rotate(180deg)}
 .actions{display:flex;align-items:center;gap:8px;margin-left:8px}
+/* Перемикач мови: дві кнопки, поточна підсвічена */
+.lang{display:inline-flex;align-items:center;height:44px;padding:3px;border-radius:999px;border:1px solid var(--border-2)}
+.lang a,.lang span{min-width:38px;height:36px;display:grid;place-items:center;border-radius:999px;font:600 13px var(--f-body);letter-spacing:.04em;text-decoration:none;color:var(--muted)}
+.lang a:hover{color:var(--text);background:var(--hover-2)}
+.lang span[aria-current]{background:var(--seg-on-bg);color:var(--seg-on-fg)}
+.actions .menu-btn,.theme-row{display:none}
+.menu-btn .i-close,header.open .menu-btn .i-open{display:none}
+header.open .menu-btn .i-close{display:block}
+/* Підказка про іншу мову (з'являється лише новому відвідувачу, внизу, не зсуває сторінку) */
+.lang-hint{position:fixed;left:16px;bottom:20px;z-index:35;display:flex;align-items:center;gap:10px;max-width:440px;padding:10px 10px 10px 16px;border-radius:18px;background:var(--surface);border:1px solid var(--border-2);box-shadow:0 20px 40px -12px var(--shadow);font-size:14.5px;color:var(--soft);animation:hint-in .3s ease-out}
+.lang-hint .btn{min-height:38px;padding:0 14px;font-size:14px;flex:none}
+.lang-hint button{flex:none;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.lang-hint button:hover{background:var(--hover-2);color:var(--text)}
+.lang-hint svg{width:18px;height:18px}
+@keyframes hint-in{from{opacity:0;transform:translateY(10px)}}
 .icon-btn{min-width:44px;height:44px;display:grid;place-items:center;border-radius:999px;border:1px solid var(--border-2);background:transparent;color:var(--soft);text-decoration:none;font-size:14px;font-weight:600;cursor:pointer;padding:0 10px}
 .icon-btn:hover{background:var(--hover-2);color:var(--text)}
 .icon-btn svg{width:20px;height:20px}
@@ -335,16 +358,30 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
   .ring-mini .rt>span{font-size:12px}
   .hero .cta .btn{flex:1 1 auto}
 }
-/* Сім пунктів меню (SEO-08): на середніх ширинах щільніше, нижче 1180 px стрічка чипів під брендом */
-@media (min-width:1181px) and (max-width:1420px){
-  .sections{gap:0}
-  .sections a{padding:9px 9px;font-size:14px}
+/* Меню: «Галерея» з випадним списком + 4 пункти; на середніх ширинах щільніше */
+@media (min-width:1101px) and (max-width:1300px){
+  .sections a,.dd-btn{padding:9px 10px;font-size:14.5px}
+  .brand small{display:none}
 }
-@media (max-width:1180px){
-  .sections{order:3;width:100%;margin:0;overflow-x:auto;scrollbar-width:none;padding:0 0 10px;gap:6px}
-  .sections::-webkit-scrollbar{display:none}
-  .sections a{flex:none;padding:9px 14px;font-size:14px;background:var(--surface);border:1px solid var(--border)}
+/* До 1100 px: шапка в один рядок, меню за кнопкою, відкривається панеллю під шапкою */
+@media (max-width:1100px){
+  .actions .menu-btn{display:grid}
+  .actions .theme{display:none}
   .actions{margin-left:auto}
+  .theme-row{display:flex;align-items:center;gap:10px;margin-top:8px;padding:14px 12px;border:0;border-top:1px solid var(--border);border-radius:0;background:transparent;color:var(--soft);font:500 16px var(--f-body);cursor:pointer;text-align:left}
+  .theme-row svg{width:20px;height:20px}
+  .theme-row:hover{color:var(--text)}
+  .sections{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;margin:0;padding:12px max(16px,calc((100vw - 1152px)/2)) 20px;background:var(--ink);border-bottom:1px solid var(--border-2);box-shadow:0 30px 40px -20px var(--shadow);max-height:calc(100dvh - var(--head-h));overflow-y:auto}
+  header.open .sections{display:flex}
+  .sections a,.dd-btn{padding:14px 12px;font-size:17px;border-radius:12px}
+  .dd-btn{width:100%;cursor:default;color:var(--dim);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;padding:10px 12px 4px}
+  .dd-btn:hover{background:transparent;color:var(--dim)}
+  .dd-btn.is-cur{background:transparent;color:var(--dim)}
+  .dd-btn svg{display:none}
+  .dd-menu,.dd:hover .dd-menu,.dd:focus-within .dd-menu,.dd.open .dd-menu{display:grid;grid-template-columns:1fr 1fr;gap:2px;position:static;min-width:0;padding:0 0 8px;border:0;border-bottom:1px solid var(--border);border-radius:0;background:transparent;box-shadow:none}
+  .dd-menu::before{display:none}
+  body.nav-open{overflow:hidden}
+  body.nav-open .lang-hint,body.nav-open .fab{display:none}
 }
 @media (max-width:860px){
   .brand small{display:none}
@@ -353,6 +390,31 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
   .tg-head{display:none!important}
   .fab{display:grid}
   footer .wrap{padding-bottom:96px;flex-direction:column}
+  .lang-hint{right:16px;bottom:88px;max-width:none;flex-wrap:wrap;gap:8px}
+  .lang-hint span{flex:1 1 100%}
+  .lang-hint .btn{flex:1 1 auto}
+}
+@media (max-width:420px){
+  .topbar{flex-wrap:nowrap;gap:6px}
+  .brand{flex:1 1 auto;gap:8px}
+  .brand span{min-width:0;overflow:hidden}
+  .brand b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14.5px}
+  .actions{gap:6px;margin-left:0;flex:none}
+  .actions .icon-btn{min-width:38px;width:38px;height:38px;padding:0}
+  .lang{height:38px;padding:2px}
+  .lang a,.lang span{min-width:30px;height:32px;font-size:12.5px;letter-spacing:.02em}
+}
+/* Журнал ночі на телефоні: замість широкої таблиці з горизонтальним скролом картка на кожну сесію */
+@media (max-width:640px){
+  .log-tw{overflow:visible;border:0;background:transparent;border-radius:0}
+  .log-t{min-width:0}
+  .log-t thead{display:none}
+  .log-t,.log-t tbody,.log-t td{display:block}
+  .log-t tr{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;padding:14px 16px;margin-bottom:10px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+  .log-t td{padding:0;border:0;white-space:normal;font-size:15px}
+  .log-t td::before{content:attr(data-l);display:block;font-size:12px;color:var(--muted);margin-bottom:2px}
+  .log-t td:nth-child(2){grid-column:1/-1;order:-1;font-weight:600;font-size:16.5px}
+  .log-t td:nth-child(2)::before{display:none}
 }
 @media (max-width:600px){
   .wrap{padding:0 16px}
@@ -450,19 +512,27 @@ body>footer{contain-intrinsic-size:auto 160px}
 <header>
   <div class="wrap topbar">
     <a class="brand" href="../../#top"><img src="../../../logo-s.jpg" alt="" width="40" height="40"><span><b>Nebo Blyzhche</b><small>astrophotography from a balcony</small></span></a>
-    <nav class="sections" aria-label="Sections">
-      <a href="../../nebulae/">Nebulae</a>
-      <a href="../../galaxies/">Galaxies</a>
-      <a href="../../clusters/">Clusters</a>
+    <nav class="sections" id="site-nav" aria-label="Sections">
+      <div class="dd" id="dd-gallery">
+        <button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-gallery-menu">Gallery<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="dd-menu" id="dd-gallery-menu">
+          <a href="../../nebulae/">Nebulae</a>
+          <a href="../../galaxies/">Galaxies</a>
+          <a href="../../clusters/">Clusters</a>
+          <a href="../../solar-system/">Solar system</a>
+        </div>
+      </div>
       <a href="../../messier/">Messier</a>
-      <a href="../../solar-system/">Solar system</a>
+      <a href="../../log/" aria-current="page">Night log</a>
       <a href="../../equipment/dwarf-mini/">DWARF Mini</a>
       <a href="../../#about">About me</a>
+      <button class="theme theme-row" id="theme-m" type="button"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>Light or dark theme</button>
     </nav>
     <div class="actions">
-      <a class="icon-btn" href="../../../log/2026-10-01/" hreflang="uk" lang="uk" title="Українська версія">UA</a>
+      <div class="lang" role="group" aria-label="Site language"><a href="../../../log/2026-10-01/" hreflang="uk" lang="uk" data-lang="uk" title="Українська версія">UA</a><span aria-current="true" title="English">EN</span></div>
       <button class="icon-btn theme" id="theme" type="button" aria-label="Toggle light or dark theme" title="Toggle light or dark theme"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button>
       <a class="btn btn-p tg-head" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener" aria-label="Telegram channel «Nebo Blyzhche»"><svg aria-hidden="true"><use href="#i-tg"/></svg>Telegram</a>
+      <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
   </div>
 </header>
@@ -481,7 +551,7 @@ body>footer{contain-intrinsic-size:auto 160px}
   </div>
   <section class="log-sec" aria-labelledby="log-s-h">
     <h2 id="log-s-h">What was shot</h2>
-    <div class="log-tw"><table class="log-t"><thead><tr><th scope="col">Time</th><th scope="col">Object</th><th scope="col">Filter</th><th scope="col">Exposure × frames</th><th scope="col">Stacked</th><th scope="col">Light</th></tr></thead><tbody><tr><td>11:23–11:27</td><td><a href="../../sonce/">Sun</a> <small>daytime</small></td><td>solar ND</td><td>4 ms × 100</td><td>100 / 100</td><td>–</td></tr><tr><td>20:05–20:46</td><td><a href="../../c-30/">Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv</a></td><td>none</td><td>30 s × 65</td><td>65 / 65</td><td>33 min</td></tr><tr><td>20:55–22:24</td><td><a href="../../c-44/">Galaxy NGC 7479 (Caldwell 44)</a></td><td>none</td><td>30 s × 148</td><td>145 / 148</td><td>1 h 13 min</td></tr><tr><td>22:31–23:05</td><td><a href="../../ngc-281/">Pacman Nebula</a></td><td>none</td><td>30 s × 54</td><td>53 / 54</td><td>27 min</td></tr><tr><td>23:11–00:22</td><td><a href="../../ic-1805/">Heart Nebula</a></td><td>dual-band</td><td>60 s × 62</td><td>62 / 62</td><td>1 h 2 min</td></tr><tr><td>00:26–02:57</td><td><a href="../../ngc-2174/">Monkey Head Nebula</a></td><td>dual-band</td><td>60 s × 135</td><td>132 / 135</td><td>2 h 12 min</td></tr><tr><td>03:06–04:12</td><td><a href="../../ngc-2264/">Christmas Tree (Cone) Nebula</a></td><td>dual-band</td><td>60 s × 59</td><td>55 / 59</td><td>55 min</td></tr><tr><td>04:17–05:26</td><td><a href="../../ngc-2174/">Monkey Head Nebula</a></td><td>dual-band</td><td>60 s × 60</td><td>57 / 60</td><td>57 min</td></tr></tbody></table></div>
+    <div class="log-tw"><table class="log-t"><thead><tr><th scope="col">Time</th><th scope="col">Object</th><th scope="col">Filter</th><th scope="col">Exposure × frames</th><th scope="col">Stacked</th><th scope="col">Light</th></tr></thead><tbody><tr><td data-l="Time">11:23–11:27</td><td data-l="Object"><a href="../../sonce/">Sun</a> <small>daytime</small></td><td data-l="Filter">solar ND</td><td data-l="Exposure × frames">4 ms × 100</td><td data-l="Stacked">100 / 100</td><td data-l="Light">–</td></tr><tr><td data-l="Time">20:05–20:46</td><td data-l="Object"><a href="../../c-30/">Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv</a></td><td data-l="Filter">none</td><td data-l="Exposure × frames">30 s × 65</td><td data-l="Stacked">65 / 65</td><td data-l="Light">33 min</td></tr><tr><td data-l="Time">20:55–22:24</td><td data-l="Object"><a href="../../c-44/">Galaxy NGC 7479 (Caldwell 44)</a></td><td data-l="Filter">none</td><td data-l="Exposure × frames">30 s × 148</td><td data-l="Stacked">145 / 148</td><td data-l="Light">1 h 13 min</td></tr><tr><td data-l="Time">22:31–23:05</td><td data-l="Object"><a href="../../ngc-281/">Pacman Nebula</a></td><td data-l="Filter">none</td><td data-l="Exposure × frames">30 s × 54</td><td data-l="Stacked">53 / 54</td><td data-l="Light">27 min</td></tr><tr><td data-l="Time">23:11–00:22</td><td data-l="Object"><a href="../../ic-1805/">Heart Nebula</a></td><td data-l="Filter">dual-band</td><td data-l="Exposure × frames">60 s × 62</td><td data-l="Stacked">62 / 62</td><td data-l="Light">1 h 2 min</td></tr><tr><td data-l="Time">00:26–02:57</td><td data-l="Object"><a href="../../ngc-2174/">Monkey Head Nebula</a></td><td data-l="Filter">dual-band</td><td data-l="Exposure × frames">60 s × 135</td><td data-l="Stacked">132 / 135</td><td data-l="Light">2 h 12 min</td></tr><tr><td data-l="Time">03:06–04:12</td><td data-l="Object"><a href="../../ngc-2264/">Christmas Tree (Cone) Nebula</a></td><td data-l="Filter">dual-band</td><td data-l="Exposure × frames">60 s × 59</td><td data-l="Stacked">55 / 59</td><td data-l="Light">55 min</td></tr><tr><td data-l="Time">04:17–05:26</td><td data-l="Object"><a href="../../ngc-2174/">Monkey Head Nebula</a></td><td data-l="Filter">dual-band</td><td data-l="Exposure × frames">60 s × 60</td><td data-l="Stacked">57 / 60</td><td data-l="Light">57 min</td></tr></tbody></table></div>
   </section>
   <section class="log-sec" aria-labelledby="log-n-h">
     <h2 id="log-n-h">What worked and what got in the way</h2>
@@ -494,7 +564,7 @@ body>footer{contain-intrinsic-size:auto 160px}
 <footer>
   <div class="wrap">
     <span>© Kostia, «Nebo Blyzhche». All images are my own.</span>
-    <span id="foot-upd">Updated 15 October at 20:47 automatically</span>
+    <span id="foot-upd">Updated 15 October at 21:53 automatically</span>
     <a href="../../log/">Night log</a>
     <a href="../../../privacy.html">Privacy policy</a>
   </div>
@@ -504,8 +574,54 @@ body>footer{contain-intrinsic-size:auto 160px}
 
 <script>
 (() => {
-  const setTheme = t => { if (t === 'light') document.documentElement.dataset.theme = 'light'; else delete document.documentElement.dataset.theme; try { localStorage.setItem('theme', t); } catch (e) {} };
-  document.getElementById('theme').onclick = () => setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light');
+
+  // Шапка: тема, меню на телефоні, випадне «Галерея», вибір мови й підказка про іншу мову.
+  {
+    const d = document, html = d.documentElement, hd = d.querySelector('header');
+    const store = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) {} return null; };
+    const setTheme = t => { if (t === 'light') html.dataset.theme = 'light'; else delete html.dataset.theme; store('theme', t); };
+    // Дві кнопки теми: у шапці на широкому екрані і в панелі меню на телефоні/планшеті.
+    d.querySelectorAll('#theme, #theme-m').forEach(b => { b.onclick = () => setTheme(html.dataset.theme === 'light' ? 'dark' : 'light'); });
+
+    const mb = d.getElementById('menu-btn');
+    const menu = open => { hd.classList.toggle('open', open); d.body.classList.toggle('nav-open', open); mb.setAttribute('aria-expanded', String(open)); };
+    mb.onclick = () => menu(!hd.classList.contains('open'));
+    hd.querySelectorAll('.sections a').forEach(a => a.addEventListener('click', () => menu(false)));
+    const wide = matchMedia('(min-width: 1101px)');
+    (wide.addEventListener ? wide.addEventListener.bind(wide, 'change') : wide.addListener.bind(wide))(e => { if (e.matches) menu(false); });
+
+    const dd = d.getElementById('dd-gallery'), ddb = dd.querySelector('.dd-btn');
+    const ddSet = open => { dd.classList.toggle('open', open); ddb.setAttribute('aria-expanded', String(open)); };
+    ddb.onclick = e => { e.stopPropagation(); ddSet(!dd.classList.contains('open')); };
+    d.addEventListener('click', e => { if (!dd.contains(e.target)) ddSet(false); });
+    d.addEventListener('keydown', e => {
+      if (e.key !== 'Escape') return;
+      if (dd.classList.contains('open')) { ddSet(false); ddb.focus(); }
+      if (hd.classList.contains('open')) { menu(false); mb.focus(); }
+    });
+
+    // Мова: вибір запам'ятовується; новому відвідувачу лише підказуємо іншу версію, без автоперемикання
+    // (Україна = часовий пояс Києва або українська мова браузера; ботам і пошуковикам нічого не показуємо).
+    const lang = html.lang === 'uk' ? 'uk' : 'en', other = hd.querySelector('.lang a[data-lang]');
+    hd.querySelectorAll('.lang a[data-lang]').forEach(a => a.addEventListener('click', () => store('lang', a.dataset.lang)));
+    const bot = navigator.webdriver || /bot|crawl|spider|slurp|lighthouse|headless|preview/i.test(navigator.userAgent);
+    let want = store('lang');
+    if (!want) {
+      let tz = '';
+      try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+      const langs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']).map(x => String(x).toLowerCase());
+      want = /^Europe\/(Kyiv|Kiev|Uzhgorod|Zaporozhye|Simferopol)$/.test(tz) || langs.some(x => x.startsWith('uk')) ? 'uk' : 'en';
+    }
+    if (other && !bot && want !== lang) {
+      const txt = want === 'en' ? ['This page is also available in English.', 'Read in English', 'Close'] : ['Ця сторінка є українською.', 'Читати українською', 'Закрити'];
+      const t = d.createElement('div');
+      t.className = 'lang-hint'; t.lang = want; t.setAttribute('role', 'note');
+      t.innerHTML = `<span>${txt[0]}</span><a class="btn btn-p" href="${other.href}" hreflang="${want}">${txt[1]}</a><button type="button" aria-label="${txt[2]}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>`;
+      t.querySelector('a').onclick = () => store('lang', want);
+      t.querySelector('button').onclick = () => { store('lang', lang); t.remove(); };
+      setTimeout(() => d.body.appendChild(t), 800);
+    }
+  }
   // 3D-проліт: грає лише у видимій зоні; без автоплею при reduced-motion або режимі економії трафіку.
   const v = document.querySelector('.flyby-v');
   let io = null;

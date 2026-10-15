@@ -39,10 +39,33 @@ header{position:sticky;top:0;z-index:30;background:var(--head);backdrop-filter:b
 .brand span{display:flex;flex-direction:column;line-height:1.15}
 .brand b{font:600 16px var(--f-display)}
 .brand small{font-size:12.5px;color:var(--muted)}
-.sections{display:flex;gap:4px;margin-left:auto}
-.sections a{padding:10px 14px;border-radius:999px;color:var(--soft);text-decoration:none;font-size:15px;font-weight:500;white-space:nowrap}
-.sections a:hover{background:var(--hover-2);color:var(--text)}
+.sections{display:flex;align-items:center;gap:2px;margin-left:auto}
+.sections a,.dd-btn{display:inline-flex;align-items:center;gap:4px;padding:10px 14px;border-radius:999px;color:var(--soft);text-decoration:none;font:500 15px var(--f-body);white-space:nowrap;border:0;background:transparent;cursor:pointer}
+.sections a:hover,.dd-btn:hover{background:var(--hover-2);color:var(--text)}
+.sections a[aria-current],.dd-btn.is-cur{color:var(--accent-text);background:var(--accent-soft)}
+.dd-btn svg{width:16px;height:16px;transition:transform .2s}
+.dd{position:relative}
+.dd-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;min-width:220px;padding:6px;border-radius:16px;background:var(--surface);border:1px solid var(--border-2);box-shadow:0 20px 40px -12px var(--shadow);z-index:40}
+.dd-menu::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px}
+.dd-menu a{display:flex;border-radius:10px;padding:10px 12px}
+.dd:hover .dd-menu,.dd:focus-within .dd-menu,.dd.open .dd-menu{display:block}
+.dd:hover .dd-btn svg,.dd.open .dd-btn svg{transform:rotate(180deg)}
 .actions{display:flex;align-items:center;gap:8px;margin-left:8px}
+/* Перемикач мови: дві кнопки, поточна підсвічена */
+.lang{display:inline-flex;align-items:center;height:44px;padding:3px;border-radius:999px;border:1px solid var(--border-2)}
+.lang a,.lang span{min-width:38px;height:36px;display:grid;place-items:center;border-radius:999px;font:600 13px var(--f-body);letter-spacing:.04em;text-decoration:none;color:var(--muted)}
+.lang a:hover{color:var(--text);background:var(--hover-2)}
+.lang span[aria-current]{background:var(--seg-on-bg);color:var(--seg-on-fg)}
+.actions .menu-btn,.theme-row{display:none}
+.menu-btn .i-close,header.open .menu-btn .i-open{display:none}
+header.open .menu-btn .i-close{display:block}
+/* Підказка про іншу мову (з'являється лише новому відвідувачу, внизу, не зсуває сторінку) */
+.lang-hint{position:fixed;left:16px;bottom:20px;z-index:35;display:flex;align-items:center;gap:10px;max-width:440px;padding:10px 10px 10px 16px;border-radius:18px;background:var(--surface);border:1px solid var(--border-2);box-shadow:0 20px 40px -12px var(--shadow);font-size:14.5px;color:var(--soft);animation:hint-in .3s ease-out}
+.lang-hint .btn{min-height:38px;padding:0 14px;font-size:14px;flex:none}
+.lang-hint button{flex:none;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.lang-hint button:hover{background:var(--hover-2);color:var(--text)}
+.lang-hint svg{width:18px;height:18px}
+@keyframes hint-in{from{opacity:0;transform:translateY(10px)}}
 .icon-btn{min-width:44px;height:44px;display:grid;place-items:center;border-radius:999px;border:1px solid var(--border-2);background:transparent;color:var(--soft);text-decoration:none;font-size:14px;font-weight:600;cursor:pointer;padding:0 10px}
 .icon-btn:hover{background:var(--hover-2);color:var(--text)}
 .icon-btn svg{width:20px;height:20px}
@@ -310,16 +333,30 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
   .ring-mini .rt>span{font-size:12px}
   .hero .cta .btn{flex:1 1 auto}
 }
-/* Сім пунктів меню (SEO-08): на середніх ширинах щільніше, нижче 1180 px стрічка чипів під брендом */
-@media (min-width:1181px) and (max-width:1420px){
-  .sections{gap:0}
-  .sections a{padding:9px 9px;font-size:14px}
+/* Меню: «Галерея» з випадним списком + 4 пункти; на середніх ширинах щільніше */
+@media (min-width:1101px) and (max-width:1300px){
+  .sections a,.dd-btn{padding:9px 10px;font-size:14.5px}
+  .brand small{display:none}
 }
-@media (max-width:1180px){
-  .sections{order:3;width:100%;margin:0;overflow-x:auto;scrollbar-width:none;padding:0 0 10px;gap:6px}
-  .sections::-webkit-scrollbar{display:none}
-  .sections a{flex:none;padding:9px 14px;font-size:14px;background:var(--surface);border:1px solid var(--border)}
+/* До 1100 px: шапка в один рядок, меню за кнопкою, відкривається панеллю під шапкою */
+@media (max-width:1100px){
+  .actions .menu-btn{display:grid}
+  .actions .theme{display:none}
   .actions{margin-left:auto}
+  .theme-row{display:flex;align-items:center;gap:10px;margin-top:8px;padding:14px 12px;border:0;border-top:1px solid var(--border);border-radius:0;background:transparent;color:var(--soft);font:500 16px var(--f-body);cursor:pointer;text-align:left}
+  .theme-row svg{width:20px;height:20px}
+  .theme-row:hover{color:var(--text)}
+  .sections{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;margin:0;padding:12px max(16px,calc((100vw - 1152px)/2)) 20px;background:var(--ink);border-bottom:1px solid var(--border-2);box-shadow:0 30px 40px -20px var(--shadow);max-height:calc(100dvh - var(--head-h));overflow-y:auto}
+  header.open .sections{display:flex}
+  .sections a,.dd-btn{padding:14px 12px;font-size:17px;border-radius:12px}
+  .dd-btn{width:100%;cursor:default;color:var(--dim);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;padding:10px 12px 4px}
+  .dd-btn:hover{background:transparent;color:var(--dim)}
+  .dd-btn.is-cur{background:transparent;color:var(--dim)}
+  .dd-btn svg{display:none}
+  .dd-menu,.dd:hover .dd-menu,.dd:focus-within .dd-menu,.dd.open .dd-menu{display:grid;grid-template-columns:1fr 1fr;gap:2px;position:static;min-width:0;padding:0 0 8px;border:0;border-bottom:1px solid var(--border);border-radius:0;background:transparent;box-shadow:none}
+  .dd-menu::before{display:none}
+  body.nav-open{overflow:hidden}
+  body.nav-open .lang-hint,body.nav-open .fab{display:none}
 }
 @media (max-width:860px){
   .brand small{display:none}
@@ -328,6 +365,31 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
   .tg-head{display:none!important}
   .fab{display:grid}
   footer .wrap{padding-bottom:96px;flex-direction:column}
+  .lang-hint{right:16px;bottom:88px;max-width:none;flex-wrap:wrap;gap:8px}
+  .lang-hint span{flex:1 1 100%}
+  .lang-hint .btn{flex:1 1 auto}
+}
+@media (max-width:420px){
+  .topbar{flex-wrap:nowrap;gap:6px}
+  .brand{flex:1 1 auto;gap:8px}
+  .brand span{min-width:0;overflow:hidden}
+  .brand b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14.5px}
+  .actions{gap:6px;margin-left:0;flex:none}
+  .actions .icon-btn{min-width:38px;width:38px;height:38px;padding:0}
+  .lang{height:38px;padding:2px}
+  .lang a,.lang span{min-width:30px;height:32px;font-size:12.5px;letter-spacing:.02em}
+}
+/* Журнал ночі на телефоні: замість широкої таблиці з горизонтальним скролом картка на кожну сесію */
+@media (max-width:640px){
+  .log-tw{overflow:visible;border:0;background:transparent;border-radius:0}
+  .log-t{min-width:0}
+  .log-t thead{display:none}
+  .log-t,.log-t tbody,.log-t td{display:block}
+  .log-t tr{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;padding:14px 16px;margin-bottom:10px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+  .log-t td{padding:0;border:0;white-space:normal;font-size:15px}
+  .log-t td::before{content:attr(data-l);display:block;font-size:12px;color:var(--muted);margin-bottom:2px}
+  .log-t td:nth-child(2){grid-column:1/-1;order:-1;font-weight:600;font-size:16.5px}
+  .log-t td:nth-child(2)::before{display:none}
 }
 @media (max-width:600px){
   .wrap{padding:0 16px}
