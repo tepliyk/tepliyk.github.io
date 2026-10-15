@@ -268,8 +268,35 @@ a.s:hover{transform:translateY(-3px);border-color:var(--accent-border)}
 .obj-facts div{padding:14px 16px;border-radius:18px;background:var(--surface);border:1px solid var(--border);line-height:1.3}
 .obj-facts dt{font-size:13.5px;color:var(--muted)}
 .obj-facts dd{margin:4px 0 0;font:600 17px var(--f-display)}
-.obj-text{max-width:760px;color:var(--soft);font-size:17px;margin:0 0 24px}
+.obj-text{max-width:760px;color:var(--soft);font-size:17px;margin:0 0 24px;line-height:1.55}
+.obj-text h2{font-size:clamp(19px,2.4vw,24px);font-weight:700;line-height:1.2;margin:22px 0 8px;color:var(--text)}
+.obj-text h2:first-child{margin-top:0}
+.obj-text p{margin:0 0 12px}
 .obj-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:48px}
+/* Журнал ночей (SEO-09) */
+.log-tw{overflow-x:auto;margin:0 0 28px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.log-t{width:100%;border-collapse:collapse;font-size:15px;min-width:640px}
+.log-t th,.log-t td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap}
+.log-t th{font-size:13px;font-weight:600;color:var(--muted)}
+.log-t tr:last-child td{border-bottom:0}
+.log-t td:nth-child(2){white-space:normal;color:var(--text)}
+.log-t small{margin-left:6px;font-size:12px;color:var(--muted)}
+.log-t a,.log-notes a,.obj-text a{color:var(--accent-text)}
+.log-notes{max-width:760px;margin:0 0 28px;padding-left:20px;color:var(--soft);line-height:1.55}
+.log-notes li{margin:0 0 8px}
+.log-nav{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 48px}
+section.log-sec{padding:0}
+/* Списки на сторінках розділів: знято в каталозі Мессьє (SEO-08), ночі журналу (SEO-09) */
+.cat-list{list-style:none;margin:0;padding:0;display:grid;gap:8px;max-width:900px}
+.cat-list li{padding:12px 16px;border:1px solid var(--border);border-radius:16px;background:var(--surface);line-height:1.4}
+.cat-list a{display:block;font-weight:600;color:var(--text);text-decoration:none;margin-bottom:2px}
+.cat-list a:hover{color:var(--accent-text)}
+.cat-list span{color:var(--muted);font-size:14.5px}
+section>h2[id^="log-"]{margin:0 0 12px}
+/* Чипи-посилання (стрічка розділів SEO-08, навігація журналу) */
+a.chip{display:inline-flex;align-items:center;text-decoration:none}
+a.chip:hover{background:var(--hover-2);color:var(--text)}
+span.chip[aria-current]{display:inline-flex;align-items:center;color:var(--text);border-color:var(--accent-text)}
 .obj-flyby{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:clamp(18px,3vw,36px);align-items:center;margin:0 0 28px;padding:clamp(14px,2vw,20px);border-radius:28px;background:var(--surface);border:1px solid var(--border)}
 .obj-flyby video{display:block;width:100%;height:auto;aspect-ratio:540/816;object-fit:cover;border-radius:18px;background:#000}
 .obj-flyby h2{font-size:24px;margin:0 0 10px}
@@ -309,11 +336,18 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
   .ring-mini .rt>span{font-size:12px}
   .hero .cta .btn{flex:1 1 auto}
 }
-@media (max-width:860px){
+/* Сім пунктів меню (SEO-08): на середніх ширинах щільніше, нижче 1180 px стрічка чипів під брендом */
+@media (min-width:1181px) and (max-width:1420px){
+  .sections{gap:0}
+  .sections a{padding:9px 9px;font-size:14px}
+}
+@media (max-width:1180px){
   .sections{order:3;width:100%;margin:0;overflow-x:auto;scrollbar-width:none;padding:0 0 10px;gap:6px}
   .sections::-webkit-scrollbar{display:none}
   .sections a{flex:none;padding:9px 14px;font-size:14px;background:var(--surface);border:1px solid var(--border)}
   .actions{margin-left:auto}
+}
+@media (max-width:860px){
   .brand small{display:none}
 }
 @media (max-width:720px){
@@ -418,9 +452,12 @@ body>footer{contain-intrinsic-size:auto 160px}
   <div class="wrap topbar">
     <a class="brand" href="#top"><img src="../logo-s.jpg" alt="" width="40" height="40"><span><b>Nebo Blyzhche</b><small>astrophotography from a balcony</small></span></a>
     <nav class="sections" aria-label="Sections">
-      <a href="#challenge">Gallery</a>
-      <a href="#messier">Messier</a>
-      <a href="#solar">Solar system</a>
+      <a href="nebulae/">Nebulae</a>
+      <a href="galaxies/">Galaxies</a>
+      <a href="clusters/">Clusters</a>
+      <a href="messier/">Messier</a>
+      <a href="solar-system/">Solar system</a>
+      <a href="equipment/dwarf-mini/">DWARF Mini</a>
       <a href="#about">About me</a>
     </nav>
     <div class="actions">
@@ -431,10 +468,10 @@ body>footer{contain-intrinsic-size:auto 160px}
   </div>
 </header>
 
-<main class="wrap" id="top" data-gen="2026-10-15T15:29:30+03:00">
+<main class="wrap" id="top" data-gen="2026-10-15T20:02:21+03:00">
   <div class="hero">
     <div class="intro">
-      <span class="eyebrow"><i></i><span id="updated">Updated 15 October at 15:29</span></span>
+      <span class="eyebrow"><i></i><span id="updated">Updated 15 October at 20:02</span></span>
       <h1><span class="l">All the sky</span> <span class="l">you can see <em>from</em></span> <span class="l"><em>a single balcony</em></span></h1>
       <p class="lead">Hi, I'm Kostia. I photograph nebulae and galaxies with a tiny smart telescope from a city balcony in Ukraine. The goal is simple: capture everything that can be seen from here at all.</p>
     </div>
@@ -473,6 +510,7 @@ body>footer{contain-intrinsic-size:auto 160px}
       <h2 id="gal-h">The challenge: what's done and what's ahead</h2>
       <p>For every object there is a goal: how many hours of light I need for a clean image under city skies. Tap an image to open it large.</p>
     </div>
+    <nav class="chips cats" aria-label="Site sections"><a class="chip" href="nebulae/">Nebulae</a><a class="chip" href="galaxies/">Galaxies</a><a class="chip" href="clusters/">Clusters</a><a class="chip" href="messier/">Messier</a><a class="chip" href="solar-system/">Solar system</a><a class="chip" href="equipment/dwarf-mini/">DWARF Mini</a><a class="chip" href="log/">Night log</a></nav>
     <div class="filters">
       <div class="seg" id="f-status" role="group" aria-label="Status"><button type="button" data-f="all" aria-pressed="true">All<span class="n">38</span></button><button type="button" data-f="done" aria-pressed="false">Captured<span class="n">20</span></button><button type="button" data-f="progress" aria-pressed="false">Gathering<span class="n">8</span></button><button type="button" data-f="todo" aria-pressed="false">Ahead<span class="n">10</span></button></div>
       <div class="chips" id="f-type" role="group" aria-label="Type"><button class="chip" type="button" data-f="all" aria-pressed="true">All types</button><button class="chip" type="button" data-f="nebula" aria-pressed="false">Nebulae</button><button class="chip" type="button" data-f="galaxy" aria-pressed="false">Galaxies</button><button class="chip" type="button" data-f="cluster" aria-pressed="false">Clusters</button></div>
@@ -552,7 +590,8 @@ body>footer{contain-intrinsic-size:auto 160px}
 <footer>
   <div class="wrap">
     <span>© Kostia, «Nebo Blyzhche». All images are my own.</span>
-    <span id="foot-upd">Updated 15 October at 15:29 automatically</span>
+    <span id="foot-upd">Updated 15 October at 20:02 automatically</span>
+    <a href="log/">Night log</a>
     <a href="../privacy.html">Privacy policy</a>
   </div>
 </footer>
@@ -580,7 +619,7 @@ body>footer{contain-intrinsic-size:auto 160px}
     allTypes: 'All types',
     dm: (d, m) => `${d} ${m}`,
     nights: n => `${n} ${n === 1 ? 'night' : 'nights'}`,
-    dur: sec => { const h = Math.floor(sec / 3600), m = Math.round(sec % 3600 / 60); return h ? `${h} h${m ? ' ' + m + ' min' : ''}` : `${m} min`; },
+    dur: sec => { const t = Math.round(sec / 60), h = Math.floor(t / 60), m = t % 60; return h ? `${h} h${m ? ' ' + m + ' min' : ''}` : `${m} min`; },
     durMin: min => min >= 60 ? `${Math.floor(min / 60)} h${min % 60 ? ' ' + min % 60 + ' min' : ''}` : `${min} min`,
     hoursNum: h => `${h} h`,
     name: r => NAMES[r.slug] || r.designation || r.name,

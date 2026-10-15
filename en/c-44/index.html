@@ -267,8 +267,35 @@ a.s:hover{transform:translateY(-3px);border-color:var(--accent-border)}
 .obj-facts div{padding:14px 16px;border-radius:18px;background:var(--surface);border:1px solid var(--border);line-height:1.3}
 .obj-facts dt{font-size:13.5px;color:var(--muted)}
 .obj-facts dd{margin:4px 0 0;font:600 17px var(--f-display)}
-.obj-text{max-width:760px;color:var(--soft);font-size:17px;margin:0 0 24px}
+.obj-text{max-width:760px;color:var(--soft);font-size:17px;margin:0 0 24px;line-height:1.55}
+.obj-text h2{font-size:clamp(19px,2.4vw,24px);font-weight:700;line-height:1.2;margin:22px 0 8px;color:var(--text)}
+.obj-text h2:first-child{margin-top:0}
+.obj-text p{margin:0 0 12px}
 .obj-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:48px}
+/* Журнал ночей (SEO-09) */
+.log-tw{overflow-x:auto;margin:0 0 28px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.log-t{width:100%;border-collapse:collapse;font-size:15px;min-width:640px}
+.log-t th,.log-t td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap}
+.log-t th{font-size:13px;font-weight:600;color:var(--muted)}
+.log-t tr:last-child td{border-bottom:0}
+.log-t td:nth-child(2){white-space:normal;color:var(--text)}
+.log-t small{margin-left:6px;font-size:12px;color:var(--muted)}
+.log-t a,.log-notes a,.obj-text a{color:var(--accent-text)}
+.log-notes{max-width:760px;margin:0 0 28px;padding-left:20px;color:var(--soft);line-height:1.55}
+.log-notes li{margin:0 0 8px}
+.log-nav{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 48px}
+section.log-sec{padding:0}
+/* Списки на сторінках розділів: знято в каталозі Мессьє (SEO-08), ночі журналу (SEO-09) */
+.cat-list{list-style:none;margin:0;padding:0;display:grid;gap:8px;max-width:900px}
+.cat-list li{padding:12px 16px;border:1px solid var(--border);border-radius:16px;background:var(--surface);line-height:1.4}
+.cat-list a{display:block;font-weight:600;color:var(--text);text-decoration:none;margin-bottom:2px}
+.cat-list a:hover{color:var(--accent-text)}
+.cat-list span{color:var(--muted);font-size:14.5px}
+section>h2[id^="log-"]{margin:0 0 12px}
+/* Чипи-посилання (стрічка розділів SEO-08, навігація журналу) */
+a.chip{display:inline-flex;align-items:center;text-decoration:none}
+a.chip:hover{background:var(--hover-2);color:var(--text)}
+span.chip[aria-current]{display:inline-flex;align-items:center;color:var(--text);border-color:var(--accent-text)}
 .obj-flyby{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:clamp(18px,3vw,36px);align-items:center;margin:0 0 28px;padding:clamp(14px,2vw,20px);border-radius:28px;background:var(--surface);border:1px solid var(--border)}
 .obj-flyby video{display:block;width:100%;height:auto;aspect-ratio:540/816;object-fit:cover;border-radius:18px;background:#000}
 .obj-flyby h2{font-size:24px;margin:0 0 10px}
@@ -308,11 +335,18 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
   .ring-mini .rt>span{font-size:12px}
   .hero .cta .btn{flex:1 1 auto}
 }
-@media (max-width:860px){
+/* Сім пунктів меню (SEO-08): на середніх ширинах щільніше, нижче 1180 px стрічка чипів під брендом */
+@media (min-width:1181px) and (max-width:1420px){
+  .sections{gap:0}
+  .sections a{padding:9px 9px;font-size:14px}
+}
+@media (max-width:1180px){
   .sections{order:3;width:100%;margin:0;overflow-x:auto;scrollbar-width:none;padding:0 0 10px;gap:6px}
   .sections::-webkit-scrollbar{display:none}
   .sections a{flex:none;padding:9px 14px;font-size:14px;background:var(--surface);border:1px solid var(--border)}
   .actions{margin-left:auto}
+}
+@media (max-width:860px){
   .brand small{display:none}
 }
 @media (max-width:720px){
@@ -393,7 +427,7 @@ body>footer{contain-intrinsic-size:auto 160px}
 </script>
 <noscript><link rel="stylesheet" href="../../fonts/fonts.css"></noscript>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://tepliyk.github.io/en/c-44/#image","name":"Galaxy NGC 7479 (Caldwell 44) · C 44","description":"Galaxy NGC 7479 (Caldwell 44) (C 44), a galaxy in Pegasus. 3 h 38 min of light gathered over 3 nights from a city balcony in Ukraine with a DWARF Mini smart telescope, 45% of the goal of 8 h.","contentUrl":"https://tepliyk.github.io/img/c-44.jpg","thumbnailUrl":"https://tepliyk.github.io/img/c-44_t.jpg","width":840,"height":840,"url":"https://tepliyk.github.io/en/c-44/","inLanguage":"en","datePublished":"2026-10-02","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Kostia","copyrightNotice":"© Kostia, «Nebo Blyzhche». All images are my own.","isPartOf":{"@id":"https://tepliyk.github.io/#site"}},{"@type":"Person","@id":"https://tepliyk.github.io/#me","name":"Kostia","url":"https://tepliyk.github.io/","sameAs":["https://t.me/nebo_blyzhche","https://app.astrobin.com/u/nebo_blyzhche","https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw/shorts","https://www.instagram.com/nebo_blyzhche/","https://www.tiktok.com/@nebo_blyzhche","https://www.facebook.com/nebo.blyzhche","https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Nebo Blyzhche","item":"https://tepliyk.github.io/en/"},{"@type":"ListItem","position":2,"name":"Gallery","item":"https://tepliyk.github.io/en/#challenge"},{"@type":"ListItem","position":3,"name":"Galaxy NGC 7479 (Caldwell 44)","item":"https://tepliyk.github.io/en/c-44/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://tepliyk.github.io/en/c-44/#image","name":"Galaxy NGC 7479 (Caldwell 44) · C 44","description":"Galaxy NGC 7479 (Caldwell 44) (C 44), a galaxy in Pegasus. 3 h 38 min of light gathered over 3 nights from a city balcony in Ukraine with a DWARF Mini smart telescope, 45% of the goal of 8 h.","contentUrl":"https://tepliyk.github.io/img/c-44.jpg","thumbnailUrl":"https://tepliyk.github.io/img/c-44_t.jpg","width":840,"height":840,"url":"https://tepliyk.github.io/en/c-44/","inLanguage":"en","datePublished":"2026-10-02","creator":{"@id":"https://tepliyk.github.io/#me"},"creditText":"Kostia","copyrightNotice":"© Kostia, «Nebo Blyzhche». All images are my own.","isPartOf":{"@id":"https://tepliyk.github.io/#site"}},{"@type":"Person","@id":"https://tepliyk.github.io/#me","name":"Kostia","url":"https://tepliyk.github.io/","sameAs":["https://t.me/nebo_blyzhche","https://app.astrobin.com/u/nebo_blyzhche","https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw/shorts","https://www.instagram.com/nebo_blyzhche/","https://www.tiktok.com/@nebo_blyzhche","https://www.facebook.com/nebo.blyzhche","https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Nebo Blyzhche","item":"https://tepliyk.github.io/en/"},{"@type":"ListItem","position":2,"name":"Galaxies","item":"https://tepliyk.github.io/en/galaxies/"},{"@type":"ListItem","position":3,"name":"Galaxy NGC 7479 (Caldwell 44)","item":"https://tepliyk.github.io/en/c-44/"}]}]}</script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -417,9 +451,12 @@ body>footer{contain-intrinsic-size:auto 160px}
   <div class="wrap topbar">
     <a class="brand" href="../#top"><img src="../../logo-s.jpg" alt="" width="40" height="40"><span><b>Nebo Blyzhche</b><small>astrophotography from a balcony</small></span></a>
     <nav class="sections" aria-label="Sections">
-      <a href="../#challenge">Gallery</a>
-      <a href="../#messier">Messier</a>
-      <a href="../#solar">Solar system</a>
+      <a href="../nebulae/">Nebulae</a>
+      <a href="../galaxies/" aria-current="page">Galaxies</a>
+      <a href="../clusters/">Clusters</a>
+      <a href="../messier/">Messier</a>
+      <a href="../solar-system/">Solar system</a>
+      <a href="../equipment/dwarf-mini/">DWARF Mini</a>
       <a href="../#about">About me</a>
     </nav>
     <div class="actions">
@@ -431,7 +468,7 @@ body>footer{contain-intrinsic-size:auto 160px}
 </header>
 
 <main class="wrap" id="top">
-  <nav class="crumbs" aria-label="Breadcrumbs"><a href="../">Nebo Blyzhche</a><span aria-hidden="true">›</span><a href="../#challenge">Gallery</a><span aria-hidden="true">›</span><span aria-current="page">Galaxy NGC 7479 (Caldwell 44)</span></nav>
+  <nav class="crumbs" aria-label="Breadcrumbs"><a href="../">Nebo Blyzhche</a><span aria-hidden="true">›</span><a href="../galaxies/">Galaxies</a><span aria-hidden="true">›</span><span aria-current="page">Galaxy NGC 7479 (Caldwell 44)</span></nav>
   <div class="obj-head">
     <h1>Galaxy NGC 7479 (Caldwell 44)</h1>
     <p>C 44 · Galaxy · Pegasus</p>
@@ -449,7 +486,16 @@ body>footer{contain-intrinsic-size:auto 160px}
     <div><dt>Image from</dt><dd>2 October 2026</dd></div>
     <div><dt>Telescope</dt><dd>DWARF Mini, city balcony</dd></div>
   </dl>
-  <p class="obj-text">Galaxy NGC 7479 (Caldwell 44) (C 44), a galaxy in Pegasus. 3 h 38 min of light gathered over 3 nights from a city balcony in Ukraine with a DWARF Mini smart telescope, 45% of the goal of 8 h.</p>
+  <div class="obj-text">
+  <h2>About the object</h2>
+  <p>NGC 7479 in Pegasus, a spiral galaxy with a prominent bar from whose ends two asymmetric arms extend; its silhouette earned it the nickname Superman Galaxy. The asymmetry is probably the trace of a recent merger with a smaller galaxy. Star formation is active in the nucleus, and in radio a jet is seen winding the opposite way to the arms, a great rarity among spirals.</p>
+  <p>Distance: about 105 million light-years, apparent size in the sky: 4′ × 3′, constellation Pegasus.</p>
+  <h2>How it was shot</h2>
+  <p>Everything here was shot with a DWARF Mini smart telescope from a balcony in a city in Ukraine: light-polluted sky, only the eastern half of it visible, and a roof overhang that cuts off the south. 3 nights (1 night in September and 2 in October), 3 sessions, 540 frames with exposures of 15 and 30 s, without a filter, in broadband. The stack holds 3 h 38 min of light; the longest night, 2 October, gave 1 h 36 min. The goal for this object is 8 h, 45% done so far. First night 20 September 2026, last one 2 October 2026.</p>
+  <p>Galaxy NGC 7479 (Caldwell 44) in the night log: <a href="../log/2026-09-20/">20 September</a>, <a href="../log/2026-10-01/">1 October</a>, <a href="../log/2026-10-02/">2 October</a>.</p>
+  <h2>How it went</h2>
+  <p>A small distant galaxy that the DWARF Mini renders as a few dozen pixels with a hint of a bar. Three evening sessions without a filter at 15 and 30 seconds, with a dew shield against the street lights, which until midnight leave a visible gradient on one side of the frame. The result is honest: the shape is recognisable, the arm details are not. This is the device&#39;s limit for galaxies a hundred million light-years away.</p>
+  </div>
 
   <div class="obj-cta">
       <a class="btn btn-p btn-lg" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tg"/></svg>More on Telegram</a>
@@ -464,7 +510,8 @@ body>footer{contain-intrinsic-size:auto 160px}
 <footer>
   <div class="wrap">
     <span>© Kostia, «Nebo Blyzhche». All images are my own.</span>
-    <span id="foot-upd">Updated 15 October at 15:29 automatically</span>
+    <span id="foot-upd">Updated 15 October at 20:02 automatically</span>
+    <a href="../log/">Night log</a>
     <a href="../../privacy.html">Privacy policy</a>
   </div>
 </footer>

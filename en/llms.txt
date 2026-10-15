@@ -10,6 +10,13 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 - [Home (Ukrainian)](https://tepliyk.github.io/): original version
 - [data.json](https://tepliyk.github.io/data.json): machine-readable data for all objects (names in Ukrainian)
 - [Ukrainian llms.txt](https://tepliyk.github.io/llms.txt)
+- [Nebulae](https://tepliyk.github.io/en/nebulae/)
+- [Galaxies](https://tepliyk.github.io/en/galaxies/)
+- [Clusters](https://tepliyk.github.io/en/clusters/)
+- [Messier](https://tepliyk.github.io/en/messier/)
+- [Solar system](https://tepliyk.github.io/en/solar-system/)
+- [DWARF Mini](https://tepliyk.github.io/en/equipment/dwarf-mini/)
+- [Night log](https://tepliyk.github.io/en/log/)
 
 ## Captured
 

@@ -10,6 +10,13 @@
 - [English version](https://tepliyk.github.io/en/): англійська версія сайту
 - [data.json](https://tepliyk.github.io/data.json): машиночитні дані про всі об'єкти
 - [llms.txt англійською](https://tepliyk.github.io/en/llms.txt)
+- [Туманності](https://tepliyk.github.io/nebulae/)
+- [Галактики](https://tepliyk.github.io/galaxies/)
+- [Скупчення](https://tepliyk.github.io/clusters/)
+- [Мессьє](https://tepliyk.github.io/messier/)
+- [Сонячна система](https://tepliyk.github.io/solar-system/)
+- [DWARF Mini](https://tepliyk.github.io/equipment/dwarf-mini/)
+- [Журнал ночей](https://tepliyk.github.io/log/)
 
 ## Знято
 
