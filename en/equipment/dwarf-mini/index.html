@@ -708,6 +708,17 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
   .ln-t img{width:32px;height:32px}
   .ln-n{font-size:15px;-webkit-line-clamp:3}
 }
+
+/* DWARF Mini: ілюстрації в тексті; ширші за колонку тексту, без рамок */
+.gfig{margin:28px 0 36px;width:min(1100px,calc(100vw - 48px))}
+.gfig-pair{width:min(820px,calc(100vw - 48px))}
+.gfig-m{display:block}
+.gfig-pair .gfig-m{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:start}
+.gfig img,.gfig video{display:block;width:100%;height:auto;background:var(--surface)}
+.gfig-pair img,.gfig-pair video{aspect-ratio:3/4;object-fit:cover}
+.gfig figcaption{margin-top:12px;max-width:66ch;font-size:15px;line-height:1.55;color:var(--muted)}
+@media (max-width:600px){.gfig,.gfig-pair{width:calc(100vw - 32px)}.gfig-pair .gfig-m{gap:4px}
+  .gfig-map .gfig-m{overflow-x:auto;scrollbar-width:thin}.gfig-map img{width:760px;max-width:none}}
 </style><!-- /inline:site.css -->
 <!-- Статистика відвідувань: GoatCounter, без cookies і персональних даних -->
 <script>
@@ -779,14 +790,17 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
   <h2>What the device is</h2>
   <p>DWARF Mini is a small smart telescope: a lens with a camera, a motorised mount and a computer in one body the size of a thick book. It finds the target itself, tracks it, takes hundreds of short frames and stacks them on board; a phone app is all the control there is. I have had it since August 2026, and everything on this site was shot with it.</p>
   <p>For deep sky I use its dual-band Hα/OIII filter, which passes the two main lines of nebular glow and blocks most of the street-light spectrum. Without the filter the device shoots broadband: that is how galaxies, clusters, the Moon and the planets are done.</p>
+  <figure class="gfig gfig-pair"><div class="gfig-m"><picture><source type="image/webp" srcset="../../../equipment/dwarf-mini/dwarf-front.webp"><img src="../../../equipment/dwarf-mini/dwarf-front.jpg" alt="DWARF Mini, power button side" width="720" height="1110" loading="lazy"></picture><picture><source type="image/webp" srcset="../../../equipment/dwarf-mini/dwarf-back.webp"><img src="../../../equipment/dwarf-mini/dwarf-back.jpg" alt="DWARF Mini, back of the body" width="576" height="940" loading="lazy"></picture></div><figcaption>The whole telescope: lens, camera, mount and computer in one body that fits in a hand.</figcaption></figure>
   <h2>The conditions, honestly</h2>
   <p>The balcony faces east. A roof overhang above it cuts off the south, so I see only the eastern half of the sky and anything culminating in the south is simply never available. Street lights burn until midnight and leave a visible gradient on one side of the frame; after they switch off the sky darkens by more than half in measured terms, and those are the frames that carry the result.</p>
   <p>This is a city sky in Ukraine, roughly Bortle 6: the Milky Way is not visible, bright stars are. Every nebula here costs four to eight hours of total exposure gathered over several nights, where a dark site would need one or two.</p>
+  <figure class="gfig gfig-map"><div class="gfig-m"><picture><source type="image/webp" srcset="../../../equipment/dwarf-mini/sky-en.webp"><img src="../../../equipment/dwarf-mini/sky-en.jpg" alt="Map of the balcony window: roof overhang, trees, wall and the paths of a few targets through one night" width="1600" height="756" loading="lazy"></picture></div><figcaption>The balcony window from my AstroHub planner. The roof overhang cuts off the top of the sky, trees the bottom, the building wall the south. The arcs are the paths of a few targets through one October night; the bright parts are where the telescope can actually shoot, the dashed lines are the working limits with a margin.</figcaption></figure>
   <h2>What works</h2>
   <p>Stacking hours across nights. The device runs a plan by itself while I sleep, and a stack of several nights beats any single night. So far: 138.6 h of deep-sky light over 48 nights, 20 of 38 challenge objects captured.</p>
   <p>The dual-band filter on emission nebulae. The Rosette, the Heart, California or the Tadpoles come through from the city with a clean background; this is where the small device punches above its weight.</p>
   <p>Re-stacking all frames of all nights together instead of trusting the per-night stack from the device. On the Flaming Star this gave about 20 percent better signal-to-noise from the same data; on Orion it cut background noise roughly one and a half times.</p>
   <p>Mosaics. The Rosette does not fit into the field, and the built-in mosaic mode stitched two panels across ten nights without manual alignment.</p>
+  <figure class="gfig gfig-pair"><div class="gfig-m"><video class="gvid" src="../../../equipment/dwarf-mini/balcony-timelapse.mp4" poster="../../../equipment/dwarf-mini/balcony-timelapse.jpg" muted loop playsinline preload="none" width="600" height="800" aria-label="Timelapse of the sky from the balcony, nights of 10–14 August"></video><picture><source type="image/webp" srcset="../../../equipment/dwarf-mini/star-trails.webp"><img src="../../../equipment/dwarf-mini/star-trails.jpg" alt="Star trails from the balcony on the night of the Perseids" width="1100" height="1467" loading="lazy"></picture></div><figcaption>The same view through a phone: a timelapse of the nights of 10–14 August and a star-trail stack from the night of the Perseids, 680 frames of 15 seconds. The black wedge at the top is the roof overhang, with a street lamp and wires below.</figcaption></figure>
   <h2>What does not</h2>
   <p>Galaxies. They shine across the whole spectrum, so the filter does not help, and most have low surface brightness. Andromeda and Triangulum come out as recognisable but soft; galaxies at tens of millions of light-years are a few dozen pixels with a hint of structure. That is the honest limit of a small aperture in a city.</p>
   <p>Fine detail. The Crab Nebula, Saturn&#39;s rings or the Horsehead itself are at the edge of what the optics resolve. The shape is there, the texture is not.</p>
@@ -800,10 +814,17 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
   <h2>Accessories that earned their place</h2>
   <p>A 3D-printed dew shield lined with felt, from a free model on Printables. With street lights shining from the side it cuts noise by roughly 20 to 30 percent; late at night, with the lights off, it makes almost no difference.</p>
   <p>A Bahtinov mask from the same set, used once to confirm that the autofocus really lands where it should. A cap for dark frames. A solar ND filter for the Sun, which passes less than a thousandth of the light; without it the Sun must never be pointed at.</p>
+  <figure class="gfig"><div class="gfig-m"><picture><source type="image/webp" srcset="../../../equipment/dwarf-mini/dew-shield.webp"><img src="../../../equipment/dwarf-mini/dew-shield.jpg" alt="Felt-lined dew shield and lens attachments, 3D printed" width="1400" height="1050" loading="lazy"></picture></div><figcaption>The 3D-printed set: a felt-lined dew shield that cuts the side light from street lamps, and lens attachments, among them a Bahtinov mask and a cap for dark frames.</figcaption></figure>
   <h2>Processing</h2>
   <p>The device produces a stacked image per night, but the real work starts afterwards: the raw frames of all nights are stacked again together, frames with clouds or low star counts are dropped by measured numbers rather than by eye, the city gradient is removed, and only then the colours of the nebula are stretched out of the background. Every object page shows which exposures, filters and nights went into its frame.</p>
   <h2>If your balcony looks like mine</h2>
   <p>Start with nebulae and the dual-band filter, not with galaxies: the first results will keep you going. Shoot after midnight whenever possible. Keep 60-second frames as the default and test longer ones on one night before committing a series. Keep every raw frame: re-stacking later is where most of the quality comes from. And set a goal in hours for each object, so that &quot;done&quot; means something.</p>
+<script>
+(function(){var v=document.querySelector('.gvid');if(!v)return;
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){v.controls=true;return}
+if(!('IntersectionObserver' in window)){v.controls=true;return}
+new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){v.play().catch(function(){v.controls=true})}else{v.pause()}})},{threshold:.25}).observe(v)})();
+</script>
 
   </div>
   <section class="gear-sheet" aria-labelledby="gs-h">
@@ -820,7 +841,7 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
 <footer>
   <div class="wrap">
     <span>© Kostia, «Nebo Blyzhche». All images are my own.</span>
-    <span id="foot-upd">Updated 16 October at 21:06 automatically</span>
+    <span id="foot-upd">Updated 16 October at 21:38 automatically</span>
     <a href="../../log/">Night log</a>
     <a href="../../../privacy.html">Privacy policy</a>
   </div>

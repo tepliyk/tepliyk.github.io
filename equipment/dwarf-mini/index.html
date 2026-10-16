@@ -708,6 +708,17 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
   .ln-t img{width:32px;height:32px}
   .ln-n{font-size:15px;-webkit-line-clamp:3}
 }
+
+/* DWARF Mini: ілюстрації в тексті; ширші за колонку тексту, без рамок */
+.gfig{margin:28px 0 36px;width:min(1100px,calc(100vw - 48px))}
+.gfig-pair{width:min(820px,calc(100vw - 48px))}
+.gfig-m{display:block}
+.gfig-pair .gfig-m{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:start}
+.gfig img,.gfig video{display:block;width:100%;height:auto;background:var(--surface)}
+.gfig-pair img,.gfig-pair video{aspect-ratio:3/4;object-fit:cover}
+.gfig figcaption{margin-top:12px;max-width:66ch;font-size:15px;line-height:1.55;color:var(--muted)}
+@media (max-width:600px){.gfig,.gfig-pair{width:calc(100vw - 32px)}.gfig-pair .gfig-m{gap:4px}
+  .gfig-map .gfig-m{overflow-x:auto;scrollbar-width:thin}.gfig-map img{width:760px;max-width:none}}
 </style><!-- /inline:site.css -->
 <!-- Статистика відвідувань: GoatCounter, без cookies і персональних даних -->
 <script>
@@ -779,14 +790,17 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
   <h2>Що це за апарат</h2>
   <p>DWARF Mini це маленький смарт-телескоп: об&#39;єктив з камерою, моторизоване кріплення й комп&#39;ютер в одному корпусі розміром з товсту книжку. Він сам знаходить ціль, веде її, знімає сотні коротких кадрів і складає їх на борту; усе керування з телефона. Апарат у мене з серпня 2026 року, і все на цьому сайті знято ним.</p>
   <p>Для глибокого неба використовую його дуобанд-фільтр Hα/OIII, який пропускає дві головні лінії світіння туманностей і відсікає більшу частину спектра вуличних ліхтарів. Без фільтра апарат знімає в широкому спектрі: так робляться галактики, скупчення, Місяць і планети.</p>
+  <figure class="gfig gfig-pair"><div class="gfig-m"><picture><source type="image/webp" srcset="../../equipment/dwarf-mini/dwarf-front.webp"><img src="../../equipment/dwarf-mini/dwarf-front.jpg" alt="DWARF Mini з боку кнопки живлення" width="720" height="1110" loading="lazy"></picture><picture><source type="image/webp" srcset="../../equipment/dwarf-mini/dwarf-back.webp"><img src="../../equipment/dwarf-mini/dwarf-back.jpg" alt="DWARF Mini, корпус ззаду" width="576" height="940" loading="lazy"></picture></div><figcaption>Увесь телескоп: об’єктив, камера, кріплення й комп’ютер в одному корпусі, що лягає в долоню.</figcaption></figure>
   <h2>Умови, чесно</h2>
   <p>Балкон дивиться на схід. Козирок над ним зрізає південь, тож я бачу лише східну половину неба, а все, що кульмінує на півдні, просто ніколи не доступне. Вуличні ліхтарі світять до опівночі й дають помітний градієнт з одного боку кадру; після їх вимкнення небо за вимірами темнішає більш ніж удвічі, і саме ці кадри тягнуть результат.</p>
   <p>Це міське небо в Україні, приблизно Bortle 6: Чумацький Шлях не видно, яскраві зорі видно. Кожна туманність тут коштує від чотирьох до восьми годин сумарної витримки за кілька ночей, де темному місцю вистачило б однієї-двох.</p>
+  <figure class="gfig gfig-map"><div class="gfig-m"><picture><source type="image/webp" srcset="../../equipment/dwarf-mini/sky-uk.webp"><img src="../../equipment/dwarf-mini/sky-uk.jpg" alt="Мапа вікна балкона: козирок, дерева, стіна і шляхи кількох цілей за ніч" width="1600" height="756" loading="lazy"></picture></div><figcaption>Вікно балкона з мого планувальника AstroHub. Козирок зрізає верх неба, дерева низ, стіна будинку закриває південь. Дуги це шляхи кількох цілей за одну жовтневу ніч; яскраві відрізки там, де апарат реально може знімати, а пунктир показує робочі межі із запасом.</figcaption></figure>
   <h2>Що працює</h2>
   <p>Накопичення годин за кілька ночей. Апарат сам відпрацьовує план, поки я сплю, і стек з кількох ночей б&#39;є будь-яку одну ніч. На сьогодні: 138,6 год світла глибокого неба за 48 ночей, знято 20 з 38 об&#39;єктів челенджу.</p>
   <p>Дуобанд-фільтр на емісійних туманностях. Розетка, Серце, Каліфорнія чи Пуголовки виходять з міста з чистим фоном; саме тут маленький апарат показує більше, ніж від нього чекаєш.</p>
   <p>Перезбір усіх кадрів усіх ночей разом замість довіри до понічного стека апарата. На Палаючій Зорі це дало близько 20 відсотків кращого співвідношення сигнал/шум з тих самих даних, на Оріоні зменшило шум фону приблизно в півтора раза.</p>
   <p>Мозаїки. Розетка не влазить у поле, і вбудований режим мозаїки склав дві панелі за десять ночей без ручного вирівнювання.</p>
+  <figure class="gfig gfig-pair"><div class="gfig-m"><video class="gvid" src="../../equipment/dwarf-mini/balcony-timelapse.mp4" poster="../../equipment/dwarf-mini/balcony-timelapse.jpg" muted loop playsinline preload="none" width="600" height="800" aria-label="Таймлапс неба з балкона, ночі 10–14 серпня"></video><picture><source type="image/webp" srcset="../../equipment/dwarf-mini/star-trails.webp"><img src="../../equipment/dwarf-mini/star-trails.jpg" alt="Зоряні треки ночі Персеїд з балкона" width="1100" height="1467" loading="lazy"></picture></div><figcaption>Той самий вид телефоном: таймлапс ночей 10–14 серпня і стек зоряних треків ночі Персеїд, 680 кадрів по 15 секунд. Чорний клин угорі це козирок, знизу ліхтар і дроти.</figcaption></figure>
   <h2>Що не працює</h2>
   <p>Галактики. Вони світяться в усьому спектрі, тож фільтр не допомагає, а поверхнева яскравість у більшості низька. Андромеда й Трикутник виходять упізнаваними, але м&#39;якими; галактики на десятках мільйонів світлових років це кілька десятків пікселів з натяком на структуру. Це чесна межа малої апертури в місті.</p>
   <p>Дрібні деталі. Крабоподібна туманність, кільця Сатурна чи сама Кінська Голова на межі того, що розділяє оптика. Форма є, текстури немає.</p>
@@ -800,10 +814,17 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
   <h2>Аксесуари, які виправдали себе</h2>
   <p>Надрукована на 3D-принтері бленда з фетром, за безкоштовною моделлю з Printables. Коли ліхтарі світять збоку, вона зрізає шум приблизно на 20-30 відсотків; пізно вночі, після вимкнення ліхтарів, різниці майже немає.</p>
   <p>Маска Бахтінова з того ж набору, щоб один раз переконатись, що автофокус справді влучає куди треба. Кришка для темнових кадрів. Сонячний ND-фільтр для Сонця, який пропускає менше тисячної частки світла; без нього на Сонце наводити не можна ніколи.</p>
+  <figure class="gfig"><div class="gfig-m"><picture><source type="image/webp" srcset="../../equipment/dwarf-mini/dew-shield.webp"><img src="../../equipment/dwarf-mini/dew-shield.jpg" alt="Бленда з фетром і насадки на об’єктив, надруковані на 3D-принтері" width="1400" height="1050" loading="lazy"></picture></div><figcaption>Набір з 3D-принтера: бленда з фетром усередині, яка ріже бокове світло ліхтарів, і насадки на об’єктив, серед них маска Бахтінова та кришка для темнових кадрів.</figcaption></figure>
   <h2>Обробка</h2>
   <p>Апарат віддає складений кадр за ніч, але справжня робота починається потім: сирі кадри всіх ночей складаються заново разом, кадри з хмарами чи малою кількістю зір відкидаються за вимірами, а не на око, прибирається міський градієнт, і лише тоді з фону витягуються кольори туманності. На кожній сторінці об&#39;єкта видно, які витримки, фільтри й ночі пішли в його кадр.</p>
   <h2>Якщо ваш балкон схожий на мій</h2>
   <p>Починайте з туманностей і дуобанд-фільтра, а не з галактик: перші результати дадуть сили продовжувати. Знімайте після опівночі, коли це можливо. Тримайте 60 секунд як стандарт і тестуйте довші кадри одну ніч, перш ніж віддати їм серію. Зберігайте кожен сирий кадр: перезбір потім дає більшу частину якості. І ставте кожному об&#39;єкту мету в годинах, щоб слово «знято» щось означало.</p>
+<script>
+(function(){var v=document.querySelector('.gvid');if(!v)return;
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){v.controls=true;return}
+if(!('IntersectionObserver' in window)){v.controls=true;return}
+new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){v.play().catch(function(){v.controls=true})}else{v.pause()}})},{threshold:.25}).observe(v)})();
+</script>
 
   </div>
   <section class="gear-sheet" aria-labelledby="gs-h">
@@ -820,7 +841,7 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
 <footer>
   <div class="wrap">
     <span>© Костя, «Небо ближче». Усі знімки власні.</span>
-    <span id="foot-upd">Оновлено 16 жовтня о 21:06 автоматично</span>
+    <span id="foot-upd">Оновлено 16 жовтня о 21:38 автоматично</span>
     <a href="../../log/">Журнал ночей</a>
     <a href="../../privacy.html">Privacy policy</a>
   </div>
