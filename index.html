@@ -58,7 +58,7 @@ h1,h2,h3{font-family:var(--f-display);font-weight:600;letter-spacing:-.02em;marg
 .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
 
 /* Шапка */
-header{position:sticky;top:0;z-index:30;background:var(--head);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+header{position:sticky;top:0;z-index:30;background:var(--head);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 .topbar{display:flex;align-items:center;gap:12px;min-height:68px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
 .brand img{width:40px;height:40px;border-radius:50%;border:1px solid var(--border-2);flex:none}
@@ -96,49 +96,13 @@ header.open .menu-btn .i-close{display:block}
 .icon-btn:hover{background:var(--hover-2);color:var(--text)}
 .icon-btn svg{width:20px;height:20px}
 .theme .sun{display:none}[data-theme=light] .theme .sun{display:block}[data-theme=light] .theme .moon{display:none}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:0 20px;border-radius:999px;font:600 15px var(--f-body);text-decoration:none;white-space:nowrap;border:1px solid var(--border-2);background:var(--hover);color:var(--text);cursor:pointer;transition:background .2s}
+.btn:active{transform:scale(.97)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:0 20px;border-radius:999px;font:600 15px var(--f-body);text-decoration:none;white-space:nowrap;border:1px solid var(--border-2);background:var(--hover);color:var(--text);cursor:pointer;transition:background .2s,transform .15s}
 .btn:hover{background:var(--hover-2)}
 .btn svg{width:20px;height:20px;flex:none}
 .btn-p{background:var(--accent);border-color:transparent;color:var(--on-accent)}
 .btn-p:hover{background:var(--accent-h)}
 .btn-lg{min-height:52px;padding:0 24px;font-size:16px}
-
-/* Перший екран */
-.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);grid-template-areas:"intro media" "cta media" "stats media";column-gap:56px;row-gap:24px;padding:64px 0 48px}
-.intro{grid-area:intro;display:flex;flex-direction:column;gap:22px;align-self:start}
-.hero .cta{grid-area:cta;display:flex;flex-wrap:wrap;gap:12px}
-.hero .stats{grid-area:stats}
-/* Фото прив'язане до верху (на рівні заголовка), а не по центру: зміна висоти тексту зліва його не зсуває. */
-.media{grid-area:media;position:relative;align-self:start;margin-top:58px}
-.eyebrow{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--chip-border);color:var(--chip-text);font-size:14px;font-weight:500;line-height:1.3}
-.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--done);box-shadow:0 0 0 4px var(--chip-bg);flex:none}
-/* Заголовок: явні рядки без переносу, кегль від ширини колонки (найдовший рядок завжди влазить і в Unbounded, і в резервному шрифті). */
-.intro{container-type:inline-size}
-.hero h1{font-size:clamp(26px,4vw,48px);font-size:min(60px,8.4cqi);font-weight:700;line-height:1.1}
-.hero h1:lang(en){font-size:min(60px,8.8cqi)}
-.hero h1 .l{display:block;white-space:nowrap}
-.hero h1 em{font-style:normal;color:var(--accent-text)}
-.lead{margin:0;font-size:19px;color:var(--soft);max-width:560px}
-.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:560px}
-.stat{display:flex;flex-direction:column;padding:14px 16px;border-radius:18px;background:var(--surface);border:1px solid var(--border);line-height:1.25}
-.stat b{font:600 24px var(--f-display);font-variant-numeric:tabular-nums;white-space:nowrap}
-.stat span{font-size:13.5px;color:var(--muted);margin-top:4px}
-.photo{display:block;position:relative;width:100%;aspect-ratio:6/5;border-radius:28px;overflow:hidden;border:1px solid var(--border-2);padding:0;cursor:zoom-in;text-align:left;color:#EEF2FA;
-  background:radial-gradient(1px 1px at 18% 26%,#fff6 50%,transparent 51%),radial-gradient(1px 1px at 64% 14%,#fff5 50%,transparent 51%),radial-gradient(1.5px 1.5px at 42% 62%,#fff5 50%,transparent 51%),radial-gradient(1px 1px at 84% 52%,#fff4 50%,transparent 51%),radial-gradient(1px 1px at 28% 84%,#fff4 50%,transparent 51%),#0B1122}
-.photo canvas{position:absolute;inset:0;width:100%;height:100%;display:block;opacity:0;transition:opacity .35s ease,transform .6s ease}
-.photo canvas.on{opacity:1}
-.photo:hover canvas.on{transform:scale(1.03)}
-.cap{position:absolute;left:14px;right:14px;bottom:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-radius:18px;background:rgba(7,11,22,.74);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);line-height:1.3}
-.cap small{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#FFB547;font-weight:600}
-.cap b{display:block;font-size:17px;font-weight:600}
-.cap span span{display:block;font-size:13.5px;color:#C9D0DF}
-.cap svg{width:22px;height:22px;flex:none}
-.ring-mini{position:absolute;top:-18px;right:-14px;width:236px;display:flex;align-items:center;gap:14px;padding:14px 16px 14px 14px;border-radius:20px;background:var(--surface);border:1px solid var(--border-2);box-shadow:0 24px 60px -20px var(--shadow)}
-.ring-mini svg{width:64px;height:64px;flex:none;transform:rotate(-90deg)}
-.ring-mini .rt{display:flex;flex-direction:column;line-height:1.25;min-width:0}
-.ring-mini b{font:600 22px var(--f-display);white-space:nowrap}
-.ring-mini b small{font:500 15px var(--f-body);color:var(--muted)}
-.ring-mini .rt>span{font-size:13.5px;color:var(--muted)}
 
 /* Секції */
 section{padding:24px 0 64px;scroll-margin-top:calc(var(--head-h) + 12px)}
@@ -243,39 +207,37 @@ a.s:hover{transform:translateY(-3px);border-color:var(--accent-border)}
 .fly b{font-size:14.5px;font-weight:600;line-height:1.3}
 .fly:hover img,.fly:focus-visible img{transform:scale(1.06)}
 
-/* Як народжується кадр */
-.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
-.step{display:flex;flex-direction:column;gap:10px;padding:22px;border-radius:var(--r);background:var(--surface);border:1px solid var(--border)}
-.step .no{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-text);font:600 16px var(--f-display);flex:none}
-.step:last-child .no{background:var(--chip-bg);color:var(--done-text)}
-.step .tx{display:flex;flex-direction:column;gap:6px;line-height:1.45}
-.step b{font-size:17px;font-weight:600}
-.step span span{color:var(--muted);font-size:15px}
+/* Як народжується кадр: чотири моменти по порядку, без номерів і плиток */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+.step{display:flex;flex-direction:column;gap:10px}
+.step b{font:600 19px/1.25 var(--f-body)}
+.step span{color:var(--soft);font-size:16px;line-height:1.55}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr;gap:28px 24px}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
 
-/* Про мене */
-.about{display:flex;flex-wrap:wrap;gap:32px;padding:clamp(20px,3vw,40px);border-radius:28px;background:var(--surface);border:1px solid var(--border)}
-.about .txt{flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:14px}
-.about h2{font-size:clamp(24px,3vw,34px)}
-.about p{margin:0;color:var(--soft);font-size:16.5px}
-.about .sign{font:600 16px var(--f-display);color:var(--accent-text)}
-.facts{flex:1 1 320px;list-style:none;margin:0;padding:0;display:grid;gap:12px;align-content:start}
-.fact{display:flex;gap:14px;padding:14px;border-radius:16px;background:var(--surface-2)}
-.fact svg{width:22px;height:22px;flex:none;margin-top:2px;color:var(--accent-text)}
-.fact div{display:flex;flex-direction:column;line-height:1.4}
-.fact b{font-weight:600}
+/* Про мене: широкий абзац праворуч, факти колонкою ліворуч */
+.about{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:32px 64px;align-items:start}
+.about .txt{order:2;min-width:0;display:flex;flex-direction:column;gap:18px}
+.about h2{font-size:clamp(28px,3.2vw,44px)}
+.about p{margin:0;color:var(--text);font-size:clamp(17px,1.45vw,20px);line-height:1.6;max-width:64ch}
+.about .sign{font:600 17px var(--f-display);color:var(--accent-text)}
+.facts{order:1;list-style:none;margin:0;padding:8px 0 0;display:flex;flex-direction:column;gap:22px}
+.fact{display:flex;flex-direction:column;gap:3px;line-height:1.4}
+.fact b{font-weight:600;font-size:16px}
 .fact span{font-size:14px;color:var(--muted)}
+@media (max-width:860px){.about{grid-template-columns:1fr}.about .txt{order:1}.facts{order:2;display:grid;grid-template-columns:1fr 1fr;gap:20px 24px}}
 
-/* Соцмережі */
-.links{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
-.link{display:flex;align-items:center;gap:14px;padding:16px;border-radius:20px;background:var(--surface);border:1px solid var(--border);text-decoration:none;color:var(--text);transition:transform .25s,border-color .25s}
-.link:hover{transform:translateY(-3px);border-color:var(--accent-border)}
-.link .ic{width:48px;height:48px;flex:none;border-radius:14px;display:grid;place-items:center;color:#fff}
-.link .ic svg{width:24px;height:24px}
+/* Соцмережі: рядки з двома кінцями, без кольорових плиток */
+.links{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:0 48px}
+.link{display:flex;align-items:center;gap:14px;min-height:68px;padding:10px 0;text-decoration:none;color:var(--text)}
+.link .ic{width:22px;height:22px;flex:none;color:var(--soft)}
 .link .tx{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.35}
-.link .tx b{font-weight:600}
+.link .tx b{font-weight:600;font-size:16px;transition:color .2s}
 .link .tx small{font-size:14px;color:var(--muted)}
 .link .ls{display:none}
-.link .go{width:18px;height:18px;color:var(--dim);flex:none}
+.link .go{width:18px;height:18px;color:var(--muted);flex:none;transition:transform .25s}
+.link:hover .tx b{color:var(--accent-text)}
+.link:hover .go{transform:translate(3px,-3px)}
 
 /* Сторінка об'єкта */
 .crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:14px;color:var(--muted);padding:24px 0 6px}
@@ -341,11 +303,11 @@ span.chip[aria-current]{display:inline-flex;align-items:center;color:var(--text)
 @media (max-width:600px){.obj-flyby{grid-template-columns:1fr}.obj-flyby video,.obj-flyby .flyby-f{max-width:300px;margin:0 auto}.obj-flyby h2{font-size:20px}.obj-flyby .btn{width:100%}}
 .row-head a{font-size:14px;color:var(--accent-text);text-decoration:none;font-weight:600}
 
-footer{border-top:1px solid var(--border)}
+footer{background:var(--surface)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;padding-top:24px;padding-bottom:28px;font-size:14px;color:var(--dim)}
 footer a{color:var(--muted)}
 
-.fab{display:none;position:fixed;right:16px;bottom:20px;z-index:25;width:56px;height:56px;border-radius:50%;place-items:center;background:var(--accent);color:var(--on-accent);box-shadow:0 12px 30px -8px rgba(255,181,71,.55)}
+.fab{display:none;position:fixed;right:16px;bottom:20px;z-index:25;width:56px;height:56px;border-radius:50%;place-items:center;background:var(--accent);color:var(--on-accent);box-shadow:0 10px 24px -10px rgba(0,0,0,.6)}
 .fab svg{width:26px;height:26px}
 
 /* Лайтбокс */
@@ -358,19 +320,6 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
 .lb-cap .btn{background:#FFB547;color:#1A1205;border-color:transparent}
 .x{position:fixed;top:14px;right:16px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(14,20,36,.9);color:#fff;font-size:20px;cursor:pointer}
 
-@media (max-width:960px){
-  .hero{grid-template-columns:minmax(0,1fr);grid-template-areas:"intro" "media" "stats" "cta";padding:28px 0 36px;row-gap:20px}
-  .media{margin-top:0}
-  .intro{gap:16px}
-  .lead{font-size:17px}
-  .stats{max-width:none}
-  .ring-mini{top:12px;left:12px;right:auto;width:auto;padding:8px 14px 8px 8px;gap:10px;border-radius:16px;background:rgba(7,11,22,.78);border-color:transparent;color:#EEF2FA;box-shadow:none;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
-  .ring-mini svg{width:42px;height:42px}
-  .ring-mini b{font-size:17px}
-  .ring-mini b small,.ring-mini .rt>span{color:#A9B2C7}
-  .ring-mini .rt>span{font-size:12px}
-  .hero .cta .btn{flex:1 1 auto}
-}
 /* Меню: «Галерея» з випадним списком + 4 пункти; на середніх ширинах щільніше */
 @media (min-width:1101px) and (max-width:1300px){
   .sections a,.dd-btn{padding:9px 10px;font-size:14.5px}
@@ -434,12 +383,8 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
   .topbar{gap:8px;min-height:60px}
   .brand img{width:36px;height:36px}
   .brand b{font-size:15px}
-  .stat{padding:12px 10px}
-  .stat b{font-size:19px}
-  .stat span{font-size:12px;hyphens:auto}
   section{padding-bottom:40px}
   .row-head h2{font-size:20px}
-  .now-row{grid-auto-columns:250px;margin:0 -16px;padding:2px 16px 6px}
   .filters{flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:8px;padding:8px 0 10px}
   .seg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;padding:3px}
   .seg button{flex-direction:column;gap:0;min-height:44px;padding:0 4px;font-size:13px}
@@ -466,29 +411,178 @@ dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
   .orb{width:84px;height:84px}
   .s .nm b{font-size:15px}
   .s .nm span{font-size:12px}
-  .steps{grid-template-columns:minmax(0,1fr);gap:8px}
-  .step{flex-direction:row;gap:12px;padding:14px;border-radius:18px}
-  .step .no{width:36px;height:36px;border-radius:12px}
-  .step span span{font-size:14px}
-  .about{padding:18px;gap:18px;border-radius:22px}
-  .about p{font-size:15.5px}
-  .links{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-  .link{flex-direction:column;gap:8px;padding:14px 6px;border-radius:18px;text-align:center}
-  .link .ic{width:44px;height:44px}
-  .link .tx small,.link .go,.link .lf{display:none}
-  .link .ls{display:inline}
   .obj-facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
   .obj-facts div{padding:12px}
   .obj-facts dd{font-size:15px}
   .obj-fig img{border-radius:16px}
   .obj-cta .btn{flex:1 1 auto}
-  .link .tx b{font-size:13px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important;animation:none!important}}
 /* Секції нижче першого екрана не рахуються, доки до них не доскролили: підміна шрифту й оновлення даних не перераховують layout усієї довгої сторінки. auto запам'ятовує реальну висоту. */
 #challenge,#messier,#solar,#flybys,#how,#about,#links,body>footer{content-visibility:auto;contain-intrinsic-size:auto 900px}
 body>footer{contain-intrinsic-size:auto 160px}
 #challenge{contain-intrinsic-size:auto 2500px}
+
+/* ===== Головна: «контактний аркуш» (редизайн 2026-10). Кадри єдине джерело кольору, поверхні розділяє тон, не лінії й тіні. ===== */
+.home{--sec:clamp(96px,11vw,168px);--disp:clamp(40px,6vw,96px);--h2:clamp(28px,3.2vw,44px)}
+.home section{padding-top:0;padding-bottom:0;margin-top:0;margin-bottom:var(--sec)}
+.home h2,.home .row-head h2,.home .sec-head h2{font-size:var(--h2);line-height:1.05;letter-spacing:-.03em}
+.home .sec-head{gap:14px;margin-bottom:32px}
+.home .sec-head p{font-size:16px;line-height:1.55;color:var(--soft);max-width:62ch}
+.home .row-head{margin-bottom:28px;gap:8px 24px}
+.home .row-head span{font-size:14px;color:var(--muted)}
+
+/* Перший екран: заголовок, рядок з дією, стрічка кадрів, підпис кадру біля центру */
+.hx{display:flex;flex-direction:column;margin-bottom:clamp(80px,9vw,136px)!important;padding-top:clamp(28px,4.5vh,64px)!important}
+.hx-head{width:100%;container-type:inline-size}
+.hx h1{font-size:min(96px,7.4cqi);font-weight:700;line-height:.98;letter-spacing:-.045em}
+.hx h1 .l{display:block;white-space:nowrap}
+.hx-row{width:100%;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 48px;margin-top:clamp(18px,2.6vh,28px)}
+.hx .lead{margin:0;max-width:600px;font-size:19px;line-height:1.5;color:var(--text)}
+.hx .cta{display:flex;align-items:center;gap:8px 28px;flex-wrap:wrap}
+.tlink{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;font-size:16px;text-decoration:none;color:var(--text)}
+.tlink svg{width:20px;height:20px;transition:transform .25s}
+.tlink:hover svg{transform:translateY(3px)}
+.strip{position:relative;display:flex;gap:10px;height:clamp(220px,36vh,380px);margin-top:clamp(28px,4vh,48px);overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;scrollbar-width:none;overscroll-behavior-x:contain}
+.strip::-webkit-scrollbar{display:none}
+.fr{flex:none;height:100%;overflow:hidden;scroll-snap-align:center;background:var(--surface);cursor:zoom-in}
+.fr picture,.fr img{display:block;width:100%;height:100%}
+.fr img{object-fit:cover}
+.fr img{filter:brightness(.42) saturate(.8);transition:filter .5s ease,transform .8s ease}
+.fr.lit img,.fr:hover img,.fr:focus-visible img{filter:none}
+.fr:focus-visible{outline-offset:-3px}
+.hx-foot{width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 24px;margin-top:16px}
+.strip-cap{margin:0;font-size:16px;color:var(--soft);min-height:1.6em}
+.strip-cap b{color:var(--text);font-weight:600;margin-right:4px}
+.upd{font-size:14px;color:var(--muted)}
+
+/* Сезон у цифрах: реєстр, вирівняний по комі */
+.season{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:32px 48px;align-items:center}
+.season h2 .s1{color:var(--muted)}
+/* Цілі частини вирівняні праворуч по одній лінії; дробова частина виходить у зарезервоване поле справа, тож усе стає на кому */
+.ledger{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:20px;row-gap:22px;align-items:baseline}
+.lr{display:contents}
+.lr .w{position:relative;justify-self:end;padding-right:1.25em;font:700 var(--disp)/1 var(--f-display);letter-spacing:-.04em;font-variant-numeric:tabular-nums lining-nums;white-space:nowrap}
+.lr .d{position:absolute;left:calc(100% - 1.25em);top:0}
+.lr>span{font-size:16px;line-height:1.35;color:var(--soft);max-width:24ch}
+
+/* Зараз збираю світло: рядки без плиток */
+.home .now-row{display:grid;grid-auto-flow:row;grid-auto-columns:auto;grid-template-columns:repeat(auto-fill,minmax(min(100%,400px),1fr));gap:6px 56px;overflow:visible;min-height:0;padding:0}
+.home .now{padding:10px 0;gap:16px;border:0;border-radius:0;background:transparent;transition:none}
+.home a.now:hover{transform:none}
+.home .now img,.home .now .noimg{width:56px;height:56px;border-radius:0}
+.home .now .top b{font-size:16px;transition:color .2s}
+.home .now .top em{color:var(--text);font-size:16px;font-variant-numeric:tabular-nums}
+.home a.now:hover .top b{color:var(--accent-text)}
+.home .now .hint{font-size:14px}
+
+/* Челендж: кадри без рамок, фільтри тоном */
+.home .cats{gap:0 22px;margin:-8px 0 8px}
+.home .cats .chip{min-height:44px;padding:0;border:0;background:transparent;color:var(--soft);font-size:15px}
+.home .cats a.chip:hover{background:transparent;color:var(--text);text-decoration:underline;text-underline-offset:5px}
+.home .seg{border:0;background:var(--surface)}
+.home .chip{border:0;background:var(--surface)}
+.home .chip[aria-pressed=true]{background:var(--seg-on-bg);color:var(--seg-on-fg)}
+.home .grid{grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:40px 16px}
+.home .t{border:0;border-radius:0;background:transparent;transition:none}
+.home a.t:hover{transform:none}
+.home .t .pic{background:var(--surface)}
+.home a.t:hover .name b{color:var(--accent-text)}
+.home .t .body{padding:14px 0 0;gap:9px}
+.home .t .name b{font-size:17px;transition:color .2s}
+.home .t .name span,.home .t .meta{font-size:14px}
+.home .badge{top:0;left:0;border-radius:0;padding:5px 9px;font-size:13px}
+.home .badge.done{display:none}
+.home .badge.todo{background:var(--ink);backdrop-filter:none}
+
+/* Мессьє: секція змінює поле, клітинки без пунктирних рамок */
+.home .mzs{background:var(--surface);padding:clamp(64px,8vw,120px) 0}
+.home .mzs .sec-head{margin:0}
+.home .mz-score b{font:700 var(--disp)/1 var(--f-display);letter-spacing:-.04em;color:var(--text)}
+.home .mz-score span{font-size:15px;color:var(--soft)}
+.home .mz{grid-template-columns:repeat(auto-fill,minmax(48px,1fr));gap:4px}
+.home .q{border:0;border-radius:2px;font-size:13px}
+.home .q small{font-size:11px;top:2px;right:3px}
+.home .q.todo{background:var(--surface-2)}
+.home .q.unreachable{border:0;background:var(--ink);color:var(--dim)}
+.home .legend i{border-radius:2px}
+.home .legend .lt{background:var(--surface-2)}
+.home .legend .lu{border:0;background:var(--ink)}
+
+/* Сонячна система: круглі кадри без плиток */
+.home .solar{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:32px 16px}
+.home .s{padding:0;gap:14px;border:0;border-radius:0;background:transparent;transition:none}
+.home a.s:hover{transform:none}
+.home .orb{width:min(100%,176px);height:auto;aspect-ratio:1}
+.home .orb img{transition:transform .6s ease}
+.home a.s:hover .orb img{transform:scale(1.06)}
+.home .orb.none{background:var(--surface)}
+
+/* 3D-прольоти: стрічка, яку тягнуть убік (від поля сторінки до краю екрана) */
+.home #flybys .fly-row{grid-auto-columns:clamp(200px,21vw,290px);gap:12px;margin:0 calc(50% - 50vw);padding:0 max(24px,calc(50vw - 576px)) 14px;scroll-padding-inline:max(24px,calc(50vw - 576px));scroll-snap-type:x mandatory;scrollbar-width:none}
+.home #flybys .fly-row::-webkit-scrollbar{display:none}
+.home .fly .pv{border:0;border-radius:0}
+.home .fly b{font-size:15px}
+
+/* Назва сайту на всю ширину як завершення сторінки */
+.wordmark{margin:0;padding:0 8px;font:700 11.6vw/.8 var(--f-display);letter-spacing:-.05em;text-align:center;white-space:nowrap;overflow:hidden;color:var(--dim);user-select:none}
+
+.wordmark:lang(en){font-size:9.6vw}
+
+/* Рух: поява частин секцій по черзі; кадр сезону повільно наближається. Без JS і з reduce-motion усе статичне й видиме. */
+@media (prefers-reduced-motion:no-preference){
+  .rv [data-rv]>*{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+  .rv [data-rv].in>*{opacity:1;transform:none}
+  .rv [data-rv].in>:nth-child(2){transition-delay:.07s}
+  .rv [data-rv].in>:nth-child(3){transition-delay:.14s}
+  .rv [data-rv].in>:nth-child(4){transition-delay:.21s}
+  .rv [data-rv].in>:nth-child(n+5){transition-delay:.28s}
+  .fr.lit img{animation:drift 16s ease-in-out infinite alternate}
+  @keyframes drift{to{transform:scale(1.07)}}
+}
+
+/* Нічого читабельного дрібніше 13 px (шапка спільна для всіх сторінок) */
+.brand small{font-size:13px}
+.home .q small{font-size:13px;top:1px;right:3px;line-height:1}
+
+@media (max-width:960px){
+  .season{grid-template-columns:1fr}
+}
+@media (max-width:420px){
+  .lang a,.lang span{font-size:13px}
+}
+@media (max-width:720px){
+  .home{--disp:clamp(44px,15vw,72px)}
+  .hx{padding-top:20px!important}
+  .hx-head{order:1}
+  .strip{order:2;height:min(42vh,340px);margin-top:20px}
+  .hx-foot{order:3;margin-top:12px}
+  .hx-row{order:4;margin-top:20px}
+  .hx h1{font-size:min(60px,8.6cqi)}
+  .hx .lead{font-size:17px}
+  .hx .cta{width:100%}
+  .hx .cta .btn{flex:1 1 auto}
+  .upd{display:none}
+  .ledger{row-gap:18px}
+  .ledger{column-gap:12px}
+  .lr>span{font-size:15px}
+  .home .grid{grid-template-columns:1fr 1fr;gap:28px 10px}
+  .home .t .name b{font-size:15px}
+  .home .t .meta{flex-direction:column;gap:2px}
+  .home .mz{grid-template-columns:repeat(auto-fill,minmax(44px,1fr))}
+  .home .solar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 12px;margin:0;padding:0}
+  .home .s{width:auto;padding:0}
+  .home .orb{width:100%;height:auto}
+  .home .t .pic{aspect-ratio:1}
+  .home .t .body{padding:10px 0 0}
+  .home .badge{top:0;left:0;font-size:13px}
+  .home .q{font-size:13px;border-radius:2px}
+  .home h2,.home .row-head h2,.home .sec-head h2{font-size:clamp(24px,7vw,30px)}
+  .home .s .nm b{font-size:15px}
+  .home .s .nm span,.home .seg button .n{font-size:13px}
+  .home #flybys .fly-row{grid-auto-columns:62vw}
+  .wordmark{padding-bottom:4px}
+}
 </style><!-- /inline:site.css -->
 <!-- Статистика відвідувань: GoatCounter, без cookies і персональних даних -->
 <script>
@@ -550,45 +644,40 @@ body>footer{contain-intrinsic-size:auto 160px}
   </div>
 </header>
 
-<main class="wrap" id="top" data-gen="2026-10-16T12:10:28+03:00">
-  <div class="hero">
-    <div class="intro">
-      <span class="eyebrow"><i></i><span id="updated">Оновлено 16 жовтня о 12:10</span></span>
-      <h1><span class="l">Усе небо,</span> <span class="l">яке видно</span> <span class="l"><em>з одного балкона</em></span></h1>
+<main class="home" id="top" data-gen="2026-10-16T15:59:29+03:00">
+  <section class="hx" aria-labelledby="hx-h">
+    <div class="wrap hx-head"><h1 id="hx-h"><span class="l">Усе небо</span> <span class="l">з одного балкона</span></h1></div>
+    <div class="wrap hx-row">
       <p class="lead">Привіт, я Костя. Знімаю туманності й галактики маленьким смарт-телескопом з міського балкона в Україні. Мета проста: зняти все, що звідси взагалі можна побачити.</p>
-    </div>
-    <div class="media">
-      <button class="photo" id="hero-photo" type="button" aria-label="Відкрити кадр: Туманність Розетка · NGC 2244">
-        <canvas id="hero-img" aria-hidden="true"></canvas>
-        <span class="cap"><span><small>Кадр сезону</small><b id="hero-title">Туманність Розетка · NGC 2244</b><span id="hero-sub">27 год 4 хв світла за 10 ночей</span></span><svg aria-hidden="true"><use href="#i-out"/></svg></span>
-      </button>
-      <div class="ring-mini" aria-live="polite">
-        <svg viewBox="0 0 64 64" aria-hidden="true">
-          <circle cx="32" cy="32" r="26" fill="none" stroke="var(--track)" stroke-width="8"/>
-          <circle id="ring-progress" cx="32" cy="32" r="26" fill="none" stroke="var(--accent)" stroke-width="8" stroke-linecap="round" stroke-dasharray="120.37 163.36"/>
-          <circle id="ring-done" cx="32" cy="32" r="26" fill="none" stroke="var(--done)" stroke-width="8" stroke-linecap="round" stroke-dasharray="85.98 163.36"/>
-        </svg>
-        <div class="rt"><b><span id="ring-big">20</span> <small id="ring-of">з 38</small></b><span>об'єктів челенджу знято</span></div>
+      <div class="cta">
+        <a class="btn btn-p btn-lg" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tg"/></svg>Читати в Telegram</a>
+        <a class="tlink" href="#challenge">Дивитись галерею<svg aria-hidden="true"><use href="#i-down"/></svg></a>
       </div>
     </div>
-    <div class="stats">
-      <div class="stat"><b id="st-nights">48</b><span>ночей біля телескопа</span></div>
-      <div class="stat"><b id="st-hours">138,6 год</b><span>світла глибокого неба</span></div>
-      <div class="stat"><b id="st-photos">48</b><span>опублікованих фото</span></div>
+    <div class="strip" id="strip" role="region" aria-label="Стрічка знятих кадрів"><a class="fr" href="m37/" style="aspect-ratio:640/355" data-k="m37" data-t="Розсіяне скупчення M37 · M37" data-s="58 хв світла за 1 ніч"><picture><source type="image/webp" srcset="img/m37_t.webp"><img src="img/m37_t.jpg" alt="Розсіяне скупчення M37 · M37, астрофото з міського балкона, DWARF Mini" width="640" height="355" loading="lazy"></picture></a><a class="fr" href="c-30/" style="aspect-ratio:640/378" data-k="c-30" data-t="Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30" data-s="3 год 36 хв світла за 7 ночей"><picture><source type="image/webp" srcset="img/c-30_t.webp"><img src="img/c-30_t.jpg" alt="Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30, астрофото з міського балкона, DWARF Mini" width="640" height="378" loading="lazy"></picture></a><a class="fr" href="ic-434/" style="aspect-ratio:640/355" data-k="ic-434" data-t="Кінська Голова · IC 434" data-s="6 год 2 хв світла за 6 ночей"><picture><source type="image/webp" srcset="img/ic-434_t.webp"><img src="img/ic-434_t.jpg" alt="Кінська Голова · IC 434, астрофото з міського балкона, DWARF Mini" width="640" height="355" loading="lazy"></picture></a><a class="fr" href="m38/" style="aspect-ratio:640/355" data-k="m38" data-t="Розсіяне скупчення M38 · M38" data-s="1 год 11 хв світла за 1 ніч"><picture><source type="image/webp" srcset="img/m38_t.webp"><img src="img/m38_t.jpg" alt="Розсіяне скупчення M38 · M38, астрофото з міського балкона, DWARF Mini" width="640" height="355" loading="lazy"></picture></a><a class="fr" href="m44/" style="aspect-ratio:640/360" data-k="m44" data-t="Вулик (Ясла) · M44" data-s="1 год 32 хв світла за 3 ночі"><picture><source type="image/webp" srcset="img/m44_t.webp"><img src="img/m44_t.jpg" alt="Вулик (Ясла) · M44, астрофото з міського балкона, DWARF Mini" width="640" height="360" loading="lazy"></picture></a><a class="fr" href="m35/" style="aspect-ratio:640/410" data-k="m35" data-t="Розсіяне скупчення M35 · M35" data-s="1 год 56 хв світла за 2 ночі"><picture><source type="image/webp" srcset="img/m35_t.webp"><img src="img/m35_t.jpg" alt="Розсіяне скупчення M35 · M35, астрофото з міського балкона, DWARF Mini" width="640" height="410" loading="lazy"></picture></a><a class="fr" href="m42/" style="aspect-ratio:640/355" data-k="m42" data-t="Туманність Оріона · M42" data-s="2 год 14 хв світла за 3 ночі"><picture><source type="image/webp" srcset="img/m42_t.webp"><img src="img/m42_t.jpg" alt="Туманність Оріона · M42, астрофото з міського балкона, DWARF Mini" width="640" height="355" loading="lazy"></picture></a><a class="fr" href="ic-1848/" style="aspect-ratio:640/355" data-k="ic-1848" data-t="Туманність Душа · IC 1848" data-s="4 год 9 хв світла за 3 ночі"><picture><source type="image/webp" srcset="img/ic-1848_t.webp"><img src="img/ic-1848_t.jpg" alt="Туманність Душа · IC 1848, астрофото з міського балкона, DWARF Mini" width="640" height="355" loading="lazy"></picture></a><a class="fr" href="m31/" style="aspect-ratio:631/640" data-k="m31" data-t="Галактика Андромеди · M31" data-s="4 год 53 хв світла за 5 ночей"><picture><source type="image/webp" srcset="img/m31_t.webp"><img src="img/m31_t.jpg" alt="Галактика Андромеди · M31, астрофото з міського балкона, DWARF Mini" width="631" height="640" loading="lazy"></picture></a><a class="fr" href="ngc-1499/" style="aspect-ratio:640/351" data-k="ngc-1499" data-t="Туманність Каліфорнія · NGC 1499" data-s="5 год 1 хв світла за 3 ночі"><picture><source type="image/webp" srcset="img/ngc-1499_t.webp"><img src="img/ngc-1499_t.jpg" alt="Туманність Каліфорнія · NGC 1499, астрофото з міського балкона, DWARF Mini" width="640" height="351" loading="lazy"></picture></a><a class="fr" href="ngc-2264/" style="aspect-ratio:640/640" data-k="ngc-2264" data-t="Туманність Ялинка (Конус) · NGC 2264" data-s="5 год 21 хв світла за 4 ночі"><picture><source type="image/webp" srcset="img/ngc-2264_t.webp"><img src="img/ngc-2264_t.jpg" alt="Туманність Ялинка (Конус) · NGC 2264, астрофото з міського балкона, DWARF Mini" width="640" height="640"></picture></a><a class="fr" href="ic-443/" style="aspect-ratio:640/355" data-k="ic-443" data-t="Туманність Медуза · IC 443" data-s="7 год 17 хв світла за 6 ночей"><picture><source type="image/webp" srcset="img/ic-443_t.webp"><img src="img/ic-443_t.jpg" alt="Туманність Медуза · IC 443, астрофото з міського балкона, DWARF Mini" width="640" height="355"></picture></a><a class="fr" href="ic-1805/" style="aspect-ratio:640/355" data-k="ic-1805" data-t="Туманність Серце · IC 1805" data-s="12 год 40 хв світла за 9 ночей"><picture><source type="image/webp" srcset="img/ic-1805_t.webp"><img src="img/ic-1805_t.jpg" alt="Туманність Серце · IC 1805, астрофото з міського балкона, DWARF Mini" width="640" height="355"></picture></a><a class="fr lit" href="ngc-2244/" style="aspect-ratio:577/640" data-k="ngc-2244" data-t="Туманність Розетка · NGC 2244" data-s="27 год 4 хв світла за 10 ночей"><picture><source type="image/webp" srcset="img/ngc-2244_t.webp"><img src="img/ngc-2244_t.jpg" alt="Туманність Розетка · NGC 2244, астрофото з міського балкона, DWARF Mini" width="577" height="640" fetchpriority="high"></picture></a><a class="fr" href="m1/" style="aspect-ratio:640/640" data-k="m1" data-t="Крабоподібна туманність · M1" data-s="8 год 44 хв світла за 3 ночі"><picture><source type="image/webp" srcset="img/m1_t.webp"><img src="img/m1_t.jpg" alt="Крабоподібна туманність · M1, астрофото з міського балкона, DWARF Mini" width="640" height="640"></picture></a><a class="fr" href="ic-410/" style="aspect-ratio:640/347" data-k="ic-410" data-t="Туманність Пуголовки · IC 410" data-s="5 год 57 хв світла за 5 ночей"><picture><source type="image/webp" srcset="img/ic-410_t.webp"><img src="img/ic-410_t.jpg" alt="Туманність Пуголовки · IC 410, астрофото з міського балкона, DWARF Mini" width="640" height="347"></picture></a><a class="fr" href="ic-405/" style="aspect-ratio:640/355" data-k="ic-405" data-t="Туманність Палаюча зоря · IC 405" data-s="5 год 19 хв світла за 3 ночі"><picture><source type="image/webp" srcset="img/ic-405_t.webp"><img src="img/ic-405_t.jpg" alt="Туманність Палаюча зоря · IC 405, астрофото з міського балкона, DWARF Mini" width="640" height="355"></picture></a><a class="fr" href="ngc-281/" style="aspect-ratio:640/450" data-k="ngc-281" data-t="Туманність Пакмен · NGC 281" data-s="5 год 1 хв світла за 4 ночі"><picture><source type="image/webp" srcset="img/ngc-281_t.webp"><img src="img/ngc-281_t.jpg" alt="Туманність Пакмен · NGC 281, астрофото з міського балкона, DWARF Mini" width="640" height="450" loading="lazy"></picture></a><a class="fr" href="ngc-2174/" style="aspect-ratio:640/640" data-k="ngc-2174" data-t="Туманність Мавпяча Голова · NGC 2174" data-s="4 год 50 хв світла за 2 ночі"><picture><source type="image/webp" srcset="img/ngc-2174_t.webp"><img src="img/ngc-2174_t.jpg" alt="Туманність Мавпяча Голова · NGC 2174, астрофото з міського балкона, DWARF Mini" width="640" height="640" loading="lazy"></picture></a><a class="fr" href="m45/" style="aspect-ratio:640/355" data-k="m45" data-t="Плеяди · M45" data-s="3 год 49 хв світла за 2 ночі"><picture><source type="image/webp" srcset="img/m45_t.webp"><img src="img/m45_t.jpg" alt="Плеяди · M45, астрофото з міського балкона, DWARF Mini" width="640" height="355" loading="lazy"></picture></a><a class="fr" href="m103/" style="aspect-ratio:640/434" data-k="m103" data-t="Розсіяне скупчення M103 · M103" data-s="2 год 12 хв світла за 3 ночі"><picture><source type="image/webp" srcset="img/m103_t.webp"><img src="img/m103_t.jpg" alt="Розсіяне скупчення M103 · M103, астрофото з міського балкона, DWARF Mini" width="640" height="434" loading="lazy"></picture></a><a class="fr" href="m36/" style="aspect-ratio:640/427" data-k="m36" data-t="Розсіяне скупчення M36 · M36" data-s="1 год 38 хв світла за 1 ніч"><picture><source type="image/webp" srcset="img/m36_t.webp"><img src="img/m36_t.jpg" alt="Розсіяне скупчення M36 · M36, астрофото з міського балкона, DWARF Mini" width="640" height="427" loading="lazy"></picture></a><a class="fr" href="ngc-869/" style="aspect-ratio:640/345" data-k="ngc-869" data-t="Подвійне скупчення Персея (h Persei) · NGC 869" data-s="1 год 29 хв світла за 3 ночі"><picture><source type="image/webp" srcset="img/ngc-869_t.webp"><img src="img/ngc-869_t.jpg" alt="Подвійне скупчення Персея (h Persei) · NGC 869, астрофото з міського балкона, DWARF Mini" width="640" height="345" loading="lazy"></picture></a><a class="fr" href="m33/" style="aspect-ratio:640/342" data-k="m33" data-t="Галактика Трикутника · M33" data-s="7 год 50 хв світла за 6 ночей"><picture><source type="image/webp" srcset="img/m33_t.webp"><img src="img/m33_t.jpg" alt="Галактика Трикутника · M33, астрофото з міського балкона, DWARF Mini" width="640" height="342" loading="lazy"></picture></a><a class="fr" href="c-44/" style="aspect-ratio:640/640" data-k="c-44" data-t="Галактика NGC 7479 (Caldwell 44) · C 44" data-s="3 год 38 хв світла за 3 ночі"><picture><source type="image/webp" srcset="img/c-44_t.webp"><img src="img/c-44_t.jpg" alt="Галактика NGC 7479 (Caldwell 44) · C 44, астрофото з міського балкона, DWARF Mini" width="640" height="640" loading="lazy"></picture></a><a class="fr" href="ngc-2403/" style="aspect-ratio:640/354" data-k="ngc-2403" data-t="Галактика в Жирафі · NGC 2403" data-s="2 год 54 хв світла за 2 ночі"><picture><source type="image/webp" srcset="img/ngc-2403_t.webp"><img src="img/ngc-2403_t.jpg" alt="Галактика в Жирафі · NGC 2403, астрофото з міського балкона, DWARF Mini" width="640" height="354" loading="lazy"></picture></a><a class="fr" href="m34/" style="aspect-ratio:640/480" data-k="m34" data-t="Розсіяне скупчення M34 · M34" data-s="37 хв світла за 1 ніч"><picture><source type="image/webp" srcset="img/m34_t.webp"><img src="img/m34_t.jpg" alt="Розсіяне скупчення M34 · M34, астрофото з міського балкона, DWARF Mini" width="640" height="480" loading="lazy"></picture></a></div>
+    <div class="wrap hx-foot">
+      <p class="strip-cap" id="strip-cap" aria-live="polite"><b id="hero-title">Туманність Розетка · NGC 2244</b> <span id="hero-sub">27 год 4 хв світла за 10 ночей</span></p>
+      <span class="upd" id="updated">Оновлено 16 жовтня о 15:59</span>
     </div>
-    <div class="cta">
-      <a class="btn btn-p btn-lg" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tg"/></svg>Читати в Telegram</a>
-      <a class="btn btn-lg" href="#challenge">Дивитись галерею<svg aria-hidden="true"><use href="#i-down"/></svg></a>
-    </div>
-  </div>
-
-  <section id="now" aria-labelledby="now-h">
-    <div class="row-head"><h2 id="now-h">Зараз збираю світло</h2><span>смужка: зібрані години від мети</span></div>
-    <div class="now-row" id="now-row"><a class="now" href="m33/" data-k="m33"><picture><source type="image/webp" srcset="img/m33_t.webp"><img src="img/m33_t.jpg" alt="Галактика Трикутника · M33, астрофото з міського балкона, DWARF Mini" loading="lazy" fetchpriority="low" width="640" height="480"></picture><span class="info"><span class="top"><b>Галактика Трикутника</b><em>97%</em></span><span class="meter"><i style="width:97%"></i></span><span class="hint">ще 10 хв до мети</span></span></a><a class="now" href="m37/" data-k="m37"><picture><source type="image/webp" srcset="img/m37_t.webp"><img src="img/m37_t.jpg" alt="Розсіяне скупчення M37 · M37, астрофото з міського балкона, DWARF Mini" loading="lazy" fetchpriority="low" width="640" height="480"></picture><span class="info"><span class="top"><b>Розсіяне скупчення M37</b><em>96%</em></span><span class="meter"><i style="width:96%"></i></span><span class="hint">ще 2 хв до мети</span></span></a><a class="now" href="ic-434/" data-k="ic-434"><picture><source type="image/webp" srcset="img/ic-434_t.webp"><img src="img/ic-434_t.jpg" alt="Кінська Голова · IC 434, астрофото з міського балкона, DWARF Mini" loading="lazy" fetchpriority="low" width="640" height="480"></picture><span class="info"><span class="top"><b>Кінська Голова</b><em>75%</em></span><span class="meter"><i style="width:75%"></i></span><span class="hint">ще 1 год 58 хв до мети</span></span></a><a class="now" href="m34/" data-k="m34"><picture><source type="image/webp" srcset="img/m34_t.webp"><img src="img/m34_t.jpg" alt="Розсіяне скупчення M34 · M34, астрофото з міського балкона, DWARF Mini" loading="lazy" fetchpriority="low" width="640" height="480"></picture><span class="info"><span class="top"><b>Розсіяне скупчення M34</b><em>61%</em></span><span class="meter"><i style="width:61%"></i></span><span class="hint">ще 23 хв до мети</span></span></a><a class="now" href="c-44/" data-k="c-44"><picture><source type="image/webp" srcset="img/c-44_t.webp"><img src="img/c-44_t.jpg" alt="Галактика NGC 7479 (Caldwell 44) · C 44, астрофото з міського балкона, DWARF Mini" loading="lazy" fetchpriority="low" width="640" height="480"></picture><span class="info"><span class="top"><b>Галактика NGC 7479 (Caldwell 44)</b><em>45%</em></span><span class="meter"><i style="width:45%"></i></span><span class="hint">ще 4 год 22 хв до мети</span></span></a><a class="now" href="c-30/" data-k="c-30"><picture><source type="image/webp" srcset="img/c-30_t.webp"><img src="img/c-30_t.jpg" alt="Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30, астрофото з міського балкона, DWARF Mini" loading="lazy" fetchpriority="low" width="640" height="480"></picture><span class="info"><span class="top"><b>Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv</b><em>44%</em></span><span class="meter"><i style="width:44%"></i></span><span class="hint">ще 4 год 24 хв до мети</span></span></a><a class="now" href="ngc-2403/" data-k="ngc-2403"><picture><source type="image/webp" srcset="img/ngc-2403_t.webp"><img src="img/ngc-2403_t.jpg" alt="Галактика в Жирафі · NGC 2403, астрофото з міського балкона, DWARF Mini" loading="lazy" fetchpriority="low" width="640" height="480"></picture><span class="info"><span class="top"><b>Галактика в Жирафі</b><em>36%</em></span><span class="meter"><i style="width:36%"></i></span><span class="hint">ще 5 год 6 хв до мети</span></span></a><div class="now"><span class="noimg"></span><span class="info"><span class="top"><b>Відбивна туманність M78</b><em>9%</em></span><span class="meter"><i style="width:9%"></i></span><span class="hint">ще 7 год 14 хв до мети</span></span></div></div>
   </section>
 
-  <section id="challenge" aria-labelledby="gal-h">
-    <div class="sec-head">
+  <section id="season" class="wrap season" aria-labelledby="season-h" data-rv>
+    <h2 id="season-h"><span class="s1">Сезон</span><br>у цифрах</h2>
+    <div class="ledger">
+      <div class="lr"><b class="w" id="st-nights">48</b><span>ночей біля телескопа</span></div>
+      <div class="lr"><b class="w"><span id="st-hours">138</span><span class="d" id="st-hours-d">,6</span></b><span>годин світла глибокого неба</span></div>
+      <div class="lr"><b class="w" id="ring-big">20</b><span><span id="ring-of">з 38</span> об'єктів челенджу знято</span></div>
+      <div class="lr"><b class="w" id="st-photos">48</b><span>опублікованих фото</span></div>
+    </div>
+  </section>
+
+  <section id="now" class="wrap" aria-labelledby="now-h">
+    <div class="row-head" data-rv><h2 id="now-h">Зараз збираю світло</h2><span>смужка: зібрані години від мети</span></div>
+    <div class="now-row" id="now-row" data-rv><a class="now" href="m33/" data-k="m33"><picture><source type="image/webp" srcset="img/m33_t.webp"><img src="img/m33_t.jpg" alt="Галактика Трикутника · M33, астрофото з міського балкона, DWARF Mini" loading="lazy" fetchpriority="low" width="640" height="480"></picture><span class="info"><span class="top"><b>Галактика Трикутника</b><em>97%</em></span><span class="meter"><i style="width:97%"></i></span><span class="hint">ще 10 хв до мети</span></span></a><a class="now" href="m37/" data-k="m37"><picture><source type="image/webp" srcset="img/m37_t.webp"><img src="img/m37_t.jpg" alt="Розсіяне скупчення M37 · M37, астрофото з міського балкона, DWARF Mini" loading="lazy" fetchpriority="low" width="640" height="480"></picture><span class="info"><span class="top"><b>Розсіяне скупчення M37</b><em>96%</em></span><span class="meter"><i style="width:96%"></i></span><span class="hint">ще 2 хв до мети</span></span></a><a class="now" href="ic-434/" data-k="ic-434"><picture><source type="image/webp" srcset="img/ic-434_t.webp"><img src="img/ic-434_t.jpg" alt="Кінська Голова · IC 434, астрофото з міського балкона, DWARF Mini" loading="lazy" fetchpriority="low" width="640" height="480"></picture><span class="info"><span class="top"><b>Кінська Голова</b><em>75%</em></span><span class="meter"><i style="width:75%"></i></span><span class="hint">ще 1 год 58 хв до мети</span></span></a><a class="now" href="m34/" data-k="m34"><picture><source type="image/webp" srcset="img/m34_t.webp"><img src="img/m34_t.jpg" alt="Розсіяне скупчення M34 · M34, астрофото з міського балкона, DWARF Mini" loading="lazy" fetchpriority="low" width="640" height="480"></picture><span class="info"><span class="top"><b>Розсіяне скупчення M34</b><em>61%</em></span><span class="meter"><i style="width:61%"></i></span><span class="hint">ще 23 хв до мети</span></span></a><a class="now" href="c-44/" data-k="c-44"><picture><source type="image/webp" srcset="img/c-44_t.webp"><img src="img/c-44_t.jpg" alt="Галактика NGC 7479 (Caldwell 44) · C 44, астрофото з міського балкона, DWARF Mini" loading="lazy" fetchpriority="low" width="640" height="480"></picture><span class="info"><span class="top"><b>Галактика NGC 7479 (Caldwell 44)</b><em>45%</em></span><span class="meter"><i style="width:45%"></i></span><span class="hint">ще 4 год 22 хв до мети</span></span></a><a class="now" href="c-30/" data-k="c-30"><picture><source type="image/webp" srcset="img/c-30_t.webp"><img src="img/c-30_t.jpg" alt="Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30, астрофото з міського балкона, DWARF Mini" loading="lazy" fetchpriority="low" width="640" height="480"></picture><span class="info"><span class="top"><b>Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv</b><em>44%</em></span><span class="meter"><i style="width:44%"></i></span><span class="hint">ще 4 год 24 хв до мети</span></span></a><a class="now" href="ngc-2403/" data-k="ngc-2403"><picture><source type="image/webp" srcset="img/ngc-2403_t.webp"><img src="img/ngc-2403_t.jpg" alt="Галактика в Жирафі · NGC 2403, астрофото з міського балкона, DWARF Mini" loading="lazy" fetchpriority="low" width="640" height="480"></picture><span class="info"><span class="top"><b>Галактика в Жирафі</b><em>36%</em></span><span class="meter"><i style="width:36%"></i></span><span class="hint">ще 5 год 6 хв до мети</span></span></a><div class="now"><span class="noimg"></span><span class="info"><span class="top"><b>Відбивна туманність M78</b><em>9%</em></span><span class="meter"><i style="width:9%"></i></span><span class="hint">ще 7 год 14 хв до мети</span></span></div></div>
+  </section>
+
+  <section id="challenge" class="wrap" aria-labelledby="gal-h">
+    <div class="sec-head" data-rv>
       <h2 id="gal-h">Челендж: що знято, а що попереду</h2>
       <p>Для кожного об'єкта є мета: скільки годин світла треба, щоб кадр вийшов чистим під міським небом. Натисніть на кадр, щоб відкрити його великим.</p>
     </div>
@@ -597,13 +686,13 @@ body>footer{contain-intrinsic-size:auto 160px}
       <div class="seg" id="f-status" role="group" aria-label="Стан"><button type="button" data-f="all" aria-pressed="true">Усі<span class="n">38</span></button><button type="button" data-f="done" aria-pressed="false">Знято<span class="n">20</span></button><button type="button" data-f="progress" aria-pressed="false">Збираю<span class="n">8</span></button><button type="button" data-f="todo" aria-pressed="false">Попереду<span class="n">10</span></button></div>
       <div class="chips" id="f-type" role="group" aria-label="Тип"><button class="chip" type="button" data-f="all" aria-pressed="true">Усі типи</button><button class="chip" type="button" data-f="nebula" aria-pressed="false">Туманності</button><button class="chip" type="button" data-f="galaxy" aria-pressed="false">Галактики</button><button class="chip" type="button" data-f="cluster" aria-pressed="false">Скупчення</button></div>
     </div>
-    <div class="grid" id="grid"><a class="t done" href="ngc-2244/" data-k="ngc-2244"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-2244_t.webp"><img src="img/ngc-2244_t.jpg" alt="Туманність Розетка · NGC 2244, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Розетка</b><span>NGC 2244 · Туманність · Єдиноріг</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>27 год 4 хв</b> з 4 год</span><span>10 ночей</span></span></span></a><a class="t done" href="m44/" data-k="m44"><span class="pic"><picture><source type="image/webp" srcset="img/m44_t.webp"><img src="img/m44_t.jpg" alt="Вулик (Ясла) · M44, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Вулик (Ясла)</b><span>M44 · Скупчення · Рак</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>1 год 32 хв</b> з 1 год</span><span>3 ночі</span></span></span></a><a class="t done" href="ic-1805/" data-k="ic-1805"><span class="pic"><picture><source type="image/webp" srcset="img/ic-1805_t.webp"><img src="img/ic-1805_t.jpg" alt="Туманність Серце · IC 1805, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Серце</b><span>IC 1805 · Туманність · Кассіопея</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>12 год 40 хв</b> з 4 год</span><span>9 ночей</span></span></span></a><a class="t done" href="ic-410/" data-k="ic-410"><span class="pic"><picture><source type="image/webp" srcset="img/ic-410_t.webp"><img src="img/ic-410_t.jpg" alt="Туманність Пуголовки · IC 410, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Пуголовки</b><span>IC 410 · Туманність · Візничий</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 57 хв</b> з 4 год</span><span>5 ночей</span></span></span></a><a class="t done" href="ngc-281/" data-k="ngc-281"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-281_t.webp"><img src="img/ngc-281_t.jpg" alt="Туманність Пакмен · NGC 281, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Пакмен</b><span>NGC 281 · Туманність · Кассіопея</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 1 хв</b> з 4 год</span><span>4 ночі</span></span></span></a><a class="t done" href="ngc-2174/" data-k="ngc-2174"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-2174_t.webp"><img src="img/ngc-2174_t.jpg" alt="Туманність Мавпяча Голова · NGC 2174, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Мавпяча Голова</b><span>NGC 2174 · Туманність · Оріон</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>4 год 50 хв</b> з 4 год</span><span>2 ночі</span></span></span></a><a class="t done" href="ngc-2264/" data-k="ngc-2264"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-2264_t.webp"><img src="img/ngc-2264_t.jpg" alt="Туманність Ялинка (Конус) · NGC 2264, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Ялинка (Конус)</b><span>NGC 2264 · Туманність · Єдиноріг</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 21 хв</b> з 4 год</span><span>4 ночі</span></span></span></a><a class="t done" href="m36/" data-k="m36"><span class="pic"><picture><source type="image/webp" srcset="img/m36_t.webp"><img src="img/m36_t.jpg" alt="Розсіяне скупчення M36 · M36, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Розсіяне скупчення M36</b><span>M36 · Скупчення · Візничий</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>1 год 38 хв</b> з 1 год</span><span>1 ніч</span></span></span></a><a class="t done" href="m38/" data-k="m38"><span class="pic"><picture><source type="image/webp" srcset="img/m38_t.webp"><img src="img/m38_t.jpg" alt="Розсіяне скупчення M38 · M38, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Розсіяне скупчення M38</b><span>M38 · Скупчення · Візничий</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>1 год 11 хв</b> з 1 год</span><span>1 ніч</span></span></span></a><a class="t done" href="ic-443/" data-k="ic-443"><span class="pic"><picture><source type="image/webp" srcset="img/ic-443_t.webp"><img src="img/ic-443_t.jpg" alt="Туманність Медуза · IC 443, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Медуза</b><span>IC 443 · Туманність · Близнята</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>7 год 17 хв</b> з 6 год</span><span>6 ночей</span></span></span></a><a class="t done" href="ic-405/" data-k="ic-405"><span class="pic"><picture><source type="image/webp" srcset="img/ic-405_t.webp"><img src="img/ic-405_t.jpg" alt="Туманність Палаюча зоря · IC 405, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Палаюча зоря</b><span>IC 405 · Туманність · Візничий</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 19 хв</b> з 4 год</span><span>3 ночі</span></span></span></a><a class="t done" href="ngc-1499/" data-k="ngc-1499"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-1499_t.webp"><img src="img/ngc-1499_t.jpg" alt="Туманність Каліфорнія · NGC 1499, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Каліфорнія</b><span>NGC 1499 · Туманність · Персей</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 1 хв</b> з 4 год</span><span>3 ночі</span></span></span></a></div>
+    <div class="grid" id="grid" data-rv><a class="t done" href="ngc-2244/" data-k="ngc-2244"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-2244_t.webp"><img src="img/ngc-2244_t.jpg" alt="Туманність Розетка · NGC 2244, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Розетка</b><span>NGC 2244 · Туманність · Єдиноріг</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>27 год 4 хв</b> з 4 год</span><span>10 ночей</span></span></span></a><a class="t done" href="m44/" data-k="m44"><span class="pic"><picture><source type="image/webp" srcset="img/m44_t.webp"><img src="img/m44_t.jpg" alt="Вулик (Ясла) · M44, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Вулик (Ясла)</b><span>M44 · Скупчення · Рак</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>1 год 32 хв</b> з 1 год</span><span>3 ночі</span></span></span></a><a class="t done" href="ic-1805/" data-k="ic-1805"><span class="pic"><picture><source type="image/webp" srcset="img/ic-1805_t.webp"><img src="img/ic-1805_t.jpg" alt="Туманність Серце · IC 1805, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Серце</b><span>IC 1805 · Туманність · Кассіопея</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>12 год 40 хв</b> з 4 год</span><span>9 ночей</span></span></span></a><a class="t done" href="ic-410/" data-k="ic-410"><span class="pic"><picture><source type="image/webp" srcset="img/ic-410_t.webp"><img src="img/ic-410_t.jpg" alt="Туманність Пуголовки · IC 410, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Пуголовки</b><span>IC 410 · Туманність · Візничий</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 57 хв</b> з 4 год</span><span>5 ночей</span></span></span></a><a class="t done" href="ngc-281/" data-k="ngc-281"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-281_t.webp"><img src="img/ngc-281_t.jpg" alt="Туманність Пакмен · NGC 281, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Пакмен</b><span>NGC 281 · Туманність · Кассіопея</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 1 хв</b> з 4 год</span><span>4 ночі</span></span></span></a><a class="t done" href="ngc-2174/" data-k="ngc-2174"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-2174_t.webp"><img src="img/ngc-2174_t.jpg" alt="Туманність Мавпяча Голова · NGC 2174, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Мавпяча Голова</b><span>NGC 2174 · Туманність · Оріон</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>4 год 50 хв</b> з 4 год</span><span>2 ночі</span></span></span></a><a class="t done" href="ngc-2264/" data-k="ngc-2264"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-2264_t.webp"><img src="img/ngc-2264_t.jpg" alt="Туманність Ялинка (Конус) · NGC 2264, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Ялинка (Конус)</b><span>NGC 2264 · Туманність · Єдиноріг</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 21 хв</b> з 4 год</span><span>4 ночі</span></span></span></a><a class="t done" href="m36/" data-k="m36"><span class="pic"><picture><source type="image/webp" srcset="img/m36_t.webp"><img src="img/m36_t.jpg" alt="Розсіяне скупчення M36 · M36, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Розсіяне скупчення M36</b><span>M36 · Скупчення · Візничий</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>1 год 38 хв</b> з 1 год</span><span>1 ніч</span></span></span></a><a class="t done" href="m38/" data-k="m38"><span class="pic"><picture><source type="image/webp" srcset="img/m38_t.webp"><img src="img/m38_t.jpg" alt="Розсіяне скупчення M38 · M38, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Розсіяне скупчення M38</b><span>M38 · Скупчення · Візничий</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>1 год 11 хв</b> з 1 год</span><span>1 ніч</span></span></span></a><a class="t done" href="ic-443/" data-k="ic-443"><span class="pic"><picture><source type="image/webp" srcset="img/ic-443_t.webp"><img src="img/ic-443_t.jpg" alt="Туманність Медуза · IC 443, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Медуза</b><span>IC 443 · Туманність · Близнята</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>7 год 17 хв</b> з 6 год</span><span>6 ночей</span></span></span></a><a class="t done" href="ic-405/" data-k="ic-405"><span class="pic"><picture><source type="image/webp" srcset="img/ic-405_t.webp"><img src="img/ic-405_t.jpg" alt="Туманність Палаюча зоря · IC 405, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Палаюча зоря</b><span>IC 405 · Туманність · Візничий</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 19 хв</b> з 4 год</span><span>3 ночі</span></span></span></a><a class="t done" href="ngc-1499/" data-k="ngc-1499"><span class="pic"><picture><source type="image/webp" srcset="img/ngc-1499_t.webp"><img src="img/ngc-1499_t.jpg" alt="Туманність Каліфорнія · NGC 1499, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture><span class="badge done">Знято</span></span><span class="body"><span class="name"><b>Туманність Каліфорнія</b><span>NGC 1499 · Туманність · Персей</span></span><span class="meter done"><i style="width:100%"></i></span><span class="meta"><span><b>5 год 1 хв</b> з 4 год</span><span>3 ночі</span></span></span></a></div>
     <div class="more" id="more"><button class="btn btn-lg" type="button" id="more-btn">Показати всі 38</button></div>
   </section>
 
-  <section id="messier" aria-labelledby="mz-h">
-    <div class="panel">
-      <div class="mz-top">
+  <section id="messier" class="mzs" aria-labelledby="mz-h">
+    <div class="wrap">
+      <div class="mz-top" data-rv>
         <div class="sec-head">
           <h2 id="mz-h">Мессьє з балкона</h2>
           <p>110 найвідоміших туманностей, галактик і скупчень. З балкона видно лише східну половину неба, тож частина об'єктів недосяжна в принципі. Решту збираю по одному.</p>
@@ -615,31 +704,31 @@ body>footer{contain-intrinsic-size:auto 160px}
     </div>
   </section>
 
-  <section id="solar" aria-labelledby="sol-h">
-    <div class="sec-head">
+  <section id="solar" class="wrap" aria-labelledby="sol-h">
+    <div class="sec-head" data-rv>
       <h2 id="sol-h">Сонячна система</h2>
       <p>Місяць, Сонце й планети знімаються інакше: тисячі коротких кадрів, з яких лишаються найчіткіші. Тут без відсотків, просто найкращі спроби.</p>
     </div>
-    <div class="solar" id="solar-grid"><a class="s" href="misiac/" data-k="misiac"><span class="orb"><picture><source type="image/webp" srcset="img/misiac_t.webp"><img src="img/misiac_t.jpg" alt="Місяць, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture></span><span class="nm"><b>Місяць</b><span>16 ночей спостережень</span></span></a><a class="s" href="saturn/" data-k="saturn"><span class="orb"><picture><source type="image/webp" srcset="img/saturn_t.webp"><img src="img/saturn_t.jpg" alt="Сатурн, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture></span><span class="nm"><b>Сатурн</b><span>4 ночі спостережень</span></span></a><a class="s" href="sonce/" data-k="sonce"><span class="orb"><picture><source type="image/webp" srcset="img/sonce_t.webp"><img src="img/sonce_t.jpg" alt="Сонце, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture></span><span class="nm"><b>Сонце</b><span>11 ночей спостережень</span></span></a><div class="s"><span class="orb none">кадр в обробці</span><span class="nm"><b>Юпітер</b><span>1 ніч спостережень</span></span></div><a class="s" href="mars/" data-k="mars"><span class="orb"><picture><source type="image/webp" srcset="img/mars_t.webp"><img src="img/mars_t.jpg" alt="Марс, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture></span><span class="nm"><b>Марс</b><span>1 ніч спостережень</span></span></a></div>
+    <div class="solar" id="solar-grid" data-rv><a class="s" href="misiac/" data-k="misiac"><span class="orb"><picture><source type="image/webp" srcset="img/misiac_t.webp"><img src="img/misiac_t.jpg" alt="Місяць, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture></span><span class="nm"><b>Місяць</b><span>16 ночей спостережень</span></span></a><a class="s" href="saturn/" data-k="saturn"><span class="orb"><picture><source type="image/webp" srcset="img/saturn_t.webp"><img src="img/saturn_t.jpg" alt="Сатурн, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture></span><span class="nm"><b>Сатурн</b><span>4 ночі спостережень</span></span></a><a class="s" href="sonce/" data-k="sonce"><span class="orb"><picture><source type="image/webp" srcset="img/sonce_t.webp"><img src="img/sonce_t.jpg" alt="Сонце, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture></span><span class="nm"><b>Сонце</b><span>11 ночей спостережень</span></span></a><div class="s"><span class="orb none">кадр в обробці</span><span class="nm"><b>Юпітер</b><span>1 ніч спостережень</span></span></div><a class="s" href="mars/" data-k="mars"><span class="orb"><picture><source type="image/webp" srcset="img/mars_t.webp"><img src="img/mars_t.jpg" alt="Марс, астрофото з міського балкона, DWARF Mini" loading="lazy" width="640" height="480"></picture></span><span class="nm"><b>Марс</b><span>1 ніч спостережень</span></span></a></div>
   </section>
 
-  <section id="flybys" aria-labelledby="fly-h">
-    <div class="row-head"><h2 id="fly-h">3D-прольоти крізь знімки</h2><span>натисніть, щоб подивитись</span></div>
+  <section id="flybys" class="wrap" aria-labelledby="fly-h">
+    <div class="row-head" data-rv><h2 id="fly-h">3D-прольоти крізь знімки</h2><span>натисніть, щоб подивитись</span></div>
     <div class="fly-row"><a class="fly" href="ngc-2244/#flyby"><span class="pv"><img src="vid/ngc-2244.jpg" alt="Туманність Розетка: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Туманність Розетка</b></a><a class="fly" href="m44/#flyby"><span class="pv"><img src="vid/m44.jpg" alt="Вулик (Ясла): 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Вулик (Ясла)</b></a><a class="fly" href="ic-1805/#flyby"><span class="pv"><img src="vid/ic-1805.jpg" alt="Туманність Серце: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Туманність Серце</b></a><a class="fly" href="ic-410/#flyby"><span class="pv"><img src="vid/ic-410.jpg" alt="Туманність Пуголовки: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Туманність Пуголовки</b></a><a class="fly" href="ngc-281/#flyby"><span class="pv"><img src="vid/ngc-281.jpg" alt="Туманність Пакмен: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Туманність Пакмен</b></a><a class="fly" href="ngc-2264/#flyby"><span class="pv"><img src="vid/ngc-2264.jpg" alt="Туманність Ялинка (Конус): 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Туманність Ялинка (Конус)</b></a><a class="fly" href="m36/#flyby"><span class="pv"><img src="vid/m36.jpg" alt="Розсіяне скупчення M36: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Розсіяне скупчення M36</b></a><a class="fly" href="m38/#flyby"><span class="pv"><img src="vid/m38.jpg" alt="Розсіяне скупчення M38: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Розсіяне скупчення M38</b></a><a class="fly" href="ic-443/#flyby"><span class="pv"><img src="vid/ic-443.jpg" alt="Туманність Медуза: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Туманність Медуза</b></a><a class="fly" href="ic-405/#flyby"><span class="pv"><img src="vid/ic-405.jpg" alt="Туманність Палаюча зоря: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Туманність Палаюча зоря</b></a><a class="fly" href="ngc-1499/#flyby"><span class="pv"><img src="vid/ngc-1499.jpg" alt="Туманність Каліфорнія: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Туманність Каліфорнія</b></a><a class="fly" href="m42/#flyby"><span class="pv"><img src="vid/m42.jpg" alt="Туманність Оріона: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Туманність Оріона</b></a><a class="fly" href="ic-1848/#flyby"><span class="pv"><img src="vid/ic-1848.jpg" alt="Туманність Душа: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Туманність Душа</b></a><a class="fly" href="ngc-869/#flyby"><span class="pv"><img src="vid/ngc-869.jpg" alt="Подвійне скупчення Персея (h Persei): 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Подвійне скупчення Персея (h Persei)</b></a><a class="fly" href="m103/#flyby"><span class="pv"><img src="vid/m103.jpg" alt="Розсіяне скупчення M103: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Розсіяне скупчення M103</b></a><a class="fly" href="m35/#flyby"><span class="pv"><img src="vid/m35.jpg" alt="Розсіяне скупчення M35: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Розсіяне скупчення M35</b></a><a class="fly" href="m1/#flyby"><span class="pv"><img src="vid/m1.jpg" alt="Крабоподібна туманність: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Крабоподібна туманність</b></a><a class="fly" href="m31/#flyby"><span class="pv"><img src="vid/m31.jpg" alt="Галактика Андромеди: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Галактика Андромеди</b></a><a class="fly" href="m45/#flyby"><span class="pv"><img src="vid/m45.jpg" alt="Плеяди: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Плеяди</b></a><a class="fly" href="m33/#flyby"><span class="pv"><img src="vid/m33.jpg" alt="Галактика Трикутника: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Галактика Трикутника</b></a><a class="fly" href="m37/#flyby"><span class="pv"><img src="vid/m37.jpg" alt="Розсіяне скупчення M37: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Розсіяне скупчення M37</b></a><a class="fly" href="ic-434/#flyby"><span class="pv"><img src="vid/ic-434.jpg" alt="Кінська Голова: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Кінська Голова</b></a><a class="fly" href="m34/#flyby"><span class="pv"><img src="vid/m34.jpg" alt="Розсіяне скупчення M34: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Розсіяне скупчення M34</b></a><a class="fly" href="ngc-2403/#flyby"><span class="pv"><img src="vid/ngc-2403.jpg" alt="Галактика в Жирафі: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Галактика в Жирафі</b></a><a class="fly" href="misiac/#flyby"><span class="pv"><img src="vid/misiac.jpg" alt="Місяць: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Місяць</b></a><a class="fly" href="sonce/#flyby"><span class="pv"><img src="vid/sonce.jpg" alt="Сонце: 3D-проліт" loading="lazy" width="540" height="816"><svg aria-hidden="true"><use href="#i-fly"/></svg></span><b>Сонце</b></a></div>
   </section>
 
-  <section id="how" aria-labelledby="how-h">
-    <div class="sec-head"><h2 id="how-h">Як народжується кадр</h2></div>
-    <ol class="steps">
-      <li class="step"><span class="no">1</span><span class="tx"><b>Обираю ціль</b><span>Дивлюсь прогноз, Місяць і що вже зійшло над моєю половиною неба.</span></span></li>
-      <li class="step"><span class="no">2</span><span class="tx"><b>Телескоп знімає вночі</b><span>DWARF Mini працює за планом, поки я сплю. Найкраще після опівночі.</span></span></li>
-      <li class="step"><span class="no">3</span><span class="tx"><b>Ранкова обробка</b><span>Складаю сотні кадрів в один і витягую з міського неба кольори туманностей.</span></span></li>
-      <li class="step"><span class="no">4</span><span class="tx"><b>Сайт оновлюється сам</b><span>Цифри й кадри тут підтягуються автоматично після кожної ночі.</span></span></li>
+  <section id="how" class="wrap" aria-labelledby="how-h">
+    <div class="sec-head" data-rv><h2 id="how-h">Як народжується кадр</h2></div>
+    <ol class="steps" data-rv>
+      <li class="step"><b>Обираю ціль</b><span>Дивлюсь прогноз, Місяць і що вже зійшло над моєю половиною неба.</span></li>
+      <li class="step"><b>Телескоп знімає вночі</b><span>DWARF Mini працює за планом, поки я сплю. Найкраще після опівночі.</span></li>
+      <li class="step"><b>Ранкова обробка</b><span>Складаю сотні кадрів в один і витягую з міського неба кольори туманностей.</span></li>
+      <li class="step"><b>Сайт оновлюється сам</b><span>Цифри й кадри тут підтягуються автоматично після кожної ночі.</span></li>
     </ol>
   </section>
 
-  <section id="about" aria-labelledby="ab-h">
-    <div class="about">
+  <section id="about" class="wrap" aria-labelledby="ab-h">
+    <div class="about" data-rv>
       <div class="txt">
         <h2 id="ab-h">Про мене і цей балкон</h2>
         <p>Я Костя: вдень пишу код, а ночами збираю світло туманностей і галактик. Телескоп у мене з серпня 2026 року: маленький смарт-телескоп DWARF Mini, який сам наводиться, сам веде об'єкт і складає кадри.</p>
@@ -648,31 +737,32 @@ body>footer{contain-intrinsic-size:auto 160px}
         <p class="sign">Чистого неба!</p>
       </div>
       <ul class="facts">
-        <li class="fact"><svg aria-hidden="true"><use href="#i-scope"/></svg><div><b>DWARF Mini</b><span>смарт-телескоп, фільтр на водень і кисень для туманностей</span></div></li>
-        <li class="fact"><svg aria-hidden="true"><use href="#i-house"/></svg><div><b>Міський балкон</b><span>видно лише східну половину неба, світле небо міста</span></div></li>
-        <li class="fact"><svg aria-hidden="true"><use href="#i-clock"/></svg><div><b>Найкраще після опівночі</b><span>до 00:00 світять вуличні ліхтарі, рятує лише бленда</span></div></li>
-        <li class="fact"><svg aria-hidden="true"><use href="#i-moon"/></svg><div><b>Сезони</b><span>частина об'єктів просто ще не зійшла на моєму шматочку неба</span></div></li>
+        <li class="fact"><b>DWARF Mini</b><span>смарт-телескоп, фільтр на водень і кисень для туманностей</span></li>
+        <li class="fact"><b>Міський балкон</b><span>видно лише східну половину неба, світле небо міста</span></li>
+        <li class="fact"><b>Найкраще після опівночі</b><span>до 00:00 світять вуличні ліхтарі, рятує лише бленда</span></li>
+        <li class="fact"><b>Сезони</b><span>частина об'єктів просто ще не зійшла на моєму шматочку неба</span></li>
       </ul>
     </div>
   </section>
 
-  <section id="links" aria-labelledby="ln-h">
-    <div class="sec-head"><h2 id="ln-h">Де ще мене знайти</h2></div>
-    <div class="links">
-      <a class="link" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener"><span class="ic" style="background:#229ED9"><svg aria-hidden="true"><use href="#i-tg"/></svg></span><span class="tx"><b><span class="lf">Telegram «Небо ближче»</span><span class="ls">Telegram</span></b><small>головне місце: нові кадри й історії ночей</small></span><svg class="go" aria-hidden="true"><use href="#i-out"/></svg></a>
-      <a class="link" data-link="astrobin" href="https://app.astrobin.com/u/nebo_blyzhche" target="_blank" rel="noopener"><span class="ic" style="background:#5B4BDB"><svg aria-hidden="true"><use href="#i-star"/></svg></span><span class="tx"><b><span class="lf">AstroBin</span><span class="ls">AstroBin</span></b><small>кадри в повному розмірі з технічними деталями</small></span><svg class="go" aria-hidden="true"><use href="#i-out"/></svg></a>
-      <a class="link" data-link="youtube" href="https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw/shorts" target="_blank" rel="noopener"><span class="ic" style="background:#C8102E"><svg aria-hidden="true"><use href="#i-play"/></svg></span><span class="tx"><b><span class="lf">YouTube Shorts</span><span class="ls">YouTube</span></b><small>3D-прольоти крізь мої знімки</small></span><svg class="go" aria-hidden="true"><use href="#i-out"/></svg></a>
-      <a class="link" data-link="instagram" href="https://www.instagram.com/nebo_blyzhche/" target="_blank" rel="noopener"><span class="ic" style="background:linear-gradient(45deg,#f58529,#dd2a7b 55%,#8134af)"><svg aria-hidden="true"><use href="#i-ig"/></svg></span><span class="tx"><b><span class="lf">Instagram</span><span class="ls">Instagram</span></b><small>щодня нове відео й свіжі кадри</small></span><svg class="go" aria-hidden="true"><use href="#i-out"/></svg></a>
-      <a class="link" data-link="tiktok" href="https://www.tiktok.com/@nebo_blyzhche" target="_blank" rel="noopener"><span class="ic" style="background:#111"><svg aria-hidden="true"><use href="#i-tt"/></svg></span><span class="tx"><b><span class="lf">TikTok</span><span class="ls">TikTok</span></b><small>короткі прольоти крізь знімки</small></span><svg class="go" aria-hidden="true"><use href="#i-out"/></svg></a>
-      <a class="link" data-link="facebook" href="https://www.facebook.com/nebo.blyzhche" target="_blank" rel="noopener"><span class="ic" style="background:#1877F2"><svg aria-hidden="true"><use href="#i-fb"/></svg></span><span class="tx"><b><span class="lf">Facebook</span><span class="ls">Facebook</span></b><small>дописи й сторіс</small></span><svg class="go" aria-hidden="true"><use href="#i-out"/></svg></a>
+  <section id="links" class="wrap" aria-labelledby="ln-h">
+    <div class="sec-head" data-rv><h2 id="ln-h">Де ще мене знайти</h2></div>
+    <div class="links" data-rv>
+      <a class="link" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-tg"/></svg><span class="tx"><b><span class="lf">Telegram «Небо ближче»</span><span class="ls">Telegram</span></b><small>головне місце: нові кадри й історії ночей</small></span><svg class="go" aria-hidden="true"><use href="#i-out"/></svg></a>
+      <a class="link" data-link="astrobin" href="https://app.astrobin.com/u/nebo_blyzhche" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><span class="tx"><b><span class="lf">AstroBin</span><span class="ls">AstroBin</span></b><small>кадри в повному розмірі з технічними деталями</small></span><svg class="go" aria-hidden="true"><use href="#i-out"/></svg></a>
+      <a class="link" data-link="youtube" href="https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw/shorts" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg><span class="tx"><b><span class="lf">YouTube Shorts</span><span class="ls">YouTube</span></b><small>3D-прольоти крізь мої знімки</small></span><svg class="go" aria-hidden="true"><use href="#i-out"/></svg></a>
+      <a class="link" data-link="instagram" href="https://www.instagram.com/nebo_blyzhche/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg><span class="tx"><b><span class="lf">Instagram</span><span class="ls">Instagram</span></b><small>щодня нове відео й свіжі кадри</small></span><svg class="go" aria-hidden="true"><use href="#i-out"/></svg></a>
+      <a class="link" data-link="tiktok" href="https://www.tiktok.com/@nebo_blyzhche" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-tt"/></svg><span class="tx"><b><span class="lf">TikTok</span><span class="ls">TikTok</span></b><small>короткі прольоти крізь знімки</small></span><svg class="go" aria-hidden="true"><use href="#i-out"/></svg></a>
+      <a class="link" data-link="facebook" href="https://www.facebook.com/nebo.blyzhche" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-fb"/></svg><span class="tx"><b><span class="lf">Facebook</span><span class="ls">Facebook</span></b><small>дописи й сторіс</small></span><svg class="go" aria-hidden="true"><use href="#i-out"/></svg></a>
     </div>
   </section>
+  <p class="wordmark" aria-hidden="true">Небо ближче</p>
 </main>
 
 <footer>
   <div class="wrap">
     <span>© Костя, «Небо ближче». Усі знімки власні.</span>
-    <span id="foot-upd">Оновлено 16 жовтня о 12:10 автоматично</span>
+    <span id="foot-upd">Оновлено 16 жовтня о 15:59 автоматично</span>
     <a href="log/">Журнал ночей</a>
     <a href="privacy.html">Privacy policy</a>
   </div>
@@ -805,59 +895,14 @@ body>footer{contain-intrinsic-size:auto 160px}
 
   // Кадр сезону: знятий об'єкт з найбільшою витримкою. Вантажиться після першого кадру й плавно проявляється.
   // Малюється в <canvas> (cover, з урахуванням DPR): декоративне велике фото не стає LCP і не відсуває метрику на секунди.
-  function hero(d) {
-    const best = bestOf(d);
-    const btn = $('#hero-photo');
-    if (!best) { btn.disabled = true; return; }
-    $('#hero-title').textContent = L.title(best);
-    $('#hero-sub').textContent = L.light(best);
-    btn.setAttribute('aria-label', L.openFrame(L.title(best)));
-    btn.onclick = () => open(best);
-    const cv = $('#hero-img'), jpg = img(best.photo.img), webp = img(best.photo.webp), thumb = img(best.photo.thumb_webp || best.photo.thumb);
-    // Без afterPaint: дані вже приходять після першого кадру, а чекати на load означало б чекати всі мініатюри галереї
-    // (кадр сезону з'являвся на ~2,4 с замість ~1,2 с). Мініатюра героя preload-иться в <head>, тож малюється одразу.
-    requestAnimationFrame(() => {
-      // Спершу мініатюра (вона вже в кеші від галереї), потім повний кадр. Перед drawImage картинка декодується
-      // поза головним потоком (decode()), інакше декодування 1800 px ставало довгою задачею на сотні мс.
-      let cur = null, full = false, ro = null;
-      const draw = () => {
-        if (!cur) return;
-        const r = cv.getBoundingClientRect(), k = Math.min(window.devicePixelRatio || 1, 2);
-        const W = Math.round(r.width * k), H = Math.round(r.height * k);
-        if (!W || !H) return;
-        cv.width = W; cv.height = H;
-        const s = Math.max(W / cur.naturalWidth, H / cur.naturalHeight), w = cur.naturalWidth * s, h = cur.naturalHeight * s;
-        const c = cv.getContext('2d'); c.imageSmoothingQuality = 'high';
-        c.drawImage(cur, (W - w) / 2, (H - h) / 2, w, h);
-      };
-      const show = (im, isFull) => {
-        if (full && !isFull) return;
-        cur = im; full = isFull; draw();
-        cv.classList.add('on');
-        if (!ro && 'ResizeObserver' in window) (ro = new ResizeObserver(draw)).observe(cv);
-      };
-      const load = (src, isFull, onerror) => {
-        const im = new Image();
-        im.decoding = 'async';
-        im.onerror = onerror || null;
-        im.onload = () => { const go = () => show(im, isFull); im.decode ? im.decode().then(go, go) : go(); };
-        im.src = src;
-      };
-      if (thumb) load(thumb, false);
-      // Повний кадр (сотні КБ) лише після load, щоб не відбирати канал у мініатюр і шрифтів на повільній мережі.
-      const fullFrame = () => load(webp || jpg, true, () => { if (webp) load(jpg, true); });
-      if (document.readyState === 'complete') fullFrame(); else addEventListener('load', () => setTimeout(fullFrame, 0), {once: true});
-    });
-  }
+  // Кадр сезону тепер центр стрічки на першому екрані: стрічку малює build.py, JS лише центрує й підсвічує (див. strip нижче).
+  function hero() {}
   const bestOf = d => {
     const pool = d.challenge.filter(r => r.photo && r.status === 'done');
     return (pool.length ? pool : d.challenge.filter(r => r.photo)).sort((a, b) => (b.integration_sec || 0) - (a.integration_sec || 0))[0];
   };
 
   function ring(t) {
-    const C = 2 * Math.PI * 26, done = t.done / t.objects, prog = (t.done + t.progress) / t.objects;
-    $('#ring-done').setAttribute('stroke-dasharray', `${(C * done).toFixed(2)} ${C.toFixed(2)}`);
-    $('#ring-progress').setAttribute('stroke-dasharray', `${(C * prog).toFixed(2)} ${C.toFixed(2)}`);
     $('#ring-big').textContent = t.done;
     $('#ring-of').textContent = L.of(t.objects);
   }
@@ -941,6 +986,37 @@ body>footer{contain-intrinsic-size:auto 160px}
   $('#lb-x').onclick = () => lb.close();
   lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
 
+  // Стрічка кадрів: відкривається на кадрі сезону, кадр найближчий до центру підсвічений, його назва під стрічкою.
+  (() => {
+    const s = $('#strip'), cap = $('#strip-cap');
+    if (!s) return;
+    const fr = [...s.querySelectorAll('.fr')];
+    if (!fr.length) return;
+    const lit = f => {
+      fr.forEach(x => x.classList.toggle('lit', x === f));
+      if (cap) cap.innerHTML = `<b>${esc(f.dataset.t)}</b> <span>${esc(f.dataset.s)}</span>`;
+    };
+    const start = s.querySelector('.fr.lit') || fr[0];
+    s.scrollLeft = start.offsetLeft + start.offsetWidth / 2 - s.clientWidth / 2;
+    let raf = 0;
+    const pick = () => {
+      raf = 0;
+      const c = s.scrollLeft + s.clientWidth / 2;
+      let best = fr[0], dist = Infinity;
+      for (const f of fr) { const d = Math.abs(f.offsetLeft + f.offsetWidth / 2 - c); if (d < dist) { dist = d; best = f; } }
+      if (!best.classList.contains('lit')) lit(best);
+    };
+    s.addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(pick); }, {passive: true});
+    fr.forEach(f => { f.addEventListener('mouseenter', () => lit(f)); f.addEventListener('focus', () => lit(f)); });
+  })();
+
+  // Поява секцій: заголовок, текст, кадри по черзі. Без JS або з reduce-motion усе видно одразу.
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {rootMargin: '0px 0px -8% 0px'});
+    document.documentElement.classList.add('rv');
+    document.querySelectorAll('[data-rv]').forEach(el => io.observe(el));
+  }
+
   // Дані після першого кадру: сторінка вже заповнена при збиранні, JS лише оновлює (свіжі цифри, фільтри, лайтбокс).
   const loadData = () => fetch(L.base + 'data.json', {cache: 'no-cache'}).then(r => r.json()).then(d => {
     data = d;
@@ -951,7 +1027,7 @@ body>footer{contain-intrinsic-size:auto 160px}
     for (const [k, url] of Object.entries(d.links || {})) document.querySelectorAll(`[data-link="${k}"]`).forEach(a => a.href = url);
     ring(t);
     $('#st-nights').textContent = t.nights;
-    $('#st-hours').textContent = L.hoursNum(t.deep_hours);
+    { const [w, f] = Number(t.deep_hours || 0).toFixed(1).split('.'); $('#st-hours').textContent = w; $('#st-hours-d').textContent = (document.documentElement.lang === 'en' ? '.' : ',') + f; }
     $('#st-photos').textContent = t.photos;
     const upd = new Date(d.generated_at);
     const hm = `${String(upd.getHours()).padStart(2, '0')}:${String(upd.getMinutes()).padStart(2, '0')}`;
