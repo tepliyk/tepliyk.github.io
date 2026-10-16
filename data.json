@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-16T17:44:42+03:00",
+    "generated_at": "2026-10-16T21:06:07+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -561,8 +561,8 @@
                 "poster": "vid/m36.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null,
-                "tiktok": null
+                "youtube": "https://www.youtube.com/shorts/66TsNNojnhI",
+                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7697316030326000917"
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -1039,8 +1039,8 @@
                 "poster": "vid/ngc-869.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": "https://www.youtube.com/shorts/Q9AkREE2Z_E",
-                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7696938158033784084"
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "easy",
             "target_min": 60,

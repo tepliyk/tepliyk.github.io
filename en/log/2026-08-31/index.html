@@ -660,6 +660,54 @@ body.nav-open .vote{display:none}
   .vote{right:16px;bottom:88px;width:auto;grid-template-columns:64px minmax(0,1fr) auto;gap:12px}
   .vote-pic img{width:64px;height:64px}
 }
+
+/* Журнал ночей: календар (тижні стовпцями, тон за годинами світла) і список зі сталими колонками */
+.log-cal{margin:8px 0 clamp(48px,6vw,80px)}
+.cal{display:grid;gap:5px;max-width:1000px}
+.cal-r{display:grid;grid-template-columns:44px repeat(31,minmax(0,1fr));gap:5px;align-items:center}
+.cal-l{font-size:13px;color:var(--muted)}
+.cal-n span{font-size:13px;color:var(--muted);text-align:left;font-variant-numeric:tabular-nums;white-space:nowrap}
+.cd{display:block;aspect-ratio:1;border-radius:2px;background:var(--surface)}
+.cd-x{background:transparent}
+.cd.l0{background:var(--surface-2)}
+.cd.l1{background:color-mix(in srgb,var(--done) 30%,var(--surface))}
+.cd.l2{background:color-mix(in srgb,var(--done) 55%,var(--surface))}
+.cd.l3{background:color-mix(in srgb,var(--done) 78%,var(--surface))}
+.cd.l4{background:var(--done)}
+a.cd{transition:transform .15s}
+a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
+.cal-leg{display:flex;align-items:center;gap:4px;margin:12px 0 0;font-size:13px;color:var(--muted)}
+.cal-leg .cd{width:13px;height:13px}
+@media (max-width:600px){.cal,.cal-r{gap:2px}.cal-r{grid-template-columns:34px repeat(31,minmax(0,1fr))}.cal-n span{font-size:13px;overflow:visible}.cal-l{font-size:13px}a.cd:hover{transform:none}}
+.cal-leg .cd:first-of-type{margin-left:6px}.cal-leg .cd:last-of-type{margin-right:6px}
+
+.log-month{margin-bottom:clamp(40px,5vw,64px)}
+.ln-list{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.ln-d b{white-space:nowrap}
+.ln{display:grid;grid-template-columns:120px minmax(0,1fr) 180px 92px;gap:20px;align-items:center;padding:12px 12px 12px 0;color:var(--text);text-decoration:none;transition:background .2s}
+.ln:hover{background:var(--surface)}
+.ln-d{display:flex;flex-direction:column;line-height:1.05;padding-left:12px}
+.ln-d b{font:700 26px/1 var(--f-display);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.ln-d span{font-size:13px;color:var(--muted);margin-top:4px}
+.ln-o{display:flex;align-items:center;gap:14px;min-width:0}
+.ln-t{display:flex;gap:4px;flex:none}
+.ln-t img{width:40px;height:40px;object-fit:cover;display:block;background:var(--surface)}
+.ln-n{font-size:16px;color:var(--soft);line-height:1.4;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.ln:hover .ln-n{color:var(--text)}
+.ln-h{display:flex;flex-direction:column;gap:6px;min-width:0}
+.ln-h b{font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ln-bar{display:block;height:6px;background:var(--surface-2)}
+.ln-bar i{display:block;height:100%;background:var(--done)}
+.ln-m{display:flex;align-items:center;justify-content:flex-end;gap:8px;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ln-m i{width:16px;height:16px;border-radius:50%;flex:none;background:color-mix(in srgb,var(--text) calc(var(--m) * .9%),var(--surface-2))}
+@media (max-width:760px){
+  .ln{grid-template-columns:84px minmax(0,1fr) auto;grid-template-areas:"d h m" "d o o";gap:10px 14px;padding:12px 0}
+  .ln-d{grid-area:d;padding-left:0}.ln-o{grid-area:o}.ln-h{grid-area:h}.ln-m{grid-area:m}
+  .ln-d b{font-size:22px}
+  .ln-o{flex-direction:column;align-items:flex-start;gap:8px}
+  .ln-t img{width:32px;height:32px}
+  .ln-n{font-size:15px;-webkit-line-clamp:3}
+}
 </style><!-- /inline:site.css -->
 <!-- Статистика відвідувань: GoatCounter, без cookies і персональних даних -->
 <script>
@@ -747,7 +795,7 @@ body.nav-open .vote{display:none}
 <footer>
   <div class="wrap">
     <span>© Kostia, «Nebo Blyzhche». All images are my own.</span>
-    <span id="foot-upd">Updated 16 October at 17:44 automatically</span>
+    <span id="foot-upd">Updated 16 October at 21:06 automatically</span>
     <a href="../../log/">Night log</a>
     <a href="../../../privacy.html">Privacy policy</a>
   </div>

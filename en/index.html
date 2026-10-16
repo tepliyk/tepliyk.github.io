@@ -661,6 +661,54 @@ body.nav-open .vote{display:none}
   .vote{right:16px;bottom:88px;width:auto;grid-template-columns:64px minmax(0,1fr) auto;gap:12px}
   .vote-pic img{width:64px;height:64px}
 }
+
+/* Журнал ночей: календар (тижні стовпцями, тон за годинами світла) і список зі сталими колонками */
+.log-cal{margin:8px 0 clamp(48px,6vw,80px)}
+.cal{display:grid;gap:5px;max-width:1000px}
+.cal-r{display:grid;grid-template-columns:44px repeat(31,minmax(0,1fr));gap:5px;align-items:center}
+.cal-l{font-size:13px;color:var(--muted)}
+.cal-n span{font-size:13px;color:var(--muted);text-align:left;font-variant-numeric:tabular-nums;white-space:nowrap}
+.cd{display:block;aspect-ratio:1;border-radius:2px;background:var(--surface)}
+.cd-x{background:transparent}
+.cd.l0{background:var(--surface-2)}
+.cd.l1{background:color-mix(in srgb,var(--done) 30%,var(--surface))}
+.cd.l2{background:color-mix(in srgb,var(--done) 55%,var(--surface))}
+.cd.l3{background:color-mix(in srgb,var(--done) 78%,var(--surface))}
+.cd.l4{background:var(--done)}
+a.cd{transition:transform .15s}
+a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
+.cal-leg{display:flex;align-items:center;gap:4px;margin:12px 0 0;font-size:13px;color:var(--muted)}
+.cal-leg .cd{width:13px;height:13px}
+@media (max-width:600px){.cal,.cal-r{gap:2px}.cal-r{grid-template-columns:34px repeat(31,minmax(0,1fr))}.cal-n span{font-size:13px;overflow:visible}.cal-l{font-size:13px}a.cd:hover{transform:none}}
+.cal-leg .cd:first-of-type{margin-left:6px}.cal-leg .cd:last-of-type{margin-right:6px}
+
+.log-month{margin-bottom:clamp(40px,5vw,64px)}
+.ln-list{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.ln-d b{white-space:nowrap}
+.ln{display:grid;grid-template-columns:120px minmax(0,1fr) 180px 92px;gap:20px;align-items:center;padding:12px 12px 12px 0;color:var(--text);text-decoration:none;transition:background .2s}
+.ln:hover{background:var(--surface)}
+.ln-d{display:flex;flex-direction:column;line-height:1.05;padding-left:12px}
+.ln-d b{font:700 26px/1 var(--f-display);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.ln-d span{font-size:13px;color:var(--muted);margin-top:4px}
+.ln-o{display:flex;align-items:center;gap:14px;min-width:0}
+.ln-t{display:flex;gap:4px;flex:none}
+.ln-t img{width:40px;height:40px;object-fit:cover;display:block;background:var(--surface)}
+.ln-n{font-size:16px;color:var(--soft);line-height:1.4;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.ln:hover .ln-n{color:var(--text)}
+.ln-h{display:flex;flex-direction:column;gap:6px;min-width:0}
+.ln-h b{font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ln-bar{display:block;height:6px;background:var(--surface-2)}
+.ln-bar i{display:block;height:100%;background:var(--done)}
+.ln-m{display:flex;align-items:center;justify-content:flex-end;gap:8px;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ln-m i{width:16px;height:16px;border-radius:50%;flex:none;background:color-mix(in srgb,var(--text) calc(var(--m) * .9%),var(--surface-2))}
+@media (max-width:760px){
+  .ln{grid-template-columns:84px minmax(0,1fr) auto;grid-template-areas:"d h m" "d o o";gap:10px 14px;padding:12px 0}
+  .ln-d{grid-area:d;padding-left:0}.ln-o{grid-area:o}.ln-h{grid-area:h}.ln-m{grid-area:m}
+  .ln-d b{font-size:22px}
+  .ln-o{flex-direction:column;align-items:flex-start;gap:8px}
+  .ln-t img{width:32px;height:32px}
+  .ln-n{font-size:15px;-webkit-line-clamp:3}
+}
 </style><!-- /inline:site.css -->
 <!-- Статистика відвідувань: GoatCounter, без cookies і персональних даних -->
 <script>
@@ -722,7 +770,7 @@ body.nav-open .vote{display:none}
   </div>
 </header>
 
-<main class="home" id="top" data-gen="2026-10-16T17:44:42+03:00">
+<main class="home" id="top" data-gen="2026-10-16T21:06:07+03:00">
   <section class="hx" aria-labelledby="hx-h">
     <div class="wrap hx-head"><h1 id="hx-h"><span class="l">All the sky</span> <span class="l">from one balcony</span></h1></div>
     <div class="wrap hx-row">
@@ -735,7 +783,7 @@ body.nav-open .vote{display:none}
     <div class="strip" id="strip" role="region" aria-label="Strip of captured frames"><a class="fr" href="m37/" style="aspect-ratio:640/355" data-k="m37" data-t="Open cluster M37 · M37" data-s="58 min of light over 1 night"><picture><source type="image/webp" srcset="../img/m37_t.webp"><img src="../img/m37_t.jpg" alt="Open cluster M37 · M37, astrophoto from a city balcony, DWARF Mini" width="640" height="355" loading="lazy"></picture></a><a class="fr" href="c-30/" style="aspect-ratio:640/378" data-k="c-30" data-t="Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30" data-s="3 h 36 min of light over 7 nights"><picture><source type="image/webp" srcset="../img/c-30_t.webp"><img src="../img/c-30_t.jpg" alt="Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30, astrophoto from a city balcony, DWARF Mini" width="640" height="378" loading="lazy"></picture></a><a class="fr" href="ic-434/" style="aspect-ratio:640/355" data-k="ic-434" data-t="Horsehead Nebula · IC 434" data-s="6 h 2 min of light over 6 nights"><picture><source type="image/webp" srcset="../img/ic-434_t.webp"><img src="../img/ic-434_t.jpg" alt="Horsehead Nebula · IC 434, astrophoto from a city balcony, DWARF Mini" width="640" height="355" loading="lazy"></picture></a><a class="fr" href="m38/" style="aspect-ratio:640/355" data-k="m38" data-t="Open cluster M38 · M38" data-s="1 h 11 min of light over 1 night"><picture><source type="image/webp" srcset="../img/m38_t.webp"><img src="../img/m38_t.jpg" alt="Open cluster M38 · M38, astrophoto from a city balcony, DWARF Mini" width="640" height="355" loading="lazy"></picture></a><a class="fr" href="m44/" style="aspect-ratio:640/360" data-k="m44" data-t="Beehive Cluster (Praesepe) · M44" data-s="1 h 32 min of light over 3 nights"><picture><source type="image/webp" srcset="../img/m44_t.webp"><img src="../img/m44_t.jpg" alt="Beehive Cluster (Praesepe) · M44, astrophoto from a city balcony, DWARF Mini" width="640" height="360" loading="lazy"></picture></a><a class="fr" href="m35/" style="aspect-ratio:640/410" data-k="m35" data-t="Open cluster M35 · M35" data-s="1 h 56 min of light over 2 nights"><picture><source type="image/webp" srcset="../img/m35_t.webp"><img src="../img/m35_t.jpg" alt="Open cluster M35 · M35, astrophoto from a city balcony, DWARF Mini" width="640" height="410" loading="lazy"></picture></a><a class="fr" href="m42/" style="aspect-ratio:640/355" data-k="m42" data-t="Orion Nebula · M42" data-s="2 h 14 min of light over 3 nights"><picture><source type="image/webp" srcset="../img/m42_t.webp"><img src="../img/m42_t.jpg" alt="Orion Nebula · M42, astrophoto from a city balcony, DWARF Mini" width="640" height="355" loading="lazy"></picture></a><a class="fr" href="ic-1848/" style="aspect-ratio:640/355" data-k="ic-1848" data-t="Soul Nebula · IC 1848" data-s="4 h 9 min of light over 3 nights"><picture><source type="image/webp" srcset="../img/ic-1848_t.webp"><img src="../img/ic-1848_t.jpg" alt="Soul Nebula · IC 1848, astrophoto from a city balcony, DWARF Mini" width="640" height="355" loading="lazy"></picture></a><a class="fr" href="m31/" style="aspect-ratio:631/640" data-k="m31" data-t="Andromeda Galaxy · M31" data-s="4 h 53 min of light over 5 nights"><picture><source type="image/webp" srcset="../img/m31_t.webp"><img src="../img/m31_t.jpg" alt="Andromeda Galaxy · M31, astrophoto from a city balcony, DWARF Mini" width="631" height="640" loading="lazy"></picture></a><a class="fr" href="ngc-1499/" style="aspect-ratio:640/351" data-k="ngc-1499" data-t="California Nebula · NGC 1499" data-s="5 h 1 min of light over 3 nights"><picture><source type="image/webp" srcset="../img/ngc-1499_t.webp"><img src="../img/ngc-1499_t.jpg" alt="California Nebula · NGC 1499, astrophoto from a city balcony, DWARF Mini" width="640" height="351" loading="lazy"></picture></a><a class="fr" href="ngc-2264/" style="aspect-ratio:640/640" data-k="ngc-2264" data-t="Christmas Tree (Cone) Nebula · NGC 2264" data-s="5 h 21 min of light over 4 nights"><picture><source type="image/webp" srcset="../img/ngc-2264_t.webp"><img src="../img/ngc-2264_t.jpg" alt="Christmas Tree (Cone) Nebula · NGC 2264, astrophoto from a city balcony, DWARF Mini" width="640" height="640"></picture></a><a class="fr" href="ic-443/" style="aspect-ratio:640/355" data-k="ic-443" data-t="Jellyfish Nebula · IC 443" data-s="7 h 17 min of light over 6 nights"><picture><source type="image/webp" srcset="../img/ic-443_t.webp"><img src="../img/ic-443_t.jpg" alt="Jellyfish Nebula · IC 443, astrophoto from a city balcony, DWARF Mini" width="640" height="355"></picture></a><a class="fr" href="ic-1805/" style="aspect-ratio:640/355" data-k="ic-1805" data-t="Heart Nebula · IC 1805" data-s="12 h 40 min of light over 9 nights"><picture><source type="image/webp" srcset="../img/ic-1805_t.webp"><img src="../img/ic-1805_t.jpg" alt="Heart Nebula · IC 1805, astrophoto from a city balcony, DWARF Mini" width="640" height="355"></picture></a><a class="fr lit" href="ngc-2244/" style="aspect-ratio:577/640" data-k="ngc-2244" data-t="Rosette Nebula · NGC 2244" data-s="27 h 4 min of light over 10 nights"><picture><source type="image/webp" srcset="../img/ngc-2244_t.webp"><img src="../img/ngc-2244_t.jpg" alt="Rosette Nebula · NGC 2244, astrophoto from a city balcony, DWARF Mini" width="577" height="640" fetchpriority="high"></picture></a><a class="fr" href="m1/" style="aspect-ratio:640/640" data-k="m1" data-t="Crab Nebula · M1" data-s="8 h 44 min of light over 3 nights"><picture><source type="image/webp" srcset="../img/m1_t.webp"><img src="../img/m1_t.jpg" alt="Crab Nebula · M1, astrophoto from a city balcony, DWARF Mini" width="640" height="640"></picture></a><a class="fr" href="ic-410/" style="aspect-ratio:640/347" data-k="ic-410" data-t="Tadpoles Nebula · IC 410" data-s="5 h 57 min of light over 5 nights"><picture><source type="image/webp" srcset="../img/ic-410_t.webp"><img src="../img/ic-410_t.jpg" alt="Tadpoles Nebula · IC 410, astrophoto from a city balcony, DWARF Mini" width="640" height="347"></picture></a><a class="fr" href="ic-405/" style="aspect-ratio:640/355" data-k="ic-405" data-t="Flaming Star Nebula · IC 405" data-s="5 h 19 min of light over 3 nights"><picture><source type="image/webp" srcset="../img/ic-405_t.webp"><img src="../img/ic-405_t.jpg" alt="Flaming Star Nebula · IC 405, astrophoto from a city balcony, DWARF Mini" width="640" height="355"></picture></a><a class="fr" href="ngc-281/" style="aspect-ratio:640/450" data-k="ngc-281" data-t="Pacman Nebula · NGC 281" data-s="5 h 1 min of light over 4 nights"><picture><source type="image/webp" srcset="../img/ngc-281_t.webp"><img src="../img/ngc-281_t.jpg" alt="Pacman Nebula · NGC 281, astrophoto from a city balcony, DWARF Mini" width="640" height="450" loading="lazy"></picture></a><a class="fr" href="ngc-2174/" style="aspect-ratio:640/640" data-k="ngc-2174" data-t="Monkey Head Nebula · NGC 2174" data-s="4 h 50 min of light over 2 nights"><picture><source type="image/webp" srcset="../img/ngc-2174_t.webp"><img src="../img/ngc-2174_t.jpg" alt="Monkey Head Nebula · NGC 2174, astrophoto from a city balcony, DWARF Mini" width="640" height="640" loading="lazy"></picture></a><a class="fr" href="m45/" style="aspect-ratio:640/355" data-k="m45" data-t="Pleiades · M45" data-s="3 h 49 min of light over 2 nights"><picture><source type="image/webp" srcset="../img/m45_t.webp"><img src="../img/m45_t.jpg" alt="Pleiades · M45, astrophoto from a city balcony, DWARF Mini" width="640" height="355" loading="lazy"></picture></a><a class="fr" href="m103/" style="aspect-ratio:640/434" data-k="m103" data-t="Open cluster M103 · M103" data-s="2 h 12 min of light over 3 nights"><picture><source type="image/webp" srcset="../img/m103_t.webp"><img src="../img/m103_t.jpg" alt="Open cluster M103 · M103, astrophoto from a city balcony, DWARF Mini" width="640" height="434" loading="lazy"></picture></a><a class="fr" href="m36/" style="aspect-ratio:640/427" data-k="m36" data-t="Open cluster M36 · M36" data-s="1 h 38 min of light over 1 night"><picture><source type="image/webp" srcset="../img/m36_t.webp"><img src="../img/m36_t.jpg" alt="Open cluster M36 · M36, astrophoto from a city balcony, DWARF Mini" width="640" height="427" loading="lazy"></picture></a><a class="fr" href="ngc-869/" style="aspect-ratio:640/345" data-k="ngc-869" data-t="Double Cluster in Perseus (h Persei) · NGC 869" data-s="1 h 29 min of light over 3 nights"><picture><source type="image/webp" srcset="../img/ngc-869_t.webp"><img src="../img/ngc-869_t.jpg" alt="Double Cluster in Perseus (h Persei) · NGC 869, astrophoto from a city balcony, DWARF Mini" width="640" height="345" loading="lazy"></picture></a><a class="fr" href="m33/" style="aspect-ratio:640/342" data-k="m33" data-t="Triangulum Galaxy · M33" data-s="7 h 50 min of light over 6 nights"><picture><source type="image/webp" srcset="../img/m33_t.webp"><img src="../img/m33_t.jpg" alt="Triangulum Galaxy · M33, astrophoto from a city balcony, DWARF Mini" width="640" height="342" loading="lazy"></picture></a><a class="fr" href="c-44/" style="aspect-ratio:640/640" data-k="c-44" data-t="Galaxy NGC 7479 (Caldwell 44) · C 44" data-s="3 h 38 min of light over 3 nights"><picture><source type="image/webp" srcset="../img/c-44_t.webp"><img src="../img/c-44_t.jpg" alt="Galaxy NGC 7479 (Caldwell 44) · C 44, astrophoto from a city balcony, DWARF Mini" width="640" height="640" loading="lazy"></picture></a><a class="fr" href="ngc-2403/" style="aspect-ratio:640/354" data-k="ngc-2403" data-t="Galaxy NGC 2403 in Camelopardalis · NGC 2403" data-s="2 h 54 min of light over 2 nights"><picture><source type="image/webp" srcset="../img/ngc-2403_t.webp"><img src="../img/ngc-2403_t.jpg" alt="Galaxy NGC 2403 in Camelopardalis · NGC 2403, astrophoto from a city balcony, DWARF Mini" width="640" height="354" loading="lazy"></picture></a><a class="fr" href="m34/" style="aspect-ratio:640/480" data-k="m34" data-t="Open cluster M34 · M34" data-s="37 min of light over 1 night"><picture><source type="image/webp" srcset="../img/m34_t.webp"><img src="../img/m34_t.jpg" alt="Open cluster M34 · M34, astrophoto from a city balcony, DWARF Mini" width="640" height="480" loading="lazy"></picture></a></div>
     <div class="wrap hx-foot">
       <p class="strip-cap" id="strip-cap" aria-live="polite"><b id="hero-title">Rosette Nebula · NGC 2244</b> <span id="hero-sub">27 h 4 min of light over 10 nights</span></p>
-      <span class="upd" id="updated">Updated 16 October at 17:44</span>
+      <span class="upd" id="updated">Updated 16 October at 21:06</span>
     </div>
   </section>
 
@@ -840,7 +888,7 @@ body.nav-open .vote{display:none}
 <footer>
   <div class="wrap">
     <span>© Kostia, «Nebo Blyzhche». All images are my own.</span>
-    <span id="foot-upd">Updated 16 October at 17:44 automatically</span>
+    <span id="foot-upd">Updated 16 October at 21:06 automatically</span>
     <a href="log/">Night log</a>
     <a href="../privacy.html">Privacy policy</a>
   </div>
