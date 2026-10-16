@@ -434,6 +434,11 @@ body>footer{contain-intrinsic-size:auto 160px}
 /* Перший екран: заголовок, рядок з дією, стрічка кадрів, підпис кадру біля центру */
 .hx{display:flex;flex-direction:column;margin-bottom:clamp(80px,9vw,136px)!important;padding-top:clamp(28px,4.5vh,64px)!important}
 .hx-head{width:100%;container-type:inline-size}
+/* Заголовок у фірмовому шрифті вже з першого візиту: окрема гарнітура з font-display:optional і preload лише потрібної підмножини.
+   Не встиг за ~100 мс: лишається запасний шрифт з тими ж метриками, без підміни. Пробіл навмисно поза діапазонами, щоб UA не тягнув латиницю. */
+@font-face{font-family:"Unbounded Hero";font-style:normal;font-weight:500 700;font-display:optional;src:url(/fonts/unbounded-cyrillic.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1}
+@font-face{font-family:"Unbounded Hero";font-style:normal;font-weight:500 700;font-display:optional;src:url(/fonts/unbounded-latin.woff2) format("woff2");unicode-range:U+0021-00FF,U+2010-2027}
+.hx h1{font-family:"Unbounded Hero",var(--f-display)}
 .hx h1{font-size:min(96px,7.4cqi);font-weight:700;line-height:.98;letter-spacing:-.045em}
 .hx h1 .l{display:block;white-space:nowrap}
 .hx-row{width:100%;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 48px;margin-top:clamp(18px,2.6vh,28px)}
@@ -729,7 +734,7 @@ a.t:hover .name b{color:var(--accent-text)}
 <footer>
   <div class="wrap">
     <span>© Kostia, «Nebo Blyzhche». All images are my own.</span>
-    <span id="foot-upd">Updated 16 October at 16:48 automatically</span>
+    <span id="foot-upd">Updated 16 October at 17:16 automatically</span>
     <a href="../../log/">Night log</a>
     <a href="../../../privacy.html">Privacy policy</a>
   </div>
