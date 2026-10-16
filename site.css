@@ -617,3 +617,21 @@ a.t:hover .name b{color:var(--accent-text)}
   .q{font-size:13px;border-radius:2px}
   .legend{font-size:14px}
 }
+
+/* Банер голосування в конкурсі: плашка в кутку, з'являється після завантаження, не перекриває FAB на телефоні */
+.vote{position:fixed;left:16px;bottom:20px;z-index:34;display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:14px;align-items:start;width:min(470px,calc(100vw - 32px));padding:12px;background:var(--surface-2);color:var(--text);box-shadow:0 20px 44px -18px rgba(0,0,0,.75);opacity:0;transform:translateY(16px);transition:opacity .35s ease,transform .35s ease}
+.vote.on{opacity:1;transform:none}
+.vote[hidden]{display:none}
+.vote-pic img{display:block;width:96px;height:96px;object-fit:cover}
+.vote-tx{display:flex;flex-direction:column;gap:6px;min-width:0;line-height:1.4}
+.vote-tx b{font-size:15px;font-weight:600}
+.vote-tx span{font-size:14px;color:var(--soft)}
+.vote-tx .btn{align-self:flex-start;margin-top:4px;min-height:44px;padding:0 18px;font-size:15px}
+.vote-x{width:44px;height:44px;margin:-6px -6px 0 0;display:grid;place-items:center;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.vote-x:hover{color:var(--text)}
+.vote-x svg{width:18px;height:18px}
+body.nav-open .vote{display:none}
+@media (max-width:720px){
+  .vote{right:16px;bottom:88px;width:auto;grid-template-columns:64px minmax(0,1fr) auto;gap:12px}
+  .vote-pic img{width:64px;height:64px}
+}

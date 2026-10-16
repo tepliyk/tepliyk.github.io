@@ -642,6 +642,24 @@ a.t:hover .name b{color:var(--accent-text)}
   .q{font-size:13px;border-radius:2px}
   .legend{font-size:14px}
 }
+
+/* Банер голосування в конкурсі: плашка в кутку, з'являється після завантаження, не перекриває FAB на телефоні */
+.vote{position:fixed;left:16px;bottom:20px;z-index:34;display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:14px;align-items:start;width:min(470px,calc(100vw - 32px));padding:12px;background:var(--surface-2);color:var(--text);box-shadow:0 20px 44px -18px rgba(0,0,0,.75);opacity:0;transform:translateY(16px);transition:opacity .35s ease,transform .35s ease}
+.vote.on{opacity:1;transform:none}
+.vote[hidden]{display:none}
+.vote-pic img{display:block;width:96px;height:96px;object-fit:cover}
+.vote-tx{display:flex;flex-direction:column;gap:6px;min-width:0;line-height:1.4}
+.vote-tx b{font-size:15px;font-weight:600}
+.vote-tx span{font-size:14px;color:var(--soft)}
+.vote-tx .btn{align-self:flex-start;margin-top:4px;min-height:44px;padding:0 18px;font-size:15px}
+.vote-x{width:44px;height:44px;margin:-6px -6px 0 0;display:grid;place-items:center;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.vote-x:hover{color:var(--text)}
+.vote-x svg{width:18px;height:18px}
+body.nav-open .vote{display:none}
+@media (max-width:720px){
+  .vote{right:16px;bottom:88px;width:auto;grid-template-columns:64px minmax(0,1fr) auto;gap:12px}
+  .vote-pic img{width:64px;height:64px}
+}
 </style><!-- /inline:site.css -->
 <!-- Статистика відвідувань: GoatCounter, без cookies і персональних даних -->
 <script>
@@ -736,13 +754,29 @@ a.t:hover .name b{color:var(--accent-text)}
 <footer>
   <div class="wrap">
     <span>© Костя, «Небо ближче». Усі знімки власні.</span>
-    <span id="foot-upd">Оновлено 16 жовтня о 17:24 автоматично</span>
+    <span id="foot-upd">Оновлено 16 жовтня о 17:44 автоматично</span>
     <a href="../log/">Журнал ночей</a>
     <a href="../privacy.html">Privacy policy</a>
   </div>
 </footer>
 
 <a class="fab" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener" aria-label="Telegram-канал «Небо ближче»"><svg aria-hidden="true"><use href="#i-tg"/></svg></a>
+<aside class="vote" id="vote" hidden aria-label="Конкурс астрофото"><a class="vote-pic" href="https://award.universemagazine.com/contest/2026_astro_photo/gallery?image=3302dce3-181e-4d8b-801b-706135accf92" target="_blank" rel="noopener" data-vote tabindex="-1" aria-hidden="true"><img src="../img/ic-1805_t.webp" alt="" width="96" height="96" loading="lazy"></a><div class="vote-tx"><b>«Серце» в конкурсі «Найкраще астрофото України»</b><span>Мій кадр туманності IC 1805 у народному голосуванні. Голосування до 31 жовтня, вхід через Google, один голос на людину.</span><a class="btn btn-p" href="https://award.universemagazine.com/contest/2026_astro_photo/gallery?image=3302dce3-181e-4d8b-801b-706135accf92" target="_blank" rel="noopener" data-vote>Проголосувати</a></div><button class="vote-x" type="button" aria-label="Закрити"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></aside>
+<script>
+(function(){var b=document.getElementById('vote');if(!b)return;var K='vote2026',now=Date.now();
+if(now>=Date.parse('2026-10-31T23:59:59+02:00'))return;
+var st={};try{st=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){}
+if(st.clicked||(st.closed&&now-st.closed<3*864e5))return;
+var ev=function(p,t){if(location.hostname!=='tepliyk.github.io'&&!window.__voteTest)return;try{if(window.__voteTest){window.__voteTest.push(p);return}if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:p,title:t,event:true});else new Image().src='https://nebo-blyzhche.goatcounter.com/count?e=true&p='+encodeURIComponent(p)+'&t='+encodeURIComponent(t)+'&rnd='+Math.random().toString(36).slice(2)}catch(e){}};
+var save=function(){try{localStorage.setItem(K,JSON.stringify(st))}catch(e){}};
+var shown=0,show=function(){if(shown)return;if(document.querySelector('.lang-hint')||document.body.classList.contains('nav-open')){setTimeout(show,8000);return}
+shown=1;b.hidden=false;requestAnimationFrame(function(){requestAnimationFrame(function(){b.classList.add('on')})});ev('contest-vote-shown','Банер конкурсу: показ')};
+setTimeout(show,7000);
+addEventListener('scroll',function s(){if(scrollY>innerHeight*.8){removeEventListener('scroll',s);setTimeout(show,600)}},{passive:true});
+b.addEventListener('click',function(e){if(e.target.closest('[data-vote]')){ev('contest-vote-click','Банер конкурсу: перехід до голосування');st.clicked=Date.now();save();b.hidden=true}});
+b.querySelector('.vote-x').addEventListener('click',function(){ev('contest-vote-close','Банер конкурсу: закрито');st.closed=Date.now();save();b.hidden=true});
+})();
+</script>
 
 <script>
 (() => {
