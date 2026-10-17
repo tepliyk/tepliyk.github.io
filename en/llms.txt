@@ -2,7 +2,7 @@
 
 > Astrophotography from a city balcony in Ukraine: nebulae, galaxies and clusters shot with a DWARF Mini smart telescope. A challenge to capture everything visible from here, and the Messier catalogue.
 
-Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Mini smart telescope from a city balcony in Ukraine (only the eastern half of the sky is visible, light-polluted city sky). The site is rebuilt automatically after each night of shooting. Challenge: 20 of 38 objects captured, 48 nights, 138.6 h of deep-sky light. Messier: 15 of 100 reachable captured. Last update: 2026-10-16. All images are the author's own; the Telegram channel is in Ukrainian.
+Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Mini smart telescope from a city balcony in Ukraine (only the eastern half of the sky is visible, light-polluted city sky). The site is rebuilt automatically after each night of shooting. Challenge: 21 of 65 objects captured, 48 nights, 149 h of deep-sky light. Messier: 15 of 100 reachable captured. Last update: 2026-10-17. All images are the author's own; the Telegram channel is in Ukrainian.
 
 ## Main pages
 
@@ -20,37 +20,41 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 
 ## Captured
 
-- [Rosette Nebula · NGC 2244](https://tepliyk.github.io/en/ngc-2244/): Nebula, Monoceros, 27 h 4 min of light over 10 nights
-- [Beehive Cluster (Praesepe) · M44](https://tepliyk.github.io/en/m44/): Cluster, Cancer, 1 h 32 min of light over 3 nights
+- [Rosette Nebula · C 50](https://tepliyk.github.io/en/ngc-2244/): Nebula, Monoceros, 27 h 4 min of light over 10 nights
+- [Beehive Cluster (Praesepe) · M 44](https://tepliyk.github.io/en/m44/): Cluster, Cancer, 1 h 32 min of light over 3 nights
+- M 77: Galaxy, 5 h 40 min of light over 3 nights
 - [Heart Nebula · IC 1805](https://tepliyk.github.io/en/ic-1805/): Nebula, Cassiopeia, 12 h 40 min of light over 9 nights
 - [Tadpoles Nebula · IC 410](https://tepliyk.github.io/en/ic-410/): Nebula, Auriga, 5 h 57 min of light over 5 nights
 - [Pacman Nebula · NGC 281](https://tepliyk.github.io/en/ngc-281/): Nebula, Cassiopeia, 5 h 1 min of light over 4 nights
 - [Monkey Head Nebula · NGC 2174](https://tepliyk.github.io/en/ngc-2174/): Nebula, Orion, 4 h 50 min of light over 2 nights
 - [Christmas Tree (Cone) Nebula · NGC 2264](https://tepliyk.github.io/en/ngc-2264/): Nebula, Monoceros, 5 h 21 min of light over 4 nights
-- [Open cluster M36](https://tepliyk.github.io/en/m36/): Cluster, Auriga, 1 h 38 min of light over 1 night
-- [Open cluster M38](https://tepliyk.github.io/en/m38/): Cluster, Auriga, 1 h 11 min of light over 1 night
+- [Open cluster M36 · M 36](https://tepliyk.github.io/en/m36/): Cluster, Auriga, 1 h 38 min of light over 1 night
+- [Open cluster M38 · M 38](https://tepliyk.github.io/en/m38/): Cluster, Auriga, 1 h 11 min of light over 1 night
 - [Jellyfish Nebula · IC 443](https://tepliyk.github.io/en/ic-443/): Nebula, Gemini, 7 h 17 min of light over 6 nights
 - [Flaming Star Nebula · IC 405](https://tepliyk.github.io/en/ic-405/): Nebula, Auriga, 5 h 19 min of light over 3 nights
 - [California Nebula · NGC 1499](https://tepliyk.github.io/en/ngc-1499/): Nebula, Perseus, 5 h 1 min of light over 3 nights
-- [Orion Nebula · M42](https://tepliyk.github.io/en/m42/): Nebula, Orion, 2 h 14 min of light over 3 nights
+- [Orion Nebula · M 42](https://tepliyk.github.io/en/m42/): Nebula, Orion, 2 h 14 min of light over 3 nights
 - [Soul Nebula · IC 1848](https://tepliyk.github.io/en/ic-1848/): Nebula, Cassiopeia, 4 h 9 min of light over 3 nights
 - [Double Cluster in Perseus (h Persei) · NGC 869](https://tepliyk.github.io/en/ngc-869/): Cluster, Perseus, 1 h 29 min of light over 3 nights
-- [Open cluster M103](https://tepliyk.github.io/en/m103/): Cluster, Cassiopeia, 2 h 12 min of light over 3 nights
-- [Open cluster M35](https://tepliyk.github.io/en/m35/): Cluster, Gemini, 1 h 56 min of light over 2 nights
-- [Crab Nebula · M1](https://tepliyk.github.io/en/m1/): Nebula, Taurus, 8 h 44 min of light over 3 nights
-- [Andromeda Galaxy · M31](https://tepliyk.github.io/en/m31/): Galaxy, Andromeda, 4 h 53 min of light over 5 nights
-- [Pleiades · M45](https://tepliyk.github.io/en/m45/): Cluster, Taurus, 3 h 49 min of light over 2 nights
+- [Open cluster M35 · M 35](https://tepliyk.github.io/en/m35/): Cluster, Gemini, 1 h 56 min of light over 2 nights
+- [Open cluster M103 · M 103](https://tepliyk.github.io/en/m103/): Cluster, Cassiopeia, 2 h 12 min of light over 3 nights
+- [Crab Nebula · M 1](https://tepliyk.github.io/en/m1/): Nebula, Taurus, 8 h 44 min of light over 3 nights
+- [Andromeda Galaxy · M 31](https://tepliyk.github.io/en/m31/): Galaxy, Andromeda, 4 h 53 min of light over 5 nights
+- [Pleiades · M 45](https://tepliyk.github.io/en/m45/): Cluster, Taurus, 3 h 49 min of light over 2 nights
 
 ## Gathering light
 
-- [Triangulum Galaxy · M33](https://tepliyk.github.io/en/m33/): Galaxy, Triangulum, 7 h 50 min of light over 6 nights, 97% of goal
-- [Open cluster M37](https://tepliyk.github.io/en/m37/): Cluster, Auriga, 58 min of light over 1 night, 96% of goal
+- [Triangulum Galaxy · M 33](https://tepliyk.github.io/en/m33/): Galaxy, Triangulum, 7 h 50 min of light over 6 nights, 97% of goal
+- [Open cluster M37 · M 37](https://tepliyk.github.io/en/m37/): Cluster, Auriga, 58 min of light over 1 night, 96% of goal
 - [Horsehead Nebula · IC 434](https://tepliyk.github.io/en/ic-434/): Nebula, Orion, 6 h 2 min of light over 6 nights, 75% of goal
-- [Open cluster M34](https://tepliyk.github.io/en/m34/): Cluster, Perseus, 37 min of light over 1 night, 61% of goal
+- [Open cluster M34 · M 34](https://tepliyk.github.io/en/m34/): Cluster, Perseus, 37 min of light over 1 night, 61% of goal
+- IC 63: Nebula, 2 h 13 min of light over 2 nights, 55% of goal
 - [Galaxy NGC 7479 (Caldwell 44) · C 44](https://tepliyk.github.io/en/c-44/): Galaxy, Pegasus, 3 h 38 min of light over 3 nights, 45% of goal
 - [Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30](https://tepliyk.github.io/en/c-30/): Galaxy, Pegasus, 3 h 36 min of light over 7 nights, 44% of goal
-- [Galaxy NGC 2403 in Camelopardalis](https://tepliyk.github.io/en/ngc-2403/): Galaxy, Camelopardalis, 2 h 54 min of light over 2 nights, 36% of goal
-- Reflection nebula M78: Nebula, Orion, 47 min of light over 2 nights, 9% of goal
+- C 23: Galaxy, 1 h 55 min of light over 3 nights, 38% of goal
+- [Galaxy NGC 2403 in Camelopardalis · C 7](https://tepliyk.github.io/en/ngc-2403/): Galaxy, Camelopardalis, 2 h 54 min of light over 2 nights, 36% of goal
+- NGC 7635: Nebula, 37 min of light over 2 nights, 15% of goal
+- Reflection nebula M78 · M 78: Nebula, Orion, 47 min of light over 2 nights, 9% of goal
 
 ## Solar System
 
@@ -61,16 +65,39 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 
 ## Still ahead
 
-- M67: Cluster, Cancer
 - Open cluster NGC 752: Cluster, Andromeda
-- Hercules Globular Cluster · M13: Cluster, Hercules
-- Dumbbell Nebula · M27: Nebula, Vulpecula
-- Galaxy M106: Galaxy, Canes Venatici
+- M 67: Cluster, Cancer
+- M 75: Cluster, Sagittarius
+- M 72: Cluster, Aquarius
+- M 15: Cluster, Pegasus
+- M 30: Cluster, Capricornus
+- M 2: Cluster, Aquarius
+- M 3: Cluster, Canes Venatici
+- M 53: Cluster, Coma Berenices
+- M 79: Cluster, Lepus
+- Hercules Globular Cluster · M 13: Cluster, Hercules
+- M 41: Cluster, Canis Major
+- M 50: Cluster, Monoceros
+- M 52: Cluster, Cassiopeia
+- M 48: Cluster, Hydra
+- M 46: Cluster, Puppis
+- IC 2177: Nebula, Monoceros
+- NGC 2359: Nebula, Canis Major
+- M 76: Nebula, Perseus
+- M 97: Nebula, Ursa Major
+- NGC 1931: Nebula, Auriga
+- Dumbbell Nebula · M 27: Nebula, Vulpecula
+- M 74: Galaxy, Pisces
+- NGC 2683: Galaxy, Lynx
+- M 95: Galaxy, Leo
+- M 109: Galaxy, Ursa Major
+- M 81: Galaxy, Ursa Major
+- Galaxy M106 · M 106: Galaxy, Canes Venatici
 - Galaxy NGC 2903: Galaxy, Leo
-- Whirlpool Galaxy · M51: Galaxy, Canes Venatici
-- Sunflower Galaxy · M63: Galaxy, Canes Venatici
-- Galaxy M65 (Leo Triplet): Galaxy, Leo
-- Pinwheel Galaxy · M101: Galaxy, Ursa Major
+- Whirlpool Galaxy · M 51: Galaxy, Canes Venatici
+- Sunflower Galaxy · M 63: Galaxy, Canes Venatici
+- Galaxy M65 (Leo Triplet) · M 65: Galaxy, Leo
+- Pinwheel Galaxy · M 101: Galaxy, Ursa Major
 
 ## Elsewhere
 

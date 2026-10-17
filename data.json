@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-16T21:56:01+03:00",
+    "generated_at": "2026-10-17T09:29:46+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -7,12 +7,12 @@
         "tiktok": "https://www.tiktok.com/@nebo_blyzhche"
     },
     "totals": {
-        "objects": 38,
-        "done": 20,
-        "progress": 8,
-        "todo": 10,
+        "objects": 65,
+        "done": 21,
+        "progress": 11,
+        "todo": 33,
         "nights": 48,
-        "deep_hours": 138.6,
+        "deep_hours": 149,
         "first_night": "2026-08-12",
         "photos": 48
     },
@@ -20,8 +20,8 @@
         {
             "id": 28,
             "slug": "ngc-2244",
-            "designation": "NGC 2244",
-            "name": "Туманність Розетка",
+            "designation": "C 50",
+            "name": "Туманність Розетка (NGC 2244)",
             "type": "nebula",
             "constellation": "Єдиноріг",
             "nights": 10,
@@ -69,7 +69,7 @@
                 "longest_night": "2026-10-12"
             },
             "photo": {
-                "title": "NGC 2244 Розетка, власний стек Siril, кольори за газами (k2c, єдине вікно)",
+                "title": "NGC 2244 Розетка, власний стек Siril, палітра Хаббла (m3, єдине вікно)",
                 "img": "img/ngc-2244.jpg",
                 "thumb": "img/ngc-2244_t.jpg",
                 "webp": "img/ngc-2244.webp",
@@ -95,7 +95,7 @@
         {
             "id": 26,
             "slug": "m44",
-            "designation": "M44",
+            "designation": "M 44",
             "name": "Вулик (Ясла)",
             "type": "cluster",
             "constellation": "Рак",
@@ -159,6 +159,56 @@
             },
             "difficulty": "easy",
             "target_min": 60,
+            "percent": 100,
+            "status": "done"
+        },
+        {
+            "id": 70,
+            "slug": "m77",
+            "designation": "M 77",
+            "name": "Галактика",
+            "type": "galaxy",
+            "constellation": null,
+            "nights": 3,
+            "integration_sec": 20370,
+            "first": "2026-10-10",
+            "last": "2026-10-12",
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 3,
+                "frames": 444,
+                "exposures": [
+                    30,
+                    60
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-10": 3
+                },
+                "night_dates": [
+                    "2026-10-10",
+                    "2026-10-11",
+                    "2026-10-12"
+                ],
+                "longest_night_sec": 7320,
+                "longest_night": "2026-10-11"
+            },
+            "photo": null,
+            "difficulty": null,
+            "target_min": 300,
             "percent": 100,
             "status": "done"
         },
@@ -507,8 +557,8 @@
         {
             "id": 23,
             "slug": "m36",
-            "designation": "M36",
-            "name": "Розсіяне скупчення M36",
+            "designation": "M 36",
+            "name": "Розсіяне скупчення",
             "type": "cluster",
             "constellation": "Візничий",
             "nights": 1,
@@ -572,8 +622,8 @@
         {
             "id": 25,
             "slug": "m38",
-            "designation": "M38",
-            "name": "Розсіяне скупчення M38",
+            "designation": "M 38",
+            "name": "Розсіяне скупчення",
             "type": "cluster",
             "constellation": "Візничий",
             "nights": 1,
@@ -847,7 +897,7 @@
         {
             "id": 22,
             "slug": "m42",
-            "designation": "M42",
+            "designation": "M 42",
             "name": "Туманність Оріона",
             "type": "nebula",
             "constellation": "Оріон",
@@ -1048,10 +1098,76 @@
             "status": "done"
         },
         {
+            "id": 11,
+            "slug": "m35",
+            "designation": "M 35",
+            "name": "Розсіяне скупчення",
+            "type": "cluster",
+            "constellation": "Близнята",
+            "nights": 2,
+            "integration_sec": 6960,
+            "first": "2026-09-02",
+            "last": "2026-09-03",
+            "text": {
+                "description_uk": "Розсіяне скупчення M35 у Близнятах, кілька сотень зір на площі з повний Місяць, віком близько ста п'ятдесяти мільйонів років. Поруч з ним, у тому самому полі, видно NGC 2158: значно старіше й щільніше скупчення, яке лежить у кілька разів далі й тому здається маленькою туманною грудкою. Пара в одному кадрі добре показує, як відстань міняє вигляд схожих об'єктів.",
+                "description_en": "Open cluster M35 in Gemini, a few hundred stars over an area the size of the full Moon, about a hundred and fifty million years old. In the same field sits NGC 2158: a much older and denser cluster several times farther away, which therefore looks like a small fuzzy knot. The pair in one frame shows nicely how distance changes the look of similar objects.",
+                "story_uk": "Дві ночі по тридцять секунд без фільтра. Головний інтерес у кадрі не саме M35, а маленьке NGC 2158 поруч: на міському небі воно ледь виділяється з фону, і саме заради нього варто було дати скупченню другу ніч. Обидва видно в одному полі, мету для яскравих скупчень закрито.",
+                "story_en": "Two nights of thirty-second frames without a filter. The main interest in the frame is not M35 itself but the tiny NGC 2158 beside it: in a city sky it barely stands out from the background, and it alone was worth giving the cluster a second night. Both are visible in one field; the goal for bright clusters is reached.",
+                "distance_ly": 2800,
+                "angular_size": "≈ 28′",
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 2,
+                "frames": 312,
+                "exposures": [
+                    30
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-09": 2
+                },
+                "night_dates": [
+                    "2026-09-01",
+                    "2026-09-02"
+                ],
+                "longest_night_sec": 5400,
+                "longest_night": "2026-09-02"
+            },
+            "photo": {
+                "title": "M35 і NGC 2158 разом",
+                "img": "img/m35.jpg",
+                "thumb": "img/m35_t.jpg",
+                "webp": "img/m35.webp",
+                "thumb_webp": "img/m35_t.webp",
+                "w": 1400,
+                "h": 896,
+                "date": "2026-09-03",
+                "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/m35.mp4",
+                "poster": "vid/m35.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null,
+                "tiktok": null
+            },
+            "difficulty": "easy",
+            "target_min": 60,
+            "percent": 100,
+            "status": "done"
+        },
+        {
             "id": 12,
             "slug": "m103",
-            "designation": "M103",
-            "name": "Розсіяне скупчення M103",
+            "designation": "M 103",
+            "name": "Розсіяне скупчення",
             "type": "cluster",
             "constellation": "Кассіопея",
             "nights": 3,
@@ -1116,75 +1232,9 @@
             "status": "done"
         },
         {
-            "id": 11,
-            "slug": "m35",
-            "designation": "M35",
-            "name": "Розсіяне скупчення M35",
-            "type": "cluster",
-            "constellation": "Близнята",
-            "nights": 2,
-            "integration_sec": 6960,
-            "first": "2026-09-02",
-            "last": "2026-09-03",
-            "text": {
-                "description_uk": "Розсіяне скупчення M35 у Близнятах, кілька сотень зір на площі з повний Місяць, віком близько ста п'ятдесяти мільйонів років. Поруч з ним, у тому самому полі, видно NGC 2158: значно старіше й щільніше скупчення, яке лежить у кілька разів далі й тому здається маленькою туманною грудкою. Пара в одному кадрі добре показує, як відстань міняє вигляд схожих об'єктів.",
-                "description_en": "Open cluster M35 in Gemini, a few hundred stars over an area the size of the full Moon, about a hundred and fifty million years old. In the same field sits NGC 2158: a much older and denser cluster several times farther away, which therefore looks like a small fuzzy knot. The pair in one frame shows nicely how distance changes the look of similar objects.",
-                "story_uk": "Дві ночі по тридцять секунд без фільтра. Головний інтерес у кадрі не саме M35, а маленьке NGC 2158 поруч: на міському небі воно ледь виділяється з фону, і саме заради нього варто було дати скупченню другу ніч. Обидва видно в одному полі, мету для яскравих скупчень закрито.",
-                "story_en": "Two nights of thirty-second frames without a filter. The main interest in the frame is not M35 itself but the tiny NGC 2158 beside it: in a city sky it barely stands out from the background, and it alone was worth giving the cluster a second night. Both are visible in one field; the goal for bright clusters is reached.",
-                "distance_ly": 2800,
-                "angular_size": "≈ 28′",
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 2,
-                "frames": 312,
-                "exposures": [
-                    30
-                ],
-                "filters": [
-                    "Без фільтра"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-09": 2
-                },
-                "night_dates": [
-                    "2026-09-01",
-                    "2026-09-02"
-                ],
-                "longest_night_sec": 5400,
-                "longest_night": "2026-09-02"
-            },
-            "photo": {
-                "title": "M35 і NGC 2158 разом",
-                "img": "img/m35.jpg",
-                "thumb": "img/m35_t.jpg",
-                "webp": "img/m35.webp",
-                "thumb_webp": "img/m35_t.webp",
-                "w": 1400,
-                "h": 896,
-                "date": "2026-09-03",
-                "astrobin": null
-            },
-            "flyby": {
-                "loop": "vid/m35.mp4",
-                "poster": "vid/m35.jpg",
-                "w": 540,
-                "h": 816,
-                "youtube": null,
-                "tiktok": null
-            },
-            "difficulty": "easy",
-            "target_min": 60,
-            "percent": 100,
-            "status": "done"
-        },
-        {
             "id": 20,
             "slug": "m1",
-            "designation": "M1",
+            "designation": "M 1",
             "name": "Крабоподібна туманність",
             "type": "nebula",
             "constellation": "Телець",
@@ -1251,7 +1301,7 @@
         {
             "id": 1,
             "slug": "m31",
-            "designation": "M31",
+            "designation": "M 31",
             "name": "Галактика Андромеди",
             "type": "galaxy",
             "constellation": "Андромеда",
@@ -1322,7 +1372,7 @@
         {
             "id": 2,
             "slug": "m45",
-            "designation": "M45",
+            "designation": "M 45",
             "name": "Плеяди",
             "type": "cluster",
             "constellation": "Телець",
@@ -1390,7 +1440,7 @@
         {
             "id": 10,
             "slug": "m33",
-            "designation": "M33",
+            "designation": "M 33",
             "name": "Галактика Трикутника",
             "type": "galaxy",
             "constellation": "Трикутник",
@@ -1463,8 +1513,8 @@
         {
             "id": 24,
             "slug": "m37",
-            "designation": "M37",
-            "name": "Розсіяне скупчення M37",
+            "designation": "M 37",
+            "name": "Розсіяне скупчення",
             "type": "cluster",
             "constellation": "Візничий",
             "nights": 1,
@@ -1600,8 +1650,8 @@
         {
             "id": 8,
             "slug": "m34",
-            "designation": "M34",
-            "name": "Розсіяне скупчення M34",
+            "designation": "M 34",
+            "name": "Розсіяне скупчення",
             "type": "cluster",
             "constellation": "Персей",
             "nights": 1,
@@ -1663,10 +1713,58 @@
             "status": "progress"
         },
         {
+            "id": 74,
+            "slug": "ic-63",
+            "designation": "IC 63",
+            "name": "Емісійна туманність",
+            "type": "nebula",
+            "constellation": null,
+            "nights": 2,
+            "integration_sec": 7980,
+            "first": "2026-10-11",
+            "last": "2026-10-12",
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 2,
+                "frames": 135,
+                "exposures": [
+                    60
+                ],
+                "filters": [
+                    "Dual-band (Ha/OIII)"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-10": 2
+                },
+                "night_dates": [
+                    "2026-10-11",
+                    "2026-10-12"
+                ],
+                "longest_night_sec": 4800,
+                "longest_night": "2026-10-12"
+            },
+            "photo": null,
+            "difficulty": null,
+            "target_min": 240,
+            "percent": 55,
+            "status": "progress"
+        },
+        {
             "id": 45,
             "slug": "c-44",
             "designation": "C 44",
-            "name": "Галактика NGC 7479 (Caldwell 44)",
+            "name": "Галактика NGC 7479",
             "type": "galaxy",
             "constellation": "Пегас",
             "nights": 3,
@@ -1727,7 +1825,7 @@
             "id": 43,
             "slug": "c-30",
             "designation": "C 30",
-            "name": "Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv",
+            "name": "Галактика NGC 7331 + SN 2026aaiv",
             "type": "galaxy",
             "constellation": "Пегас",
             "nights": 7,
@@ -1789,10 +1887,59 @@
             "status": "progress"
         },
         {
+            "id": 73,
+            "slug": "c-23",
+            "designation": "C 23",
+            "name": "Галактика NGC 891",
+            "type": "galaxy",
+            "constellation": null,
+            "nights": 3,
+            "integration_sec": 6900,
+            "first": "2026-10-10",
+            "last": "2026-10-12",
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 3,
+                "frames": 249,
+                "exposures": [
+                    30
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-10": 3
+                },
+                "night_dates": [
+                    "2026-10-10",
+                    "2026-10-11",
+                    "2026-10-12"
+                ],
+                "longest_night_sec": 2430,
+                "longest_night": "2026-10-11"
+            },
+            "photo": null,
+            "difficulty": null,
+            "target_min": 300,
+            "percent": 38,
+            "status": "progress"
+        },
+        {
             "id": 14,
             "slug": "ngc-2403",
-            "designation": "NGC 2403",
-            "name": "Галактика в Жирафі",
+            "designation": "C 7",
+            "name": "Галактика в Жирафі (NGC 2403)",
             "type": "galaxy",
             "constellation": "Жирафа",
             "nights": 2,
@@ -1855,10 +2002,58 @@
             "status": "progress"
         },
         {
+            "id": 63,
+            "slug": "ngc-7635",
+            "designation": "NGC 7635",
+            "name": "Туманність Бульбашка",
+            "type": "nebula",
+            "constellation": null,
+            "nights": 2,
+            "integration_sec": 2220,
+            "first": "2026-10-09",
+            "last": "2026-10-11",
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 2,
+                "frames": 41,
+                "exposures": [
+                    60
+                ],
+                "filters": [
+                    "Dual-band (Ha/OIII)"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-10": 2
+                },
+                "night_dates": [
+                    "2026-10-09",
+                    "2026-10-11"
+                ],
+                "longest_night_sec": 1560,
+                "longest_night": "2026-10-11"
+            },
+            "photo": null,
+            "difficulty": null,
+            "target_min": 240,
+            "percent": 15,
+            "status": "progress"
+        },
+        {
             "id": 35,
             "slug": "m78",
-            "designation": "M78",
-            "name": "Відбивна туманність M78",
+            "designation": "M 78",
+            "name": "Відбивна туманність",
             "type": "nebula",
             "constellation": "Оріон",
             "nights": 2,
@@ -1903,37 +2098,10 @@
             "status": "progress"
         },
         {
-            "id": 64,
-            "slug": "m67",
-            "designation": "M67",
-            "name": "M67 — Розсіяне скупчення M67",
-            "type": "cluster",
-            "constellation": "Рак",
-            "nights": 0,
-            "integration_sec": 0,
-            "first": null,
-            "last": null,
-            "text": {
-                "description_uk": "Розсіяне скупчення M67 у Раку, одне з найстаріших відомих розсіяних скупчень: йому близько чотирьох мільярдів років, майже як Сонцю. Більшість таких скупчень давно розпались, а це вціліло, бо лежить далеко від площини Галактики. Серед його зір багато схожих на Сонце, тому M67 астрономи використовують як природну лабораторію для перевірки моделей зоряної еволюції.",
-                "description_en": "Open cluster M67 in Cancer, one of the oldest open clusters known: it is about four billion years old, almost the age of the Sun. Most such clusters have long since dissolved, but this one survived because it lies far from the plane of the Galaxy. Many of its stars resemble the Sun, so astronomers use M67 as a natural laboratory for testing models of stellar evolution.",
-                "story_uk": null,
-                "story_en": null,
-                "distance_ly": 2700,
-                "angular_size": "≈ 30′",
-                "en_auto": false
-            },
-            "shooting": null,
-            "photo": null,
-            "difficulty": "normal",
-            "target_min": 60,
-            "percent": 0,
-            "status": "todo"
-        },
-        {
             "id": 27,
             "slug": "ngc-752",
             "designation": "NGC 752",
-            "name": "Розсіяне скупчення NGC 752",
+            "name": "Розсіяне скупчення",
             "type": "cluster",
             "constellation": "Андромеда",
             "nights": 0,
@@ -1957,9 +2125,252 @@
             "status": "todo"
         },
         {
+            "id": 64,
+            "slug": "m67",
+            "designation": "M 67",
+            "name": "Розсіяне скупчення",
+            "type": "cluster",
+            "constellation": "Рак",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": "Розсіяне скупчення M67 у Раку, одне з найстаріших відомих розсіяних скупчень: йому близько чотирьох мільярдів років, майже як Сонцю. Більшість таких скупчень давно розпались, а це вціліло, бо лежить далеко від площини Галактики. Серед його зір багато схожих на Сонце, тому M67 астрономи використовують як природну лабораторію для перевірки моделей зоряної еволюції.",
+                "description_en": "Open cluster M67 in Cancer, one of the oldest open clusters known: it is about four billion years old, almost the age of the Sun. Most such clusters have long since dissolved, but this one survived because it lies far from the plane of the Galaxy. Many of its stars resemble the Sun, so astronomers use M67 as a natural laboratory for testing models of stellar evolution.",
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": 2700,
+                "angular_size": "≈ 30′",
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": "normal",
+            "target_min": 60,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 75,
+            "slug": "m-75",
+            "designation": "M 75",
+            "name": "Кульове скупчення",
+            "type": "cluster",
+            "constellation": "Sagittarius",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 90,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 81,
+            "slug": "m-72",
+            "designation": "M 72",
+            "name": "Кульове скупчення",
+            "type": "cluster",
+            "constellation": "Aquarius",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 90,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 82,
+            "slug": "m-15",
+            "designation": "M 15",
+            "name": "Кульове скупчення",
+            "type": "cluster",
+            "constellation": "Pegasus",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 90,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 83,
+            "slug": "m-30",
+            "designation": "M 30",
+            "name": "Кульове скупчення",
+            "type": "cluster",
+            "constellation": "Capricornus",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 90,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 85,
+            "slug": "m-2",
+            "designation": "M 2",
+            "name": "Кульове скупчення",
+            "type": "cluster",
+            "constellation": "Aquarius",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 90,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 91,
+            "slug": "m-3",
+            "designation": "M 3",
+            "name": "Кульове скупчення",
+            "type": "cluster",
+            "constellation": "Canes Venatici",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 90,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 92,
+            "slug": "m-53",
+            "designation": "M 53",
+            "name": "Кульове скупчення",
+            "type": "cluster",
+            "constellation": "Coma Berenices",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 90,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 93,
+            "slug": "m-79",
+            "designation": "M 79",
+            "name": "Кульове скупчення",
+            "type": "cluster",
+            "constellation": "Lepus",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 90,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
             "id": 30,
             "slug": "m13",
-            "designation": "M13",
+            "designation": "M 13",
             "name": "Кульове скупчення Геркулеса",
             "type": "cluster",
             "constellation": "Геркулес",
@@ -1984,9 +2395,279 @@
             "status": "todo"
         },
         {
+            "id": 94,
+            "slug": "m-41",
+            "designation": "M 41",
+            "name": "Розсіяне скупчення",
+            "type": "cluster",
+            "constellation": "Canis Major",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 90,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 95,
+            "slug": "m-50",
+            "designation": "M 50",
+            "name": "Розсіяне скупчення",
+            "type": "cluster",
+            "constellation": "Monoceros",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 90,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 96,
+            "slug": "m-52",
+            "designation": "M 52",
+            "name": "Розсіяне скупчення",
+            "type": "cluster",
+            "constellation": "Cassiopeia",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 90,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 97,
+            "slug": "m-48",
+            "designation": "M 48",
+            "name": "Розсіяне скупчення",
+            "type": "cluster",
+            "constellation": "Hydra",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 90,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 98,
+            "slug": "m-46",
+            "designation": "M 46",
+            "name": "Розсіяне скупчення",
+            "type": "cluster",
+            "constellation": "Puppis",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 90,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 86,
+            "slug": "ic-2177",
+            "designation": "IC 2177",
+            "name": "Відбивна туманність",
+            "type": "nebula",
+            "constellation": "Monoceros",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 240,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 87,
+            "slug": "ngc-2359",
+            "designation": "NGC 2359",
+            "name": "Емісійна туманність",
+            "type": "nebula",
+            "constellation": "Canis Major",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 240,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 76,
+            "slug": "m-76",
+            "designation": "M 76",
+            "name": "Планетарна туманність",
+            "type": "nebula",
+            "constellation": "Perseus",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 240,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 84,
+            "slug": "m-97",
+            "designation": "M 97",
+            "name": "Планетарна туманність",
+            "type": "nebula",
+            "constellation": "Ursa Major",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 240,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 80,
+            "slug": "ngc-1931",
+            "designation": "NGC 1931",
+            "name": "Скупчення з туманністю",
+            "type": "nebula",
+            "constellation": "Auriga",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 240,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
             "id": 31,
             "slug": "m27",
-            "designation": "M27",
+            "designation": "M 27",
             "name": "Туманність Гантель",
             "type": "nebula",
             "constellation": "Лисичка",
@@ -2011,10 +2692,145 @@
             "status": "todo"
         },
         {
+            "id": 77,
+            "slug": "m-74",
+            "designation": "M 74",
+            "name": "Галактика",
+            "type": "galaxy",
+            "constellation": "Pisces",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 300,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 78,
+            "slug": "ngc-2683",
+            "designation": "NGC 2683",
+            "name": "Галактика",
+            "type": "galaxy",
+            "constellation": "Lynx",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 300,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 89,
+            "slug": "m-95",
+            "designation": "M 95",
+            "name": "Галактика",
+            "type": "galaxy",
+            "constellation": "Leo",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 300,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 90,
+            "slug": "m-109",
+            "designation": "M 109",
+            "name": "Галактика",
+            "type": "galaxy",
+            "constellation": "Ursa Major",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 300,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
+            "id": 88,
+            "slug": "m-81",
+            "designation": "M 81",
+            "name": "Галактика Боде",
+            "type": "galaxy",
+            "constellation": "Ursa Major",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 300,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
             "id": 38,
             "slug": "m106",
-            "designation": "M106",
-            "name": "Галактика M106",
+            "designation": "M 106",
+            "name": "Галактика",
             "type": "galaxy",
             "constellation": "Гончі Пси",
             "nights": 0,
@@ -2041,7 +2857,7 @@
             "id": 40,
             "slug": "ngc-2903",
             "designation": "NGC 2903",
-            "name": "Галактика NGC 2903",
+            "name": "Галактика",
             "type": "galaxy",
             "constellation": "Лев",
             "nights": 0,
@@ -2067,7 +2883,7 @@
         {
             "id": 36,
             "slug": "m51",
-            "designation": "M51",
+            "designation": "M 51",
             "name": "Галактика Вир",
             "type": "galaxy",
             "constellation": "Гончі Пси",
@@ -2094,7 +2910,7 @@
         {
             "id": 39,
             "slug": "m63",
-            "designation": "M63",
+            "designation": "M 63",
             "name": "Галактика Соняшник",
             "type": "galaxy",
             "constellation": "Гончі Пси",
@@ -2121,8 +2937,8 @@
         {
             "id": 41,
             "slug": "m65",
-            "designation": "M65",
-            "name": "Галактика M65 (Трійка Лева)",
+            "designation": "M 65",
+            "name": "Галактика (Трійка Лева)",
             "type": "galaxy",
             "constellation": "Лев",
             "nights": 0,
@@ -2148,7 +2964,7 @@
         {
             "id": 37,
             "slug": "m101",
-            "designation": "M101",
+            "designation": "M 101",
             "name": "Галактика Вертушка",
             "type": "galaxy",
             "constellation": "Велика Ведмедиця",
@@ -2519,7 +3335,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m1"
             },
             {
@@ -2529,8 +3345,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-2"
             },
             {
                 "m": 3,
@@ -2540,7 +3356,7 @@
                 "percent": 0,
                 "uncertain": false,
                 "season_from": "2026-10-29",
-                "slug": null
+                "slug": "m-3"
             },
             {
                 "m": 4,
@@ -2659,8 +3475,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-15"
             },
             {
                 "m": 16,
@@ -2809,8 +3625,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-30"
             },
             {
                 "m": 31,
@@ -2819,7 +3635,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m31"
             },
             {
@@ -2829,7 +3645,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m31"
             },
             {
@@ -2839,7 +3655,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m33"
             },
             {
@@ -2849,7 +3665,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m34"
             },
             {
@@ -2859,7 +3675,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m35"
             },
             {
@@ -2869,7 +3685,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m36"
             },
             {
@@ -2879,7 +3695,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m37"
             },
             {
@@ -2889,7 +3705,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m38"
             },
             {
@@ -2909,7 +3725,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": null
             },
             {
@@ -2919,8 +3735,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-41"
             },
             {
                 "m": 42,
@@ -2929,7 +3745,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m42"
             },
             {
@@ -2939,7 +3755,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m42"
             },
             {
@@ -2949,7 +3765,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m44"
             },
             {
@@ -2959,7 +3775,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m45"
             },
             {
@@ -2969,8 +3785,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-46"
             },
             {
                 "m": 47,
@@ -2979,7 +3795,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": null
             },
             {
@@ -2989,8 +3805,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-48"
             },
             {
                 "m": 49,
@@ -3009,8 +3825,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-50"
             },
             {
                 "m": 51,
@@ -3019,7 +3835,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m51"
             },
             {
@@ -3029,8 +3845,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2027-02-10",
+                "slug": "m-52"
             },
             {
                 "m": 53,
@@ -3040,7 +3856,7 @@
                 "percent": 0,
                 "uncertain": false,
                 "season_from": "2026-11-01",
-                "slug": null
+                "slug": "m-53"
             },
             {
                 "m": 54,
@@ -3139,7 +3955,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m63"
             },
             {
@@ -3159,7 +3975,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m65"
             },
             {
@@ -3169,7 +3985,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m65"
             },
             {
@@ -3179,7 +3995,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": null
             },
             {
@@ -3229,8 +4045,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-72"
             },
             {
                 "m": 73,
@@ -3239,7 +4055,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": null
             },
             {
@@ -3249,8 +4065,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-74"
             },
             {
                 "m": 75,
@@ -3259,8 +4075,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-75"
             },
             {
                 "m": 76,
@@ -3269,8 +4085,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-76"
             },
             {
                 "m": 77,
@@ -3279,7 +4095,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": null
             },
             {
@@ -3289,7 +4105,7 @@
                 "status": "progress",
                 "percent": 26,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m78"
             },
             {
@@ -3299,8 +4115,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-79"
             },
             {
                 "m": 80,
@@ -3319,8 +4135,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-81"
             },
             {
                 "m": 82,
@@ -3329,7 +4145,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": null
             },
             {
@@ -3449,7 +4265,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": null
             },
             {
@@ -3459,8 +4275,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-95"
             },
             {
                 "m": 96,
@@ -3469,7 +4285,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": null
             },
             {
@@ -3479,8 +4295,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-97"
             },
             {
                 "m": 98,
@@ -3519,7 +4335,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m101"
             },
             {
@@ -3529,7 +4345,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": null
             },
             {
@@ -3539,7 +4355,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m103"
             },
             {
@@ -3559,7 +4375,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": null
             },
             {
@@ -3569,7 +4385,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m106"
             },
             {
@@ -3589,7 +4405,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": null
             },
             {
@@ -3599,8 +4415,8 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-16",
-                "slug": null
+                "season_from": "2026-10-17",
+                "slug": "m-109"
             },
             {
                 "m": 110,
@@ -3609,7 +4425,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-16",
+                "season_from": "2026-10-17",
                 "slug": "m31"
             }
         ]
@@ -3637,7 +4453,7 @@
                 },
                 {
                     "slug": "m31",
-                    "designation": "M31",
+                    "designation": "M 31",
                     "name": "Галактика Андромеди",
                     "type": "galaxy",
                     "solar": false,
@@ -3671,7 +4487,7 @@
                 },
                 {
                     "slug": "m45",
-                    "designation": "M45",
+                    "designation": "M 45",
                     "name": "Плеяди",
                     "type": "cluster",
                     "solar": false,
@@ -3699,7 +4515,7 @@
             "sessions": [
                 {
                     "slug": "m31",
-                    "designation": "M31",
+                    "designation": "M 31",
                     "name": "Галактика Андромеди",
                     "type": "galaxy",
                     "solar": false,
@@ -3727,7 +4543,7 @@
             "sessions": [
                 {
                     "slug": "m31",
-                    "designation": "M31",
+                    "designation": "M 31",
                     "name": "Галактика Андромеди",
                     "type": "galaxy",
                     "solar": false,
@@ -3789,8 +4605,8 @@
                 },
                 {
                     "slug": "m34",
-                    "designation": "M34",
-                    "name": "Розсіяне скупчення M34",
+                    "designation": "M 34",
+                    "name": "Розсіяне скупчення",
                     "type": "cluster",
                     "solar": false,
                     "day": false,
@@ -3806,7 +4622,7 @@
                 },
                 {
                     "slug": "m45",
-                    "designation": "M45",
+                    "designation": "M 45",
                     "name": "Плеяди",
                     "type": "cluster",
                     "solar": false,
@@ -3823,7 +4639,7 @@
                 },
                 {
                     "slug": "m45",
-                    "designation": "M45",
+                    "designation": "M 45",
                     "name": "Плеяди",
                     "type": "cluster",
                     "solar": false,
@@ -3851,7 +4667,7 @@
             "sessions": [
                 {
                     "slug": "m31",
-                    "designation": "M31",
+                    "designation": "M 31",
                     "name": "Галактика Андромеди",
                     "type": "galaxy",
                     "solar": false,
@@ -4015,7 +4831,7 @@
                 },
                 {
                     "slug": "m33",
-                    "designation": "M33",
+                    "designation": "M 33",
                     "name": "Галактика Трикутника",
                     "type": "galaxy",
                     "solar": false,
@@ -4032,7 +4848,7 @@
                 },
                 {
                     "slug": "m33",
-                    "designation": "M33",
+                    "designation": "M 33",
                     "name": "Галактика Трикутника",
                     "type": "galaxy",
                     "solar": false,
@@ -4060,7 +4876,7 @@
             "sessions": [
                 {
                     "slug": "m31",
-                    "designation": "M31",
+                    "designation": "M 31",
                     "name": "Галактика Андромеди",
                     "type": "galaxy",
                     "solar": false,
@@ -4354,7 +5170,7 @@
                 },
                 {
                     "slug": "m1",
-                    "designation": "M1",
+                    "designation": "M 1",
                     "name": "Крабоподібна туманність",
                     "type": "nebula",
                     "solar": false,
@@ -4399,7 +5215,7 @@
                 },
                 {
                     "slug": "m1",
-                    "designation": "M1",
+                    "designation": "M 1",
                     "name": "Крабоподібна туманність",
                     "type": "nebula",
                     "solar": false,
@@ -4444,8 +5260,8 @@
                 },
                 {
                     "slug": "m103",
-                    "designation": "M103",
-                    "name": "Розсіяне скупчення M103",
+                    "designation": "M 103",
+                    "name": "Розсіяне скупчення",
                     "type": "cluster",
                     "solar": false,
                     "day": false,
@@ -4478,7 +5294,7 @@
                 },
                 {
                     "slug": "m1",
-                    "designation": "M1",
+                    "designation": "M 1",
                     "name": "Крабоподібна туманність",
                     "type": "nebula",
                     "solar": false,
@@ -4523,8 +5339,8 @@
                 },
                 {
                     "slug": "m103",
-                    "designation": "M103",
-                    "name": "Розсіяне скупчення M103",
+                    "designation": "M 103",
+                    "name": "Розсіяне скупчення",
                     "type": "cluster",
                     "solar": false,
                     "day": false,
@@ -4557,8 +5373,8 @@
                 },
                 {
                     "slug": "m35",
-                    "designation": "M35",
-                    "name": "Розсіяне скупчення M35",
+                    "designation": "M 35",
+                    "name": "Розсіяне скупчення",
                     "type": "cluster",
                     "solar": false,
                     "day": false,
@@ -4619,8 +5435,8 @@
                 },
                 {
                     "slug": "m103",
-                    "designation": "M103",
-                    "name": "Розсіяне скупчення M103",
+                    "designation": "M 103",
+                    "name": "Розсіяне скупчення",
                     "type": "cluster",
                     "solar": false,
                     "day": false,
@@ -4653,8 +5469,8 @@
                 },
                 {
                     "slug": "m35",
-                    "designation": "M35",
-                    "name": "Розсіяне скупчення M35",
+                    "designation": "M 35",
+                    "name": "Розсіяне скупчення",
                     "type": "cluster",
                     "solar": false,
                     "day": false,
@@ -4766,8 +5582,8 @@
                 },
                 {
                     "slug": "ngc-2403",
-                    "designation": "NGC 2403",
-                    "name": "Галактика в Жирафі",
+                    "designation": "C 7",
+                    "name": "Галактика в Жирафі (NGC 2403)",
                     "type": "galaxy",
                     "solar": false,
                     "day": false,
@@ -4811,8 +5627,8 @@
                 },
                 {
                     "slug": "ngc-2403",
-                    "designation": "NGC 2403",
-                    "name": "Галактика в Жирафі",
+                    "designation": "C 7",
+                    "name": "Галактика в Жирафі (NGC 2403)",
                     "type": "galaxy",
                     "solar": false,
                     "day": false,
@@ -4828,7 +5644,7 @@
                 },
                 {
                     "slug": "m44",
-                    "designation": "M44",
+                    "designation": "M 44",
                     "name": "Вулик (Ясла)",
                     "type": "cluster",
                     "solar": false,
@@ -5101,7 +5917,7 @@
                 {
                     "slug": "c-30",
                     "designation": "C 30",
-                    "name": "Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv",
+                    "name": "Галактика NGC 7331 + SN 2026aaiv",
                     "type": "galaxy",
                     "solar": false,
                     "day": false,
@@ -5134,7 +5950,7 @@
                 },
                 {
                     "slug": "m42",
-                    "designation": "M42",
+                    "designation": "M 42",
                     "name": "Туманність Оріона",
                     "type": "nebula",
                     "solar": false,
@@ -5236,7 +6052,7 @@
                 },
                 {
                     "slug": "m42",
-                    "designation": "M42",
+                    "designation": "M 42",
                     "name": "Туманність Оріона",
                     "type": "nebula",
                     "solar": false,
@@ -5271,7 +6087,7 @@
                 {
                     "slug": "c-30",
                     "designation": "C 30",
-                    "name": "Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv",
+                    "name": "Галактика NGC 7331 + SN 2026aaiv",
                     "type": "galaxy",
                     "solar": false,
                     "day": false,
@@ -5287,7 +6103,7 @@
                 },
                 {
                     "slug": "m33",
-                    "designation": "M33",
+                    "designation": "M 33",
                     "name": "Галактика Трикутника",
                     "type": "galaxy",
                     "solar": false,
@@ -5355,7 +6171,7 @@
             "sessions": [
                 {
                     "slug": "m33",
-                    "designation": "M33",
+                    "designation": "M 33",
                     "name": "Галактика Трикутника",
                     "type": "galaxy",
                     "solar": false,
@@ -5406,7 +6222,7 @@
                 },
                 {
                     "slug": "m42",
-                    "designation": "M42",
+                    "designation": "M 42",
                     "name": "Туманність Оріона",
                     "type": "nebula",
                     "solar": false,
@@ -5492,7 +6308,7 @@
                 {
                     "slug": "c-30",
                     "designation": "C 30",
-                    "name": "Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv",
+                    "name": "Галактика NGC 7331 + SN 2026aaiv",
                     "type": "galaxy",
                     "solar": false,
                     "day": false,
@@ -5508,7 +6324,7 @@
                 },
                 {
                     "slug": "m33",
-                    "designation": "M33",
+                    "designation": "M 33",
                     "name": "Галактика Трикутника",
                     "type": "galaxy",
                     "solar": false,
@@ -5577,7 +6393,7 @@
                 {
                     "slug": "c-44",
                     "designation": "C 44",
-                    "name": "Галактика NGC 7479 (Caldwell 44)",
+                    "name": "Галактика NGC 7479",
                     "type": "galaxy",
                     "solar": false,
                     "day": false,
@@ -5713,7 +6529,7 @@
                 {
                     "slug": "c-30",
                     "designation": "C 30",
-                    "name": "Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv",
+                    "name": "Галактика NGC 7331 + SN 2026aaiv",
                     "type": "galaxy",
                     "solar": false,
                     "day": false,
@@ -5780,8 +6596,8 @@
                 },
                 {
                     "slug": "ngc-2244",
-                    "designation": "NGC 2244",
-                    "name": "Туманність Розетка",
+                    "designation": "C 50",
+                    "name": "Туманність Розетка (NGC 2244)",
                     "type": "nebula",
                     "solar": false,
                     "day": false,
@@ -5950,8 +6766,8 @@
                 },
                 {
                     "slug": "m38",
-                    "designation": "M38",
-                    "name": "Розсіяне скупчення M38",
+                    "designation": "M 38",
+                    "name": "Розсіяне скупчення",
                     "type": "cluster",
                     "solar": false,
                     "day": false,
@@ -5967,8 +6783,8 @@
                 },
                 {
                     "slug": "m37",
-                    "designation": "M37",
-                    "name": "Розсіяне скупчення M37",
+                    "designation": "M 37",
+                    "name": "Розсіяне скупчення",
                     "type": "cluster",
                     "solar": false,
                     "day": false,
@@ -6001,7 +6817,7 @@
                 },
                 {
                     "slug": "m44",
-                    "designation": "M44",
+                    "designation": "M 44",
                     "name": "Вулик (Ясла)",
                     "type": "cluster",
                     "solar": false,
@@ -6069,8 +6885,8 @@
                 },
                 {
                     "slug": "m36",
-                    "designation": "M36",
-                    "name": "Розсіяне скупчення M36",
+                    "designation": "M 36",
+                    "name": "Розсіяне скупчення",
                     "type": "cluster",
                     "solar": false,
                     "day": false,
@@ -6206,7 +7022,7 @@
                 {
                     "slug": "c-30",
                     "designation": "C 30",
-                    "name": "Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv",
+                    "name": "Галактика NGC 7331 + SN 2026aaiv",
                     "type": "galaxy",
                     "solar": false,
                     "day": false,
@@ -6223,7 +7039,7 @@
                 {
                     "slug": "c-44",
                     "designation": "C 44",
-                    "name": "Галактика NGC 7479 (Caldwell 44)",
+                    "name": "Галактика NGC 7479",
                     "type": "galaxy",
                     "solar": false,
                     "day": false,
@@ -6359,7 +7175,7 @@
                 {
                     "slug": "c-44",
                     "designation": "C 44",
-                    "name": "Галактика NGC 7479 (Caldwell 44)",
+                    "name": "Галактика NGC 7479",
                     "type": "galaxy",
                     "solar": false,
                     "day": false,
@@ -6375,7 +7191,7 @@
                 },
                 {
                     "slug": "m33",
-                    "designation": "M33",
+                    "designation": "M 33",
                     "name": "Галактика Трикутника",
                     "type": "galaxy",
                     "solar": false,
@@ -6409,8 +7225,8 @@
                 },
                 {
                     "slug": "ngc-2244",
-                    "designation": "NGC 2244",
-                    "name": "Туманність Розетка",
+                    "designation": "C 50",
+                    "name": "Туманність Розетка (NGC 2244)",
                     "type": "nebula",
                     "solar": false,
                     "day": false,
@@ -6613,8 +7429,8 @@
                 },
                 {
                     "slug": "ngc-2244",
-                    "designation": "NGC 2244",
-                    "name": "Туманність Розетка",
+                    "designation": "C 50",
+                    "name": "Туманність Розетка (NGC 2244)",
                     "type": "nebula",
                     "solar": false,
                     "day": false,
@@ -6715,8 +7531,8 @@
                 },
                 {
                     "slug": "ngc-2244",
-                    "designation": "NGC 2244",
-                    "name": "Туманність Розетка",
+                    "designation": "C 50",
+                    "name": "Туманність Розетка (NGC 2244)",
                     "type": "nebula",
                     "solar": false,
                     "day": false,
@@ -6783,8 +7599,8 @@
                 },
                 {
                     "slug": "ngc-2244",
-                    "designation": "NGC 2244",
-                    "name": "Туманність Розетка",
+                    "designation": "C 50",
+                    "name": "Туманність Розетка (NGC 2244)",
                     "type": "nebula",
                     "solar": false,
                     "day": false,
@@ -6885,7 +7701,7 @@
                 },
                 {
                     "slug": "m33",
-                    "designation": "M33",
+                    "designation": "M 33",
                     "name": "Галактика Трикутника",
                     "type": "galaxy",
                     "solar": false,
@@ -6902,8 +7718,8 @@
                 },
                 {
                     "slug": "m78",
-                    "designation": "M78",
-                    "name": "Відбивна туманність M78",
+                    "designation": "M 78",
+                    "name": "Відбивна туманність",
                     "type": "nebula",
                     "solar": false,
                     "day": false,
@@ -6919,8 +7735,8 @@
                 },
                 {
                     "slug": "ngc-2244",
-                    "designation": "NGC 2244",
-                    "name": "Туманність Розетка",
+                    "designation": "C 50",
+                    "name": "Туманність Розетка (NGC 2244)",
                     "type": "nebula",
                     "solar": false,
                     "day": false,
@@ -6987,8 +7803,8 @@
                 },
                 {
                     "slug": "m78",
-                    "designation": "M78",
-                    "name": "Відбивна туманність M78",
+                    "designation": "M 78",
+                    "name": "Відбивна туманність",
                     "type": "nebula",
                     "solar": false,
                     "day": false,
@@ -7004,8 +7820,8 @@
                 },
                 {
                     "slug": "ngc-2244",
-                    "designation": "NGC 2244",
-                    "name": "Туманність Розетка",
+                    "designation": "C 50",
+                    "name": "Туманність Розетка (NGC 2244)",
                     "type": "nebula",
                     "solar": false,
                     "day": false,
@@ -7071,10 +7887,10 @@
                     "photo": false
                 },
                 {
-                    "slug": null,
+                    "slug": "ngc-7635",
                     "designation": "NGC 7635",
-                    "name": "NGC 7635",
-                    "type": null,
+                    "name": "Туманність Бульбашка",
+                    "type": "nebula",
                     "solar": false,
                     "day": false,
                     "start": "20:23",
@@ -7124,7 +7940,7 @@
                 {
                     "slug": "c-30",
                     "designation": "C 30",
-                    "name": "Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv",
+                    "name": "Галактика NGC 7331 + SN 2026aaiv",
                     "type": "galaxy",
                     "solar": false,
                     "day": false,
@@ -7156,10 +7972,10 @@
                     "photo": true
                 },
                 {
-                    "slug": null,
+                    "slug": "c-23",
                     "designation": "C 23",
-                    "name": "C 23",
-                    "type": null,
+                    "name": "Галактика NGC 891",
+                    "type": "galaxy",
                     "solar": false,
                     "day": false,
                     "start": "22:48",
@@ -7173,10 +7989,10 @@
                     "photo": false
                 },
                 {
-                    "slug": null,
-                    "designation": "M77",
-                    "name": "M77",
-                    "type": null,
+                    "slug": "m77",
+                    "designation": "M 77",
+                    "name": "Галактика",
+                    "type": "galaxy",
                     "solar": false,
                     "day": false,
                     "start": "23:40",
@@ -7191,8 +8007,8 @@
                 },
                 {
                     "slug": "ngc-2244",
-                    "designation": "NGC 2244",
-                    "name": "Туманність Розетка",
+                    "designation": "C 50",
+                    "name": "Туманність Розетка (NGC 2244)",
                     "type": "nebula",
                     "solar": false,
                     "day": false,
@@ -7243,7 +8059,7 @@
                 {
                     "slug": "c-30",
                     "designation": "C 30",
-                    "name": "Галактика NGC 7331 (Caldwell 30) + SN 2026aaiv",
+                    "name": "Галактика NGC 7331 + SN 2026aaiv",
                     "type": "galaxy",
                     "solar": false,
                     "day": false,
@@ -7258,10 +8074,10 @@
                     "photo": false
                 },
                 {
-                    "slug": null,
+                    "slug": "ngc-7635",
                     "designation": "NGC 7635",
-                    "name": "NGC 7635",
-                    "type": null,
+                    "name": "Туманність Бульбашка",
+                    "type": "nebula",
                     "solar": false,
                     "day": false,
                     "start": "19:49",
@@ -7275,10 +8091,10 @@
                     "photo": false
                 },
                 {
-                    "slug": null,
+                    "slug": "ic-63",
                     "designation": "IC 63",
-                    "name": "IC 63",
-                    "type": null,
+                    "name": "Емісійна туманність",
+                    "type": "nebula",
                     "solar": false,
                     "day": false,
                     "start": "20:22",
@@ -7292,10 +8108,10 @@
                     "photo": false
                 },
                 {
-                    "slug": null,
+                    "slug": "c-23",
                     "designation": "C 23",
-                    "name": "C 23",
-                    "type": null,
+                    "name": "Галактика NGC 891",
+                    "type": "galaxy",
                     "solar": false,
                     "day": false,
                     "start": "22:15",
@@ -7309,10 +8125,10 @@
                     "photo": false
                 },
                 {
-                    "slug": null,
-                    "designation": "M77",
-                    "name": "M77",
-                    "type": null,
+                    "slug": "m77",
+                    "designation": "M 77",
+                    "name": "Галактика",
+                    "type": "galaxy",
                     "solar": false,
                     "day": false,
                     "start": "23:17",
@@ -7327,8 +8143,8 @@
                 },
                 {
                     "slug": "ngc-2244",
-                    "designation": "NGC 2244",
-                    "name": "Туманність Розетка",
+                    "designation": "C 50",
+                    "name": "Туманність Розетка (NGC 2244)",
                     "type": "nebula",
                     "solar": false,
                     "day": false,
@@ -7344,7 +8160,7 @@
                 },
                 {
                     "slug": "m44",
-                    "designation": "M44",
+                    "designation": "M 44",
                     "name": "Вулик (Ясла)",
                     "type": "cluster",
                     "solar": false,
@@ -7394,10 +8210,10 @@
                     "photo": false
                 },
                 {
-                    "slug": null,
+                    "slug": "ic-63",
                     "designation": "IC 63",
-                    "name": "IC 63",
-                    "type": null,
+                    "name": "Емісійна туманність",
+                    "type": "nebula",
                     "solar": false,
                     "day": false,
                     "start": "20:13",
@@ -7411,10 +8227,10 @@
                     "photo": false
                 },
                 {
-                    "slug": null,
+                    "slug": "c-23",
                     "designation": "C 23",
-                    "name": "C 23",
-                    "type": null,
+                    "name": "Галактика NGC 891",
+                    "type": "galaxy",
                     "solar": false,
                     "day": false,
                     "start": "22:25",
@@ -7428,10 +8244,10 @@
                     "photo": false
                 },
                 {
-                    "slug": null,
-                    "designation": "M77",
-                    "name": "M77",
-                    "type": null,
+                    "slug": "m77",
+                    "designation": "M 77",
+                    "name": "Галактика",
+                    "type": "galaxy",
                     "solar": false,
                     "day": false,
                     "start": "23:17",
@@ -7446,8 +8262,8 @@
                 },
                 {
                     "slug": "ngc-2244",
-                    "designation": "NGC 2244",
-                    "name": "Туманність Розетка",
+                    "designation": "C 50",
+                    "name": "Туманність Розетка (NGC 2244)",
                     "type": "nebula",
                     "solar": false,
                     "day": false,
