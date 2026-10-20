@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-20T12:10:20+03:00",
+    "generated_at": "2026-10-20T18:45:51+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -3214,7 +3214,7 @@
             "type": "sun",
             "constellation": null,
             "nights": 13,
-            "integration_sec": 5,
+            "integration_sec": 6,
             "first": "2026-08-20",
             "last": "2026-10-20",
             "text": {
@@ -3264,7 +3264,7 @@
                     "2026-10-17",
                     "2026-10-19"
                 ],
-                "longest_night_sec": 3,
+                "longest_night_sec": 4,
                 "longest_night": "2026-10-19"
             },
             "photo": {
@@ -8607,12 +8607,12 @@
                     "solar": true,
                     "day": true,
                     "start": "11:49",
-                    "end": "11:56",
+                    "end": "12:10",
                     "exposure": 0.004,
                     "filter": "Сонячний ND",
                     "taken": 300,
-                    "stacked": 102,
-                    "sec": 0,
+                    "stacked": 300,
+                    "sec": 1,
                     "mosaic": false,
                     "photo": false
                 }
@@ -8624,10 +8624,10 @@
             },
             "weather": {
                 "verdict": "rain",
-                "cloud": 98,
-                "temp_min": 11.6,
-                "wind": 2.2,
-                "humidity": 83
+                "cloud": 93,
+                "temp_min": 11.7,
+                "wind": 2,
+                "humidity": 81
             }
         }
     ]
