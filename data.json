@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-21T16:56:03+03:00",
+    "generated_at": "2026-10-22T12:10:27+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -9,10 +9,10 @@
     "totals": {
         "objects": 65,
         "done": 21,
-        "progress": 14,
-        "todo": 30,
-        "nights": 51,
-        "deep_hours": 152.3,
+        "progress": 15,
+        "todo": 29,
+        "nights": 52,
+        "deep_hours": 156.4,
         "first_night": "2026-08-12",
         "photos": 48
     },
@@ -816,8 +816,8 @@
                 "poster": "vid/ic-405.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": "https://www.youtube.com/shorts/UFihBcyMN2c",
-                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7698794499740323093"
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -1155,8 +1155,8 @@
                 "poster": "vid/m35.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null,
-                "tiktok": null
+                "youtube": "https://www.youtube.com/shorts/BMk6qwDeOjE",
+                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7699178900714196245"
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -1648,6 +1648,54 @@
             "status": "progress"
         },
         {
+            "id": 80,
+            "slug": "ngc-1931",
+            "designation": "NGC 1931",
+            "name": "Скупчення з туманністю",
+            "type": "nebula",
+            "constellation": "Auriga",
+            "nights": 2,
+            "integration_sec": 9180,
+            "first": "2026-10-19",
+            "last": "2026-10-21",
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 2,
+                "frames": 394,
+                "exposures": [
+                    60
+                ],
+                "filters": [
+                    "Dual-band (Ha/OIII)"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-10": 2
+                },
+                "night_dates": [
+                    "2026-10-19",
+                    "2026-10-21"
+                ],
+                "longest_night_sec": 8700,
+                "longest_night": "2026-10-21"
+            },
+            "photo": null,
+            "difficulty": null,
+            "target_min": 240,
+            "percent": 63,
+            "status": "progress"
+        },
+        {
             "id": 8,
             "slug": "m34",
             "designation": "M 34",
@@ -1767,10 +1815,10 @@
             "name": "Галактика NGC 7331 + SN 2026aaiv",
             "type": "galaxy",
             "constellation": "Пегас",
-            "nights": 8,
-            "integration_sec": 13845,
+            "nights": 9,
+            "integration_sec": 14175,
             "first": "2026-09-12",
-            "last": "2026-10-19",
+            "last": "2026-10-21",
             "text": {
                 "description_uk": "NGC 7331 у Пегасі, велика спіральна галактика, схожа на Чумацький Шлях розміром і формою, нахилена до нас так, що видно і диск, і пилові смуги. За нею в тому самому полі кілька значно дальших галактик, які лише здаються її супутниками. У 2026 році в NGC 7331 спалахнула наднова SN 2026aaiv, і ця сторінка зберігає кадри з нею: зорю, яка на кілька тижнів світила як мільярди звичайних.",
                 "description_en": "NGC 7331 in Pegasus, a large spiral galaxy similar to the Milky Way in size and shape, tilted so that both the disk and the dust lanes are visible. Behind it in the same field lie several much more distant galaxies that only appear to be its companions. In 2026 supernova SN 2026aaiv flared up in NGC 7331, and this page keeps the frames with it: a star that for a few weeks shone like billions of ordinary ones.",
@@ -1781,8 +1829,8 @@
                 "en_auto": false
             },
             "shooting": {
-                "sessions": 8,
-                "frames": 913,
+                "sessions": 9,
+                "frames": 925,
                 "exposures": [
                     15,
                     30
@@ -1795,7 +1843,7 @@
                 ],
                 "nights_by_month": {
                     "2026-09": 4,
-                    "2026-10": 4
+                    "2026-10": 5
                 },
                 "night_dates": [
                     "2026-09-12",
@@ -1805,7 +1853,8 @@
                     "2026-10-01",
                     "2026-10-10",
                     "2026-10-11",
-                    "2026-10-19"
+                    "2026-10-19",
+                    "2026-10-21"
                 ],
                 "longest_night_sec": 3240,
                 "longest_night": "2026-09-19"
@@ -1823,7 +1872,7 @@
             },
             "difficulty": "hard",
             "target_min": 480,
-            "percent": 48,
+            "percent": 49,
             "status": "progress"
         },
         {
@@ -1888,16 +1937,16 @@
             "status": "progress"
         },
         {
-            "id": 73,
-            "slug": "c-23",
-            "designation": "C 23",
-            "name": "Галактика NGC 891",
-            "type": "galaxy",
-            "constellation": null,
-            "nights": 4,
-            "integration_sec": 7050,
-            "first": "2026-10-10",
-            "last": "2026-10-19",
+            "id": 76,
+            "slug": "m-76",
+            "designation": "M 76",
+            "name": "Планетарна туманність",
+            "type": "nebula",
+            "constellation": "Perseus",
+            "nights": 2,
+            "integration_sec": 5880,
+            "first": "2026-10-19",
+            "last": "2026-10-21",
             "text": {
                 "description_uk": null,
                 "description_en": null,
@@ -1908,8 +1957,56 @@
                 "en_auto": false
             },
             "shooting": {
-                "sessions": 4,
-                "frames": 344,
+                "sessions": 3,
+                "frames": 172,
+                "exposures": [
+                    60
+                ],
+                "filters": [
+                    "Dual-band (Ha/OIII)"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-10": 2
+                },
+                "night_dates": [
+                    "2026-10-19",
+                    "2026-10-21"
+                ],
+                "longest_night_sec": 5100,
+                "longest_night": "2026-10-21"
+            },
+            "photo": null,
+            "difficulty": null,
+            "target_min": 240,
+            "percent": 40,
+            "status": "progress"
+        },
+        {
+            "id": 73,
+            "slug": "c-23",
+            "designation": "C 23",
+            "name": "Галактика NGC 891",
+            "type": "galaxy",
+            "constellation": null,
+            "nights": 5,
+            "integration_sec": 7140,
+            "first": "2026-10-10",
+            "last": "2026-10-21",
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 5,
+                "frames": 430,
                 "exposures": [
                     30
                 ],
@@ -1920,13 +2017,14 @@
                     "DWARF Mini"
                 ],
                 "nights_by_month": {
-                    "2026-10": 4
+                    "2026-10": 5
                 },
                 "night_dates": [
                     "2026-10-10",
                     "2026-10-11",
                     "2026-10-12",
-                    "2026-10-19"
+                    "2026-10-19",
+                    "2026-10-21"
                 ],
                 "longest_night_sec": 2430,
                 "longest_night": "2026-10-11"
@@ -2147,16 +2245,16 @@
             "status": "progress"
         },
         {
-            "id": 76,
-            "slug": "m-76",
-            "designation": "M 76",
+            "id": 84,
+            "slug": "m-97",
+            "designation": "M 97",
             "name": "Планетарна туманність",
             "type": "nebula",
-            "constellation": "Perseus",
+            "constellation": "Ursa Major",
             "nights": 1,
-            "integration_sec": 780,
-            "first": "2026-10-19",
-            "last": "2026-10-19",
+            "integration_sec": 360,
+            "first": "2026-10-22",
+            "last": "2026-10-22",
             "text": {
                 "description_uk": null,
                 "description_en": null,
@@ -2168,7 +2266,7 @@
             },
             "shooting": {
                 "sessions": 1,
-                "frames": 82,
+                "frames": 186,
                 "exposures": [
                     60
                 ],
@@ -2182,62 +2280,15 @@
                     "2026-10": 1
                 },
                 "night_dates": [
-                    "2026-10-19"
+                    "2026-10-21"
                 ],
-                "longest_night_sec": 780,
-                "longest_night": "2026-10-19"
+                "longest_night_sec": 360,
+                "longest_night": "2026-10-21"
             },
             "photo": null,
             "difficulty": null,
             "target_min": 240,
-            "percent": 5,
-            "status": "progress"
-        },
-        {
-            "id": 80,
-            "slug": "ngc-1931",
-            "designation": "NGC 1931",
-            "name": "Скупчення з туманністю",
-            "type": "nebula",
-            "constellation": "Auriga",
-            "nights": 1,
-            "integration_sec": 480,
-            "first": "2026-10-19",
-            "last": "2026-10-19",
-            "text": {
-                "description_uk": null,
-                "description_en": null,
-                "story_uk": null,
-                "story_en": null,
-                "distance_ly": null,
-                "angular_size": null,
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 1,
-                "frames": 198,
-                "exposures": [
-                    60
-                ],
-                "filters": [
-                    "Dual-band (Ha/OIII)"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-10": 1
-                },
-                "night_dates": [
-                    "2026-10-19"
-                ],
-                "longest_night_sec": 480,
-                "longest_night": "2026-10-19"
-            },
-            "photo": null,
-            "difficulty": null,
-            "target_min": 240,
-            "percent": 3,
+            "percent": 2,
             "status": "progress"
         },
         {
@@ -2727,33 +2778,6 @@
             "status": "todo"
         },
         {
-            "id": 84,
-            "slug": "m-97",
-            "designation": "M 97",
-            "name": "Планетарна туманність",
-            "type": "nebula",
-            "constellation": "Ursa Major",
-            "nights": 0,
-            "integration_sec": 0,
-            "first": null,
-            "last": null,
-            "text": {
-                "description_uk": null,
-                "description_en": null,
-                "story_uk": null,
-                "story_en": null,
-                "distance_ly": null,
-                "angular_size": null,
-                "en_auto": false
-            },
-            "shooting": null,
-            "photo": null,
-            "difficulty": null,
-            "target_min": 240,
-            "percent": 0,
-            "status": "todo"
-        },
-        {
             "id": 31,
             "slug": "m27",
             "designation": "M 27",
@@ -3059,10 +3083,10 @@
             "name": "Місяць",
             "type": "moon",
             "constellation": null,
-            "nights": 17,
-            "integration_sec": 79,
+            "nights": 18,
+            "integration_sec": 81,
             "first": "2026-08-23",
-            "last": "2026-10-19",
+            "last": "2026-10-21",
             "text": {
                 "description_uk": "Місяць, наш єдиний природний супутник і найзручніша ціль для балкона: яскравий, великий, доступний у будь-якому місті й у будь-якому засвіченні. Середня відстань до нього близько 384 тисяч кілометрів, світло долітає за секунду з невеликим. Найцікавіший він не в повню, а поблизу термінатора, лінії дня і ночі: там тіні довгі, і кратери, гори та борозни показують рельєф. Щоночі термінатор зсувається, тож той самий кратер двічі однаковим не буває.",
                 "description_en": "The Moon, our only natural satellite and the most convenient balcony target: bright, large, reachable from any city under any light pollution. Its average distance is about 384,000 kilometres; the light takes a little over a second to arrive. It is most interesting not at full phase but near the terminator, the line between day and night: there the shadows are long and craters, mountains and rilles reveal the relief. The terminator shifts every night, so the same crater never looks the same twice.",
@@ -3073,8 +3097,8 @@
                 "en_auto": false
             },
             "shooting": {
-                "sessions": 36,
-                "frames": 10596,
+                "sessions": 39,
+                "frames": 11106,
                 "exposures": [
                     0.002,
                     0.0025,
@@ -3099,7 +3123,7 @@
                 "nights_by_month": {
                     "2026-08": 6,
                     "2026-09": 7,
-                    "2026-10": 4
+                    "2026-10": 5
                 },
                 "night_dates": [
                     "2026-08-23",
@@ -3118,7 +3142,8 @@
                     "2026-10-03",
                     "2026-10-04",
                     "2026-10-06",
-                    "2026-10-19"
+                    "2026-10-19",
+                    "2026-10-21"
                 ],
                 "longest_night_sec": 16,
                 "longest_night": "2026-09-28"
@@ -3388,11 +3413,11 @@
     "messier": {
         "totals": {
             "captured": 15,
-            "progress": 3,
-            "todo": 82,
+            "progress": 4,
+            "todo": 81,
             "unreachable": 10,
             "reachable": 100,
-            "left_hours": 145.3
+            "left_hours": 143.8
         },
         "objects": [
             {
@@ -3402,7 +3427,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m1"
             },
             {
@@ -3412,7 +3437,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m-2"
             },
             {
@@ -3692,7 +3717,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m-30"
             },
             {
@@ -3702,7 +3727,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m31"
             },
             {
@@ -3712,7 +3737,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m31"
             },
             {
@@ -3722,7 +3747,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m33"
             },
             {
@@ -3732,7 +3757,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m34"
             },
             {
@@ -3742,7 +3767,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m35"
             },
             {
@@ -3752,7 +3777,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m36"
             },
             {
@@ -3762,7 +3787,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m37"
             },
             {
@@ -3772,7 +3797,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m38"
             },
             {
@@ -3792,7 +3817,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": null
             },
             {
@@ -3802,7 +3827,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m-41"
             },
             {
@@ -3812,7 +3837,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m42"
             },
             {
@@ -3822,7 +3847,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m42"
             },
             {
@@ -3832,7 +3857,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m44"
             },
             {
@@ -3842,7 +3867,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m45"
             },
             {
@@ -3852,7 +3877,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m-46"
             },
             {
@@ -3862,7 +3887,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": null
             },
             {
@@ -3872,7 +3897,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m-48"
             },
             {
@@ -3892,7 +3917,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m-50"
             },
             {
@@ -3902,7 +3927,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m51"
             },
             {
@@ -4022,7 +4047,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m63"
             },
             {
@@ -4042,7 +4067,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m65"
             },
             {
@@ -4052,7 +4077,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m65"
             },
             {
@@ -4062,7 +4087,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": null
             },
             {
@@ -4112,7 +4137,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m-72"
             },
             {
@@ -4122,7 +4147,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": null
             },
             {
@@ -4132,7 +4157,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m-74"
             },
             {
@@ -4150,9 +4175,9 @@
                 "name": "Barbell Nebula",
                 "type": "nebula",
                 "status": "progress",
-                "percent": 7,
+                "percent": 54,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m-76"
             },
             {
@@ -4162,7 +4187,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": null
             },
             {
@@ -4172,7 +4197,7 @@
                 "status": "progress",
                 "percent": 26,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m78"
             },
             {
@@ -4182,7 +4207,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m-79"
             },
             {
@@ -4202,7 +4227,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m-81"
             },
             {
@@ -4212,7 +4237,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": null
             },
             {
@@ -4322,7 +4347,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": null
             },
             {
@@ -4332,7 +4357,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": null
             },
             {
@@ -4342,7 +4367,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m-95"
             },
             {
@@ -4352,17 +4377,17 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": null
             },
             {
                 "m": 97,
                 "name": "Owl Nebula",
                 "type": "nebula",
-                "status": "todo",
-                "percent": 0,
+                "status": "progress",
+                "percent": 3,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m-97"
             },
             {
@@ -4402,7 +4427,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m101"
             },
             {
@@ -4412,7 +4437,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": null
             },
             {
@@ -4422,7 +4447,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m103"
             },
             {
@@ -4442,7 +4467,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": null
             },
             {
@@ -4452,7 +4477,7 @@
                 "status": "progress",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m106"
             },
             {
@@ -4472,7 +4497,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": null
             },
             {
@@ -4482,7 +4507,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m-109"
             },
             {
@@ -4492,7 +4517,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-21",
+                "season_from": "2026-10-22",
                 "slug": "m31"
             }
         ]
@@ -8628,6 +8653,176 @@
                 "temp_min": 12.3,
                 "wind": 2.1,
                 "humidity": 75
+            }
+        },
+        {
+            "date": "2026-10-21",
+            "sessions": [
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "18:18",
+                    "end": "18:19",
+                    "exposure": 0.008,
+                    "filter": "Без фільтра",
+                    "taken": 5,
+                    "stacked": 5,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "18:20",
+                    "end": "18:21",
+                    "exposure": 0.00625,
+                    "filter": "Без фільтра",
+                    "taken": 5,
+                    "stacked": 5,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "18:24",
+                    "end": "18:34",
+                    "exposure": 0.008,
+                    "filter": "Без фільтра",
+                    "taken": 500,
+                    "stacked": 214,
+                    "sec": 2,
+                    "mosaic": false,
+                    "photo": true
+                },
+                {
+                    "slug": "m-76",
+                    "designation": "M 76",
+                    "name": "Планетарна туманність",
+                    "type": "nebula",
+                    "solar": false,
+                    "day": false,
+                    "start": "19:41",
+                    "end": "20:03",
+                    "exposure": 60,
+                    "filter": "Dual-band (Ha/OIII)",
+                    "taken": 18,
+                    "stacked": 17,
+                    "sec": 1020,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "c-30",
+                    "designation": "C 30",
+                    "name": "Галактика NGC 7331 + SN 2026aaiv",
+                    "type": "galaxy",
+                    "solar": false,
+                    "day": false,
+                    "start": "20:06",
+                    "end": "20:15",
+                    "exposure": 30,
+                    "filter": "Без фільтра",
+                    "taken": 12,
+                    "stacked": 11,
+                    "sec": 330,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "m-76",
+                    "designation": "M 76",
+                    "name": "Планетарна туманність",
+                    "type": "nebula",
+                    "solar": false,
+                    "day": false,
+                    "start": "20:18",
+                    "end": "21:40",
+                    "exposure": 60,
+                    "filter": "Dual-band (Ha/OIII)",
+                    "taken": 72,
+                    "stacked": 68,
+                    "sec": 4080,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "c-23",
+                    "designation": "C 23",
+                    "name": "Галактика NGC 891",
+                    "type": "galaxy",
+                    "solar": false,
+                    "day": false,
+                    "start": "21:43",
+                    "end": "22:35",
+                    "exposure": 30,
+                    "filter": "Без фільтра",
+                    "taken": 86,
+                    "stacked": 3,
+                    "sec": 90,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "ngc-1931",
+                    "designation": "NGC 1931",
+                    "name": "Скупчення з туманністю",
+                    "type": "nebula",
+                    "solar": false,
+                    "day": false,
+                    "start": "22:38",
+                    "end": "02:15",
+                    "exposure": 60,
+                    "filter": "Dual-band (Ha/OIII)",
+                    "taken": 196,
+                    "stacked": 145,
+                    "sec": 8700,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "m-97",
+                    "designation": "M 97",
+                    "name": "Планетарна туманність",
+                    "type": "nebula",
+                    "solar": false,
+                    "day": false,
+                    "start": "02:18",
+                    "end": "05:45",
+                    "exposure": 60,
+                    "filter": "Dual-band (Ha/OIII)",
+                    "taken": 186,
+                    "stacked": 6,
+                    "sec": 360,
+                    "mosaic": false,
+                    "photo": false
+                }
+            ],
+            "moon": {
+                "illumination": 79,
+                "phase": "waxing_gibbous",
+                "waxing": true
+            },
+            "weather": {
+                "verdict": "partly",
+                "cloud": 85,
+                "temp_min": 10.5,
+                "wind": 1.6,
+                "humidity": 91
             }
         }
     ]
