@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-22T16:25:29+03:00",
+    "generated_at": "2026-10-22T23:47:40+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -7,11 +7,11 @@
         "tiktok": "https://www.tiktok.com/@nebo_blyzhche"
     },
     "totals": {
-        "objects": 65,
+        "objects": 66,
         "done": 21,
         "progress": 15,
-        "todo": 29,
-        "nights": 52,
+        "todo": 30,
+        "nights": 53,
         "deep_hours": 156.4,
         "first_night": "2026-08-12",
         "photos": 48
@@ -289,8 +289,8 @@
                 "poster": "vid/ic-1805.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null,
-                "tiktok": null
+                "youtube": "https://www.youtube.com/shorts/FB-EHQGQaSU",
+                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7699531627050847494"
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -1165,8 +1165,8 @@
                 "poster": "vid/m35.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": "https://www.youtube.com/shorts/BMk6qwDeOjE",
-                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7699178900714196245"
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "easy",
             "target_min": 60,
@@ -2788,6 +2788,33 @@
             "status": "todo"
         },
         {
+            "id": 123,
+            "slug": "ngc-1491",
+            "designation": "NGC 1491",
+            "name": "Емісійна туманність NGC 1491",
+            "type": "nebula",
+            "constellation": "Per",
+            "nights": 0,
+            "integration_sec": 0,
+            "first": null,
+            "last": null,
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": null,
+            "photo": null,
+            "difficulty": null,
+            "target_min": 240,
+            "percent": 0,
+            "status": "todo"
+        },
+        {
             "id": 31,
             "slug": "m27",
             "designation": "M 27",
@@ -3093,10 +3120,10 @@
             "name": "Місяць",
             "type": "moon",
             "constellation": null,
-            "nights": 18,
-            "integration_sec": 81,
+            "nights": 19,
+            "integration_sec": 82,
             "first": "2026-08-23",
-            "last": "2026-10-21",
+            "last": "2026-10-22",
             "text": {
                 "description_uk": "Місяць, наш єдиний природний супутник і найзручніша ціль для балкона: яскравий, великий, доступний у будь-якому місті й у будь-якому засвіченні. Середня відстань до нього близько 384 тисяч кілометрів, світло долітає за секунду з невеликим. Найцікавіший він не в повню, а поблизу термінатора, лінії дня і ночі: там тіні довгі, і кратери, гори та борозни показують рельєф. Щоночі термінатор зсувається, тож той самий кратер двічі однаковим не буває.",
                 "description_en": "The Moon, our only natural satellite and the most convenient balcony target: bright, large, reachable from any city under any light pollution. Its average distance is about 384,000 kilometres; the light takes a little over a second to arrive. It is most interesting not at full phase but near the terminator, the line between day and night: there the shadows are long and craters, mountains and rilles reveal the relief. The terminator shifts every night, so the same crater never looks the same twice.",
@@ -3107,8 +3134,8 @@
                 "en_auto": false
             },
             "shooting": {
-                "sessions": 39,
-                "frames": 11106,
+                "sessions": 40,
+                "frames": 11206,
                 "exposures": [
                     0.002,
                     0.0025,
@@ -3133,7 +3160,7 @@
                 "nights_by_month": {
                     "2026-08": 6,
                     "2026-09": 7,
-                    "2026-10": 5
+                    "2026-10": 6
                 },
                 "night_dates": [
                     "2026-08-23",
@@ -3153,7 +3180,8 @@
                     "2026-10-04",
                     "2026-10-06",
                     "2026-10-19",
-                    "2026-10-21"
+                    "2026-10-21",
+                    "2026-10-22"
                 ],
                 "longest_night_sec": 16,
                 "longest_night": "2026-09-28"
@@ -6031,7 +6059,7 @@
                     "stacked": 52,
                     "sec": 780,
                     "mosaic": false,
-                    "photo": false
+                    "photo": true
                 },
                 {
                     "slug": "ic-405",
@@ -8105,7 +8133,7 @@
                     "stacked": 195,
                     "sec": 5850,
                     "mosaic": false,
-                    "photo": false
+                    "photo": true
                 },
                 {
                     "slug": "ngc-2244",
@@ -8834,23 +8862,57 @@
                 "wind": 1.6,
                 "humidity": 91
             }
+        },
+        {
+            "date": "2026-10-22",
+            "sessions": [
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "21:34",
+                    "end": "21:39",
+                    "exposure": 0.008,
+                    "filter": "Без фільтра",
+                    "taken": 100,
+                    "stacked": 100,
+                    "sec": 1,
+                    "mosaic": false,
+                    "photo": false
+                }
+            ],
+            "moon": {
+                "illumination": 87,
+                "phase": "waxing_gibbous",
+                "waxing": true
+            },
+            "weather": {
+                "verdict": "cloudy",
+                "cloud": 97,
+                "temp_min": 10.2,
+                "wind": 2.1,
+                "humidity": 75
+            }
         }
     ],
     "science_totals": {
-        "observations": 1086,
-        "objects": 53,
+        "observations": 1087,
+        "objects": 54,
         "curves": 25,
-        "nights": 19,
+        "nights": 20,
         "first": "2026-08-20",
-        "last": "2026-10-19",
+        "last": "2026-10-22",
         "obscodes": [
             "KTFA"
         ],
         "by_program": {
-            "aavso": 1086
+            "aavso": 1087
         },
         "by_kind": {
-            "variable": 52,
+            "variable": 53,
             "supernova": 1
         }
     }

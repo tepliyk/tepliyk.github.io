@@ -2,7 +2,7 @@
 
 > Nebulae, galaxies and Messier objects shot with a DWARF Mini smart telescope from a light-polluted city balcony in Ukraine: real results, hours of light and night logs.
 
-Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Mini smart telescope from a city balcony in Ukraine (only the eastern half of the sky is visible, light-polluted city sky). The site is rebuilt automatically after each night of shooting. Challenge: 21 of 65 objects captured, 52 nights, 156.4 h of deep-sky light. Messier: 15 of 100 reachable captured. Last update: 2026-10-22. All images are the author's own; the Telegram channel is in Ukrainian.
+Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Mini smart telescope from a city balcony in Ukraine (only the eastern half of the sky is visible, light-polluted city sky). The site is rebuilt automatically after each night of shooting. Challenge: 21 of 66 objects captured, 53 nights, 156.4 h of deep-sky light. Messier: 15 of 100 reachable captured. Last update: 2026-10-22. All images are the author's own; the Telegram channel is in Ukrainian.
 
 ## Main pages
 
@@ -64,7 +64,7 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 
 ## Solar System
 
-- [Moon](https://neboblyzhche.com/en/misiac/): 18 nights of observations
+- [Moon](https://neboblyzhche.com/en/misiac/): 19 nights of observations
 - [Saturn](https://neboblyzhche.com/en/saturn/): 4 nights of observations
 - [Sun](https://neboblyzhche.com/en/sonce/): 13 nights of observations
 - [Mars](https://neboblyzhche.com/en/mars/): 1 night of observations
@@ -89,6 +89,7 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 - M 46: Cluster, Puppis
 - IC 2177: Nebula, Monoceros
 - NGC 2359: Nebula, Canis Major
+- NGC 1491: Nebula, Per
 - Dumbbell Nebula · M 27: Nebula, Vulpecula
 - M 74: Galaxy, Pisces
 - NGC 2683: Galaxy, Lynx
