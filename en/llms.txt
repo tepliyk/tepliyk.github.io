@@ -6,57 +6,57 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 
 ## Main pages
 
-- [Home (English)](https://tepliyk.github.io/en/): challenge progress, gallery, Messier map, Solar System
-- [Home (Ukrainian)](https://tepliyk.github.io/): original version
-- [data.json](https://tepliyk.github.io/data.json): machine-readable data for all objects (names in Ukrainian)
-- [Ukrainian llms.txt](https://tepliyk.github.io/llms.txt)
-- [Nebulae](https://tepliyk.github.io/en/nebulae/)
-- [Galaxies](https://tepliyk.github.io/en/galaxies/)
-- [Clusters](https://tepliyk.github.io/en/clusters/)
-- [Messier](https://tepliyk.github.io/en/messier/)
-- [Solar system](https://tepliyk.github.io/en/solar-system/)
-- [DWARF Mini](https://tepliyk.github.io/en/equipment/dwarf-mini/)
-- [Processing](https://tepliyk.github.io/en/processing/)
-- [Night log](https://tepliyk.github.io/en/log/)
-- [Science](https://tepliyk.github.io/en/science/)
+- [Home (English)](https://neboblyzhche.com/en/): challenge progress, gallery, Messier map, Solar System
+- [Home (Ukrainian)](https://neboblyzhche.com/): original version
+- [data.json](https://neboblyzhche.com/data.json): machine-readable data for all objects (names in Ukrainian)
+- [Ukrainian llms.txt](https://neboblyzhche.com/llms.txt)
+- [Nebulae](https://neboblyzhche.com/en/nebulae/)
+- [Galaxies](https://neboblyzhche.com/en/galaxies/)
+- [Clusters](https://neboblyzhche.com/en/clusters/)
+- [Messier](https://neboblyzhche.com/en/messier/)
+- [Solar system](https://neboblyzhche.com/en/solar-system/)
+- [DWARF Mini](https://neboblyzhche.com/en/equipment/dwarf-mini/)
+- [Processing](https://neboblyzhche.com/en/processing/)
+- [Night log](https://neboblyzhche.com/en/log/)
+- [Science](https://neboblyzhche.com/en/science/)
 
 ## Captured
 
-- [Rosette Nebula · C 50](https://tepliyk.github.io/en/ngc-2244/): Nebula, Monoceros, 27 h 4 min of light over 10 nights
-- [Beehive Cluster (Praesepe) · M 44](https://tepliyk.github.io/en/m44/): Cluster, Cancer, 1 h 32 min of light over 3 nights
-- [M 77](https://tepliyk.github.io/en/m77/): Galaxy, 5 h 40 min of light over 3 nights
-- [Heart Nebula · IC 1805](https://tepliyk.github.io/en/ic-1805/): Nebula, Cassiopeia, 12 h 40 min of light over 9 nights
-- [Tadpoles Nebula · IC 410](https://tepliyk.github.io/en/ic-410/): Nebula, Auriga, 5 h 57 min of light over 5 nights
-- [Pacman Nebula · NGC 281](https://tepliyk.github.io/en/ngc-281/): Nebula, Cassiopeia, 5 h 1 min of light over 4 nights
-- [Monkey Head Nebula · NGC 2174](https://tepliyk.github.io/en/ngc-2174/): Nebula, Orion, 4 h 50 min of light over 2 nights
-- [Christmas Tree (Cone) Nebula · NGC 2264](https://tepliyk.github.io/en/ngc-2264/): Nebula, Monoceros, 5 h 21 min of light over 4 nights
-- [Open cluster M36 · M 36](https://tepliyk.github.io/en/m36/): Cluster, Auriga, 1 h 38 min of light over 1 night
-- [Open cluster M38 · M 38](https://tepliyk.github.io/en/m38/): Cluster, Auriga, 1 h 11 min of light over 1 night
-- [Jellyfish Nebula · IC 443](https://tepliyk.github.io/en/ic-443/): Nebula, Gemini, 7 h 17 min of light over 6 nights
-- [Flaming Star Nebula · IC 405](https://tepliyk.github.io/en/ic-405/): Nebula, Auriga, 5 h 19 min of light over 3 nights
-- [California Nebula · NGC 1499](https://tepliyk.github.io/en/ngc-1499/): Nebula, Perseus, 5 h 1 min of light over 3 nights
-- [Orion Nebula · M 42](https://tepliyk.github.io/en/m42/): Nebula, Orion, 2 h 14 min of light over 3 nights
-- [Soul Nebula · IC 1848](https://tepliyk.github.io/en/ic-1848/): Nebula, Cassiopeia, 4 h 9 min of light over 3 nights
-- [Double Cluster in Perseus (h Persei) · NGC 869](https://tepliyk.github.io/en/ngc-869/): Cluster, Perseus, 1 h 29 min of light over 3 nights
-- [Open cluster M35 · M 35](https://tepliyk.github.io/en/m35/): Cluster, Gemini, 1 h 56 min of light over 2 nights
-- [Open cluster M103 · M 103](https://tepliyk.github.io/en/m103/): Cluster, Cassiopeia, 2 h 12 min of light over 3 nights
-- [Crab Nebula · M 1](https://tepliyk.github.io/en/m1/): Nebula, Taurus, 8 h 44 min of light over 3 nights
-- [Andromeda Galaxy · M 31](https://tepliyk.github.io/en/m31/): Galaxy, Andromeda, 4 h 53 min of light over 5 nights
-- [Pleiades · M 45](https://tepliyk.github.io/en/m45/): Cluster, Taurus, 3 h 49 min of light over 2 nights
+- [Rosette Nebula · C 50](https://neboblyzhche.com/en/ngc-2244/): Nebula, Monoceros, 27 h 4 min of light over 10 nights
+- [Beehive Cluster (Praesepe) · M 44](https://neboblyzhche.com/en/m44/): Cluster, Cancer, 1 h 32 min of light over 3 nights
+- [M 77](https://neboblyzhche.com/en/m77/): Galaxy, 5 h 40 min of light over 3 nights
+- [Heart Nebula · IC 1805](https://neboblyzhche.com/en/ic-1805/): Nebula, Cassiopeia, 12 h 40 min of light over 9 nights
+- [Tadpoles Nebula · IC 410](https://neboblyzhche.com/en/ic-410/): Nebula, Auriga, 5 h 57 min of light over 5 nights
+- [Pacman Nebula · NGC 281](https://neboblyzhche.com/en/ngc-281/): Nebula, Cassiopeia, 5 h 1 min of light over 4 nights
+- [Monkey Head Nebula · NGC 2174](https://neboblyzhche.com/en/ngc-2174/): Nebula, Orion, 4 h 50 min of light over 2 nights
+- [Christmas Tree (Cone) Nebula · NGC 2264](https://neboblyzhche.com/en/ngc-2264/): Nebula, Monoceros, 5 h 21 min of light over 4 nights
+- [Open cluster M36 · M 36](https://neboblyzhche.com/en/m36/): Cluster, Auriga, 1 h 38 min of light over 1 night
+- [Open cluster M38 · M 38](https://neboblyzhche.com/en/m38/): Cluster, Auriga, 1 h 11 min of light over 1 night
+- [Jellyfish Nebula · IC 443](https://neboblyzhche.com/en/ic-443/): Nebula, Gemini, 7 h 17 min of light over 6 nights
+- [Flaming Star Nebula · IC 405](https://neboblyzhche.com/en/ic-405/): Nebula, Auriga, 5 h 19 min of light over 3 nights
+- [California Nebula · NGC 1499](https://neboblyzhche.com/en/ngc-1499/): Nebula, Perseus, 5 h 1 min of light over 3 nights
+- [Orion Nebula · M 42](https://neboblyzhche.com/en/m42/): Nebula, Orion, 2 h 14 min of light over 3 nights
+- [Soul Nebula · IC 1848](https://neboblyzhche.com/en/ic-1848/): Nebula, Cassiopeia, 4 h 9 min of light over 3 nights
+- [Double Cluster in Perseus (h Persei) · NGC 869](https://neboblyzhche.com/en/ngc-869/): Cluster, Perseus, 1 h 29 min of light over 3 nights
+- [Open cluster M35 · M 35](https://neboblyzhche.com/en/m35/): Cluster, Gemini, 1 h 56 min of light over 2 nights
+- [Open cluster M103 · M 103](https://neboblyzhche.com/en/m103/): Cluster, Cassiopeia, 2 h 12 min of light over 3 nights
+- [Crab Nebula · M 1](https://neboblyzhche.com/en/m1/): Nebula, Taurus, 8 h 44 min of light over 3 nights
+- [Andromeda Galaxy · M 31](https://neboblyzhche.com/en/m31/): Galaxy, Andromeda, 4 h 53 min of light over 5 nights
+- [Pleiades · M 45](https://neboblyzhche.com/en/m45/): Cluster, Taurus, 3 h 49 min of light over 2 nights
 
 ## Gathering light
 
-- [Triangulum Galaxy · M 33](https://tepliyk.github.io/en/m33/): Galaxy, Triangulum, 7 h 50 min of light over 6 nights, 97% of goal
-- [Open cluster M37 · M 37](https://tepliyk.github.io/en/m37/): Cluster, Auriga, 58 min of light over 1 night, 96% of goal
-- [Horsehead Nebula · IC 434](https://tepliyk.github.io/en/ic-434/): Nebula, Orion, 6 h 2 min of light over 6 nights, 75% of goal
+- [Triangulum Galaxy · M 33](https://neboblyzhche.com/en/m33/): Galaxy, Triangulum, 7 h 50 min of light over 6 nights, 97% of goal
+- [Open cluster M37 · M 37](https://neboblyzhche.com/en/m37/): Cluster, Auriga, 58 min of light over 1 night, 96% of goal
+- [Horsehead Nebula · IC 434](https://neboblyzhche.com/en/ic-434/): Nebula, Orion, 6 h 2 min of light over 6 nights, 75% of goal
 - NGC 1931: Nebula, Auriga, 2 h 33 min of light over 2 nights, 63% of goal
-- [Open cluster M34 · M 34](https://tepliyk.github.io/en/m34/): Cluster, Perseus, 37 min of light over 1 night, 61% of goal
+- [Open cluster M34 · M 34](https://neboblyzhche.com/en/m34/): Cluster, Perseus, 37 min of light over 1 night, 61% of goal
 - IC 63: Nebula, 2 h 13 min of light over 2 nights, 55% of goal
-- [Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30](https://tepliyk.github.io/en/c-30/): Galaxy, Pegasus, 3 h 56 min of light over 9 nights, 49% of goal
-- [Galaxy NGC 7479 (Caldwell 44) · C 44](https://tepliyk.github.io/en/c-44/): Galaxy, Pegasus, 3 h 38 min of light over 3 nights, 45% of goal
+- [Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30](https://neboblyzhche.com/en/c-30/): Galaxy, Pegasus, 3 h 56 min of light over 9 nights, 49% of goal
+- [Galaxy NGC 7479 (Caldwell 44) · C 44](https://neboblyzhche.com/en/c-44/): Galaxy, Pegasus, 3 h 38 min of light over 3 nights, 45% of goal
 - M 76: Nebula, Perseus, 1 h 38 min of light over 2 nights, 40% of goal
 - C 23: Galaxy, 1 h 59 min of light over 5 nights, 39% of goal
-- [Galaxy NGC 2403 in Camelopardalis · C 7](https://tepliyk.github.io/en/ngc-2403/): Galaxy, Camelopardalis, 2 h 54 min of light over 2 nights, 36% of goal
+- [Galaxy NGC 2403 in Camelopardalis · C 7](https://neboblyzhche.com/en/ngc-2403/): Galaxy, Camelopardalis, 2 h 54 min of light over 2 nights, 36% of goal
 - Galaxy M106 · M 106: Galaxy, Canes Venatici, 2 h 43 min of light over 1 night, 33% of goal
 - NGC 7635: Nebula, 37 min of light over 2 nights, 15% of goal
 - Reflection nebula M78 · M 78: Nebula, Orion, 47 min of light over 2 nights, 9% of goal
@@ -64,10 +64,10 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 
 ## Solar System
 
-- [Moon](https://tepliyk.github.io/en/misiac/): 18 nights of observations
-- [Saturn](https://tepliyk.github.io/en/saturn/): 4 nights of observations
-- [Sun](https://tepliyk.github.io/en/sonce/): 13 nights of observations
-- [Mars](https://tepliyk.github.io/en/mars/): 1 night of observations
+- [Moon](https://neboblyzhche.com/en/misiac/): 18 nights of observations
+- [Saturn](https://neboblyzhche.com/en/saturn/): 4 nights of observations
+- [Sun](https://neboblyzhche.com/en/sonce/): 13 nights of observations
+- [Mars](https://neboblyzhche.com/en/mars/): 1 night of observations
 
 ## Still ahead
 
@@ -112,5 +112,5 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 
 ## Optional
 
-- [Privacy policy](https://tepliyk.github.io/privacy.html)
-- [Sitemap](https://tepliyk.github.io/sitemap.xml)
+- [Privacy policy](https://neboblyzhche.com/privacy.html)
+- [Sitemap](https://neboblyzhche.com/sitemap.xml)
