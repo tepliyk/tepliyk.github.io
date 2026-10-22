@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070B16">
+<title>Наукові спостереження з балкона: змінні зорі й наднова для AAVSO | Небо ближче</title>
+<meta name="description" content="Фотометрія змінних зір і наднової смарт-телескопом DWARF Mini з міського балкона в Україні: 1 086 вимірювань у базі AAVSO під кодом KTFA, криві блиску й методика.">
+<link rel="canonical" href="https://tepliyk.github.io/science/">
+<link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/science/">
+<link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/science/">
+<link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/science/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Небо ближче">
+<meta property="og:title" content="Наука з балкона: змінні зорі для AAVSO">
+<meta property="og:description" content="Фотометрія змінних зір і наднової смарт-телескопом DWARF Mini з міського балкона в Україні: 1 086 вимірювань у базі AAVSO під кодом KTFA, криві блиску й методика.">
+<meta property="og:url" content="https://tepliyk.github.io/science/">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:image" content="https://tepliyk.github.io/img/ngc-2244.jpg">
+<meta property="og:image:width" content="1622">
+<meta property="og:image:height" content="1800">
+<meta property="og:image:alt" content="Туманність Розетка (NGC 2244) · C 50">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/jpeg" href="../logo.jpg">
+<!-- inline:site.css (AstroHub site:build синхронізує з site.css; редагуй site.css) --><style>
+/* «Небо ближче» · дизайн «нічний балкон». Єдине джерело стилів: AstroHub site:build вбудовує цей файл у index.html та en/index.html. */
+/* Фолбеки з метриками Onest/Unbounded: поки шрифти не завантажились, текст займає те саме місце (без CLS). */
+@font-face{font-family:"Onest Fallback";src:local("Arial"),local("ArialMT");size-adjust:105.24%;ascent-override:92.17%;descent-override:28.98%;line-gap-override:0%}
+@font-face{font-family:"Unbounded Fallback";src:local("Arial Bold"),local("Arial-BoldMT"),local("Arial");font-weight:700;size-adjust:132%;ascent-override:75.2%;descent-override:18.5%;line-gap-override:0%}
+:root{
+  --f-body:Onest,"Onest Fallback",system-ui,sans-serif;--f-display:Unbounded,"Unbounded Fallback",Onest,sans-serif;
+  --ink:#070B16;--surface:#0E1424;--surface-2:#141B2F;--border:rgba(255,255,255,.08);--border-2:rgba(255,255,255,.14);--border-3:#3A4560;
+  --text:#EEF2FA;--soft:#C9D0DF;--muted:#A9B2C7;--dim:#8C97B0;
+  --accent:#FFB547;--accent-h:#FFC466;--on-accent:#1A1205;--accent-text:#FFB547;--accent-soft:rgba(255,181,71,.14);--accent-border:rgba(255,181,71,.5);
+  --done:#6CB8FF;--on-done:#06182B;--done-text:#6CB8FF;--todo:#232C44;--track:rgba(255,255,255,.08);
+  --head:rgba(7,11,22,.82);--hover:rgba(255,255,255,.06);--hover-2:rgba(255,255,255,.11);
+  --chip-bg:rgba(108,184,255,.1);--chip-border:rgba(108,184,255,.25);--chip-text:#BFE0FF;
+  --seg-on-bg:#EEF2FA;--seg-on-fg:#070B16;--badge-todo:rgba(7,11,22,.75);--shadow:rgba(0,0,0,.6);
+  --head-h:69px;--r:22px
+}
+[data-theme=light]{
+  --ink:#F4F6FB;--surface:#FFFFFF;--surface-2:#EBEFF6;--border:rgba(15,23,42,.09);--border-2:rgba(15,23,42,.16);--border-3:#A7B1C4;
+  --text:#0F172A;--soft:#334155;--muted:#4B5568;--dim:#5B6577;
+  --accent:#FFB547;--accent-h:#FFA62B;--on-accent:#1A1205;--accent-text:#A35A00;--accent-soft:rgba(255,181,71,.2);--accent-border:rgba(204,122,0,.5);
+  --done:#1F6FD1;--on-done:#FFFFFF;--done-text:#1F63C0;--todo:#E1E6F0;--track:rgba(15,23,42,.08);
+  --head:rgba(244,246,251,.85);--hover:rgba(15,23,42,.05);--hover-2:rgba(15,23,42,.09);
+  --chip-bg:rgba(31,111,209,.08);--chip-border:rgba(31,111,209,.25);--chip-text:#1F4F96;
+  --seg-on-bg:#0F172A;--seg-on-fg:#FFFFFF;--badge-todo:rgba(255,255,255,.9);--shadow:rgba(15,23,42,.18)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--text);font:16px/1.6 var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .3s,color .3s}
+a{color:inherit}
+button{font:inherit;color:inherit}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;letter-spacing:-.02em;margin:0;line-height:1.15}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* Шапка */
+header{position:sticky;top:0;z-index:30;background:var(--head);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.topbar{display:flex;align-items:center;gap:12px;min-height:68px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.brand img{width:40px;height:40px;border-radius:50%;border:1px solid var(--border-2);flex:none}
+.brand span{display:flex;flex-direction:column;line-height:1.15}
+.brand b{font:600 16px var(--f-display)}
+.brand small{font-size:12.5px;color:var(--muted)}
+.sections{display:flex;align-items:center;gap:2px;margin-left:auto}
+.sections a,.dd-btn{display:inline-flex;align-items:center;gap:4px;padding:10px 14px;border-radius:999px;color:var(--soft);text-decoration:none;font:500 15px var(--f-body);white-space:nowrap;border:0;background:transparent;cursor:pointer}
+.sections a:hover,.dd-btn:hover{background:var(--hover-2);color:var(--text)}
+.sections a[aria-current],.dd-btn.is-cur{color:var(--accent-text);background:var(--accent-soft)}
+.dd-btn svg{width:16px;height:16px;transition:transform .2s}
+.dd{position:relative}
+.dd-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;min-width:220px;padding:6px;border-radius:16px;background:var(--surface);border:1px solid var(--border-2);box-shadow:0 20px 40px -12px var(--shadow);z-index:40}
+.dd-menu::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px}
+.dd-menu a{display:flex;border-radius:10px;padding:10px 12px}
+.dd:hover .dd-menu,.dd:focus-within .dd-menu,.dd.open .dd-menu{display:block}
+.dd:hover .dd-btn svg,.dd.open .dd-btn svg{transform:rotate(180deg)}
+.actions{display:flex;align-items:center;gap:8px;margin-left:8px}
+/* Перемикач мови: дві кнопки, поточна підсвічена */
+.lang{display:inline-flex;align-items:center;height:44px;padding:3px;border-radius:999px;border:1px solid var(--border-2)}
+.lang a,.lang span{min-width:38px;height:36px;display:grid;place-items:center;border-radius:999px;font:600 13px var(--f-body);letter-spacing:.04em;text-decoration:none;color:var(--muted)}
+.lang a:hover{color:var(--text);background:var(--hover-2)}
+.lang span[aria-current]{background:var(--seg-on-bg);color:var(--seg-on-fg)}
+.actions .menu-btn,.theme-row{display:none}
+.menu-btn .i-close,header.open .menu-btn .i-open{display:none}
+header.open .menu-btn .i-close{display:block}
+/* Підказка про іншу мову (з'являється лише новому відвідувачу, внизу, не зсуває сторінку) */
+.lang-hint{position:fixed;left:16px;bottom:20px;z-index:35;display:flex;align-items:center;gap:10px;max-width:440px;padding:10px 10px 10px 16px;border-radius:18px;background:var(--surface);border:1px solid var(--border-2);box-shadow:0 20px 40px -12px var(--shadow);font-size:14.5px;color:var(--soft);animation:hint-in .3s ease-out}
+.lang-hint .btn{min-height:38px;padding:0 14px;font-size:14px;flex:none}
+.lang-hint button{flex:none;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.lang-hint button:hover{background:var(--hover-2);color:var(--text)}
+.lang-hint svg{width:18px;height:18px}
+@keyframes hint-in{from{opacity:0;transform:translateY(10px)}}
+.icon-btn{min-width:44px;height:44px;display:grid;place-items:center;border-radius:999px;border:1px solid var(--border-2);background:transparent;color:var(--soft);text-decoration:none;font-size:14px;font-weight:600;cursor:pointer;padding:0 10px}
+.icon-btn:hover{background:var(--hover-2);color:var(--text)}
+.icon-btn svg{width:20px;height:20px}
+.theme .sun{display:none}[data-theme=light] .theme .sun{display:block}[data-theme=light] .theme .moon{display:none}
+.btn:active{transform:scale(.97)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:0 20px;border-radius:999px;font:600 15px var(--f-body);text-decoration:none;white-space:nowrap;border:1px solid var(--border-2);background:var(--hover);color:var(--text);cursor:pointer;transition:background .2s,transform .15s}
+.btn:hover{background:var(--hover-2)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-p{background:var(--accent);border-color:transparent;color:var(--on-accent)}
+.btn-p:hover{background:var(--accent-h)}
+.btn-lg{min-height:52px;padding:0 24px;font-size:16px}
+
+/* Секції */
+section{padding:24px 0 64px;scroll-margin-top:calc(var(--head-h) + 12px)}
+.sec-head{display:flex;flex-direction:column;gap:10px;max-width:720px;margin-bottom:22px}
+.sec-head h2{font-size:clamp(24px,3vw,36px)}
+.sec-head p{margin:0;color:var(--soft);font-size:17px}
+.row-head{display:flex;align-items:baseline;justify-content:space-between;gap:6px 16px;flex-wrap:wrap;margin-bottom:16px}
+.row-head h2{font-size:24px}
+.row-head span{font-size:14px;color:var(--muted)}
+.meter{display:block;height:6px;border-radius:99px;background:var(--track);overflow:hidden}
+.meter i{display:block;height:100%;border-radius:99px;background:var(--accent)}
+.meter.done i{background:var(--done)}
+.empty{grid-column:1/-1;text-align:center;color:var(--dim);padding:32px}
+
+/* Зараз збираю світло */
+#now{padding-bottom:48px}
+.now-row{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,1fr);gap:16px;overflow-x:auto;scrollbar-width:none;min-height:90px;padding:2px 2px 6px}
+.now-row::-webkit-scrollbar{display:none}
+.now{display:flex;align-items:center;gap:14px;padding:12px;border-radius:20px;background:var(--surface);border:1px solid var(--border);text-align:left;color:var(--text);transition:transform .25s,border-color .25s}
+a.now{cursor:zoom-in;text-decoration:none}
+a.now:hover{transform:translateY(-3px);border-color:var(--accent-border)}
+.now img,.now .noimg{width:64px;height:64px;border-radius:14px;object-fit:cover;flex:none;background:var(--surface-2);display:block}
+.now .info{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
+.now .top{display:flex;justify-content:space-between;gap:8px}
+.now .top b{font-weight:600;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.now .top em{font-style:normal;font-weight:700;color:var(--accent-text);font-size:14px}
+.now .hint{font-size:13px;color:var(--muted)}
+
+/* Галерея */
+.filters{position:sticky;top:var(--head-h);z-index:20;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;padding:12px 0;margin-bottom:12px;background:var(--ink)}
+.seg{display:flex;gap:4px;padding:4px;border-radius:999px;background:var(--surface);border:1px solid var(--border)}
+.seg button{min-height:40px;padding:0 16px;border:0;border-radius:999px;background:transparent;color:var(--soft);font-weight:600;font-size:14.5px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;line-height:1.15}
+.seg button:hover{color:var(--text)}
+.seg button .n{font-weight:500;opacity:.75}
+.seg button[aria-pressed=true]{background:var(--seg-on-bg);color:var(--seg-on-fg)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--border-2);background:transparent;color:var(--soft);font-weight:500;font-size:14.5px;cursor:pointer;white-space:nowrap}
+.chip:hover{color:var(--text)}
+.chip[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent-border);color:var(--accent-text)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.t{display:flex;flex-direction:column;border-radius:var(--r);overflow:hidden;background:var(--surface);border:1px solid var(--border);text-align:left;padding:0;color:var(--text);transition:transform .25s,border-color .25s}
+a.t{cursor:zoom-in;text-decoration:none}
+a.t:hover{transform:translateY(-3px);border-color:var(--accent-border)}
+.t .pic{position:relative;display:block;aspect-ratio:4/3;background:var(--surface-2);overflow:hidden}
+.t .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+a.t:hover .pic img{transform:scale(1.04)}
+.t .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--dim);text-align:center;padding:8px}
+.t .ph svg{width:30px;height:30px}
+.t .ph b{font:600 18px var(--f-display);color:var(--soft)}
+.t .ph span{font-size:13px}
+.badge{position:absolute;top:12px;left:12px;padding:5px 10px;border-radius:999px;font-size:12.5px;font-weight:600;line-height:1.3}
+.badge.done{background:var(--done);color:var(--on-done)}
+.badge.progress{background:var(--accent);color:var(--on-accent)}
+.badge.todo{background:var(--badge-todo);color:var(--soft);backdrop-filter:blur(6px)}
+.t .body{display:flex;flex-direction:column;gap:10px;padding:16px 18px 18px;flex:1}
+.t .name{display:flex;flex-direction:column;line-height:1.35}
+.t .name b{font-size:17px;font-weight:600}
+.t .name span{font-size:13.5px;color:var(--muted)}
+.t .meta{display:flex;justify-content:space-between;gap:8px;font-size:13.5px;color:var(--muted);margin-top:auto}
+.t .meta b{color:var(--text);font-weight:600}
+.more{display:flex;justify-content:center;margin-top:28px}
+.more[hidden]{display:none}
+
+/* Мессьє */
+.panel{border-radius:28px;background:var(--surface);border:1px solid var(--border);padding:clamp(18px,3vw,36px);display:flex;flex-direction:column;gap:22px}
+.mz-top{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:flex-end}
+.mz-top .sec-head{margin:0}
+.mz-score{display:flex;align-items:baseline;gap:12px}
+.mz-score b{font:700 48px/1 var(--f-display);color:var(--done-text)}
+.mz-score span{color:var(--muted);font-size:15px;line-height:1.4}
+.mz{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:6px}
+.q{position:relative;aspect-ratio:1;border-radius:8px;display:grid;place-items:center;font-size:11.5px;font-weight:600;border:1px solid transparent;padding:0;overflow:hidden;font-variant-numeric:tabular-nums;line-height:1}
+.q.captured{background:var(--done);color:var(--on-done)}
+.q.progress{background:var(--accent);color:var(--on-accent)}
+.q.todo{background:var(--todo);color:var(--muted)}
+.q.unreachable{background:transparent;border:1px dashed var(--border-3);color:var(--dim)}
+a.q{cursor:zoom-in;text-decoration:none;transition:transform .15s}
+a.q:hover{transform:translateY(-2px)}
+.q small{position:absolute;right:4px;top:3px;font-size:9px;font-weight:700}
+.legend{display:flex;flex-wrap:wrap;gap:10px 20px;font-size:14px;color:var(--soft)}
+.legend span{display:flex;align-items:center;gap:8px}
+.legend i{width:14px;height:14px;border-radius:4px;display:block;flex:none}
+.legend .lc{background:var(--done)}.legend .lp{background:var(--accent)}.legend .lt{background:var(--todo)}.legend .lu{border:1px dashed var(--border-3)}
+
+/* Сонячна система */
+.solar{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px}
+.s{display:flex;flex-direction:column;align-items:center;gap:12px;padding:22px 16px;border-radius:var(--r);background:var(--surface);border:1px solid var(--border);text-align:center;color:var(--text);transition:transform .25s,border-color .25s}
+a.s{cursor:zoom-in;text-decoration:none}
+a.s:hover{transform:translateY(-3px);border-color:var(--accent-border)}
+.orb{width:112px;height:112px;border-radius:50%;overflow:hidden;background:#000;display:grid;place-items:center;flex:none}
+.orb img{width:100%;height:100%;object-fit:cover;display:block}
+.orb.none{background:var(--surface-2);color:var(--dim);font-size:13px;padding:10px}
+.s .nm{display:flex;flex-direction:column;line-height:1.35}
+.s .nm b{font-size:17px;font-weight:600}
+.s .nm span{font-size:13.5px;color:var(--muted)}
+.fly-row{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(128px,15vw,168px);gap:14px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:var(--border-3) transparent;padding:2px 2px 10px}
+.fly-row::-webkit-scrollbar{height:6px}.fly-row::-webkit-scrollbar-track{background:transparent}.fly-row::-webkit-scrollbar-thumb{background:var(--border-3);border-radius:3px}
+.fly{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--text);scroll-snap-align:start}
+.fly .pv{position:relative;display:block;aspect-ratio:540/816;border-radius:18px;overflow:hidden;background:#000;border:1px solid var(--border)}
+.fly img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.fly svg{position:absolute;left:10px;bottom:10px;width:32px;height:32px;color:#fff}
+.fly b{font-size:14.5px;font-weight:600;line-height:1.3}
+.fly:hover img,.fly:focus-visible img{transform:scale(1.06)}
+
+/* Як народжується кадр: чотири моменти по порядку, без номерів і плиток */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+.step{display:flex;flex-direction:column;gap:10px}
+.step b{font:600 19px/1.25 var(--f-body)}
+.step span{color:var(--soft);font-size:16px;line-height:1.55}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr;gap:28px 24px}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* Про мене: широкий абзац праворуч, факти колонкою ліворуч */
+.about{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:32px 64px;align-items:start}
+.about .txt{order:2;min-width:0;display:flex;flex-direction:column;gap:18px}
+.about h2{font-size:clamp(28px,3.2vw,44px)}
+.about p{margin:0;color:var(--text);font-size:clamp(17px,1.45vw,20px);line-height:1.6;max-width:64ch}
+.about .sign{font:600 17px var(--f-display);color:var(--accent-text)}
+p.aff{font-size:14px;line-height:1.5;color:var(--muted)}p.aff a{color:var(--accent-text)}
+.facts{order:1;list-style:none;margin:0;padding:8px 0 0;display:flex;flex-direction:column;gap:22px}
+.fact{display:flex;flex-direction:column;gap:3px;line-height:1.4}
+.fact b{font-weight:600;font-size:16px}
+.fact span{font-size:14px;color:var(--muted)}
+@media (max-width:860px){.about{grid-template-columns:1fr}.about .txt{order:1}.facts{order:2;display:grid;grid-template-columns:1fr 1fr;gap:20px 24px}}
+
+/* Соцмережі: рядки з двома кінцями, без кольорових плиток */
+.links{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:0 48px}
+.link{display:flex;align-items:center;gap:14px;min-height:68px;padding:10px 0;text-decoration:none;color:var(--text)}
+.link .ic{width:22px;height:22px;flex:none;color:var(--soft)}
+.link .tx{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.35}
+.link .tx b{font-weight:600;font-size:16px;transition:color .2s}
+.link .tx small{font-size:14px;color:var(--muted)}
+.link .ls{display:none}
+.link .go{width:18px;height:18px;color:var(--muted);flex:none;transition:transform .25s}
+.link:hover .tx b{color:var(--accent-text)}
+.link:hover .go{transform:translate(3px,-3px)}
+
+/* Сторінка об'єкта */
+.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:14px;color:var(--muted);padding:24px 0 6px}
+.crumbs a{color:var(--muted);text-decoration:none}.crumbs a:hover{color:var(--text)}
+.obj-head{display:flex;flex-direction:column;gap:8px;padding:6px 0 20px}
+.obj-head h1{font-size:clamp(26px,4vw,46px);font-weight:700;line-height:1.12}
+.obj-head p{margin:0;color:var(--muted);font-size:16px}
+.obj-fig{margin:0 0 24px}
+.obj-fig picture{display:block}
+.obj-fig img{display:block;width:100%;height:auto;border-radius:24px;border:1px solid var(--border);background:#000}
+.obj-fig figcaption{margin-top:10px;font-size:14px;color:var(--muted)}
+.obj-facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin:0 0 24px}
+.obj-facts div{padding:14px 16px;border-radius:18px;background:var(--surface);border:1px solid var(--border);line-height:1.3}
+.obj-facts dt{font-size:13.5px;color:var(--muted)}
+.obj-facts dd{margin:4px 0 0;font:600 17px var(--f-display)}
+/* Широкий екран: кадр і цифри поруч, щоб головне було видно без прокрутки */
+@media (min-width:1001px){
+  .obj-top{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:20px;align-items:start;margin:0 0 28px}
+  .obj-top .obj-fig{margin:0}
+  .obj-top .obj-fig a{display:flex;justify-content:center;border-radius:24px;background:#000}
+  .obj-top .obj-fig img{width:auto;max-width:100%;max-height:calc(100svh - var(--head-h) - 190px);min-height:320px;object-fit:contain}
+  .obj-top .obj-facts{grid-template-columns:1fr;gap:8px;margin:0;position:sticky;top:calc(var(--head-h) + 16px)}
+  .obj-top .obj-facts div{padding:11px 14px}
+  .obj-top .obj-facts dt{font-size:13px}
+  .obj-top .obj-facts dd{font-size:16px;margin-top:2px}
+  .obj-head{padding-bottom:16px}
+}
+.obj-text{max-width:760px;color:var(--soft);font-size:17px;margin:0 0 24px;line-height:1.55}
+.obj-text h2{font-size:clamp(19px,2.4vw,24px);font-weight:700;line-height:1.2;margin:22px 0 8px;color:var(--text)}
+.obj-text h2:first-child{margin-top:0}
+.obj-text p{margin:0 0 12px}
+.obj-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:48px}
+/* Журнал ночей (SEO-09) */
+.log-tw{overflow-x:auto;margin:0 0 28px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.log-t{width:100%;border-collapse:collapse;font-size:15px;min-width:640px}
+.log-t th,.log-t td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap}
+.log-t th{font-size:13px;font-weight:600;color:var(--muted)}
+.log-t tr:last-child td{border-bottom:0}
+.log-t td:nth-child(2){white-space:normal;color:var(--text)}
+.log-t small{margin-left:6px;font-size:12px;color:var(--muted)}
+.log-t a,.log-notes a,.obj-text a{color:var(--accent-text)}
+.log-notes{max-width:760px;margin:0 0 28px;padding-left:20px;color:var(--soft);line-height:1.55}
+.log-notes li{margin:0 0 8px}
+.log-nav{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 48px}
+section.log-sec{padding:0}
+/* Списки на сторінках розділів: знято в каталозі Мессьє (SEO-08), ночі журналу (SEO-09) */
+.cat-list{list-style:none;margin:0;padding:0;display:grid;gap:8px;max-width:900px}
+.cat-list li{padding:12px 16px;border:1px solid var(--border);border-radius:16px;background:var(--surface);line-height:1.4}
+.cat-list a{display:block;font-weight:600;color:var(--text);text-decoration:none;margin-bottom:2px}
+.cat-list a:hover{color:var(--accent-text)}
+.cat-list span{color:var(--muted);font-size:14.5px}
+section>h2[id^="log-"]{margin:0 0 12px}
+/* Чипи-посилання (стрічка розділів SEO-08, навігація журналу) */
+a.chip{display:inline-flex;align-items:center;text-decoration:none}
+a.chip:hover{background:var(--hover-2);color:var(--text)}
+span.chip[aria-current]{display:inline-flex;align-items:center;color:var(--text);border-color:var(--accent-text)}
+.obj-flyby{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:clamp(18px,3vw,36px);align-items:center;margin:0 0 28px;padding:clamp(14px,2vw,20px);border-radius:28px;background:var(--surface);border:1px solid var(--border)}
+.obj-flyby video{display:block;width:100%;height:auto;aspect-ratio:540/816;object-fit:cover;border-radius:18px;background:#000}
+.obj-flyby h2{font-size:24px;margin:0 0 10px}
+.obj-flyby p{max-width:520px;color:var(--soft);margin:0 0 18px}
+.obj-flyby .flyby-f{display:block;width:100%;aspect-ratio:9/16;border:0;border-radius:18px;background:#000}
+.fly-btns{display:flex;flex-wrap:wrap;gap:12px}
+@media (max-width:600px){.obj-flyby{grid-template-columns:1fr}.obj-flyby video,.obj-flyby .flyby-f{max-width:300px;margin:0 auto}.obj-flyby h2{font-size:20px}.obj-flyby .btn{width:100%}}
+.row-head a{font-size:14px;color:var(--accent-text);text-decoration:none;font-weight:600}
+
+footer{background:var(--surface)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;padding-top:24px;padding-bottom:28px;font-size:14px;color:var(--dim)}
+footer a{color:var(--muted)}
+
+.fab{display:none;position:fixed;right:16px;bottom:20px;z-index:25;width:56px;height:56px;border-radius:50%;place-items:center;background:var(--accent);color:var(--on-accent);box-shadow:0 10px 24px -10px rgba(0,0,0,.6)}
+.fab svg{width:26px;height:26px}
+
+/* Лайтбокс */
+dialog{border:0;padding:0;background:transparent;max-width:min(1400px,96vw);max-height:94vh;color:#EEF2FA;overflow:visible}
+dialog::backdrop{background:rgba(2,4,10,.92);backdrop-filter:blur(4px)}
+.lb{display:flex;flex-direction:column;gap:14px;align-items:center}
+.lb img{max-width:96vw;max-height:78vh;border-radius:16px;box-shadow:0 30px 80px -20px #000;display:block}
+.lb-cap{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:center;font-size:14.5px;color:#A9B2C7;text-align:center;padding:0 12px}
+.lb-cap b{font:600 18px var(--f-display);color:#fff}
+.lb-cap .btn{background:#FFB547;color:#1A1205;border-color:transparent}
+.x{position:fixed;top:14px;right:16px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(14,20,36,.9);color:#fff;font-size:20px;cursor:pointer}
+
+/* Меню: «Галерея» з випадним списком + 4 пункти; на середніх ширинах щільніше */
+@media (min-width:1101px) and (max-width:1300px){
+  .sections a,.dd-btn{padding:9px 10px;font-size:14.5px}
+  .brand small{display:none}
+}
+/* До 1100 px: шапка в один рядок, меню за кнопкою, відкривається панеллю під шапкою */
+@media (max-width:1100px){
+  .actions .menu-btn{display:grid}
+  .actions .theme{display:none}
+  .actions{margin-left:auto}
+  .theme-row{display:flex;align-items:center;gap:10px;margin-top:8px;padding:14px 12px;border:0;border-top:1px solid var(--border);border-radius:0;background:transparent;color:var(--soft);font:500 16px var(--f-body);cursor:pointer;text-align:left}
+  .theme-row svg{width:20px;height:20px}
+  .theme-row:hover{color:var(--text)}
+  .sections{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;margin:0;padding:12px max(16px,calc((100vw - 1152px)/2)) 20px;background:var(--ink);border-bottom:1px solid var(--border-2);box-shadow:0 30px 40px -20px var(--shadow);max-height:calc(100dvh - var(--head-h));overflow-y:auto}
+  header.open .sections{display:flex}
+  .sections a,.dd-btn{padding:14px 12px;font-size:17px;border-radius:12px}
+  .dd-btn{width:100%;cursor:default;color:var(--dim);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;padding:10px 12px 4px}
+  .dd-btn:hover{background:transparent;color:var(--dim)}
+  .dd-btn.is-cur{background:transparent;color:var(--dim)}
+  .dd-btn svg{display:none}
+  .dd-menu,.dd:hover .dd-menu,.dd:focus-within .dd-menu,.dd.open .dd-menu{display:grid;grid-template-columns:1fr 1fr;gap:2px;position:static;min-width:0;padding:0 0 8px;border:0;border-bottom:1px solid var(--border);border-radius:0;background:transparent;box-shadow:none}
+  .dd-menu::before{display:none}
+  body.nav-open{overflow:hidden}
+  body.nav-open .lang-hint,body.nav-open .fab{display:none}
+}
+@media (max-width:860px){
+  .brand small{display:none}
+}
+@media (max-width:720px){
+  .tg-head{display:none!important}
+  .fab{display:grid}
+  footer .wrap{padding-bottom:96px;flex-direction:column}
+  .lang-hint{right:16px;bottom:88px;max-width:none;flex-wrap:wrap;gap:8px}
+  .lang-hint span{flex:1 1 100%}
+  .lang-hint .btn{flex:1 1 auto}
+}
+@media (max-width:420px){
+  .topbar{flex-wrap:nowrap;gap:6px}
+  .brand{flex:1 1 auto;gap:8px}
+  .brand span{min-width:0;overflow:hidden}
+  .brand b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14.5px}
+  .actions{gap:6px;margin-left:0;flex:none}
+  .actions .icon-btn{min-width:38px;width:38px;height:38px;padding:0}
+  .lang{height:38px;padding:2px}
+  .lang a,.lang span{min-width:30px;height:32px;font-size:12.5px;letter-spacing:.02em}
+}
+/* Журнал ночі на телефоні: замість широкої таблиці з горизонтальним скролом картка на кожну сесію */
+@media (max-width:640px){
+  .log-tw{overflow:visible;border:0;background:transparent;border-radius:0}
+  .log-t{min-width:0}
+  .log-t thead{display:none}
+  .log-t,.log-t tbody,.log-t td{display:block}
+  .log-t tr{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;padding:14px 16px;margin-bottom:10px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+  .log-t td{padding:0;border:0;white-space:normal;font-size:15px}
+  .log-t td::before{content:attr(data-l);display:block;font-size:12px;color:var(--muted);margin-bottom:2px}
+  .log-t td:nth-child(2){grid-column:1/-1;order:-1;font-weight:600;font-size:16.5px}
+  .log-t td:nth-child(2)::before{display:none}
+}
+@media (max-width:600px){
+  .wrap{padding:0 16px}
+  .topbar{gap:8px;min-height:60px}
+  .brand img{width:36px;height:36px}
+  .brand b{font-size:15px}
+  section{padding-bottom:40px}
+  .row-head h2{font-size:20px}
+  .filters{flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:8px;padding:8px 0 10px}
+  .seg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;padding:3px}
+  .seg button{flex-direction:column;gap:0;min-height:44px;padding:0 4px;font-size:13px}
+  .seg button .n{font-size:11.5px}
+  .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{flex:none}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .t{border-radius:18px}
+  .t .pic{aspect-ratio:1}
+  .badge{top:8px;left:8px;padding:3px 8px;font-size:11.5px}
+  .t .body{padding:10px 12px 12px;gap:7px}
+  .t .name b{font-size:14.5px}
+  .t .name span{font-size:12px}
+  .t .meta{font-size:12px;flex-direction:column;gap:0}
+  .t .ph b{font-size:15px}
+  .mz{grid-template-columns:repeat(10,minmax(0,1fr));gap:4px}
+  .q{font-size:10px;border-radius:6px}
+  .mz-score b{font-size:40px}
+  .legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;font-size:13px}
+  .solar{display:flex;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px 4px;gap:10px}
+  .solar::-webkit-scrollbar{display:none}
+  .s{flex:none;width:136px;padding:14px 10px;border-radius:18px}
+  .orb{width:84px;height:84px}
+  .s .nm b{font-size:15px}
+  .s .nm span{font-size:12px}
+  .obj-facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .obj-facts div{padding:12px}
+  .obj-facts dd{font-size:15px}
+  .obj-fig img{border-radius:16px}
+  .obj-cta .btn{flex:1 1 auto}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important;animation:none!important}}
+/* Секції нижче першого екрана не рахуються, доки до них не доскролили: підміна шрифту й оновлення даних не перераховують layout усієї довгої сторінки. auto запам'ятовує реальну висоту. */
+#challenge,#messier,#solar,#flybys,#how,#about,#links,body>footer{content-visibility:auto;contain-intrinsic-size:auto 900px}
+body>footer{contain-intrinsic-size:auto 160px}
+#challenge{contain-intrinsic-size:auto 2500px}
+
+/* ===== Головна: «контактний аркуш» (редизайн 2026-10). Кадри єдине джерело кольору, поверхні розділяє тон, не лінії й тіні. ===== */
+.home{--sec:clamp(96px,11vw,168px);--disp:clamp(40px,6vw,96px);--h2:clamp(28px,3.2vw,44px)}
+.home section{padding-top:0;padding-bottom:0;margin-top:0;margin-bottom:var(--sec)}
+.home h2,.home .row-head h2,.home .sec-head h2{font-size:var(--h2);line-height:1.05;letter-spacing:-.03em}
+.home .sec-head{gap:14px;margin-bottom:32px}
+.home .sec-head p{font-size:16px;line-height:1.55;color:var(--soft);max-width:62ch}
+.home .row-head{margin-bottom:28px;gap:8px 24px}
+.home .row-head span{font-size:14px;color:var(--muted)}
+
+/* Перший екран: заголовок, рядок з дією, стрічка кадрів, підпис кадру біля центру */
+.hx{display:flex;flex-direction:column;margin-bottom:clamp(80px,9vw,136px)!important;padding-top:clamp(28px,4.5vh,64px)!important}
+.hx-head{width:100%;container-type:inline-size}
+.hx h1{font-size:min(96px,7.4cqi);font-weight:700;line-height:.98;letter-spacing:-.045em}
+.hx h1 .l{display:block;white-space:nowrap}
+.hx-row{width:100%;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 48px;margin-top:clamp(18px,2.6vh,28px)}
+.hx .lead{margin:0;max-width:600px;font-size:19px;line-height:1.5;color:var(--text)}
+.hx .cta{display:flex;align-items:center;gap:8px 28px;flex-wrap:wrap}
+.tlink{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;font-size:16px;text-decoration:none;color:var(--text)}
+.tlink svg{width:20px;height:20px;transition:transform .25s}
+.tlink:hover svg{transform:translateY(3px)}
+.strip{position:relative;display:flex;gap:10px;height:clamp(220px,36vh,380px);margin-top:clamp(28px,4vh,48px);overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;scrollbar-width:none;overscroll-behavior-x:contain}
+.strip::-webkit-scrollbar{display:none}
+.fr{flex:none;height:100%;overflow:hidden;scroll-snap-align:center;background:var(--surface);cursor:zoom-in}
+.fr picture,.fr img{display:block;width:100%;height:100%}
+.fr img{object-fit:cover}
+.fr img{filter:brightness(.42) saturate(.8);transition:filter .5s ease,transform .8s ease}
+.fr.lit img,.fr:hover img,.fr:focus-visible img{filter:none}
+.fr:focus-visible{outline-offset:-3px}
+.hx-foot{width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 24px;margin-top:16px}
+.strip-cap{margin:0;font-size:16px;color:var(--soft);min-height:1.6em}
+.strip-cap b{color:var(--text);font-weight:600;margin-right:4px}
+.upd{font-size:14px;color:var(--muted)}
+
+/* Сезон у цифрах: реєстр, вирівняний по комі */
+.season{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:32px 48px;align-items:center}
+.season h2 .s1{color:var(--muted)}
+/* Цілі частини вирівняні праворуч по одній лінії; дробова частина виходить у зарезервоване поле справа, тож усе стає на кому */
+.ledger{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:20px;row-gap:22px;align-items:baseline}
+.lr{display:contents}
+.lr .w{position:relative;justify-self:end;padding-right:1.25em;font:700 var(--disp)/1 var(--f-display);letter-spacing:-.04em;font-variant-numeric:tabular-nums lining-nums;white-space:nowrap}
+.lr .d{position:absolute;left:calc(100% - 1.25em);top:0}
+.lr>span{font-size:16px;line-height:1.35;color:var(--soft);max-width:24ch}
+
+/* Зараз збираю світло: рядки без плиток */
+.home .now-row{display:grid;grid-auto-flow:row;grid-auto-columns:auto;grid-template-columns:repeat(auto-fill,minmax(min(100%,400px),1fr));gap:6px 56px;overflow:visible;min-height:0;padding:0}
+.home .now{padding:10px 0;gap:16px;border:0;border-radius:0;background:transparent;transition:none}
+.home a.now:hover{transform:none}
+.home .now img,.home .now .noimg{width:56px;height:56px;border-radius:0}
+.home .now .top b{font-size:16px;transition:color .2s}
+.home .now .top em{color:var(--text);font-size:16px;font-variant-numeric:tabular-nums}
+.home a.now:hover .top b{color:var(--accent-text)}
+.home .now .hint{font-size:14px}
+
+/* Кадри челенджу (головна, розділи, «ще кадри» на сторінці об'єкта): без рамок; фільтри тоном */
+.cats{gap:0 22px;margin:-8px 0 8px}
+.cats .chip{min-height:44px;padding:0;border:0;background:transparent;color:var(--soft);font-size:15px}
+.cats a.chip:hover{background:transparent;color:var(--text);text-decoration:underline;text-underline-offset:5px}
+.home .seg{border:0;background:var(--surface)}
+.home .chip{border:0;background:var(--surface)}
+.home .chip[aria-pressed=true]{background:var(--seg-on-bg);color:var(--seg-on-fg)}
+.grid{grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:40px 16px}
+.t{border:0;border-radius:0;background:transparent;transition:none}
+a.t:hover{transform:none}
+.t .pic{background:var(--surface)}
+a.t:hover .name b{color:var(--accent-text)}
+.t .body{padding:14px 0 0;gap:9px}
+.t .name b{font-size:17px;transition:color .2s}
+.t .name span,.t .meta{font-size:14px}
+.badge{top:0;left:0;border-radius:0;padding:5px 9px;font-size:13px}
+.badge.done{display:none}
+.badge.todo{background:var(--ink);backdrop-filter:none}
+
+/* Мессьє: секція змінює поле, клітинки без пунктирних рамок */
+.home .mzs{background:var(--surface);padding:clamp(64px,8vw,120px) 0}
+.home .mzs .sec-head{margin:0}
+.home .mz-score b{font:700 var(--disp)/1 var(--f-display);letter-spacing:-.04em;color:var(--text)}
+.home .mz-score span{font-size:15px;color:var(--soft)}
+.mz{grid-template-columns:repeat(auto-fill,minmax(48px,1fr));gap:4px}
+.q{border:0;border-radius:2px;font-size:13px}
+.q small{font-size:11px;top:2px;right:3px}
+.q.todo{background:var(--surface-2)}
+.q.unreachable{border:0;background:var(--ink);color:var(--dim)}
+.legend i{border-radius:2px}
+.legend .lt{background:var(--surface-2)}
+.legend .lu{border:0;background:var(--ink)}
+
+/* Сонячна система: круглі кадри без плиток */
+.home .solar{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:32px 16px}
+.home .s{padding:0;gap:14px;border:0;border-radius:0;background:transparent;transition:none}
+.home a.s:hover{transform:none}
+.home .orb{width:min(100%,176px);height:auto;aspect-ratio:1}
+.home .orb img{transition:transform .6s ease}
+.home a.s:hover .orb img{transform:scale(1.06)}
+.home .orb.none{background:var(--surface)}
+
+/* 3D-прольоти: стрічка, яку тягнуть убік (від поля сторінки до краю екрана) */
+.home #flybys .fly-row{grid-auto-columns:clamp(200px,21vw,290px);gap:12px;margin:0 calc(50% - 50vw);padding:0 max(24px,calc(50vw - 576px)) 14px;scroll-padding-inline:max(24px,calc(50vw - 576px));scroll-snap-type:x mandatory;scrollbar-width:none}
+.home #flybys .fly-row::-webkit-scrollbar{display:none}
+.home .fly .pv{border:0;border-radius:0}
+.home .fly b{font-size:15px}
+
+/* Назва сайту на всю ширину як завершення сторінки */
+.wordmark{margin:0;padding:0 8px;font:700 11.6vw/.8 var(--f-display);letter-spacing:-.05em;text-align:center;white-space:nowrap;overflow:hidden;color:var(--dim);user-select:none}
+
+.wordmark:lang(en){font-size:9.6vw}
+
+/* Рух: поява частин секцій по черзі; кадр сезону повільно наближається. Без JS і з reduce-motion усе статичне й видиме. */
+@media (prefers-reduced-motion:no-preference){
+  .rv [data-rv]>*{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+  .rv [data-rv].in>*{opacity:1;transform:none}
+  .rv [data-rv].in>:nth-child(2){transition-delay:.07s}
+  .rv [data-rv].in>:nth-child(3){transition-delay:.14s}
+  .rv [data-rv].in>:nth-child(4){transition-delay:.21s}
+  .rv [data-rv].in>:nth-child(n+5){transition-delay:.28s}
+  .fr.lit img{animation:drift 16s ease-in-out infinite alternate}
+  @keyframes drift{to{transform:scale(1.07)}}
+}
+
+/* Нічого читабельного дрібніше 13 px (шапка спільна для всіх сторінок) */
+.brand small{font-size:13px}
+.q small{font-size:13px;top:1px;right:3px;line-height:1}
+
+@media (max-width:960px){
+  .season{grid-template-columns:1fr}
+}
+@media (max-width:420px){
+  .lang a,.lang span{font-size:13px}
+}
+@media (max-width:720px){
+  .home{--disp:clamp(44px,15vw,72px)}
+  .hx{padding-top:20px!important}
+  .hx-head{order:1}
+  .strip{order:2;height:min(42vh,340px);margin-top:20px}
+  .hx-foot{order:3;margin-top:12px}
+  .hx-row{order:4;margin-top:20px}
+  .hx h1{font-size:min(60px,8.6cqi)}
+  .hx .lead{font-size:17px}
+  .hx .cta{width:100%}
+  .hx .cta .btn{flex:1 1 auto}
+  .upd{display:none}
+  .ledger{row-gap:18px}
+  .ledger{column-gap:12px}
+  .lr>span{font-size:15px}
+  .grid{grid-template-columns:1fr 1fr;gap:28px 10px}
+  .t .name b{font-size:15px}
+  .t .meta{flex-direction:column;gap:2px}
+  .mz{grid-template-columns:repeat(auto-fill,minmax(44px,1fr))}
+  .home .solar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 12px;margin:0;padding:0}
+  .home .s{width:auto;padding:0}
+  .home .orb{width:100%;height:auto}
+  .t .pic{aspect-ratio:1}
+  .t .body{padding:10px 0 0}
+  .badge{top:0;left:0;font-size:13px}
+  .q{font-size:13px;border-radius:2px}
+  .home h2,.home .row-head h2,.home .sec-head h2{font-size:clamp(24px,7vw,30px)}
+  .home .s .nm b{font-size:15px}
+  .home .s .nm span,.home .seg button .n{font-size:13px}
+  .home #flybys .fly-row{grid-auto-columns:62vw}
+  .wordmark{padding-bottom:4px}
+}
+
+/* Мессьє (окрема сторінка): панель тоновим полем без рамки */
+.panel{border:0;border-radius:0}
+/* Списки (знято в каталозі, ночі журналу): рядки з двома кінцями без плиток */
+.cat-list{gap:0;max-width:820px}
+.cat-list li{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:2px 24px;padding:12px 0;border:0;border-radius:0;background:transparent}
+.cat-list a{display:inline;margin:0;font-size:16px;transition:color .2s}
+.cat-list span{font-size:16px;color:var(--muted)}
+/* Журнал ночі: таблиця на тоновому полі без зовнішньої рамки; лінії лишаються лише між рядками таблиці */
+.log-tw{border:0;border-radius:0}
+.log-t small{font-size:13px}
+.log-nav{gap:8px 12px}
+.log-nav a.chip,.log-nav span.chip{border:0;background:var(--surface)}
+.log-nav a.chip:hover{background:var(--surface-2)}
+.log-nav span.chip[aria-current]{background:var(--seg-on-bg);color:var(--seg-on-fg)}
+/* DWARF Mini: кадри апарата під текстом */
+.gear-sheet{margin:clamp(40px,6vw,72px) 0 clamp(64px,8vw,112px)}
+@media (max-width:640px){
+  .log-t tr{border:0;border-radius:0}
+  .log-t td::before{font-size:13px}
+}
+
+/* ===== Внутрішні сторінки в мові головної (редизайн 2026-10): кадр без рамки, факти реєстром, текст вужчою колонкою ===== */
+.cats span.chip[aria-current]{min-height:44px;padding:0;border:0;background:transparent;color:var(--text);font-weight:600;font-size:15px}
+.obj-head{padding-bottom:24px}
+.obj-head h1{letter-spacing:-.035em;line-height:1.02}
+.obj-head p{font-size:16px;color:var(--soft)}
+/* Кадр: квадратні кути, без обводки */
+.obj-fig img{border:0;border-radius:0}
+.obj-fig figcaption{font-size:14px;color:var(--muted)}
+/* Факти: пари «підпис / значення» без плиток, розділені простором */
+.obj-facts{gap:20px 24px}
+.obj-facts div{padding:0;border:0;border-radius:0;background:transparent}
+.obj-facts dt{font-size:13px;color:var(--muted)}
+.obj-facts dd{margin-top:2px;font:600 18px/1.3 var(--f-display);letter-spacing:-.01em}
+@media (min-width:1001px){
+  .obj-top{grid-template-columns:minmax(0,1fr) 240px;gap:32px}
+  .obj-top .obj-fig a{border-radius:0;background:transparent}
+  .obj-top .obj-facts{gap:18px}
+  .obj-top .obj-facts div{padding:0}
+  .obj-top .obj-facts dt{font-size:13px}
+  .obj-top .obj-facts dd{font-size:17px}
+}
+/* Текст: 60-70 знаків у рядку */
+.obj-text{max-width:66ch;font-size:17px;line-height:1.6;color:var(--text)}
+.obj-text h2{font-size:clamp(20px,2.4vw,26px);letter-spacing:-.02em}
+/* 3D-проліт: тонова плита замість рамки */
+.obj-flyby{border:0;border-radius:0;background:var(--surface)}
+.obj-flyby video,.obj-flyby .flyby-f{border-radius:0}
+.obj-cta{margin-bottom:clamp(64px,8vw,112px)}
+@media (max-width:600px){
+  .obj-facts{grid-template-columns:1fr 1fr;gap:16px 16px}
+  .obj-facts div{padding:0}
+  .obj-facts dd{font-size:16px}
+  .obj-fig img{border-radius:0}
+  .t .name span,.t .meta{font-size:13px}
+  .mz,.home .mz{grid-template-columns:repeat(auto-fill,minmax(36px,1fr));gap:3px}
+  .q{font-size:13px;border-radius:2px}
+  .legend{font-size:14px}
+}
+
+/* Банер голосування в конкурсі: плашка в кутку, з'являється після завантаження, не перекриває FAB на телефоні */
+.vote{position:fixed;left:16px;bottom:20px;z-index:34;display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:14px;align-items:start;width:min(470px,calc(100vw - 32px));padding:12px;background:var(--surface-2);color:var(--text);box-shadow:0 20px 44px -18px rgba(0,0,0,.75);opacity:0;transform:translateY(16px);transition:opacity .35s ease,transform .35s ease}
+.vote.on{opacity:1;transform:none}
+.vote[hidden]{display:none}
+.vote-pic img{display:block;width:96px;height:96px;object-fit:cover}
+.vote-tx{display:flex;flex-direction:column;gap:6px;min-width:0;line-height:1.4}
+.vote-tx b{font-size:15px;font-weight:600}
+.vote-tx span{font-size:14px;color:var(--soft)}
+.vote-tx .btn{align-self:flex-start;margin-top:4px;min-height:44px;padding:0 18px;font-size:15px}
+.vote-x{width:44px;height:44px;margin:-6px -6px 0 0;display:grid;place-items:center;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.vote-x:hover{color:var(--text)}
+.vote-x svg{width:18px;height:18px}
+body.nav-open .vote{display:none}
+@media (max-width:720px){
+  .vote{right:16px;bottom:88px;width:auto;grid-template-columns:64px minmax(0,1fr) auto;gap:12px}
+  .vote-pic img{width:64px;height:64px}
+}
+
+/* Журнал ночей: календар (тижні стовпцями, тон за годинами світла) і список зі сталими колонками */
+.log-cal{margin:8px 0 clamp(48px,6vw,80px)}
+.cal{display:grid;gap:5px;max-width:1000px}
+.cal-r{display:grid;grid-template-columns:44px repeat(31,minmax(0,1fr));gap:5px;align-items:center}
+.cal-l{font-size:13px;color:var(--muted)}
+.cal-n span{font-size:13px;color:var(--muted);text-align:left;font-variant-numeric:tabular-nums;white-space:nowrap}
+.cd{display:block;aspect-ratio:1;border-radius:2px;background:var(--surface)}
+.cd-x{background:transparent}
+.cd.l0{background:var(--surface-2)}
+.cd.l1{background:color-mix(in srgb,var(--done) 30%,var(--surface))}
+.cd.l2{background:color-mix(in srgb,var(--done) 55%,var(--surface))}
+.cd.l3{background:color-mix(in srgb,var(--done) 78%,var(--surface))}
+.cd.l4{background:var(--done)}
+a.cd{transition:transform .15s}
+a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
+.cal-leg{display:flex;align-items:center;gap:4px;margin:12px 0 0;font-size:13px;color:var(--muted)}
+.cal-leg .cd{width:13px;height:13px}
+@media (max-width:600px){.cal,.cal-r{gap:2px}.cal-r{grid-template-columns:34px repeat(31,minmax(0,1fr))}.cal-n span{font-size:13px;overflow:visible}.cal-l{font-size:13px}a.cd:hover{transform:none}}
+.cal-leg .cd:first-of-type{margin-left:6px}.cal-leg .cd:last-of-type{margin-right:6px}
+
+.log-month{margin-bottom:clamp(40px,5vw,64px)}
+.ln-list{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.ln-d b{white-space:nowrap}
+.ln{display:grid;grid-template-columns:120px minmax(0,1fr) 180px 92px;gap:20px;align-items:center;padding:12px 12px 12px 0;color:var(--text);text-decoration:none;transition:background .2s}
+.ln:hover{background:var(--surface)}
+.ln-d{display:flex;flex-direction:column;line-height:1.05;padding-left:12px}
+.ln-d b{font:700 26px/1 var(--f-display);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.ln-d span{font-size:13px;color:var(--muted);margin-top:4px}
+.ln-o{display:flex;align-items:center;gap:14px;min-width:0}
+.ln-t{display:flex;gap:4px;flex:none}
+.ln-t img{width:40px;height:40px;object-fit:cover;display:block;background:var(--surface)}
+.ln-n{font-size:16px;color:var(--soft);line-height:1.4;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.ln:hover .ln-n{color:var(--text)}
+.ln-h{display:flex;flex-direction:column;gap:6px;min-width:0}
+.ln-h b{font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ln-bar{display:block;height:6px;background:var(--surface-2)}
+.ln-bar i{display:block;height:100%;background:var(--done)}
+.ln-m{display:flex;align-items:center;justify-content:flex-end;gap:8px;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ln-m i{width:16px;height:16px;border-radius:50%;flex:none;background:color-mix(in srgb,var(--text) calc(var(--m) * .9%),var(--surface-2))}
+@media (max-width:760px){
+  .ln{grid-template-columns:84px minmax(0,1fr) auto;grid-template-areas:"d h m" "d o o";gap:10px 14px;padding:12px 0}
+  .ln-d{grid-area:d;padding-left:0}.ln-o{grid-area:o}.ln-h{grid-area:h}.ln-m{grid-area:m}
+  .ln-d b{font-size:22px}
+  .ln-o{flex-direction:column;align-items:flex-start;gap:8px}
+  .ln-t img{width:32px;height:32px}
+  .ln-n{font-size:15px;-webkit-line-clamp:3}
+}
+
+/* DWARF Mini: ілюстрації в тексті; ширші за колонку тексту, без рамок */
+.gfig{margin:28px 0 36px;width:min(1100px,calc(100vw - 48px))}
+.gfig-pair{width:min(820px,calc(100vw - 48px))}
+.gfig-m{display:block}
+.gfig-pair .gfig-m{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:start}
+.gfig img,.gfig video{display:block;width:100%;height:auto;background:var(--surface)}
+.gfig-pair img,.gfig-pair video{aspect-ratio:3/4;object-fit:cover}
+.gfig figcaption{margin-top:12px;max-width:66ch;font-size:15px;line-height:1.55;color:var(--muted)}
+@media (max-width:600px){.gfig,.gfig-pair{width:calc(100vw - 32px)}.gfig-pair .gfig-m{gap:4px}
+  .gfig-map .gfig-m{overflow-x:auto;scrollbar-width:thin}.gfig-map img{width:760px;max-width:none}}
+/* Наука (SCI-02) */
+.sci-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 14px}
+.sci-stat{display:flex;flex-direction:column;gap:6px;padding:18px 20px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.sci-stat b{font:700 clamp(30px,4vw,44px)/1 var(--f-display);letter-spacing:-.03em;font-variant-numeric:tabular-nums lining-nums;color:var(--text)}
+.sci-stat span{font-size:14.5px;line-height:1.35;color:var(--soft)}
+.sci-code{margin:0;font-size:15px;color:var(--soft)}
+.sci-code a,.sci-card a,.sci-links a,.sci-t a{color:var(--accent-text)}
+.sci-p{max-width:66ch;margin:0 0 18px;font-size:16.5px;line-height:1.6;color:var(--soft)}
+.panel.sci-sec{gap:10px}
+.panel.sci-sec h2{margin:0}
+.sci-svg{display:block;width:100%;height:auto;color:var(--accent)}
+.sci-svg .pt{fill:none;stroke:currentColor;stroke-linecap:round}
+.sci-svg .eb{fill:none;stroke:var(--muted);stroke-width:1.2;opacity:.55}
+.sci-svg .gr{fill:none;stroke:var(--border-2);stroke-width:1}
+.sci-svg text{fill:var(--muted);font:13px var(--f-body)}
+.sci-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.sci-card{display:flex;flex-direction:column;gap:8px;min-width:0;padding:16px 18px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.sci-card h3{margin:0;font-size:16px;line-height:1.3;overflow-wrap:anywhere}
+.sci-card p{margin:0;font-size:13.5px;line-height:1.45;color:var(--muted)}
+.sci-list{max-width:70ch;margin:0;padding-left:1.2em;font-size:16.5px;line-height:1.6;color:var(--soft)}
+.sci-list li{margin-bottom:8px}
+.sci-links{margin:0;font-size:16px}
+.sci-typ{font-weight:600;color:var(--soft)!important}
+.sci-card h3 a{color:var(--text);text-decoration:none}
+.sci-card h3 a:hover{color:var(--accent-text)}
+.sci-home{color:inherit;text-decoration:underline;text-decoration-color:var(--accent-border);text-underline-offset:3px}
+.sci-home:hover{color:var(--accent-text)}
+.sci-obj{margin-top:8px}
+.sci-more{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:15px;color:var(--muted)}
+.sci-more a{color:var(--accent-text)}
+[id^="s-"],[id^="t-"]{scroll-margin-top:calc(var(--head-h) + 16px)}
+.sci-t td:nth-child(1){white-space:normal;color:var(--text);font-weight:500}
+.sci-t td:nth-child(2){color:var(--soft)}
+@media (max-width:720px){.sci-stats{grid-template-columns:1fr 1fr}.sci-stat{padding:14px 16px}}
+@media (max-width:640px){.sci-t td:nth-child(1){grid-column:1/-1;order:-1;font-weight:600;font-size:16.5px}.sci-t td:nth-child(2){grid-column:auto;order:0;font-weight:400;font-size:15px}.sci-t td:nth-child(2)::before{display:block}}
+</style><!-- /inline:site.css -->
+<!-- Статистика відвідувань: GoatCounter, без cookies і персональних даних -->
+<script>
+// Шрифти, лічильник GoatCounter і великий кадр вантажаться після load і після першого кадру (сторінка без блокуючих ресурсів,
+// тож load настає раніше за перший paint). Запасний таймер для фонової вкладки, де rAF не викликається.
+// Якщо шрифти вже бачили (кеш), підключаємо одразу, щоб не було підміни шрифту.
+// Чотири файли шрифтів вантажаться через FontFace і вмикаються разом: один перерахунок layout замість окремого на кожен файл.
+// Перший візит: шрифти лише прогріваються в кеш, текст лишається на системних (без пізньої підміни, що псувала Speed Index);
+// з другого візиту (прапорець ff2) шрифти застосовуються одразу. Діапазони unicode-range ті самі, що у fonts/fonts.css (noscript і фолбек).
+(function(){var d=document;window.afterPaint=function(cb){var done=0,go=function(){if(!done){done=1;cb()}},run=function(){requestAnimationFrame(function(){setTimeout(go,0)});setTimeout(go,1000)};if(d.readyState==="complete")run();else addEventListener("load",run,{once:true})};var f=function(){if(f.on||d.getElementById("ff"))return;f.on=1;var r="../fonts/",C="U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116",L="U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD",F=[["Onest","onest-cyrillic","400 700",C],["Onest","onest-latin","400 700",L],["Unbounded","unbounded-cyrillic","500 700",C],["Unbounded","unbounded-latin","500 700",L]],k=function(){if(d.getElementById("ff"))return;var l=d.createElement("link");l.id="ff";l.rel="stylesheet";l.href=r+"fonts.css";d.head.appendChild(l)};try{localStorage.setItem("ff2","1")}catch(e){}if(!window.FontFace||!d.fonts){k();return}Promise.all(F.map(function(x){return new FontFace(x[0],"url("+r+x[1]+".woff2) format('woff2')",{weight:x[2],display:"swap",unicodeRange:x[3]}).load()})).then(function(a){if(seen)a.forEach(function(x){d.fonts.add(x)})},k)};var seen=0;try{seen=localStorage.getItem("ff2")==="1"}catch(e){}if(seen)f();afterPaint(function(){f();var s=d.createElement("script");s.async=true;s.src="https://gc.zgo.at/count.js";s.dataset.goatcounter="https://nebo-blyzhche.goatcounter.com/count";d.body.appendChild(s)})})();
+</script>
+<noscript><link rel="stylesheet" href="../fonts/fonts.css"></noscript>
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://tepliyk.github.io/#me","name":"Костя Теплий","url":"https://tepliyk.github.io/","sameAs":["https://t.me/nebo_blyzhche","https://app.astrobin.com/u/nebo_blyzhche","https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw/shorts","https://www.instagram.com/nebo_blyzhche/","https://www.tiktok.com/@nebo_blyzhche","https://www.facebook.com/nebo.blyzhche","https://www.youtube.com/channel/UCTL_SyEGr6WYDPdmDbBxVKw"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Небо ближче","item":"https://tepliyk.github.io/"},{"@type":"ListItem","position":2,"name":"Наука з балкона: змінні зорі для AAVSO","item":"https://tepliyk.github.io/science/"}]},{"@type":"Dataset","name":"Наука з балкона: змінні зорі для AAVSO","description":"Фотометрія змінних зір і наднової смарт-телескопом DWARF Mini з міського балкона в Україні: 1 086 вимірювань у базі AAVSO під кодом KTFA, криві блиску й методика.","url":"https://tepliyk.github.io/science/","inLanguage":"uk","isPartOf":{"@id":"https://tepliyk.github.io/#site"},"creator":{"@id":"https://tepliyk.github.io/#me"},"isAccessibleForFree":true,"temporalCoverage":"2026-08-20/2026-10-19","variableMeasured":"Apparent magnitude, AAVSO band TG","measurementTechnique":"CCD ensemble photometry, DWARF Mini 30/150 mm, Sony IMX662 green channel","keywords":["AAVSO","variable stars","photometry","light curve","supernova","SN 2026aaiv","citizen science"],"distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://tepliyk.github.io/science.json"}]}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.9 4.3 18.6 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L6 13.5l-4.9-1.5c-1.1-.3-1.1-1.1.2-1.6l19.2-7.4c.9-.3 1.7.2 1.4 1.3z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="2.6" fill="currentColor"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor"/><path d="m10 9 5 3-5 3z" fill="#C8102E"/></symbol>
+  <symbol id="i-scope" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m4 15 13-7 2 4-13 7zM10 15l-3 6M12 14l3 7M17 8l2-1 2 4-2 1"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+  <symbol id="i-house" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 11 12 4l9 7M5 10v10h14V10M3 15h18"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 3c.4 2.3 1.9 3.8 4.4 4v3.1c-1.6 0-3-.5-4.3-1.3v6.4c0 3.4-2.6 5.8-5.8 5.8S5 18.6 5 15.3c0-3.3 2.8-5.9 6.3-5.6v3.2c-1.6-.3-3.1.7-3.1 2.4 0 1.5 1.1 2.6 2.6 2.6 1.6 0 2.7-1.1 2.7-2.9V3h3.1z"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M14 8.5V6.8c0-.8.5-1.3 1.4-1.3H17V2.3c-.5-.1-1.6-.2-2.8-.2-2.8 0-4.6 1.7-4.6 4.7v1.7H6.8V12h2.8v10h4.4V12h2.9l.4-3.5H14z"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M6 13l6 6 6-6"/></symbol>
+  <symbol id="i-fly" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="rgba(7,11,22,.55)" stroke="currentColor" stroke-width="1.5"/><path d="m10 8 6 4-6 4z" fill="currentColor"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap topbar">
+    <a class="brand" href="../#top"><img src="../logo-s.jpg" alt="" width="40" height="40"><span><b>Небо ближче</b><small>астрофото з балкона</small></span></a>
+    <nav class="sections" id="site-nav" aria-label="Розділи">
+      <div class="dd" id="dd-gallery">
+        <button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-gallery-menu">Галерея<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="dd-menu" id="dd-gallery-menu">
+          <a href="../nebulae/">Туманності</a>
+          <a href="../galaxies/">Галактики</a>
+          <a href="../clusters/">Скупчення</a>
+          <a href="../solar-system/">Сонячна система</a>
+        </div>
+      </div>
+      <a href="../messier/">Мессьє</a>
+      <a href="../log/">Журнал ночей</a>
+      <a href="../science/" aria-current="page">Наука</a>
+      <a href="../equipment/dwarf-mini/">DWARF Mini</a>
+      <a href="../#about">Про мене</a>
+      <button class="theme theme-row" id="theme-m" type="button"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>Світла чи темна тема</button>
+    </nav>
+    <div class="actions">
+      <div class="lang" role="group" aria-label="Мова сайту"><span aria-current="true" title="Українська">UA</span><a href="../en/science/" hreflang="en" lang="en" data-lang="en" title="English version">EN</a></div>
+      <button class="icon-btn theme" id="theme" type="button" aria-label="Перемкнути світлу чи темну тему" title="Перемкнути світлу чи темну тему"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button>
+      <a class="btn btn-p tg-head" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener" aria-label="Telegram-канал «Небо ближче»"><svg aria-hidden="true"><use href="#i-tg"/></svg>Telegram</a>
+      <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Меню"><svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <nav class="crumbs" aria-label="Шлях"><a href="../">Небо ближче</a><span aria-hidden="true">›</span><span aria-current="page">Наука з балкона: змінні зорі для AAVSO</span></nav>
+  <div class="obj-head">
+    <h1>Наука з балкона: змінні зорі для AAVSO</h1>
+    <p>1 086 вимірювань для AAVSO, 53 об’єкти, 19 ночей з 20 серпня 2026</p>
+  </div>
+  <div class="obj-text">
+  <p>Крім красивих кадрів, телескоп на балконі ще й міряє. На кадрах туманностей і галактик сотні зір, і частина з них змінні: їхній блиск коливається за години чи дні. Я вимірюю цей блиск і здаю результати в AAVSO, Американську асоціацію спостерігачів змінних зір.</p>
+  <p>AAVSO понад сто років збирає спостереження аматорів з усього світу. Професійні астрономи беруть ці дані для досліджень: уточнюють періоди затемнюваних подвійних, ловлять спалахи, вирішують, коли наводити великий телескоп. Мій код спостерігача KTFA, усі виміри під ним відкриті.</p>
+  <p>Нижче все, що вже здано: криві блиску, список зір і як саме я міряю маленьким смарт-телескопом із засвіченого міста.</p>
+
+  </div>
+  <section class="sci-sec" aria-label="Наука з балкона: змінні зорі для AAVSO">
+    <div class="sci-stats"><div class="sci-stat"><b>1 086</b><span>вимірювань здано в AAVSO</span></div><div class="sci-stat"><b>53</b><span>об’єкти змінні зорі й наднова</span></div><div class="sci-stat"><b>19</b><span>ночей з вимірюваннями</span></div><div class="sci-stat"><b>25</b><span>кривих блиску на сторінці</span></div></div>
+    <p class="sci-code">Код спостерігача AAVSO: KTFA · <a href="https://www.aavso.org/apps/webobs/results/?obscode=KTFA" target="_blank" rel="noopener">AAVSO WebObs</a></p>
+  </section>
+  <section class="panel sci-sec" id="s-sn-2026aaiv" aria-labelledby="sci-sn-sn-2026aaiv">
+    <h2 id="sci-sn-sn-2026aaiv">Наднова SN 2026aaiv у NGC 7331</h2>
+    <p class="sci-p">Наднова типу Ia спалахнула у вересні 2026 року в галактиці NGC 7331, приблизно за 44 мільйони світлових років від нас. Я міряв її блиск біля піку: 5 вимірювань з 12 вересня по 1 жовтня 2026, від 11,94 до 12,56 зоряної величини.</p>
+    <svg class="sci-svg" viewBox="0 0 720 260" role="img" aria-label="Наднова SN 2026aaiv у NGC 7331"><title>Наднова SN 2026aaiv у NGC 7331</title><path class="gr" d="M52 50.4H708"/><text x="44" y="54.4" text-anchor="end">12,00</text><path class="gr" d="M52 96.6H708"/><text x="44" y="100.6" text-anchor="end">12,20</text><path class="gr" d="M52 142.7H708"/><text x="44" y="146.7" text-anchor="end">12,40</text><path class="gr" d="M52 188.8H708"/><text x="44" y="192.8" text-anchor="end">12,60</text><path class="eb" d="M52.0 53.0V89.9M224.7 23.7V48.1M294.0 31.3V59.0M465.5 72.1V96.1M708.0 139.9V218.3"/><text x="52.0" y="252" text-anchor="start">12 вересня</text><text x="708.0" y="252" text-anchor="end">1 жовтня</text><path class="pt" stroke-width="6" d="M52.0 71.4h0M224.7 35.9h0M294.0 45.1h0M465.5 84.1h0M708.0 179.1h0"/></svg>
+    <p><a class="tlink" href="../c-30/">Кадр галактики з надновою</a></p>
+  </section>
+  <section class="sci-sec" aria-labelledby="sci-cur-h">
+    <div class="row-head"><h2 id="sci-cur-h">Криві блиску</h2></div>
+    <p class="sci-p">Що вище точка, то яскравіша зоря. Кожен відрізок картки одна ніч: паузи між ночами стиснуто, щоб було видно, як блиск змінювався протягом ночі. Тут зорі з 10 і більше вимірюваннями, у довгих рядах до 200 точок.</p>
+    <div class="sci-grid"><article class="sci-card" id="s-v-tri"><h3>V Tri</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="V Tri: Змінна зоря, 10,78…11,72"><title>V Tri: Змінна зоря, 10,78…11,72</title><path class="gr" d="M52.7 0V110M106.3 0V110M160.0 0V110M213.7 0V110M267.3 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 20.8h0M4.7 22.5h0M5.4 18.1h0M6.0 22.0h0M6.7 25.3h0M7.3 22.5h0M7.9 23.4h0M8.7 23.4h0M9.3 27.2h0M10.0 26.1h0M10.6 30.9h0M11.1 29.3h0M11.8 26.8h0M12.6 28.4h0M13.3 28.1h0M13.8 30.4h0M14.5 32.8h0M15.1 36.1h0M15.8 39.9h0M16.5 43.0h0M17.1 45.3h0M17.8 38.5h0M18.4 42.9h0M19.1 50.4h0M19.7 53.9h0M20.4 58.3h0M21.1 60.9h0M21.7 60.8h0M22.3 64.6h0M26.9 90.1h0M27.5 90.1h0M28.4 99.0h0M29.5 94.3h0M30.2 91.5h0M30.8 96.5h0M31.5 94.9h0M32.1 90.5h0M32.8 89.5h0M33.4 87.5h0M47.7 34.9h0M57.7 21.4h0M59.1 21.1h0M60.4 19.4h0M61.7 18.1h0M62.9 13.9h0M64.1 19.1h0M65.4 17.6h0M66.8 16.0h0M68.1 17.2h0M69.4 16.9h0M70.7 18.8h0M71.8 13.5h0M73.1 16.1h0M74.6 17.8h0M75.8 15.8h0M77.1 12.7h0M78.3 15.5h0M79.4 14.5h0M80.8 14.8h0M82.3 17.2h0M83.6 13.5h0M84.8 15.6h0M86.0 11.4h0M87.1 14.7h0M88.6 15.1h0M90.0 15.0h0M91.3 15.5h0M92.5 17.0h0M93.6 14.9h0M94.9 12.9h0M96.3 16.7h0M97.8 13.5h0M99.0 13.3h0M100.2 16.5h0M101.3 14.3h0M111.3 21.4h0M114.1 17.0h0M116.6 21.5h0M119.0 17.4h0M121.6 21.9h0M123.6 24.1h0M125.8 26.4h0M128.5 21.1h0M131.2 24.2h0M133.6 22.6h0M135.9 29.5h0M138.3 31.7h0M140.8 28.0h0M143.0 28.8h0M145.6 32.1h0M148.2 35.9h0M150.6 31.2h0M152.9 34.6h0M155.0 37.2h0M165.0 26.1h0M181.2 23.3h0M186.3 21.4h0M188.9 23.5h0M191.6 22.4h0M194.4 24.0h0M197.4 21.0h0M200.2 22.5h0M203.1 19.3h0M205.9 20.2h0M208.7 20.6h0M218.7 16.1h0M219.7 20.1h0M220.7 20.9h0M221.6 17.1h0M222.5 19.1h0M223.3 18.4h0M224.2 16.1h0M225.1 18.7h0M226.1 17.4h0M227.1 17.9h0M227.9 17.9h0M228.8 12.8h0M229.7 14.0h0M230.6 13.8h0M231.4 14.4h0M232.4 15.3h0M233.4 11.0h0M234.3 13.4h0M235.2 16.1h0M236.0 13.1h0M236.9 15.0h0M237.8 17.8h0M238.8 13.7h0M239.8 16.0h0M240.6 12.3h0M241.5 15.9h0M242.4 15.3h0M243.3 13.7h0M244.2 12.9h0M245.1 13.3h0M246.1 15.3h0M247.0 14.7h0M247.9 16.6h0M248.7 16.0h0M249.6 14.6h0M250.5 16.6h0M251.5 18.1h0M252.5 15.9h0M253.3 14.5h0M254.2 17.0h0M255.1 16.2h0M256.0 16.7h0M256.9 16.1h0M257.8 16.8h0M258.8 17.3h0M259.7 15.8h0M260.6 17.6h0M261.5 20.5h0M262.3 16.9h0M272.3 18.6h0M275.6 21.7h0M278.4 19.3h0M281.2 18.7h0M283.9 23.5h0M286.7 26.7h0M289.5 20.3h0M301.6 27.6h0M304.2 32.8h0M309.7 26.1h0M313.0 22.2h0M316.0 24.2h0"/></svg><p class="sci-typ">EB/SD · період 0,5852 доби</p><p>166 вимірювань · 6 ночей<br>блиск 10,78…11,72</p><p>25 серпня – 7 жовтня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=V%20Tri" target="_blank" rel="noopener">VSX</a></p><p>поле: <a href="../m33/">Галактика Трикутника M 33</a></p></article><article class="sci-card" id="s-bc-tri"><h3>BC Tri</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="BC Tri: Змінна зоря, 11,47…11,85"><title>BC Tri: Змінна зоря, 11,47…11,85</title><path class="gr" d="M63.4 0V110M127.8 0V110M192.2 0V110M256.6 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 62.0h0M6.9 61.5h0M7.7 59.9h0M8.5 56.2h0M9.3 55.5h0M10.0 63.1h0M10.7 57.8h0M11.5 65.5h0M12.4 61.0h0M13.2 52.9h0M13.9 47.6h0M14.6 65.7h0M15.3 56.4h0M16.1 62.4h0M17.0 39.6h0M17.8 46.4h0M18.5 50.8h0M19.2 62.7h0M20.0 57.3h0M20.8 55.7h0M21.6 57.6h0M22.4 46.2h0M23.1 33.6h0M23.9 45.5h0M24.7 37.6h0M25.4 25.0h0M26.2 44.8h0M27.0 31.5h0M27.8 54.8h0M28.5 51.0h0M33.9 37.1h0M34.6 51.7h0M35.6 99.0h0M37.0 17.5h0M37.7 37.1h0M38.5 32.7h0M39.3 30.3h0M40.1 30.6h0M40.9 37.3h0M41.6 15.0h0M58.4 11.0h0M68.4 45.5h0M70.2 62.4h0M71.8 59.0h0M73.4 49.9h0M75.0 58.7h0M76.4 49.4h0M78.0 51.7h0M79.8 49.4h0M81.4 50.1h0M83.0 46.2h0M84.6 42.0h0M86.0 42.4h0M87.6 40.6h0M89.4 46.6h0M91.0 45.7h0M92.6 36.9h0M94.0 51.5h0M95.5 49.0h0M97.3 45.7h0M99.1 46.4h0M100.7 36.4h0M102.3 41.0h0M103.7 44.1h0M105.1 37.6h0M106.9 47.8h0M108.7 38.5h0M110.3 32.0h0M111.7 32.9h0M113.2 42.4h0M114.8 29.9h0M116.5 38.3h0M118.3 32.0h0M119.9 30.1h0M121.4 38.3h0M122.8 31.3h0M132.8 49.4h0M153.0 46.9h0M159.3 56.9h0M162.6 63.8h0M165.9 50.6h0M169.5 52.0h0M173.1 48.5h0M176.7 52.2h0M180.1 46.4h0M183.8 49.2h0M187.2 59.9h0M197.2 26.4h0M198.5 32.0h0M199.8 32.2h0M200.9 37.3h0M202.0 37.3h0M203.0 32.4h0M204.1 27.1h0M205.2 35.0h0M206.5 19.4h0M207.7 22.7h0M208.8 30.6h0M209.9 19.2h0M211.0 26.6h0M212.0 26.4h0M213.1 20.6h0M214.4 29.6h0M215.7 26.6h0M216.7 35.0h0M217.8 28.5h0M218.9 26.6h0M220.0 24.5h0M221.0 25.5h0M222.3 24.3h0M223.5 30.1h0M224.6 21.3h0M225.7 29.6h0M226.8 20.3h0M227.9 30.1h0M229.0 30.8h0M230.2 27.3h0M231.4 22.9h0M232.5 25.2h0M233.6 22.9h0M234.7 33.4h0M235.8 23.4h0M236.9 26.2h0M238.1 29.6h0M239.3 30.8h0M240.4 26.4h0M241.5 28.9h0M242.6 37.8h0M243.7 34.8h0M244.8 33.4h0M246.0 33.1h0M247.2 37.8h0M248.3 29.4h0M249.4 33.6h0M250.5 36.9h0M251.6 31.0h0M261.6 49.2h0M265.5 54.5h0M269.5 70.8h0M276.3 45.2h0M287.2 51.5h0M316.0 48.7h0"/></svg><p class="sci-typ">EW · період 0,7078 доби</p><p>142 вимірювання · 5 ночей<br>блиск 11,47…11,85</p><p>25 серпня – 7 жовтня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=BC%20Tri" target="_blank" rel="noopener">VSX</a></p><p>поле: <a href="../m33/">Галактика Трикутника M 33</a></p></article><article class="sci-card" id="s-v1188-tau"><h3>V1188 Tau</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="V1188 Tau: Змінна зоря, 11,94…12,46"><title>V1188 Tau: Змінна зоря, 11,94…12,46</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 11.0h0M7.5 29.5h0M10.7 24.5h0M14.2 29.7h0M17.5 22.3h0M21.0 17.9h0M24.5 25.6h0M27.6 42.9h0M30.9 34.9h0M34.5 12.4h0M37.8 21.4h0M41.3 25.3h0M44.6 13.4h0M47.9 25.3h0M51.4 20.1h0M54.7 26.0h0M58.1 32.0h0M61.7 28.3h0M64.9 28.8h0M68.2 26.1h0M71.5 21.8h0M75.1 36.7h0M78.3 30.5h0M81.8 32.2h0M85.2 30.8h0M88.5 35.0h0M91.7 28.7h0M95.2 33.9h0M98.7 34.7h0M101.9 36.0h0M105.3 27.5h0M108.8 30.3h0M112.1 29.5h0M115.3 23.5h0M118.8 37.7h0M122.2 37.7h0M125.5 34.0h0M128.9 41.2h0M132.4 36.7h0M135.6 41.1h0M138.9 39.6h0M142.4 50.6h0M145.8 48.5h0M149.0 46.1h0M152.5 34.9h0M155.0 50.3h0M165.0 49.6h0M169.0 54.7h0M171.6 46.3h0M175.6 60.4h0M178.9 53.5h0M182.5 64.2h0M186.2 46.9h0M189.5 45.8h0M193.5 61.9h0M196.1 61.2h0M200.1 67.8h0M206.2 65.4h0M209.6 73.3h0M213.2 74.5h0M216.9 63.6h0M220.2 79.2h0M226.8 76.8h0M230.8 83.5h0M234.1 74.1h0M237.8 99.0h0M243.9 77.5h0M247.5 91.1h0M250.9 94.9h0M254.9 77.7h0M257.5 86.0h0M261.5 87.2h0M265.1 78.2h0M268.5 94.4h0M272.5 89.7h0M278.2 78.7h0M281.5 95.6h0M285.2 82.5h0M288.8 94.8h0M292.0 82.9h0M295.9 79.2h0M298.5 80.8h0M302.3 82.2h0M305.6 83.9h0M309.2 75.3h0M312.8 64.1h0M316.0 68.1h0"/></svg><p class="sci-typ">EW · період 0,5759 доби</p><p>87 вимірювань · 2 ночі<br>блиск 11,94…12,46</p><p>20 серпня – 23 серпня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=V1188%20Tau" target="_blank" rel="noopener">VSX</a></p><p>поле: <a href="../m45/">Плеяди M 45</a></p></article><article class="sci-card" id="s-yz-tau"><h3>YZ Tau</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="YZ Tau: Змінна зоря, 13,04…13,45"><title>YZ Tau: Змінна зоря, 13,04…13,45</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 99.0h0M11.4 63.7h0M15.1 67.7h0M18.5 72.2h0M22.2 78.6h0M26.2 45.9h0M29.7 30.8h0M33.6 71.8h0M37.1 49.9h0M40.7 47.8h0M44.6 27.8h0M48.2 31.0h0M52.0 31.8h0M55.8 56.9h0M59.3 71.6h0M62.9 48.8h0M66.6 50.1h0M70.4 56.7h0M74.0 29.7h0M77.7 29.3h0M81.5 40.6h0M88.6 49.1h0M92.4 70.5h0M96.2 33.8h0M99.7 26.8h0M103.5 40.3h0M107.3 50.8h0M110.8 62.2h0M114.4 50.8h0M118.2 34.6h0M121.9 46.3h0M125.5 29.7h0M129.2 38.0h0M133.0 27.6h0M136.5 36.7h0M140.1 38.4h0M143.9 13.4h0M147.7 46.7h0M151.2 23.4h0M155.0 48.6h0M165.0 35.9h0M169.0 11.0h0M171.6 30.1h0M175.6 31.0h0M178.9 49.3h0M182.5 38.9h0M186.2 20.4h0M189.5 24.2h0M193.5 45.9h0M200.1 13.6h0M206.6 54.2h0M209.6 52.9h0M213.2 41.0h0M216.9 42.5h0M220.2 32.9h0M230.8 65.8h0M234.1 28.7h0M237.8 46.3h0M243.9 45.4h0M250.9 22.3h0M254.9 17.2h0M257.5 31.4h0M261.5 44.6h0M265.1 55.6h0M268.5 60.1h0M272.5 52.2h0M278.2 46.9h0M281.5 42.0h0M285.2 58.8h0M288.8 61.6h0M292.0 44.8h0M295.9 42.9h0M298.5 52.7h0M302.3 85.6h0M305.6 48.4h0M309.2 52.7h0M312.8 65.2h0M316.0 73.1h0"/></svg><p class="sci-typ">RRC · період 0,4115 доби</p><p>78 вимірювань · 2 ночі<br>блиск 13,04…13,45</p><p>20 серпня – 23 серпня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=YZ%20Tau" target="_blank" rel="noopener">VSX</a></p><p>поле: <a href="../m45/">Плеяди M 45</a></p></article><article class="sci-card" id="s-asas-j024636-00024"><h3>ASAS J024636-0002.4</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="ASAS J024636-0002.4: Змінна зоря, 10,71…10,84"><title>ASAS J024636-0002.4: Змінна зоря, 10,71…10,84</title><path class="gr" d="M106.3 0V110M213.7 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 46.4h0M7.5 37.0h0M10.6 83.1h0M13.8 47.1h0M16.9 40.6h0M19.6 80.2h0M22.9 62.2h0M26.4 75.9h0M29.5 99.0h0M32.6 66.5h0M35.7 66.5h0M38.7 69.4h0M41.7 53.6h0M45.1 62.2h0M48.5 35.5h0M51.5 81.7h0M54.6 67.3h0M57.6 68.7h0M60.6 65.1h0M63.6 57.9h0M67.0 50.0h0M70.4 71.6h0M73.4 64.4h0M76.4 86.0h0M79.5 78.1h0M82.5 83.1h0M85.5 93.9h0M88.9 87.4h0M92.3 60.8h0M95.3 93.9h0M98.3 69.4h0M101.3 91.8h0M111.3 61.5h0M114.8 57.9h0M118.2 57.2h0M125.2 54.3h0M128.7 51.4h0M132.1 51.4h0M139.1 47.8h0M142.6 56.4h0M149.6 37.0h0M153.0 50.7h0M156.5 55.7h0M163.5 65.8h0M167.0 61.5h0M170.4 55.0h0M180.9 68.0h0M187.9 50.0h0M191.3 28.3h0M194.8 34.8h0M201.8 28.3h0M205.2 32.7h0M208.7 53.6h0M218.7 15.4h0M225.1 11.0h0M228.2 13.9h0M234.6 39.9h0M237.7 55.7h0M240.9 48.5h0M247.3 69.4h0M253.5 44.2h0M259.9 47.8h0M263.1 56.4h0M269.5 67.3h0M272.6 34.1h0M275.8 57.9h0M294.8 51.4h0M298.0 67.3h0M304.4 61.5h0M307.5 71.6h0M310.7 75.2h0M316.0 52.1h0"/></svg><p>72 вимірювання · 3 ночі<br>блиск 10,71…10,84</p><p>10 жовтня – 12 жовтня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASAS%20J024636-0002.4" target="_blank" rel="noopener">VSX</a></p><p>поле: <a href="../m77/">Галактика M 77</a></p></article><article class="sci-card" id="s-vx-cet"><h3>VX Cet</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="VX Cet: Змінна зоря, 11,61…11,77"><title>VX Cet: Змінна зоря, 11,61…11,77</title><path class="gr" d="M106.3 0V110M213.7 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 32.9h0M7.5 46.2h0M10.6 33.9h0M13.8 24.4h0M16.9 29.7h0M19.6 53.1h0M22.9 35.5h0M26.4 15.3h0M29.5 29.2h0M32.6 25.4h0M35.7 48.3h0M38.7 41.9h0M45.1 34.5h0M48.5 19.6h0M51.5 28.1h0M54.6 29.7h0M57.6 35.0h0M60.6 27.0h0M63.6 36.6h0M67.0 66.5h0M70.4 54.7h0M73.4 40.9h0M76.4 48.9h0M79.5 44.6h0M82.5 57.4h0M85.5 60.6h0M88.9 56.9h0M92.3 45.1h0M95.3 23.8h0M98.3 35.5h0M101.3 24.9h0M111.3 30.8h0M114.8 34.5h0M118.2 30.2h0M125.2 46.2h0M128.7 18.0h0M139.1 44.6h0M142.6 26.0h0M149.6 33.4h0M153.0 48.9h0M156.5 15.3h0M163.5 38.7h0M167.0 33.9h0M170.4 53.7h0M180.9 39.3h0M187.9 23.3h0M191.3 28.6h0M194.8 56.3h0M201.8 37.7h0M205.2 30.2h0M208.7 31.8h0M218.7 28.6h0M225.1 69.1h0M234.6 59.5h0M237.7 72.3h0M240.9 48.3h0M247.3 60.1h0M253.5 39.3h0M259.9 72.9h0M263.1 93.1h0M269.5 38.7h0M272.6 42.5h0M275.8 42.5h0M294.8 99.0h0M298.0 40.9h0M304.4 97.9h0M307.5 11.0h0M310.7 55.3h0M316.0 31.3h0"/></svg><p>69 вимірювань · 3 ночі<br>блиск 11,61…11,77</p><p>10 жовтня – 12 жовтня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=VX%20Cet" target="_blank" rel="noopener">VSX</a></p><p>поле: <a href="../m77/">Галактика M 77</a></p></article><article class="sci-card" id="s-asas-j02460900171"><h3>ASAS J024609+0017.1</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="ASAS J024609+0017.1: Змінна зоря, 12,25…12,74"><title>ASAS J024609+0017.1: Змінна зоря, 12,25…12,74</title><path class="gr" d="M106.3 0V110M213.7 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 39.1h0M7.5 47.5h0M10.6 66.1h0M13.8 55.6h0M16.9 59.9h0M19.6 66.3h0M22.9 58.5h0M26.4 51.2h0M29.5 62.4h0M32.6 59.5h0M35.7 56.5h0M38.7 61.0h0M41.7 70.5h0M45.1 67.0h0M48.5 86.4h0M51.5 89.4h0M54.6 83.2h0M57.6 87.6h0M60.6 83.9h0M63.6 70.2h0M67.0 99.0h0M70.4 84.6h0M73.4 86.0h0M76.4 86.0h0M79.5 93.5h0M82.5 95.6h0M85.5 93.3h0M88.9 86.7h0M92.3 79.4h0M95.3 66.1h0M98.3 82.4h0M101.3 74.6h0M111.3 64.1h0M114.8 64.0h0M118.2 83.3h0M125.2 62.0h0M128.7 59.9h0M132.1 65.0h0M139.1 56.2h0M142.6 45.7h0M149.6 48.7h0M153.0 46.0h0M156.5 48.0h0M163.5 47.5h0M167.0 33.1h0M170.4 36.3h0M180.9 32.0h0M187.9 29.7h0M191.3 35.9h0M194.8 33.9h0M201.8 30.0h0M205.2 32.0h0M208.7 38.0h0M218.7 11.0h0M225.1 25.2h0M228.2 26.3h0M234.6 31.8h0M240.9 50.8h0M247.3 29.2h0M253.5 26.8h0M259.9 38.6h0M263.1 38.0h0M269.5 11.0h0M294.8 67.5h0M298.0 49.0h0M304.4 40.3h0M307.5 34.8h0M316.0 57.2h0"/></svg><p>68 вимірювань · 3 ночі<br>блиск 12,25…12,74</p><p>10 жовтня – 12 жовтня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASAS%20J024609%2B0017.1" target="_blank" rel="noopener">VSX</a></p><p>поле: <a href="../m77/">Галактика M 77</a></p></article><article class="sci-card" id="s-bu-cas"><h3>BU Cas</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="BU Cas: Змінна зоря, 11,40…11,66"><title>BU Cas: Змінна зоря, 11,40…11,66</title><path class="gr" d="M106.3 0V110M213.7 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 29.7h0M27.7 59.0h0M49.8 34.0h0M69.4 24.7h0M87.4 29.0h0M101.3 12.4h0M111.3 63.0h0M117.4 60.0h0M134.8 11.0h0M138.3 78.3h0M160.8 24.0h0M165.6 58.3h0M176.5 44.3h0M182.6 67.0h0M188.0 55.7h0M192.8 65.0h0M197.6 99.0h0M202.8 81.3h0M208.7 80.6h0M218.7 82.3h0M226.2 77.0h0M233.2 66.0h0M239.4 89.0h0M245.7 55.7h0M251.9 69.3h0M258.2 69.0h0M264.4 66.7h0M271.4 61.7h0M278.4 66.0h0M284.6 54.7h0M290.8 57.0h0M297.1 50.0h0M303.3 65.0h0M309.6 60.0h0M316.0 54.0h0"/></svg><p class="sci-typ">EA/DM · період 2,255 доби</p><p>35 вимірювань · 3 ночі<br>блиск 11,40…11,66</p><p>31 серпня – 2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=BU%20Cas" target="_blank" rel="noopener">VSX</a></p><p>поле: <a href="../m103/">Розсіяне скупчення M 103</a></p></article><article class="sci-card" id="s-v1320-cas"><h3>V1320 Cas</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="V1320 Cas: Змінна зоря, 11,73…12,35"><title>V1320 Cas: Змінна зоря, 11,73…12,35</title><path class="gr" d="M106.3 0V110M213.7 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 17.6h0M27.7 18.1h0M49.8 23.3h0M69.4 11.0h0M87.4 16.1h0M101.3 17.4h0M111.3 75.8h0M117.4 75.8h0M122.8 73.8h0M138.3 61.7h0M160.8 26.2h0M165.6 25.4h0M170.8 20.5h0M176.5 24.7h0M182.6 37.5h0M197.6 15.3h0M208.7 28.6h0M218.7 93.1h0M226.2 90.0h0M233.2 99.0h0M239.4 83.5h0M245.7 86.7h0M251.9 91.6h0M258.2 88.0h0M264.4 93.9h0M271.4 90.0h0M278.4 91.1h0M284.6 90.5h0M290.8 92.1h0M297.1 79.6h0M303.3 85.2h0M309.6 79.3h0M316.0 77.9h0"/></svg><p class="sci-typ">EW · період 0,3487 доби</p><p>33 вимірювання · 3 ночі<br>блиск 11,73…12,35</p><p>31 серпня – 2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=V1320%20Cas" target="_blank" rel="noopener">VSX</a></p><p>поле: <a href="../m103/">Розсіяне скупчення M 103</a></p></article><article class="sci-card" id="s-hr-gem"><h3>HR Gem</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="HR Gem: Змінна зоря, 11,87…12,55"><title>HR Gem: Змінна зоря, 11,87…12,55</title><path class="pt" stroke-width="3.6" d="M4.0 51.5h0M14.4 87.2h0M24.1 62.9h0M49.9 60.6h0M58.5 71.4h0M67.1 76.3h0M76.7 74.6h0M86.4 84.8h0M95.0 99.0h0M103.6 86.2h0M112.2 74.4h0M120.8 85.7h0M129.4 68.9h0M148.7 62.2h0M157.2 75.2h0M165.9 64.6h0M174.5 72.3h0M182.8 49.6h0M191.7 51.0h0M201.4 53.2h0M210.3 40.3h0M227.4 41.2h0M236.9 32.1h0M246.3 38.9h0M254.1 33.9h0M263.7 27.6h0M273.4 25.1h0M282.0 21.4h0M290.5 28.2h0M299.2 19.1h0M306.8 11.0h0M316.0 15.9h0"/></svg><p class="sci-typ">EA/SD · період 1,069 доби</p><p>32 вимірювання · 1 ніч<br>блиск 11,87…12,55</p><p>2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=HR%20Gem" target="_blank" rel="noopener">VSX</a></p><p>поле: <a href="../m35/">Розсіяне скупчення M 35</a></p></article><article class="sci-card" id="s-gaia-dr3-458373035989882880"><h3>Gaia DR3 458373035989882880</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="Gaia DR3 458373035989882880: Змінна зоря, 10,14…10,34"><title>Gaia DR3 458373035989882880: Змінна зоря, 10,14…10,34</title><path class="gr" d="M106.3 0V110M213.7 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 49.2h0M11.8 99.0h0M18.7 50.0h0M25.7 53.9h0M32.5 65.2h0M39.2 89.0h0M45.9 46.6h0M53.4 65.6h0M60.9 59.5h0M67.6 63.0h0M74.3 64.7h0M81.0 45.7h0M87.7 60.8h0M94.4 56.9h0M101.3 56.5h0M111.3 29.2h0M160.0 34.9h0M195.7 33.1h0M208.7 97.2h0M218.7 20.6h0M233.0 11.0h0M246.3 18.0h0M258.2 23.2h0M270.1 22.3h0M282.0 22.7h0M293.9 24.5h0M305.8 17.5h0M316.0 14.9h0"/></svg><p>28 вимірювань · 3 ночі<br>блиск 10,14…10,34</p><p>31 серпня – 2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=Gaia%20DR3%20458373035989882880" target="_blank" rel="noopener">VSX</a></p></article><article class="sci-card" id="s-gaia-dr3-458336442867955968"><h3>Gaia DR3 458336442867955968</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="Gaia DR3 458336442867955968: Змінна зоря, 12,55…13,09"><title>Gaia DR3 458336442867955968: Змінна зоря, 12,55…13,09</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 81.6h0M16.1 99.0h0M26.8 83.8h0M37.6 88.0h0M48.2 58.7h0M58.6 75.0h0M69.0 95.4h0M80.6 92.8h0M92.3 70.0h0M102.7 79.6h0M113.1 72.4h0M123.5 62.7h0M133.9 68.2h0M144.3 95.7h0M155.0 76.7h0M165.0 16.5h0M187.2 14.3h0M207.9 11.0h0M226.3 21.7h0M244.8 19.7h0M263.3 19.2h0M281.7 16.0h0M300.1 14.3h0M316.0 18.8h0"/></svg><p>24 вимірювання · 2 ночі<br>блиск 12,55…13,09</p><p>31 серпня – 2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=Gaia%20DR3%20458336442867955968" target="_blank" rel="noopener">VSX</a></p></article><article class="sci-card" id="s-mis-v1395"><h3>Mis V1395</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="Mis V1395: Змінна зоря, 11,39…11,87"><title>Mis V1395: Змінна зоря, 11,39…11,87</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 68.9h0M16.1 78.0h0M26.8 66.8h0M37.6 76.9h0M48.2 85.9h0M58.6 85.2h0M69.0 87.8h0M80.6 86.8h0M92.3 76.4h0M102.7 76.0h0M113.1 83.5h0M123.5 92.5h0M133.9 99.0h0M144.3 78.6h0M155.0 92.7h0M165.0 15.8h0M187.2 17.1h0M207.9 30.9h0M226.3 16.4h0M244.8 21.5h0M263.3 21.7h0M281.7 20.6h0M300.1 17.1h0M316.0 11.0h0"/></svg><p>24 вимірювання · 2 ночі<br>блиск 11,39…11,87</p><p>31 серпня – 2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=Mis%20V1395" target="_blank" rel="noopener">VSX</a></p></article><article class="sci-card" id="s-nsvs-1908107"><h3>NSVS 1908107</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="NSVS 1908107: Змінна зоря, 10,93…11,04"><title>NSVS 1908107: Змінна зоря, 10,93…11,04</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 62.8h0M16.1 56.2h0M26.8 68.6h0M37.6 39.8h0M48.2 59.5h0M58.6 52.9h0M69.0 11.0h0M80.6 45.5h0M92.3 15.1h0M102.7 29.9h0M113.1 73.5h0M123.5 99.0h0M133.9 29.9h0M144.3 60.3h0M155.0 67.7h0M165.0 29.9h0M187.2 34.0h0M207.9 28.3h0M226.3 29.1h0M244.8 48.0h0M263.3 52.1h0M281.7 23.4h0M300.1 36.5h0M316.0 34.9h0"/></svg><p>24 вимірювання · 2 ночі<br>блиск 10,93…11,04</p><p>31 серпня – 2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=NSVS%201908107" target="_blank" rel="noopener">VSX</a></p></article><article class="sci-card" id="s-il-cas"><h3>IL Cas</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="IL Cas: Змінна зоря, 11,05…11,80"><title>IL Cas: Змінна зоря, 11,05…11,80</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 25.4h0M14.7 19.9h0M108.2 21.6h0M119.0 18.5h0M129.7 15.5h0M139.2 11.0h0M147.7 14.1h0M155.0 18.4h0M165.0 94.1h0M174.7 98.1h0M183.7 99.0h0M214.8 92.3h0M232.8 97.4h0M241.8 95.0h0M249.9 89.3h0M257.9 91.4h0M265.9 96.4h0M274.0 89.4h0M282.0 93.5h0M290.9 86.5h0M308.9 88.4h0M316.0 87.5h0"/></svg><p class="sci-typ">EA/SD · період 3,452 доби</p><p>22 вимірювання · 2 ночі<br>блиск 11,05…11,80</p><p>1 вересня – 2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=IL%20Cas" target="_blank" rel="noopener">VSX</a></p><p>поле: <a href="../m103/">Розсіяне скупчення M 103</a></p></article><article class="sci-card" id="s-gaia-dr3-510675670252369664"><h3>Gaia DR3 510675670252369664</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="Gaia DR3 510675670252369664: Змінна зоря, 12,40…12,70"><title>Gaia DR3 510675670252369664: Змінна зоря, 12,40…12,70</title><path class="gr" d="M106.3 0V110M213.7 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 54.4h0M58.8 29.4h0M101.3 34.8h0M111.3 24.6h0M162.9 11.0h0M172.0 54.7h0M185.0 44.8h0M208.7 99.0h0M218.7 46.6h0M233.6 45.4h0M247.1 30.0h0M260.5 52.6h0M274.8 45.4h0M289.0 39.6h0M302.4 50.5h0M316.0 53.8h0"/></svg><p>16 вимірювань · 3 ночі<br>блиск 12,40…12,70</p><p>31 серпня – 2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=Gaia%20DR3%20510675670252369664" target="_blank" rel="noopener">VSX</a></p></article><article class="sci-card" id="s-nsvs-3991669"><h3>NSVS 3991669</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="NSVS 3991669: Змінна зоря, 13,15…13,61"><title>NSVS 3991669: Змінна зоря, 13,15…13,61</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 27.8h0M30.0 11.0h0M56.4 11.0h0M81.3 31.5h0M133.1 15.5h0M155.0 32.2h0M165.0 38.7h0M183.9 62.4h0M222.5 75.6h0M242.3 99.0h0M263.3 56.9h0M279.1 97.0h0M296.7 55.6h0M316.0 87.1h0"/></svg><p>14 вимірювань · 2 ночі<br>блиск 13,15…13,61</p><p>10 жовтня – 11 жовтня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=NSVS%203991669" target="_blank" rel="noopener">VSX</a></p><p>поле: NGC 891</p></article><article class="sci-card" id="s-asassn-v-j012806546013351"><h3>ASASSN-V J012806.54+601335.1</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="ASASSN-V J012806.54+601335.1: Змінна зоря, 12,88…13,58"><title>ASASSN-V J012806.54+601335.1: Змінна зоря, 12,88…13,58</title><path class="gr" d="M106.3 0V110M213.7 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 41.8h0M58.8 72.3h0M101.3 74.5h0M111.3 11.0h0M191.9 45.2h0M208.7 54.4h0M218.7 97.2h0M231.6 86.4h0M243.3 96.4h0M267.3 99.0h0M279.6 85.5h0M291.3 57.4h0M303.6 82.2h0M316.0 67.6h0"/></svg><p>14 вимірювань · 3 ночі<br>блиск 12,88…13,58</p><p>31 серпня – 2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J012806.54%2B601335.1" target="_blank" rel="noopener">VSX</a></p></article><article class="sci-card" id="s-gsc-03693-01705"><h3>GSC 03693-01705</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="GSC 03693-01705: Змінна зоря, 13,26…13,57"><title>GSC 03693-01705: Змінна зоря, 13,26…13,57</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 11.0h0M24.0 47.5h0M43.6 17.5h0M62.0 45.2h0M80.6 59.4h0M99.3 43.8h0M117.7 73.5h0M136.7 56.6h0M155.0 73.2h0M165.0 96.4h0M203.3 75.8h0M240.6 78.9h0M278.7 99.0h0M316.0 89.6h0"/></svg><p class="sci-typ">HADS(B) · період 0,09108 доби</p><p>14 вимірювань · 2 ночі<br>блиск 13,26…13,57</p><p>31 серпня – 2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=GSC%2003693-01705" target="_blank" rel="noopener">VSX</a></p><p>поле: <a href="../ngc-869/">Подвійне скупчення Персея (h Persei) NGC 869</a></p></article><article class="sci-card" id="s-nsvs-6999791"><h3>NSVS 6999791</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="NSVS 6999791: Змінна зоря, 12,85…13,17"><title>NSVS 6999791: Змінна зоря, 12,85…13,17</title><path class="pt" stroke-width="3.6" d="M4.0 11.0h0M35.1 22.3h0M61.5 41.7h0M90.3 51.1h0M121.1 68.0h0M148.4 55.9h0M178.5 51.4h0M208.1 99.0h0M235.4 38.7h0M264.3 51.4h0M293.7 58.6h0M316.0 68.0h0"/></svg><p>12 вимірювань · 1 ніч<br>блиск 12,85…13,17</p><p>28 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=NSVS%206999791" target="_blank" rel="noopener">VSX</a></p></article><article class="sci-card" id="s-asassn-v-j021726205700512"><h3>ASASSN-V J021726.20+570051.2</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="ASASSN-V J021726.20+570051.2: Змінна зоря, 12,92…13,05"><title>ASASSN-V J021726.20+570051.2: Змінна зоря, 12,92…13,05</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 41.9h0M27.5 44.0h0M49.5 73.5h0M72.3 55.0h0M95.3 82.5h0M116.9 57.7h0M138.5 39.9h0M155.0 11.0h0M165.0 44.0h0M218.9 99.0h0M267.5 92.1h0M316.0 89.3h0"/></svg><p>12 вимірювань · 2 ночі<br>блиск 12,92…13,05</p><p>31 серпня – 2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J021726.20%2B570051.2" target="_blank" rel="noopener">VSX</a></p></article><article class="sci-card" id="s-asassn-v-j022319155656096"><h3>ASASSN-V J022319.15+565609.6</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="ASASSN-V J022319.15+565609.6: Змінна зоря, 13,25…13,56"><title>ASASSN-V J022319.15+565609.6: Змінна зоря, 13,25…13,56</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 27.0h0M27.5 67.6h0M72.3 99.0h0M95.3 29.0h0M116.9 42.7h0M138.5 68.7h0M155.0 11.0h0M165.0 52.1h0M218.9 43.9h0M267.5 46.4h0M316.0 79.3h0"/></svg><p>11 вимірювань · 2 ночі<br>блиск 13,25…13,56</p><p>31 серпня – 2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J022319.15%2B565609.6" target="_blank" rel="noopener">VSX</a></p></article><article class="sci-card" id="s-gaia-dr3-458488622150449280"><h3>Gaia DR3 458488622150449280</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="Gaia DR3 458488622150449280: Змінна зоря, 9,98…10,10"><title>Gaia DR3 458488622150449280: Змінна зоря, 9,98…10,10</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 17.5h0M155.0 99.0h0M165.0 11.0h0M187.2 25.3h0M207.9 26.0h0M226.3 24.6h0M244.8 24.6h0M263.3 28.2h0M281.7 25.3h0M300.1 17.5h0M316.0 13.9h0"/></svg><p>11 вимірювань · 2 ночі<br>блиск 9,98…10,10</p><p>1 вересня – 2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=Gaia%20DR3%20458488622150449280" target="_blank" rel="noopener">VSX</a></p></article><article class="sci-card" id="s-nsvs-1911335"><h3>NSVS 1911335</h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="NSVS 1911335: Змінна зоря, 10,04…10,21"><title>NSVS 1911335: Змінна зоря, 10,04…10,21</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 11.0h0M155.0 87.0h0M165.0 81.6h0M187.2 84.3h0M207.9 82.7h0M226.3 79.4h0M244.8 81.1h0M263.3 99.0h0M281.7 83.8h0M300.1 93.5h0M316.0 78.9h0"/></svg><p>11 вимірювань · 2 ночі<br>блиск 10,04…10,21</p><p>1 вересня – 2 вересня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=NSVS%201911335" target="_blank" rel="noopener">VSX</a></p></article></div>
+  </section>
+  <section class="log-sec sci-sec" aria-labelledby="sci-all-h">
+    <h2 id="sci-all-h">Усі об’єкти</h2>
+    <div class="log-tw"><table class="log-t sci-t"><thead><tr><th>Об’єкт</th><th>Тип</th><th>Вимірювань</th><th>Ночей</th><th>Блиск, зор. вел.</th><th>Період</th><th>Каталог</th></tr></thead><tbody><tr><td>V Tri</td><td data-l="Тип">Змінна EB/SD</td><td data-l="Вимірювань">166</td><td data-l="Ночей">6</td><td data-l="Блиск, зор. вел.">10,78…11,72</td><td data-l="Період">25 серпня – 7 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=V%20Tri" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>BC Tri</td><td data-l="Тип">Змінна EW</td><td data-l="Вимірювань">142</td><td data-l="Ночей">5</td><td data-l="Блиск, зор. вел.">11,47…11,85</td><td data-l="Період">25 серпня – 7 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=BC%20Tri" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>V1188 Tau</td><td data-l="Тип">Змінна EW</td><td data-l="Вимірювань">87</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">11,94…12,46</td><td data-l="Період">20 серпня – 23 серпня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=V1188%20Tau" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>YZ Tau</td><td data-l="Тип">Змінна RRC</td><td data-l="Вимірювань">78</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">13,04…13,45</td><td data-l="Період">20 серпня – 23 серпня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=YZ%20Tau" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>ASAS J024636-0002.4</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">72</td><td data-l="Ночей">3</td><td data-l="Блиск, зор. вел.">10,71…10,84</td><td data-l="Період">10 жовтня – 12 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASAS%20J024636-0002.4" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>VX Cet</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">69</td><td data-l="Ночей">3</td><td data-l="Блиск, зор. вел.">11,61…11,77</td><td data-l="Період">10 жовтня – 12 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=VX%20Cet" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>ASAS J024609+0017.1</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">68</td><td data-l="Ночей">3</td><td data-l="Блиск, зор. вел.">12,25…12,74</td><td data-l="Період">10 жовтня – 12 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASAS%20J024609%2B0017.1" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>BU Cas</td><td data-l="Тип">Змінна EA/DM</td><td data-l="Вимірювань">35</td><td data-l="Ночей">3</td><td data-l="Блиск, зор. вел.">11,40…11,66</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=BU%20Cas" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>V1320 Cas</td><td data-l="Тип">Змінна EW</td><td data-l="Вимірювань">33</td><td data-l="Ночей">3</td><td data-l="Блиск, зор. вел.">11,73…12,35</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=V1320%20Cas" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>HR Gem</td><td data-l="Тип">Змінна EA/SD</td><td data-l="Вимірювань">32</td><td data-l="Ночей">1</td><td data-l="Блиск, зор. вел.">11,87…12,55</td><td data-l="Період">2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=HR%20Gem" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>Gaia DR3 458373035989882880</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">28</td><td data-l="Ночей">3</td><td data-l="Блиск, зор. вел.">10,14…10,34</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=Gaia%20DR3%20458373035989882880" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>Gaia DR3 458336442867955968</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">24</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">12,55…13,09</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=Gaia%20DR3%20458336442867955968" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>Mis V1395</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">24</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">11,39…11,87</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=Mis%20V1395" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>NSVS 1908107</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">24</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">10,93…11,04</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=NSVS%201908107" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>IL Cas</td><td data-l="Тип">Змінна EA/SD</td><td data-l="Вимірювань">22</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">11,05…11,80</td><td data-l="Період">1 вересня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=IL%20Cas" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>Gaia DR3 510675670252369664</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">16</td><td data-l="Ночей">3</td><td data-l="Блиск, зор. вел.">12,40…12,70</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=Gaia%20DR3%20510675670252369664" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>NSVS 3991669</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">14</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">13,15…13,61</td><td data-l="Період">10 жовтня – 11 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=NSVS%203991669" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>ASASSN-V J012806.54+601335.1</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">14</td><td data-l="Ночей">3</td><td data-l="Блиск, зор. вел.">12,88…13,58</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J012806.54%2B601335.1" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>GSC 03693-01705</td><td data-l="Тип">Змінна HADS(B)</td><td data-l="Вимірювань">14</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">13,26…13,57</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=GSC%2003693-01705" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>NSVS 6999791</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">12</td><td data-l="Ночей">1</td><td data-l="Блиск, зор. вел.">12,85…13,17</td><td data-l="Період">28 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=NSVS%206999791" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>ASASSN-V J021726.20+570051.2</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">12</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">12,92…13,05</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J021726.20%2B570051.2" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>ASASSN-V J022319.15+565609.6</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">11</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">13,25…13,56</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J022319.15%2B565609.6" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>Gaia DR3 458488622150449280</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">11</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">9,98…10,10</td><td data-l="Період">1 вересня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=Gaia%20DR3%20458488622150449280" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>NSVS 1911335</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">11</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">10,04…10,21</td><td data-l="Період">1 вересня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=NSVS%201911335" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-nsvs-8904208"><td>NSVS 8904208</td><td data-l="Тип">Змінна SRB</td><td data-l="Вимірювань">7</td><td data-l="Ночей">7</td><td data-l="Блиск, зор. вел.">11,97…12,64</td><td data-l="Період">12 вересня – 19 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=NSVS%208904208" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-v1141-cas"><td>V1141 Cas</td><td data-l="Тип">Змінна EA</td><td data-l="Вимірювань">6</td><td data-l="Ночей">1</td><td data-l="Блиск, зор. вел.">11,97…12,10</td><td data-l="Період">31 серпня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=V1141%20Cas" target="_blank" rel="noopener">VSX</a></td></tr><tr><td>SN 2026aaiv</td><td data-l="Тип">Наднова</td><td data-l="Вимірювань">5</td><td data-l="Ночей">5</td><td data-l="Блиск, зор. вел.">11,94…12,56</td><td data-l="Період">12 вересня – 1 жовтня 2026</td><td data-l="Каталог"><a href="../c-30/">Небо ближче</a></td></tr><tr id="t-v1009-cas"><td>V1009 Cas</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">4</td><td data-l="Ночей">1</td><td data-l="Блиск, зор. вел.">12,98…13,19</td><td data-l="Період">1 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=V1009%20Cas" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-asassn-v-j021956554226105"><td>ASASSN-V J021956.55+422610.5</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">3</td><td data-l="Ночей">3</td><td data-l="Блиск, зор. вел.">11,09…11,11</td><td data-l="Період">10 жовтня – 12 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J021956.55%2B422610.5" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-asassn-v-j022252664157124"><td>ASASSN-V J022252.66+415712.4</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">3</td><td data-l="Ночей">3</td><td data-l="Блиск, зор. вел.">12,20</td><td data-l="Період">10 жовтня – 12 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J022252.66%2B415712.4" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-asassn-v-j022403654253108"><td>ASASSN-V J022403.65+425310.8</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">3</td><td data-l="Ночей">3</td><td data-l="Блиск, зор. вел.">10,52…10,54</td><td data-l="Період">10 жовтня – 12 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J022403.65%2B425310.8" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-v0472-cas"><td>V0472 Cas</td><td data-l="Тип">Змінна SR</td><td data-l="Вимірювань">3</td><td data-l="Ночей">3</td><td data-l="Блиск, зор. вел.">12,72…12,82</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=V0472%20Cas" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-nsvs-j0217172415532"><td>NSVS J0217172+415532</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">2</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">14,29…14,47</td><td data-l="Період">10 жовтня – 11 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=NSVS%20J0217172%2B415532" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-asassn-v-j021638345705125"><td>ASASSN-V J021638.34+570512.5</td><td data-l="Тип">Змінна SR</td><td data-l="Вимірювань">2</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">11,63…11,68</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J021638.34%2B570512.5" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-asassn-v-j021656455658175"><td>ASASSN-V J021656.45+565817.5</td><td data-l="Тип">Змінна SR</td><td data-l="Вимірювань">2</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">12,96…12,97</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J021656.45%2B565817.5" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-asassn-v-j022304075710088"><td>ASASSN-V J022304.07+571008.8</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">2</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">11,96…11,99</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J022304.07%2B571008.8" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-asassn-v-j060817972404118"><td>ASASSN-V J060817.97+240411.8</td><td data-l="Тип">Змінна SR</td><td data-l="Вимірювань">2</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">11,83…11,88</td><td data-l="Період">1 вересня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J060817.97%2B240411.8" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-barlad-v53"><td>Barlad V53</td><td data-l="Тип">Змінна BE+LERI</td><td data-l="Вимірювань">2</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">11,81…11,85</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=Barlad%20V53" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-gsc-03694-01728"><td>GSC 03694-01728</td><td data-l="Тип">Змінна GCAS</td><td data-l="Вимірювань">2</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">11,63</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=GSC%2003694-01728" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-gsc-03694-01870"><td>GSC 03694-01870</td><td data-l="Тип">Змінна GCAS</td><td data-l="Вимірювань">2</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">10,88…10,92</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=GSC%2003694-01870" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-gaia-dr3-457094441403794048"><td>Gaia DR3 457094441403794048</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">2</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">13,57…13,59</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=Gaia%20DR3%20457094441403794048" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-gaia-dr3-458328711926948992"><td>Gaia DR3 458328711926948992</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">2</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">11,71…11,73</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=Gaia%20DR3%20458328711926948992" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-gaia-dr3-458454709081938048"><td>Gaia DR3 458454709081938048</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">2</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">10,20…10,26</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=Gaia%20DR3%20458454709081938048" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-tyc-3694-2483-1"><td>TYC 3694-2483-1</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">2</td><td data-l="Ночей">2</td><td data-l="Блиск, зор. вел.">12,72…12,73</td><td data-l="Період">31 серпня – 2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=TYC%203694-2483-1" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-asassn-v-j004535345700465"><td>ASASSN-V J004535.34+570046.5</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">1</td><td data-l="Ночей">1</td><td data-l="Блиск, зор. вел.">12,88</td><td data-l="Період">1 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J004535.34%2B570046.5" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-asassn-v-j004729945621356"><td>ASASSN-V J004729.94+562135.6</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">1</td><td data-l="Ночей">1</td><td data-l="Блиск, зор. вел.">12,85</td><td data-l="Період">1 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J004729.94%2B562135.6" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-gsc-03663-00955"><td>GSC 03663-00955</td><td data-l="Тип">Змінна YSO</td><td data-l="Вимірювань">1</td><td data-l="Ночей">1</td><td data-l="Блиск, зор. вел.">12,84</td><td data-l="Період">1 жовтня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=GSC%2003663-00955" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-asassn-v-j054814783206017"><td>ASASSN-V J054814.78+320601.7</td><td data-l="Тип">Змінна SR</td><td data-l="Вимірювань">1</td><td data-l="Ночей">1</td><td data-l="Блиск, зор. вел.">10,86</td><td data-l="Період">28 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J054814.78%2B320601.7" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-asassn-v-j055338423223360"><td>ASASSN-V J055338.42+322336.0</td><td data-l="Тип">Змінна зоря</td><td data-l="Вимірювань">1</td><td data-l="Ночей">1</td><td data-l="Блиск, зор. вел.">12,56</td><td data-l="Період">28 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASASSN-V%20J055338.42%2B322336.0" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-ay-aur"><td>AY Aur</td><td data-l="Тип">Змінна M</td><td data-l="Вимірювань">1</td><td data-l="Ночей">1</td><td data-l="Блиск, зор. вел.">14,12</td><td data-l="Період">28 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=AY%20Aur" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-v0358-aur"><td>V0358 Aur</td><td data-l="Тип">Змінна LB</td><td data-l="Вимірювань">1</td><td data-l="Ночей">1</td><td data-l="Блиск, зор. вел.">12,43</td><td data-l="Період">28 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=V0358%20Aur" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-asas-j06073924133"><td>ASAS J060739+2413.3</td><td data-l="Тип">Змінна MISC</td><td data-l="Вимірювань">1</td><td data-l="Ночей">1</td><td data-l="Блиск, зор. вел.">10,33</td><td data-l="Період">2 вересня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=ASAS%20J060739%2B2413.3" target="_blank" rel="noopener">VSX</a></td></tr><tr id="t-v0367-per"><td>V0367 Per</td><td data-l="Тип">Змінна LB</td><td data-l="Вимірювань">1</td><td data-l="Ночей">1</td><td data-l="Блиск, зор. вел.">11,88</td><td data-l="Період">23 серпня 2026</td><td data-l="Каталог"><a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=V0367%20Per" target="_blank" rel="noopener">VSX</a></td></tr></tbody></table></div>
+  </section>
+  <section class="sci-sec" aria-labelledby="sci-m-h">
+    <h2 id="sci-m-h">Як я міряю</h2>
+    <ul class="sci-list"><li>Телескоп: DWARF Mini, об’єктив 30 мм, фокусна відстань 150 мм, кольорова матриця Sony IMX662.</li><li>Смуга: зелений канал кольорової матриці. В AAVSO він іде як TG і близький до стандартної смуги V.</li><li>Еталони: ансамбль зір порівняння з карт AAVSO VSP і окрема контрольна зоря для перевірки.</li><li>Калібрування: темнові кадри й плоскі поля. Кадри складаються в групи, час точки береться за серединою групи.</li><li>Точність: медіанна похибка однієї точки 0,03 зоряної величини, для слабших зір вона більша.</li><li>Межі: міське небо, мала апертура й нестандартний фільтр. Тому найкраще виходять яскраві зорі з амплітудою від кількох десятих величини.</li></ul>
+  </section>
+  <section class="sci-sec" aria-labelledby="sci-d-h">
+    <h2 id="sci-d-h">Відкриті дані</h2>
+    <p class="sci-p">Усі виміри лежать у міжнародній базі AAVSO і доступні будь-кому за кодом спостерігача KTFA або за назвою зорі. Складені кадри й гайди з обробки викладаю в репозиторії astro-data на GitHub.</p>
+    <p class="sci-links"><a href="https://www.aavso.org/apps/webobs/results/?obscode=KTFA" target="_blank" rel="noopener">Мої виміри в AAVSO</a> · <a href="https://github.com/tepliyk/astro-data" target="_blank" rel="noopener">astro-data на GitHub</a> · <a href="../science.json">science.json</a></p>
+  </section>
+  <section class="sci-sec" aria-labelledby="sci-n-h">
+    <h2 id="sci-n-h">Що далі</h2>
+    <p class="sci-p">Продовжувати ряди затемнюваних зір, спробувати транзити екзопланет для ExoClock і підрахунок сонячних плям для AAVSO Solar.</p>
+  </section>
+
+  <section aria-labelledby="cat-more-h">
+    <div class="row-head"><h2 id="cat-more-h">Інші розділи</h2></div>
+    <nav class="chips cats" aria-label="Розділи сайту"><a class="chip" href="../nebulae/">Туманності</a><a class="chip" href="../galaxies/">Галактики</a><a class="chip" href="../clusters/">Скупчення</a><a class="chip" href="../messier/">Мессьє</a><a class="chip" href="../solar-system/">Сонячна система</a><a class="chip" href="../equipment/dwarf-mini/">DWARF Mini</a><a class="chip" href="../log/">Журнал ночей</a><span class="chip" aria-current="page">Наука</span></nav>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Костя Теплий, «Небо ближче». Знімки за ліцензією CC BY-NC 4.0.</span>
+    <span id="foot-upd">Оновлено 22 жовтня о 14:31 автоматично</span>
+    <a href="../log/">Журнал ночей</a>
+    <a href="../license/">Використання знімків</a>
+    <a href="../privacy.html">Privacy policy</a>
+  </div>
+</footer>
+
+<a class="fab" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener" aria-label="Telegram-канал «Небо ближче»"><svg aria-hidden="true"><use href="#i-tg"/></svg></a>
+<aside class="vote" id="vote" hidden aria-label="Конкурс астрофото"><a class="vote-pic" href="https://award.universemagazine.com/contest/2026_astro_photo/gallery?image=3302dce3-181e-4d8b-801b-706135accf92" target="_blank" rel="noopener" data-vote tabindex="-1" aria-hidden="true"><img src="../img/ic-1805_t.webp" alt="" width="96" height="96" loading="lazy"></a><div class="vote-tx"><b>«Серце» в конкурсі «Найкраще астрофото України»</b><span>Мій кадр туманності IC 1805 у народному голосуванні. Голосування до 31 жовтня, вхід через Google, один голос на людину.</span><a class="btn btn-p" href="https://award.universemagazine.com/contest/2026_astro_photo/gallery?image=3302dce3-181e-4d8b-801b-706135accf92" target="_blank" rel="noopener" data-vote>Проголосувати</a></div><button class="vote-x" type="button" aria-label="Закрити"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></aside>
+<script>
+(function(){var b=document.getElementById('vote');if(!b)return;var K='vote2026',now=Date.now();
+if(now>=Date.parse('2026-10-31T23:59:59+02:00'))return;
+var st={};try{st=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){}
+if(st.clicked||(st.closed&&now-st.closed<3*864e5))return;
+var ev=function(p,t){if(location.hostname!=='tepliyk.github.io'&&!window.__voteTest)return;try{if(window.__voteTest){window.__voteTest.push(p);return}if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:p,title:t,event:true});else new Image().src='https://nebo-blyzhche.goatcounter.com/count?e=true&p='+encodeURIComponent(p)+'&t='+encodeURIComponent(t)+'&rnd='+Math.random().toString(36).slice(2)}catch(e){}};
+var save=function(){try{localStorage.setItem(K,JSON.stringify(st))}catch(e){}};
+var shown=0,show=function(){if(shown)return;if(document.querySelector('.lang-hint')||document.body.classList.contains('nav-open')){setTimeout(show,8000);return}
+shown=1;b.hidden=false;requestAnimationFrame(function(){requestAnimationFrame(function(){b.classList.add('on')})});ev('contest-vote-shown','Банер конкурсу: показ')};
+setTimeout(show,7000);
+addEventListener('scroll',function s(){if(scrollY>innerHeight*.8){removeEventListener('scroll',s);setTimeout(show,600)}},{passive:true});
+b.addEventListener('click',function(e){if(e.target.closest('[data-vote]')){ev('contest-vote-click','Банер конкурсу: перехід до голосування');st.clicked=Date.now();save();b.hidden=true}});
+b.querySelector('.vote-x').addEventListener('click',function(){ev('contest-vote-close','Банер конкурсу: закрито');st.closed=Date.now();save();b.hidden=true});
+})();
+</script>
+
+<script>
+(() => {
+
+  // Шапка: тема, меню на телефоні, випадне «Галерея», вибір мови й підказка про іншу мову.
+  {
+    const d = document, html = d.documentElement, hd = d.querySelector('header');
+    const store = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) {} return null; };
+    const setTheme = t => { if (t === 'light') html.dataset.theme = 'light'; else delete html.dataset.theme; store('theme', t); };
+    // Дві кнопки теми: у шапці на широкому екрані і в панелі меню на телефоні/планшеті.
+    d.querySelectorAll('#theme, #theme-m').forEach(b => { b.onclick = () => setTheme(html.dataset.theme === 'light' ? 'dark' : 'light'); });
+
+    const mb = d.getElementById('menu-btn');
+    const menu = open => { hd.classList.toggle('open', open); d.body.classList.toggle('nav-open', open); mb.setAttribute('aria-expanded', String(open)); };
+    mb.onclick = () => menu(!hd.classList.contains('open'));
+    hd.querySelectorAll('.sections a').forEach(a => a.addEventListener('click', () => menu(false)));
+    const wide = matchMedia('(min-width: 1101px)');
+    (wide.addEventListener ? wide.addEventListener.bind(wide, 'change') : wide.addListener.bind(wide))(e => { if (e.matches) menu(false); });
+
+    const dd = d.getElementById('dd-gallery'), ddb = dd.querySelector('.dd-btn');
+    const ddSet = open => { dd.classList.toggle('open', open); ddb.setAttribute('aria-expanded', String(open)); };
+    ddb.onclick = e => { e.stopPropagation(); ddSet(!dd.classList.contains('open')); };
+    d.addEventListener('click', e => { if (!dd.contains(e.target)) ddSet(false); });
+    d.addEventListener('keydown', e => {
+      if (e.key !== 'Escape') return;
+      if (dd.classList.contains('open')) { ddSet(false); ddb.focus(); }
+      if (hd.classList.contains('open')) { menu(false); mb.focus(); }
+    });
+
+    // Мова: вибір запам'ятовується; новому відвідувачу лише підказуємо іншу версію, без автоперемикання
+    // (Україна = часовий пояс Києва або українська мова браузера; ботам і пошуковикам нічого не показуємо).
+    const lang = html.lang === 'uk' ? 'uk' : 'en', other = hd.querySelector('.lang a[data-lang]');
+    hd.querySelectorAll('.lang a[data-lang]').forEach(a => a.addEventListener('click', () => store('lang', a.dataset.lang)));
+    const bot = navigator.webdriver || /bot|crawl|spider|slurp|lighthouse|headless|preview/i.test(navigator.userAgent);
+    let want = store('lang');
+    if (!want) {
+      let tz = '';
+      try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+      const langs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']).map(x => String(x).toLowerCase());
+      want = /^Europe\/(Kyiv|Kiev|Uzhgorod|Zaporozhye|Simferopol)$/.test(tz) || langs.some(x => x.startsWith('uk')) ? 'uk' : 'en';
+    }
+    if (other && !bot && want !== lang) {
+      const txt = want === 'en' ? ['This page is also available in English.', 'Read in English', 'Close'] : ['Ця сторінка є українською.', 'Читати українською', 'Закрити'];
+      const t = d.createElement('div');
+      t.className = 'lang-hint'; t.lang = want; t.setAttribute('role', 'note');
+      t.innerHTML = `<span>${txt[0]}</span><a class="btn btn-p" href="${other.href}" hreflang="${want}">${txt[1]}</a><button type="button" aria-label="${txt[2]}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>`;
+      t.querySelector('a').onclick = () => store('lang', want);
+      t.querySelector('button').onclick = () => { store('lang', lang); t.remove(); };
+      setTimeout(() => d.body.appendChild(t), 800);
+    }
+  }
+  // 3D-проліт: грає лише у видимій зоні; без автоплею при reduced-motion або режимі економії трафіку.
+  const v = document.querySelector('.flyby-v');
+  let io = null;
+  if (v) {
+    const calm = matchMedia('(prefers-reduced-motion: reduce)').matches || (navigator.connection && navigator.connection.saveData);
+    if (calm || !('IntersectionObserver' in window)) v.controls = true;
+    else (io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? v.play().catch(() => { v.controls = true; }) : v.pause()), { threshold: .35 })).observe(v);
+  }
+  // Повне відео (TikTok / YouTube) замість петлі, лише після кліку
+  const pb = document.querySelector('.flyby-play');
+  if (pb && v) pb.onclick = () => {
+    const f = document.createElement('iframe');
+    f.className = 'flyby-f'; f.src = pb.dataset.src; f.title = pb.dataset.title;
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.allowFullscreen = true; f.referrerPolicy = 'strict-origin-when-cross-origin';
+    if (io) io.disconnect();
+    v.pause(); v.replaceWith(f); pb.remove(); f.focus();
+  };
+})();
+</script>
+</body>
+</html>

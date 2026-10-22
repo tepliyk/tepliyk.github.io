@@ -17,12 +17,13 @@
 - [Сонячна система](https://tepliyk.github.io/solar-system/)
 - [DWARF Mini](https://tepliyk.github.io/equipment/dwarf-mini/)
 - [Журнал ночей](https://tepliyk.github.io/log/)
+- [Наука](https://tepliyk.github.io/science/)
 
 ## Знято
 
 - [Туманність Розетка (NGC 2244) · C 50](https://tepliyk.github.io/ngc-2244/): Туманність, Єдиноріг, 27 год 4 хв світла за 10 ночей
 - [Вулик (Ясла) · M 44](https://tepliyk.github.io/m44/): Скупчення, Рак, 1 год 32 хв світла за 3 ночі
-- Галактика · M 77: Галактика, 5 год 40 хв світла за 3 ночі
+- [Галактика · M 77](https://tepliyk.github.io/m77/): Галактика, 5 год 40 хв світла за 3 ночі
 - [Туманність Серце · IC 1805](https://tepliyk.github.io/ic-1805/): Туманність, Кассіопея, 12 год 40 хв світла за 9 ночей
 - [Туманність Пуголовки · IC 410](https://tepliyk.github.io/ic-410/): Туманність, Візничий, 5 год 57 хв світла за 5 ночей
 - [Туманність Пакмен · NGC 281](https://tepliyk.github.io/ngc-281/): Туманність, Кассіопея, 5 год 1 хв світла за 4 ночі

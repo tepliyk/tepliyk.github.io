@@ -10,6 +10,7 @@
     <priority>1.0</priority>
     <image:image><image:loc>https://tepliyk.github.io/img/ngc-2244.jpg</image:loc></image:image>
     <image:image><image:loc>https://tepliyk.github.io/img/m44.jpg</image:loc></image:image>
+    <image:image><image:loc>https://tepliyk.github.io/img/m77.jpg</image:loc></image:image>
     <image:image><image:loc>https://tepliyk.github.io/img/ic-1805.jpg</image:loc></image:image>
     <image:image><image:loc>https://tepliyk.github.io/img/ic-410.jpg</image:loc></image:image>
     <image:image><image:loc>https://tepliyk.github.io/img/ngc-281.jpg</image:loc></image:image>
@@ -50,6 +51,7 @@
     <priority>1.0</priority>
     <image:image><image:loc>https://tepliyk.github.io/img/ngc-2244.jpg</image:loc></image:image>
     <image:image><image:loc>https://tepliyk.github.io/img/m44.jpg</image:loc></image:image>
+    <image:image><image:loc>https://tepliyk.github.io/img/m77.jpg</image:loc></image:image>
     <image:image><image:loc>https://tepliyk.github.io/img/ic-1805.jpg</image:loc></image:image>
     <image:image><image:loc>https://tepliyk.github.io/img/ic-410.jpg</image:loc></image:image>
     <image:image><image:loc>https://tepliyk.github.io/img/ngc-281.jpg</image:loc></image:image>
@@ -197,6 +199,24 @@
     <image:image><image:loc>https://tepliyk.github.io/equipment/dwarf-mini/sky-uk.jpg</image:loc></image:image>
     <image:image><image:loc>https://tepliyk.github.io/equipment/dwarf-mini/star-trails.jpg</image:loc></image:image>
     <image:image><image:loc>https://tepliyk.github.io/equipment/dwarf-mini/dew-shield.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/science/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/science/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/science/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/science/"/>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/science/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/science/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/science/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/science/"/>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tepliyk.github.io/log/</loc>
@@ -1137,6 +1157,26 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://tepliyk.github.io/img/m44.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/m77/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m77/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m77/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m77/"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://tepliyk.github.io/img/m77.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/m77/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/m77/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/m77/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/m77/"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://tepliyk.github.io/img/m77.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://tepliyk.github.io/ic-1805/</loc>

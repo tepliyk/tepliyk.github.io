@@ -720,6 +720,41 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
 .gfig figcaption{margin-top:12px;max-width:66ch;font-size:15px;line-height:1.55;color:var(--muted)}
 @media (max-width:600px){.gfig,.gfig-pair{width:calc(100vw - 32px)}.gfig-pair .gfig-m{gap:4px}
   .gfig-map .gfig-m{overflow-x:auto;scrollbar-width:thin}.gfig-map img{width:760px;max-width:none}}
+/* Наука (SCI-02) */
+.sci-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 14px}
+.sci-stat{display:flex;flex-direction:column;gap:6px;padding:18px 20px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.sci-stat b{font:700 clamp(30px,4vw,44px)/1 var(--f-display);letter-spacing:-.03em;font-variant-numeric:tabular-nums lining-nums;color:var(--text)}
+.sci-stat span{font-size:14.5px;line-height:1.35;color:var(--soft)}
+.sci-code{margin:0;font-size:15px;color:var(--soft)}
+.sci-code a,.sci-card a,.sci-links a,.sci-t a{color:var(--accent-text)}
+.sci-p{max-width:66ch;margin:0 0 18px;font-size:16.5px;line-height:1.6;color:var(--soft)}
+.panel.sci-sec{gap:10px}
+.panel.sci-sec h2{margin:0}
+.sci-svg{display:block;width:100%;height:auto;color:var(--accent)}
+.sci-svg .pt{fill:none;stroke:currentColor;stroke-linecap:round}
+.sci-svg .eb{fill:none;stroke:var(--muted);stroke-width:1.2;opacity:.55}
+.sci-svg .gr{fill:none;stroke:var(--border-2);stroke-width:1}
+.sci-svg text{fill:var(--muted);font:13px var(--f-body)}
+.sci-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.sci-card{display:flex;flex-direction:column;gap:8px;min-width:0;padding:16px 18px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.sci-card h3{margin:0;font-size:16px;line-height:1.3;overflow-wrap:anywhere}
+.sci-card p{margin:0;font-size:13.5px;line-height:1.45;color:var(--muted)}
+.sci-list{max-width:70ch;margin:0;padding-left:1.2em;font-size:16.5px;line-height:1.6;color:var(--soft)}
+.sci-list li{margin-bottom:8px}
+.sci-links{margin:0;font-size:16px}
+.sci-typ{font-weight:600;color:var(--soft)!important}
+.sci-card h3 a{color:var(--text);text-decoration:none}
+.sci-card h3 a:hover{color:var(--accent-text)}
+.sci-home{color:inherit;text-decoration:underline;text-decoration-color:var(--accent-border);text-underline-offset:3px}
+.sci-home:hover{color:var(--accent-text)}
+.sci-obj{margin-top:8px}
+.sci-more{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:15px;color:var(--muted)}
+.sci-more a{color:var(--accent-text)}
+[id^="s-"],[id^="t-"]{scroll-margin-top:calc(var(--head-h) + 16px)}
+.sci-t td:nth-child(1){white-space:normal;color:var(--text);font-weight:500}
+.sci-t td:nth-child(2){color:var(--soft)}
+@media (max-width:720px){.sci-stats{grid-template-columns:1fr 1fr}.sci-stat{padding:14px 16px}}
+@media (max-width:640px){.sci-t td:nth-child(1){grid-column:1/-1;order:-1;font-weight:600;font-size:16.5px}.sci-t td:nth-child(2){grid-column:auto;order:0;font-weight:400;font-size:15px}.sci-t td:nth-child(2)::before{display:block}}
 </style><!-- /inline:site.css -->
 <!-- Статистика відвідувань: GoatCounter, без cookies і персональних даних -->
 <script>
@@ -768,6 +803,7 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
       </div>
       <a href="../../messier/">Messier</a>
       <a href="../../log/" aria-current="page">Night log</a>
+      <a href="../../science/">Science</a>
       <a href="../../equipment/dwarf-mini/">DWARF Mini</a>
       <a href="../../#about">About me</a>
       <button class="theme theme-row" id="theme-m" type="button"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>Light or dark theme</button>
@@ -795,11 +831,11 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
   </div>
   <section class="log-sec" aria-labelledby="log-s-h">
     <h2 id="log-s-h">What was shot</h2>
-    <div class="log-tw"><table class="log-t"><thead><tr><th scope="col">Time</th><th scope="col">Object</th><th scope="col">Filter</th><th scope="col">Exposure × frames</th><th scope="col">Stacked</th><th scope="col">Light</th></tr></thead><tbody><tr><td data-l="Time">12:02–12:06</td><td data-l="Object"><a href="../../sonce/">Sun</a> <small>daytime</small></td><td data-l="Filter">solar ND</td><td data-l="Exposure × frames">4 ms × 100</td><td data-l="Stacked">100 / 100</td><td data-l="Light">–</td></tr><tr><td data-l="Time">19:28–19:46</td><td data-l="Object"><a href="../../c-30/">Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv</a></td><td data-l="Filter">none</td><td data-l="Exposure × frames">30 s × 30</td><td data-l="Stacked">26 / 30</td><td data-l="Light">13 min</td></tr><tr><td data-l="Time">19:49–20:19</td><td data-l="Object">NGC 7635</td><td data-l="Filter">dual-band</td><td data-l="Exposure × frames">60 s × 26</td><td data-l="Stacked">26 / 26</td><td data-l="Light">26 min</td></tr><tr><td data-l="Time">20:22–21:24</td><td data-l="Object">IC 63</td><td data-l="Filter">dual-band</td><td data-l="Exposure × frames">60 s × 55</td><td data-l="Stacked">53 / 55</td><td data-l="Light">53 min</td></tr><tr><td data-l="Time">22:15–23:14</td><td data-l="Object">C 23</td><td data-l="Filter">none</td><td data-l="Exposure × frames">30 s × 98</td><td data-l="Stacked">81 / 98</td><td data-l="Light">41 min</td></tr><tr><td data-l="Time">23:17–01:37</td><td data-l="Object">M 77</td><td data-l="Filter">none</td><td data-l="Exposure × frames">60 s × 124</td><td data-l="Stacked">122 / 124</td><td data-l="Light">2 h 2 min</td></tr><tr><td data-l="Time">01:42–05:21</td><td data-l="Object"><a href="../../ngc-2244/">Rosette Nebula</a> <small>mosaic</small></td><td data-l="Filter">dual-band</td><td data-l="Exposure × frames">60 s × 191</td><td data-l="Stacked">181 / 191</td><td data-l="Light">3 h 1 min</td></tr><tr><td data-l="Time">05:32–05:48</td><td data-l="Object"><a href="../../m44/">Beehive Cluster (Praesepe)</a></td><td data-l="Filter">none</td><td data-l="Exposure × frames">10 s × 69</td><td data-l="Stacked">68 / 69</td><td data-l="Light">11 min</td></tr></tbody></table></div>
+    <div class="log-tw"><table class="log-t"><thead><tr><th scope="col">Time</th><th scope="col">Object</th><th scope="col">Filter</th><th scope="col">Exposure × frames</th><th scope="col">Stacked</th><th scope="col">Light</th></tr></thead><tbody><tr><td data-l="Time">12:02–12:06</td><td data-l="Object"><a href="../../sonce/">Sun</a> <small>daytime</small></td><td data-l="Filter">solar ND</td><td data-l="Exposure × frames">4 ms × 100</td><td data-l="Stacked">100 / 100</td><td data-l="Light">–</td></tr><tr><td data-l="Time">19:28–19:46</td><td data-l="Object"><a href="../../c-30/">Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv</a></td><td data-l="Filter">none</td><td data-l="Exposure × frames">30 s × 30</td><td data-l="Stacked">26 / 30</td><td data-l="Light">13 min</td></tr><tr><td data-l="Time">19:49–20:19</td><td data-l="Object">NGC 7635</td><td data-l="Filter">dual-band</td><td data-l="Exposure × frames">60 s × 26</td><td data-l="Stacked">26 / 26</td><td data-l="Light">26 min</td></tr><tr><td data-l="Time">20:22–21:24</td><td data-l="Object">IC 63</td><td data-l="Filter">dual-band</td><td data-l="Exposure × frames">60 s × 55</td><td data-l="Stacked">53 / 55</td><td data-l="Light">53 min</td></tr><tr><td data-l="Time">22:15–23:14</td><td data-l="Object">C 23</td><td data-l="Filter">none</td><td data-l="Exposure × frames">30 s × 98</td><td data-l="Stacked">81 / 98</td><td data-l="Light">41 min</td></tr><tr><td data-l="Time">23:17–01:37</td><td data-l="Object"><a href="../../m77/">M 77</a></td><td data-l="Filter">none</td><td data-l="Exposure × frames">60 s × 124</td><td data-l="Stacked">122 / 124</td><td data-l="Light">2 h 2 min</td></tr><tr><td data-l="Time">01:42–05:21</td><td data-l="Object"><a href="../../ngc-2244/">Rosette Nebula</a> <small>mosaic</small></td><td data-l="Filter">dual-band</td><td data-l="Exposure × frames">60 s × 191</td><td data-l="Stacked">181 / 191</td><td data-l="Light">3 h 1 min</td></tr><tr><td data-l="Time">05:32–05:48</td><td data-l="Object"><a href="../../m44/">Beehive Cluster (Praesepe)</a></td><td data-l="Filter">none</td><td data-l="Exposure × frames">10 s × 69</td><td data-l="Stacked">68 / 69</td><td data-l="Light">11 min</td></tr></tbody></table></div>
   </section>
   <section class="log-sec" aria-labelledby="log-n-h">
     <h2 id="log-n-h">What worked and what got in the way</h2>
-    <ul class="log-notes"><li>First night on IC 63.</li><li>The longest night for C 23: 41 min of light.</li><li>The longest night for M 77: 2 h 2 min of light.</li><li><a href="../../ngc-2244/">Rosette Nebula</a> was shot as a mosaic: the telescope alternated panels through the night.</li><li>Frames from this night went into a finished image of <a href="../../m44/">Beehive Cluster (Praesepe)</a>.</li></ul>
+    <ul class="log-notes"><li>First night on IC 63.</li><li>The longest night for C 23: 41 min of light.</li><li>The longest night for <a href="../../m77/">M 77</a>: 2 h 2 min of light.</li><li><a href="../../ngc-2244/">Rosette Nebula</a> was shot as a mosaic: the telescope alternated panels through the night.</li><li>Frames from this night went into a finished image of <a href="../../m44/">Beehive Cluster (Praesepe)</a>.</li></ul>
   </section>
 
   <nav class="chips log-nav" aria-label="Night log"><a class="chip" href="../2026-10-10/" rel="prev">← Previous night</a><a class="chip" href="../">All nights</a><a class="chip" href="../2026-10-12/" rel="next">Next night →</a></nav>
@@ -808,7 +844,7 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
 <footer>
   <div class="wrap">
     <span>© Kostia Tepliy, «Nebo Blyzhche». Images licensed under CC BY-NC 4.0.</span>
-    <span id="foot-upd">Updated 22 October at 12:10 automatically</span>
+    <span id="foot-upd">Updated 22 October at 14:31 automatically</span>
     <a href="../../log/">Night log</a>
     <a href="../../license/">Image use</a>
     <a href="../../../privacy.html">Privacy policy</a>

@@ -17,12 +17,13 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 - [Solar system](https://tepliyk.github.io/en/solar-system/)
 - [DWARF Mini](https://tepliyk.github.io/en/equipment/dwarf-mini/)
 - [Night log](https://tepliyk.github.io/en/log/)
+- [Science](https://tepliyk.github.io/en/science/)
 
 ## Captured
 
 - [Rosette Nebula · C 50](https://tepliyk.github.io/en/ngc-2244/): Nebula, Monoceros, 27 h 4 min of light over 10 nights
 - [Beehive Cluster (Praesepe) · M 44](https://tepliyk.github.io/en/m44/): Cluster, Cancer, 1 h 32 min of light over 3 nights
-- M 77: Galaxy, 5 h 40 min of light over 3 nights
+- [M 77](https://tepliyk.github.io/en/m77/): Galaxy, 5 h 40 min of light over 3 nights
 - [Heart Nebula · IC 1805](https://tepliyk.github.io/en/ic-1805/): Nebula, Cassiopeia, 12 h 40 min of light over 9 nights
 - [Tadpoles Nebula · IC 410](https://tepliyk.github.io/en/ic-410/): Nebula, Auriga, 5 h 57 min of light over 5 nights
 - [Pacman Nebula · NGC 281](https://tepliyk.github.io/en/ngc-281/): Nebula, Cassiopeia, 5 h 1 min of light over 4 nights

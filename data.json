@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-22T12:10:27+03:00",
+    "generated_at": "2026-10-22T14:31:43+03:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -206,7 +206,17 @@
                 "longest_night_sec": 7320,
                 "longest_night": "2026-10-11"
             },
-            "photo": null,
+            "photo": {
+                "title": "Справжня наука 5/7: запізнення пари біля M77 (v2)",
+                "img": "img/m77.jpg",
+                "thumb": "img/m77_t.jpg",
+                "webp": "img/m77.webp",
+                "thumb_webp": "img/m77_t.webp",
+                "w": 1600,
+                "h": 1000,
+                "date": "2026-10-10",
+                "astrobin": null
+            },
             "difficulty": null,
             "target_min": 300,
             "percent": 100,
@@ -8825,5 +8835,23 @@
                 "humidity": 91
             }
         }
-    ]
+    ],
+    "science_totals": {
+        "observations": 1086,
+        "objects": 53,
+        "curves": 25,
+        "nights": 19,
+        "first": "2026-08-20",
+        "last": "2026-10-19",
+        "obscodes": [
+            "KTFA"
+        ],
+        "by_program": {
+            "aavso": 1086
+        },
+        "by_kind": {
+            "variable": 52,
+            "supernova": 1
+        }
+    }
 }

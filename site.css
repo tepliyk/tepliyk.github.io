@@ -695,3 +695,38 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
 .gfig figcaption{margin-top:12px;max-width:66ch;font-size:15px;line-height:1.55;color:var(--muted)}
 @media (max-width:600px){.gfig,.gfig-pair{width:calc(100vw - 32px)}.gfig-pair .gfig-m{gap:4px}
   .gfig-map .gfig-m{overflow-x:auto;scrollbar-width:thin}.gfig-map img{width:760px;max-width:none}}
+/* Наука (SCI-02) */
+.sci-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 14px}
+.sci-stat{display:flex;flex-direction:column;gap:6px;padding:18px 20px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.sci-stat b{font:700 clamp(30px,4vw,44px)/1 var(--f-display);letter-spacing:-.03em;font-variant-numeric:tabular-nums lining-nums;color:var(--text)}
+.sci-stat span{font-size:14.5px;line-height:1.35;color:var(--soft)}
+.sci-code{margin:0;font-size:15px;color:var(--soft)}
+.sci-code a,.sci-card a,.sci-links a,.sci-t a{color:var(--accent-text)}
+.sci-p{max-width:66ch;margin:0 0 18px;font-size:16.5px;line-height:1.6;color:var(--soft)}
+.panel.sci-sec{gap:10px}
+.panel.sci-sec h2{margin:0}
+.sci-svg{display:block;width:100%;height:auto;color:var(--accent)}
+.sci-svg .pt{fill:none;stroke:currentColor;stroke-linecap:round}
+.sci-svg .eb{fill:none;stroke:var(--muted);stroke-width:1.2;opacity:.55}
+.sci-svg .gr{fill:none;stroke:var(--border-2);stroke-width:1}
+.sci-svg text{fill:var(--muted);font:13px var(--f-body)}
+.sci-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.sci-card{display:flex;flex-direction:column;gap:8px;min-width:0;padding:16px 18px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.sci-card h3{margin:0;font-size:16px;line-height:1.3;overflow-wrap:anywhere}
+.sci-card p{margin:0;font-size:13.5px;line-height:1.45;color:var(--muted)}
+.sci-list{max-width:70ch;margin:0;padding-left:1.2em;font-size:16.5px;line-height:1.6;color:var(--soft)}
+.sci-list li{margin-bottom:8px}
+.sci-links{margin:0;font-size:16px}
+.sci-typ{font-weight:600;color:var(--soft)!important}
+.sci-card h3 a{color:var(--text);text-decoration:none}
+.sci-card h3 a:hover{color:var(--accent-text)}
+.sci-home{color:inherit;text-decoration:underline;text-decoration-color:var(--accent-border);text-underline-offset:3px}
+.sci-home:hover{color:var(--accent-text)}
+.sci-obj{margin-top:8px}
+.sci-more{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:15px;color:var(--muted)}
+.sci-more a{color:var(--accent-text)}
+[id^="s-"],[id^="t-"]{scroll-margin-top:calc(var(--head-h) + 16px)}
+.sci-t td:nth-child(1){white-space:normal;color:var(--text);font-weight:500}
+.sci-t td:nth-child(2){color:var(--soft)}
+@media (max-width:720px){.sci-stats{grid-template-columns:1fr 1fr}.sci-stat{padding:14px 16px}}
+@media (max-width:640px){.sci-t td:nth-child(1){grid-column:1/-1;order:-1;font-weight:600;font-size:16.5px}.sci-t td:nth-child(2){grid-column:auto;order:0;font-weight:400;font-size:15px}.sci-t td:nth-child(2)::before{display:block}}

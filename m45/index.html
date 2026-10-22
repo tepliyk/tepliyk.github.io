@@ -720,6 +720,41 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
 .gfig figcaption{margin-top:12px;max-width:66ch;font-size:15px;line-height:1.55;color:var(--muted)}
 @media (max-width:600px){.gfig,.gfig-pair{width:calc(100vw - 32px)}.gfig-pair .gfig-m{gap:4px}
   .gfig-map .gfig-m{overflow-x:auto;scrollbar-width:thin}.gfig-map img{width:760px;max-width:none}}
+/* Наука (SCI-02) */
+.sci-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 14px}
+.sci-stat{display:flex;flex-direction:column;gap:6px;padding:18px 20px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.sci-stat b{font:700 clamp(30px,4vw,44px)/1 var(--f-display);letter-spacing:-.03em;font-variant-numeric:tabular-nums lining-nums;color:var(--text)}
+.sci-stat span{font-size:14.5px;line-height:1.35;color:var(--soft)}
+.sci-code{margin:0;font-size:15px;color:var(--soft)}
+.sci-code a,.sci-card a,.sci-links a,.sci-t a{color:var(--accent-text)}
+.sci-p{max-width:66ch;margin:0 0 18px;font-size:16.5px;line-height:1.6;color:var(--soft)}
+.panel.sci-sec{gap:10px}
+.panel.sci-sec h2{margin:0}
+.sci-svg{display:block;width:100%;height:auto;color:var(--accent)}
+.sci-svg .pt{fill:none;stroke:currentColor;stroke-linecap:round}
+.sci-svg .eb{fill:none;stroke:var(--muted);stroke-width:1.2;opacity:.55}
+.sci-svg .gr{fill:none;stroke:var(--border-2);stroke-width:1}
+.sci-svg text{fill:var(--muted);font:13px var(--f-body)}
+.sci-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.sci-card{display:flex;flex-direction:column;gap:8px;min-width:0;padding:16px 18px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.sci-card h3{margin:0;font-size:16px;line-height:1.3;overflow-wrap:anywhere}
+.sci-card p{margin:0;font-size:13.5px;line-height:1.45;color:var(--muted)}
+.sci-list{max-width:70ch;margin:0;padding-left:1.2em;font-size:16.5px;line-height:1.6;color:var(--soft)}
+.sci-list li{margin-bottom:8px}
+.sci-links{margin:0;font-size:16px}
+.sci-typ{font-weight:600;color:var(--soft)!important}
+.sci-card h3 a{color:var(--text);text-decoration:none}
+.sci-card h3 a:hover{color:var(--accent-text)}
+.sci-home{color:inherit;text-decoration:underline;text-decoration-color:var(--accent-border);text-underline-offset:3px}
+.sci-home:hover{color:var(--accent-text)}
+.sci-obj{margin-top:8px}
+.sci-more{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:15px;color:var(--muted)}
+.sci-more a{color:var(--accent-text)}
+[id^="s-"],[id^="t-"]{scroll-margin-top:calc(var(--head-h) + 16px)}
+.sci-t td:nth-child(1){white-space:normal;color:var(--text);font-weight:500}
+.sci-t td:nth-child(2){color:var(--soft)}
+@media (max-width:720px){.sci-stats{grid-template-columns:1fr 1fr}.sci-stat{padding:14px 16px}}
+@media (max-width:640px){.sci-t td:nth-child(1){grid-column:1/-1;order:-1;font-weight:600;font-size:16.5px}.sci-t td:nth-child(2){grid-column:auto;order:0;font-weight:400;font-size:15px}.sci-t td:nth-child(2)::before{display:block}}
 </style><!-- /inline:site.css -->
 <!-- Статистика відвідувань: GoatCounter, без cookies і персональних даних -->
 <script>
@@ -768,6 +803,7 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
       </div>
       <a href="../messier/">Мессьє</a>
       <a href="../log/">Журнал ночей</a>
+      <a href="../science/">Наука</a>
       <a href="../equipment/dwarf-mini/">DWARF Mini</a>
       <a href="../#about">Про мене</a>
       <button class="theme theme-row" id="theme-m" type="button"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>Світла чи темна тема</button>
@@ -822,6 +858,11 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
       </div>
     </div>
   </section>
+  <section class="sci-obj" aria-labelledby="sci-obj-h">
+    <div class="row-head"><h2 id="sci-obj-h">Змінні зорі в цьому кадрі</h2><a href="../science/">Уся наука</a></div>
+    <p class="sci-p">З кадрів цього поля я виміряв блиск 2 змінних зір і здав результати в AAVSO, міжнародну базу змінних зір.</p>
+    <div class="sci-grid"><article class="sci-card"><h3><a href="../science/#s-v1188-tau">V1188 Tau</a></h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="V1188 Tau: Змінна зоря, 11,94…12,46"><title>V1188 Tau: Змінна зоря, 11,94…12,46</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 11.0h0M7.5 29.5h0M10.7 24.5h0M14.2 29.7h0M17.5 22.3h0M21.0 17.9h0M24.5 25.6h0M27.6 42.9h0M30.9 34.9h0M34.5 12.4h0M37.8 21.4h0M41.3 25.3h0M44.6 13.4h0M47.9 25.3h0M51.4 20.1h0M54.7 26.0h0M58.1 32.0h0M61.7 28.3h0M64.9 28.8h0M68.2 26.1h0M71.5 21.8h0M75.1 36.7h0M78.3 30.5h0M81.8 32.2h0M85.2 30.8h0M88.5 35.0h0M91.7 28.7h0M95.2 33.9h0M98.7 34.7h0M101.9 36.0h0M105.3 27.5h0M108.8 30.3h0M112.1 29.5h0M115.3 23.5h0M118.8 37.7h0M122.2 37.7h0M125.5 34.0h0M128.9 41.2h0M132.4 36.7h0M135.6 41.1h0M138.9 39.6h0M142.4 50.6h0M145.8 48.5h0M149.0 46.1h0M152.5 34.9h0M155.0 50.3h0M165.0 49.6h0M169.0 54.7h0M171.6 46.3h0M175.6 60.4h0M178.9 53.5h0M182.5 64.2h0M186.2 46.9h0M189.5 45.8h0M193.5 61.9h0M196.1 61.2h0M200.1 67.8h0M206.2 65.4h0M209.6 73.3h0M213.2 74.5h0M216.9 63.6h0M220.2 79.2h0M226.8 76.8h0M230.8 83.5h0M234.1 74.1h0M237.8 99.0h0M243.9 77.5h0M247.5 91.1h0M250.9 94.9h0M254.9 77.7h0M257.5 86.0h0M261.5 87.2h0M265.1 78.2h0M268.5 94.4h0M272.5 89.7h0M278.2 78.7h0M281.5 95.6h0M285.2 82.5h0M288.8 94.8h0M292.0 82.9h0M295.9 79.2h0M298.5 80.8h0M302.3 82.2h0M305.6 83.9h0M309.2 75.3h0M312.8 64.1h0M316.0 68.1h0"/></svg><p class="sci-typ">EW · період 0,5759 доби</p><p>87 вимірювань · 2 ночі<br>блиск 11,94…12,46</p><p>20 серпня – 23 серпня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=V1188%20Tau" target="_blank" rel="noopener">VSX</a></p></article><article class="sci-card"><h3><a href="../science/#s-yz-tau">YZ Tau</a></h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="YZ Tau: Змінна зоря, 13,04…13,45"><title>YZ Tau: Змінна зоря, 13,04…13,45</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 99.0h0M11.4 63.7h0M15.1 67.7h0M18.5 72.2h0M22.2 78.6h0M26.2 45.9h0M29.7 30.8h0M33.6 71.8h0M37.1 49.9h0M40.7 47.8h0M44.6 27.8h0M48.2 31.0h0M52.0 31.8h0M55.8 56.9h0M59.3 71.6h0M62.9 48.8h0M66.6 50.1h0M70.4 56.7h0M74.0 29.7h0M77.7 29.3h0M81.5 40.6h0M88.6 49.1h0M92.4 70.5h0M96.2 33.8h0M99.7 26.8h0M103.5 40.3h0M107.3 50.8h0M110.8 62.2h0M114.4 50.8h0M118.2 34.6h0M121.9 46.3h0M125.5 29.7h0M129.2 38.0h0M133.0 27.6h0M136.5 36.7h0M140.1 38.4h0M143.9 13.4h0M147.7 46.7h0M151.2 23.4h0M155.0 48.6h0M165.0 35.9h0M169.0 11.0h0M171.6 30.1h0M175.6 31.0h0M178.9 49.3h0M182.5 38.9h0M186.2 20.4h0M189.5 24.2h0M193.5 45.9h0M200.1 13.6h0M206.6 54.2h0M209.6 52.9h0M213.2 41.0h0M216.9 42.5h0M220.2 32.9h0M230.8 65.8h0M234.1 28.7h0M237.8 46.3h0M243.9 45.4h0M250.9 22.3h0M254.9 17.2h0M257.5 31.4h0M261.5 44.6h0M265.1 55.6h0M268.5 60.1h0M272.5 52.2h0M278.2 46.9h0M281.5 42.0h0M285.2 58.8h0M288.8 61.6h0M292.0 44.8h0M295.9 42.9h0M298.5 52.7h0M302.3 85.6h0M305.6 48.4h0M309.2 52.7h0M312.8 65.2h0M316.0 73.1h0"/></svg><p class="sci-typ">RRC · період 0,4115 доби</p><p>78 вимірювань · 2 ночі<br>блиск 13,04…13,45</p><p>20 серпня – 23 серпня 2026 · <a href="https://www.aavso.org/vsx/index.php?view=results.get&amp;ident=YZ%20Tau" target="_blank" rel="noopener">VSX</a></p></article></div>
+  </section>
   <div class="obj-cta">
       <a class="btn btn-p btn-lg" data-link="telegram" href="https://t.me/nebo_blyzhche" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tg"/></svg>Більше в Telegram</a>
       <a class="btn btn-lg" href="../"><svg aria-hidden="true"><use href="#i-back"/></svg>На головну</a>
@@ -835,7 +876,7 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
 <footer>
   <div class="wrap">
     <span>© Костя Теплий, «Небо ближче». Знімки за ліцензією CC BY-NC 4.0.</span>
-    <span id="foot-upd">Оновлено 22 жовтня о 12:10 автоматично</span>
+    <span id="foot-upd">Оновлено 22 жовтня о 14:31 автоматично</span>
     <a href="../log/">Журнал ночей</a>
     <a href="../license/">Використання знімків</a>
     <a href="../privacy.html">Privacy policy</a>
