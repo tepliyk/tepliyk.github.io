@@ -16,6 +16,7 @@
 - [Мессьє](https://tepliyk.github.io/messier/)
 - [Сонячна система](https://tepliyk.github.io/solar-system/)
 - [DWARF Mini](https://tepliyk.github.io/equipment/dwarf-mini/)
+- [Обробка](https://tepliyk.github.io/processing/)
 - [Журнал ночей](https://tepliyk.github.io/log/)
 - [Наука](https://tepliyk.github.io/science/)
 

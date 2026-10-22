@@ -755,6 +755,40 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
 .sci-t td:nth-child(2){color:var(--soft)}
 @media (max-width:720px){.sci-stats{grid-template-columns:1fr 1fr}.sci-stat{padding:14px 16px}}
 @media (max-width:640px){.sci-t td:nth-child(1){grid-column:1/-1;order:-1;font-weight:600;font-size:16.5px}.sci-t td:nth-child(2){grid-column:auto;order:0;font-weight:400;font-size:15px}.sci-t td:nth-child(2)::before{display:block}}
+/* Гайди з обробки (PROC-01) */
+.guide{max-width:74ch}
+.guide p,.guide li{font-size:17px;line-height:1.65;color:var(--text)}
+.guide p{margin:0 0 14px}
+.guide h2{margin:44px 0 12px;scroll-margin-top:calc(var(--head-h) + 16px)}
+.guide ul,.guide ol{margin:0 0 16px;padding-left:1.3em}
+.guide li{margin-bottom:6px}
+.guide a{color:var(--accent-text)}
+.guide figure{margin:22px 0 10px}
+.guide img{display:block;width:100%;height:auto;border-radius:14px;background:var(--surface)}
+.guide .cap{margin:0 0 18px;font-size:14.5px;line-height:1.5;color:var(--muted)}
+.guide pre{margin:0 0 16px;padding:14px 16px;overflow-x:auto;border:1px solid var(--border);border-radius:12px;background:var(--surface);font-size:13.5px;line-height:1.55}
+.guide code{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:.9em}
+.guide :not(pre)>code{padding:1px 6px;border-radius:6px;background:var(--surface-2);overflow-wrap:anywhere}
+.guide-tw{margin:16px 0 20px;overflow-x:auto;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+.guide table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.45}
+.guide th,.guide td{padding:10px 14px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+.guide th{font-size:13px;font-weight:600;color:var(--muted)}
+.guide tr:last-child td{border-bottom:0}
+.guide td img{border-radius:10px}
+.guide-toc{margin:22px 0 8px;padding:16px 20px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+.guide-toc b{display:block;margin-bottom:8px;font-size:15px}
+.guide-toc ul{margin:0;padding:0;list-style:none;columns:2;column-gap:28px}
+.guide-toc li{margin-bottom:6px;font-size:15px;line-height:1.45;break-inside:avoid}
+.guide-src{margin-top:40px!important;font-size:15px!important;color:var(--soft)!important}
+.guide-list{display:grid;gap:14px}
+.guide-card{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:20px;align-items:center;padding:14px;border:1px solid var(--border);border-radius:20px;background:var(--surface);color:var(--text);text-decoration:none;transition:border-color .2s}
+.guide-card:hover{border-color:var(--accent-border)}
+.guide-card-m img{display:block;width:100%;height:auto;border-radius:12px}
+.guide-card-t{display:flex;flex-direction:column;gap:8px}
+.guide-card-t b{font-size:18px;line-height:1.3}
+.guide-card-t>span:not(.tlink){font-size:15px;line-height:1.5;color:var(--soft)}
+.guide-obj{margin-top:8px}
+@media (max-width:640px){.guide-card{grid-template-columns:1fr}.guide-toc ul{columns:1}.guide p,.guide li{font-size:16.5px}}
 </style><!-- /inline:site.css -->
 <!-- Статистика відвідувань: GoatCounter, без cookies і персональних даних -->
 <script>
@@ -835,15 +869,16 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
 
   <section aria-labelledby="cat-more-h">
     <div class="row-head"><h2 id="cat-more-h">Інші розділи</h2></div>
-    <nav class="chips cats" aria-label="Розділи сайту"><a class="chip" href="../nebulae/">Туманності</a><a class="chip" href="../galaxies/">Галактики</a><a class="chip" href="../clusters/">Скупчення</a><a class="chip" href="../messier/">Мессьє</a><span class="chip" aria-current="page">Сонячна система</span><a class="chip" href="../equipment/dwarf-mini/">DWARF Mini</a><a class="chip" href="../log/">Журнал ночей</a><a class="chip" href="../science/">Наука</a></nav>
+    <nav class="chips cats" aria-label="Розділи сайту"><a class="chip" href="../nebulae/">Туманності</a><a class="chip" href="../galaxies/">Галактики</a><a class="chip" href="../clusters/">Скупчення</a><a class="chip" href="../messier/">Мессьє</a><span class="chip" aria-current="page">Сонячна система</span><a class="chip" href="../equipment/dwarf-mini/">DWARF Mini</a><a class="chip" href="../processing/">Обробка</a><a class="chip" href="../log/">Журнал ночей</a><a class="chip" href="../science/">Наука</a></nav>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
     <span>© Костя Теплий, «Небо ближче». Знімки за ліцензією CC BY-NC 4.0.</span>
-    <span id="foot-upd">Оновлено 22 жовтня о 14:41 автоматично</span>
+    <span id="foot-upd">Оновлено 22 жовтня о 15:00 автоматично</span>
     <a href="../log/">Журнал ночей</a>
+    <a href="../processing/">Обробка</a>
     <a href="../license/">Використання знімків</a>
     <a href="../privacy.html">Privacy policy</a>
   </div>

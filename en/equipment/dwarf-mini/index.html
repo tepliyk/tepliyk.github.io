@@ -755,6 +755,40 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
 .sci-t td:nth-child(2){color:var(--soft)}
 @media (max-width:720px){.sci-stats{grid-template-columns:1fr 1fr}.sci-stat{padding:14px 16px}}
 @media (max-width:640px){.sci-t td:nth-child(1){grid-column:1/-1;order:-1;font-weight:600;font-size:16.5px}.sci-t td:nth-child(2){grid-column:auto;order:0;font-weight:400;font-size:15px}.sci-t td:nth-child(2)::before{display:block}}
+/* Гайди з обробки (PROC-01) */
+.guide{max-width:74ch}
+.guide p,.guide li{font-size:17px;line-height:1.65;color:var(--text)}
+.guide p{margin:0 0 14px}
+.guide h2{margin:44px 0 12px;scroll-margin-top:calc(var(--head-h) + 16px)}
+.guide ul,.guide ol{margin:0 0 16px;padding-left:1.3em}
+.guide li{margin-bottom:6px}
+.guide a{color:var(--accent-text)}
+.guide figure{margin:22px 0 10px}
+.guide img{display:block;width:100%;height:auto;border-radius:14px;background:var(--surface)}
+.guide .cap{margin:0 0 18px;font-size:14.5px;line-height:1.5;color:var(--muted)}
+.guide pre{margin:0 0 16px;padding:14px 16px;overflow-x:auto;border:1px solid var(--border);border-radius:12px;background:var(--surface);font-size:13.5px;line-height:1.55}
+.guide code{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:.9em}
+.guide :not(pre)>code{padding:1px 6px;border-radius:6px;background:var(--surface-2);overflow-wrap:anywhere}
+.guide-tw{margin:16px 0 20px;overflow-x:auto;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+.guide table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.45}
+.guide th,.guide td{padding:10px 14px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+.guide th{font-size:13px;font-weight:600;color:var(--muted)}
+.guide tr:last-child td{border-bottom:0}
+.guide td img{border-radius:10px}
+.guide-toc{margin:22px 0 8px;padding:16px 20px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+.guide-toc b{display:block;margin-bottom:8px;font-size:15px}
+.guide-toc ul{margin:0;padding:0;list-style:none;columns:2;column-gap:28px}
+.guide-toc li{margin-bottom:6px;font-size:15px;line-height:1.45;break-inside:avoid}
+.guide-src{margin-top:40px!important;font-size:15px!important;color:var(--soft)!important}
+.guide-list{display:grid;gap:14px}
+.guide-card{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:20px;align-items:center;padding:14px;border:1px solid var(--border);border-radius:20px;background:var(--surface);color:var(--text);text-decoration:none;transition:border-color .2s}
+.guide-card:hover{border-color:var(--accent-border)}
+.guide-card-m img{display:block;width:100%;height:auto;border-radius:12px}
+.guide-card-t{display:flex;flex-direction:column;gap:8px}
+.guide-card-t b{font-size:18px;line-height:1.3}
+.guide-card-t>span:not(.tlink){font-size:15px;line-height:1.5;color:var(--soft)}
+.guide-obj{margin-top:8px}
+@media (max-width:640px){.guide-card{grid-template-columns:1fr}.guide-toc ul{columns:1}.guide p,.guide li{font-size:16.5px}}
 </style><!-- /inline:site.css -->
 <!-- Статистика відвідувань: GoatCounter, без cookies і персональних даних -->
 <script>
@@ -854,6 +888,7 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
   <figure class="gfig"><div class="gfig-m"><picture><source type="image/webp" srcset="../../../equipment/dwarf-mini/dew-shield.webp"><img src="../../../equipment/dwarf-mini/dew-shield.jpg" alt="Felt-lined dew shield and lens attachments, 3D printed" width="1400" height="1050" loading="lazy"></picture></div><figcaption>The 3D-printed set: a felt-lined dew shield that cuts the side light from street lamps, and lens attachments, among them a Bahtinov mask and a cap for dark frames.</figcaption></figure>
   <h2>Processing</h2>
   <p>The device produces a stacked image per night, but the real work starts afterwards: the raw frames of all nights are stacked again together, frames with clouds or low star counts are dropped by measured numbers rather than by eye, the city gradient is removed, and only then the colours of the nebula are stretched out of the background. Every object page shows which exposures, filters and nights went into its frame.</p>
+  <p><a class="tlink" href="../../processing/">Step-by-step processing guides</a></p>
   <h2>If your balcony looks like mine</h2>
   <p>Start with nebulae and the dual-band filter, not with galaxies: the first results will keep you going. Shoot after midnight whenever possible. Keep 60-second frames as the default and test longer ones on one night before committing a series. Keep every raw frame: re-stacking later is where most of the quality comes from. And set a goal in hours for each object, so that &quot;done&quot; means something.</p>
   <p class="aff">Thinking about the same telescope? Here is the <a href="https://dwarflab.com/products/dwarf-mini-smart-telescope?aff=673" rel="sponsored noopener" target="_blank">DWARF Mini on the maker's site</a>. Affiliate link: if you buy through it, I earn a small commission at no extra cost to you.</p>
@@ -872,15 +907,16 @@ new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting
 
   <section aria-labelledby="cat-more-h">
     <div class="row-head"><h2 id="cat-more-h">Other sections</h2></div>
-    <nav class="chips cats" aria-label="Site sections"><a class="chip" href="../../nebulae/">Nebulae</a><a class="chip" href="../../galaxies/">Galaxies</a><a class="chip" href="../../clusters/">Clusters</a><a class="chip" href="../../messier/">Messier</a><a class="chip" href="../../solar-system/">Solar system</a><span class="chip" aria-current="page">DWARF Mini</span><a class="chip" href="../../log/">Night log</a><a class="chip" href="../../science/">Science</a></nav>
+    <nav class="chips cats" aria-label="Site sections"><a class="chip" href="../../nebulae/">Nebulae</a><a class="chip" href="../../galaxies/">Galaxies</a><a class="chip" href="../../clusters/">Clusters</a><a class="chip" href="../../messier/">Messier</a><a class="chip" href="../../solar-system/">Solar system</a><span class="chip" aria-current="page">DWARF Mini</span><a class="chip" href="../../processing/">Processing</a><a class="chip" href="../../log/">Night log</a><a class="chip" href="../../science/">Science</a></nav>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
     <span>© Kostia Tepliy, «Nebo Blyzhche». Images licensed under CC BY-NC 4.0.</span>
-    <span id="foot-upd">Updated 22 October at 14:41 automatically</span>
+    <span id="foot-upd">Updated 22 October at 15:00 automatically</span>
     <a href="../../log/">Night log</a>
+    <a href="../../processing/">Processing</a>
     <a href="../../license/">Image use</a>
     <a href="../../../privacy.html">Privacy policy</a>
   </div>

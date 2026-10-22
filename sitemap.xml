@@ -219,6 +219,44 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tepliyk.github.io/processing/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/processing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/processing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/processing/"/>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/processing/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/processing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/processing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/processing/"/>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/processing/duo-band/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/processing/duo-band/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/processing/duo-band/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/processing/duo-band/"/>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://tepliyk.github.io/processing/img/duo-band-07_final.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://tepliyk.github.io/en/processing/duo-band/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/processing/duo-band/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/processing/duo-band/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tepliyk.github.io/processing/duo-band/"/>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://tepliyk.github.io/processing/img/duo-band-07_final.jpg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://tepliyk.github.io/log/</loc>
     <xhtml:link rel="alternate" hreflang="uk" href="https://tepliyk.github.io/log/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tepliyk.github.io/en/log/"/>

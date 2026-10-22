@@ -16,6 +16,7 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 - [Messier](https://tepliyk.github.io/en/messier/)
 - [Solar system](https://tepliyk.github.io/en/solar-system/)
 - [DWARF Mini](https://tepliyk.github.io/en/equipment/dwarf-mini/)
+- [Processing](https://tepliyk.github.io/en/processing/)
 - [Night log](https://tepliyk.github.io/en/log/)
 - [Science](https://tepliyk.github.io/en/science/)
 
