@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-28T12:10:20+02:00",
+    "generated_at": "2026-10-29T12:10:20+02:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -8,15 +8,62 @@
     },
     "totals": {
         "objects": 67,
-        "done": 22,
+        "done": 23,
         "progress": 16,
-        "todo": 29,
-        "nights": 56,
-        "deep_hours": 167.3,
+        "todo": 28,
+        "nights": 57,
+        "deep_hours": 169,
         "first_night": "2026-08-12",
         "photos": 49
     },
     "challenge": [
+        {
+            "id": 64,
+            "slug": "m67",
+            "designation": "M 67",
+            "name": "Розсіяне скупчення",
+            "type": "cluster",
+            "constellation": "Рак",
+            "nights": 1,
+            "integration_sec": 5700,
+            "first": "2026-10-29",
+            "last": "2026-10-29",
+            "text": {
+                "description_uk": "Розсіяне скупчення M67 у Раку, одне з найстаріших відомих розсіяних скупчень: йому близько чотирьох мільярдів років, майже як Сонцю. Більшість таких скупчень давно розпались, а це вціліло, бо лежить далеко від площини Галактики. Серед його зір багато схожих на Сонце, тому M67 астрономи використовують як природну лабораторію для перевірки моделей зоряної еволюції.",
+                "description_en": "Open cluster M67 in Cancer, one of the oldest open clusters known: it is about four billion years old, almost the age of the Sun. Most such clusters have long since dissolved, but this one survived because it lies far from the plane of the Galaxy. Many of its stars resemble the Sun, so astronomers use M67 as a natural laboratory for testing models of stellar evolution.",
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": 2700,
+                "angular_size": "≈ 30′",
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 1,
+                "frames": 228,
+                "exposures": [
+                    30
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-10": 1
+                },
+                "night_dates": [
+                    "2026-10-28"
+                ],
+                "longest_night_sec": 5700,
+                "longest_night": "2026-10-28"
+            },
+            "photo": null,
+            "difficulty": "normal",
+            "target_min": 60,
+            "percent": 100,
+            "status": "done"
+        },
         {
             "id": 80,
             "slug": "ngc-1931",
@@ -356,8 +403,8 @@
                 "poster": "vid/ic-1805.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null,
-                "tiktok": null
+                "youtube": "https://www.youtube.com/shorts/ZCuhHIvvb48",
+                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7701696188906523925"
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -1579,8 +1626,8 @@
                 "poster": "vid/m33.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": "https://www.youtube.com/shorts/MRVbcFd6cpE",
-                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7701400362837675284"
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "hard",
             "target_min": 480,
@@ -2053,6 +2100,57 @@
             "status": "progress"
         },
         {
+            "id": 84,
+            "slug": "m-97",
+            "designation": "M 97",
+            "name": "Планетарна туманність",
+            "type": "nebula",
+            "constellation": "Ursa Major",
+            "nights": 4,
+            "integration_sec": 6480,
+            "first": "2026-10-22",
+            "last": "2026-10-29",
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 5,
+                "frames": 594,
+                "exposures": [
+                    30,
+                    60
+                ],
+                "filters": [
+                    "Dual-band (Ha/OIII)"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-10": 4
+                },
+                "night_dates": [
+                    "2026-10-21",
+                    "2026-10-22",
+                    "2026-10-26",
+                    "2026-10-28"
+                ],
+                "longest_night_sec": 4080,
+                "longest_night": "2026-10-22"
+            },
+            "photo": null,
+            "difficulty": null,
+            "target_min": 240,
+            "percent": 45,
+            "status": "progress"
+        },
+        {
             "id": 45,
             "slug": "c-44",
             "designation": "C 44",
@@ -2111,55 +2209,6 @@
             "difficulty": "hard",
             "target_min": 480,
             "percent": 45,
-            "status": "progress"
-        },
-        {
-            "id": 84,
-            "slug": "m-97",
-            "designation": "M 97",
-            "name": "Планетарна туманність",
-            "type": "nebula",
-            "constellation": "Ursa Major",
-            "nights": 3,
-            "integration_sec": 5880,
-            "first": "2026-10-22",
-            "last": "2026-10-26",
-            "text": {
-                "description_uk": null,
-                "description_en": null,
-                "story_uk": null,
-                "story_en": null,
-                "distance_ly": null,
-                "angular_size": null,
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 3,
-                "frames": 478,
-                "exposures": [
-                    60
-                ],
-                "filters": [
-                    "Dual-band (Ha/OIII)"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-10": 3
-                },
-                "night_dates": [
-                    "2026-10-21",
-                    "2026-10-22",
-                    "2026-10-26"
-                ],
-                "longest_night_sec": 4080,
-                "longest_night": "2026-10-22"
-            },
-            "photo": null,
-            "difficulty": null,
-            "target_min": 240,
-            "percent": 40,
             "status": "progress"
         },
         {
@@ -2445,33 +2494,6 @@
             "shooting": null,
             "photo": null,
             "difficulty": "easy",
-            "target_min": 60,
-            "percent": 0,
-            "status": "todo"
-        },
-        {
-            "id": 64,
-            "slug": "m67",
-            "designation": "M 67",
-            "name": "Розсіяне скупчення",
-            "type": "cluster",
-            "constellation": "Рак",
-            "nights": 0,
-            "integration_sec": 0,
-            "first": null,
-            "last": null,
-            "text": {
-                "description_uk": "Розсіяне скупчення M67 у Раку, одне з найстаріших відомих розсіяних скупчень: йому близько чотирьох мільярдів років, майже як Сонцю. Більшість таких скупчень давно розпались, а це вціліло, бо лежить далеко від площини Галактики. Серед його зір багато схожих на Сонце, тому M67 астрономи використовують як природну лабораторію для перевірки моделей зоряної еволюції.",
-                "description_en": "Open cluster M67 in Cancer, one of the oldest open clusters known: it is about four billion years old, almost the age of the Sun. Most such clusters have long since dissolved, but this one survived because it lies far from the plane of the Galaxy. Many of its stars resemble the Sun, so astronomers use M67 as a natural laboratory for testing models of stellar evolution.",
-                "story_uk": null,
-                "story_en": null,
-                "distance_ly": 2700,
-                "angular_size": "≈ 30′",
-                "en_auto": false
-            },
-            "shooting": null,
-            "photo": null,
-            "difficulty": "normal",
             "target_min": 60,
             "percent": 0,
             "status": "todo"
@@ -3234,10 +3256,10 @@
             "name": "Місяць",
             "type": "moon",
             "constellation": null,
-            "nights": 21,
-            "integration_sec": 83,
+            "nights": 22,
+            "integration_sec": 85,
             "first": "2026-08-23",
-            "last": "2026-10-25",
+            "last": "2026-10-28",
             "text": {
                 "description_uk": "Місяць, наш єдиний природний супутник і найзручніша ціль для балкона: яскравий, великий, доступний у будь-якому місті й у будь-якому засвіченні. Середня відстань до нього близько 384 тисяч кілометрів, світло долітає за секунду з невеликим. Найцікавіший він не в повню, а поблизу термінатора, лінії дня і ночі: там тіні довгі, і кратери, гори та борозни показують рельєф. Щоночі термінатор зсувається, тож той самий кратер двічі однаковим не буває.",
                 "description_en": "The Moon, our only natural satellite and the most convenient balcony target: bright, large, reachable from any city under any light pollution. Its average distance is about 384,000 kilometres; the light takes a little over a second to arrive. It is most interesting not at full phase but near the terminator, the line between day and night: there the shadows are long and craters, mountains and rilles reveal the relief. The terminator shifts every night, so the same crater never looks the same twice.",
@@ -3248,8 +3270,8 @@
                 "en_auto": false
             },
             "shooting": {
-                "sessions": 61,
-                "frames": 14716,
+                "sessions": 62,
+                "frames": 15016,
                 "exposures": [
                     0.002,
                     0.0025,
@@ -3274,7 +3296,7 @@
                 "nights_by_month": {
                     "2026-08": 6,
                     "2026-09": 7,
-                    "2026-10": 8
+                    "2026-10": 9
                 },
                 "night_dates": [
                     "2026-08-23",
@@ -3297,7 +3319,8 @@
                     "2026-10-21",
                     "2026-10-22",
                     "2026-10-24",
-                    "2026-10-25"
+                    "2026-10-25",
+                    "2026-10-28"
                 ],
                 "longest_night_sec": 16,
                 "longest_night": "2026-09-28"
@@ -3574,7 +3597,7 @@
             "todo": 81,
             "unreachable": 10,
             "reachable": 100,
-            "left_hours": 142
+            "left_hours": 141.8
         },
         "objects": [
             {
@@ -3584,7 +3607,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m1"
             },
             {
@@ -3594,7 +3617,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m-2"
             },
             {
@@ -3874,7 +3897,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m-30"
             },
             {
@@ -3884,7 +3907,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m31"
             },
             {
@@ -3894,7 +3917,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m31"
             },
             {
@@ -3904,7 +3927,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m33"
             },
             {
@@ -3914,7 +3937,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m34"
             },
             {
@@ -3924,7 +3947,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m35"
             },
             {
@@ -3934,7 +3957,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m36"
             },
             {
@@ -3944,7 +3967,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m37"
             },
             {
@@ -3954,7 +3977,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m38"
             },
             {
@@ -3974,7 +3997,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -3984,7 +4007,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m-41"
             },
             {
@@ -3994,7 +4017,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m42"
             },
             {
@@ -4004,7 +4027,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m42"
             },
             {
@@ -4014,7 +4037,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m44"
             },
             {
@@ -4024,7 +4047,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m45"
             },
             {
@@ -4034,7 +4057,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m-46"
             },
             {
@@ -4044,7 +4067,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4054,7 +4077,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m-48"
             },
             {
@@ -4074,7 +4097,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m-50"
             },
             {
@@ -4084,7 +4107,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m51"
             },
             {
@@ -4204,7 +4227,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m63"
             },
             {
@@ -4214,7 +4237,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4224,7 +4247,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m65"
             },
             {
@@ -4234,7 +4257,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m65"
             },
             {
@@ -4244,7 +4267,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4294,7 +4317,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m-72"
             },
             {
@@ -4304,7 +4327,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4314,7 +4337,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m-74"
             },
             {
@@ -4334,7 +4357,7 @@
                 "status": "progress",
                 "percent": 62,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m-76"
             },
             {
@@ -4344,7 +4367,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4354,7 +4377,7 @@
                 "status": "progress",
                 "percent": 26,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m78"
             },
             {
@@ -4364,7 +4387,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m-79"
             },
             {
@@ -4384,7 +4407,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m-81"
             },
             {
@@ -4394,7 +4417,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4424,7 +4447,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4504,7 +4527,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4514,7 +4537,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4524,7 +4547,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m-95"
             },
             {
@@ -4534,7 +4557,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4542,9 +4565,9 @@
                 "name": "Owl Nebula",
                 "type": "nebula",
                 "status": "progress",
-                "percent": 54,
+                "percent": 60,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m-97"
             },
             {
@@ -4554,7 +4577,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4564,7 +4587,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4574,7 +4597,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4584,7 +4607,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m101"
             },
             {
@@ -4594,7 +4617,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4604,7 +4627,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m103"
             },
             {
@@ -4624,7 +4647,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4634,7 +4657,7 @@
                 "status": "progress",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m106"
             },
             {
@@ -4654,7 +4677,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": null
             },
             {
@@ -4664,7 +4687,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m-109"
             },
             {
@@ -4674,7 +4697,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-10-28",
+                "season_from": "2026-10-29",
                 "slug": "m31"
             }
         ]
@@ -9694,6 +9717,91 @@
                 "temp_min": 8.5,
                 "wind": 2.4,
                 "humidity": 72
+            }
+        },
+        {
+            "date": "2026-10-28",
+            "sessions": [
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "22:44",
+                    "end": "00:00",
+                    "exposure": 0.005,
+                    "filter": "Без фільтра",
+                    "taken": 300,
+                    "stacked": 300,
+                    "sec": 2,
+                    "mosaic": false,
+                    "photo": true
+                },
+                {
+                    "slug": "m-97",
+                    "designation": "M 97",
+                    "name": "Планетарна туманність",
+                    "type": "nebula",
+                    "solar": false,
+                    "day": false,
+                    "start": "00:03",
+                    "end": "01:48",
+                    "exposure": 30,
+                    "filter": "Dual-band (Ha/OIII)",
+                    "taken": 77,
+                    "stacked": 1,
+                    "sec": 30,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "m-97",
+                    "designation": "M 97",
+                    "name": "Планетарна туманність",
+                    "type": "nebula",
+                    "solar": false,
+                    "day": false,
+                    "start": "00:54",
+                    "end": "02:18",
+                    "exposure": 30,
+                    "filter": "Dual-band (Ha/OIII)",
+                    "taken": 39,
+                    "stacked": 19,
+                    "sec": 570,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "m67",
+                    "designation": "M 67",
+                    "name": "Розсіяне скупчення",
+                    "type": "cluster",
+                    "solar": false,
+                    "day": false,
+                    "start": "01:31",
+                    "end": "04:49",
+                    "exposure": 30,
+                    "filter": "Без фільтра",
+                    "taken": 228,
+                    "stacked": 190,
+                    "sec": 5700,
+                    "mosaic": false,
+                    "photo": false
+                }
+            ],
+            "moon": {
+                "illumination": 90,
+                "phase": "waning_gibbous",
+                "waxing": false
+            },
+            "weather": {
+                "verdict": "cloudy",
+                "cloud": 96,
+                "temp_min": 9.1,
+                "wind": 3.5,
+                "humidity": 54
             }
         }
     ],
