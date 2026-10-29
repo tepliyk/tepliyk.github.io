@@ -5,19 +5,137 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Голосування за Серце · Небо ближче</title>
 <meta name="robots" content="noindex">
-<meta name="description" content="Переадресація на роботу «Серце» (IC 1805) у конкурсі «Найкраще астрофото України 2026».">
+<meta name="description" content="Голосування за роботу «Серце» (IC 1805) у конкурсі «Найкраще астрофото України 2026».">
 <meta property="og:title" content="Проголосуйте за Серце (IC 1805)">
 <meta property="og:description" content="Конкурс «Найкраще астрофото України 2026». Голосування до 31 жовтня.">
-<meta http-equiv="refresh" content="0; url=https://award.universemagazine.com/contest/2026_astro_photo/gallery?image=3302dce3-181e-4d8b-801b-706135accf92">
-<link rel="canonical" href="https://award.universemagazine.com/contest/2026_astro_photo/gallery?image=3302dce3-181e-4d8b-801b-706135accf92">
-<script>location.replace("https://award.universemagazine.com/contest/2026_astro_photo/gallery?image=3302dce3-181e-4d8b-801b-706135accf92");</script>
+<meta property="og:image" content="https://neboblyzhche.com/img/ic-1805.jpg">
+<script>
+// Вбудовані браузери соцмереж (TikTok, Instagram, Facebook, Android WebView):
+// Google блокує в них вхід через акаунт, тож голосування там не спрацює.
+// У звичайному браузері одразу переадресовуємо на роботу в галереї конкурсу.
+(function () {
+  var TARGET = "https://award.universemagazine.com/contest/2026_astro_photo/gallery?image=3302dce3-181e-4d8b-801b-706135accf92";
+  var GC = "https://nebo-blyzhche.goatcounter.com/count";
+  var ua = navigator.userAgent || "";
+  var inApp = /BytedanceWebview|musical_ly|TikTok|trill_|Instagram|FBAN|FBAV|FB_IAB|FBIOS|Line\/|; wv\)/i.test(ua);
+  var force = /[?&]go=1/.test(location.search);
+  window.GOLOS = { target: TARGET, inApp: inApp && !force, android: /Android/i.test(ua), ios: /iPhone|iPad|iPod/i.test(ua),
+    app: /BytedanceWebview|musical_ly|TikTok|trill_/i.test(ua) ? "tiktok" : /Instagram/i.test(ua) ? "instagram" : /FBAN|FBAV|FB_IAB|FBIOS/i.test(ua) ? "facebook" : "other" };
+  function count(p) {
+    try { var i = new Image(); i.src = GC + "?p=" + encodeURIComponent(p) + "&t=" + encodeURIComponent(document.title) + "&r=" + encodeURIComponent(document.referrer) + "&rnd=" + Math.random(); } catch (e) {}
+  }
+  window.GOLOS.count = count;
+  if (!window.GOLOS.inApp) {
+    count(force ? "/golos/go" : "/golos/browser");
+    setTimeout(function () { location.replace(TARGET); }, 150);
+  } else {
+    count("/golos/inapp-" + window.GOLOS.app);
+  }
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://award.universemagazine.com/contest/2026_astro_photo/gallery?image=3302dce3-181e-4d8b-801b-706135accf92"></noscript>
 <style>
-  body{margin:0;min-height:100vh;display:grid;place-items:center;background:#05060e;color:#e1e4ee;font:18px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;padding:16px;box-sizing:border-box}
-  a{color:#ffd666}
+  :root{--bg:#05060e;--fg:#eef0f6;--soft:#b9bfd0;--accent:#ffd666;--card:rgba(255,255,255,.07);--line:rgba(255,255,255,.16)}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;text-align:center}
+  .wrap{max-width:480px;margin:0 auto;padding:20px 16px 32px}
+  #redirect{padding-top:30vh;color:var(--soft)}
+  #redirect a{color:var(--accent)}
+  #inapp{display:none}
+  img.hero{width:100%;height:auto;aspect-ratio:1824/1012;object-fit:cover;border-radius:16px;display:block;margin:0 0 18px}
+  h1{font-size:26px;line-height:1.2;margin:0 0 6px}
+  .sub{color:var(--accent);font-weight:700;margin:0 0 18px}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:0 0 16px;text-align:left}
+  .box b{color:var(--accent)}
+  ol{margin:8px 0 0;padding-left:22px}
+  li{margin:6px 0}
+  .big{font-size:19px;font-weight:700;margin:0 0 4px}
+  .btn{display:block;width:100%;border:0;border-radius:14px;padding:15px 16px;font-family:inherit;font-size:18px;font-weight:700;line-height:1.2;margin:0 0 10px;text-decoration:none;cursor:pointer}
+  .btn-main{background:var(--accent);color:#1a1300}
+  .btn-ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+  #copied{color:var(--accent);min-height:1.4em;margin:0 0 6px;font-size:15px}
+  .small{font-size:14px;color:var(--soft)}
+  .small a{color:var(--soft)}
+  .arrow{position:fixed;top:6px;right:14px;font-size:34px;color:var(--accent);display:none;animation:b 1.2s infinite}
+  @keyframes b{50%{transform:translateY(-6px)}}
 </style>
 </head>
 <body>
-<p>Відкриваємо сторінку голосування…<br>
-Якщо нічого не сталося, <a href="https://award.universemagazine.com/contest/2026_astro_photo/gallery?image=3302dce3-181e-4d8b-801b-706135accf92">натисніть тут</a>.</p>
+<div id="redirect" class="wrap">
+  <p>Відкриваємо сторінку голосування…<br>
+  Якщо нічого не сталося, <a href="https://award.universemagazine.com/contest/2026_astro_photo/gallery?image=3302dce3-181e-4d8b-801b-706135accf92">натисніть тут</a>.</p>
+</div>
+
+<div id="arrow" class="arrow">↑</div>
+<div id="inapp" class="wrap">
+  <img class="hero" src="/img/ic-1805.jpg" alt="Туманність Серце (IC 1805)" width="1824" height="1012">
+  <h1>Проголосуй за Серце</h1>
+  <p class="sub">«Найкраще астрофото України 2026» · до 31 жовтня</p>
+
+  <div class="box">
+    <p class="big">⚠️ Спершу відкрий у браузері</p>
+    <span id="howto">Натисни <b>⋯</b> вгорі праворуч → <b>«Відкрити в браузері»</b>.</span>
+    Усередині цього застосунку Google не дає увійти, тож голос не зарахується.
+  </div>
+
+  <a id="openChrome" class="btn btn-main" href="#" style="display:none">Відкрити в Chrome</a>
+  <button id="copy" class="btn btn-main" type="button">Скопіювати посилання</button>
+  <div id="copied"></div>
+
+  <div class="box">
+    <p class="big">Потім у браузері:</p>
+    <ol>
+      <li>Відкриється моє фото «Серце»</li>
+      <li>Натисни <b>«Проголосувати»</b></li>
+      <li>Увійди через <b>Google</b>, і голос зараховано</li>
+    </ol>
+    <p class="small" style="margin:10px 0 0">Один голос на людину. Дякую! 💫</p>
+  </div>
+
+  <a id="tryHere" class="btn btn-ghost" href="#">Все одно спробувати тут</a>
+  <p class="small">Костянтин Теплий · <a href="https://t.me/nebo_blyzhche">t.me/nebo_blyzhche</a></p>
+</div>
+
+<script>
+(function () {
+  var G = window.GOLOS;
+  if (!G || !G.inApp) return;
+  var d = document;
+  d.getElementById("redirect").style.display = "none";
+  d.getElementById("inapp").style.display = "block";
+  d.getElementById("arrow").style.display = "block";
+
+  var link = "https://neboblyzhche.com/golos";
+  var howto = d.getElementById("howto");
+  if (G.app === "instagram") howto.innerHTML = "Натисни <b>⋯</b> вгорі праворуч → <b>«Відкрити в зовнішньому браузері»</b>.";
+  else if (G.app === "facebook") howto.innerHTML = "Натисни <b>⋯</b> вгорі праворуч → <b>«Відкрити в браузері»</b>.";
+  else if (G.ios) howto.innerHTML = "Натисни <b>⋯</b> або <b>↗</b> вгорі праворуч → <b>«Відкрити в браузері»</b> (Safari).";
+
+  if (G.android) {
+    var a = d.getElementById("openChrome");
+    a.href = "intent://award.universemagazine.com/contest/2026_astro_photo/gallery?image=3302dce3-181e-4d8b-801b-706135accf92#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=" + encodeURIComponent(G.target) + ";end";
+    a.style.display = "block";
+    a.addEventListener("click", function () { G.count("/golos/intent-chrome"); });
+    d.getElementById("copy").className = "btn btn-ghost";
+  }
+
+  d.getElementById("copy").addEventListener("click", function () {
+    var out = d.getElementById("copied");
+    function ok() { out.textContent = "Скопійовано! Встав у браузері: " + link; G.count("/golos/copy"); }
+    function fallback() {
+      var t = d.createElement("textarea"); t.value = link; t.setAttribute("readonly", "");
+      t.style.position = "fixed"; t.style.opacity = "0"; d.body.appendChild(t); t.select();
+      try { d.execCommand("copy"); ok(); } catch (e) { out.textContent = "Скопіюй вручну: " + link; }
+      d.body.removeChild(t);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(link).then(ok, fallback);
+    else fallback();
+  });
+
+  d.getElementById("tryHere").addEventListener("click", function (e) {
+    e.preventDefault(); G.count("/golos/try-inapp"); location.href = G.target;
+  });
+})();
+</script>
 </body>
 </html>
