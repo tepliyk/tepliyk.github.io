@@ -2,7 +2,7 @@
 
 > Nebulae, galaxies and Messier objects shot with a DWARF Mini smart telescope from a light-polluted city balcony in Ukraine: real results, hours of light and night logs.
 
-Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Mini smart telescope from a city balcony in Ukraine (only the eastern half of the sky is visible, light-polluted city sky). The site is rebuilt automatically after each night of shooting. Challenge: 23 of 67 objects captured, 58 nights, 169.7 h of deep-sky light. Messier: 15 of 100 reachable captured. Last update: 2026-10-30. All images are the author's own; the Telegram channel is in Ukrainian.
+Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Mini smart telescope from a city balcony in Ukraine (only the eastern half of the sky is visible, light-polluted city sky). The site is rebuilt automatically after each night of shooting. Challenge: 23 of 67 objects captured, 58 nights, 169.7 h of deep-sky light. Messier: 16 of 100 reachable captured. Last update: 2026-10-31. All images are the author's own; the Telegram channel is in Ukrainian.
 
 ## Main pages
 
@@ -53,7 +53,7 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 - NGC 1491: Nebula, Per, 3 h 52 min of light over 4 nights, 96% of goal
 - [Horsehead Nebula · IC 434](https://neboblyzhche.com/en/ic-434/): Nebula, Orion, 6 h 2 min of light over 6 nights, 75% of goal
 - NGC 2359: Nebula, Canis Major, 2 h 54 min of light over 3 nights, 72% of goal
-- M 97: Nebula, Ursa Major, 2 h 32 min of light over 5 nights, 63% of goal
+- [M 97](https://neboblyzhche.com/en/m-97/): Nebula, Ursa Major, 2 h 32 min of light over 5 nights, 63% of goal
 - [Open cluster M34 · M 34](https://neboblyzhche.com/en/m34/): Cluster, Perseus, 37 min of light over 1 night, 61% of goal
 - IC 63: Nebula, 2 h 13 min of light over 2 nights, 55% of goal
 - [Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30](https://neboblyzhche.com/en/c-30/): Galaxy, Pegasus, 3 h 56 min of light over 9 nights, 49% of goal
