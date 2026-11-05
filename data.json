@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-05T17:52:26+02:00",
+    "generated_at": "2026-11-05T18:23:20+02:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -10366,15 +10366,15 @@
             },
             "weather": {
                 "verdict": "cloudy",
-                "cloud": 97,
-                "temp_min": 4.6,
-                "wind": 3.2,
-                "humidity": 79
+                "cloud": 95,
+                "temp_min": 4.9,
+                "wind": 3.3,
+                "humidity": 78
             }
         }
     ],
     "science_totals": {
-        "observations": 1166,
+        "observations": 1180,
         "objects": 59,
         "curves": 27,
         "nights": 22,
@@ -10384,7 +10384,7 @@
             "KTFA"
         ],
         "by_program": {
-            "aavso": 1166
+            "aavso": 1180
         },
         "by_kind": {
             "variable": 58,
