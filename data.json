@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-04T12:10:34+02:00",
+    "generated_at": "2026-11-05T12:10:22+02:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -9,10 +9,10 @@
     "totals": {
         "objects": 67,
         "done": 23,
-        "progress": 16,
-        "todo": 28,
-        "nights": 60,
-        "deep_hours": 169.7,
+        "progress": 17,
+        "todo": 27,
+        "nights": 59,
+        "deep_hours": 173.1,
         "first_night": "2026-08-12",
         "photos": 50
     },
@@ -24,10 +24,10 @@
             "name": "Розсіяне скупчення",
             "type": "cluster",
             "constellation": "Рак",
-            "nights": 1,
-            "integration_sec": 5700,
+            "nights": 2,
+            "integration_sec": 10760,
             "first": "2026-10-29",
-            "last": "2026-10-29",
+            "last": "2026-11-05",
             "text": {
                 "description_uk": "Розсіяне скупчення M67 у Раку, одне з найстаріших відомих розсіяних скупчень: йому близько чотирьох мільярдів років, майже як Сонцю. Більшість таких скупчень давно розпались, а це вціліло, бо лежить далеко від площини Галактики. Серед його зір багато схожих на Сонце, тому M67 астрономи використовують як природну лабораторію для перевірки моделей зоряної еволюції.",
                 "description_en": "Open cluster M67 in Cancer, one of the oldest open clusters known: it is about four billion years old, almost the age of the Sun. Most such clusters have long since dissolved, but this one survived because it lies far from the plane of the Galaxy. Many of its stars resemble the Sun, so astronomers use M67 as a natural laboratory for testing models of stellar evolution.",
@@ -38,9 +38,10 @@
                 "en_auto": false
             },
             "shooting": {
-                "sessions": 1,
-                "frames": 228,
+                "sessions": 3,
+                "frames": 477,
                 "exposures": [
+                    10,
                     30
                 ],
                 "filters": [
@@ -50,10 +51,12 @@
                     "DWARF Mini"
                 ],
                 "nights_by_month": {
-                    "2026-10": 1
+                    "2026-10": 1,
+                    "2026-11": 1
                 },
                 "night_dates": [
-                    "2026-10-28"
+                    "2026-10-28",
+                    "2026-11-04"
                 ],
                 "longest_night_sec": 5700,
                 "longest_night": "2026-10-28"
@@ -71,6 +74,78 @@
             },
             "difficulty": "normal",
             "target_min": 60,
+            "percent": 100,
+            "status": "done"
+        },
+        {
+            "id": 3,
+            "slug": "ngc-1499",
+            "designation": "NGC 1499",
+            "name": "Туманність Каліфорнія",
+            "type": "nebula",
+            "constellation": "Персей",
+            "nights": 4,
+            "integration_sec": 22260,
+            "first": "2026-08-23",
+            "last": "2026-11-04",
+            "text": {
+                "description_uk": "Туманність Каліфорнія в Персеї, довга смуга світного водню, яка обрисами справді нагадує штат на мапі. Газ підсвічує гаряча зоря ксі Персея поруч, одна з найгарячіших видимих оком зір. Туманність велика, майже п'ять дисків Місяця завдовжки, але дуже тьмяна у видимому світлі: око її не бачить навіть у темному небі, а дуобанд-фільтр і довгі витримки витягують її навіть з міста.",
+                "description_en": "The California Nebula in Perseus, a long band of glowing hydrogen whose outline really does resemble the state on a map. The gas is lit by the nearby hot star Xi Persei, one of the hottest stars visible to the eye. The nebula is large, almost five Moon diameters long, but very faint in visible light: the eye cannot see it even under a dark sky, while a dual-band filter and long exposures pull it out even from the city.",
+                "story_uk": "Каліфорнія стала перевіркою довгих витримок: 90, 120 і 180 секунд в одну ніч, щоб побачити, де апарат починає втрачати кадри через ведення й засвічення. Туманність виявилась вдячною: водень на дуобанді проявляється навіть при Місяці. Кадр з трьох ночей зібрав достатньо світла, щоб показати смугу повністю, і об'єкт закрито в челенджі.",
+                "story_en": "California became a test of long exposures: 90, 120 and 180 seconds in one night to see where the device starts losing frames to tracking and light pollution. The nebula turned out to be rewarding: hydrogen in dual-band shows up even with the Moon out. The three-night frame gathered enough light to show the whole band, and the object is closed in the challenge.",
+                "distance_ly": 1000,
+                "angular_size": "2,5° × 0,5°",
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 4,
+                "frames": 228,
+                "exposures": [
+                    90,
+                    120,
+                    180
+                ],
+                "filters": [
+                    "Dual-band (Ha/OIII)"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-08": 1,
+                    "2026-09": 2,
+                    "2026-11": 1
+                },
+                "night_dates": [
+                    "2026-08-22",
+                    "2026-09-16",
+                    "2026-09-20",
+                    "2026-11-04"
+                ],
+                "longest_night_sec": 7800,
+                "longest_night": "2026-08-22"
+            },
+            "photo": {
+                "title": "NGC 1499 Каліфорнія, 3 ночі, 5 год 12 хв (v6b)",
+                "img": "img/ngc-1499.jpg",
+                "thumb": "img/ngc-1499_t.jpg",
+                "webp": "img/ngc-1499.webp",
+                "thumb_webp": "img/ngc-1499_t.webp",
+                "w": 1800,
+                "h": 987,
+                "date": "2026-09-21",
+                "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/ngc-1499.mp4",
+                "poster": "vid/ngc-1499.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null,
+                "tiktok": null
+            },
+            "difficulty": "normal",
+            "target_min": 240,
             "percent": 100,
             "status": "done"
         },
@@ -208,8 +283,8 @@
                 "poster": "vid/ngc-2244.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": "https://www.youtube.com/shorts/vw2qtQgLX0E",
-                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7703996148473662772"
+                "youtube": null,
+                "tiktok": null
             },
             "difficulty": "normal",
             "target_min": 240,
@@ -948,76 +1023,6 @@
             "flyby": {
                 "loop": "vid/ic-405.mp4",
                 "poster": "vid/ic-405.jpg",
-                "w": 540,
-                "h": 816,
-                "youtube": null,
-                "tiktok": null
-            },
-            "difficulty": "normal",
-            "target_min": 240,
-            "percent": 100,
-            "status": "done"
-        },
-        {
-            "id": 3,
-            "slug": "ngc-1499",
-            "designation": "NGC 1499",
-            "name": "Туманність Каліфорнія",
-            "type": "nebula",
-            "constellation": "Персей",
-            "nights": 3,
-            "integration_sec": 18060,
-            "first": "2026-08-23",
-            "last": "2026-09-21",
-            "text": {
-                "description_uk": "Туманність Каліфорнія в Персеї, довга смуга світного водню, яка обрисами справді нагадує штат на мапі. Газ підсвічує гаряча зоря ксі Персея поруч, одна з найгарячіших видимих оком зір. Туманність велика, майже п'ять дисків Місяця завдовжки, але дуже тьмяна у видимому світлі: око її не бачить навіть у темному небі, а дуобанд-фільтр і довгі витримки витягують її навіть з міста.",
-                "description_en": "The California Nebula in Perseus, a long band of glowing hydrogen whose outline really does resemble the state on a map. The gas is lit by the nearby hot star Xi Persei, one of the hottest stars visible to the eye. The nebula is large, almost five Moon diameters long, but very faint in visible light: the eye cannot see it even under a dark sky, while a dual-band filter and long exposures pull it out even from the city.",
-                "story_uk": "Каліфорнія стала перевіркою довгих витримок: 90, 120 і 180 секунд в одну ніч, щоб побачити, де апарат починає втрачати кадри через ведення й засвічення. Туманність виявилась вдячною: водень на дуобанді проявляється навіть при Місяці. Кадр з трьох ночей зібрав достатньо світла, щоб показати смугу повністю, і об'єкт закрито в челенджі.",
-                "story_en": "California became a test of long exposures: 90, 120 and 180 seconds in one night to see where the device starts losing frames to tracking and light pollution. The nebula turned out to be rewarding: hydrogen in dual-band shows up even with the Moon out. The three-night frame gathered enough light to show the whole band, and the object is closed in the challenge.",
-                "distance_ly": 1000,
-                "angular_size": "2,5° × 0,5°",
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 3,
-                "frames": 190,
-                "exposures": [
-                    90,
-                    120,
-                    180
-                ],
-                "filters": [
-                    "Dual-band (Ha/OIII)"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-08": 1,
-                    "2026-09": 2
-                },
-                "night_dates": [
-                    "2026-08-22",
-                    "2026-09-16",
-                    "2026-09-20"
-                ],
-                "longest_night_sec": 7800,
-                "longest_night": "2026-08-22"
-            },
-            "photo": {
-                "title": "NGC 1499 Каліфорнія, 3 ночі, 5 год 12 хв (v6b)",
-                "img": "img/ngc-1499.jpg",
-                "thumb": "img/ngc-1499_t.jpg",
-                "webp": "img/ngc-1499.webp",
-                "thumb_webp": "img/ngc-1499_t.webp",
-                "w": 1800,
-                "h": 987,
-                "date": "2026-09-21",
-                "astrobin": null
-            },
-            "flyby": {
-                "loop": "vid/ngc-1499.mp4",
-                "poster": "vid/ngc-1499.jpg",
                 "w": 540,
                 "h": 816,
                 "youtube": null,
@@ -2453,6 +2458,53 @@
             "status": "progress"
         },
         {
+            "id": 77,
+            "slug": "m-74",
+            "designation": "M 74",
+            "name": "Галактика",
+            "type": "galaxy",
+            "constellation": "Pisces",
+            "nights": 1,
+            "integration_sec": 2700,
+            "first": "2026-11-04",
+            "last": "2026-11-04",
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 6,
+                "frames": 60,
+                "exposures": [
+                    60
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-11": 1
+                },
+                "night_dates": [
+                    "2026-11-04"
+                ],
+                "longest_night_sec": 2700,
+                "longest_night": "2026-11-04"
+            },
+            "photo": null,
+            "difficulty": null,
+            "target_min": 300,
+            "percent": 15,
+            "status": "progress"
+        },
+        {
             "id": 35,
             "slug": "m78",
             "designation": "M 78",
@@ -3007,33 +3059,6 @@
             "status": "todo"
         },
         {
-            "id": 77,
-            "slug": "m-74",
-            "designation": "M 74",
-            "name": "Галактика",
-            "type": "galaxy",
-            "constellation": "Pisces",
-            "nights": 0,
-            "integration_sec": 0,
-            "first": null,
-            "last": null,
-            "text": {
-                "description_uk": null,
-                "description_en": null,
-                "story_uk": null,
-                "story_en": null,
-                "distance_ly": null,
-                "angular_size": null,
-                "en_auto": false
-            },
-            "shooting": null,
-            "photo": null,
-            "difficulty": null,
-            "target_min": 300,
-            "percent": 0,
-            "status": "todo"
-        },
-        {
             "id": 78,
             "slug": "ngc-2683",
             "designation": "NGC 2683",
@@ -3299,8 +3324,8 @@
                 "en_auto": false
             },
             "shooting": {
-                "sessions": 74,
-                "frames": 15331,
+                "sessions": 73,
+                "frames": 15326,
                 "exposures": [
                     0.002,
                     0.0025,
@@ -3371,8 +3396,8 @@
                 "poster": "vid/misiac.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": null,
-                "tiktok": null
+                "youtube": "https://www.youtube.com/shorts/WkvVQsymO4s",
+                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7704375062182366484"
             }
         },
         {
@@ -3623,11 +3648,11 @@
     "messier": {
         "totals": {
             "captured": 16,
-            "progress": 3,
-            "todo": 81,
+            "progress": 4,
+            "todo": 80,
             "unreachable": 10,
             "reachable": 100,
-            "left_hours": 140.6
+            "left_hours": 139.9
         },
         "objects": [
             {
@@ -3637,7 +3662,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m1"
             },
             {
@@ -3647,7 +3672,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-2"
             },
             {
@@ -3657,7 +3682,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-3"
             },
             {
@@ -3927,7 +3952,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-30"
             },
             {
@@ -3937,7 +3962,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m31"
             },
             {
@@ -3947,7 +3972,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m31"
             },
             {
@@ -3957,7 +3982,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m33"
             },
             {
@@ -3967,7 +3992,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m34"
             },
             {
@@ -3977,7 +4002,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m35"
             },
             {
@@ -3987,7 +4012,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m36"
             },
             {
@@ -3997,7 +4022,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m37"
             },
             {
@@ -4007,7 +4032,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m38"
             },
             {
@@ -4027,7 +4052,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4037,7 +4062,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-41"
             },
             {
@@ -4047,7 +4072,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m42"
             },
             {
@@ -4057,7 +4082,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m42"
             },
             {
@@ -4067,7 +4092,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m44"
             },
             {
@@ -4077,7 +4102,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m45"
             },
             {
@@ -4087,7 +4112,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-46"
             },
             {
@@ -4097,7 +4122,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4107,7 +4132,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-48"
             },
             {
@@ -4117,7 +4142,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4127,7 +4152,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-50"
             },
             {
@@ -4137,7 +4162,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m51"
             },
             {
@@ -4157,7 +4182,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-53"
             },
             {
@@ -4207,7 +4232,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4217,7 +4242,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4227,7 +4252,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4237,7 +4262,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4257,7 +4282,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m63"
             },
             {
@@ -4267,7 +4292,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4277,7 +4302,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m65"
             },
             {
@@ -4287,7 +4312,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m65"
             },
             {
@@ -4297,7 +4322,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4347,7 +4372,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-72"
             },
             {
@@ -4357,17 +4382,17 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
                 "m": 74,
                 "name": null,
                 "type": "galaxy",
-                "status": "todo",
-                "percent": 0,
+                "status": "progress",
+                "percent": 30,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-74"
             },
             {
@@ -4387,7 +4412,7 @@
                 "status": "progress",
                 "percent": 62,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-76"
             },
             {
@@ -4397,7 +4422,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4407,7 +4432,7 @@
                 "status": "progress",
                 "percent": 26,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m78"
             },
             {
@@ -4417,7 +4442,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-79"
             },
             {
@@ -4437,7 +4462,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-81"
             },
             {
@@ -4447,7 +4472,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4467,7 +4492,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4477,7 +4502,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4487,7 +4512,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4497,7 +4522,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4507,7 +4532,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4517,7 +4542,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4527,7 +4552,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4537,7 +4562,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4557,7 +4582,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4567,7 +4592,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4577,7 +4602,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-95"
             },
             {
@@ -4587,7 +4612,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4597,7 +4622,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-97"
             },
             {
@@ -4607,7 +4632,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4617,7 +4642,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4627,7 +4652,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4637,7 +4662,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m101"
             },
             {
@@ -4647,7 +4672,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4657,7 +4682,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m103"
             },
             {
@@ -4677,7 +4702,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4687,7 +4712,7 @@
                 "status": "progress",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m106"
             },
             {
@@ -4707,7 +4732,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": null
             },
             {
@@ -4717,7 +4742,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m-109"
             },
             {
@@ -4727,7 +4752,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-04",
+                "season_from": "2026-11-05",
                 "slug": "m31"
             }
         ]
@@ -10025,23 +10050,6 @@
                     "photo": false
                 },
                 {
-                    "slug": "misiac",
-                    "designation": null,
-                    "name": "Місяць",
-                    "type": "moon",
-                    "solar": true,
-                    "day": false,
-                    "start": "22:22",
-                    "end": "23:23",
-                    "exposure": 0.008,
-                    "filter": "Без фільтра",
-                    "taken": 5,
-                    "stacked": 1,
-                    "sec": 0,
-                    "mosaic": false,
-                    "photo": false
-                },
-                {
                     "slug": "m-97",
                     "designation": "M 97",
                     "name": "Планетарна туманність",
@@ -10070,6 +10078,176 @@
                 "temp_min": 9.2,
                 "wind": 3.4,
                 "humidity": 51
+            }
+        },
+        {
+            "date": "2026-11-04",
+            "sessions": [
+                {
+                    "slug": "m-74",
+                    "designation": "M 74",
+                    "name": "Галактика",
+                    "type": "galaxy",
+                    "solar": false,
+                    "day": false,
+                    "start": "19:21",
+                    "end": "20:34",
+                    "exposure": 60,
+                    "filter": "Без фільтра",
+                    "taken": 10,
+                    "stacked": 10,
+                    "sec": 600,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "m-74",
+                    "designation": "M 74",
+                    "name": "Галактика",
+                    "type": "galaxy",
+                    "solar": false,
+                    "day": false,
+                    "start": "19:37",
+                    "end": "20:50",
+                    "exposure": 60,
+                    "filter": "Без фільтра",
+                    "taken": 10,
+                    "stacked": 8,
+                    "sec": 480,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "m-74",
+                    "designation": "M 74",
+                    "name": "Галактика",
+                    "type": "galaxy",
+                    "solar": false,
+                    "day": false,
+                    "start": "19:53",
+                    "end": "21:06",
+                    "exposure": 60,
+                    "filter": "Без фільтра",
+                    "taken": 10,
+                    "stacked": 10,
+                    "sec": 600,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "m-74",
+                    "designation": "M 74",
+                    "name": "Галактика",
+                    "type": "galaxy",
+                    "solar": false,
+                    "day": false,
+                    "start": "20:09",
+                    "end": "21:22",
+                    "exposure": 60,
+                    "filter": "Без фільтра",
+                    "taken": 10,
+                    "stacked": 10,
+                    "sec": 600,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "m-74",
+                    "designation": "M 74",
+                    "name": "Галактика",
+                    "type": "galaxy",
+                    "solar": false,
+                    "day": false,
+                    "start": "20:25",
+                    "end": "21:38",
+                    "exposure": 60,
+                    "filter": "Без фільтра",
+                    "taken": 10,
+                    "stacked": 6,
+                    "sec": 360,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "m-74",
+                    "designation": "M 74",
+                    "name": "Галактика",
+                    "type": "galaxy",
+                    "solar": false,
+                    "day": false,
+                    "start": "20:41",
+                    "end": "21:54",
+                    "exposure": 60,
+                    "filter": "Без фільтра",
+                    "taken": 10,
+                    "stacked": 1,
+                    "sec": 60,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "ngc-1499",
+                    "designation": "NGC 1499",
+                    "name": "Туманність Каліфорнія",
+                    "type": "nebula",
+                    "solar": false,
+                    "day": false,
+                    "start": "21:01",
+                    "end": "23:28",
+                    "exposure": 120,
+                    "filter": "Dual-band (Ha/OIII)",
+                    "taken": 38,
+                    "stacked": 35,
+                    "sec": 4200,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "m67",
+                    "designation": "M 67",
+                    "name": "Розсіяне скупчення",
+                    "type": "cluster",
+                    "solar": false,
+                    "day": false,
+                    "start": "03:13",
+                    "end": "05:39",
+                    "exposure": 30,
+                    "filter": "Без фільтра",
+                    "taken": 144,
+                    "stacked": 139,
+                    "sec": 4170,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "m67",
+                    "designation": "M 67",
+                    "name": "Розсіяне скупчення",
+                    "type": "cluster",
+                    "solar": false,
+                    "day": false,
+                    "start": "04:40",
+                    "end": "06:06",
+                    "exposure": 10,
+                    "filter": "Без фільтра",
+                    "taken": 105,
+                    "stacked": 89,
+                    "sec": 890,
+                    "mosaic": false,
+                    "photo": false
+                }
+            ],
+            "moon": {
+                "illumination": 19,
+                "phase": "waning_crescent",
+                "waxing": false
+            },
+            "weather": {
+                "verdict": "partly",
+                "cloud": 63,
+                "temp_min": 1.6,
+                "wind": 4.7,
+                "humidity": 80
             }
         }
     ],
