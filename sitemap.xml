@@ -1289,6 +1289,24 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://neboblyzhche.com/log/2026-11-05/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://neboblyzhche.com/log/2026-11-05/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neboblyzhche.com/en/log/2026-11-05/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neboblyzhche.com/log/2026-11-05/"/>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://neboblyzhche.com/en/log/2026-11-05/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://neboblyzhche.com/log/2026-11-05/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neboblyzhche.com/en/log/2026-11-05/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neboblyzhche.com/log/2026-11-05/"/>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://neboblyzhche.com/m67/</loc>
     <xhtml:link rel="alternate" hreflang="uk" href="https://neboblyzhche.com/m67/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neboblyzhche.com/en/m67/"/>
@@ -1953,7 +1971,7 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://neboblyzhche.com/sonce/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neboblyzhche.com/en/sonce/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neboblyzhche.com/sonce/"/>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://neboblyzhche.com/img/sonce.jpg</image:loc></image:image>
@@ -1963,7 +1981,7 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://neboblyzhche.com/sonce/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neboblyzhche.com/en/sonce/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neboblyzhche.com/sonce/"/>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://neboblyzhche.com/img/sonce.jpg</image:loc></image:image>
