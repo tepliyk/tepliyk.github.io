@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-07T12:10:21+02:00",
+    "generated_at": "2026-11-07T13:11:38+02:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -10534,17 +10534,17 @@
         }
     ],
     "science_totals": {
-        "observations": 1180,
+        "observations": 1159,
         "objects": 59,
-        "curves": 27,
-        "nights": 22,
+        "curves": 25,
+        "nights": 21,
         "first": "2026-08-20",
         "last": "2026-11-04",
         "obscodes": [
             "KTFA"
         ],
         "by_program": {
-            "aavso": 1180
+            "aavso": 1159
         },
         "by_kind": {
             "variable": 58,
