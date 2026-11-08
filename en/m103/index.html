@@ -720,53 +720,130 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
 .gfig figcaption{margin-top:12px;max-width:66ch;font-size:15px;line-height:1.55;color:var(--muted)}
 @media (max-width:600px){.gfig,.gfig-pair{width:calc(100vw - 32px)}.gfig-pair .gfig-m{gap:4px}
   .gfig-map .gfig-m{overflow-x:auto;scrollbar-width:thin}.gfig-map img{width:760px;max-width:none}}
-/* Наука (SCI-02) */
-.sci-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 14px}
-.sci-stat{display:flex;flex-direction:column;gap:6px;padding:18px 20px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
-.sci-stat b{font:700 clamp(30px,4vw,44px)/1 var(--f-display);letter-spacing:-.03em;font-variant-numeric:tabular-nums lining-nums;color:var(--text)}
-.sci-stat span{font-size:14.5px;line-height:1.35;color:var(--soft)}
-.sci-code{margin:0;font-size:15px;color:var(--soft)}
-.sci-code a,.sci-card a,.sci-links a,.sci-t a{color:var(--accent-text)}
-.sci-p{max-width:66ch;margin:0 0 18px;font-size:16.5px;line-height:1.6;color:var(--soft)}
-.panel.sci-sec{gap:10px}
-.panel.sci-sec h2{margin:0}
+/* Наука (SCI-02; редизайн за макетом «Наука · desktop», 08.11.2026) */
+.sci-hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(480px,100%),1fr));gap:40px 48px;align-items:end;padding:28px 0 56px;margin-bottom:64px;border-bottom:1px solid var(--border)}
+.sci-hero-t{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
+.sci-hero h1{font-size:clamp(28px,4.2vw,48px);font-weight:700;line-height:1.05;letter-spacing:-.03em;text-wrap:balance}
+.sci-hero-t>p{margin:0;max-width:56ch;font-size:18px;line-height:1.55;color:var(--soft)}
+.sci-btns{display:flex;flex-wrap:wrap;gap:12px}
+.sci-btns .btn{border-radius:12px;min-height:48px;padding:0 22px}
+.sci-btns .btn svg{width:16px;height:16px}
+.sci-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0}
+.sci-stat{display:flex;flex-direction:column;gap:6px;padding:20px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.sci-stat b{font:600 clamp(28px,3vw,34px)/1 var(--f-display);letter-spacing:-.02em;color:var(--text)}
+.sci-stat b.acc{color:var(--accent-text)}
+.sci-stat span{font-size:13px;line-height:1.35;color:var(--muted)}
+.sci .num{font-variant-numeric:tabular-nums lining-nums}
+.sci .muted{color:var(--muted)}
+.sci-tag{display:inline-flex;align-items:center;height:26px;padding:0 10px;border-radius:7px;font:600 12px/1 var(--f-body);letter-spacing:.02em;white-space:nowrap}
+.sci-tag-eb{background:rgba(108,184,255,.16);color:var(--done-text)}
+.sci-tag-rr{background:var(--accent-soft);color:var(--accent-text)}
+.sci-tag-sn{background:rgba(255,120,120,.16);color:#FFA8A8}
+[data-theme=light] .sci-tag-sn{background:rgba(220,60,60,.12);color:#B42318}
+.sci-tag-x{background:var(--hover-2);color:var(--soft)}
+.sci-sec{margin:0 0 72px}
+.sci-sh{display:flex;flex-direction:column;gap:10px;max-width:64ch;margin-bottom:28px}
+.sci-sh h2,.sci-two h2{font-size:clamp(26px,3.2vw,36px);font-weight:700;letter-spacing:-.015em;line-height:1.1}
+.sci-sh p,.sci-p{margin:0;font-size:16px;line-height:1.55;color:var(--soft)}
+.sci-card{display:flex;flex-direction:column;gap:12px;min-width:0;padding:20px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.sci-card-h{display:flex;justify-content:space-between;align-items:center;gap:8px 12px;flex-wrap:wrap}
+.sci-card h3,.sci-hl-n{margin:0;font:700 18px/1.25 var(--f-display);letter-spacing:-.01em;overflow-wrap:anywhere}
+.sci-card h3 a{color:var(--text);text-decoration:none}.sci-card h3 a:hover{color:var(--accent-text)}
+.sci-card-k{display:flex;gap:8px;align-items:center;font-size:12px}
+.sci-card-m{display:flex;justify-content:space-between;gap:6px 12px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.sci-card-l{display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+.sci-card a,.sci-t a,.sci-tf a,.sci-obj a{color:var(--accent-text)}
+.sci-card-link{text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+.sci-card-link:hover{border-color:var(--accent-border);transform:translateY(-2px);color:inherit}
+.sci-hl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:20px}
+.sci-hl-grid .sci-card{padding:24px;gap:16px}
+.sci-hl-n{font-size:22px}
+.sci-hl-b{margin:0;font-size:14px;line-height:1.55;color:var(--soft)}
+.sci-hl-d{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid var(--border)}
+.sci-hl-d div{display:flex;flex-direction:column;gap:3px;min-width:0}
+.sci-hl-d b{font-size:16px;font-weight:600;color:var(--text);overflow-wrap:anywhere}
+.sci-hl-d span{font-size:11px;color:var(--muted)}
 .sci-svg{display:block;width:100%;height:auto;color:var(--accent)}
 .sci-svg .pt{fill:none;stroke:currentColor;stroke-linecap:round}
 .sci-svg .eb{fill:none;stroke:var(--muted);stroke-width:1.2;opacity:.55}
 .sci-svg .gr{fill:none;stroke:var(--border-2);stroke-width:1}
-.sci-svg text{fill:var(--muted);font:13px var(--f-body)}
-.sci-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
-.sci-hl-wrap{position:relative}
-.sci-hl-row{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0;padding:2px 2px 10px;scrollbar-width:thin;scrollbar-color:var(--border-2) transparent}
-.sci-hl{flex:0 0 min(100%,640px);scroll-snap-align:start;display:flex;flex-direction:column;gap:10px;min-width:0;padding:18px 20px;border:1px solid var(--border);border-radius:22px;background:var(--surface)}
-.sci-hl h3{margin:0;font-size:20px;line-height:1.25}
-.sci-hl p{margin:0;font-size:14px;line-height:1.5;color:var(--muted)}
-.sci-hl .sci-hl-b{color:var(--text);font-size:14.5px}
-.sci-hl .sci-hl-m{font-variant-numeric:tabular-nums}
-.sci-hl a{color:var(--accent-text)}
-.sci-hl-btn{position:absolute;top:50%;z-index:1;width:36px;height:36px;margin-top:-18px;border:1px solid var(--border);border-radius:50%;background:var(--surface);color:var(--text);font-size:18px;line-height:1;cursor:pointer;opacity:.9}
-.sci-hl-btn:hover{color:var(--accent-text)}
-.sci-hl-btn[data-dir="-1"]{left:-14px}.sci-hl-btn[data-dir="1"]{right:-14px}
-@media (max-width:720px){.sci-hl-btn{display:none}.sci-hl{padding:14px 16px}.sci-hl h3{font-size:18px}}
-.sci-card{display:flex;flex-direction:column;gap:8px;min-width:0;padding:16px 18px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
-.sci-card h3{margin:0;font-size:16px;line-height:1.3;overflow-wrap:anywhere}
-.sci-card p{margin:0;font-size:13.5px;line-height:1.45;color:var(--muted)}
-.sci-list{max-width:70ch;margin:0;padding-left:1.2em;font-size:16.5px;line-height:1.6;color:var(--soft)}
-.sci-list li{margin-bottom:8px}
-.sci-links{margin:0;font-size:16px}
-.sci-typ{font-weight:600;color:var(--soft)!important}
-.sci-card h3 a{color:var(--text);text-decoration:none}
-.sci-card h3 a:hover{color:var(--accent-text)}
+.sci-svg text{fill:var(--muted);font:12px var(--f-body)}
+.sci-card[data-g=ecl] .sci-svg{color:var(--done)}
+.sci-card[data-g=other] .sci-svg{color:var(--soft)}
+.sci-sn .sci-svg{color:#FF8A8A}
+[data-theme=light] .sci-sn .sci-svg{color:#D64545}
+.sci-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr));gap:16px}
+.sci-filters{flex-wrap:wrap;overflow:visible;align-items:center;gap:10px;margin-bottom:24px}
+.sci-filters .muted{margin-left:auto;font-size:13px}
+.sci-center{display:flex;justify-content:center;margin-top:24px}
+.sci-sn{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:36px;align-items:center;padding:36px;border:1px solid rgba(255,120,120,.25);border-radius:18px;background:var(--surface)}
+.sci-sn-t{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.sci-sn h2{font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.15;letter-spacing:-.01em}
+.sci-sn-t>p{margin:0;font-size:16px;line-height:1.6;color:var(--soft)}
+.sci-sn-k{display:flex;gap:24px;flex-wrap:wrap}
+.sci-sn-k div{display:flex;flex-direction:column;gap:4px}
+.sci-sn-k b{font-size:22px;font-weight:600;color:var(--text)}
+.sci-sn-k span{font-size:12px;color:var(--muted)}
+.sci-fig{margin:0;padding:20px;display:flex;flex-direction:column;gap:12px;border:1px solid var(--border);border-radius:14px;background:var(--ink)}
+.sci-fig-h{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.sci-fig figcaption{font-size:12px;color:var(--dim)}
+.sci-th{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:24px}
+.sci-th .sci-sh{margin:0}
+.sci-search{position:relative;flex:1 1 300px;max-width:420px}
+.sci-search svg{position:absolute;left:14px;top:15px;color:var(--dim);pointer-events:none}
+.sci-input{width:100%;min-height:48px;padding:0 16px 0 44px;border-radius:12px;border:1px solid var(--border-2);background:var(--surface);color:var(--text);font:400 15px var(--f-body)}
+.sci-input::placeholder{color:var(--dim)}
+.sci-input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.sci-vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.sci-tbl{border:1px solid var(--border);border-radius:18px;background:var(--surface);overflow:hidden}
+.sci-tw{overflow:auto;max-height:560px}
+.sci-t{width:100%;border-collapse:collapse;min-width:820px}
+.sci-t th{position:sticky;top:0;z-index:1;padding:14px 16px;text-align:left;font:600 12px/1.2 var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--surface);border-bottom:1px solid var(--border-2);white-space:nowrap}
+.sci-t th[data-k]{cursor:pointer}.sci-t th[data-k]:hover{color:var(--text)}
+.sci-t th[aria-sort=ascending]::after{content:" ↑"}.sci-t th[aria-sort=descending]::after{content:" ↓"}
+.sci-t td{padding:14px 16px;border-bottom:1px solid var(--border);font-size:15px;line-height:1.3;color:var(--text);white-space:nowrap}
+.sci-t tr:last-child td{border-bottom:0}
+.sci-t td:first-child{font-weight:600}
+.sci-t .r{text-align:right}
+.sci-tf{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 16px;border-top:1px solid var(--border);font-size:13px;color:var(--muted)}
+.sci-m-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px}
+.sci-m{display:flex;flex-direction:column;gap:10px;padding:24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.sci-m-k{font:600 12px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text)}
+.sci-m p{margin:0;font-size:15px;line-height:1.55;color:var(--text)}
+.sci-two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(460px,100%),1fr));gap:48px}
+.sci-two>div{display:flex;flex-direction:column;gap:20px}
+.sci-two h2{font-size:clamp(24px,3vw,30px)}
+.sci-dls{display:flex;flex-direction:column;gap:10px}
+.sci-dl{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 20px;border:1px solid var(--border);border-radius:18px;background:var(--surface);text-decoration:none;color:var(--text);transition:border-color .15s,transform .15s}
+.sci-dl:hover{border-color:var(--accent-border);transform:translateY(-2px)}
+.sci-dl>span{display:flex;flex-direction:column;gap:3px;min-width:0}
+.sci-dl b{font-weight:600}.sci-dl .muted{font-size:13px}
+.sci-dl svg{flex:none;color:var(--accent-text)}
+.sci-next{list-style:none;margin:0;padding:0}
+.sci-next li{display:flex;gap:18px;padding:18px 0;border-top:1px solid var(--border)}
+.sci-next li:last-child{border-bottom:1px solid var(--border)}
+.sci-n-i{flex:none;width:32px;height:32px;border-radius:50%;background:var(--accent-soft);color:var(--accent-text);display:inline-flex;align-items:center;justify-content:center;font:600 14px var(--f-body)}
+.sci-next li>span:last-child{display:flex;flex-direction:column;gap:4px}
+.sci-next b{font-weight:600}.sci-next .muted{font-size:14px;line-height:1.5}
+.sci-card[hidden],.sci-t tr[hidden]{display:none}
 .sci-home{color:inherit;text-decoration:underline;text-decoration-color:var(--accent-border);text-underline-offset:3px}
 .sci-home:hover{color:var(--accent-text)}
 .sci-obj{margin-top:8px}
+.sci-obj .sci-p{margin-bottom:18px}
 .sci-more{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:15px;color:var(--muted)}
 .sci-more a{color:var(--accent-text)}
-[id^="s-"],[id^="t-"]{scroll-margin-top:calc(var(--head-h) + 16px)}
-.sci-t td:nth-child(1){white-space:normal;color:var(--text);font-weight:500}
-.sci-t td:nth-child(2){color:var(--soft)}
-@media (max-width:720px){.sci-stats{grid-template-columns:1fr 1fr}.sci-stat{padding:14px 16px}}
-@media (max-width:640px){.sci-t td:nth-child(1){grid-column:1/-1;order:-1;font-weight:600;font-size:16.5px}.sci-t td:nth-child(2){grid-column:auto;order:0;font-weight:400;font-size:15px}.sci-t td:nth-child(2)::before{display:block}}
+[id^="s-"],[id^="t-"],#curves,#all,#method{scroll-margin-top:calc(var(--head-h) + 16px)}
+@media (max-width:720px){.sci-hero{padding:16px 0 36px;margin-bottom:48px}.sci-sec{margin-bottom:52px}.sci-sn{padding:22px;gap:24px}.sci-fig{padding:14px}.sci-hl-grid .sci-card{padding:20px}.sci-filters .muted{margin-left:0;width:100%}}
+@media (max-width:640px){
+  .sci-tw{max-height:none;overflow:visible}.sci-t{min-width:0}.sci-t thead{display:none}
+  .sci-t,.sci-t tbody,.sci-t td{display:block}
+  .sci-t tr{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;padding:14px 16px;border-bottom:1px solid var(--border)}
+  .sci-t tr:last-child{border-bottom:0}
+  .sci-t td{padding:0;border:0;white-space:normal;text-align:left}
+  .sci-t td::before{content:attr(data-l);display:block;font-size:12px;color:var(--muted);margin-bottom:2px}
+  .sci-t td:first-child{grid-column:1/-1;font-size:16.5px}.sci-t td:first-child::before{display:none}
+  .sci-t tr[hidden]{display:none}.sci-t td.r{text-align:left}.sci-sort-hint{display:none}
+}
 /* Гайди з обробки (PROC-01) */
 .guide{max-width:74ch}
 .guide p,.guide li{font-size:17px;line-height:1.65;color:var(--text)}
@@ -908,7 +985,7 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
   <section class="sci-obj" aria-labelledby="sci-obj-h">
     <div class="row-head"><h2 id="sci-obj-h">Variable stars in this frame</h2><a href="../science/">All science</a></div>
     <p class="sci-p">From frames of this field I measured the brightness of 5 variable stars and submitted the results to the AAVSO, the international variable star database.</p>
-    <div class="sci-grid"><article class="sci-card"><h3><a href="../science/#s-bu-cas">BU Cas</a></h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="BU Cas: Variable star, 11.39…11.66"><title>BU Cas: Variable star, 11.39…11.66</title><path class="gr" d="M106.3 0V110M213.7 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 30.9h0M27.7 61.0h0M49.7 34.8h0M69.3 26.2h0M87.4 30.2h0M101.3 14.3h0M111.3 63.3h0M117.4 61.3h0M134.8 11.0h0M138.3 82.1h0M160.8 24.6h0M165.6 59.3h0M176.5 48.4h0M182.6 67.6h0M188.0 56.0h0M192.8 66.6h0M197.6 99.0h0M202.8 83.4h0M208.7 82.1h0M218.7 79.8h0M226.2 73.8h0M233.2 63.9h0M239.4 82.8h0M245.6 53.7h0M251.9 67.9h0M258.1 66.9h0M264.4 64.3h0M271.4 60.3h0M278.4 63.9h0M284.6 51.4h0M290.9 55.3h0M297.1 47.4h0M303.3 62.6h0M309.6 57.3h0M316.0 56.0h0"/></svg><p class="sci-typ">EA/DM · period 2.255 d</p><p>35 measurements · 3 nights<br>brightness 11.39…11.66</p><p>31 August – 2 September 2026 · <a href="https://vsx.aavso.org/index.php?view=results.get&amp;ident=BU%20Cas" target="_blank" rel="noopener">VSX</a></p></article><article class="sci-card"><h3><a href="../science/#s-v1320-cas">V1320 Cas</a></h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="V1320 Cas: Variable star, 11.73…12.36"><title>V1320 Cas: Variable star, 11.73…12.36</title><path class="gr" d="M106.3 0V110M213.7 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 17.6h0M27.7 18.5h0M49.7 22.7h0M69.3 11.0h0M87.4 16.0h0M101.3 17.4h0M111.3 74.5h0M117.4 74.4h0M122.8 72.7h0M138.3 60.5h0M160.8 25.5h0M165.6 24.7h0M170.7 17.9h0M176.5 24.0h0M182.6 36.6h0M197.6 14.1h0M208.7 28.3h0M218.7 92.6h0M226.2 89.6h0M233.2 99.0h0M239.4 83.1h0M245.6 86.5h0M251.9 91.4h0M258.1 87.7h0M264.4 93.9h0M271.4 89.3h0M278.4 91.0h0M284.6 90.4h0M290.9 91.9h0M297.1 79.0h0M303.3 84.9h0M309.6 78.7h0M316.0 77.5h0"/></svg><p class="sci-typ">EW · period 0.3487 d</p><p>33 measurements · 3 nights<br>brightness 11.73…12.36</p><p>31 August – 2 September 2026 · <a href="https://vsx.aavso.org/index.php?view=results.get&amp;ident=V1320%20Cas" target="_blank" rel="noopener">VSX</a></p></article><article class="sci-card"><h3><a href="../science/#s-il-cas">IL Cas</a></h3><svg class="sci-svg" viewBox="0 0 320 110" role="img" aria-label="IL Cas: Variable star, 11.04…11.78"><title>IL Cas: Variable star, 11.04…11.78</title><path class="gr" d="M160.0 0V110"/><path class="pt" stroke-width="3.6" d="M4.0 25.6h0M14.7 20.2h0M108.2 22.1h0M118.9 19.7h0M129.6 15.4h0M139.1 11.0h0M147.6 14.0h0M155.0 18.1h0M165.0 93.9h0M174.7 98.3h0M183.7 99.0h0M214.8 92.2h0M232.8 96.7h0M241.8 93.7h0M249.8 88.7h0M257.9 92.5h0M265.9 96.5h0M273.9 89.2h0M281.9 92.9h0M290.9 86.3h0M308.9 88.2h0M316.0 87.4h0"/></svg><p class="sci-typ">EA/SD · period 3.452 d</p><p>22 measurements · 2 nights<br>brightness 11.04…11.78</p><p>1 September – 2 September 2026 · <a href="https://vsx.aavso.org/index.php?view=results.get&amp;ident=IL%20Cas" target="_blank" rel="noopener">VSX</a></p></article></div>
+    <div class="sci-grid"><article class="sci-card" data-g="ecl"><div class="sci-card-h"><h3><a href="../science/#s-bu-cas">BU Cas</a></h3><span class="sci-card-k"><span class="sci-tag sci-tag-eb">EA/DM</span><span class="num muted">P = 2.255 d</span></span></div><svg class="sci-svg" viewBox="0 0 320 90" role="img" aria-label="BU Cas: EA/DM, 11.39–11.66"><title>BU Cas: EA/DM, 11.39–11.66</title><path class="gr" d="M0 10.8H320M0 45.0H320M0 79.2H320M106.3 0V90M213.7 0V90"/><path class="pt" stroke-width="3.6" d="M4.0 25.6h0M27.7 49.8h0M49.7 28.8h0M69.3 21.9h0M87.4 25.1h0M101.3 12.3h0M111.3 51.6h0M117.4 50.0h0M134.8 9.7h0M138.3 66.8h0M160.8 20.6h0M165.6 48.5h0M176.5 39.7h0M182.6 55.1h0M188.0 45.8h0M192.8 54.3h0M197.6 80.3h0M202.8 67.9h0M208.7 66.8h0M218.7 64.9h0M226.2 60.1h0M233.2 52.2h0M239.4 67.3h0M245.6 43.9h0M251.9 55.4h0M258.1 54.6h0M264.4 52.4h0M271.4 49.3h0M278.4 52.2h0M284.6 42.1h0M290.9 45.3h0M297.1 38.9h0M303.3 51.1h0M309.6 46.9h0M316.0 45.8h0"/></svg><div class="sci-card-m"><span class="num">11.39–11.66 mag · 35 measurements · 3 nights</span><span>31 August – 2 September 2026</span></div><div class="sci-card-l"><a href="https://vsx.aavso.org/index.php?view=results.get&amp;ident=BU%20Cas" target="_blank" rel="noopener">VSX</a></div></article><article class="sci-card" data-g="ecl"><div class="sci-card-h"><h3><a href="../science/#s-v1320-cas">V1320 Cas</a></h3><span class="sci-card-k"><span class="sci-tag sci-tag-eb">EW</span><span class="num muted">P = 0.3487 d</span></span></div><svg class="sci-svg" viewBox="0 0 320 90" role="img" aria-label="V1320 Cas: EW, 11.73–12.36"><title>V1320 Cas: EW, 11.73–12.36</title><path class="gr" d="M0 10.8H320M0 45.0H320M0 79.2H320M106.3 0V90M213.7 0V90"/><path class="pt" stroke-width="3.6" d="M4.0 15.0h0M27.7 15.6h0M49.7 19.0h0M69.3 9.7h0M87.4 13.6h0M101.3 14.7h0M111.3 60.7h0M117.4 60.6h0M122.8 59.2h0M138.3 49.4h0M160.8 21.3h0M165.6 20.6h0M170.7 15.2h0M176.5 20.0h0M182.6 30.2h0M197.6 12.1h0M208.7 23.5h0M218.7 75.3h0M226.2 72.8h0M233.2 80.3h0M239.4 67.6h0M245.6 70.3h0M251.9 74.2h0M258.1 71.3h0M264.4 76.3h0M271.4 72.6h0M278.4 73.9h0M284.6 73.5h0M290.9 74.7h0M297.1 64.3h0M303.3 69.1h0M309.6 64.1h0M316.0 63.1h0"/></svg><div class="sci-card-m"><span class="num">11.73–12.36 mag · 33 measurements · 3 nights</span><span>31 August – 2 September 2026</span></div><div class="sci-card-l"><a href="https://vsx.aavso.org/index.php?view=results.get&amp;ident=V1320%20Cas" target="_blank" rel="noopener">VSX</a></div></article><article class="sci-card" data-g="ecl"><div class="sci-card-h"><h3><a href="../science/#s-il-cas">IL Cas</a></h3><span class="sci-card-k"><span class="sci-tag sci-tag-eb">EA/SD</span><span class="num muted">P = 3.452 d</span></span></div><svg class="sci-svg" viewBox="0 0 320 90" role="img" aria-label="IL Cas: EA/SD, 11.04–11.78"><title>IL Cas: EA/SD, 11.04–11.78</title><path class="gr" d="M0 10.8H320M0 45.0H320M0 79.2H320M160.0 0V90"/><path class="pt" stroke-width="3.6" d="M4.0 21.3h0M14.7 17.1h0M108.2 18.6h0M118.9 16.6h0M129.6 13.2h0M139.1 9.7h0M147.6 12.0h0M155.0 15.3h0M165.0 76.3h0M174.7 79.8h0M183.7 80.3h0M214.8 74.9h0M232.8 78.5h0M241.8 76.1h0M249.8 72.1h0M257.9 75.1h0M265.9 78.4h0M273.9 72.5h0M281.9 75.5h0M290.9 70.2h0M308.9 71.7h0M316.0 71.0h0"/></svg><div class="sci-card-m"><span class="num">11.04–11.78 mag · 22 measurements · 2 nights</span><span>1 September – 2 September 2026</span></div><div class="sci-card-l"><a href="https://vsx.aavso.org/index.php?view=results.get&amp;ident=IL%20Cas" target="_blank" rel="noopener">VSX</a></div></article></div>
     <ul class="sci-more"><li><a href="../science/#t-v1141-cas">V1141 Cas</a> <span>EA · 6 measurements</span></li><li><a href="../science/#t-v0472-cas">V0472 Cas</a> <span>SR · 3 measurements</span></li></ul>
   </section>
   <div class="obj-cta">
