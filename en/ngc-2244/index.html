@@ -887,7 +887,7 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
 // Чотири файли шрифтів вантажаться через FontFace і вмикаються разом: один перерахунок layout замість окремого на кожен файл.
 // Перший візит: шрифти лише прогріваються в кеш, текст лишається на системних (без пізньої підміни, що псувала Speed Index);
 // з другого візиту (прапорець ff2) шрифти застосовуються одразу. Діапазони unicode-range ті самі, що у fonts/fonts.css (noscript і фолбек).
-(function(){var d=document;window.afterPaint=function(cb){var done=0,go=function(){if(!done){done=1;cb()}},run=function(){requestAnimationFrame(function(){setTimeout(go,0)});setTimeout(go,1000)};if(d.readyState==="complete")run();else addEventListener("load",run,{once:true})};var f=function(){if(f.on||d.getElementById("ff"))return;f.on=1;var r="../../fonts/",C="U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116",L="U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD",F=[["Onest","onest-cyrillic","400 700",C],["Onest","onest-latin","400 700",L],["Unbounded","unbounded-cyrillic","500 700",C],["Unbounded","unbounded-latin","500 700",L]],k=function(){if(d.getElementById("ff"))return;var l=d.createElement("link");l.id="ff";l.rel="stylesheet";l.href=r+"fonts.css";d.head.appendChild(l)};try{localStorage.setItem("ff2","1")}catch(e){}if(!window.FontFace||!d.fonts){k();return}Promise.all(F.map(function(x){return new FontFace(x[0],"url("+r+x[1]+".woff2) format('woff2')",{weight:x[2],display:"swap",unicodeRange:x[3]}).load()})).then(function(a){if(seen)a.forEach(function(x){d.fonts.add(x)})},k)};var seen=0;try{seen=localStorage.getItem("ff2")==="1"}catch(e){}if(seen)f();afterPaint(function(){f();var s=d.createElement("script");s.async=true;s.src="https://gc.zgo.at/count.js";s.dataset.goatcounter="https://nebo-blyzhche.goatcounter.com/count";d.body.appendChild(s)})})();
+(function(){var d=document;window.afterPaint=function(cb){var done=0,go=function(){if(!done){done=1;cb()}},run=function(){requestAnimationFrame(function(){setTimeout(go,0)});setTimeout(go,1000)};if(d.readyState==="complete")run();else addEventListener("load",run,{once:true})};var f=function(){if(f.on||d.getElementById("ff"))return;f.on=1;var r="../../"+"fonts"+"/",C="U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116",L="U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD",F=[["Onest","onest-cyrillic","400 700",C],["Onest","onest-latin","400 700",L],["Unbounded","unbounded-cyrillic","500 700",C],["Unbounded","unbounded-latin","500 700",L]],k=function(){if(d.getElementById("ff"))return;var l=d.createElement("link");l.id="ff";l.rel="stylesheet";l.href=r+"fonts.css";d.head.appendChild(l)};try{localStorage.setItem("ff2","1")}catch(e){}if(!window.FontFace||!d.fonts){k();return}Promise.all(F.map(function(x){return new FontFace(x[0],"url("+r+x[1]+".woff2) format('woff2')",{weight:x[2],display:"swap",unicodeRange:x[3]}).load()})).then(function(a){if(seen)a.forEach(function(x){d.fonts.add(x)})},k)};var seen=0;try{seen=localStorage.getItem("ff2")==="1"}catch(e){}if(seen)f();afterPaint(function(){f();var s=d.createElement("script");s.async=true;s.src="https://gc.zgo.at/count.js";s.dataset.goatcounter="https://nebo-blyzhche.goatcounter.com/count";d.body.appendChild(s)})})();
 </script>
 <noscript><link rel="stylesheet" href="../../fonts/fonts.css"></noscript>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
@@ -975,9 +975,10 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
     <video class="flyby-v" muted loop playsinline preload="none" poster="../../vid/ngc-2244.jpg" width="540" height="816" aria-label="3D flight loop through the image of Rosette Nebula"><source src="../../vid/ngc-2244.mp4" type="video/mp4"></video>
     <div>
       <h2 id="flyby-h">3D flight through the image</h2>
-      <p>A short loop of a 3D flight through this image. Full flights come out daily on TikTok, Instagram and YouTube Shorts.</p>
+      <p>A short loop of a 3D flight through this image. You can watch the full clip with sound right here.</p>
       <div class="fly-btns">
-      <a class="btn btn-lg" href="https://www.tiktok.com/@nebo_blyzhche" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tt"/></svg>Flights on TikTok</a>
+      <button class="btn btn-p btn-lg flyby-play" type="button" data-src="https://www.tiktok.com/player/v1/7706226907221626132?autoplay=1&amp;rel=0&amp;description=0&amp;music_info=0" data-title="3D flight through the image of Rosette Nebula"><svg aria-hidden="true"><use href="#i-fly"/></svg>Watch in full with sound</button>
+      <a class="btn btn-lg" href="https://www.tiktok.com/@nebo_blyzhche/video/7706226907221626132" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tt"/></svg>Open on TikTok</a>
       </div>
     </div>
   </section>
@@ -999,7 +1000,7 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
 <footer>
   <div class="wrap">
     <span>© Kostia Tepliy, «Nebo Blyzhche». Images licensed under CC BY-NC 4.0.</span>
-    <span id="foot-upd">Updated 9 November at 12:10 automatically</span>
+    <span id="foot-upd">Updated 10 November at 12:10 automatically</span>
     <a href="../log/">Night log</a>
     <a href="../processing/">Processing</a>
     <a href="../license/">Image use</a>
