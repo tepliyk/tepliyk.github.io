@@ -2,7 +2,7 @@
 
 > Nebulae, galaxies and Messier objects shot with a DWARF Mini smart telescope from a light-polluted city balcony in Ukraine: real results, hours of light and night logs.
 
-Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Mini smart telescope from a city balcony in Ukraine (only the eastern half of the sky is visible, light-polluted city sky). The site is rebuilt automatically after each night of shooting. Challenge: 24 of 67 objects captured, 64 nights, 180.9 h of deep-sky light. Messier: 16 of 100 reachable captured. Last update: 2026-11-11. All images are the author's own; the Telegram channel is in Ukrainian.
+Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Mini smart telescope from a city balcony in Ukraine (only the eastern half of the sky is visible, light-polluted city sky). The site is rebuilt automatically after each night of shooting. Challenge: 4 of 67 objects captured, 65 nights, 181.2 h of deep-sky light. Messier: 16 of 100 reachable captured. Last update: 2026-11-12. All images are the author's own; the Telegram channel is in Ukrainian.
 
 ## Main pages
 
@@ -22,57 +22,57 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 
 ## Captured
 
-- NGC 2359: Nebula, Canis Major, 5 h 22 min of light over 5 nights
 - [M 67](https://neboblyzhche.com/en/m67/): Cluster, Cancer, 2 h 59 min of light over 2 nights
-- [California Nebula · NGC 1499](https://neboblyzhche.com/en/ngc-1499/): Nebula, Perseus, 6 h 11 min of light over 4 nights
-- [NGC 1931](https://neboblyzhche.com/en/ngc-1931/): Nebula, Auriga, 4 h 56 min of light over 3 nights
 - [Rosette Nebula · C 50](https://neboblyzhche.com/en/ngc-2244/): Nebula, Monoceros, 27 h 4 min of light over 10 nights
-- [Beehive Cluster (Praesepe) · M 44](https://neboblyzhche.com/en/m44/): Cluster, Cancer, 1 h 32 min of light over 3 nights
-- [M 77](https://neboblyzhche.com/en/m77/): Galaxy, 5 h 40 min of light over 3 nights
-- [Heart Nebula · IC 1805](https://neboblyzhche.com/en/ic-1805/): Nebula, Cassiopeia, 12 h 40 min of light over 9 nights
-- [Tadpoles Nebula · IC 410](https://neboblyzhche.com/en/ic-410/): Nebula, Auriga, 5 h 57 min of light over 5 nights
-- [Pacman Nebula · NGC 281](https://neboblyzhche.com/en/ngc-281/): Nebula, Cassiopeia, 5 h 1 min of light over 4 nights
-- [Monkey Head Nebula · NGC 2174](https://neboblyzhche.com/en/ngc-2174/): Nebula, Orion, 4 h 50 min of light over 2 nights
-- [Christmas Tree (Cone) Nebula · NGC 2264](https://neboblyzhche.com/en/ngc-2264/): Nebula, Monoceros, 5 h 21 min of light over 4 nights
-- [Open cluster M36 · M 36](https://neboblyzhche.com/en/m36/): Cluster, Auriga, 1 h 38 min of light over 1 night
-- [Open cluster M38 · M 38](https://neboblyzhche.com/en/m38/): Cluster, Auriga, 1 h 11 min of light over 1 night
-- [Jellyfish Nebula · IC 443](https://neboblyzhche.com/en/ic-443/): Nebula, Gemini, 7 h 17 min of light over 6 nights
-- [Flaming Star Nebula · IC 405](https://neboblyzhche.com/en/ic-405/): Nebula, Auriga, 5 h 19 min of light over 3 nights
-- [Orion Nebula · M 42](https://neboblyzhche.com/en/m42/): Nebula, Orion, 2 h 14 min of light over 3 nights
-- [Soul Nebula · IC 1848](https://neboblyzhche.com/en/ic-1848/): Nebula, Cassiopeia, 4 h 9 min of light over 3 nights
-- [Double Cluster in Perseus (h Persei) · NGC 869](https://neboblyzhche.com/en/ngc-869/): Cluster, Perseus, 1 h 29 min of light over 3 nights
-- [Open cluster M35 · M 35](https://neboblyzhche.com/en/m35/): Cluster, Gemini, 1 h 56 min of light over 2 nights
-- [Open cluster M103 · M 103](https://neboblyzhche.com/en/m103/): Cluster, Cassiopeia, 2 h 12 min of light over 3 nights
-- [Crab Nebula · M 1](https://neboblyzhche.com/en/m1/): Nebula, Taurus, 8 h 44 min of light over 3 nights
 - [Andromeda Galaxy · M 31](https://neboblyzhche.com/en/m31/): Galaxy, Andromeda, 4 h 53 min of light over 5 nights
 - [Pleiades · M 45](https://neboblyzhche.com/en/m45/): Cluster, Taurus, 3 h 49 min of light over 2 nights
 
 ## Gathering light
 
-- [NGC 1491](https://neboblyzhche.com/en/ngc-1491/): Nebula, Per, 3 h 56 min of light over 5 nights, 98% of goal
-- [Triangulum Galaxy · M 33](https://neboblyzhche.com/en/m33/): Galaxy, Triangulum, 7 h 50 min of light over 6 nights, 97% of goal
-- [Open cluster M37 · M 37](https://neboblyzhche.com/en/m37/): Cluster, Auriga, 58 min of light over 1 night, 96% of goal
-- [Horsehead Nebula · IC 434](https://neboblyzhche.com/en/ic-434/): Nebula, Orion, 6 h 2 min of light over 6 nights, 75% of goal
-- [M 97](https://neboblyzhche.com/en/m-97/): Nebula, Ursa Major, 2 h 32 min of light over 5 nights, 63% of goal
-- [Open cluster M34 · M 34](https://neboblyzhche.com/en/m34/): Cluster, Perseus, 37 min of light over 1 night, 61% of goal
-- IC 63: Nebula, 2 h 13 min of light over 2 nights, 55% of goal
-- Galaxy M106 · M 106: Galaxy, Canes Venatici, 4 h 27 min of light over 2 nights, 55% of goal
-- [Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30](https://neboblyzhche.com/en/c-30/): Galaxy, Pegasus, 3 h 56 min of light over 9 nights, 49% of goal
-- M 76: Nebula, Perseus, 1 h 52 min of light over 3 nights, 46% of goal
-- [Galaxy NGC 7479 (Caldwell 44) · C 44](https://neboblyzhche.com/en/c-44/): Galaxy, Pegasus, 3 h 38 min of light over 3 nights, 45% of goal
-- NGC 1514: Nebula, Taurus, 1 h 47 min of light over 3 nights, 44% of goal
-- C 23: Galaxy, 1 h 57 min of light over 4 nights, 38% of goal
-- [Galaxy NGC 2403 in Camelopardalis · C 7](https://neboblyzhche.com/en/ngc-2403/): Galaxy, Camelopardalis, 2 h 54 min of light over 2 nights, 36% of goal
+- [Heart Nebula · IC 1805](https://neboblyzhche.com/en/ic-1805/): Nebula, Cassiopeia, 12 h 40 min of light over 9 nights, 92% of goal
+- [M 77](https://neboblyzhche.com/en/m77/): Galaxy, 5 h 40 min of light over 3 nights, 83% of goal
+- NGC 2359: Nebula, Canis Major, 5 h 22 min of light over 5 nights, 70% of goal
+- [California Nebula · NGC 1499](https://neboblyzhche.com/en/ngc-1499/): Nebula, Perseus, 6 h 11 min of light over 4 nights, 67% of goal
+- [Triangulum Galaxy · M 33](https://neboblyzhche.com/en/m33/): Galaxy, Triangulum, 7 h 50 min of light over 6 nights, 56% of goal
+- [Open cluster M103 · M 103](https://neboblyzhche.com/en/m103/): Cluster, Cassiopeia, 2 h 12 min of light over 3 nights, 54% of goal
+- [Beehive Cluster (Praesepe) · M 44](https://neboblyzhche.com/en/m44/): Cluster, Cancer, 1 h 32 min of light over 3 nights, 45% of goal
+- [Open cluster M35 · M 35](https://neboblyzhche.com/en/m35/): Cluster, Gemini, 1 h 56 min of light over 2 nights, 42% of goal
+- [NGC 1931](https://neboblyzhche.com/en/ngc-1931/): Nebula, Auriga, 4 h 56 min of light over 3 nights, 42% of goal
+- [Tadpoles Nebula · IC 410](https://neboblyzhche.com/en/ic-410/): Nebula, Auriga, 5 h 57 min of light over 5 nights, 41% of goal
+- NGC 1514: Nebula, Taurus, 2 h 5 min of light over 4 nights, 37% of goal
+- [Flaming Star Nebula · IC 405](https://neboblyzhche.com/en/ic-405/): Nebula, Auriga, 5 h 19 min of light over 3 nights, 37% of goal
+- [Jellyfish Nebula · IC 443](https://neboblyzhche.com/en/ic-443/): Nebula, Gemini, 7 h 17 min of light over 6 nights, 36% of goal
+- Galaxy M106 · M 106: Galaxy, Canes Venatici, 4 h 27 min of light over 2 nights, 35% of goal
+- [Double Cluster in Perseus (h Persei) · NGC 869](https://neboblyzhche.com/en/ngc-869/): Cluster, Perseus, 1 h 29 min of light over 3 nights, 34% of goal
 - NGC 2683: Galaxy, Lynx, 1 h 44 min of light over 1 night, 34% of goal
-- NGC 7635: Nebula, 37 min of light over 2 nights, 15% of goal
-- M 74: Galaxy, Pisces, 45 min of light over 1 night, 15% of goal
-- Reflection nebula M78 · M 78: Nebula, Orion, 47 min of light over 2 nights, 9% of goal
+- [Orion Nebula · M 42](https://neboblyzhche.com/en/m42/): Nebula, Orion, 2 h 14 min of light over 3 nights, 32% of goal
+- [Open cluster M34 · M 34](https://neboblyzhche.com/en/m34/): Cluster, Perseus, 37 min of light over 1 night, 30% of goal
+- [Pacman Nebula · NGC 281](https://neboblyzhche.com/en/ngc-281/): Nebula, Cassiopeia, 5 h 1 min of light over 4 nights, 29% of goal
+- [Soul Nebula · IC 1848](https://neboblyzhche.com/en/ic-1848/): Nebula, Cassiopeia, 4 h 9 min of light over 3 nights, 28% of goal
+- [Open cluster M37 · M 37](https://neboblyzhche.com/en/m37/): Cluster, Auriga, 58 min of light over 1 night, 25% of goal
+- [Open cluster M38 · M 38](https://neboblyzhche.com/en/m38/): Cluster, Auriga, 1 h 11 min of light over 1 night, 25% of goal
+- [Crab Nebula · M 1](https://neboblyzhche.com/en/m1/): Nebula, Taurus, 8 h 44 min of light over 3 nights, 25% of goal
+- [Horsehead Nebula · IC 434](https://neboblyzhche.com/en/ic-434/): Nebula, Orion, 6 h 2 min of light over 6 nights, 25% of goal
+- [Open cluster M36 · M 36](https://neboblyzhche.com/en/m36/): Cluster, Auriga, 1 h 38 min of light over 1 night, 24% of goal
+- [Galaxy NGC 2403 in Camelopardalis · C 7](https://neboblyzhche.com/en/ngc-2403/): Galaxy, Camelopardalis, 2 h 54 min of light over 2 nights, 23% of goal
+- [Christmas Tree (Cone) Nebula · NGC 2264](https://neboblyzhche.com/en/ngc-2264/): Nebula, Monoceros, 5 h 21 min of light over 4 nights, 22% of goal
+- [M 97](https://neboblyzhche.com/en/m-97/): Nebula, Ursa Major, 2 h 32 min of light over 5 nights, 18% of goal
+- [NGC 1491](https://neboblyzhche.com/en/ngc-1491/): Nebula, Per, 3 h 56 min of light over 5 nights, 15% of goal
+- [Galaxy NGC 7479 (Caldwell 44) · C 44](https://neboblyzhche.com/en/c-44/): Galaxy, Pegasus, 3 h 38 min of light over 3 nights, 15% of goal
+- [C 23](https://neboblyzhche.com/en/c-23/): Galaxy, 1 h 57 min of light over 4 nights, 14% of goal
+- IC 63: Nebula, 2 h 13 min of light over 2 nights, 13% of goal
+- M 76: Nebula, Perseus, 1 h 52 min of light over 3 nights, 12% of goal
+- [Monkey Head Nebula · NGC 2174](https://neboblyzhche.com/en/ngc-2174/): Nebula, Orion, 4 h 50 min of light over 2 nights, 12% of goal
+- [Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30](https://neboblyzhche.com/en/c-30/): Galaxy, Pegasus, 3 h 56 min of light over 9 nights, 12% of goal
+- M 74: Galaxy, Pisces, 45 min of light over 1 night, 7% of goal
+- Reflection nebula M78 · M 78: Nebula, Orion, 47 min of light over 2 nights, 5% of goal
+- NGC 7635: Nebula, 37 min of light over 2 nights, 4% of goal
 
 ## Solar System
 
 - [Moon](https://neboblyzhche.com/en/misiac/): 23 nights of observations
 - [Saturn](https://neboblyzhche.com/en/saturn/): 4 nights of observations
-- [Sun](https://neboblyzhche.com/en/sonce/): 18 nights of observations
+- [Sun](https://neboblyzhche.com/en/sonce/): 19 nights of observations
 - [Mars](https://neboblyzhche.com/en/mars/): 1 night of observations
 
 ## Still ahead
