@@ -853,3 +853,4 @@ a.cd:hover,a.cd:focus-visible{transform:scale(1.25)}
 .guide-card-t>span:not(.tlink){font-size:15px;line-height:1.5;color:var(--soft)}
 .guide-obj{margin-top:8px}
 @media (max-width:640px){.guide-card{grid-template-columns:1fr}.guide-toc ul{columns:1}.guide p,.guide li{font-size:16.5px}}
+.sci-night{border-color:var(--border)}.sci-night-fig{padding:12px;max-width:520px;justify-self:center;width:100%}.sci-vid{display:block;width:100%;height:auto;border-radius:10px;background:#000}
