@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-19T14:58:35+02:00",
+    "generated_at": "2026-11-20T12:10:21+02:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -11,8 +11,8 @@
         "done": 4,
         "progress": 38,
         "todo": 25,
-        "nights": 68,
-        "deep_hours": 181.2,
+        "nights": 69,
+        "deep_hours": 184.2,
         "first_night": "2026-08-12",
         "photos": 50
     },
@@ -298,6 +298,72 @@
             "target_min": 60,
             "percent": 100,
             "status": "done"
+        },
+        {
+            "id": 126,
+            "slug": "ngc-1514",
+            "designation": "NGC 1514",
+            "name": "Планетарна туманність NGC 1514",
+            "type": "nebula",
+            "constellation": "Taurus",
+            "nights": 5,
+            "integration_sec": 15900,
+            "first": "2026-11-06",
+            "last": "2026-11-19",
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 12,
+                "frames": 324,
+                "exposures": [
+                    60,
+                    120,
+                    180
+                ],
+                "filters": [
+                    "Dual-band (Ha/OIII)",
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-10": 1,
+                    "2026-11": 5
+                },
+                "night_dates": [
+                    "2026-10-25",
+                    "2026-11-06",
+                    "2026-11-07",
+                    "2026-11-10",
+                    "2026-11-11",
+                    "2026-11-19"
+                ],
+                "longest_night_sec": 8400,
+                "longest_night": "2026-11-19"
+            },
+            "photo": {
+                "title": "NGC 1514 Кришталева куля, кроп 760 (v4, знак)",
+                "img": "img/ngc-1514.jpg",
+                "thumb": "img/ngc-1514_t.jpg",
+                "webp": "img/ngc-1514.webp",
+                "thumb_webp": "img/ngc-1514_t.webp",
+                "w": 1140,
+                "h": 759,
+                "date": "2026-11-19",
+                "astrobin": "https://app.astrobin.com/i/pur9o7"
+            },
+            "difficulty": null,
+            "target_min": 240,
+            "percent": 96,
+            "status": "progress"
         },
         {
             "id": 19,
@@ -973,60 +1039,6 @@
             "status": "progress"
         },
         {
-            "id": 126,
-            "slug": "ngc-1514",
-            "designation": "NGC 1514",
-            "name": "Планетарна туманність NGC 1514",
-            "type": "nebula",
-            "constellation": "Taurus",
-            "nights": 4,
-            "integration_sec": 7500,
-            "first": "2026-11-06",
-            "last": "2026-11-11",
-            "text": {
-                "description_uk": null,
-                "description_en": null,
-                "story_uk": null,
-                "story_en": null,
-                "distance_ly": null,
-                "angular_size": null,
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 11,
-                "frames": 243,
-                "exposures": [
-                    60,
-                    120,
-                    180
-                ],
-                "filters": [
-                    "Dual-band (Ha/OIII)"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-10": 1,
-                    "2026-11": 4
-                },
-                "night_dates": [
-                    "2026-10-25",
-                    "2026-11-06",
-                    "2026-11-07",
-                    "2026-11-10",
-                    "2026-11-11"
-                ],
-                "longest_night_sec": 3000,
-                "longest_night": "2026-11-06"
-            },
-            "photo": null,
-            "difficulty": null,
-            "target_min": 240,
-            "percent": 37,
-            "status": "progress"
-        },
-        {
             "id": 9,
             "slug": "ic-405",
             "designation": "IC 405",
@@ -1461,6 +1473,69 @@
             },
             "difficulty": "easy",
             "target_min": 60,
+            "percent": 30,
+            "status": "progress"
+        },
+        {
+            "id": 76,
+            "slug": "m-76",
+            "designation": "M 76",
+            "name": "Планетарна туманність",
+            "type": "nebula",
+            "constellation": "Perseus",
+            "nights": 4,
+            "integration_sec": 9360,
+            "first": "2026-10-19",
+            "last": "2026-11-19",
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 5,
+                "frames": 214,
+                "exposures": [
+                    60,
+                    120
+                ],
+                "filters": [
+                    "Dual-band (Ha/OIII)",
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-10": 3,
+                    "2026-11": 1
+                },
+                "night_dates": [
+                    "2026-10-19",
+                    "2026-10-21",
+                    "2026-10-25",
+                    "2026-11-19"
+                ],
+                "longest_night_sec": 5100,
+                "longest_night": "2026-10-21"
+            },
+            "photo": {
+                "title": "M 76 Маленька Гантель, кроп 760, 4 ночі, 2 год 30 хв (знак)",
+                "img": "img/m-76.jpg",
+                "thumb": "img/m-76_t.jpg",
+                "webp": "img/m-76.webp",
+                "thumb_webp": "img/m-76_t.webp",
+                "w": 760,
+                "h": 506,
+                "date": "2026-11-19",
+                "astrobin": null
+            },
+            "difficulty": null,
+            "target_min": 240,
             "percent": 30,
             "status": "progress"
         },
@@ -2188,13 +2263,13 @@
                 "longest_night": "2026-10-24"
             },
             "photo": {
-                "title": "NGC 1491 Скам'янілий слід · v3",
+                "title": "NGC 1491 Скам'янілий слід · v4f кроп для Telegram (269×60 с)",
                 "img": "img/ngc-1491.jpg",
                 "thumb": "img/ngc-1491_t.jpg",
                 "webp": "img/ngc-1491.webp",
                 "thumb_webp": "img/ngc-1491_t.webp",
-                "w": 1200,
-                "h": 900,
+                "w": 1260,
+                "h": 945,
                 "date": "2026-10-26",
                 "astrobin": null
             },
@@ -2371,55 +2446,6 @@
             "difficulty": null,
             "target_min": 240,
             "percent": 13,
-            "status": "progress"
-        },
-        {
-            "id": 76,
-            "slug": "m-76",
-            "designation": "M 76",
-            "name": "Планетарна туманність",
-            "type": "nebula",
-            "constellation": "Perseus",
-            "nights": 3,
-            "integration_sec": 6720,
-            "first": "2026-10-19",
-            "last": "2026-10-25",
-            "text": {
-                "description_uk": null,
-                "description_en": null,
-                "story_uk": null,
-                "story_en": null,
-                "distance_ly": null,
-                "angular_size": null,
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 4,
-                "frames": 186,
-                "exposures": [
-                    60
-                ],
-                "filters": [
-                    "Dual-band (Ha/OIII)"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-10": 3
-                },
-                "night_dates": [
-                    "2026-10-19",
-                    "2026-10-21",
-                    "2026-10-25"
-                ],
-                "longest_night_sec": 5100,
-                "longest_night": "2026-10-21"
-            },
-            "photo": null,
-            "difficulty": null,
-            "target_min": 240,
-            "percent": 12,
             "status": "progress"
         },
         {
@@ -3375,10 +3401,10 @@
             "name": "Місяць",
             "type": "moon",
             "constellation": null,
-            "nights": 24,
-            "integration_sec": 89,
+            "nights": 25,
+            "integration_sec": 95,
             "first": "2026-08-23",
-            "last": "2026-11-16",
+            "last": "2026-11-19",
             "text": {
                 "description_uk": "Місяць, наш єдиний природний супутник і найзручніша ціль для балкона: яскравий, великий, доступний у будь-якому місті й у будь-якому засвіченні. Середня відстань до нього близько 384 тисяч кілометрів, світло долітає за секунду з невеликим. Найцікавіший він не в повню, а поблизу термінатора, лінії дня і ночі: там тіні довгі, і кратери, гори та борозни показують рельєф. Щоночі термінатор зсувається, тож той самий кратер двічі однаковим не буває.",
                 "description_en": "The Moon, our only natural satellite and the most convenient balcony target: bright, large, reachable from any city under any light pollution. Its average distance is about 384,000 kilometres; the light takes a little over a second to arrive. It is most interesting not at full phase but near the terminator, the line between day and night: there the shadows are long and craters, mountains and rilles reveal the relief. The terminator shifts every night, so the same crater never looks the same twice.",
@@ -3389,8 +3415,8 @@
                 "en_auto": false
             },
             "shooting": {
-                "sessions": 75,
-                "frames": 15526,
+                "sessions": 77,
+                "frames": 15926,
                 "exposures": [
                     0.002,
                     0.0025,
@@ -3401,6 +3427,7 @@
                     0.008,
                     0.01,
                     0.0125,
+                    0.016667,
                     0.02,
                     0.025,
                     0.05
@@ -3416,7 +3443,7 @@
                     "2026-08": 6,
                     "2026-09": 7,
                     "2026-10": 10,
-                    "2026-11": 1
+                    "2026-11": 2
                 },
                 "night_dates": [
                     "2026-08-23",
@@ -3442,20 +3469,21 @@
                     "2026-10-25",
                     "2026-10-28",
                     "2026-10-29",
-                    "2026-11-16"
+                    "2026-11-16",
+                    "2026-11-19"
                 ],
                 "longest_night_sec": 16,
                 "longest_night": "2026-09-28"
             },
             "photo": {
-                "title": "Мінеральний Місяць, повня 25.10 (1851 кадр)",
+                "title": "Місяць 72 %, повний диск (19.11.2026)",
                 "img": "img/misiac.jpg",
                 "thumb": "img/misiac_t.jpg",
                 "webp": "img/misiac.webp",
                 "thumb_webp": "img/misiac_t.webp",
-                "w": 1068,
-                "h": 1068,
-                "date": "2026-10-25",
+                "w": 1150,
+                "h": 1150,
+                "date": "2026-11-19",
                 "astrobin": null
             },
             "flyby": {
@@ -3628,10 +3656,10 @@
             "name": "Юпітер",
             "type": "planet",
             "constellation": null,
-            "nights": 1,
-            "integration_sec": 1,
+            "nights": 2,
+            "integration_sec": 3,
             "first": "2026-09-19",
-            "last": "2026-09-19",
+            "last": "2026-11-20",
             "text": {
                 "description_uk": "Юпітер, найбільша планета Сонячної системи, у яку вмістилось би понад тисячу Земель. Навіть у малий телескоп видно смуги хмар, паралельні екватору, і чотири великі супутники, які Галілей відкрив 1610 року: щоночі вони стоять в іншому порядку. Велика Червона Пляма, шторм розміром більший за Землю, видна в моменти спокійної атмосфери. Планета обертається менш ніж за десять годин, тож деталі на диску помітно зсуваються за одну сесію.",
                 "description_en": "Jupiter, the largest planet in the Solar System, with room for more than a thousand Earths inside. Even a small telescope shows cloud belts parallel to the equator and the four large moons Galileo discovered in 1610, arranged differently every night. The Great Red Spot, a storm bigger than Earth, shows up in moments of steady air. The planet rotates in under ten hours, so details on the disk shift noticeably within one session.",
@@ -3642,11 +3670,14 @@
                 "en_auto": false
             },
             "shooting": {
-                "sessions": 3,
-                "frames": 70,
+                "sessions": 9,
+                "frames": 193,
                 "exposures": [
                     0.01,
-                    0.033333
+                    0.033333,
+                    0.1,
+                    0.25,
+                    1
                 ],
                 "filters": [
                     "Без фільтра"
@@ -3655,15 +3686,27 @@
                     "DWARF Mini"
                 ],
                 "nights_by_month": {
-                    "2026-09": 1
+                    "2026-09": 1,
+                    "2026-11": 1
                 },
                 "night_dates": [
-                    "2026-09-18"
+                    "2026-09-18",
+                    "2026-11-19"
                 ],
-                "longest_night_sec": 1,
-                "longest_night": "2026-09-18"
+                "longest_night_sec": 2,
+                "longest_night": "2026-11-19"
             },
-            "photo": null
+            "photo": {
+                "title": "Юпітер і три супутники 20.11.2026 (кроп ×2)",
+                "img": "img/iupiter.jpg",
+                "thumb": "img/iupiter_t.jpg",
+                "webp": "img/iupiter.webp",
+                "thumb_webp": "img/iupiter_t.webp",
+                "w": 840,
+                "h": 440,
+                "date": "2026-11-20",
+                "astrobin": null
+            }
         },
         {
             "id": 50,
@@ -3768,12 +3811,12 @@
     ],
     "messier": {
         "totals": {
-            "captured": 16,
-            "progress": 4,
+            "captured": 17,
+            "progress": 3,
             "todo": 80,
             "unreachable": 10,
             "reachable": 100,
-            "left_hours": 139.9
+            "left_hours": 138.7
         },
         "objects": [
             {
@@ -3783,7 +3826,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m1"
             },
             {
@@ -3803,7 +3846,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m-3"
             },
             {
@@ -4073,7 +4116,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m-30"
             },
             {
@@ -4083,7 +4126,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m31"
             },
             {
@@ -4093,7 +4136,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m31"
             },
             {
@@ -4103,7 +4146,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m33"
             },
             {
@@ -4113,7 +4156,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m34"
             },
             {
@@ -4123,7 +4166,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m35"
             },
             {
@@ -4133,7 +4176,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m36"
             },
             {
@@ -4143,7 +4186,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m37"
             },
             {
@@ -4153,7 +4196,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m38"
             },
             {
@@ -4173,7 +4216,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4183,7 +4226,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m-41"
             },
             {
@@ -4193,7 +4236,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m42"
             },
             {
@@ -4203,7 +4246,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m42"
             },
             {
@@ -4213,7 +4256,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m44"
             },
             {
@@ -4223,7 +4266,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m45"
             },
             {
@@ -4233,7 +4276,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m-46"
             },
             {
@@ -4243,7 +4286,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4253,7 +4296,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m-48"
             },
             {
@@ -4263,7 +4306,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4273,7 +4316,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m-50"
             },
             {
@@ -4283,7 +4326,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m51"
             },
             {
@@ -4303,7 +4346,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m-53"
             },
             {
@@ -4353,7 +4396,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4363,7 +4406,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4373,7 +4416,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4383,7 +4426,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4403,7 +4446,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m63"
             },
             {
@@ -4413,7 +4456,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4423,7 +4466,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m65"
             },
             {
@@ -4433,7 +4476,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m65"
             },
             {
@@ -4443,7 +4486,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4513,7 +4556,7 @@
                 "status": "progress",
                 "percent": 30,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m-74"
             },
             {
@@ -4530,10 +4573,10 @@
                 "m": 76,
                 "name": "Barbell Nebula",
                 "type": "nebula",
-                "status": "progress",
-                "percent": 62,
+                "status": "captured",
+                "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m-76"
             },
             {
@@ -4543,7 +4586,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4553,7 +4596,7 @@
                 "status": "progress",
                 "percent": 26,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m78"
             },
             {
@@ -4563,7 +4606,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m-79"
             },
             {
@@ -4583,7 +4626,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m-81"
             },
             {
@@ -4593,7 +4636,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4613,7 +4656,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4623,7 +4666,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4633,7 +4676,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4643,7 +4686,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4653,7 +4696,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4663,7 +4706,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4673,7 +4716,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4683,7 +4726,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4703,7 +4746,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4713,7 +4756,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4723,7 +4766,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m-95"
             },
             {
@@ -4733,7 +4776,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4743,7 +4786,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m-97"
             },
             {
@@ -4753,7 +4796,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4763,7 +4806,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4773,7 +4816,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4783,7 +4826,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m101"
             },
             {
@@ -4793,7 +4836,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4803,7 +4846,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m103"
             },
             {
@@ -4823,7 +4866,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4833,7 +4876,7 @@
                 "status": "progress",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m106"
             },
             {
@@ -4853,7 +4896,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": null
             },
             {
@@ -4863,7 +4906,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-19",
+                "season_from": "2026-11-20",
                 "slug": "m-109"
             },
             {
@@ -11067,23 +11110,210 @@
                 "wind": 2.8,
                 "humidity": 81
             }
+        },
+        {
+            "date": "2026-11-19",
+            "sessions": [
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "16:38",
+                    "end": "17:43",
+                    "exposure": 0.008,
+                    "filter": "Без фільтра",
+                    "taken": 100,
+                    "stacked": 100,
+                    "sec": 1,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "16:47",
+                    "end": "18:00",
+                    "exposure": 0.016667,
+                    "filter": "Без фільтра",
+                    "taken": 300,
+                    "stacked": 300,
+                    "sec": 5,
+                    "mosaic": false,
+                    "photo": true
+                },
+                {
+                    "slug": "m-76",
+                    "designation": "M 76",
+                    "name": "Планетарна туманність",
+                    "type": "nebula",
+                    "solar": false,
+                    "day": false,
+                    "start": "17:37",
+                    "end": "19:40",
+                    "exposure": 120,
+                    "filter": "Без фільтра",
+                    "taken": 28,
+                    "stacked": 22,
+                    "sec": 2640,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "ngc-1514",
+                    "designation": "NGC 1514",
+                    "name": "Планетарна туманність NGC 1514",
+                    "type": "nebula",
+                    "solar": false,
+                    "day": false,
+                    "start": "19:01",
+                    "end": "23:03",
+                    "exposure": 120,
+                    "filter": "Без фільтра",
+                    "taken": 81,
+                    "stacked": 70,
+                    "sec": 8400,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "iupiter",
+                    "designation": null,
+                    "name": "Юпітер",
+                    "type": "planet",
+                    "solar": true,
+                    "day": false,
+                    "start": "00:28",
+                    "end": "01:29",
+                    "exposure": 0.033333,
+                    "filter": "Без фільтра",
+                    "taken": 5,
+                    "stacked": 1,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "iupiter",
+                    "designation": null,
+                    "name": "Юпітер",
+                    "type": "planet",
+                    "solar": true,
+                    "day": false,
+                    "start": "00:33",
+                    "end": "00:34",
+                    "exposure": 1,
+                    "filter": "Без фільтра",
+                    "taken": 3,
+                    "stacked": 1,
+                    "sec": 1,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "iupiter",
+                    "designation": null,
+                    "name": "Юпітер",
+                    "type": "planet",
+                    "solar": true,
+                    "day": false,
+                    "start": "00:37",
+                    "end": "00:39",
+                    "exposure": 0.25,
+                    "filter": "Без фільтра",
+                    "taken": 10,
+                    "stacked": 1,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "iupiter",
+                    "designation": null,
+                    "name": "Юпітер",
+                    "type": "planet",
+                    "solar": true,
+                    "day": false,
+                    "start": "00:43",
+                    "end": "00:44",
+                    "exposure": 0.25,
+                    "filter": "Без фільтра",
+                    "taken": 5,
+                    "stacked": 1,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "iupiter",
+                    "designation": null,
+                    "name": "Юпітер",
+                    "type": "planet",
+                    "solar": true,
+                    "day": false,
+                    "start": "00:47",
+                    "end": "00:50",
+                    "exposure": 0.1,
+                    "filter": "Без фільтра",
+                    "taken": 60,
+                    "stacked": 1,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": true
+                },
+                {
+                    "slug": "iupiter",
+                    "designation": null,
+                    "name": "Юпітер",
+                    "type": "planet",
+                    "solar": true,
+                    "day": false,
+                    "start": "00:50",
+                    "end": "00:54",
+                    "exposure": 1,
+                    "filter": "Без фільтра",
+                    "taken": 40,
+                    "stacked": 1,
+                    "sec": 1,
+                    "mosaic": false,
+                    "photo": false
+                }
+            ],
+            "moon": {
+                "illumination": 74,
+                "phase": "waxing_gibbous",
+                "waxing": true
+            },
+            "weather": {
+                "verdict": "partly",
+                "cloud": 60,
+                "temp_min": 7.8,
+                "wind": 3.5,
+                "humidity": 88
+            }
         }
     ],
     "science_totals": {
-        "observations": 1267,
-        "objects": 90,
+        "observations": 1292,
+        "objects": 92,
         "curves": 25,
-        "nights": 22,
+        "nights": 23,
         "first": "2026-08-20",
-        "last": "2026-11-15",
+        "last": "2026-11-19",
         "obscodes": [
             "KTFA"
         ],
         "by_program": {
-            "aavso": 1267
+            "aavso": 1292
         },
         "by_kind": {
-            "variable": 89,
+            "variable": 91,
             "supernova": 1
         }
     }
