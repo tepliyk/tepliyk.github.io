@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-20T12:10:21+02:00",
+    "generated_at": "2026-11-21T12:10:24+02:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -1403,8 +1403,8 @@
                 "poster": "vid/m42.jpg",
                 "w": 540,
                 "h": 816,
-                "youtube": "https://www.youtube.com/shorts/Kguk_0_xfuQ",
-                "tiktok": null
+                "youtube": "https://www.youtube.com/shorts/eO9nVkwdTnM",
+                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/tt-handoff-295754"
             },
             "difficulty": "easy",
             "target_min": 90,
@@ -3826,7 +3826,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m1"
             },
             {
@@ -3846,7 +3846,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m-3"
             },
             {
@@ -4116,7 +4116,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m-30"
             },
             {
@@ -4126,7 +4126,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2027-04-30",
                 "slug": "m31"
             },
             {
@@ -4136,7 +4136,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m31"
             },
             {
@@ -4146,7 +4146,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m33"
             },
             {
@@ -4156,7 +4156,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m34"
             },
             {
@@ -4166,7 +4166,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m35"
             },
             {
@@ -4176,7 +4176,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m36"
             },
             {
@@ -4186,7 +4186,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m37"
             },
             {
@@ -4196,7 +4196,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m38"
             },
             {
@@ -4216,7 +4216,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4226,7 +4226,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m-41"
             },
             {
@@ -4236,7 +4236,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m42"
             },
             {
@@ -4246,7 +4246,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m42"
             },
             {
@@ -4256,7 +4256,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m44"
             },
             {
@@ -4266,7 +4266,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m45"
             },
             {
@@ -4276,7 +4276,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m-46"
             },
             {
@@ -4286,7 +4286,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4296,7 +4296,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m-48"
             },
             {
@@ -4306,7 +4306,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4316,7 +4316,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m-50"
             },
             {
@@ -4326,7 +4326,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m51"
             },
             {
@@ -4346,7 +4346,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m-53"
             },
             {
@@ -4396,7 +4396,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4406,7 +4406,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4416,7 +4416,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4426,7 +4426,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4446,7 +4446,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m63"
             },
             {
@@ -4456,7 +4456,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4466,7 +4466,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m65"
             },
             {
@@ -4476,7 +4476,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m65"
             },
             {
@@ -4486,7 +4486,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4556,7 +4556,7 @@
                 "status": "progress",
                 "percent": 30,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m-74"
             },
             {
@@ -4576,7 +4576,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m-76"
             },
             {
@@ -4586,7 +4586,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4596,7 +4596,7 @@
                 "status": "progress",
                 "percent": 26,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m78"
             },
             {
@@ -4606,7 +4606,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m-79"
             },
             {
@@ -4626,7 +4626,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m-81"
             },
             {
@@ -4636,7 +4636,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4656,7 +4656,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4666,7 +4666,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4676,7 +4676,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4686,7 +4686,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4696,7 +4696,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4706,7 +4706,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4716,7 +4716,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4726,7 +4726,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4746,7 +4746,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4756,7 +4756,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4766,7 +4766,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m-95"
             },
             {
@@ -4776,7 +4776,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4786,7 +4786,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m-97"
             },
             {
@@ -4796,7 +4796,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4806,7 +4806,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4816,7 +4816,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4826,7 +4826,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m101"
             },
             {
@@ -4836,7 +4836,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4846,7 +4846,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m103"
             },
             {
@@ -4866,7 +4866,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4876,7 +4876,7 @@
                 "status": "progress",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m106"
             },
             {
@@ -4896,7 +4896,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": null
             },
             {
@@ -4906,7 +4906,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-20",
+                "season_from": "2026-11-21",
                 "slug": "m-109"
             },
             {
@@ -11163,7 +11163,7 @@
                     "stacked": 22,
                     "sec": 2640,
                     "mosaic": false,
-                    "photo": false
+                    "photo": true
                 },
                 {
                     "slug": "ngc-1514",
@@ -11180,7 +11180,7 @@
                     "stacked": 70,
                     "sec": 8400,
                     "mosaic": false,
-                    "photo": false
+                    "photo": true
                 },
                 {
                     "slug": "iupiter",
