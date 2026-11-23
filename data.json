@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-22T12:10:30+02:00",
+    "generated_at": "2026-11-23T12:10:28+02:00",
     "links": {
         "telegram": "https://t.me/nebo_blyzhche",
         "astrobin": "https://app.astrobin.com/u/nebo_blyzhche",
@@ -11,8 +11,8 @@
         "done": 4,
         "progress": 38,
         "todo": 25,
-        "nights": 70,
-        "deep_hours": 184.2,
+        "nights": 72,
+        "deep_hours": 185.6,
         "first_night": "2026-08-12",
         "photos": 50
     },
@@ -505,7 +505,75 @@
             },
             "difficulty": null,
             "target_min": 300,
-            "percent": 83,
+            "percent": 89,
+            "status": "progress"
+        },
+        {
+            "id": 12,
+            "slug": "m103",
+            "designation": "M 103",
+            "name": "Розсіяне скупчення",
+            "type": "cluster",
+            "constellation": "Кассіопея",
+            "nights": 3,
+            "integration_sec": 7890,
+            "first": "2026-09-01",
+            "last": "2026-09-03",
+            "text": {
+                "description_uk": "M103 у Кассіопеї, невелике розсіяне скупчення, останній об'єкт, який Мессьє сам додав до свого каталогу. Воно молоде, близько двадцяти п'яти мільйонів років, і має форму витягнутого трикутника з яскравою подвійною зорею на вершині. Один із його членів, червоний гігант, помітно відрізняється кольором від блакитних сусідів.",
+                "description_en": "M103 in Cassiopeia, a small open cluster and the last object Messier himself added to his catalogue. It is young, about twenty-five million years old, shaped like an elongated triangle with a bright double star at the apex. One of its members, a red giant, stands out in colour from its blue neighbours.",
+                "story_uk": "Три короткі сесії по тридцять секунд без фільтра. Скупчення мале, і в полі DWARF Mini займає лише центр кадру, тож тут важливіше різке повітря, ніж довга витримка. Трикутник з подвійною зорею на вершині й помаранчевий гігант вийшли одразу, об'єкт закрито.",
+                "story_en": "Three short sessions of thirty-second frames without a filter. The cluster is small and takes up only the centre of the DWARF Mini field, so steady air matters more here than long exposure. The triangle with the double star at its apex and the orange giant came out right away; the object is closed.",
+                "distance_ly": 10000,
+                "angular_size": "≈ 6′",
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 3,
+                "frames": 271,
+                "exposures": [
+                    30
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-08": 1,
+                    "2026-09": 2
+                },
+                "night_dates": [
+                    "2026-08-31",
+                    "2026-09-01",
+                    "2026-09-02"
+                ],
+                "longest_night_sec": 3840,
+                "longest_night": "2026-09-01"
+            },
+            "photo": {
+                "title": "M103 у густому полі Кассіопеї",
+                "img": "img/m103.jpg",
+                "thumb": "img/m103_t.jpg",
+                "webp": "img/m103.webp",
+                "thumb_webp": "img/m103_t.webp",
+                "w": 1430,
+                "h": 970,
+                "date": "2026-09-03",
+                "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/m103.mp4",
+                "poster": "vid/m103.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": "https://www.youtube.com/shorts/hW5OLMNN33Y",
+                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7695729548712873268"
+            },
+            "difficulty": "easy",
+            "target_min": 60,
+            "percent": 75,
             "status": "progress"
         },
         {
@@ -559,6 +627,79 @@
             "difficulty": null,
             "target_min": 240,
             "percent": 70,
+            "status": "progress"
+        },
+        {
+            "id": 10,
+            "slug": "m33",
+            "designation": "M 33",
+            "name": "Галактика Трикутника",
+            "type": "galaxy",
+            "constellation": "Трикутник",
+            "nights": 6,
+            "integration_sec": 28185,
+            "first": "2026-08-26",
+            "last": "2026-10-08",
+            "text": {
+                "description_uk": "Галактика Трикутника, третя за розміром у нашій Місцевій групі після Андромеди й Чумацького Шляху. Ми бачимо її майже плазом, тому спіральні рукави розгорнуті на весь диск, а в них видно рожеві плями областей зореутворення; найбільша з них, NGC 604, одна з найбільших відомих туманностей узагалі. Світло галактики розмазане по площі більшій за Місяць, і через низьку поверхневу яскравість вона одна з найважчих для міста.",
+                "description_en": "The Triangulum Galaxy, the third largest in our Local Group after Andromeda and the Milky Way. We see it almost face-on, so the spiral arms are spread across the whole disk, dotted with pink star-forming regions; the largest of them, NGC 604, is one of the biggest nebulae known. The galaxy's light is smeared over an area larger than the Moon, and its low surface brightness makes it one of the hardest targets for a city.",
+                "story_uk": "Трикутник показав, що означає низька поверхнева яскравість у місті: сім сесій за п'ять ночей, понад сім годин світла, і все одно рукави ледь виступають над фоном. Після опівночі, коли вимикаються ліхтарі на вулиці, небо темнішає більш ніж удвічі, і саме ці кадри тягнуть результат. Серію закрито: добір ще кількох ночей дав би мало, тож цей кадр фінальний для сезону.",
+                "story_en": "Triangulum showed what low surface brightness means in a city: seven sessions over five nights, more than seven hours of light, and the arms still barely rise above the background. After midnight, when the street lights switch off, the sky gets more than twice as dark, and those are the frames that carry the result. The series is closed: a few more nights would add little, so this frame is final for the season.",
+                "distance_ly": 2700000,
+                "angular_size": "70′ × 40′",
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 7,
+                "frames": 1151,
+                "exposures": [
+                    15,
+                    30
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-08": 1,
+                    "2026-09": 3,
+                    "2026-10": 2
+                },
+                "night_dates": [
+                    "2026-08-25",
+                    "2026-09-17",
+                    "2026-09-18",
+                    "2026-09-19",
+                    "2026-10-02",
+                    "2026-10-07"
+                ],
+                "longest_night_sec": 7590,
+                "longest_night": "2026-10-02"
+            },
+            "photo": {
+                "title": "Галактика Трикутника: 4 ночі, 4 год 59 хв (v3)",
+                "img": "img/m33.jpg",
+                "thumb": "img/m33_t.jpg",
+                "webp": "img/m33.webp",
+                "thumb_webp": "img/m33_t.webp",
+                "w": 1800,
+                "h": 961,
+                "date": "2026-09-20",
+                "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/m33.mp4",
+                "poster": "vid/m33.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null,
+                "tiktok": null
+            },
+            "difficulty": "hard",
+            "target_min": 480,
+            "percent": 68,
             "status": "progress"
         },
         {
@@ -634,147 +775,6 @@
             "status": "progress"
         },
         {
-            "id": 10,
-            "slug": "m33",
-            "designation": "M 33",
-            "name": "Галактика Трикутника",
-            "type": "galaxy",
-            "constellation": "Трикутник",
-            "nights": 6,
-            "integration_sec": 28185,
-            "first": "2026-08-26",
-            "last": "2026-10-08",
-            "text": {
-                "description_uk": "Галактика Трикутника, третя за розміром у нашій Місцевій групі після Андромеди й Чумацького Шляху. Ми бачимо її майже плазом, тому спіральні рукави розгорнуті на весь диск, а в них видно рожеві плями областей зореутворення; найбільша з них, NGC 604, одна з найбільших відомих туманностей узагалі. Світло галактики розмазане по площі більшій за Місяць, і через низьку поверхневу яскравість вона одна з найважчих для міста.",
-                "description_en": "The Triangulum Galaxy, the third largest in our Local Group after Andromeda and the Milky Way. We see it almost face-on, so the spiral arms are spread across the whole disk, dotted with pink star-forming regions; the largest of them, NGC 604, is one of the biggest nebulae known. The galaxy's light is smeared over an area larger than the Moon, and its low surface brightness makes it one of the hardest targets for a city.",
-                "story_uk": "Трикутник показав, що означає низька поверхнева яскравість у місті: сім сесій за п'ять ночей, понад сім годин світла, і все одно рукави ледь виступають над фоном. Після опівночі, коли вимикаються ліхтарі на вулиці, небо темнішає більш ніж удвічі, і саме ці кадри тягнуть результат. Серію закрито: добір ще кількох ночей дав би мало, тож цей кадр фінальний для сезону.",
-                "story_en": "Triangulum showed what low surface brightness means in a city: seven sessions over five nights, more than seven hours of light, and the arms still barely rise above the background. After midnight, when the street lights switch off, the sky gets more than twice as dark, and those are the frames that carry the result. The series is closed: a few more nights would add little, so this frame is final for the season.",
-                "distance_ly": 2700000,
-                "angular_size": "70′ × 40′",
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 7,
-                "frames": 1151,
-                "exposures": [
-                    15,
-                    30
-                ],
-                "filters": [
-                    "Без фільтра"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-08": 1,
-                    "2026-09": 3,
-                    "2026-10": 2
-                },
-                "night_dates": [
-                    "2026-08-25",
-                    "2026-09-17",
-                    "2026-09-18",
-                    "2026-09-19",
-                    "2026-10-02",
-                    "2026-10-07"
-                ],
-                "longest_night_sec": 7590,
-                "longest_night": "2026-10-02"
-            },
-            "photo": {
-                "title": "Галактика Трикутника: 4 ночі, 4 год 59 хв (v3)",
-                "img": "img/m33.jpg",
-                "thumb": "img/m33_t.jpg",
-                "webp": "img/m33.webp",
-                "thumb_webp": "img/m33_t.webp",
-                "w": 1800,
-                "h": 961,
-                "date": "2026-09-20",
-                "astrobin": null
-            },
-            "flyby": {
-                "loop": "vid/m33.mp4",
-                "poster": "vid/m33.jpg",
-                "w": 540,
-                "h": 816,
-                "youtube": null,
-                "tiktok": null
-            },
-            "difficulty": "hard",
-            "target_min": 480,
-            "percent": 56,
-            "status": "progress"
-        },
-        {
-            "id": 12,
-            "slug": "m103",
-            "designation": "M 103",
-            "name": "Розсіяне скупчення",
-            "type": "cluster",
-            "constellation": "Кассіопея",
-            "nights": 3,
-            "integration_sec": 7890,
-            "first": "2026-09-01",
-            "last": "2026-09-03",
-            "text": {
-                "description_uk": "M103 у Кассіопеї, невелике розсіяне скупчення, останній об'єкт, який Мессьє сам додав до свого каталогу. Воно молоде, близько двадцяти п'яти мільйонів років, і має форму витягнутого трикутника з яскравою подвійною зорею на вершині. Один із його членів, червоний гігант, помітно відрізняється кольором від блакитних сусідів.",
-                "description_en": "M103 in Cassiopeia, a small open cluster and the last object Messier himself added to his catalogue. It is young, about twenty-five million years old, shaped like an elongated triangle with a bright double star at the apex. One of its members, a red giant, stands out in colour from its blue neighbours.",
-                "story_uk": "Три короткі сесії по тридцять секунд без фільтра. Скупчення мале, і в полі DWARF Mini займає лише центр кадру, тож тут важливіше різке повітря, ніж довга витримка. Трикутник з подвійною зорею на вершині й помаранчевий гігант вийшли одразу, об'єкт закрито.",
-                "story_en": "Three short sessions of thirty-second frames without a filter. The cluster is small and takes up only the centre of the DWARF Mini field, so steady air matters more here than long exposure. The triangle with the double star at its apex and the orange giant came out right away; the object is closed.",
-                "distance_ly": 10000,
-                "angular_size": "≈ 6′",
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 3,
-                "frames": 271,
-                "exposures": [
-                    30
-                ],
-                "filters": [
-                    "Без фільтра"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-08": 1,
-                    "2026-09": 2
-                },
-                "night_dates": [
-                    "2026-08-31",
-                    "2026-09-01",
-                    "2026-09-02"
-                ],
-                "longest_night_sec": 3840,
-                "longest_night": "2026-09-01"
-            },
-            "photo": {
-                "title": "M103 у густому полі Кассіопеї",
-                "img": "img/m103.jpg",
-                "thumb": "img/m103_t.jpg",
-                "webp": "img/m103.webp",
-                "thumb_webp": "img/m103_t.webp",
-                "w": 1430,
-                "h": 970,
-                "date": "2026-09-03",
-                "astrobin": null
-            },
-            "flyby": {
-                "loop": "vid/m103.mp4",
-                "poster": "vid/m103.jpg",
-                "w": 540,
-                "h": 816,
-                "youtube": "https://www.youtube.com/shorts/hW5OLMNN33Y",
-                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7695729548712873268"
-            },
-            "difficulty": "easy",
-            "target_min": 60,
-            "percent": 54,
-            "status": "progress"
-        },
-        {
             "id": 26,
             "slug": "m44",
             "designation": "M 44",
@@ -841,7 +841,7 @@
             },
             "difficulty": "easy",
             "target_min": 60,
-            "percent": 45,
+            "percent": 64,
             "status": "progress"
         },
         {
@@ -900,6 +900,189 @@
             "flyby": {
                 "loop": "vid/m35.mp4",
                 "poster": "vid/m35.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null,
+                "tiktok": null
+            },
+            "difficulty": "easy",
+            "target_min": 60,
+            "percent": 59,
+            "status": "progress"
+        },
+        {
+            "id": 38,
+            "slug": "m106",
+            "designation": "M 106",
+            "name": "Галактика",
+            "type": "galaxy",
+            "constellation": "Гончі Пси",
+            "nights": 2,
+            "integration_sec": 15990,
+            "first": "2026-10-20",
+            "last": "2026-11-11",
+            "text": {
+                "description_uk": "Спіральна галактика M106 у Гончих Псах з активним ядром: у центрі надмасивна чорна діра, яка поглинає речовину і викидає два потужні струмені. Вони розганяють газ і створюють дві додаткові «аномальні» рукави, видимі в радіо- й рентгенівському діапазоні. Саме за водяними мазерами в диску M106 відстань до неї виміряли з рекордною точністю, і вона стала однією з опорних точок шкали відстаней у Всесвіті.",
+                "description_en": "Spiral galaxy M106 in Canes Venatici with an active nucleus: at its centre a supermassive black hole swallows matter and fires two powerful jets. They push the gas and create two extra 'anomalous' arms seen in radio and X-rays. Water masers in the disk of M106 allowed its distance to be measured with record precision, making it one of the anchor points of the cosmic distance scale.",
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": 22000000,
+                "angular_size": "19′ × 7′",
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 2,
+                "frames": 435,
+                "exposures": [
+                    30,
+                    60
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-10": 1,
+                    "2026-11": 1
+                },
+                "night_dates": [
+                    "2026-10-19",
+                    "2026-11-10"
+                ],
+                "longest_night_sec": 9750,
+                "longest_night": "2026-10-19"
+            },
+            "photo": null,
+            "difficulty": "hard",
+            "target_min": 480,
+            "percent": 49,
+            "status": "progress"
+        },
+        {
+            "id": 13,
+            "slug": "ngc-869",
+            "designation": "NGC 869",
+            "name": "Подвійне скупчення Персея (h Persei)",
+            "type": "cluster",
+            "constellation": "Персей",
+            "nights": 3,
+            "integration_sec": 5310,
+            "first": "2026-09-01",
+            "last": "2026-09-03",
+            "text": {
+                "description_uk": "Подвійне скупчення Персея, h і χ Персея, два молодих розсіяних скупчення, які видно оком як туманну пляму між Персеєм і Кассіопеєю. Обидва народились з однієї хмари лише кілька мільйонів років тому, лежать майже на одній відстані й зараз рухаються разом. У кожному сотні гарячих блакитних зір і кілька червоних надгігантів, помітних кольором навіть на міському небі.",
+                "description_en": "The Double Cluster in Perseus, h and χ Persei, two young open clusters visible to the eye as a hazy patch between Perseus and Cassiopeia. Both were born from the same cloud only a few million years ago, lie at almost the same distance and move together. Each holds hundreds of hot blue stars and a few red supergiants whose colour stands out even in a city sky.",
+                "story_uk": "Обидва скупчення влазять у поле DWARF Mini одразу, тому це був швидкий і вдячний об'єкт: три ночі по тридцять секунд без фільтра. Мета для яскравих скупчень невелика, і її закрито за один захід. Червоні надгіганти серед блакитних зір проявились одразу, без підсилення кольору.",
+                "story_en": "Both clusters fit into the DWARF Mini field at once, so this was a quick and rewarding object: three nights of thirty-second frames without a filter. The goal for bright clusters is modest and was reached in one go. The red supergiants among the blue stars showed up right away, with no colour boost.",
+                "distance_ly": 7500,
+                "angular_size": "2 × 30′",
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 3,
+                "frames": 177,
+                "exposures": [
+                    30
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-08": 1,
+                    "2026-09": 2
+                },
+                "night_dates": [
+                    "2026-08-31",
+                    "2026-09-01",
+                    "2026-09-02"
+                ],
+                "longest_night_sec": 2310,
+                "longest_night": "2026-08-31"
+            },
+            "photo": {
+                "title": "Подвійне скупчення Персея у повному полі",
+                "img": "img/ngc-869.jpg",
+                "thumb": "img/ngc-869_t.jpg",
+                "webp": "img/ngc-869.webp",
+                "thumb_webp": "img/ngc-869_t.webp",
+                "w": 1800,
+                "h": 969,
+                "date": "2026-09-03",
+                "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/ngc-869.mp4",
+                "poster": "vid/ngc-869.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null,
+                "tiktok": null
+            },
+            "difficulty": "easy",
+            "target_min": 60,
+            "percent": 48,
+            "status": "progress"
+        },
+        {
+            "id": 8,
+            "slug": "m34",
+            "designation": "M 34",
+            "name": "Розсіяне скупчення",
+            "type": "cluster",
+            "constellation": "Персей",
+            "nights": 1,
+            "integration_sec": 2220,
+            "first": "2026-08-24",
+            "last": "2026-08-24",
+            "text": {
+                "description_uk": "Розсіяне скупчення M34 в Персеї, приблизно сотня зір віком близько двохсот мільйонів років, розкиданих на площі з повний Місяць. У бінокль воно видно як туманну плямку, у телескоп розпадається на окремі яскраві зорі. Скупчення лежить на півдорозі між Альголем і Альмахом, тож знайти його легко, а для міського балкона це вдячна ціль: яскраві зорі не бояться засвічення.",
+                "description_en": "Open cluster M34 in Perseus, roughly a hundred stars about two hundred million years old, scattered over an area the size of the full Moon. In binoculars it is a hazy patch; a telescope resolves it into individual bright stars. The cluster lies halfway between Algol and Almach, so it is easy to find, and for a city balcony it is a rewarding target: bright stars do not mind light pollution.",
+                "story_uk": "Одна ніч по тридцять секунд без фільтра, і скупчення закрито: яскравим зорям на міському небі не потрібні години. Складність була лише в тому, щоб не пересвітити найяскравіші зорі й не загубити дрібні, тому витримка коротка, а кадрів багато. Це типовий «швидкий» об'єкт челенджу між довгими серіями туманностей.",
+                "story_en": "One night of thirty-second frames without a filter, and the cluster is closed: bright stars in a city sky do not need hours. The only difficulty was not clipping the brightest stars while keeping the faint ones, hence the short exposure and many frames. It is a typical 'quick' challenge object between long nebula series.",
+                "distance_ly": 1500,
+                "angular_size": "≈ 35′",
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 1,
+                "frames": 74,
+                "exposures": [
+                    30
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-08": 1
+                },
+                "night_dates": [
+                    "2026-08-23"
+                ],
+                "longest_night_sec": 2220,
+                "longest_night": "2026-08-23"
+            },
+            "photo": {
+                "title": "Розсіяне скупчення M34",
+                "img": "img/m34.jpg",
+                "thumb": "img/m34_t.jpg",
+                "webp": "img/m34.webp",
+                "thumb_webp": "img/m34_t.webp",
+                "w": 1200,
+                "h": 900,
+                "date": "2026-08-24",
+                "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/m34.mp4",
+                "poster": "vid/m34.jpg",
                 "w": 540,
                 "h": 816,
                 "youtube": null,
@@ -1187,78 +1370,28 @@
             "status": "progress"
         },
         {
-            "id": 38,
-            "slug": "m106",
-            "designation": "M 106",
-            "name": "Галактика",
-            "type": "galaxy",
-            "constellation": "Гончі Пси",
-            "nights": 2,
-            "integration_sec": 15990,
-            "first": "2026-10-20",
-            "last": "2026-11-11",
-            "text": {
-                "description_uk": "Спіральна галактика M106 у Гончих Псах з активним ядром: у центрі надмасивна чорна діра, яка поглинає речовину і викидає два потужні струмені. Вони розганяють газ і створюють дві додаткові «аномальні» рукави, видимі в радіо- й рентгенівському діапазоні. Саме за водяними мазерами в диску M106 відстань до неї виміряли з рекордною точністю, і вона стала однією з опорних точок шкали відстаней у Всесвіті.",
-                "description_en": "Spiral galaxy M106 in Canes Venatici with an active nucleus: at its centre a supermassive black hole swallows matter and fires two powerful jets. They push the gas and create two extra 'anomalous' arms seen in radio and X-rays. Water masers in the disk of M106 allowed its distance to be measured with record precision, making it one of the anchor points of the cosmic distance scale.",
-                "story_uk": null,
-                "story_en": null,
-                "distance_ly": 22000000,
-                "angular_size": "19′ × 7′",
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 2,
-                "frames": 435,
-                "exposures": [
-                    30,
-                    60
-                ],
-                "filters": [
-                    "Без фільтра"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-10": 1,
-                    "2026-11": 1
-                },
-                "night_dates": [
-                    "2026-10-19",
-                    "2026-11-10"
-                ],
-                "longest_night_sec": 9750,
-                "longest_night": "2026-10-19"
-            },
-            "photo": null,
-            "difficulty": "hard",
-            "target_min": 480,
-            "percent": 35,
-            "status": "progress"
-        },
-        {
-            "id": 13,
-            "slug": "ngc-869",
-            "designation": "NGC 869",
-            "name": "Подвійне скупчення Персея (h Persei)",
+            "id": 24,
+            "slug": "m37",
+            "designation": "M 37",
+            "name": "Розсіяне скупчення",
             "type": "cluster",
-            "constellation": "Персей",
-            "nights": 3,
-            "integration_sec": 5310,
-            "first": "2026-09-01",
-            "last": "2026-09-03",
+            "constellation": "Візничий",
+            "nights": 1,
+            "integration_sec": 3480,
+            "first": "2026-09-29",
+            "last": "2026-09-29",
             "text": {
-                "description_uk": "Подвійне скупчення Персея, h і χ Персея, два молодих розсіяних скупчення, які видно оком як туманну пляму між Персеєм і Кассіопеєю. Обидва народились з однієї хмари лише кілька мільйонів років тому, лежать майже на одній відстані й зараз рухаються разом. У кожному сотні гарячих блакитних зір і кілька червоних надгігантів, помітних кольором навіть на міському небі.",
-                "description_en": "The Double Cluster in Perseus, h and χ Persei, two young open clusters visible to the eye as a hazy patch between Perseus and Cassiopeia. Both were born from the same cloud only a few million years ago, lie at almost the same distance and move together. Each holds hundreds of hot blue stars and a few red supergiants whose colour stands out even in a city sky.",
-                "story_uk": "Обидва скупчення влазять у поле DWARF Mini одразу, тому це був швидкий і вдячний об'єкт: три ночі по тридцять секунд без фільтра. Мета для яскравих скупчень невелика, і її закрито за один захід. Червоні надгіганти серед блакитних зір проявились одразу, без підсилення кольору.",
-                "story_en": "Both clusters fit into the DWARF Mini field at once, so this was a quick and rewarding object: three nights of thirty-second frames without a filter. The goal for bright clusters is modest and was reached in one go. The red supergiants among the blue stars showed up right away, with no colour boost.",
-                "distance_ly": 7500,
-                "angular_size": "2 × 30′",
+                "description_uk": "M37, найбагатше з трьох розсіяних скупчень Візничого: понад п'ятсот зір на площі з півмісяця, вік близько трьохсот мільйонів років. У центрі помітна помаранчева зоря, червоний гігант, а навколо рівне розсипане поле дрібних зір, через яке скупчення часто порівнюють з жменею пилу. У телескоп воно одне з найгарніших скупчень зимового неба.",
+                "description_en": "M37, the richest of the three open clusters in Auriga: more than five hundred stars over an area half the Moon across, about three hundred million years old. An orange star, a red giant, marks the centre, surrounded by an even field of fine stars that gets the cluster compared to a handful of dust. In a telescope it is one of the prettiest clusters of the winter sky.",
+                "story_uk": "Одна ніч по тридцять секунд без фільтра. Серед трьох скупчень Візничого це найщільніше, і саме тут апарат показує межу роздільності: дрібні зорі в центрі починають зливатись. Помаранчевий гігант у середині видно виразно. Мету закрито, а повертатись варто лише в ніч з дуже спокійним повітрям.",
+                "story_en": "One night of thirty-second frames without a filter. Of the three Auriga clusters this is the densest, and here the device shows its resolution limit: the fine stars in the centre start to merge. The orange giant in the middle stands out clearly. The goal is reached; a return is only worth it on a night of very steady air.",
+                "distance_ly": 4500,
+                "angular_size": "≈ 24′",
                 "en_auto": false
             },
             "shooting": {
-                "sessions": 3,
-                "frames": 177,
+                "sessions": 1,
+                "frames": 118,
                 "exposures": [
                     30
                 ],
@@ -1269,31 +1402,158 @@
                     "DWARF Mini"
                 ],
                 "nights_by_month": {
-                    "2026-08": 1,
-                    "2026-09": 2
+                    "2026-09": 1
                 },
                 "night_dates": [
-                    "2026-08-31",
-                    "2026-09-01",
-                    "2026-09-02"
+                    "2026-09-28"
                 ],
-                "longest_night_sec": 2310,
-                "longest_night": "2026-08-31"
+                "longest_night_sec": 3480,
+                "longest_night": "2026-09-28"
             },
             "photo": {
-                "title": "Подвійне скупчення Персея у повному полі",
-                "img": "img/ngc-869.jpg",
-                "thumb": "img/ngc-869_t.jpg",
-                "webp": "img/ngc-869.webp",
-                "thumb_webp": "img/ngc-869_t.webp",
+                "title": "M37 — 58 хв, v3 (м'якші світла)",
+                "img": "img/m37.jpg",
+                "thumb": "img/m37_t.jpg",
+                "webp": "img/m37.webp",
+                "thumb_webp": "img/m37_t.webp",
                 "w": 1800,
-                "h": 969,
-                "date": "2026-09-03",
+                "h": 999,
+                "date": "2026-09-29",
+                "astrobin": "https://app.astrobin.com/i/0nwh9k"
+            },
+            "flyby": {
+                "loop": "vid/m37.mp4",
+                "poster": "vid/m37.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null,
+                "tiktok": null
+            },
+            "difficulty": "easy",
+            "target_min": 60,
+            "percent": 35,
+            "status": "progress"
+        },
+        {
+            "id": 25,
+            "slug": "m38",
+            "designation": "M 38",
+            "name": "Розсіяне скупчення",
+            "type": "cluster",
+            "constellation": "Візничий",
+            "nights": 1,
+            "integration_sec": 4260,
+            "first": "2026-09-29",
+            "last": "2026-09-29",
+            "text": {
+                "description_uk": "Розсіяне скупчення M38 у Візничому, середнє за віком з трьох скупчень сузір'я: близько двохсот двадцяти мільйонів років. Його найяскравіші зорі складаються в хрестоподібний або, як часто пишуть, у схожий на грецьку літеру π візерунок. Поруч, у тому самому полі, видно менше й тьмяніше скупчення NGC 1907, яке лише випадково опинилось на промені зору.",
+                "description_en": "Open cluster M38 in Auriga, the middle one in age of the constellation's three clusters: about two hundred and twenty million years old. Its brightest stars form a cross-shaped, or as often written, a Greek-letter-π pattern. In the same field sits the smaller and fainter cluster NGC 1907, which only happens to lie along the same line of sight.",
+                "story_uk": "Одна ніч по тридцять секунд без фільтра. Хрестоподібний візерунок яскравих зір видно одразу, а сусіднє NGC 1907 на міському небі ледь вгадується як згусток дрібних зір у кутку поля. Мету для яскравих скупчень закрито за одну сесію.",
+                "story_en": "One night of thirty-second frames without a filter. The cross-shaped pattern of bright stars is visible at once, while the neighbouring NGC 1907 in a city sky is barely a knot of faint stars in the corner of the field. The goal for bright clusters was closed in one session.",
+                "distance_ly": 4200,
+                "angular_size": "≈ 21′",
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 1,
+                "frames": 143,
+                "exposures": [
+                    30
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-09": 1
+                },
+                "night_dates": [
+                    "2026-09-28"
+                ],
+                "longest_night_sec": 4260,
+                "longest_night": "2026-09-28"
+            },
+            "photo": {
+                "title": "M38 + NGC 1907 — 1 ніч, 1 год 11 хв (хмарний стек)",
+                "img": "img/m38.jpg",
+                "thumb": "img/m38_t.jpg",
+                "webp": "img/m38.webp",
+                "thumb_webp": "img/m38_t.webp",
+                "w": 1800,
+                "h": 999,
+                "date": "2026-09-29",
+                "astrobin": "https://app.astrobin.com/i/cre17o"
+            },
+            "flyby": {
+                "loop": "vid/m38.mp4",
+                "poster": "vid/m38.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": null,
+                "tiktok": null
+            },
+            "difficulty": "easy",
+            "target_min": 60,
+            "percent": 35,
+            "status": "progress"
+        },
+        {
+            "id": 23,
+            "slug": "m36",
+            "designation": "M 36",
+            "name": "Розсіяне скупчення",
+            "type": "cluster",
+            "constellation": "Візничий",
+            "nights": 1,
+            "integration_sec": 5850,
+            "first": "2026-09-30",
+            "last": "2026-09-30",
+            "text": {
+                "description_uk": "Розсіяне скупчення M36 у Візничому, наймолодше з трійки скупчень Мессьє в цьому сузір'ї: близько двадцяти п'яти мільйонів років, кілька десятків гарячих блакитних зір і жодного червоного гіганта, бо жодна зоря ще не встигла постаріти. На небі воно компактне, розміром з третину Місяця, і схоже на зменшені Плеяди.",
+                "description_en": "Open cluster M36 in Auriga, the youngest of the three Messier clusters in this constellation: about twenty-five million years old, a few dozen hot blue stars and not a single red giant, because none of the stars has had time to age. In the sky it is compact, a third of the Moon across, and looks like a miniature Pleiades.",
+                "story_uk": "Одна ніч по тридцять секунд без фільтра, з трохи вищим підсиленням, ніж зазвичай для скупчень. Блакитні зорі на темному фоні вийшли чисто, і мету закрито за одну сесію. Разом із M37 і M38 це трійка Візничого, яку зручно знімати в один вечір поспіль.",
+                "story_en": "One night of thirty-second frames without a filter, with slightly higher gain than usual for clusters. The blue stars on the dark background came out clean, and the goal was closed in one session. Together with M37 and M38 it forms the Auriga trio, convenient to shoot one after another in a single evening.",
+                "distance_ly": 4100,
+                "angular_size": "≈ 12′",
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 1,
+                "frames": 195,
+                "exposures": [
+                    30
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-09": 1
+                },
+                "night_dates": [
+                    "2026-09-29"
+                ],
+                "longest_night_sec": 5850,
+                "longest_night": "2026-09-29"
+            },
+            "photo": {
+                "title": "M36 — розсіяне скупчення у Візничому, 1 год 37 хв (v5, фінал)",
+                "img": "img/m36.jpg",
+                "thumb": "img/m36_t.jpg",
+                "webp": "img/m36.webp",
+                "thumb_webp": "img/m36_t.webp",
+                "w": 1200,
+                "h": 800,
+                "date": "2026-09-30",
                 "astrobin": null
             },
             "flyby": {
-                "loop": "vid/ngc-869.mp4",
-                "poster": "vid/ngc-869.jpg",
+                "loop": "vid/m36.mp4",
+                "poster": "vid/m36.jpg",
                 "w": 540,
                 "h": 816,
                 "youtube": null,
@@ -1417,71 +1677,6 @@
             "difficulty": "easy",
             "target_min": 90,
             "percent": 32,
-            "status": "progress"
-        },
-        {
-            "id": 8,
-            "slug": "m34",
-            "designation": "M 34",
-            "name": "Розсіяне скупчення",
-            "type": "cluster",
-            "constellation": "Персей",
-            "nights": 1,
-            "integration_sec": 2220,
-            "first": "2026-08-24",
-            "last": "2026-08-24",
-            "text": {
-                "description_uk": "Розсіяне скупчення M34 в Персеї, приблизно сотня зір віком близько двохсот мільйонів років, розкиданих на площі з повний Місяць. У бінокль воно видно як туманну плямку, у телескоп розпадається на окремі яскраві зорі. Скупчення лежить на півдорозі між Альголем і Альмахом, тож знайти його легко, а для міського балкона це вдячна ціль: яскраві зорі не бояться засвічення.",
-                "description_en": "Open cluster M34 in Perseus, roughly a hundred stars about two hundred million years old, scattered over an area the size of the full Moon. In binoculars it is a hazy patch; a telescope resolves it into individual bright stars. The cluster lies halfway between Algol and Almach, so it is easy to find, and for a city balcony it is a rewarding target: bright stars do not mind light pollution.",
-                "story_uk": "Одна ніч по тридцять секунд без фільтра, і скупчення закрито: яскравим зорям на міському небі не потрібні години. Складність була лише в тому, щоб не пересвітити найяскравіші зорі й не загубити дрібні, тому витримка коротка, а кадрів багато. Це типовий «швидкий» об'єкт челенджу між довгими серіями туманностей.",
-                "story_en": "One night of thirty-second frames without a filter, and the cluster is closed: bright stars in a city sky do not need hours. The only difficulty was not clipping the brightest stars while keeping the faint ones, hence the short exposure and many frames. It is a typical 'quick' challenge object between long nebula series.",
-                "distance_ly": 1500,
-                "angular_size": "≈ 35′",
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 1,
-                "frames": 74,
-                "exposures": [
-                    30
-                ],
-                "filters": [
-                    "Без фільтра"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-08": 1
-                },
-                "night_dates": [
-                    "2026-08-23"
-                ],
-                "longest_night_sec": 2220,
-                "longest_night": "2026-08-23"
-            },
-            "photo": {
-                "title": "Розсіяне скупчення M34",
-                "img": "img/m34.jpg",
-                "thumb": "img/m34_t.jpg",
-                "webp": "img/m34.webp",
-                "thumb_webp": "img/m34_t.webp",
-                "w": 1200,
-                "h": 900,
-                "date": "2026-08-24",
-                "astrobin": null
-            },
-            "flyby": {
-                "loop": "vid/m34.mp4",
-                "poster": "vid/m34.jpg",
-                "w": 540,
-                "h": 816,
-                "youtube": null,
-                "tiktok": null
-            },
-            "difficulty": "easy",
-            "target_min": 60,
-            "percent": 30,
             "status": "progress"
         },
         {
@@ -1622,6 +1817,72 @@
             },
             "difficulty": "normal",
             "target_min": 240,
+            "percent": 30,
+            "status": "progress"
+        },
+        {
+            "id": 14,
+            "slug": "ngc-2403",
+            "designation": "C 7",
+            "name": "Галактика в Жирафі (NGC 2403)",
+            "type": "galaxy",
+            "constellation": "Жирафа",
+            "nights": 2,
+            "integration_sec": 10440,
+            "first": "2026-09-05",
+            "last": "2026-09-08",
+            "text": {
+                "description_uk": "Спіральна галактика в Жирафі, член групи M81, одна з найближчих спіралей поза нашою Місцевою групою. Вона нахилена до нас і показує клаптикуваті рукави, усіяні рожевими областями зореутворення; найбільша з них, NGC 2404, видна навіть у невеликі телескопи. Галактика лежить високо на півночі, тому з балкона доступна майже цілий рік.",
+                "description_en": "A spiral galaxy in Camelopardalis, a member of the M81 group and one of the nearest spirals outside our Local Group. Tilted towards us, it shows patchy arms dotted with pink star-forming regions; the largest, NGC 2404, is visible even in small telescopes. The galaxy sits high in the north, so it is reachable from the balcony almost all year round.",
+                "story_uk": "Дві ночі по тридцять секунд без фільтра на галактику, яку DWARF Mini показує невеликою овальною плямою з натяком на рукави. Вона стоїть високо на півночі, тож дах не заважає, а от широкий спектр і міське засвічення обмежують деталі. Мета ще збирає світло: галактиці потрібні темніші ночі та довша серія.",
+                "story_en": "Two nights of thirty-second frames without a filter on a galaxy that the DWARF Mini shows as a small oval patch with a hint of arms. It sits high in the north, so the roof does not interfere, but broadband and city light pollution limit the detail. The goal is still gathering light: the galaxy needs darker nights and a longer series.",
+                "distance_ly": 8000000,
+                "angular_size": "22′ × 12′",
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 2,
+                "frames": 355,
+                "exposures": [
+                    30
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-09": 2
+                },
+                "night_dates": [
+                    "2026-09-04",
+                    "2026-09-07"
+                ],
+                "longest_night_sec": 5280,
+                "longest_night": "2026-09-07"
+            },
+            "photo": {
+                "title": "NGC 2403 у повному полі",
+                "img": "img/ngc-2403.jpg",
+                "thumb": "img/ngc-2403_t.jpg",
+                "webp": "img/ngc-2403.webp",
+                "thumb_webp": "img/ngc-2403_t.webp",
+                "w": 1800,
+                "h": 995,
+                "date": "2026-09-08",
+                "astrobin": null
+            },
+            "flyby": {
+                "loop": "vid/ngc-2403.mp4",
+                "poster": "vid/ngc-2403.jpg",
+                "w": 540,
+                "h": 816,
+                "youtube": "https://www.youtube.com/shorts/0LGytYe6aJQ",
+                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7709209281576439061"
+            },
+            "difficulty": "hard",
+            "target_min": 480,
             "percent": 29,
             "status": "progress"
         },
@@ -1690,136 +1951,6 @@
             "difficulty": "normal",
             "target_min": 240,
             "percent": 28,
-            "status": "progress"
-        },
-        {
-            "id": 24,
-            "slug": "m37",
-            "designation": "M 37",
-            "name": "Розсіяне скупчення",
-            "type": "cluster",
-            "constellation": "Візничий",
-            "nights": 1,
-            "integration_sec": 3480,
-            "first": "2026-09-29",
-            "last": "2026-09-29",
-            "text": {
-                "description_uk": "M37, найбагатше з трьох розсіяних скупчень Візничого: понад п'ятсот зір на площі з півмісяця, вік близько трьохсот мільйонів років. У центрі помітна помаранчева зоря, червоний гігант, а навколо рівне розсипане поле дрібних зір, через яке скупчення часто порівнюють з жменею пилу. У телескоп воно одне з найгарніших скупчень зимового неба.",
-                "description_en": "M37, the richest of the three open clusters in Auriga: more than five hundred stars over an area half the Moon across, about three hundred million years old. An orange star, a red giant, marks the centre, surrounded by an even field of fine stars that gets the cluster compared to a handful of dust. In a telescope it is one of the prettiest clusters of the winter sky.",
-                "story_uk": "Одна ніч по тридцять секунд без фільтра. Серед трьох скупчень Візничого це найщільніше, і саме тут апарат показує межу роздільності: дрібні зорі в центрі починають зливатись. Помаранчевий гігант у середині видно виразно. Мету закрито, а повертатись варто лише в ніч з дуже спокійним повітрям.",
-                "story_en": "One night of thirty-second frames without a filter. Of the three Auriga clusters this is the densest, and here the device shows its resolution limit: the fine stars in the centre start to merge. The orange giant in the middle stands out clearly. The goal is reached; a return is only worth it on a night of very steady air.",
-                "distance_ly": 4500,
-                "angular_size": "≈ 24′",
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 1,
-                "frames": 118,
-                "exposures": [
-                    30
-                ],
-                "filters": [
-                    "Без фільтра"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-09": 1
-                },
-                "night_dates": [
-                    "2026-09-28"
-                ],
-                "longest_night_sec": 3480,
-                "longest_night": "2026-09-28"
-            },
-            "photo": {
-                "title": "M37 — 58 хв, v3 (м'якші світла)",
-                "img": "img/m37.jpg",
-                "thumb": "img/m37_t.jpg",
-                "webp": "img/m37.webp",
-                "thumb_webp": "img/m37_t.webp",
-                "w": 1800,
-                "h": 999,
-                "date": "2026-09-29",
-                "astrobin": "https://app.astrobin.com/i/0nwh9k"
-            },
-            "flyby": {
-                "loop": "vid/m37.mp4",
-                "poster": "vid/m37.jpg",
-                "w": 540,
-                "h": 816,
-                "youtube": null,
-                "tiktok": null
-            },
-            "difficulty": "easy",
-            "target_min": 60,
-            "percent": 25,
-            "status": "progress"
-        },
-        {
-            "id": 25,
-            "slug": "m38",
-            "designation": "M 38",
-            "name": "Розсіяне скупчення",
-            "type": "cluster",
-            "constellation": "Візничий",
-            "nights": 1,
-            "integration_sec": 4260,
-            "first": "2026-09-29",
-            "last": "2026-09-29",
-            "text": {
-                "description_uk": "Розсіяне скупчення M38 у Візничому, середнє за віком з трьох скупчень сузір'я: близько двохсот двадцяти мільйонів років. Його найяскравіші зорі складаються в хрестоподібний або, як часто пишуть, у схожий на грецьку літеру π візерунок. Поруч, у тому самому полі, видно менше й тьмяніше скупчення NGC 1907, яке лише випадково опинилось на промені зору.",
-                "description_en": "Open cluster M38 in Auriga, the middle one in age of the constellation's three clusters: about two hundred and twenty million years old. Its brightest stars form a cross-shaped, or as often written, a Greek-letter-π pattern. In the same field sits the smaller and fainter cluster NGC 1907, which only happens to lie along the same line of sight.",
-                "story_uk": "Одна ніч по тридцять секунд без фільтра. Хрестоподібний візерунок яскравих зір видно одразу, а сусіднє NGC 1907 на міському небі ледь вгадується як згусток дрібних зір у кутку поля. Мету для яскравих скупчень закрито за одну сесію.",
-                "story_en": "One night of thirty-second frames without a filter. The cross-shaped pattern of bright stars is visible at once, while the neighbouring NGC 1907 in a city sky is barely a knot of faint stars in the corner of the field. The goal for bright clusters was closed in one session.",
-                "distance_ly": 4200,
-                "angular_size": "≈ 21′",
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 1,
-                "frames": 143,
-                "exposures": [
-                    30
-                ],
-                "filters": [
-                    "Без фільтра"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-09": 1
-                },
-                "night_dates": [
-                    "2026-09-28"
-                ],
-                "longest_night_sec": 4260,
-                "longest_night": "2026-09-28"
-            },
-            "photo": {
-                "title": "M38 + NGC 1907 — 1 ніч, 1 год 11 хв (хмарний стек)",
-                "img": "img/m38.jpg",
-                "thumb": "img/m38_t.jpg",
-                "webp": "img/m38.webp",
-                "thumb_webp": "img/m38_t.webp",
-                "w": 1800,
-                "h": 999,
-                "date": "2026-09-29",
-                "astrobin": "https://app.astrobin.com/i/cre17o"
-            },
-            "flyby": {
-                "loop": "vid/m38.mp4",
-                "poster": "vid/m38.jpg",
-                "w": 540,
-                "h": 816,
-                "youtube": null,
-                "tiktok": null
-            },
-            "difficulty": "easy",
-            "target_min": 60,
-            "percent": 25,
             "status": "progress"
         },
         {
@@ -1962,137 +2093,6 @@
             "status": "progress"
         },
         {
-            "id": 23,
-            "slug": "m36",
-            "designation": "M 36",
-            "name": "Розсіяне скупчення",
-            "type": "cluster",
-            "constellation": "Візничий",
-            "nights": 1,
-            "integration_sec": 5850,
-            "first": "2026-09-30",
-            "last": "2026-09-30",
-            "text": {
-                "description_uk": "Розсіяне скупчення M36 у Візничому, наймолодше з трійки скупчень Мессьє в цьому сузір'ї: близько двадцяти п'яти мільйонів років, кілька десятків гарячих блакитних зір і жодного червоного гіганта, бо жодна зоря ще не встигла постаріти. На небі воно компактне, розміром з третину Місяця, і схоже на зменшені Плеяди.",
-                "description_en": "Open cluster M36 in Auriga, the youngest of the three Messier clusters in this constellation: about twenty-five million years old, a few dozen hot blue stars and not a single red giant, because none of the stars has had time to age. In the sky it is compact, a third of the Moon across, and looks like a miniature Pleiades.",
-                "story_uk": "Одна ніч по тридцять секунд без фільтра, з трохи вищим підсиленням, ніж зазвичай для скупчень. Блакитні зорі на темному фоні вийшли чисто, і мету закрито за одну сесію. Разом із M37 і M38 це трійка Візничого, яку зручно знімати в один вечір поспіль.",
-                "story_en": "One night of thirty-second frames without a filter, with slightly higher gain than usual for clusters. The blue stars on the dark background came out clean, and the goal was closed in one session. Together with M37 and M38 it forms the Auriga trio, convenient to shoot one after another in a single evening.",
-                "distance_ly": 4100,
-                "angular_size": "≈ 12′",
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 1,
-                "frames": 195,
-                "exposures": [
-                    30
-                ],
-                "filters": [
-                    "Без фільтра"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-09": 1
-                },
-                "night_dates": [
-                    "2026-09-29"
-                ],
-                "longest_night_sec": 5850,
-                "longest_night": "2026-09-29"
-            },
-            "photo": {
-                "title": "M36 — розсіяне скупчення у Візничому, 1 год 37 хв (v5, фінал)",
-                "img": "img/m36.jpg",
-                "thumb": "img/m36_t.jpg",
-                "webp": "img/m36.webp",
-                "thumb_webp": "img/m36_t.webp",
-                "w": 1200,
-                "h": 800,
-                "date": "2026-09-30",
-                "astrobin": null
-            },
-            "flyby": {
-                "loop": "vid/m36.mp4",
-                "poster": "vid/m36.jpg",
-                "w": 540,
-                "h": 816,
-                "youtube": null,
-                "tiktok": null
-            },
-            "difficulty": "easy",
-            "target_min": 60,
-            "percent": 24,
-            "status": "progress"
-        },
-        {
-            "id": 14,
-            "slug": "ngc-2403",
-            "designation": "C 7",
-            "name": "Галактика в Жирафі (NGC 2403)",
-            "type": "galaxy",
-            "constellation": "Жирафа",
-            "nights": 2,
-            "integration_sec": 10440,
-            "first": "2026-09-05",
-            "last": "2026-09-08",
-            "text": {
-                "description_uk": "Спіральна галактика в Жирафі, член групи M81, одна з найближчих спіралей поза нашою Місцевою групою. Вона нахилена до нас і показує клаптикуваті рукави, усіяні рожевими областями зореутворення; найбільша з них, NGC 2404, видна навіть у невеликі телескопи. Галактика лежить високо на півночі, тому з балкона доступна майже цілий рік.",
-                "description_en": "A spiral galaxy in Camelopardalis, a member of the M81 group and one of the nearest spirals outside our Local Group. Tilted towards us, it shows patchy arms dotted with pink star-forming regions; the largest, NGC 2404, is visible even in small telescopes. The galaxy sits high in the north, so it is reachable from the balcony almost all year round.",
-                "story_uk": "Дві ночі по тридцять секунд без фільтра на галактику, яку DWARF Mini показує невеликою овальною плямою з натяком на рукави. Вона стоїть високо на півночі, тож дах не заважає, а от широкий спектр і міське засвічення обмежують деталі. Мета ще збирає світло: галактиці потрібні темніші ночі та довша серія.",
-                "story_en": "Two nights of thirty-second frames without a filter on a galaxy that the DWARF Mini shows as a small oval patch with a hint of arms. It sits high in the north, so the roof does not interfere, but broadband and city light pollution limit the detail. The goal is still gathering light: the galaxy needs darker nights and a longer series.",
-                "distance_ly": 8000000,
-                "angular_size": "22′ × 12′",
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 2,
-                "frames": 355,
-                "exposures": [
-                    30
-                ],
-                "filters": [
-                    "Без фільтра"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-09": 2
-                },
-                "night_dates": [
-                    "2026-09-04",
-                    "2026-09-07"
-                ],
-                "longest_night_sec": 5280,
-                "longest_night": "2026-09-07"
-            },
-            "photo": {
-                "title": "NGC 2403 у повному полі",
-                "img": "img/ngc-2403.jpg",
-                "thumb": "img/ngc-2403_t.jpg",
-                "webp": "img/ngc-2403.webp",
-                "thumb_webp": "img/ngc-2403_t.webp",
-                "w": 1800,
-                "h": 995,
-                "date": "2026-09-08",
-                "astrobin": null
-            },
-            "flyby": {
-                "loop": "vid/ngc-2403.mp4",
-                "poster": "vid/ngc-2403.jpg",
-                "w": 540,
-                "h": 816,
-                "youtube": "https://www.youtube.com/shorts/0LGytYe6aJQ",
-                "tiktok": "https://www.tiktok.com/@nebo_blyzhche/video/7709209281576439061"
-            },
-            "difficulty": "hard",
-            "target_min": 480,
-            "percent": 23,
-            "status": "progress"
-        },
-        {
             "id": 29,
             "slug": "ngc-2264",
             "designation": "NGC 2264",
@@ -2159,6 +2159,128 @@
             "difficulty": "normal",
             "target_min": 240,
             "percent": 22,
+            "status": "progress"
+        },
+        {
+            "id": 45,
+            "slug": "c-44",
+            "designation": "C 44",
+            "name": "Галактика NGC 7479",
+            "type": "galaxy",
+            "constellation": "Пегас",
+            "nights": 3,
+            "integration_sec": 13080,
+            "first": "2026-09-20",
+            "last": "2026-10-02",
+            "text": {
+                "description_uk": "NGC 7479 у Пегасі, спіральна галактика з виразною перемичкою, від кінців якої відходять два асиметричні рукави; за силует її прозвали Галактикою Супермена. Асиметрія, ймовірно, слід недавнього злиття з меншою галактикою. У ядрі активне зореутворення, а в радіодіапазоні видно струмінь, закручений у протилежний бік від рукавів, що для спіралей велика рідкість.",
+                "description_en": "NGC 7479 in Pegasus, a spiral galaxy with a prominent bar from whose ends two asymmetric arms extend; its silhouette earned it the nickname Superman Galaxy. The asymmetry is probably the trace of a recent merger with a smaller galaxy. Star formation is active in the nucleus, and in radio a jet is seen winding the opposite way to the arms, a great rarity among spirals.",
+                "story_uk": "Маленька далека галактика, яку DWARF Mini показує як кілька десятків пікселів з натяком на перемичку. Три вечірні сесії без фільтра по 15 і 30 секунд, з блендою від вуличних ліхтарів, які до опівночі дають помітний градієнт з одного боку кадру. Результат чесний: форму впізнати можна, деталі рукавів ні. Це межа апарата для галактик на ста мільйонах світлових років.",
+                "story_en": "A small distant galaxy that the DWARF Mini renders as a few dozen pixels with a hint of a bar. Three evening sessions without a filter at 15 and 30 seconds, with a dew shield against the street lights, which until midnight leave a visible gradient on one side of the frame. The result is honest: the shape is recognisable, the arm details are not. This is the device's limit for galaxies a hundred million light-years away.",
+                "distance_ly": 105000000,
+                "angular_size": "4′ × 3′",
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 3,
+                "frames": 540,
+                "exposures": [
+                    15,
+                    30
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-09": 1,
+                    "2026-10": 2
+                },
+                "night_dates": [
+                    "2026-09-20",
+                    "2026-10-01",
+                    "2026-10-02"
+                ],
+                "longest_night_sec": 5730,
+                "longest_night": "2026-10-02"
+            },
+            "photo": {
+                "title": "C 44 NGC 7479: кроп 420×2, дві ночі, 2 год 50 хв",
+                "img": "img/c-44.jpg",
+                "thumb": "img/c-44_t.jpg",
+                "webp": "img/c-44.webp",
+                "thumb_webp": "img/c-44_t.webp",
+                "w": 840,
+                "h": 840,
+                "date": "2026-10-02",
+                "astrobin": null
+            },
+            "difficulty": "hard",
+            "target_min": 480,
+            "percent": 21,
+            "status": "progress"
+        },
+        {
+            "id": 73,
+            "slug": "c-23",
+            "designation": "C 23",
+            "name": "Галактика NGC 891",
+            "type": "galaxy",
+            "constellation": null,
+            "nights": 4,
+            "integration_sec": 6990,
+            "first": "2026-10-10",
+            "last": "2026-10-21",
+            "text": {
+                "description_uk": null,
+                "description_en": null,
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": null,
+                "angular_size": null,
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 5,
+                "frames": 430,
+                "exposures": [
+                    30
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-10": 5
+                },
+                "night_dates": [
+                    "2026-10-10",
+                    "2026-10-11",
+                    "2026-10-12",
+                    "2026-10-19",
+                    "2026-10-21"
+                ],
+                "longest_night_sec": 2430,
+                "longest_night": "2026-10-11"
+            },
+            "photo": {
+                "title": "NGC 891 — ФІНАЛ v3, кроп 60 % (2 год 04 хв)",
+                "img": "img/c-23.jpg",
+                "thumb": "img/c-23_t.jpg",
+                "webp": "img/c-23.webp",
+                "thumb_webp": "img/c-23_t.webp",
+                "w": 981,
+                "h": 654,
+                "date": "2026-10-12",
+                "astrobin": "https://app.astrobin.com/i/4yluk2"
+            },
+            "difficulty": null,
+            "target_min": 300,
+            "percent": 20,
             "status": "progress"
         },
         {
@@ -2229,6 +2351,73 @@
             "difficulty": null,
             "target_min": 240,
             "percent": 18,
+            "status": "progress"
+        },
+        {
+            "id": 43,
+            "slug": "c-30",
+            "designation": "C 30",
+            "name": "Галактика NGC 7331 + SN 2026aaiv",
+            "type": "galaxy",
+            "constellation": "Пегас",
+            "nights": 9,
+            "integration_sec": 14175,
+            "first": "2026-09-12",
+            "last": "2026-10-21",
+            "text": {
+                "description_uk": "NGC 7331 у Пегасі, велика спіральна галактика, схожа на Чумацький Шлях розміром і формою, нахилена до нас так, що видно і диск, і пилові смуги. За нею в тому самому полі кілька значно дальших галактик, які лише здаються її супутниками. У 2026 році в NGC 7331 спалахнула наднова SN 2026aaiv, і ця сторінка зберігає кадри з нею: зорю, яка на кілька тижнів світила як мільярди звичайних.",
+                "description_en": "NGC 7331 in Pegasus, a large spiral galaxy similar to the Milky Way in size and shape, tilted so that both the disk and the dust lanes are visible. Behind it in the same field lie several much more distant galaxies that only appear to be its companions. In 2026 supernova SN 2026aaiv flared up in NGC 7331, and this page keeps the frames with it: a star that for a few weeks shone like billions of ordinary ones.",
+                "story_uk": "Ця галактика потрапила в серію через наднову: п'ять ночей без фільтра по 15 і 30 секунд, щоб зафіксувати SN 2026aaiv і встигнути, поки вона не згасла. Сама галактика з балкона мала й невиразна, але наднова на її краю видна впевнено, і кадри з різних ночей показують, як міняється її яскравість. Це єдиний об'єкт челенджу, знятий заради події, а не заради галактики.",
+                "story_en": "This galaxy entered the series because of the supernova: five nights without a filter at 15 and 30 seconds, to record SN 2026aaiv before it faded. From a balcony the galaxy itself is small and unassuming, but the supernova on its edge stands out confidently, and frames from different nights show its brightness changing. It is the only object in the challenge shot for the event rather than for the galaxy.",
+                "distance_ly": 40000000,
+                "angular_size": "10′ × 4′",
+                "en_auto": false
+            },
+            "shooting": {
+                "sessions": 9,
+                "frames": 925,
+                "exposures": [
+                    15,
+                    30
+                ],
+                "filters": [
+                    "Без фільтра"
+                ],
+                "telescopes": [
+                    "DWARF Mini"
+                ],
+                "nights_by_month": {
+                    "2026-09": 4,
+                    "2026-10": 5
+                },
+                "night_dates": [
+                    "2026-09-12",
+                    "2026-09-17",
+                    "2026-09-19",
+                    "2026-09-24",
+                    "2026-10-01",
+                    "2026-10-10",
+                    "2026-10-11",
+                    "2026-10-19",
+                    "2026-10-21"
+                ],
+                "longest_night_sec": 3240,
+                "longest_night": "2026-09-19"
+            },
+            "photo": {
+                "title": "Справжня наука · новина: Swift завершив роботу",
+                "img": "img/c-30.jpg",
+                "thumb": "img/c-30_t.jpg",
+                "webp": "img/c-30.webp",
+                "thumb_webp": "img/c-30_t.webp",
+                "w": 1600,
+                "h": 1000,
+                "date": "2026-10-30",
+                "astrobin": null
+            },
+            "difficulty": "hard",
+            "target_min": 480,
+            "percent": 17,
             "status": "progress"
         },
         {
@@ -2303,31 +2492,31 @@
             "status": "progress"
         },
         {
-            "id": 45,
-            "slug": "c-44",
-            "designation": "C 44",
-            "name": "Галактика NGC 7479",
-            "type": "galaxy",
-            "constellation": "Пегас",
+            "id": 35,
+            "slug": "m78",
+            "designation": "M 78",
+            "name": "Відбивна туманність",
+            "type": "nebula",
+            "constellation": "Оріон",
             "nights": 3,
-            "integration_sec": 13080,
-            "first": "2026-09-20",
-            "last": "2026-10-02",
+            "integration_sec": 7650,
+            "first": "2026-10-08",
+            "last": "2026-11-22",
             "text": {
-                "description_uk": "NGC 7479 у Пегасі, спіральна галактика з виразною перемичкою, від кінців якої відходять два асиметричні рукави; за силует її прозвали Галактикою Супермена. Асиметрія, ймовірно, слід недавнього злиття з меншою галактикою. У ядрі активне зореутворення, а в радіодіапазоні видно струмінь, закручений у протилежний бік від рукавів, що для спіралей велика рідкість.",
-                "description_en": "NGC 7479 in Pegasus, a spiral galaxy with a prominent bar from whose ends two asymmetric arms extend; its silhouette earned it the nickname Superman Galaxy. The asymmetry is probably the trace of a recent merger with a smaller galaxy. Star formation is active in the nucleus, and in radio a jet is seen winding the opposite way to the arms, a great rarity among spirals.",
-                "story_uk": "Маленька далека галактика, яку DWARF Mini показує як кілька десятків пікселів з натяком на перемичку. Три вечірні сесії без фільтра по 15 і 30 секунд, з блендою від вуличних ліхтарів, які до опівночі дають помітний градієнт з одного боку кадру. Результат чесний: форму впізнати можна, деталі рукавів ні. Це межа апарата для галактик на ста мільйонах світлових років.",
-                "story_en": "A small distant galaxy that the DWARF Mini renders as a few dozen pixels with a hint of a bar. Three evening sessions without a filter at 15 and 30 seconds, with a dew shield against the street lights, which until midnight leave a visible gradient on one side of the frame. The result is honest: the shape is recognisable, the arm details are not. This is the device's limit for galaxies a hundred million light-years away.",
-                "distance_ly": 105000000,
-                "angular_size": "4′ × 3′",
+                "description_uk": "M78 в Оріоні, найяскравіша відбивна туманність неба: хмара пилу, яка не світиться сама, а відбиває блакитне світло двох молодих зір усередині. Вона частина величезної хмари Оріона, тієї самої, з якої народилась Велика туманність. На знімках М78 нагадує туманний привид з двома очима, а навколо неї темні смуги пилу, крізь які зорі ледь просвічують.",
+                "description_en": "M78 in Orion, the brightest reflection nebula in the sky: a cloud of dust that does not shine by itself but reflects the blue light of two young stars inside it. It is part of the huge Orion cloud, the same one the Great Nebula was born from. In photographs M78 resembles a hazy ghost with two eyes, surrounded by dark dust lanes through which the stars barely show.",
+                "story_uk": null,
+                "story_en": null,
+                "distance_ly": 1600,
+                "angular_size": "8′ × 6′",
                 "en_auto": false
             },
             "shooting": {
                 "sessions": 3,
-                "frames": 540,
+                "frames": 274,
                 "exposures": [
-                    15,
-                    30
+                    30,
+                    60
                 ],
                 "filters": [
                     "Без фільтра"
@@ -2336,91 +2525,20 @@
                     "DWARF Mini"
                 ],
                 "nights_by_month": {
-                    "2026-09": 1,
-                    "2026-10": 2
+                    "2026-10": 2,
+                    "2026-11": 1
                 },
                 "night_dates": [
-                    "2026-09-20",
-                    "2026-10-01",
-                    "2026-10-02"
+                    "2026-10-07",
+                    "2026-10-08",
+                    "2026-11-22"
                 ],
-                "longest_night_sec": 5730,
-                "longest_night": "2026-10-02"
+                "longest_night_sec": 4860,
+                "longest_night": "2026-11-22"
             },
-            "photo": {
-                "title": "C 44 NGC 7479: кроп 420×2, дві ночі, 2 год 50 хв",
-                "img": "img/c-44.jpg",
-                "thumb": "img/c-44_t.jpg",
-                "webp": "img/c-44.webp",
-                "thumb_webp": "img/c-44_t.webp",
-                "w": 840,
-                "h": 840,
-                "date": "2026-10-02",
-                "astrobin": null
-            },
-            "difficulty": "hard",
+            "photo": null,
+            "difficulty": "very_hard",
             "target_min": 480,
-            "percent": 15,
-            "status": "progress"
-        },
-        {
-            "id": 73,
-            "slug": "c-23",
-            "designation": "C 23",
-            "name": "Галактика NGC 891",
-            "type": "galaxy",
-            "constellation": null,
-            "nights": 4,
-            "integration_sec": 6990,
-            "first": "2026-10-10",
-            "last": "2026-10-21",
-            "text": {
-                "description_uk": null,
-                "description_en": null,
-                "story_uk": null,
-                "story_en": null,
-                "distance_ly": null,
-                "angular_size": null,
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 5,
-                "frames": 430,
-                "exposures": [
-                    30
-                ],
-                "filters": [
-                    "Без фільтра"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-10": 5
-                },
-                "night_dates": [
-                    "2026-10-10",
-                    "2026-10-11",
-                    "2026-10-12",
-                    "2026-10-19",
-                    "2026-10-21"
-                ],
-                "longest_night_sec": 2430,
-                "longest_night": "2026-10-11"
-            },
-            "photo": {
-                "title": "NGC 891 — ФІНАЛ v3, кроп 60 % (2 год 04 хв)",
-                "img": "img/c-23.jpg",
-                "thumb": "img/c-23_t.jpg",
-                "webp": "img/c-23.webp",
-                "thumb_webp": "img/c-23_t.webp",
-                "w": 981,
-                "h": 654,
-                "date": "2026-10-12",
-                "astrobin": "https://app.astrobin.com/i/4yluk2"
-            },
-            "difficulty": null,
-            "target_min": 300,
             "percent": 14,
             "status": "progress"
         },
@@ -2532,73 +2650,6 @@
             "status": "progress"
         },
         {
-            "id": 43,
-            "slug": "c-30",
-            "designation": "C 30",
-            "name": "Галактика NGC 7331 + SN 2026aaiv",
-            "type": "galaxy",
-            "constellation": "Пегас",
-            "nights": 9,
-            "integration_sec": 14175,
-            "first": "2026-09-12",
-            "last": "2026-10-21",
-            "text": {
-                "description_uk": "NGC 7331 у Пегасі, велика спіральна галактика, схожа на Чумацький Шлях розміром і формою, нахилена до нас так, що видно і диск, і пилові смуги. За нею в тому самому полі кілька значно дальших галактик, які лише здаються її супутниками. У 2026 році в NGC 7331 спалахнула наднова SN 2026aaiv, і ця сторінка зберігає кадри з нею: зорю, яка на кілька тижнів світила як мільярди звичайних.",
-                "description_en": "NGC 7331 in Pegasus, a large spiral galaxy similar to the Milky Way in size and shape, tilted so that both the disk and the dust lanes are visible. Behind it in the same field lie several much more distant galaxies that only appear to be its companions. In 2026 supernova SN 2026aaiv flared up in NGC 7331, and this page keeps the frames with it: a star that for a few weeks shone like billions of ordinary ones.",
-                "story_uk": "Ця галактика потрапила в серію через наднову: п'ять ночей без фільтра по 15 і 30 секунд, щоб зафіксувати SN 2026aaiv і встигнути, поки вона не згасла. Сама галактика з балкона мала й невиразна, але наднова на її краю видна впевнено, і кадри з різних ночей показують, як міняється її яскравість. Це єдиний об'єкт челенджу, знятий заради події, а не заради галактики.",
-                "story_en": "This galaxy entered the series because of the supernova: five nights without a filter at 15 and 30 seconds, to record SN 2026aaiv before it faded. From a balcony the galaxy itself is small and unassuming, but the supernova on its edge stands out confidently, and frames from different nights show its brightness changing. It is the only object in the challenge shot for the event rather than for the galaxy.",
-                "distance_ly": 40000000,
-                "angular_size": "10′ × 4′",
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 9,
-                "frames": 925,
-                "exposures": [
-                    15,
-                    30
-                ],
-                "filters": [
-                    "Без фільтра"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-09": 4,
-                    "2026-10": 5
-                },
-                "night_dates": [
-                    "2026-09-12",
-                    "2026-09-17",
-                    "2026-09-19",
-                    "2026-09-24",
-                    "2026-10-01",
-                    "2026-10-10",
-                    "2026-10-11",
-                    "2026-10-19",
-                    "2026-10-21"
-                ],
-                "longest_night_sec": 3240,
-                "longest_night": "2026-09-19"
-            },
-            "photo": {
-                "title": "Справжня наука · новина: Swift завершив роботу",
-                "img": "img/c-30.jpg",
-                "thumb": "img/c-30_t.jpg",
-                "webp": "img/c-30.webp",
-                "thumb_webp": "img/c-30_t.webp",
-                "w": 1600,
-                "h": 1000,
-                "date": "2026-10-30",
-                "astrobin": null
-            },
-            "difficulty": "hard",
-            "target_min": 480,
-            "percent": 12,
-            "status": "progress"
-        },
-        {
             "id": 77,
             "slug": "m-74",
             "designation": "M 74",
@@ -2642,55 +2693,7 @@
             "photo": null,
             "difficulty": null,
             "target_min": 300,
-            "percent": 7,
-            "status": "progress"
-        },
-        {
-            "id": 35,
-            "slug": "m78",
-            "designation": "M 78",
-            "name": "Відбивна туманність",
-            "type": "nebula",
-            "constellation": "Оріон",
-            "nights": 2,
-            "integration_sec": 2790,
-            "first": "2026-10-08",
-            "last": "2026-10-09",
-            "text": {
-                "description_uk": "M78 в Оріоні, найяскравіша відбивна туманність неба: хмара пилу, яка не світиться сама, а відбиває блакитне світло двох молодих зір усередині. Вона частина величезної хмари Оріона, тієї самої, з якої народилась Велика туманність. На знімках М78 нагадує туманний привид з двома очима, а навколо неї темні смуги пилу, крізь які зорі ледь просвічують.",
-                "description_en": "M78 in Orion, the brightest reflection nebula in the sky: a cloud of dust that does not shine by itself but reflects the blue light of two young stars inside it. It is part of the huge Orion cloud, the same one the Great Nebula was born from. In photographs M78 resembles a hazy ghost with two eyes, surrounded by dark dust lanes through which the stars barely show.",
-                "story_uk": null,
-                "story_en": null,
-                "distance_ly": 1600,
-                "angular_size": "8′ × 6′",
-                "en_auto": false
-            },
-            "shooting": {
-                "sessions": 2,
-                "frames": 192,
-                "exposures": [
-                    30
-                ],
-                "filters": [
-                    "Без фільтра"
-                ],
-                "telescopes": [
-                    "DWARF Mini"
-                ],
-                "nights_by_month": {
-                    "2026-10": 2
-                },
-                "night_dates": [
-                    "2026-10-07",
-                    "2026-10-08"
-                ],
-                "longest_night_sec": 1770,
-                "longest_night": "2026-10-08"
-            },
-            "photo": null,
-            "difficulty": "very_hard",
-            "target_min": 480,
-            "percent": 5,
+            "percent": 11,
             "status": "progress"
         },
         {
@@ -3425,10 +3428,10 @@
             "name": "Місяць",
             "type": "moon",
             "constellation": null,
-            "nights": 25,
+            "nights": 26,
             "integration_sec": 95,
             "first": "2026-08-23",
-            "last": "2026-11-19",
+            "last": "2026-11-22",
             "text": {
                 "description_uk": "Місяць, наш єдиний природний супутник і найзручніша ціль для балкона: яскравий, великий, доступний у будь-якому місті й у будь-якому засвіченні. Середня відстань до нього близько 384 тисяч кілометрів, світло долітає за секунду з невеликим. Найцікавіший він не в повню, а поблизу термінатора, лінії дня і ночі: там тіні довгі, і кратери, гори та борозни показують рельєф. Щоночі термінатор зсувається, тож той самий кратер двічі однаковим не буває.",
                 "description_en": "The Moon, our only natural satellite and the most convenient balcony target: bright, large, reachable from any city under any light pollution. Its average distance is about 384,000 kilometres; the light takes a little over a second to arrive. It is most interesting not at full phase but near the terminator, the line between day and night: there the shadows are long and craters, mountains and rilles reveal the relief. The terminator shifts every night, so the same crater never looks the same twice.",
@@ -3439,8 +3442,8 @@
                 "en_auto": false
             },
             "shooting": {
-                "sessions": 77,
-                "frames": 15926,
+                "sessions": 85,
+                "frames": 16932,
                 "exposures": [
                     0.002,
                     0.0025,
@@ -3467,7 +3470,7 @@
                     "2026-08": 6,
                     "2026-09": 7,
                     "2026-10": 10,
-                    "2026-11": 2
+                    "2026-11": 3
                 },
                 "night_dates": [
                     "2026-08-23",
@@ -3494,7 +3497,8 @@
                     "2026-10-28",
                     "2026-10-29",
                     "2026-11-16",
-                    "2026-11-19"
+                    "2026-11-19",
+                    "2026-11-22"
                 ],
                 "longest_night_sec": 16,
                 "longest_night": "2026-09-28"
@@ -3589,10 +3593,10 @@
             "name": "Сонце",
             "type": "sun",
             "constellation": null,
-            "nights": 21,
+            "nights": 22,
             "integration_sec": 10,
             "first": "2026-08-20",
-            "last": "2026-11-21",
+            "last": "2026-11-22",
             "text": {
                 "description_uk": "Сонце, єдина зоря, яку можна розглядати зблизька. Через сонячний фільтр на диску видно плями, темні ділянки з сильним магнітним полем, трохи холодніші за решту поверхні, та світлі факели біля краю. Кількість плям росте і спадає приблизно одинадцятирічним циклом, і зараз активність висока, тож диск рідко буває порожнім. Знімати Сонце можна лише через спеціальний фільтр, який пропускає менше тисячної частки світла.",
                 "description_en": "The Sun, the only star we can look at up close. Through a solar filter the disk shows spots, dark regions with strong magnetic fields slightly cooler than the rest of the surface, and bright faculae near the limb. The number of spots rises and falls in a cycle of roughly eleven years, and activity is high right now, so the disk is rarely empty. The Sun may only be photographed through a special filter that passes less than a thousandth of the light.",
@@ -3603,8 +3607,8 @@
                 "en_auto": false
             },
             "shooting": {
-                "sessions": 36,
-                "frames": 3704,
+                "sessions": 37,
+                "frames": 3791,
                 "exposures": [
                     0.0005,
                     0.002,
@@ -3626,7 +3630,7 @@
                     "2026-08": 1,
                     "2026-09": 6,
                     "2026-10": 8,
-                    "2026-11": 6
+                    "2026-11": 7
                 },
                 "night_dates": [
                     "2026-08-19",
@@ -3649,7 +3653,8 @@
                     "2026-11-09",
                     "2026-11-11",
                     "2026-11-15",
-                    "2026-11-20"
+                    "2026-11-20",
+                    "2026-11-21"
                 ],
                 "longest_night_sec": 4,
                 "longest_night": "2026-10-19"
@@ -3841,7 +3846,7 @@
             "todo": 80,
             "unreachable": 10,
             "reachable": 100,
-            "left_hours": 138.7
+            "left_hours": 137.4
         },
         "objects": [
             {
@@ -3851,7 +3856,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m1"
             },
             {
@@ -3871,7 +3876,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m-3"
             },
             {
@@ -4141,7 +4146,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m-30"
             },
             {
@@ -4171,7 +4176,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m33"
             },
             {
@@ -4181,7 +4186,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m34"
             },
             {
@@ -4191,7 +4196,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m35"
             },
             {
@@ -4201,7 +4206,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m36"
             },
             {
@@ -4211,7 +4216,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m37"
             },
             {
@@ -4221,7 +4226,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m38"
             },
             {
@@ -4241,7 +4246,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4251,7 +4256,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m-41"
             },
             {
@@ -4261,7 +4266,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m42"
             },
             {
@@ -4271,7 +4276,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m42"
             },
             {
@@ -4281,7 +4286,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m44"
             },
             {
@@ -4291,7 +4296,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m45"
             },
             {
@@ -4301,7 +4306,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m-46"
             },
             {
@@ -4311,7 +4316,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4321,7 +4326,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m-48"
             },
             {
@@ -4331,7 +4336,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4341,7 +4346,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m-50"
             },
             {
@@ -4351,7 +4356,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m51"
             },
             {
@@ -4371,7 +4376,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m-53"
             },
             {
@@ -4421,7 +4426,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4431,7 +4436,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4441,7 +4446,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4451,7 +4456,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4471,7 +4476,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m63"
             },
             {
@@ -4481,7 +4486,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4491,7 +4496,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m65"
             },
             {
@@ -4501,7 +4506,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m65"
             },
             {
@@ -4511,7 +4516,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4581,7 +4586,7 @@
                 "status": "progress",
                 "percent": 30,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m-74"
             },
             {
@@ -4601,7 +4606,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m-76"
             },
             {
@@ -4611,7 +4616,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4619,9 +4624,9 @@
                 "name": null,
                 "type": "nebula",
                 "status": "progress",
-                "percent": 26,
+                "percent": 71,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m78"
             },
             {
@@ -4631,7 +4636,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m-79"
             },
             {
@@ -4651,7 +4656,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m-81"
             },
             {
@@ -4661,7 +4666,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": true,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4681,7 +4686,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4691,7 +4696,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4701,7 +4706,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4711,7 +4716,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4721,7 +4726,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4731,7 +4736,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4741,7 +4746,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4751,7 +4756,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4761,7 +4766,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4771,7 +4776,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4781,7 +4786,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4791,7 +4796,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m-95"
             },
             {
@@ -4801,7 +4806,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4811,7 +4816,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m-97"
             },
             {
@@ -4821,7 +4826,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4831,7 +4836,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4841,7 +4846,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4851,7 +4856,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m101"
             },
             {
@@ -4861,7 +4866,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4871,7 +4876,7 @@
                 "status": "captured",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m103"
             },
             {
@@ -4891,7 +4896,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4901,7 +4906,7 @@
                 "status": "progress",
                 "percent": 100,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m106"
             },
             {
@@ -4921,7 +4926,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": null
             },
             {
@@ -4931,7 +4936,7 @@
                 "status": "todo",
                 "percent": 0,
                 "uncertain": false,
-                "season_from": "2026-11-22",
+                "season_from": "2026-11-23",
                 "slug": "m-109"
             },
             {
@@ -11334,7 +11339,7 @@
                     "solar": true,
                     "day": true,
                     "start": "10:49",
-                    "end": "10:51",
+                    "end": "10:56",
                     "exposure": 0.00625,
                     "filter": "Сонячний ND",
                     "taken": 150,
@@ -11355,6 +11360,193 @@
                 "temp_min": 2.8,
                 "wind": 4.3,
                 "humidity": 85
+            }
+        },
+        {
+            "date": "2026-11-22",
+            "sessions": [
+                {
+                    "slug": "sonce",
+                    "designation": null,
+                    "name": "Сонце",
+                    "type": "sun",
+                    "solar": true,
+                    "day": true,
+                    "start": "11:15",
+                    "end": "11:16",
+                    "exposure": 0.00625,
+                    "filter": "Сонячний ND",
+                    "taken": 87,
+                    "stacked": 8,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "18:34",
+                    "end": "18:34",
+                    "exposure": 0.003125,
+                    "filter": "Без фільтра",
+                    "taken": 1,
+                    "stacked": 1,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "18:34",
+                    "end": "18:34",
+                    "exposure": 0.003125,
+                    "filter": "Без фільтра",
+                    "taken": 1,
+                    "stacked": 1,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "18:34",
+                    "end": "18:35",
+                    "exposure": 0.003125,
+                    "filter": "Без фільтра",
+                    "taken": 1,
+                    "stacked": 1,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "18:35",
+                    "end": "18:35",
+                    "exposure": 0.003125,
+                    "filter": "Без фільтра",
+                    "taken": 1,
+                    "stacked": 1,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "18:35",
+                    "end": "18:35",
+                    "exposure": 0.003125,
+                    "filter": "Без фільтра",
+                    "taken": 1,
+                    "stacked": 1,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "18:36",
+                    "end": "18:36",
+                    "exposure": 0.003125,
+                    "filter": "Без фільтра",
+                    "taken": 1,
+                    "stacked": 1,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "18:36",
+                    "end": "18:36",
+                    "exposure": 0.003125,
+                    "filter": "Без фільтра",
+                    "taken": 1,
+                    "stacked": 1,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": false
+                },
+                {
+                    "slug": "misiac",
+                    "designation": null,
+                    "name": "Місяць",
+                    "type": "moon",
+                    "solar": true,
+                    "day": false,
+                    "start": "18:44",
+                    "end": "18:51",
+                    "exposure": 0.003125,
+                    "filter": "Без фільтра",
+                    "taken": 999,
+                    "stacked": 94,
+                    "sec": 0,
+                    "mosaic": false,
+                    "photo": true
+                },
+                {
+                    "slug": "m78",
+                    "designation": "M 78",
+                    "name": "Відбивна туманність",
+                    "type": "nebula",
+                    "solar": false,
+                    "day": false,
+                    "start": "21:39",
+                    "end": "23:10",
+                    "exposure": 60,
+                    "filter": "Без фільтра",
+                    "taken": 82,
+                    "stacked": 81,
+                    "sec": 4860,
+                    "mosaic": false,
+                    "photo": false
+                }
+            ],
+            "moon": {
+                "illumination": 96,
+                "phase": "waxing_gibbous",
+                "waxing": true
+            },
+            "weather": {
+                "verdict": "partly",
+                "cloud": 45,
+                "temp_min": 1,
+                "wind": 2.6,
+                "humidity": 72
             }
         }
     ],
