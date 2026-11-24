@@ -2,7 +2,7 @@
 
 > Nebulae, galaxies and Messier objects shot with a DWARF Mini smart telescope from a light-polluted city balcony in Ukraine: real results, hours of light and night logs.
 
-Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Mini smart telescope from a city balcony in Ukraine (only the eastern half of the sky is visible, light-polluted city sky). The site is rebuilt automatically after each night of shooting. Challenge: 4 of 67 objects captured, 72 nights, 185.6 h of deep-sky light. Messier: 17 of 100 reachable captured. Last update: 2026-11-23. All images are the author's own; the Telegram channel is in Ukrainian.
+Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Mini smart telescope from a city balcony in Ukraine (only the eastern half of the sky is visible, light-polluted city sky). The site is rebuilt automatically after each night of shooting. Challenge: 4 of 67 objects captured, 73 nights, 185.6 h of deep-sky light. Messier: 18 of 100 reachable captured. Last update: 2026-11-24. All images are the author's own; the Telegram channel is in Ukrainian.
 
 ## Main pages
 
@@ -62,7 +62,7 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 - [M 97](https://neboblyzhche.com/en/m-97/): Nebula, Ursa Major, 2 h 32 min of light over 5 nights, 18% of goal
 - [Galaxy NGC 7331 (Caldwell 30) + SN 2026aaiv · C 30](https://neboblyzhche.com/en/c-30/): Galaxy, Pegasus, 3 h 56 min of light over 9 nights, 17% of goal
 - [NGC 1491](https://neboblyzhche.com/en/ngc-1491/): Nebula, Per, 3 h 56 min of light over 5 nights, 15% of goal
-- Reflection nebula M78 · M 78: Nebula, Orion, 2 h 8 min of light over 3 nights, 14% of goal
+- [Reflection nebula M78 · M 78](https://neboblyzhche.com/en/m78/): Nebula, Orion, 2 h 8 min of light over 3 nights, 14% of goal
 - IC 63: Nebula, 2 h 13 min of light over 2 nights, 13% of goal
 - [Monkey Head Nebula · NGC 2174](https://neboblyzhche.com/en/ngc-2174/): Nebula, Orion, 4 h 50 min of light over 2 nights, 12% of goal
 - M 74: Galaxy, Pisces, 45 min of light over 1 night, 11% of goal
@@ -72,7 +72,7 @@ Personal astrophotography site by Kostia: deep-sky objects shot with a DWARF Min
 
 - [Moon](https://neboblyzhche.com/en/misiac/): 26 nights of observations
 - [Saturn](https://neboblyzhche.com/en/saturn/): 4 nights of observations
-- [Sun](https://neboblyzhche.com/en/sonce/): 22 nights of observations
+- [Sun](https://neboblyzhche.com/en/sonce/): 23 nights of observations
 - [Jupiter](https://neboblyzhche.com/en/iupiter/): 2 nights of observations
 - [Mars](https://neboblyzhche.com/en/mars/): 1 night of observations
 
